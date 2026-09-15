@@ -1,0 +1,131 @@
+{
+  "purpose": "Provisional construction artifact inventory, NOT a dataset freeze seal",
+  "algorithm": "sha256",
+  "self_excluded_to_avoid_circular_hash": true,
+  "artifacts": {
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl": {
+      "sha256": "c22594e058ea8f5766cc5c4077aee3f0c678825cc5b908eeee700d22a62af2e4",
+      "size_bytes": 1674286
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/authored_tasks_v0.py": {
+      "sha256": "a02ed43ddbeab61822f1358500c30eb6114ba56c6f6fbfd8f768815c64e2c926",
+      "size_bytes": 92589
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/build_construction_v0.py": {
+      "sha256": "64d707bf587b2e9c24c19b1bfe2ffd285e601dd9ef1c5fb501be5e2efb7dada9",
+      "size_bytes": 76100
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/challenge_candidates_v0.jsonl": {
+      "sha256": "cb2c4bc443cd10b01496a26cf6d477f482eb84e2daf50600bedaccdce347b029",
+      "size_bytes": 324819
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/cluster_rationales_v0.json": {
+      "sha256": "3560731fea7a9997d1f06b2a813ef1eba8af22552e325f2a40051fd055f87d46",
+      "size_bytes": 22664
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/construction_notes_v0.json": {
+      "sha256": "10b261598844dd39cd7530c40798246fa99336d86ddeaaf3cf82ebb4e6b428cd",
+      "size_bytes": 15682
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/contamination_screening_details_v0.json": {
+      "sha256": "a886eb8b0ee2bb3f5a5cf137d677c1973b41e7a18c767255dd41309011abca96",
+      "size_bytes": 1429829
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/corpus_absence_audits_v0.jsonl": {
+      "sha256": "dfce1e0590e0e76d54dcc6e7f39d4be218613de27ff7d77238bfcd28480d51e7",
+      "size_bytes": 830798
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/corpus_mapping_v0.json": {
+      "sha256": "2cf80e2e55055ca2fe3ed90b402b7fcb6d98fd9fdd9a7851f575e74c99ff1f9d",
+      "size_bytes": 818557
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/custodian_manifest_v0.json": {
+      "sha256": "a1c028f3d2126c3dc830a5f9cacff9ec02e52ca4dbc50407dbbdaead73673fbb",
+      "size_bytes": 5229
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/exclusion_log_v0.jsonl": {
+      "sha256": "68fffc01580ef3ff58d4dcd7146b7d880f5963e9b06b8c273dd7b054132b7a53",
+      "size_bytes": 1315
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/explicit_asks_v0.json": {
+      "sha256": "9815f3e9078c4e40dd011c8a37160468881c6df41a6d19ef008b969b675d2088",
+      "size_bytes": 7447
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/exposure_events_v0.jsonl": {
+      "sha256": "9dce4eaa4794a27f393dd35568b9bcefdbc25f469ec57838262740b77dba25b2",
+      "size_bytes": 4206
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_comparison_after_independent_v0.jsonl": {
+      "sha256": "6e280a04b5fa9def8c040129cf927efc532827f11c8dd6c097e59b7a4c6143d8",
+      "size_bytes": 1627134
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/custodian/split_assignment_provisional_v0.json": {
+      "sha256": "ec49c15acb7d2016f660b43ec7a23112a6a6113b8e99c6d16e29569b9f23c2a8",
+      "size_bytes": 23623
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/frozen_source_checks_v0.json": {
+      "sha256": "1ad5e94dcc1b9156b0573e375dcc47a10e85c3e0ab3d29486179ae3f956f16aa",
+      "size_bytes": 12240
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/integrity_baseline_v0.json": {
+      "sha256": "2f6bcc2b8201a9c4b44ad0998eafb4d84dc87368ee523a6b7fe446cbcd9efee4",
+      "size_bytes": 5684392
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/integrity_before_after_v0.json": {
+      "sha256": "96dd4a64cbea6dcf44b686dc058a5c6acabcf9a3ffd6a09f89c2d1fe19d8119c",
+      "size_bytes": 11368926
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/phase5c4a_access_manifest_v0.json": {
+      "sha256": "64a1598e83c6b885cbb107dfcfad419604c940b3a5125cc071f10884c36e857f",
+      "size_bytes": 11216
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/phase5c4a_aggregate_composition_v0.json": {
+      "sha256": "56b961df8b540de554c738a2166a6aae80954efb0b57c1b97f3d5ce866b256e9",
+      "size_bytes": 3215
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/phase5c4a_candidate_summary_v0.csv": {
+      "sha256": "247f7498c376ff34b6850244b3018404173bc4d50c5c2f42cbd6980f7b32ac37",
+      "size_bytes": 11918
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/phase5c4a_cluster_summary_v0.json": {
+      "sha256": "211890e30c667170b62c9b485b0cd90bc1eb8a6870198ecb9d255baf26db8b2d",
+      "size_bytes": 23782
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/phase5c4a_console_v0.txt": {
+      "sha256": "0ec0200f3bb68094c8919fed40fb7601f34c674246c8838704b7c62b5195b84d",
+      "size_bytes": 1309
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/phase5c4a_construction_report_v0.md": {
+      "sha256": "40a74f6e15a22c8333bdd2574142ee665b6ba81bdfea30803e79e271aabc86f8",
+      "size_bytes": 4769
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/phase5c4a_contamination_report_v0.md": {
+      "sha256": "5d4b11c6c7a463e35fd284002bc74def496c0d38917187cf5b3f5a09b3dd0662",
+      "size_bytes": 1377
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/phase5c4a_dimension_matrix_v0.json": {
+      "sha256": "c3219d6b3fc9709bb9e1ff770579add6cd6a0ea976372b9d08f990af6dae36c0",
+      "size_bytes": 4841
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/public_review/phase5c4a_validation_v0.json": {
+      "sha256": "49d2f828a0472d1bd2cc10eb44d988f8c54d235f4c74273ebb3e5ff780278979",
+      "size_bytes": 7737
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/01_independent_review_units_v0.jsonl": {
+      "sha256": "e805dfcfe282fa1893f015980f1c18153cb032e6cd3b2b6dfc576e841e61b0f9",
+      "size_bytes": 140624
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/README_independent_review_v0.md": {
+      "sha256": "2410ab18aab0dffaa81cacdd0eb816ba55ab65c1be843bedec4c398e9d45a87e",
+      "size_bytes": 2172
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/complete_corpus_evidence_v0.json": {
+      "sha256": "510642c61928286a553aff9263a16665953118152b31f78445f51aa8a5292350",
+      "size_bytes": 2941002
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/contamination_query_only_sources_v0.json": {
+      "sha256": "ab167baeae320ed639185233828cb987b41efbccb5c257129b4879332c8cae5d",
+      "size_bytes": 7294
+    }
+  }
+}

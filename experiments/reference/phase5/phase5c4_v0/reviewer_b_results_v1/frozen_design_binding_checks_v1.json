@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_console_v0.txt",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_controller_status_decision_table_v0.json",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_decision_table_validation_v0.json",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_design_amendments_v0.md",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_external_review_v0.md",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_frozen_design_spec_v0.md",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_margin_governance_v0.md",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_quota_scheduler_requirements_v0.md",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_spec_bindings_v0.json",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_trace_matrix_amendment_v0.json",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_validation_v0.json",
+      "matches": true
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_challenge_set_design_v0.md",
+      "matches": true
+    }
+  ]
+}

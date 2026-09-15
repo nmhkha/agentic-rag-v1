@@ -1,0 +1,96 @@
+{
+  "classification": "EXPLORATORY / NON-BENCHMARK / NON-CONFIRMATORY",
+  "source": "data/rag/traces/agentic-rag-v1_20260909T132915.670264Z.json",
+  "query": "Tôi muốn xây dựng một chatbot y tế, tôi cần lưu ý điều gì",
+  "benchmark_query_id": null,
+  "included_in_metrics": false,
+  "coverage_check": {
+    "sufficient": false,
+    "missing_aspects": [
+      "Quy định chi tiết về trách nhiệm pháp lý và nghĩa vụ cụ thể của đơn vị phát triển chatbot y tế",
+      "Yêu cầu kỹ thuật và tiêu chuẩn kiểm thử đối với hệ thống trí tuệ nhân tạo trong lĩnh vực y tế"
+    ],
+    "reason": "Bằng chứng mới chỉ cung cấp một số nguyên tắc chung về an toàn, bảo vệ dữ liệu và đạo đức, nhưng chưa đủ chi tiết về các yêu cầu pháp lý và kỹ thuật cụ thể khi xây dựng chatbot y tế."
+  },
+  "missing_aspects": [
+    "Quy định chi tiết về trách nhiệm pháp lý và nghĩa vụ cụ thể của đơn vị phát triển chatbot y tế",
+    "Yêu cầu kỹ thuật và tiêu chuẩn kiểm thử đối với hệ thống trí tuệ nhân tạo trong lĩnh vực y tế"
+  ],
+  "sub_queries": [
+    "Quy định chi tiết về trách nhiệm pháp lý và nghĩa vụ cụ thể của đơn vị phát triển chatbot y tế Tôi muốn xây dựng một chatbot y tế, tôi cần lưu ý điều gì",
+    "Yêu cầu kỹ thuật và tiêu chuẩn kiểm thử đối với hệ thống trí tuệ nhân tạo trong lĩnh vực y tế Tôi muốn xây dựng một chatbot y tế, tôi cần lưu ý điều gì"
+  ],
+  "initial_top5": [
+    "134-2025-QH15_dieu-6_khoan-2_diem-a",
+    "134-2025-QH15_dieu-17_khoan-5",
+    "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-c",
+    "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-d",
+    "134-2025-QH15_dieu-14_khoan-3"
+  ],
+  "new_final_evidence": [
+    {
+      "evidence_id": "E58",
+      "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+      "article": "8",
+      "text": "Có cơ chế kỹ thuật và quy trình vận hành bảo đảm sự giám sát thực chất của con người, theo đó người có thẩm quyền có khả năng xem xét độc lập, can thiệp, từ chối hoặc thay đổi quyết định của hệ thống trước khi quyết định đó có hiệu lực;",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 8. Tiêu chí và nguyên tắc xây dựng Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm b)\nCó cơ chế kỹ thuật và quy trình vận hành bảo đảm sự giám sát thực chất của con người, theo đó người có thẩm quyền có khả năng xem xét độc lập, can thiệp, từ chối hoặc thay đổi quyết định của hệ thống trước khi quyết định đó có hiệu lực;"
+    },
+    {
+      "evidence_id": "E6",
+      "chunk_id": "142-2026-ND-CP_dieu-43_khoan-1",
+      "article": "43",
+      "text": "Rà soát, tổ chức xây dựng, ban hành theo thẩm quyền hoặc trình cơ quan, người có thẩm quyền ban hành văn bản quy phạm pháp luật, tiêu chuẩn, quy chuẩn kỹ thuật quốc gia quy định chi tiết yêu cầu về an toàn, quản lý rủi ro và điều kiện triển khai đối với việc ứng dụng hệ thống trí tuệ nhân tạo trong ngành, lĩnh vực thuộc phạm vi quản lý theo quy định của Luật Trí tuệ nhân tạo.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nTRÁCH NHIỆM CỦA CÁC CƠ QUAN, TỔ CHỨC\nĐiều 43. Trách nhiệm của các bộ, cơ quan ngang bộ và các cơ quan khác thuộc thẩm quyền của Chính phủ\nKhoản 1\nRà soát, tổ chức xây dựng, ban hành theo thẩm quyền hoặc trình cơ quan, người có thẩm quyền ban hành văn bản quy phạm pháp luật, tiêu chuẩn, quy chuẩn kỹ thuật quốc gia quy định chi tiết yêu cầu về an toàn, quản lý rủi ro và điều kiện triển khai đối với việc ứng dụng hệ thống trí tuệ nhân tạo trong ngành, lĩnh vực thuộc phạm vi quản lý theo quy định của Luật Trí tuệ nhân tạo."
+    },
+    {
+      "evidence_id": "E26",
+      "chunk_id": "142-2026-ND-CP_dieu-16_khoan-4",
+      "article": "16",
+      "text": "Khi thực hiện trách nhiệm giải trình và cung cấp thông tin theo quy định của pháp luật, nhà cung cấp và bên triển khai không bắt buộc phải tiết lộ mã nguồn, thuật toán chi tiết, dữ liệu huấn luyện, bộ tham số hoặc thông tin thuộc phạm vi bí mật kinh doanh, bí mật công nghệ, trừ trường hợp pháp luật có quy định khác.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 16. Nguyên tắc minh bạch và giải trình\nKhoản 4\nKhi thực hiện trách nhiệm giải trình và cung cấp thông tin theo quy định của pháp luật, nhà cung cấp và bên triển khai không bắt buộc phải tiết lộ mã nguồn, thuật toán chi tiết, dữ liệu huấn luyện, bộ tham số hoặc thông tin thuộc phạm vi bí mật kinh doanh, bí mật công nghệ, trừ trường hợp pháp luật có quy định khác."
+    }
+  ],
+  "final_evidence_ids": [
+    "E1",
+    "E58",
+    "E6",
+    "E2",
+    "E26"
+  ],
+  "draft_answer": "Khi xây dựng chatbot y tế (hệ thống trí tuệ nhân tạo trong lĩnh vực y tế), bạn cần lưu ý bảo đảm an toàn cho người bệnh, bảo đảm độ tin cậy trong điều kiện sử dụng thực tế và bảo vệ dữ liệu về sức khỏe theo quy định của pháp luật [E1].",
+  "final_answer": "Khi xây dựng chatbot y tế (hệ thống trí tuệ nhân tạo trong lĩnh vực y tế), bạn cần lưu ý bảo đảm an toàn cho người bệnh, bảo đảm độ tin cậy trong điều kiện sử dụng thực tế và bảo vệ dữ liệu về sức khỏe theo quy định của pháp luật [E1]. Bên cạnh đó, cần chú ý có cơ chế kỹ thuật và quy trình vận hành bảo đảm sự giám sát thực chất của con người, theo đó người có thẩm quyền có khả năng xem xét độc lập, can thiệp, từ chối hoặc thay đổi quyết định của hệ thống trước khi quyết định đó có hiệu lực [E58].",
+  "final_cited_ids": [
+    "E1",
+    "E58"
+  ],
+  "uncited_final_evidence_ids": [
+    "E6",
+    "E2",
+    "E26"
+  ],
+  "expansion_used": true,
+  "revision_used": true,
+  "final_completeness": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "Câu trả lời đã bao gồm đầy đủ các ý chính được hỗ trợ trong các văn bản cung cấp liên quan đến việc xây dựng chatbot y tế (bảo đảm an toàn cho người bệnh, độ tin cậy trong điều kiện thực tế, bảo vệ dữ liệu sức khỏe theo E1, và cơ chế giám sát thực chất của con người theo E58)."
+  },
+  "transitions": [
+    "initialized",
+    "initial_retrieval",
+    "coverage_check",
+    "expansion_retrieval_1",
+    "expansion_retrieval_2",
+    "evidence_merge_rerank",
+    "answer_generation",
+    "completeness_check",
+    "answer_revision",
+    "completeness_check",
+    "citation_check",
+    "final:success"
+  ],
+  "initial_completeness_payload": "not separately retained; the recorded completeness object is the final recheck",
+  "interpretation": "Exploratory observation suggests a possible goal-persistence / evidence-to-answer coverage gap.",
+  "scope_caveat": "E6 and E26 partially relate to previously missing aspects; they do not establish complete medical testing standards or all developer obligations. Uncited evidence is not automatically a required omission. E58 is used after revision, providing counterevidence to total goal loss.",
+  "confirmation_required": "requires confirmation on a separately designed challenge set"
+}

@@ -1,0 +1,184 @@
+{
+  "schema": "phase5c3-trace-matrix-amendment-v0",
+  "design_only": true,
+  "source_trace_sha256": "e75cba2402593c79157f439f3ffc079003df9330d2f58c3a7523249a0f571e24",
+  "source_matrix_sha256": "71caa700ec77bbe998caed8764d2ebcfd6cf23d1628513d5894bdb621cd1520e",
+  "source_status": "DRAFT_FOR_EXTERNAL_REVIEW",
+  "effective_spec_status": "Governed by successful phase5c3 freeze manifest; no implementation authorization",
+  "runtime_gold_access": "FORBIDDEN",
+  "runtime_projection_fields": [
+    "query_id",
+    "query"
+  ],
+  "additional_runner_forbidden_inputs": [
+    "gold_aspects",
+    "supporting_evidence_gold",
+    "answerability",
+    "dimensions",
+    "difficulty",
+    "family_labels",
+    "expected_mechanism",
+    "quality_outcomes",
+    "evaluator_results"
+  ],
+  "preserved_aspect_axes": {
+    "origin": "query_explicit | controller_inferred",
+    "admission": "candidate | answer_worthy | excluded | merged",
+    "search_status": "not_searched | searched | search_blocked",
+    "support_status": "unassessed | sufficient | partial | not_found_in_available_evidence | conflicting",
+    "applicability_status": "unassessed | direct | conditional | not_applicable | uncertain",
+    "answer_disposition": "pending | answered_supported | answered_qualified | unresolved_disclosed | unresolved_undisclosed | excluded_with_reason | merged_into"
+  },
+  "trace_amendments": {
+    "Finalization": {
+      "status_derivation": "phase5c3_controller_status_decision_table_v0.json",
+      "add_fields": {
+        "decision_spec_hash": "sha256 of frozen decision table",
+        "predicate_snapshot": "complete typed predicates with current answer/evidence/check refs; no gold",
+        "decision_disposition": "VALID_STATE | INVALID_STATE | REQUIRES_REVIEW",
+        "matched_rule_ids": "all applicable invalid/review rules or exactly one runtime row",
+        "completeness_state": "full | partial | insufficient | incomplete | unknown",
+        "unresolved_aspects": "structured ID/reason/disclosure records; IDs must equal retained unresolved_aspect_ids"
+      },
+      "final_status": "seven inherited runtime statuses, nullable only for INVALID_STATE/REQUIRES_REVIEW; no positive runtime assertion in those dispositions",
+      "compatibility": "answer_status equals completeness_state; retain both during compatibility period. Do not rewrite legacy V1 traces. Inconsistent aliases are INVALID_STATE.",
+      "secondary_fields": [
+        "citation_state",
+        "execution_state",
+        "completeness_state",
+        "unresolved_aspects",
+        "stop_reason",
+        "secondary_failure_flags"
+      ]
+    },
+    "provider_physical_attempts": {
+      "contract": "phase5c3_quota_scheduler_requirements_v0.md §Trace amendment and isolation",
+      "all_attempts_require": [
+        "attempt_id",
+        "logical_call_id",
+        "quota_domain_id",
+        "provider_rate_limit_config_hash",
+        "scheduler_reservation_id",
+        "reservation_at_utc",
+        "eligible_not_before_utc",
+        "dispatched_at_utc",
+        "completed_at_utc",
+        "attempt_state",
+        "retry_parent_attempt_id",
+        "retry_after_raw",
+        "provider_not_before_utc",
+        "clock_epoch_or_restart_id",
+        "coordinator_fencing_token",
+        "durable_event_ref"
+      ],
+      "applies_to": "Every production provider request; evaluator attempts share scheduler if domain matches, with separate payload/ledger storage."
+    }
+  },
+  "orchestration_only_design_records": {
+    "test_release_seal": "Implementation, architecture, prompts, policies, budgets, evaluation config hashes, role declarations, access approval before query release. No TEST gold or quality outcomes in runtime config.",
+    "exposure_event": "Timestamp, recipient/role, channel, affected query hashes/cluster IDs, retained-knowledge scope, claim downgrade or future independent-cohort disposition; durable append-only, never deleted to restore untouched claim.",
+    "phase5c5_authorization": "Final v2 definition, primary/secondary contrasts, exact authorized mechanism bundle membership, R3 confirmation/defer decision; sealed before implementation and TEST exposure.",
+    "margin_approval": "Annotated structure/rubric bindings, symbols/values/rationale, reviewers and approval date; current approved values null.",
+    "quota_config": "Separate domain configurations when pools differ; shared global scheduling when same."
+  },
+  "requirement_validation_overlay": [
+    {
+      "requirement_id": "V2-R1",
+      "decision_status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "evidence_tier": [
+        "A"
+      ],
+      "hypothesis_status": null,
+      "implementation_status": "NOT_STARTED",
+      "inherited_fields": "All source requirement fields retained, interpreted through named amendments; no efficacy or confirmation claimed.",
+      "binding_amendments": [
+        "A2",
+        "A3"
+      ],
+      "future_gate": "All relevant inherited confirmation/adoption gates plus named amendments; current validation checks design consistency only."
+    },
+    {
+      "requirement_id": "V2-R2",
+      "decision_status": "REFINE",
+      "evidence_tier": [
+        "B"
+      ],
+      "hypothesis_status": null,
+      "implementation_status": "NOT_STARTED",
+      "inherited_fields": "All source requirement fields retained, interpreted through named amendments; no efficacy or confirmation claimed.",
+      "binding_amendments": [
+        "A2",
+        "A3",
+        "CSTAT"
+      ],
+      "future_gate": "All relevant inherited confirmation/adoption gates plus named amendments; current validation checks design consistency only."
+    },
+    {
+      "requirement_id": "V2-R3",
+      "decision_status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "evidence_tier": [
+        "C"
+      ],
+      "hypothesis_status": "UNCONFIRMED_TIER_C",
+      "implementation_status": "NOT_STARTED",
+      "inherited_fields": "All source requirement fields retained, interpreted through named amendments; no efficacy or confirmation claimed.",
+      "binding_amendments": [
+        "A2",
+        "A3",
+        "CSTAT"
+      ],
+      "future_gate": "All relevant inherited confirmation/adoption gates plus named amendments; current validation checks design consistency only."
+    },
+    {
+      "requirement_id": "V2-R4",
+      "decision_status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "evidence_tier": [
+        "A",
+        "B"
+      ],
+      "hypothesis_status": null,
+      "implementation_status": "NOT_STARTED",
+      "inherited_fields": "All source requirement fields retained, interpreted through named amendments; no efficacy or confirmation claimed.",
+      "binding_amendments": [
+        "A2",
+        "A3"
+      ],
+      "future_gate": "All relevant inherited confirmation/adoption gates plus named amendments; current validation checks design consistency only."
+    },
+    {
+      "requirement_id": "V2-R5",
+      "decision_status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "evidence_tier": [
+        "A",
+        "B",
+        "C"
+      ],
+      "hypothesis_status": null,
+      "implementation_status": "NOT_STARTED",
+      "inherited_fields": "All source requirement fields retained, interpreted through named amendments; no efficacy or confirmation claimed.",
+      "binding_amendments": [
+        "A1"
+      ],
+      "future_gate": "All relevant inherited confirmation/adoption gates plus named amendments; current validation checks design consistency only."
+    },
+    {
+      "requirement_id": "V2-R6",
+      "decision_status": "KEEP_AS_IS",
+      "evidence_tier": [
+        "A"
+      ],
+      "hypothesis_status": null,
+      "implementation_status": "NOT_STARTED",
+      "inherited_fields": "All source requirement fields retained, interpreted through named amendments; no efficacy or confirmation claimed.",
+      "binding_amendments": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "CSTAT",
+        "REPEAT"
+      ],
+      "future_gate": "All relevant inherited confirmation/adoption gates plus named amendments; current validation checks design consistency only."
+    }
+  ]
+}

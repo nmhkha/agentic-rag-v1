@@ -1,0 +1,9 @@
+{"query_id": "dev001", "query": "hệ thống trí tuệ nhân tạo rủi ro cao", "split": "dev", "query_type": "topic", "annotation_status": "pending"}
+{"query_id": "dev002", "query": "nghĩa vụ minh bạch của hệ thống AI là gì", "split": "dev", "query_type": "paraphrase", "annotation_status": "pending"}
+{"query_id": "dev003", "query": "Ai chịu trách nhiệm khi hệ thống AI gây sự cố", "split": "dev", "query_type": "actor_obligation", "annotation_status": "pending"}
+{"query_id": "dev004", "query": "Dữ liệu mở được quy định như thế nào?", "split": "dev", "query_type": "definition_policy", "annotation_status": "pending"}
+{"query_id": "dev005", "query": "Cơ chế thử nghiệm có kiểm soát là gì?", "split": "dev", "query_type": "definition", "annotation_status": "pending"}
+{"query_id": "dev006", "query": "Điều kiện tham gia sandbox AI là gì?", "split": "dev", "query_type": "paraphrase_alias", "annotation_status": "pending"}
+{"query_id": "dev007", "query": "Chủ thể phát triển AI có nghĩa vụ gì?", "split": "dev", "query_type": "actor_obligation", "annotation_status": "pending"}
+{"query_id": "dev008", "query": "Quy định về quản lý rủi ro AI?", "split": "dev", "query_type": "topic", "annotation_status": "pending"}
+{"query_id": "dev009", "query": "Khi nào phải thông báo cho người dùng rằng họ đang tương tác với AI?", "split": "dev", "query_type": "condition", "annotation_status": "pending"}

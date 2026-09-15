@@ -1,0 +1,363 @@
+{
+  "schema": "phase5c4-resource-constrained-amendment-manifest-v0",
+  "phase": "5C.4-C2-Lite",
+  "phase_status": "PASS",
+  "protocol_version": "phase5c4-resource-constrained-v0",
+  "protocol_state": "ADOPTED_NOT_EXECUTED",
+  "created_at_utc": "2026-09-13T06:29:13.559300+00:00",
+  "authority": {
+    "kind": "EXPLICIT_USER_VERSIONED_PROTOCOL_AMENDMENT",
+    "request_path": "/home/minhkha/.codex/attachments/c50f3e00-bbec-4954-872d-f9922e611cb5/pasted-text.txt",
+    "request_sha256": "12a108a799ec68a15c566e6a257c137afc6c2ee5cca3d88bc13aa3e634f19e6d"
+  },
+  "role": "TRUSTED_DATASET_CUSTODIAN / PROTOCOL_COORDINATOR",
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "benchmark_track": "RESOURCE-CONSTRAINED MODEL-ADJUDICATED CHALLENGE BENCHMARK",
+  "human_legal_validation": "NOT COMPLETED",
+  "target": {
+    "retained": 36,
+    "DEV": 12,
+    "HOLDOUT_TEST": 24
+  },
+  "actual_final_retained_count": null,
+  "third_model_adjudication_authorized": true,
+  "third_model_adjudication_started": false,
+  "final_selection_started": false,
+  "human_gate_change": {
+    "old_stronger_track": "HUMAN_LEGAL_REVIEW_REQUIRED remains historically true",
+    "new_track": "Model C adjudication plus corpus/annotation quality gates may replace expert signoff for this explicitly limited benchmark",
+    "not_a_claim_original_expert_gate_passed": true
+  },
+  "override_domains": [
+    "annotation acceptance route and claim strength",
+    "activate existing 36/12/24 alternative",
+    "dimension/subtype/control quotas as soft objectives",
+    "group equivalent C1 issues with complete normalization crosswalk"
+  ],
+  "unchanged_contracts": [
+    "corpus-v0.1",
+    "immutable prior artifacts and queries",
+    "evaluator-only gold",
+    "OR/AND support and P+/Q/U ledger",
+    "outcome-independent selection",
+    "whole-cluster separation",
+    "DEV exposure restrictions",
+    "HOLDOUT blindness",
+    "D6 post-lock only",
+    "historical denominator separation",
+    "provisional acceptance margins"
+  ],
+  "sources": {
+    "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_frozen_design_spec_v0.md": {
+      "sha256": "8832e11cb6181913273fccc7abc6b4dfc6fb01dee7f57a9de50409e907c7c990",
+      "size_bytes": 14277
+    },
+    "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_design_amendments_v0.md": {
+      "sha256": "9653e43729861f99a57116f8fb50550f99c4197046d33e103f2df7908ab1e644",
+      "size_bytes": 7772
+    },
+    "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_margin_governance_v0.md": {
+      "sha256": "db39a21f260dece9816c937de2af4859102858276913862d4e4ed41013e65b9a",
+      "size_bytes": 4559
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_challenge_set_design_v0.md": {
+      "sha256": "1f8514571e3fdea048e26eaa399961b54ff2e5af7dd1111fa1904976c0532dc0",
+      "size_bytes": 22031
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_validation_v0.json": {
+      "sha256": "f8fd9c5cc75cb52c74e199c593ae4c1c5b9466f10dc5a2b2feb7774e51495f15",
+      "size_bytes": 3045
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_disagreement_summary_v0.json": {
+      "sha256": "d28ebb3cabb33b8c3ca2c967387da7ef1fdc6bd34efbc7ff46b71205b17a0546",
+      "size_bytes": 14049
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_agreement_metrics_v0.json": {
+      "sha256": "a113793b9bb24f0975f6c72c3f29283a3f0b483d04f8b69d8457d697f73fd716",
+      "size_bytes": 15405
+    }
+  },
+  "frozen_source_bindings": [
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/integrity_baseline_v0.json",
+      "sha256": "7fc04586a648abbead8ee4eb5b3248ef44323b4f82bfae1edd8bc44b882f281b",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/integrity_before_after_v0.json",
+      "sha256": "b201c64b6eedacf6b5fb9c48193414e0c65f8bb78c677706ccf74d804e7c81c3",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_console_v0.txt",
+      "sha256": "0f3519f579536fb4f11ef6f3b95400f89b273a827e6d9a4c2d471d18f0dc3108",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_controller_status_decision_table_v0.json",
+      "sha256": "7bc3657066e63efcf1e4f1f61e447ec4205fff4af6dfa33136a5e998edd63082",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_decision_table_validation_v0.json",
+      "sha256": "e70018e9a7aaf985ffc6f01a2be0f7782c2c1b598e3cd8bd9564c6a1243556e0",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_design_amendments_v0.md",
+      "sha256": "9653e43729861f99a57116f8fb50550f99c4197046d33e103f2df7908ab1e644",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_external_review_v0.md",
+      "sha256": "a4f5b7610e0d4c6ec8b20d1dae0d0d0cc3f2dfeaed4a3bb57f2543ff07468925",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_frozen_design_spec_v0.md",
+      "sha256": "8832e11cb6181913273fccc7abc6b4dfc6fb01dee7f57a9de50409e907c7c990",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_margin_governance_v0.md",
+      "sha256": "db39a21f260dece9816c937de2af4859102858276913862d4e4ed41013e65b9a",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_quota_scheduler_requirements_v0.md",
+      "sha256": "6d5de9e5d61cfbd3a19edd8de3ca4ebb3febeaadfce7cd614033c4fc126f662d",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_spec_bindings_v0.json",
+      "sha256": "3507739309e3fb5abf61321c1bd9bb044cbe620218b80a72234020bdd839309d",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_trace_matrix_amendment_v0.json",
+      "sha256": "d8c8fa6ac9df1da5fe94e50824443f42a881695eebd81e615f0e73aec3b05b3c",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_validation_v0.json",
+      "sha256": "1aafda3855bec4816f31e159bcef3468dae3ba7cca04e3577744719be8fa94d0",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_applicability_sufficiency_comparison_v0.jsonl",
+      "sha256": "8031e934ccf47fd524aecc1f7786b6f5e87748079c05ff103c29d2019a8be459",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_aspect_mapping_v0.jsonl",
+      "sha256": "2fdb677778533cfc65ade2a44909682520bb8215b96a0238328e3a98f7131267",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_candidate_alignment_v0.json",
+      "sha256": "848a2bcb6511995813935ab341fb371cfd47aa34ddb38b34d83a24e509c4da49",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_contamination_comparison_v0.jsonl",
+      "sha256": "84c9897e15ce5ac27df6b05cd4528e22aa1e0967c893617b81c839a999a46071",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_corpus_audit_comparison_v0.jsonl",
+      "sha256": "4ce64b46e48fb1071889da5186732627697f3589a2e9a27c1a6fb44525482801",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_disagreement_registry_v0.jsonl",
+      "sha256": "0a6b777456385e15d1c7a6f3410eedfa596b2e90547cb71a25de7f76e32f2fee",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_scope_comparison_v0.jsonl",
+      "sha256": "d41f8c70c6db64f3a4422f00dedeffb3c52994dc74d24e245e69117944572f73",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_support_comparison_v0.jsonl",
+      "sha256": "41b6a718bacc293791115543e0f20cb17f99918b5c5a59c88fcd1bc297dacaec",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/artifact_hashes_v0.json",
+      "sha256": "24b469bcf09eec33eb7926bb286feaca5f708c93e297381f6274a528ee75f7a1",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/build_comparison_v0.py",
+      "sha256": "4f14bc5f0082684af0c91e07d41b7b36f5cfd7efdf788bb0224b7d7fe74a2e87",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/comparison_access_manifest_v0.json",
+      "sha256": "f68e502fa3a9a1e3d6c6021a70a81ca0dfd1051bd04e0cde9de5b825d58eb99a",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/comparison_check_results_v0.json",
+      "sha256": "b3c73d57c8b81120733c956bf36029d000cec843426b5d437cb345515d324031",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/integrity_baseline_v0.json",
+      "sha256": "77157feaa4794c4fb3c183bbe825c4d5165c044d66d5ea3e2bf511803aa55ca5",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/integrity_before_after_v0.json",
+      "sha256": "235706b98ce0dbfdae5971a3159820946f08b1f4b2c388db83b69c230bc21bf8",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_agreement_metrics_v0.json",
+      "sha256": "a113793b9bb24f0975f6c72c3f29283a3f0b483d04f8b69d8457d697f73fd716",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_comparison_report_v0.md",
+      "sha256": "a054a1358bb3aacee13d0b919f7cfae286c492360ba473096a66644d5e3a4064",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_console_v0.txt",
+      "sha256": "f6829fc0a925e0e923f5eb4d99022b4c6c6bd8cef10d26eb6a0f7938a317e911",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_disagreement_summary_v0.json",
+      "sha256": "d28ebb3cabb33b8c3ca2c967387da7ef1fdc6bd34efbc7ff46b71205b17a0546",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_validation_v0.json",
+      "sha256": "f8fd9c5cc75cb52c74e199c593ae4c1c5b9466f10dc5a2b2feb7774e51495f15",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/semantic_mapping_decisions_v0.py",
+      "sha256": "49e93f19bde75f30fa5f893821017baecedb19e1cb9ee6758db266b68a826bf9",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/source_integrity_validation_v0.json",
+      "sha256": "80a7d0ec09cf99773216ca20640706aa0ae2659bdb8e8e07904c728a6bdfd0f4",
+      "match": true
+    },
+    {
+      "registry": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/final_artifact_hashes_v0.json",
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/validate_comparison_v0.py",
+      "sha256": "d8a23398f3e3d75bc4b8f3fe544bf1021fa51073975b3646eb60ded89e5ef04d",
+      "match": true
+    }
+  ],
+  "source_bindings_pass": true,
+  "prior_comparison": {
+    "candidates": 60,
+    "full_substantive_agreement": 0,
+    "unresolved_issues": 503,
+    "candidate_priority": {
+      "LOW": 0,
+      "MEDIUM": 14,
+      "HIGH": 41,
+      "CRITICAL_REVIEW": 5
+    },
+    "interpretation": "Conservative confirmed agreement, not 60 legally incorrect candidates"
+  },
+  "selection_rules": "phase5c4_selection_rules_v0.json",
+  "adjudicator_protocol": "phase5c4_adjudicator_c_protocol_v0.md",
+  "claim_boundaries": "phase5c4_research_claim_boundaries_v0.md",
+  "amendment": "phase5c4_resource_constrained_amendment_v0.md",
+  "D6": "EMPIRICAL_UNVERIFIED",
+  "holdout_blindness": "REQUIRED",
+  "holdout_storage_isolation": "NOT_YET_ENFORCED",
+  "implementation_safe_workspace_validated": false,
+  "implementation_started": false,
+  "dataset_frozen": false,
+  "dataset_freeze_ready": false,
+  "acceptance_margins": {
+    "status": "PROVISIONAL",
+    "final_values": null,
+    "decision_stage": "Phase 5C.5 before TEST",
+    "outcome_based_tuning": "FORBIDDEN"
+  },
+  "historical_benchmark": {
+    "queries": 31,
+    "points": 102,
+    "role": "HISTORICAL COMPARABILITY BENCHMARK",
+    "modified": false,
+    "untouched_v2_confirmatory_holdout": false,
+    "pool_with_challenge_denominators": false
+  },
+  "execution": {
+    "network_api_calls": 0,
+    "production_calls": 0,
+    "evaluator_calls": 0,
+    "retrieval_reranking_inference_calls": 0,
+    "system_outputs_substantively_inspected": 0,
+    "C_adjudications": 0,
+    "candidate_selections": 0,
+    "basis": "This phase used local protocol reads/writes, standard-library validation and binary integrity hashing only. No project runtime or inference pipeline was imported; counts are task-initiated activity, not OS-wide attestation."
+  },
+  "preexisting_integrity": "PASS",
+  "ready_for_model_adjudication_final_selection": true,
+  "readiness_meaning": "Protocol authorization only; C needs a separately prepared, validated packet and fresh independent context. No completed adjudication, selection or freeze is claimed.",
+  "blocking_release_gates": [
+    "independent C annotation and hard retention gates",
+    "feasible cluster-safe 12/24 selection",
+    "query/gold/split lock",
+    "validated HOLDOUT access boundary"
+  ],
+  "final_artifact_names": [
+    "phase5c4_resource_constrained_amendment_v0.md",
+    "phase5c4_research_claim_boundaries_v0.md",
+    "phase5c4_adjudicator_c_protocol_v0.md",
+    "phase5c4_selection_rules_v0.json",
+    "phase5c4_amendment_manifest_v0.json",
+    "phase5c4_amendment_validation_v0.json",
+    "integrity_before_after_v0.json",
+    "phase5c4_amendment_console_v0.txt",
+    "integrity_baseline_v0.json",
+    "finalize_amendment_v0.py",
+    "artifact_hashes_v0.json"
+  ],
+  "public_content_policy": "Protocol and aggregate facts only; no candidate text, gold or split mapping copied. Baseline inventory and source paths are custodian provenance, not an implementation-safe export."
+}

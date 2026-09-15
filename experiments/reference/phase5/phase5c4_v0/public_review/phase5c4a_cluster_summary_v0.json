@@ -1,0 +1,808 @@
+{
+  "status": "PROVISIONAL",
+  "cluster_separation": "PASS",
+  "cluster_count": 51,
+  "clusters": [
+    {
+      "cluster_id_hash": "6b8a4a2908c8cbb1435a2dc9cddfc1c41a6ce68116aff36706a47230eac17c61",
+      "opaque_query_ids": [
+        "q_8ccdc3c4ee85dadcd60d"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "a47872c9f771f64f102682047e79dc5ae37d4c5e0bcf1241d953d0702b0e4cc9",
+      "opaque_query_ids": [
+        "q_88f96f6661303a520be5"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "09f26a6b1bc3800b307061f9b65c34e919363e3a060b92111031340a052f18b9",
+      "opaque_query_ids": [
+        "q_0e4980e0bb419c668b44"
+      ],
+      "provisional_splits": [
+        "RESERVE"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "097f8c50fe7beaefb7bb7aae0fca50740175e1a8fc14e7b2bc67d26635ece1cf",
+      "opaque_query_ids": [
+        "q_555fa4b2dfa1d3f428df"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "aea12411e64b124b13f627cdcabed37bd11f72de2e84aba8385e65cf6a0b8abb",
+      "opaque_query_ids": [
+        "q_5a8c3a6939072e9d256a"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "e5e50557c27d7ebfa2843cb517d4329807cc1bc8739ef97d00d0ccb99409dbf5",
+      "opaque_query_ids": [
+        "q_6f97ffb51be5fdaf892f"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "b4c8bdb27f808890ba6a5db0e5e52f066eff9911141bc07eac29bcf371eefe19",
+      "opaque_query_ids": [
+        "q_dcc92aaa0791fa98004c",
+        "q_4a979d778bce4f6552ab"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 2,
+      "primary_families": [
+        "deployment_scope_assessment",
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "0e22d33d99dee9a6c9d171bf45d820129966811f28677edfd49c1631c6aa8fef",
+      "opaque_query_ids": [
+        "q_a4eada08ab842902e775"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "616608a71fb6ec72691235d356838cdae12a160933b30abbb70e50a1223a8dba",
+      "opaque_query_ids": [
+        "q_641743d24f2f6ba314bd"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "3b8e7fe3fec75b5530182dcf449836163ac181b013ff7e67c92423304c39edb7",
+      "opaque_query_ids": [
+        "q_6570dddcf3bb1e16516f"
+      ],
+      "provisional_splits": [
+        "RESERVE"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "eb949232868c0a677e7b45aed09f0c69f15d9e75b36618ef1d3fed91eae83c24",
+      "opaque_query_ids": [
+        "q_1642611dc39f3f0e302f",
+        "q_2f80182d7e1efdf966c7",
+        "q_dbb862f75f4b23442a3d"
+      ],
+      "provisional_splits": [
+        "DEV",
+        "RESERVE"
+      ],
+      "member_count": 3,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling",
+        "deployment_scope_assessment"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "5d338a48b0b154c09b4dc6a0bafde7e56e715735d18d7164e6a1608d9eae1cfc",
+      "opaque_query_ids": [
+        "q_81bb95ba1f19f186ab25"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "deployment_scope_assessment"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "b01e7b170ffcdd64621a16eb8e2fa3130c4b2f4024b824add2a99651e824a080",
+      "opaque_query_ids": [
+        "q_4f81b0869e9d14221596"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "533ce3638eee7c6d992f61c5b834643222f859843f642d1fe28ee2610cc215d7",
+      "opaque_query_ids": [
+        "q_8357958f95ff2e0baa41"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "33c9a39e90672f66601d8704cfb0bed531fead5c3e3da5258f59a2fe0b0b6b41",
+      "opaque_query_ids": [
+        "q_1ade66d9d5bb022b867f",
+        "q_afa050568a2a155f495b"
+      ],
+      "provisional_splits": [
+        "DEV",
+        "RESERVE"
+      ],
+      "member_count": 2,
+      "primary_families": [
+        "actor_condition_applicability",
+        "deployment_scope_assessment"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "fb91083307354b00ed001e802f409ad8402e6fa5aea484df45815c9499941454",
+      "opaque_query_ids": [
+        "q_efb22fad6d7dad9fa17a"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "01116202ac3ddd2da4f8fba03a01b27c9be7931b7659fd0a77da826a4816eba0",
+      "opaque_query_ids": [
+        "q_182d7b08c6e0fdc0ae46"
+      ],
+      "provisional_splits": [
+        "RESERVE"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "e15246559932cd44740fa667922003a37b50913c2b634673658b32694ed5afa0",
+      "opaque_query_ids": [
+        "q_c435ea84a01bd76f8166",
+        "q_c281e8c976e7207bf144"
+      ],
+      "provisional_splits": [
+        "DEV",
+        "RESERVE"
+      ],
+      "member_count": 2,
+      "primary_families": [
+        "actor_condition_applicability",
+        "deployment_scope_assessment"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "29b00edda64abdde639b139b1bcb607cc7da30cac5c2bd285fecc3f6a826924e",
+      "opaque_query_ids": [
+        "q_fc35aef795821c34b6f1"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "a676c2e5014274ce26b3898869d7a425d7e680ce8a9bbf9d6006115a1a9814b2",
+      "opaque_query_ids": [
+        "q_9f10deed791a1ec07d04"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "deployment_scope_assessment"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "002f552a832333458b10bc60f4428203f3dd5813ef7cc100a3f8e6e3da1e4f66",
+      "opaque_query_ids": [
+        "q_b67987d68e10d7d0986d"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "deployment_scope_assessment"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "91b33e34130fd119fb4b5b42eff7dd479af9db3707d46def16e2b7b448ac06d7",
+      "opaque_query_ids": [
+        "q_90f3303b7d7b22395d96"
+      ],
+      "provisional_splits": [
+        "RESERVE"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "80a1e56e32b7e5e9ca8b5df393c956843fc76e4604a0ad3fe60aef646776685a",
+      "opaque_query_ids": [
+        "q_c13f165c8ac1296c1449"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "deployment_scope_assessment"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "a98e41b03b67bb031e7408e6ab7887422a028cd957a7da718ab5fed645b64f3e",
+      "opaque_query_ids": [
+        "q_90695ba7553824abd1e6"
+      ],
+      "provisional_splits": [
+        "EXCLUDE"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "EXCLUDED",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "c32a055df85aa39d3c1c2a5c361839e3f1c3c7e2f1592e228a95ebf03eae9e32",
+      "opaque_query_ids": [
+        "q_29b66d9a5f0ae2ef98a4"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "8fc6ce53aaf21ed25b8d54b065f6bd5427284b65aa61f5145f83c3eac75f7b23",
+      "opaque_query_ids": [
+        "q_2082d6e4ad79123c6d14"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "68830b527445cc437d93acc4ed02e8c82413274ce5eedb71ebfa3b4d35671afd",
+      "opaque_query_ids": [
+        "q_10309a829e08c3a4fecf"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "430fc83345532d9ab29ce5f97f453c49c779adc5309b03a44ea70e19d1945319",
+      "opaque_query_ids": [
+        "q_1f06ae333c1e3c774329"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "deployment_scope_assessment"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "c2b8b6bf9fb5bb81470b688c997644b7fa5c33c2713ba37a40ddc03750298e24",
+      "opaque_query_ids": [
+        "q_7a2a93af56c529c8ef41"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "560514fb72ca230a337ecbb0226d4510263fb86083eb7d03aecc2258e77804a1",
+      "opaque_query_ids": [
+        "q_0562c6d6516359c63413"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "deployment_scope_assessment"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "14a908d14fbe31a9c0030d333ec8e73517fa3d19b5750d7f1141f60ae1763f41",
+      "opaque_query_ids": [
+        "q_8324e664cda8a81236ed",
+        "q_14e8b10bc8926bd979f0"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST",
+        "RESERVE"
+      ],
+      "member_count": 2,
+      "primary_families": [
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "7371dbf48799f175b219e3a310dc9e7e27c84fff3f5b88a33b733ffe53ba4faf",
+      "opaque_query_ids": [
+        "q_50069fac66d1e12205cf"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "9d8882a5989630376c75ee5563305e5b74f5e2b80e68b5ed0f2348fc98b07928",
+      "opaque_query_ids": [
+        "q_fcae400ebdbdbe36cce8"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "deployment_scope_assessment"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "5c045ae3ef91e688ad4e682dad1d0a629c7476cb25322cd52d742774d459d399",
+      "opaque_query_ids": [
+        "q_d26cb3f576e88854d6d8"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "6d8ca1c65b2860789606c1436abf2fab47debe1ed3bddf65c095a1fdd9153a37",
+      "opaque_query_ids": [
+        "q_d5df8d6efaee273f39d3"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "7bb4739654d43099203240cf2425df007e73b17eab64b500e2890ad796bdf114",
+      "opaque_query_ids": [
+        "q_af1b2d179667a0c14929"
+      ],
+      "provisional_splits": [
+        "EXCLUDE"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "EXCLUDED",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "b07814340133950cd6b07d1f8eebfe3f17347afdca520818ae8595c44b0efc05",
+      "opaque_query_ids": [
+        "q_328ee3ab8c3e08738fd1",
+        "q_b7d036582f1f01ec746f"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 2,
+      "primary_families": [
+        "actor_condition_applicability",
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "c4be065baa28f584f2a72b188e679aeec9bb1db5e54602aab7a31e0c5018fbd4",
+      "opaque_query_ids": [
+        "q_a195fa72dea87b439d7a",
+        "q_4d28afa77e15a3afd8f1"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 2,
+      "primary_families": [
+        "deployment_scope_assessment",
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "46a26727908c64994fec865772731c11b5b6f751680a87dfaa2e119d65b0e5ef",
+      "opaque_query_ids": [
+        "q_9a930d0151f1f2cbb452"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "97eb39fc4ece8d7b94f476d6116c481d81e46ce9187d0e272d49ac5829014b8d",
+      "opaque_query_ids": [
+        "q_1e3dead5b493f0725223"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "863b02f5313eb496bf5d2f101bd7cb5ef45c8284c32f34517cdb95d0aed8456f",
+      "opaque_query_ids": [
+        "q_74a9553aea20f985c661"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "f15f5e84512392377fbbb259dd723fbb65eeb1e84d2026529a0b830b2a613c8d",
+      "opaque_query_ids": [
+        "q_97f3e68f1e2cce1b2bf4",
+        "q_11a30508142a0893b998"
+      ],
+      "provisional_splits": [
+        "DEV",
+        "RESERVE"
+      ],
+      "member_count": 2,
+      "primary_families": [
+        "actor_condition_applicability",
+        "multi_duty_procedural_synthesis"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "a20dad204c75110dee582e96a478d06bd15d05161502442dd432864a22a60d67",
+      "opaque_query_ids": [
+        "q_c8a99d5afd80afefa090"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "deployment_scope_assessment"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "78207b053aa7f3b3f59ec8b7e8f4be2fca59f4f23b5d93977dfeb3ca78d6d90b",
+      "opaque_query_ids": [
+        "q_39d7771240b14f062898"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "8157ea3a5850b36335e480ce5bac4f6804d5196017e6432f591be9e78ed80703",
+      "opaque_query_ids": [
+        "q_025b90f0aa489f1f483f"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "f21d7154125332ca0050585d32e955946bc5dce7c8c3f5ff7156e02a2f7acc2c",
+      "opaque_query_ids": [
+        "q_bc2e1864c7f8705e3966"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "bb62814fcf2dd3829a887fd5b72084b009c9cf01a4c17f4a21c295c063d5538a",
+      "opaque_query_ids": [
+        "q_4fe83fa6e245d03c20fc"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "a34c153b4133c0873b26d86d32dbb1b6a6876d15d356c5fc77c46461cdedf3bd",
+      "opaque_query_ids": [
+        "q_89ad16a113cd52847d7c"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "fccf0999635d11e84d178170b98c8e0ae1b3ad2244c8c0d015f7b279bd854f76",
+      "opaque_query_ids": [
+        "q_b603d3ddf288b72f3954"
+      ],
+      "provisional_splits": [
+        "RESERVE"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "deployment_scope_assessment"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "e43b49d4185137122d57246d9144743fc1796a29f25fd4fbdc03aa22a6a06354",
+      "opaque_query_ids": [
+        "q_df59222dfdcfceaa0aac"
+      ],
+      "provisional_splits": [
+        "HOLDOUT_TEST"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "corpus_boundary_partial_answer_handling"
+      ],
+      "split_family": "HOLDOUT_TEST",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "cluster_id_hash": "0b4de220fb1a344ca0ddbadadc470bfa37aa00b47064d7fe16fd4a5a6d14aca1",
+      "opaque_query_ids": [
+        "q_8207ae5a788317993abd"
+      ],
+      "provisional_splits": [
+        "DEV"
+      ],
+      "member_count": 1,
+      "primary_families": [
+        "actor_condition_applicability"
+      ],
+      "split_family": "DEV",
+      "annotation_status": "PENDING_INDEPENDENT_REVIEW"
+    }
+  ],
+  "definition": "Same scenario, proposition bundle, paraphrase or legal-task template with leakage risk; source Article overlap alone insufficient.",
+  "independent_cluster_review_pending": true,
+  "retained_cluster_count": 44,
+  "retained_cross_primary_family_cluster_count": 4,
+  "stratum_feasibility_review": {
+    "status": "PENDING_EXTERNAL_REVIEW_BEFORE_5C4C_FREEZE",
+    "reason": "Some whole retained clusters span primary families. Frozen resampling language refers to primary-family strata. A later reviewer must resolve stratum assignment consistently with whole-cluster sampling; no algorithm is chosen or frozen here.",
+    "affected_cluster_hashes": [
+      "eb949232868c0a677e7b45aed09f0c69f15d9e75b36618ef1d3fed91eae83c24",
+      "b4c8bdb27f808890ba6a5db0e5e52f066eff9911141bc07eac29bcf371eefe19",
+      "c4be065baa28f584f2a72b188e679aeec9bb1db5e54602aab7a31e0c5018fbd4",
+      "b07814340133950cd6b07d1f8eebfe3f17347afdca520818ae8595c44b0efc05"
+    ],
+    "cluster_splitting_to_match_strata_or_counts": "FORBIDDEN"
+  }
+}

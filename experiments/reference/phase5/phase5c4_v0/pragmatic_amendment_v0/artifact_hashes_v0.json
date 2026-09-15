@@ -1,0 +1,47 @@
+{
+  "purpose": "Versioned protocol amendment provenance; not dataset freeze",
+  "algorithm": "sha256",
+  "self_excluded": true,
+  "artifacts": {
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/finalize_amendment_v0.py": {
+      "sha256": "46316e9ec4612efc396bcdd6c5e4c1ad3a8654aadff1abc6a4d5c09afcb0479f",
+      "size_bytes": 19203
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/integrity_baseline_v0.json": {
+      "sha256": "0340ca33b75b9b86afe937ba119fe29ca312259e454a9c9ff8e2d3995d77e691",
+      "size_bytes": 6818373
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/integrity_before_after_v0.json": {
+      "sha256": "09cac1eee62b7c7bdde2a5be3c701e2fc291bd182d30b19b1d44519da719e80c",
+      "size_bytes": 2048
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_adjudicator_c_protocol_v0.md": {
+      "sha256": "7ce7968355d9774118fba20f3e48c8453fd783e0407ffc3285c4b5d637f53053",
+      "size_bytes": 8267
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_amendment_console_v0.txt": {
+      "sha256": "59c6986ea2d003d855c91844e53304463796f6854bc70a86f8e805e70f07fb8f",
+      "size_bytes": 586
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_amendment_manifest_v0.json": {
+      "sha256": "2c0d7a52b749bbd6a65f769d67627c0a39105895afbe0f7c7b8d1406b2ad45d6",
+      "size_bytes": 18028
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_amendment_validation_v0.json": {
+      "sha256": "4069c115483f3f46ec9f661448179041d39f8f2617bfb2b919ad288a10bfba66",
+      "size_bytes": 4399
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_research_claim_boundaries_v0.md": {
+      "sha256": "a5ca6a908f571a975ce18af3bb322ba8b69c6bdf6eba2125ba8a93eba52be534",
+      "size_bytes": 4562
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_resource_constrained_amendment_v0.md": {
+      "sha256": "14a4c7d8d55f55519f94ed27a98536841ffe40cf4ff2aef785ee7a7d3cfe2771",
+      "size_bytes": 7202
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_selection_rules_v0.json": {
+      "sha256": "47614f723579066fb815a6214785e460918f6bc0a115150d1295f4f37acaf756",
+      "size_bytes": 7449
+    }
+  }
+}

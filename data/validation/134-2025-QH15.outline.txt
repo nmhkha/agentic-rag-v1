@@ -1,0 +1,50 @@
+CHƯƠNG I — QUY ĐỊNH CHUNG
+    Điều 1. Phạm vi điều chỉnh [khoản=2, điểm=0]
+    Điều 2. Đối tượng áp dụng [khoản=0, điểm=0]
+    Điều 3. Giải thích từ ngữ [khoản=8, điểm=0]
+    Điều 4. Nguyên tắc cơ bản trong hoạt động trí tuệ nhân tạo [khoản=4, điểm=0]
+    Điều 5. Chính sách của Nhà nước đối với hoạt động trí tuệ nhân tạo [khoản=8, điểm=0]
+    Điều 6. Ứng dụng trí tuệ nhân tạo trong các ngành, lĩnh vực [khoản=4, điểm=2]
+    Điều 7. Các hành vi bị nghiêm cấm [khoản=6, điểm=4]
+    Điều 8. Cổng thông tin điện tử một cửa về trí tuệ nhân tạo và Cơ sở dữ liệu quốc gia về hệ thống trí tuệ nhân tạo [khoản=4, điểm=0]
+
+CHƯƠNG II — PHÂN LOẠI VÀ QUẢN LÝ
+    Điều 9. Phân loại mức độ rủi ro của hệ thống trí tuệ nhân tạo [khoản=3, điểm=3]
+    Điều 10. Phân loại và thông báo hệ thống trí tuệ nhân tạo [khoản=7, điểm=3]
+    Điều 11. Trách nhiệm minh bạch [khoản=6, điểm=0]
+    Điều 12. Trách nhiệm quản lý và xử lý sự cố trí tuệ nhân tạo [khoản=5, điểm=2]
+    Điều 13. Đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo có rủi ro cao [khoản=6, điểm=2]
+    Điều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao [khoản=7, điểm=13]
+    Điều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro trung bình và thấp [khoản=3, điểm=7]
+
+CHƯƠNG III — PHÁT TRIỂN HẠ TẦNG VÀ BẢO ĐẢM CHỦ QUYỀN
+    Điều 16. Hạ tầng trí tuệ nhân tạo quốc gia [khoản=6, điểm=0]
+    Điều 17. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo [khoản=6, điểm=0]
+    Điều 18. Làm chủ công nghệ trí tuệ nhân tạo [khoản=5, điểm=0]
+
+CHƯƠNG IV — ỨNG DỤNG TRÍ TUỆ NHÂN TẠO, PHÁT TRIỂN HỆ SINH THÁI
+    Điều 19. Chiến lược quốc gia về trí tuệ nhân tạo [khoản=3, điểm=0]
+    Điều 20. Phát triển hệ sinh thái và thị trường trí tuệ nhân tạo [khoản=6, điểm=4]
+    Điều 21. Cơ chế thử nghiệm có kiểm soát đối với trí tuệ nhân tạo [khoản=4, điểm=2]
+    Điều 22. Quỹ Phát triển trí tuệ nhân tạo quốc gia [khoản=5, điểm=5]
+    Điều 23. Phát triển nguồn nhân lực trí tuệ nhân tạo [khoản=7, điểm=0]
+    Điều 24. Phát triển cụm liên kết trí tuệ nhân tạo [khoản=4, điểm=2]
+    Điều 25. Hỗ trợ doanh nghiệp trong lĩnh vực trí tuệ nhân tạo [khoản=7, điểm=0]
+
+CHƯƠNG V — ĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG
+    Điều 26. Khung đạo đức trí tuệ nhân tạo quốc gia [khoản=5, điểm=4]
+    Điều 27. Trách nhiệm đạo đức và đánh giá tác động khi ứng dụng trí tuệ nhân tạo trong quản lý nhà nước và cung cấp dịch vụ công [khoản=5, điểm=0]
+
+CHƯƠNG VI — THANH TRA, KIỂM TRA VÀ XỬ LÝ VI PHẠM
+    Điều 28. Thanh tra, kiểm tra [khoản=4, điểm=0]
+    Điều 29. Xử lý vi phạm và trách nhiệm bồi thường thiệt hại [khoản=5, điểm=2]
+
+CHƯƠNG VII — QUẢN LÝ NHÀ NƯỚC VỀ TRÍ TUỆ NHÂN TẠO
+    Điều 30. Nội dung và trách nhiệm quản lý nhà nước về trí tuệ nhân tạo [khoản=2, điểm=10]
+    Điều 31. Nguyên tắc cung cấp thông tin, dữ liệu phục vụ quản lý nhà nước [khoản=3, điểm=0]
+    Điều 32. Hợp tác quốc tế [khoản=2, điểm=0]
+
+CHƯƠNG VIII — ĐIỀU KHOẢN THI HÀNH
+    Điều 33. Bãi bỏ một số chương, điều, khoản, điểm của Luật Công nghiệp công nghệ số số 71/2025/QH15 [khoản=0, điểm=0]
+    Điều 34. Hiệu lực thi hành [khoản=0, điểm=0]
+    Điều 35. Điều khoản chuyển tiếp [khoản=2, điểm=2]

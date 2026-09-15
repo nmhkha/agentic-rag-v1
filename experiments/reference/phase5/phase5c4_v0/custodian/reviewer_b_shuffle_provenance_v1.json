@@ -1,0 +1,36 @@
+{
+  "schema": "reviewer-b-shuffle-provenance-v1",
+  "committed_at_utc": "2026-09-11T13:57:27.187943+00:00",
+  "seed_hex": "d755c34542accd234916043dce98798b4057d08070839c93bda7b85bdac3fafb",
+  "id_key_hex": "f8db56b15b194a236b521dcadeefefcecf01680fba169307e5eb528a01b0ffa6",
+  "seed_source": "OS cryptographic randomness; chosen once before source rows are parsed",
+  "algorithm": "Sort B-local IDs ascending by HMAC-SHA256(seed, ASCII B-local ID), with ID tie-break",
+  "id_algorithm": "rb_ + first 32 lowercase hex digits of HMAC-SHA256(id_key, UTF8 canonical ID)",
+  "quality_blind": true,
+  "seed_reselection": false,
+  "annotation_quality_or_system_performance_inputs": [],
+  "input_hash_serialization": "UTF8 compact JSON array of canonical IDs in source order",
+  "output_hash_serialization": "UTF8 compact JSON array of B IDs in presentation order",
+  "authorized_roles": [
+    "TRUSTED_DATASET_CUSTODIAN"
+  ],
+  "reviewer_b_access": "FORBIDDEN",
+  "input_list_sha256": "1ef2511efe8162a9ac66c2e71c44bba4b653d89ddda5aad2497b20586c10aada",
+  "output_order_sha256": "394e8909f1c09806a199dda476b532aa49f07a9994ff4c0b9ebd87ab30039288",
+  "committed_provenance_keys": [
+    "schema",
+    "committed_at_utc",
+    "seed_hex",
+    "id_key_hex",
+    "seed_source",
+    "algorithm",
+    "id_algorithm",
+    "quality_blind",
+    "seed_reselection",
+    "annotation_quality_or_system_performance_inputs",
+    "input_hash_serialization",
+    "output_hash_serialization",
+    "authorized_roles",
+    "reviewer_b_access"
+  ]
+}

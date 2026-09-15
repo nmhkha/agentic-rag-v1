@@ -1,0 +1,21 @@
+{
+  "screened_at_utc": "2026-09-11T14:25:34.109051+00:00",
+  "substantive_lock_sha256": "f55ae02a845ab7c2f2dcf8b59a5574e64465cb6a071347868137be8a0576f1dc",
+  "original_substantive_copy": "annotation_B_substantive_locked_v1.jsonl",
+  "substantive_scope_aspects_evidence_answerability_dimensions_changed": false,
+  "only_post_screen_admission_and_contamination_metadata_added": true,
+  "status": "PENDING_SANITIZED_REFERENCE",
+  "historical_source": "data/evaluation/generation/phase5/query_inputs_v0.json",
+  "historical_source_fields": [
+    "query_id",
+    "query"
+  ],
+  "historical_count": 31,
+  "candidate_pairs_compared": 1770,
+  "candidate_historical_pairs_compared": 1860,
+  "new_candidate_semantic_flag_pairs": 7,
+  "exact_or_normalized_duplicate_events": 0,
+  "medical_reference_read": false,
+  "old_packet_read": false,
+  "authorization": "User explicitly requires newly sanitized and audited medical reference; missing source does not compromise independent substantive review."
+}

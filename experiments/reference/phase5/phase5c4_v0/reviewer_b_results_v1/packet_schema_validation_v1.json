@@ -1,0 +1,13 @@
+{
+  "candidate_count": 60,
+  "exact_fields": true,
+  "string_fields": true,
+  "unique_ids": true,
+  "manifest_hash_matches": true,
+  "candidate_content_semantically_seen": true,
+  "status": "PASS",
+  "query_text_read_in_authorized_session_tool_output": true,
+  "authorization": "User expressly allowed reading queries through tool output in this session; exact queries remain forbidden in result console/public reports.",
+  "public_report_or_result_console_query_text_emitted": false,
+  "initial_schema_check_query_text_emitted": false
+}

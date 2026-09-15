@@ -1,0 +1,8 @@
+CHƯƠNG (không xác định)
+    Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng [khoản=3, điểm=0]
+    Điều 2. Giải thích từ ngữ [khoản=3, điểm=0]
+    Điều 3. Khung đạo đức trí tuệ nhân tạo quốc gia [khoản=4, điểm=17]
+    Điều 4. Hiệu lực thi hành [khoản=0, điểm=0]
+    Điều 5. Trách nhiệm thi hành [khoản=3, điểm=0]
+
+PHỤ LỤC KHÔNG PARSE THÀNH ĐIỀU: bắt đầu dòng 75, 50 dòng không rỗng

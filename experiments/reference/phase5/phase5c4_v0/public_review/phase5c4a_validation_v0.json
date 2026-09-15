@@ -1,0 +1,209 @@
+{
+  "phase": "5C.4-A",
+  "phase_status": "PASS",
+  "all_construction_gates_pass": true,
+  "annotation_status": "FIRST_PASS / PENDING_INDEPENDENT_REVIEW",
+  "validation_scope": "Local schema/support-link/hash/confidentiality/cluster QA plus A manual legal and structural review; not independent legal correctness or adjudication.",
+  "checks": [
+    {
+      "gate": "frozen_phase5c3_hash_bindings",
+      "status": "PASS",
+      "evidence": {
+        "checked": 59,
+        "phase_status": "PASS",
+        "freeze_status": "FROZEN"
+      }
+    },
+    {
+      "gate": "unique_opaque_ids_and_query_hashes",
+      "status": "PASS",
+      "evidence": "60 unique IDs and exact-query SHA256 values"
+    },
+    {
+      "gate": "support_ids_span_hashes_and_parent_contexts_resolve",
+      "status": "PASS",
+      "evidence": {
+        "support_span_occurrences": 233,
+        "error_query_ids": []
+      }
+    },
+    {
+      "gate": "whole_cluster_split_separation",
+      "status": "PASS",
+      "evidence": {
+        "clusters": 51,
+        "includes_reserve_split_family": true
+      }
+    },
+    {
+      "gate": "all_material_scopes_finite",
+      "status": "PASS",
+      "evidence": "All five required scope fields populated; A manual scope review; B correction pending"
+    },
+    {
+      "gate": "annotations_first_pass_only",
+      "status": "PASS",
+      "evidence": "60 FIRST_PASS / PENDING_INDEPENDENT_REVIEW; independent second review 0"
+    },
+    {
+      "gate": "retained_require_second_review",
+      "status": "PASS",
+      "evidence": {
+        "retained": 48
+      }
+    },
+    {
+      "gate": "D6_empirical_unverified_unselected",
+      "status": "PASS",
+      "evidence": "No query chosen from D6 or system performance; all D6 counts null"
+    },
+    {
+      "gate": "P_Q_U_disjoint_credit_and_pairing",
+      "status": "PASS",
+      "evidence": "Every Q has separate U obligation on same aspect; disclosure never P+; no reference answers"
+    },
+    {
+      "gate": "corpus_wide_absence_audit_coverage",
+      "status": "PASS",
+      "evidence": {
+        "first_pass_absence_audits": 15,
+        "legal_correctness_remains_independent_review": true
+      }
+    },
+    {
+      "gate": "local_contamination_review",
+      "status": "PASS",
+      "evidence": {
+        "external_pairs": 2460,
+        "internal_pairs": 1770,
+        "all_candidates_manual_A_review": 60,
+        "potential_historical_overlap_has_explicit_A_justification": true
+      }
+    },
+    {
+      "gate": "medical_diagnostic_not_copied_or_paraphrased",
+      "status": "PASS",
+      "evidence": "A manual scenario review; no medical chatbot candidate"
+    },
+    {
+      "gate": "reviewer_B_blind_first_stage",
+      "status": "PASS",
+      "evidence": "Complete corpus, no A selected evidence/labels; A comparison kept custodian-side until B judgments recorded; scope visible by design"
+    },
+    {
+      "gate": "annotation_schema_links_and_axis_enums",
+      "status": "PASS",
+      "evidence": {
+        "error_query_ids": [],
+        "response_obligations_have_aspect_parents": true
+      }
+    },
+    {
+      "gate": "authorized_actions_only",
+      "status": "PASS",
+      "evidence": {
+        "basis": "This session used local filesystem reads/writes, hashing and Python standard-library structural/lexical checks only. Counts describe task-initiated calls, not OS-wide packet/process attestation or the hosting assistant itself.",
+        "network_api_calls": 0,
+        "production_calls": 0,
+        "evaluator_calls": 0,
+        "retrieval_inference_calls": 0,
+        "reranker_inference_calls": 0,
+        "answer_generation_runs": 0,
+        "system_answers_inspected": 0,
+        "v2_implementation": "NOT_STARTED",
+        "independent_reviewer_B_completed": 0,
+        "adjudication_completed": 0,
+        "dataset_frozen": false
+      }
+    },
+    {
+      "gate": "composition_targets_or_explicit_shortfalls",
+      "status": "PASS",
+      "evidence": {
+        "dimension_status": "FIRST_PASS_PROPOSED",
+        "D6_not_a_selection_gate": true,
+        "details": [
+          "phase5c4a_dimension_matrix_v0.json",
+          "phase5c4a_aggregate_composition_v0.json"
+        ],
+        "reserve_shortfall": "10/12; source-ambiguity and conservative near-duplicate exclusions; explicit external feasibility review before freeze"
+      }
+    },
+    {
+      "gate": "public_outputs_no_exact_TEST_query_or_gold",
+      "status": "PASS",
+      "evidence": {
+        "leak_paths": [],
+        "manual_review": "No query text, propositions, Article IDs or per-query answerability/aspect count in public authored summaries."
+      }
+    },
+    {
+      "gate": "all_preexisting_artifacts_unchanged_and_new_paths_scoped",
+      "status": "PASS",
+      "evidence": {
+        "files": 26808,
+        "symlinks": 4,
+        "details": "integrity_before_after_v0.json"
+      }
+    },
+    {
+      "gate": "corpus_and_historical_benchmark_unchanged",
+      "status": "PASS",
+      "evidence": "All preexisting evaluation, benchmark, gold and prior-phase bytes checked without semantic answer inspection"
+    },
+    {
+      "gate": "isolation_limitation_and_final_freeze_block_reported",
+      "status": "PASS",
+      "evidence": "HOLDOUT_STORAGE_ISOLATION_NOT_YET_ENFORCED; mandatory 5C.4-C gate, not a construction failure by current authorization"
+    },
+    {
+      "gate": "all_HOLDOUT_plaintext_paths_inventoried",
+      "status": "PASS",
+      "evidence": {
+        "private_files_inventoried": 19,
+        "plaintext_files": 10
+      }
+    }
+  ],
+  "execution_audit": {
+    "basis": "This session used local filesystem reads/writes, hashing and Python standard-library structural/lexical checks only. Counts describe task-initiated calls, not OS-wide packet/process attestation or the hosting assistant itself.",
+    "network_api_calls": 0,
+    "production_calls": 0,
+    "evaluator_calls": 0,
+    "retrieval_inference_calls": 0,
+    "reranker_inference_calls": 0,
+    "answer_generation_runs": 0,
+    "system_answers_inspected": 0,
+    "v2_implementation": "NOT_STARTED",
+    "independent_reviewer_B_completed": 0,
+    "adjudication_completed": 0,
+    "dataset_frozen": false
+  },
+  "shortfalls": [
+    {
+      "kind": "reserve_count",
+      "preferred": 12,
+      "actual": 10,
+      "reason": "Two of the 60 candidates excluded: internal source-reference ambiguity and conservative historical near-duplicate screening. Quality takes precedence; 48 retained target remains provisional. Do not fill reserves by forcing a legal interpretation or keeping near-duplicates."
+    },
+    {
+      "kind": "cluster_stratum_feasibility",
+      "retained_cross_primary_family_clusters": 4,
+      "disposition": "External review must reconcile whole-cluster resampling with frozen primary-family stratum language before final dataset freeze; no frozen-design reinterpretation or cluster splitting in this phase."
+    }
+  ],
+  "independent_second_review_completed": 0,
+  "final_annotations": 0,
+  "dataset_frozen": false,
+  "ready_for_phase5c4b_independent_review": true,
+  "ready_for_final_dataset_freeze": false,
+  "holdout_isolation": "HOLDOUT_STORAGE_ISOLATION_NOT_YET_ENFORCED",
+  "mandatory_before_phase5c4c_freeze": [
+    "Enforce role-separated HOLDOUT storage and keep exposed contexts out of implementation",
+    "Independent B review and later authorized adjudication/signoff",
+    "Resolve support/scope/alternative-bundle/cluster/contamination concerns and cross-family whole-cluster stratum feasibility",
+    "External approval or resolution of any dimension/reserve shortfall",
+    "Independently reviewed query/gold/split lock before separately authorized blind D6 audit"
+  ],
+  "checked_at_utc": "2026-09-11T07:56:14.685736+00:00"
+}

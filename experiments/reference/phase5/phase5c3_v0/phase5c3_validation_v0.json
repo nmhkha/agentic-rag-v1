@@ -1,0 +1,390 @@
+{
+  "schema": "phase5c3-validation-v0",
+  "phase_status": "PASS",
+  "checked_at_utc": "2026-09-10T08:31:23.864725+00:00",
+  "all_validation_gates_pass": true,
+  "gate_count": 27,
+  "checks": [
+    {
+      "id": "source_authority_hash_bindings",
+      "status": "PASS",
+      "method": "SHA-256 source final registries, manifests and 5C.2 source_review verified",
+      "evidence": {
+        "verified_bindings": 48,
+        "source_files": 24
+      }
+    },
+    {
+      "id": "phase5c2_full_integrity_input_read",
+      "status": "PASS",
+      "method": "Full JSON parse and baseline hash check; empty discrepancy/error lists",
+      "evidence": {
+        "after_files": 26781,
+        "after_symlinks": 4
+      }
+    },
+    {
+      "id": "five_design_artifacts_consistent",
+      "status": "PASS",
+      "method": "Hash-pinned normative selectors plus per-artifact override map and six-requirement overlay",
+      "evidence": "phase5c3_spec_bindings_v0.json; phase5c3_trace_matrix_amendment_v0.json"
+    },
+    {
+      "id": "A1_holdout_blindness",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_design_amendments_v0.md",
+        "finding": "Mandatory pre-release sealing, separated runner/custodian, exposure event/cluster disposition and no untouched claim after exposure"
+      }
+    },
+    {
+      "id": "A2_primary_contrast",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_design_amendments_v0.md",
+        "finding": "5C.5 final definition/membership/contrast seal before implementation and TEST; E not default, R3 conditional"
+      }
+    },
+    {
+      "id": "A3_provisional_margins",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_margin_governance_v0.md",
+        "finding": "Candidate 0.05/0.02 only; approved final numeric values null"
+      }
+    },
+    {
+      "id": "margin_governance",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_margin_governance_v0.md",
+        "finding": "All eight rationale factors, annotation/rubric timing, external approval independent of TEST outcomes, STOP before TEST release if absent"
+      }
+    },
+    {
+      "id": "A4_global_scheduler",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_quota_scheduler_requirements_v0.md",
+        "finding": "QS01–QS10 global limits, all attempts/retries, durable timestamp/reservation/backoff/restart, quality-blind order, current config and shared/separate domains"
+      }
+    },
+    {
+      "id": "inferred_promotion",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_frozen_design_spec_v0.md",
+        "finding": "Inferred admission requires intent/support/applicability; explicit unsupported asks require calibrated disclosure"
+      }
+    },
+    {
+      "id": "applicability_safeguards",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_frozen_design_spec_v0.md",
+        "finding": "Actor/scope/condition restrictions and independent evidence role retained"
+      }
+    },
+    {
+      "id": "challenge_D6",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_frozen_design_spec_v0.md",
+        "finding": "D6 not selected/replaced by observed retrieval; target shortfall reported and limits claims"
+      }
+    },
+    {
+      "id": "challenge_size_split",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_frozen_design_spec_v0.md",
+        "finding": "60/48/16/32/12 retained with alternatives; cluster isolation and pre-output reserves, no power certification"
+      }
+    },
+    {
+      "id": "gold_design",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_frozen_design_spec_v0.md",
+        "finding": "Independent aspects/bundles/role/applicability/sufficiency/answerability/disclosure retained; no record instances"
+      }
+    },
+    {
+      "id": "repeated_production",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_frozen_design_spec_v0.md",
+        "finding": "Preferred 3, minimum 2, optional 5; query/generation/judge/backend uncertainty separated"
+      }
+    },
+    {
+      "id": "judge_repeat",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_frozen_design_spec_v0.md",
+        "finding": "Subset/rule/seed/strata/tie-break sealed pre-output; eight is no global variance estimate"
+      }
+    },
+    {
+      "id": "metric_denominators",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_frozen_design_spec_v0.md",
+        "finding": "Evaluation §4 inherited in full for answer, revision, expansion, controller and persistence metrics; zero/unknown/error denominators explicit"
+      }
+    },
+    {
+      "id": "historical_benchmark_wording",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_frozen_design_spec_v0.md",
+        "finding": "Exact requested wording, no replacement/rescoring; historical/regression/compatibility only"
+      }
+    },
+    {
+      "id": "phase_sequence_and_authorization",
+      "status": "PASS",
+      "method": "Local clause-by-clause review with case-insensitive structural anchors; not empirical proof",
+      "evidence": {
+        "file": "phase5c3_frozen_design_spec_v0.md",
+        "finding": "5C.4 next only after all PASS, later phases not started"
+      }
+    },
+    {
+      "id": "D1_D10_retained",
+      "status": "PASS",
+      "method": "Dimension-by-dimension source review",
+      "evidence": "All ten dimensions explicitly reviewed and retained; no observed counts claimed"
+    },
+    {
+      "id": "multi_axis_ledger",
+      "status": "PASS",
+      "method": "Exact field/enum comparison to source trace",
+      "evidence": "Origin, Admission, Search, Support, Applicability, Answer disposition preserved independently"
+    },
+    {
+      "id": "R3_unconfirmed_and_decisions_retained",
+      "status": "PASS",
+      "method": "Exact six-requirement decision/tier comparison",
+      "evidence": "R3 UNCONFIRMED_TIER_C; every implementation status NOT_STARTED"
+    },
+    {
+      "id": "runtime_gold_forbidden",
+      "status": "PASS",
+      "method": "Strict projection/forbidden-field and isolation review",
+      "evidence": "Gold forbidden even on DEV runtime; implementer DEV offline access only"
+    },
+    {
+      "id": "deterministic_controller_table",
+      "status": "PASS",
+      "method": "Exhaustive Cartesian-domain abstract-rule enumeration",
+      "evidence": "157464 combinations; all seven outcomes reachable; 78732 budget-toggle pairs unchanged; INVALID_STATE/REQUIRES_REVIEW explicit; no runtime execution"
+    },
+    {
+      "id": "frozen_conclusions_unchanged",
+      "status": "PASS",
+      "method": "Exact authoritative-label/effective-spec comparison",
+      "evidence": {
+        "Answer Revision": "Insufficient evidence",
+        "Evidence Expansion": "Insufficient evidence"
+      }
+    },
+    {
+      "id": "preexisting_artifact_integrity",
+      "status": "PASS",
+      "method": "Whole-project SHA-256, sizes/modes, symlink targets/modes, directories and unauthorized-path comparison",
+      "evidence": {
+        "entries": 29727,
+        "changed_or_missing": [],
+        "unauthorized_new_paths": [],
+        "runtime_prompts_corpus_benchmark": "All included and unchanged"
+      }
+    },
+    {
+      "id": "only_new_design_artifacts",
+      "status": "PASS",
+      "method": "Output allowlist and local authored-content review",
+      "evidence": "Only design, schema and integrity Markdown/JSON/text under phase5c3_v0; no actual query/gold/DEV/TEST/legal-aspect records or runtime code"
+    },
+    {
+      "id": "prohibited_actions_not_performed",
+      "status": "PASS",
+      "method": "Observed tool/action audit and additive design-only files",
+      "evidence": {
+        "basis": "Observed session tool/action audit: local filesystem and Python standard-library JSON/hash/finite-domain design checks only; no project imports or live provider tools. Not OS-wide packet/process attestation.",
+        "network_api_calls": 0,
+        "production_calls": 0,
+        "evaluator_calls": 0,
+        "retrieval_inference_calls": 0,
+        "reranking_inference_calls": 0,
+        "answer_generation_calls": 0,
+        "benchmark_runs": 0,
+        "bootstrap_runs": 0,
+        "chatbot_diagnostic_runs": 0,
+        "A3_A4_runs": 0,
+        "challenge_queries_created": 0,
+        "challenge_gold_records_created": 0,
+        "DEV_TEST_records_created": 0,
+        "legal_aspects_created": 0,
+        "v2_implementation": "NOT_STARTED",
+        "later_phase_started": false
+      }
+    }
+  ],
+  "source_hashes": {
+    "phase5c1_v0": {
+      "data/evaluation/generation/phase5/phase5c1_v0/consolidate_research_v0.py": {
+        "sha256": "007ec4b03e08777d99aafef61f95e3e419910dd6cc6982f59a5cc80ecc697d1c",
+        "size_bytes": 64524
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/final_artifact_hashes_v0.json": {
+        "sha256": "c66eb0b49c00b0f9dc1ccaa5b2619ff2201c771528b515b0d35ccd52e239a44c",
+        "size_bytes": 1393
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/integrity_before_after_v0.json": {
+        "sha256": "52b18079376f6002ebb4ad7de245013f1eb4536e80821122699f059261970b8b",
+        "size_bytes": 5678128
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/integrity_before_inventory_v0.json": {
+        "sha256": "619a4c9f12b1e24595ad1e172af69b4d12756315b19540b4837c5db13e0bba8f",
+        "size_bytes": 5676401
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_console_v0.txt": {
+        "sha256": "77d576193a28f18307034fe40256524cde9f2045372d066ea271c011b49ddc8e",
+        "size_bytes": 2763
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_decision_log_v0.md": {
+        "sha256": "b83853e6a9b75ce0e8113fc84d6e2bb891ade8ad612290419677e0ebbe7d56ae",
+        "size_bytes": 2473
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_evidence_matrix_v0.json": {
+        "sha256": "7fe3a92f044d9ab18f81811cff60b37f540c1b5f8fc393142701b023b71ff667",
+        "size_bytes": 115575
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_exploratory_diagnostic_v0.json": {
+        "sha256": "8545d62d1aa793f343100c820e62b722c8b6a316d2d47e2254335b72c31ecb2d",
+        "size_bytes": 8364
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_manifest_v0.json": {
+        "sha256": "dcb19a86ccefe083b8adc9acfabd3a927ffdd87beeaeec06d2920e8b20c1e9b1",
+        "size_bytes": 100732
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_problem_requirement_map_v0.json": {
+        "sha256": "2e69d6b26e10e7c4907ec8eb5ca8794c726dfd0a9a1191277bef9b2acecd5828",
+        "size_bytes": 9465
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_research_synthesis_v0.md": {
+        "sha256": "da4d2bdea95531c06d792416af3d63dd7533094fa42818df1546429d1b182779",
+        "size_bytes": 37972
+      },
+      "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_validation_v0.json": {
+        "sha256": "ff48f92ff3a4bddf569beab1d839a2bdf964a2fc4da31bca8057be3260617164",
+        "size_bytes": 34343
+      }
+    },
+    "phase5c2_v0": {
+      "data/evaluation/generation/phase5/phase5c2_v0/final_artifact_hashes_v0.json": {
+        "sha256": "ea05d4d225bbf18eb1217b33f4afb669e2bf07b3317ef27b89cf6398ec4fb448",
+        "size_bytes": 1993
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/integrity_baseline_v0.json": {
+        "sha256": "ade1d7ec6ee56af85674d0acebcab637bfad66badceb01961258ae1b91f93d5c",
+        "size_bytes": 5679004
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/integrity_before_after_v0.json": {
+        "sha256": "6018df682eb377d5e43e0aa0e92cb8c4bd579e333059c59987dd00498147d345",
+        "size_bytes": 5680820
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_challenge_set_design_v0.md": {
+        "sha256": "1f8514571e3fdea048e26eaa399961b54ff2e5af7dd1111fa1904976c0532dc0",
+        "size_bytes": 22031
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_console_v0.txt": {
+        "sha256": "8d5d94d7f23adce3b7bc3329f9df29730652dbde14ef30883fc5a2ea75e7b0c6",
+        "size_bytes": 1145
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_decision_log_v0.md": {
+        "sha256": "a68e7266ddc672f53ac88de733141fc05d0142c5c183cd730ffa0e98577a61b0",
+        "size_bytes": 7567
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_evaluation_protocol_draft_v0.md": {
+        "sha256": "6209c20771d0bf7e7791d878637cb5e7ead8c01f7b3e1b08a6c13a99895a96ca",
+        "size_bytes": 31374
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_manifest_v0.json": {
+        "sha256": "c6d98731c01696299dce134e587163e07d0269cf95dff05b75f16428d967b60e",
+        "size_bytes": 11390
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_requirement_validation_matrix_v0.json": {
+        "sha256": "71caa700ec77bbe998caed8764d2ebcfd6cf23d1628513d5894bdb621cd1520e",
+        "size_bytes": 18680
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_trace_schema_design_v0.json": {
+        "sha256": "e75cba2402593c79157f439f3ffc079003df9330d2f58c3a7523249a0f571e24",
+        "size_bytes": 23233
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_v2_requirements_design_v0.md": {
+        "sha256": "0328ec76ae710402abe323c00363550686b439384b048e483f30fb55554d1658",
+        "size_bytes": 25618
+      },
+      "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_validation_v0.json": {
+        "sha256": "869fd0ea657fd83a2f0aa4edef15d6de144b952ad8ca0db0f06d8cc2a7f2c134",
+        "size_bytes": 10625
+      }
+    }
+  },
+  "source_binding_checks": 48,
+  "controller_table_validation_reference": "phase5c3_decision_table_validation_v0.json",
+  "integrity_reference": "integrity_before_after_v0.json",
+  "execution_audit": {
+    "basis": "Observed session tool/action audit: local filesystem and Python standard-library JSON/hash/finite-domain design checks only; no project imports or live provider tools. Not OS-wide packet/process attestation.",
+    "network_api_calls": 0,
+    "production_calls": 0,
+    "evaluator_calls": 0,
+    "retrieval_inference_calls": 0,
+    "reranking_inference_calls": 0,
+    "answer_generation_calls": 0,
+    "benchmark_runs": 0,
+    "bootstrap_runs": 0,
+    "chatbot_diagnostic_runs": 0,
+    "A3_A4_runs": 0,
+    "challenge_queries_created": 0,
+    "challenge_gold_records_created": 0,
+    "DEV_TEST_records_created": 0,
+    "legal_aspects_created": 0,
+    "v2_implementation": "NOT_STARTED",
+    "later_phase_started": false
+  },
+  "validation_history": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "reason": "Case-sensitive structural anchor expected lowercase crash while QS05 contained Crash/restart. No missing scheduler requirement; no freeze was written."
+    },
+    {
+      "attempt": 2,
+      "status": "PASS",
+      "resolution": "Case-insensitive anchors after clause review; all semantic, source-binding, exhaustive table and integrity gates pass."
+    }
+  ],
+  "external_review_basis": "User-supplied PASS WITH MINOR REVISIONS; local amendment/consistency review only; no new external reviewer contacted.",
+  "limitations": [
+    "Prose consistency is local review with anchors/hash bindings, not proof of legal/empirical correctness.",
+    "Finite predicate enumeration proves table determinism only, not future predicate extraction or runtime execution.",
+    "Annotation feasibility, power, runtime isolation, current quotas and final margins remain future gates."
+  ]
+}

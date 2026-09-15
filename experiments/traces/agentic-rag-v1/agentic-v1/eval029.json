@@ -1,0 +1,1294 @@
+{
+  "run_id": "agentic-v1-eval029",
+  "query": "Theo Khung đạo đức trí tuệ nhân tạo quốc gia, khi hệ thống AI có thể ảnh hưởng đáng kể đến quyền con người thì cần áp dụng những biện pháp kiểm soát nào?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 30,
+  "initial_top5": [
+    "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+    "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+    "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+    "134-2025-QH15_dieu-27_khoan-3",
+    "134-2025-QH15_dieu-26_khoan-4"
+  ],
+  "coverage_check": {
+    "sufficient": true,
+    "missing_aspects": [],
+    "reason": "Các chứng cứ cung cấp đầy đủ thông tin về các biện pháp kiểm soát cần áp dụng khi hệ thống AI có ảnh hưởng đến quyền con người (bao gồm biện pháp rà soát để bảo đảm không xâm phạm quyền con người, cơ chế giám sát và can thiệp của con người, cùng việc lập báo cáo đánh giá tác động và biện pháp kiểm soát theo quy định)."
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [
+    {
+      "rank": 1,
+      "evidence_id": "E1",
+      "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+      "document_id": "05-2026-TT-BKHCN",
+      "document_number": "05/2026/TT-BKHCN",
+      "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+      "article_id": "05-2026-TT-BKHCN_dieu-3",
+      "article": "3",
+      "article_label": "Điều 3",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": "a",
+      "point_label": "Điểm a",
+      "text": "Tôn trọng quyền con người, quyền công dân: Tổ chức, cá nhân áp dụng biện pháp rà soát phù hợp để bảo đảm hệ thống trí tuệ nhân tạo không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, quyền được đối xử bình đẳng và các quyền hợp pháp khác theo quy định của pháp luật.",
+      "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 2\nĐiểm a)\nTôn trọng quyền con người, quyền công dân: Tổ chức, cá nhân áp dụng biện pháp rà soát phù hợp để bảo đảm hệ thống trí tuệ nhân tạo không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, quyền được đối xử bình đẳng và các quyền hợp pháp khác theo quy định của pháp luật.",
+      "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+      "reranker_score": 6.229919910430908,
+      "bm25_rank": 3,
+      "dense_rank": 1,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 1,
+      "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+      "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-2",
+      "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a"
+    },
+    {
+      "rank": 2,
+      "evidence_id": "E2",
+      "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+      "document_id": "05-2026-TT-BKHCN",
+      "document_number": "05/2026/TT-BKHCN",
+      "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+      "article_id": "05-2026-TT-BKHCN_dieu-3",
+      "article": "3",
+      "article_label": "Điều 3",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": "c",
+      "point_label": "Điểm c",
+      "text": "Kiểm soát của con người: Tổ chức, cá nhân có trách nhiệm xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng của hệ thống; bảo đảm duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của hệ thống trí tuệ nhân tạo.",
+      "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 1\nĐiểm c)\nKiểm soát của con người: Tổ chức, cá nhân có trách nhiệm xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng của hệ thống; bảo đảm duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của hệ thống trí tuệ nhân tạo.",
+      "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+      "reranker_score": 4.861722946166992,
+      "bm25_rank": 1,
+      "dense_rank": 2,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 2,
+      "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+      "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-1",
+      "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c"
+    },
+    {
+      "rank": 3,
+      "evidence_id": "E3",
+      "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+      "document_id": "05-2026-TT-BKHCN",
+      "document_number": "05/2026/TT-BKHCN",
+      "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+      "article_id": "05-2026-TT-BKHCN_dieu-3",
+      "article": "3",
+      "article_label": "Điều 3",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": "e",
+      "point_label": "Điểm e",
+      "text": "Bảo đảm an ninh của hệ thống trí tuệ nhân tạo: Tổ chức, cá nhân áp dụng biện pháp bảo vệ phù hợp để phòng ngừa, phát hiện, ngăn chặn và ứng phó với các hành vi xâm nhập, chiếm quyền điều khiển, đầu độc dữ liệu, đầu độc mô hình, tấn công đối nghịch, khai thác lỗ hổng, rò rỉ dữ liệu và lạm dụng hệ thống trí tuệ nhân tạo; bảo đảm tính bí mật, toàn vẹn và sẵn sàng của dữ liệu, mô hình, thuật toán và hạ tầng liên quan.",
+      "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 1\nĐiểm e)\nBảo đảm an ninh của hệ thống trí tuệ nhân tạo: Tổ chức, cá nhân áp dụng biện pháp bảo vệ phù hợp để phòng ngừa, phát hiện, ngăn chặn và ứng phó với các hành vi xâm nhập, chiếm quyền điều khiển, đầu độc dữ liệu, đầu độc mô hình, tấn công đối nghịch, khai thác lỗ hổng, rò rỉ dữ liệu và lạm dụng hệ thống trí tuệ nhân tạo; bảo đảm tính bí mật, toàn vẹn và sẵn sàng của dữ liệu, mô hình, thuật toán và hạ tầng liên quan.",
+      "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+      "reranker_score": 3.1739890575408936,
+      "bm25_rank": null,
+      "dense_rank": 10,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 3,
+      "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+      "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-1",
+      "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e"
+    },
+    {
+      "rank": 4,
+      "evidence_id": "E4",
+      "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-27",
+      "article": "27",
+      "article_label": "Điều 27",
+      "clause": "3",
+      "clause_label": "Khoản 3",
+      "point": null,
+      "point_label": null,
+      "text": "Cơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 27. Trách nhiệm đạo đức và đánh giá tác động khi ứng dụng trí tuệ nhân tạo trong quản lý nhà nước và cung cấp dịch vụ công\nKhoản 3\nCơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 2.8770461082458496,
+      "bm25_rank": 2,
+      "dense_rank": 3,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 4,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-27_khoan-3",
+      "point_id": null
+    },
+    {
+      "rank": 5,
+      "evidence_id": "E5",
+      "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-26",
+      "article": "26",
+      "article_label": "Điều 26",
+      "clause": "4",
+      "clause_label": "Khoản 4",
+      "point": null,
+      "point_label": null,
+      "text": "Nhà nước khuyến khích tổ chức, cá nhân áp dụng Khung đạo đức trí tuệ nhân tạo quốc gia trong quá trình nghiên cứu, phát triển, cung cấp, triển khai và sử dụng hệ thống trí tuệ nhân tạo nhằm bảo đảm tính minh bạch, công bằng, an toàn và tôn trọng quyền con người.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 26. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 4\nNhà nước khuyến khích tổ chức, cá nhân áp dụng Khung đạo đức trí tuệ nhân tạo quốc gia trong quá trình nghiên cứu, phát triển, cung cấp, triển khai và sử dụng hệ thống trí tuệ nhân tạo nhằm bảo đảm tính minh bạch, công bằng, an toàn và tôn trọng quyền con người.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 1.9405605792999268,
+      "bm25_rank": 4,
+      "dense_rank": 5,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 5,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-26_khoan-4",
+      "point_id": null
+    }
+  ],
+  "final_top5": [
+    "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+    "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+    "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+    "134-2025-QH15_dieu-27_khoan-3",
+    "134-2025-QH15_dieu-26_khoan-4"
+  ],
+  "draft_answer": "Theo Khung đạo đức trí tuệ nhân tạo quốc gia, tổ chức và cá nhân phải áp dụng các biện pháp rà soát phù hợp nhằm bảo đảm hệ thống trí tuệ nhân tạo không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, quyền được đối xử bình đẳng và các quyền hợp pháp khác [E1]. Đồng thời, cần xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng, bảo đảm duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của hệ thống [E2]. Ngoài ra, tổ chức và cá nhân phải áp dụng biện pháp bảo vệ phù hợp để phòng ngừa, phát hiện, ngăn chặn và ứng phó với các hành vi xâm nhập, chiếm quyền điều khiển, tấn công, rò rỉ dữ liệu và lạm dụng hệ thống [E3].",
+  "completeness_check": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "Câu trả lời đã bao gồm đầy đủ các biện pháp kiểm soát theo Khung đạo đức trí tuệ nhân tạo quốc gia và quy định liên quan đến hệ thống trí tuệ nhân tạo có tác động đáng kể đến quyền con người được cung cấp trong các đoạn bằng chứng."
+  },
+  "revision_used": true,
+  "citation_check": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required_by_deterministic_gate",
+    "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": "Theo Khung đạo đức trí tuệ nhân tạo quốc gia, tổ chức và cá nhân phải áp dụng các biện pháp rà soát phù hợp nhằm bảo đảm hệ thống trí tuệ nhân tạo không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, quyền được đối xử bình đẳng và các quyền hợp pháp khác [E1]. Đồng thời, cần xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng, bảo đảm duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của hệ thống [E2]. Ngoài ra, tổ chức và cá nhân phải áp dụng biện pháp bảo vệ phù hợp để phòng ngừa, phát hiện, ngăn chặn và ứng phó với các hành vi xâm nhập, chiếm quyền điều khiển, tấn công, rò rỉ dữ liệu và lạm dụng hệ thống [E3]. Bên cạnh đó, theo quy định về hệ thống trí tuệ nhân tạo có tác động đáng kể đến quyền con người, cơ quan vận hành hệ thống phải lập báo cáo đánh giá tác động việc sử dụng hệ thống, bao gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người [E4].",
+  "final_status": "success",
+  "retrieval_calls": [
+    {
+      "call_number": 1,
+      "round": 0,
+      "query": "Theo Khung đạo đức trí tuệ nhân tạo quốc gia, khi hệ thống AI có thể ảnh hưởng đáng kể đến quyền con người thì cần áp dụng những biện pháp kiểm soát nào?",
+      "sub_query": false,
+      "bm25_depth": 20,
+      "dense_depth": 20,
+      "candidate_chunk_ids": [
+        "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+        "134-2025-QH15_dieu-27_khoan-3",
+        "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+        "134-2025-QH15_dieu-26_khoan-4",
+        "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-d",
+        "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-a",
+        "05-2026-TT-BKHCN_dieu-2_khoan-1",
+        "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+        "134-2025-QH15_dieu-26_khoan-2",
+        "134-2025-QH15_dieu-26_khoan-1_diem-a",
+        "134-2025-QH15_dieu-26_khoan-1_diem-b",
+        "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-b",
+        "05-2026-TT-BKHCN_dieu-1_khoan-1",
+        "134-2025-QH15_dieu-9_khoan-1_diem-a",
+        "05-2026-TT-BKHCN_dieu-5_khoan-1",
+        "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+        "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+        "134-2025-QH15_dieu-26_khoan-1_diem-c",
+        "142-2026-ND-CP_dieu-11_khoan-1_diem-a",
+        "142-2026-ND-CP_dieu-15_khoan-6",
+        "134-2025-QH15_dieu-35_khoan-2",
+        "05-2026-TT-BKHCN_dieu-5_khoan-3",
+        "134-2025-QH15_dieu-27_khoan-1",
+        "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+        "142-2026-ND-CP_dieu-8_khoan-1_diem-a",
+        "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+        "134-2025-QH15_dieu-27_khoan-2",
+        "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-20_khoan-6",
+        "134-2025-QH15_dieu-27_khoan-5"
+      ],
+      "candidate_count": 30,
+      "reranker_ranks": [
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+          "rank": 1,
+          "reranker_score": 6.229919910430908
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+          "rank": 2,
+          "reranker_score": 4.861722946166992
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+          "rank": 3,
+          "reranker_score": 3.1739890575408936
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+          "rank": 4,
+          "reranker_score": 2.8770461082458496
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+          "rank": 5,
+          "reranker_score": 1.9405605792999268
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+          "rank": 6,
+          "reranker_score": 1.8469760417938232
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-2_khoan-1",
+          "rank": 7,
+          "reranker_score": 0.995201587677002
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-b",
+          "rank": 8,
+          "reranker_score": 0.9794775247573853
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-b",
+          "rank": 9,
+          "reranker_score": 0.7677353620529175
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+          "rank": 10,
+          "reranker_score": 0.0625714659690857
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+          "rank": 11,
+          "reranker_score": -0.08145524561405182
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-a",
+          "rank": 12,
+          "reranker_score": -0.21068906784057617
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-9_khoan-1_diem-a",
+          "rank": 13,
+          "reranker_score": -0.2971816956996918
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+          "rank": 14,
+          "reranker_score": -0.3206236958503723
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-d",
+          "rank": 15,
+          "reranker_score": -0.3998120427131653
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-a",
+          "rank": 16,
+          "reranker_score": -0.7905139327049255
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-1_diem-a",
+          "rank": 17,
+          "reranker_score": -0.809059739112854
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+          "rank": 18,
+          "reranker_score": -0.8732830882072449
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-1",
+          "rank": 19,
+          "reranker_score": -1.4749538898468018
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+          "rank": 20,
+          "reranker_score": -1.502065658569336
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-2",
+          "rank": 21,
+          "reranker_score": -1.7552978992462158
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-1",
+          "rank": 22,
+          "reranker_score": -1.8799927234649658
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-c",
+          "rank": 23,
+          "reranker_score": -1.9039061069488525
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+          "rank": 24,
+          "reranker_score": -1.9316556453704834
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-3",
+          "rank": 25,
+          "reranker_score": -2.0358047485351562
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-1_khoan-1",
+          "rank": 26,
+          "reranker_score": -2.185840129852295
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-2",
+          "rank": 27,
+          "reranker_score": -2.3422701358795166
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-1_diem-a",
+          "rank": 28,
+          "reranker_score": -2.921762704849243
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-35_khoan-2",
+          "rank": 29,
+          "reranker_score": -3.048983097076416
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-5",
+          "rank": 30,
+          "reranker_score": -3.1874899864196777
+        }
+      ],
+      "top5_chunk_ids": [
+        "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+        "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+        "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+        "134-2025-QH15_dieu-27_khoan-3",
+        "134-2025-QH15_dieu-26_khoan-4"
+      ],
+      "candidate_ranks": [
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+          "bm25_rank": 1,
+          "dense_rank": 2
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+          "bm25_rank": 2,
+          "dense_rank": 3
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+          "bm25_rank": 3,
+          "dense_rank": 1
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+          "bm25_rank": 4,
+          "dense_rank": 5
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-d",
+          "bm25_rank": 5,
+          "dense_rank": 19
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-a",
+          "bm25_rank": 6,
+          "dense_rank": 9
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-2_khoan-1",
+          "bm25_rank": 7,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+          "bm25_rank": 8,
+          "dense_rank": 14
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-2",
+          "bm25_rank": 9,
+          "dense_rank": 20
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-a",
+          "bm25_rank": 10,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-b",
+          "bm25_rank": 11,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-b",
+          "bm25_rank": 12,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-1_khoan-1",
+          "bm25_rank": 13,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-9_khoan-1_diem-a",
+          "bm25_rank": 14,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-1",
+          "bm25_rank": 15,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+          "bm25_rank": 16,
+          "dense_rank": 11
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+          "bm25_rank": 17,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-c",
+          "bm25_rank": 18,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-1_diem-a",
+          "bm25_rank": 19,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+          "bm25_rank": 20,
+          "dense_rank": 4
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-35_khoan-2",
+          "bm25_rank": null,
+          "dense_rank": 6
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 7
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 8
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+          "bm25_rank": null,
+          "dense_rank": 10
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-1_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 12
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 13
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-2",
+          "bm25_rank": null,
+          "dense_rank": 15
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 16
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+          "bm25_rank": null,
+          "dense_rank": 17
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-5",
+          "bm25_rank": null,
+          "dense_rank": 18
+        }
+      ]
+    }
+  ],
+  "retrieval_call_count": 1,
+  "llm_calls": [
+    {
+      "call_number": 1,
+      "stage": "coverage_check"
+    },
+    {
+      "call_number": 2,
+      "stage": "answer_generation"
+    },
+    {
+      "call_number": 3,
+      "stage": "completeness_check"
+    },
+    {
+      "call_number": 4,
+      "stage": "answer_revision"
+    },
+    {
+      "call_number": 5,
+      "stage": "completeness_check"
+    }
+  ],
+  "llm_call_count": 5,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Theo Khung đạo đức trí tuệ nhân tạo quốc gia, khi hệ thống AI có thể ảnh hưởng đáng kể đến quyền con người thì cần áp dụng những biện pháp kiểm soát nào?",
+    "initial_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+        "document_id": "05-2026-TT-BKHCN",
+        "document_number": "05/2026/TT-BKHCN",
+        "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+        "article_id": "05-2026-TT-BKHCN_dieu-3",
+        "article": "3",
+        "article_label": "Điều 3",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Tôn trọng quyền con người, quyền công dân: Tổ chức, cá nhân áp dụng biện pháp rà soát phù hợp để bảo đảm hệ thống trí tuệ nhân tạo không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, quyền được đối xử bình đẳng và các quyền hợp pháp khác theo quy định của pháp luật.",
+        "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 2\nĐiểm a)\nTôn trọng quyền con người, quyền công dân: Tổ chức, cá nhân áp dụng biện pháp rà soát phù hợp để bảo đảm hệ thống trí tuệ nhân tạo không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, quyền được đối xử bình đẳng và các quyền hợp pháp khác theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "reranker_score": 6.229919910430908,
+        "bm25_rank": 3,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-2",
+        "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a"
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+        "document_id": "05-2026-TT-BKHCN",
+        "document_number": "05/2026/TT-BKHCN",
+        "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+        "article_id": "05-2026-TT-BKHCN_dieu-3",
+        "article": "3",
+        "article_label": "Điều 3",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "c",
+        "point_label": "Điểm c",
+        "text": "Kiểm soát của con người: Tổ chức, cá nhân có trách nhiệm xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng của hệ thống; bảo đảm duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của hệ thống trí tuệ nhân tạo.",
+        "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 1\nĐiểm c)\nKiểm soát của con người: Tổ chức, cá nhân có trách nhiệm xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng của hệ thống; bảo đảm duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của hệ thống trí tuệ nhân tạo.",
+        "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "reranker_score": 4.861722946166992,
+        "bm25_rank": 1,
+        "dense_rank": 2,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-1",
+        "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+        "document_id": "05-2026-TT-BKHCN",
+        "document_number": "05/2026/TT-BKHCN",
+        "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+        "article_id": "05-2026-TT-BKHCN_dieu-3",
+        "article": "3",
+        "article_label": "Điều 3",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "e",
+        "point_label": "Điểm e",
+        "text": "Bảo đảm an ninh của hệ thống trí tuệ nhân tạo: Tổ chức, cá nhân áp dụng biện pháp bảo vệ phù hợp để phòng ngừa, phát hiện, ngăn chặn và ứng phó với các hành vi xâm nhập, chiếm quyền điều khiển, đầu độc dữ liệu, đầu độc mô hình, tấn công đối nghịch, khai thác lỗ hổng, rò rỉ dữ liệu và lạm dụng hệ thống trí tuệ nhân tạo; bảo đảm tính bí mật, toàn vẹn và sẵn sàng của dữ liệu, mô hình, thuật toán và hạ tầng liên quan.",
+        "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 1\nĐiểm e)\nBảo đảm an ninh của hệ thống trí tuệ nhân tạo: Tổ chức, cá nhân áp dụng biện pháp bảo vệ phù hợp để phòng ngừa, phát hiện, ngăn chặn và ứng phó với các hành vi xâm nhập, chiếm quyền điều khiển, đầu độc dữ liệu, đầu độc mô hình, tấn công đối nghịch, khai thác lỗ hổng, rò rỉ dữ liệu và lạm dụng hệ thống trí tuệ nhân tạo; bảo đảm tính bí mật, toàn vẹn và sẵn sàng của dữ liệu, mô hình, thuật toán và hạ tầng liên quan.",
+        "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "reranker_score": 3.1739890575408936,
+        "bm25_rank": null,
+        "dense_rank": 10,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-1",
+        "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e"
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 27. Trách nhiệm đạo đức và đánh giá tác động khi ứng dụng trí tuệ nhân tạo trong quản lý nhà nước và cung cấp dịch vụ công\nKhoản 3\nCơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 2.8770461082458496,
+        "bm25_rank": 2,
+        "dense_rank": 3,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-27_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-26",
+        "article": "26",
+        "article_label": "Điều 26",
+        "clause": "4",
+        "clause_label": "Khoản 4",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà nước khuyến khích tổ chức, cá nhân áp dụng Khung đạo đức trí tuệ nhân tạo quốc gia trong quá trình nghiên cứu, phát triển, cung cấp, triển khai và sử dụng hệ thống trí tuệ nhân tạo nhằm bảo đảm tính minh bạch, công bằng, an toàn và tôn trọng quyền con người.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 26. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 4\nNhà nước khuyến khích tổ chức, cá nhân áp dụng Khung đạo đức trí tuệ nhân tạo quốc gia trong quá trình nghiên cứu, phát triển, cung cấp, triển khai và sử dụng hệ thống trí tuệ nhân tạo nhằm bảo đảm tính minh bạch, công bằng, an toàn và tôn trọng quyền con người.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 1.9405605792999268,
+        "bm25_rank": 4,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-26_khoan-4",
+        "point_id": null
+      }
+    ],
+    "current_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+        "document_id": "05-2026-TT-BKHCN",
+        "document_number": "05/2026/TT-BKHCN",
+        "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+        "article_id": "05-2026-TT-BKHCN_dieu-3",
+        "article": "3",
+        "article_label": "Điều 3",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Tôn trọng quyền con người, quyền công dân: Tổ chức, cá nhân áp dụng biện pháp rà soát phù hợp để bảo đảm hệ thống trí tuệ nhân tạo không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, quyền được đối xử bình đẳng và các quyền hợp pháp khác theo quy định của pháp luật.",
+        "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 2\nĐiểm a)\nTôn trọng quyền con người, quyền công dân: Tổ chức, cá nhân áp dụng biện pháp rà soát phù hợp để bảo đảm hệ thống trí tuệ nhân tạo không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, quyền được đối xử bình đẳng và các quyền hợp pháp khác theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "reranker_score": 6.229919910430908,
+        "bm25_rank": 3,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-2",
+        "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a"
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+        "document_id": "05-2026-TT-BKHCN",
+        "document_number": "05/2026/TT-BKHCN",
+        "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+        "article_id": "05-2026-TT-BKHCN_dieu-3",
+        "article": "3",
+        "article_label": "Điều 3",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "c",
+        "point_label": "Điểm c",
+        "text": "Kiểm soát của con người: Tổ chức, cá nhân có trách nhiệm xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng của hệ thống; bảo đảm duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của hệ thống trí tuệ nhân tạo.",
+        "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 1\nĐiểm c)\nKiểm soát của con người: Tổ chức, cá nhân có trách nhiệm xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng của hệ thống; bảo đảm duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của hệ thống trí tuệ nhân tạo.",
+        "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "reranker_score": 4.861722946166992,
+        "bm25_rank": 1,
+        "dense_rank": 2,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-1",
+        "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+        "document_id": "05-2026-TT-BKHCN",
+        "document_number": "05/2026/TT-BKHCN",
+        "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+        "article_id": "05-2026-TT-BKHCN_dieu-3",
+        "article": "3",
+        "article_label": "Điều 3",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "e",
+        "point_label": "Điểm e",
+        "text": "Bảo đảm an ninh của hệ thống trí tuệ nhân tạo: Tổ chức, cá nhân áp dụng biện pháp bảo vệ phù hợp để phòng ngừa, phát hiện, ngăn chặn và ứng phó với các hành vi xâm nhập, chiếm quyền điều khiển, đầu độc dữ liệu, đầu độc mô hình, tấn công đối nghịch, khai thác lỗ hổng, rò rỉ dữ liệu và lạm dụng hệ thống trí tuệ nhân tạo; bảo đảm tính bí mật, toàn vẹn và sẵn sàng của dữ liệu, mô hình, thuật toán và hạ tầng liên quan.",
+        "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 1\nĐiểm e)\nBảo đảm an ninh của hệ thống trí tuệ nhân tạo: Tổ chức, cá nhân áp dụng biện pháp bảo vệ phù hợp để phòng ngừa, phát hiện, ngăn chặn và ứng phó với các hành vi xâm nhập, chiếm quyền điều khiển, đầu độc dữ liệu, đầu độc mô hình, tấn công đối nghịch, khai thác lỗ hổng, rò rỉ dữ liệu và lạm dụng hệ thống trí tuệ nhân tạo; bảo đảm tính bí mật, toàn vẹn và sẵn sàng của dữ liệu, mô hình, thuật toán và hạ tầng liên quan.",
+        "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "reranker_score": 3.1739890575408936,
+        "bm25_rank": null,
+        "dense_rank": 10,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-1",
+        "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e"
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 27. Trách nhiệm đạo đức và đánh giá tác động khi ứng dụng trí tuệ nhân tạo trong quản lý nhà nước và cung cấp dịch vụ công\nKhoản 3\nCơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 2.8770461082458496,
+        "bm25_rank": 2,
+        "dense_rank": 3,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-27_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-26",
+        "article": "26",
+        "article_label": "Điều 26",
+        "clause": "4",
+        "clause_label": "Khoản 4",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà nước khuyến khích tổ chức, cá nhân áp dụng Khung đạo đức trí tuệ nhân tạo quốc gia trong quá trình nghiên cứu, phát triển, cung cấp, triển khai và sử dụng hệ thống trí tuệ nhân tạo nhằm bảo đảm tính minh bạch, công bằng, an toàn và tôn trọng quyền con người.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 26. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 4\nNhà nước khuyến khích tổ chức, cá nhân áp dụng Khung đạo đức trí tuệ nhân tạo quốc gia trong quá trình nghiên cứu, phát triển, cung cấp, triển khai và sử dụng hệ thống trí tuệ nhân tạo nhằm bảo đảm tính minh bạch, công bằng, an toàn và tôn trọng quyền con người.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 1.9405605792999268,
+        "bm25_rank": 4,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-26_khoan-4",
+        "point_id": null
+      }
+    ],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": true,
+      "missing_aspects": [],
+      "reason": "Các chứng cứ cung cấp đầy đủ thông tin về các biện pháp kiểm soát cần áp dụng khi hệ thống AI có ảnh hưởng đến quyền con người (bao gồm biện pháp rà soát để bảo đảm không xâm phạm quyền con người, cơ chế giám sát và can thiệp của con người, cùng việc lập báo cáo đánh giá tác động và biện pháp kiểm soát theo quy định)."
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": "Theo Khung đạo đức trí tuệ nhân tạo quốc gia, tổ chức và cá nhân phải áp dụng các biện pháp rà soát phù hợp nhằm bảo đảm hệ thống trí tuệ nhân tạo không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, quyền được đối xử bình đẳng và các quyền hợp pháp khác [E1]. Đồng thời, cần xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng, bảo đảm duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của hệ thống [E2]. Ngoài ra, tổ chức và cá nhân phải áp dụng biện pháp bảo vệ phù hợp để phòng ngừa, phát hiện, ngăn chặn và ứng phó với các hành vi xâm nhập, chiếm quyền điều khiển, tấn công, rò rỉ dữ liệu và lạm dụng hệ thống [E3].",
+    "completeness_check": {
+      "complete": true,
+      "missing_points": [],
+      "reason": "Câu trả lời đã bao gồm đầy đủ các biện pháp kiểm soát theo Khung đạo đức trí tuệ nhân tạo quốc gia và quy định liên quan đến hệ thống trí tuệ nhân tạo có tác động đáng kể đến quyền con người được cung cấp trong các đoạn bằng chứng."
+    },
+    "citation_check": {
+      "valid": true,
+      "cited_evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required_by_deterministic_gate",
+      "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+      "reviewed_claims": []
+    },
+    "revision_count": 1,
+    "citation_revision_count": 0,
+    "final_answer": "Theo Khung đạo đức trí tuệ nhân tạo quốc gia, tổ chức và cá nhân phải áp dụng các biện pháp rà soát phù hợp nhằm bảo đảm hệ thống trí tuệ nhân tạo không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, quyền được đối xử bình đẳng và các quyền hợp pháp khác [E1]. Đồng thời, cần xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng, bảo đảm duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của hệ thống [E2]. Ngoài ra, tổ chức và cá nhân phải áp dụng biện pháp bảo vệ phù hợp để phòng ngừa, phát hiện, ngăn chặn và ứng phó với các hành vi xâm nhập, chiếm quyền điều khiển, tấn công, rò rỉ dữ liệu và lạm dụng hệ thống [E3]. Bên cạnh đó, theo quy định về hệ thống trí tuệ nhân tạo có tác động đáng kể đến quyền con người, cơ quan vận hành hệ thống phải lập báo cáo đánh giá tác động việc sử dụng hệ thống, bao gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người [E4].",
+    "final_status": "success",
+    "run_id": "agentic-v1-eval029",
+    "initial_top5": [
+      "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+      "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+      "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+      "134-2025-QH15_dieu-27_khoan-3",
+      "134-2025-QH15_dieu-26_khoan-4"
+    ],
+    "expanded_candidates": [],
+    "final_top5": [
+      "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+      "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+      "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+      "134-2025-QH15_dieu-27_khoan-3",
+      "134-2025-QH15_dieu-26_khoan-4"
+    ],
+    "retrieval_calls": [
+      {
+        "call_number": 1,
+        "round": 0,
+        "query": "Theo Khung đạo đức trí tuệ nhân tạo quốc gia, khi hệ thống AI có thể ảnh hưởng đáng kể đến quyền con người thì cần áp dụng những biện pháp kiểm soát nào?",
+        "sub_query": false,
+        "bm25_depth": 20,
+        "dense_depth": 20,
+        "candidate_chunk_ids": [
+          "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+          "134-2025-QH15_dieu-27_khoan-3",
+          "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+          "134-2025-QH15_dieu-26_khoan-4",
+          "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-d",
+          "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-a",
+          "05-2026-TT-BKHCN_dieu-2_khoan-1",
+          "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+          "134-2025-QH15_dieu-26_khoan-2",
+          "134-2025-QH15_dieu-26_khoan-1_diem-a",
+          "134-2025-QH15_dieu-26_khoan-1_diem-b",
+          "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-b",
+          "05-2026-TT-BKHCN_dieu-1_khoan-1",
+          "134-2025-QH15_dieu-9_khoan-1_diem-a",
+          "05-2026-TT-BKHCN_dieu-5_khoan-1",
+          "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+          "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+          "134-2025-QH15_dieu-26_khoan-1_diem-c",
+          "142-2026-ND-CP_dieu-11_khoan-1_diem-a",
+          "142-2026-ND-CP_dieu-15_khoan-6",
+          "134-2025-QH15_dieu-35_khoan-2",
+          "05-2026-TT-BKHCN_dieu-5_khoan-3",
+          "134-2025-QH15_dieu-27_khoan-1",
+          "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+          "142-2026-ND-CP_dieu-8_khoan-1_diem-a",
+          "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+          "134-2025-QH15_dieu-27_khoan-2",
+          "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-20_khoan-6",
+          "134-2025-QH15_dieu-27_khoan-5"
+        ],
+        "candidate_count": 30,
+        "reranker_ranks": [
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+            "rank": 1,
+            "reranker_score": 6.229919910430908
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+            "rank": 2,
+            "reranker_score": 4.861722946166992
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+            "rank": 3,
+            "reranker_score": 3.1739890575408936
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+            "rank": 4,
+            "reranker_score": 2.8770461082458496
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+            "rank": 5,
+            "reranker_score": 1.9405605792999268
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+            "rank": 6,
+            "reranker_score": 1.8469760417938232
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-2_khoan-1",
+            "rank": 7,
+            "reranker_score": 0.995201587677002
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-b",
+            "rank": 8,
+            "reranker_score": 0.9794775247573853
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-b",
+            "rank": 9,
+            "reranker_score": 0.7677353620529175
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+            "rank": 10,
+            "reranker_score": 0.0625714659690857
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+            "rank": 11,
+            "reranker_score": -0.08145524561405182
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-a",
+            "rank": 12,
+            "reranker_score": -0.21068906784057617
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-9_khoan-1_diem-a",
+            "rank": 13,
+            "reranker_score": -0.2971816956996918
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+            "rank": 14,
+            "reranker_score": -0.3206236958503723
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-d",
+            "rank": 15,
+            "reranker_score": -0.3998120427131653
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-a",
+            "rank": 16,
+            "reranker_score": -0.7905139327049255
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-1_diem-a",
+            "rank": 17,
+            "reranker_score": -0.809059739112854
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+            "rank": 18,
+            "reranker_score": -0.8732830882072449
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-1",
+            "rank": 19,
+            "reranker_score": -1.4749538898468018
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+            "rank": 20,
+            "reranker_score": -1.502065658569336
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-2",
+            "rank": 21,
+            "reranker_score": -1.7552978992462158
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-1",
+            "rank": 22,
+            "reranker_score": -1.8799927234649658
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-c",
+            "rank": 23,
+            "reranker_score": -1.9039061069488525
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+            "rank": 24,
+            "reranker_score": -1.9316556453704834
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-3",
+            "rank": 25,
+            "reranker_score": -2.0358047485351562
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-1_khoan-1",
+            "rank": 26,
+            "reranker_score": -2.185840129852295
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-2",
+            "rank": 27,
+            "reranker_score": -2.3422701358795166
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-1_diem-a",
+            "rank": 28,
+            "reranker_score": -2.921762704849243
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-35_khoan-2",
+            "rank": 29,
+            "reranker_score": -3.048983097076416
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-5",
+            "rank": 30,
+            "reranker_score": -3.1874899864196777
+          }
+        ],
+        "top5_chunk_ids": [
+          "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+          "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+          "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+          "134-2025-QH15_dieu-27_khoan-3",
+          "134-2025-QH15_dieu-26_khoan-4"
+        ],
+        "candidate_ranks": [
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+            "bm25_rank": 1,
+            "dense_rank": 2
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+            "bm25_rank": 2,
+            "dense_rank": 3
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a",
+            "bm25_rank": 3,
+            "dense_rank": 1
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+            "bm25_rank": 4,
+            "dense_rank": 5
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-d",
+            "bm25_rank": 5,
+            "dense_rank": 19
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-a",
+            "bm25_rank": 6,
+            "dense_rank": 9
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-2_khoan-1",
+            "bm25_rank": 7,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+            "bm25_rank": 8,
+            "dense_rank": 14
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-2",
+            "bm25_rank": 9,
+            "dense_rank": 20
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-a",
+            "bm25_rank": 10,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-b",
+            "bm25_rank": 11,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-b",
+            "bm25_rank": 12,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-1_khoan-1",
+            "bm25_rank": 13,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-9_khoan-1_diem-a",
+            "bm25_rank": 14,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-1",
+            "bm25_rank": 15,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+            "bm25_rank": 16,
+            "dense_rank": 11
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+            "bm25_rank": 17,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-1_diem-c",
+            "bm25_rank": 18,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-1_diem-a",
+            "bm25_rank": 19,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+            "bm25_rank": 20,
+            "dense_rank": 4
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-35_khoan-2",
+            "bm25_rank": null,
+            "dense_rank": 6
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 7
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 8
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-e",
+            "bm25_rank": null,
+            "dense_rank": 10
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-1_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 12
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 13
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-2",
+            "bm25_rank": null,
+            "dense_rank": 15
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 16
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+            "bm25_rank": null,
+            "dense_rank": 17
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-5",
+            "bm25_rank": null,
+            "dense_rank": 18
+          }
+        ]
+      }
+    ],
+    "llm_calls": [
+      {
+        "call_number": 1,
+        "stage": "coverage_check"
+      },
+      {
+        "call_number": 2,
+        "stage": "answer_generation"
+      },
+      {
+        "call_number": 3,
+        "stage": "completeness_check"
+      },
+      {
+        "call_number": 4,
+        "stage": "answer_revision"
+      },
+      {
+        "call_number": 5,
+        "stage": "completeness_check"
+      }
+    ],
+    "expansion_used": false,
+    "revision_used": true,
+    "citation_revision_used": false,
+    "execution_error": null,
+    "transitions": [
+      "initialized",
+      "initial_retrieval",
+      "coverage_check",
+      "answer_generation",
+      "completeness_check",
+      "answer_revision",
+      "completeness_check",
+      "citation_check",
+      "final:success"
+    ]
+  },
+  "timestamp": "2026-09-05T14:22:14.280575+00:00"
+}

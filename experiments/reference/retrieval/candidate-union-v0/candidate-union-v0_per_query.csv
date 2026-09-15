@@ -1,0 +1,32 @@
+query_id,query,query_type,difficulty,gold_chunk_count,bm25_gold_found,dense_gold_found,union_gold_found,bm25_candidate_recall,dense_candidate_recall,union_candidate_recall,bm25_any_gold,dense_any_gold,union_any_gold,bm25_full_gold,dense_full_gold,union_full_gold,bm25_candidate_count,dense_candidate_count,union_candidate_count,overlap_count,overlap_ratio
+eval001,Các mức phân loại rủi ro của hệ thống trí tuệ nhân tạo gồm những mức nào?,classification,easy,3,3,3,3,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,32,8,0.2500000000
+eval002,Ai có thẩm quyền ban hành danh mục hệ thống trí tuệ nhân tạo có rủi ro cao?,authority,easy,1,1,1,1,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,26,14,0.5384615385
+eval003,Nhà cung cấp phải lập hồ sơ phân loại rủi ro vào thời điểm nào?,procedure,easy,1,1,1,1,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,28,12,0.4285714286
+eval004,Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?,actor_obligation,medium,6,2,1,2,0.3333333333,0.1666666667,0.3333333333,1,1,1,0,0,0,20,20,32,8,0.2500000000
+eval005a,Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,actor_obligation,hard,7,1,1,2,0.1428571429,0.1428571429,0.2857142857,1,1,1,0,0,0,20,20,33,7,0.2121212121
+eval005b,Bên triển khai hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,actor_obligation,hard,6,1,1,2,0.1666666667,0.1666666667,0.3333333333,1,1,1,0,0,0,20,20,34,6,0.1764705882
+eval006,Trách nhiệm minh bạch của nhà cung cấp hệ thống trí tuệ nhân tạo bao gồm những gì?,actor_obligation,medium,3,3,2,3,1.0000000000,0.6666666667,1.0000000000,1,1,1,1,0,1,20,20,33,7,0.2121212121
+eval007,Nội dung do AI tạo ra phải được thông báo hoặc gắn nhãn như thế nào?,transparency,hard,9,9,5,9,1.0000000000,0.5555555556,1.0000000000,1,1,1,1,0,1,20,20,26,14,0.5384615385
+eval008,Trường hợp nào nội dung do AI tạo ra cần giúp người tiếp nhận nhận biết rõ nguồn gốc?,condition,medium,4,3,2,3,0.7500000000,0.5000000000,0.7500000000,1,1,1,0,0,0,20,20,35,5,0.1428571429
+eval009,Hệ thống AI tương tác trực tiếp với con người phải được thiết kế theo yêu cầu gì?,condition,easy,1,1,1,1,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,38,2,0.0526315789
+eval010,Nhà cung cấp cần làm gì khi phát hiện sự cố liên quan đến hệ thống trí tuệ nhân tạo?,incident,easy,1,0,1,1,0.0000000000,1.0000000000,1.0000000000,0,1,1,0,1,1,20,20,31,9,0.2903225806
+eval011,"Cơ chế thử nghiệm có kiểm soát cho phép tổ chức, cá nhân được hưởng những cơ chế gì trong phạm vi thử nghiệm?",sandbox,medium,2,0,0,0,0.0000000000,0.0000000000,0.0000000000,0,0,0,0,0,0,20,20,29,11,0.3793103448
+eval012,Cơ quan nào quyết định chấp thuận tham gia cơ chế thử nghiệm có kiểm soát?,authority,medium,3,3,3,3,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,28,12,0.4285714286
+eval013,Việc phân loại cấp độ thử nghiệm có kiểm soát dựa trên những tiêu chí nào?,sandbox,medium,5,5,5,5,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,24,16,0.6666666667
+eval014,Hồ sơ thông thường để tham gia cơ chế thử nghiệm có kiểm soát gồm những thành phần nào?,procedure,medium,4,4,2,4,1.0000000000,0.5000000000,1.0000000000,1,1,1,1,0,1,20,20,31,9,0.2903225806
+eval015,Khi nào cơ quan có thẩm quyền có thể tạm dừng hoặc chấm dứt thử nghiệm?,condition,hard,2,2,2,2,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,33,7,0.2121212121
+eval016,Tổ chức hoặc cá nhân phải báo cáo gì trong quá trình thử nghiệm có kiểm soát?,procedure,medium,5,5,4,5,1.0000000000,0.8000000000,1.0000000000,1,1,1,1,0,1,20,20,29,11,0.3793103448
+eval017,Có thể gia hạn thời gian thử nghiệm có kiểm soát hay không và thủ tục thế nào?,procedure,medium,1,1,1,1,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,33,7,0.2121212121
+eval018,"Sau khi kết thúc thử nghiệm, cơ quan có thẩm quyền xử lý kết quả như thế nào?",procedure,medium,3,3,2,3,1.0000000000,0.6666666667,1.0000000000,1,1,1,1,0,1,20,20,26,14,0.5384615385
+eval019,Cơ sở dữ liệu quốc gia phục vụ trí tuệ nhân tạo được tổ chức theo những nguyên tắc nào?,data_governance,easy,1,1,1,1,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,31,9,0.2903225806
+eval020,Dữ liệu mở có điều kiện được hiểu là gì?,definition,easy,1,1,1,1,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,32,8,0.2500000000
+eval021,Những loại dữ liệu nào có thể được đưa vào cơ sở dữ liệu phục vụ trí tuệ nhân tạo?,data_governance,easy,3,2,2,3,0.6666666667,0.6666666667,1.0000000000,1,1,1,0,0,1,20,20,28,12,0.4285714286
+eval022,Cơ quan quản lý có trách nhiệm gì đối với việc xây dựng và cập nhật dữ liệu mở phục vụ AI?,actor_obligation,medium,3,2,0,2,0.6666666667,0.0000000000,0.6666666667,1,0,1,0,0,0,20,20,30,10,0.3333333333
+eval023,Quy định về bảo đảm khả năng kết nối và khai thác dữ liệu phục vụ trí tuệ nhân tạo là gì?,data_governance,easy,2,1,0,1,0.5000000000,0.0000000000,0.5000000000,1,0,1,0,0,0,20,20,33,7,0.2121212121
+eval024,Những hành vi nào liên quan đến AI bị nghiêm cấm khi lợi dụng nhóm người dễ bị tổn thương?,prohibition,easy,1,1,1,1,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,30,10,0.3333333333
+eval025,"Khi ứng dụng AI trong quản lý nhà nước, cơ quan vận hành phải đánh giá tác động trong trường hợp nào?",public_sector,hard,7,5,7,7,0.7142857143,1.0000000000,1.0000000000,1,1,1,0,1,1,20,20,26,14,0.5384615385
+eval026,Báo cáo đánh giá tác động khi sử dụng AI trong khu vực công cần đề cập những nội dung gì?,public_sector,medium,4,1,2,3,0.2500000000,0.5000000000,0.7500000000,1,1,1,0,0,0,20,20,30,10,0.3333333333
+eval027,Nguyên tắc đạo đức khi phát triển và sử dụng trí tuệ nhân tạo được đặt ra như thế nào?,ethics,medium,4,2,1,2,0.5000000000,0.2500000000,0.5000000000,1,1,1,0,0,0,20,20,29,11,0.3793103448
+eval028,Tổ chức phát triển hoặc triển khai AI cần bảo đảm trách nhiệm giải trình ra sao?,accountability,hard,2,2,1,2,1.0000000000,0.5000000000,1.0000000000,1,1,1,1,0,1,20,20,33,7,0.2121212121
+eval029,"Theo Khung đạo đức trí tuệ nhân tạo quốc gia, khi hệ thống AI có thể ảnh hưởng đáng kể đến quyền con người thì cần áp dụng những biện pháp kiểm soát nào?",rights_risk,hard,2,2,2,2,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,30,10,0.3333333333
+eval030,Những yêu cầu nào giúp bảo đảm con người vẫn có khả năng giám sát và can thiệp vào hệ thống AI?,human_oversight,hard,1,1,1,1,1.0000000000,1.0000000000,1.0000000000,1,1,1,1,1,1,20,20,29,11,0.3793103448

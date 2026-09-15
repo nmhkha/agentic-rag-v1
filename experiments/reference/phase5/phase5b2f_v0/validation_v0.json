@@ -1,0 +1,35 @@
+{
+  "artifact_provenance_sha256": "e2c81b240550cbb477356c3db80cc05dd48d5206b390f9f82382c229276c9992",
+  "blocked_network_attempts": 0,
+  "bootstrap_exact_endpoint_and_all_draw_parity": true,
+  "check_count": 9,
+  "checks": [
+    "All declared analysis artifact byte hashes",
+    "93 unchanged semantic payloads, unique authorities, frozen gold/query/production/answer/variant bindings",
+    "All R1/R2/A1/A2 primary, citation and safety metrics reproduce frozen summarize semantics and raw counts",
+    "Sealed production event counts, HTTP submissions and trace totals; all efficiency summary statistics",
+    "A1: exact frozen bootstrap endpoints, all 10,000 means, paired signs, 102-point transitions, both strata, cross-tab and interpretation precedence (Insufficient evidence)",
+    "A2: exact frozen bootstrap endpoints, all 10,000 means, paired signs, 102-point transitions, both strata, cross-tab and interpretation precedence (Insufficient evidence)",
+    "Required 13-section report structure, replication-first order and H3/Phase 5C stop scope",
+    "Final before/after byte integrity: 1,420 project files and 24 external assets; zero outside-namespace additions",
+    "Zero network/API, production and evaluator calls; no frozen runtime or evaluator module imports"
+  ],
+  "evaluator_calls": 0,
+  "external_assets_unchanged": 24,
+  "frozen_interpretation_parity": {
+    "A1": "Insufficient evidence",
+    "A2": "Insufficient evidence"
+  },
+  "independent_reference": {
+    "method": "AST extraction of pure frozen arithmetic/interpretation functions; no module import or evaluator execution",
+    "path": "data/evaluation/generation/phase5/phase5b2e_v0/analyze_frozen.py",
+    "sha256": "cd230aa6c0bc0b5e462e00994691338d19045b37d35ca9e16da1d1e246876b1e"
+  },
+  "network_calls": 0,
+  "phase5c_started": false,
+  "production_calls": 0,
+  "project_files_unchanged": 1420,
+  "ready_for_phase5c_review": true,
+  "status": "PASS",
+  "validator_sha256": "c3e4796a7ef7e1a958a4797389d195bce679eededfc5fafa44e54e8727b86b0e"
+}

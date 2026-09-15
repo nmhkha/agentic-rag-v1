@@ -1,0 +1,1474 @@
+{
+  "schema": "phase5c3-controller-status-decision-spec-v0",
+  "design_only": true,
+  "runtime_implementation_created": false,
+  "scope": "Finite nonempty bounded material legal scope; predicates describe runtime evidence/selected final answer only, never benchmark gold. Out-of-scope/non-material tasks require separate review, not vacuous success.",
+  "status_source": "runtime_estimate; NEVER benchmark-certified",
+  "predicates": {
+    "execution_completed": {
+      "domain": [
+        false,
+        true
+      ],
+      "meaning": "Pipeline reached normal finalization without unrecovered execution/transport failure. Budget-limited normal termination may be true; a recovered failed attempt alone does not set false."
+    },
+    "final_answer_exists": {
+      "domain": [
+        false,
+        true
+      ],
+      "meaning": "A nonempty selected final answer version exists, including a nonempty calibrated insufficiency/disclosure response. Empty/whitespace output is false; a retained intermediate draft alone is false."
+    },
+    "final_check_fresh": {
+      "domain": [
+        false,
+        true,
+        null
+      ],
+      "meaning": "All required final checks were reached, parsed and bound to exact selected final answer/evidence/scope hashes; true does not imply their verdict passed. false means known missing/stale/unparsed check; null means freshness provenance unavailable."
+    },
+    "citation_valid": {
+      "domain": [
+        false,
+        true,
+        null
+      ],
+      "meaning": "Current-final required citation checks: true if all pass or a recorded current assessment establishes no citation obligation; false if any current required syntax/semantic check fails; null if no conclusive current result. Old-version failures are secondary history, not current false."
+    },
+    "supported_answerable_content_exists": {
+      "domain": [
+        false,
+        true,
+        null
+      ],
+      "meaning": "At least one material portion of bounded intent has adequate applicable support in the final controller-visible evidence, whether or not the answer states it. Includes a defensibly qualified supported subportion. Never corpus gold."
+    },
+    "supported_answerable_content_omitted": {
+      "domain": [
+        false,
+        true,
+        null
+      ],
+      "meaning": "At least one such supported material response portion is absent or materially misstated in selected final answer. Disclosure cannot repair a supported omission."
+    },
+    "unresolved_material_aspects_exist": {
+      "domain": [
+        false,
+        true,
+        null
+      ],
+      "meaning": "At least one explicit/admitted material response obligation remains unresolved: supported omission or evidence/applicability-limited portion. Unsupported extra wording is tracked separately; unadmitted inferred candidates do not create obligations."
+    },
+    "unresolved_material_aspects_disclosed": {
+      "domain": [
+        false,
+        true,
+        null
+      ],
+      "meaning": "Every unresolved material obligation is specifically and accurately disclosed in selected final answer. When none exist use true (vacuous obligation coverage, not a metric score). null means unassessed; false means at least one missing/inaccurate disclosure."
+    },
+    "unsupported_material_claim_exists": {
+      "domain": [
+        false,
+        true,
+        null
+      ],
+      "meaning": "At least one asserted material legal claim lacks adequate support or defensible applicability in exact final evidence. Independent of citation syntax and omitted supported content."
+    },
+    "evidence_sufficient_for_full_scope": {
+      "domain": [
+        false,
+        true,
+        null
+      ],
+      "meaning": "Every material obligation in the finite nonempty bounded legal scope has sufficient applicable final-evidence support. Conditional questions can be fully supported with conditions preserved; missing conditions needed for concrete conclusions prevent full sufficiency."
+    },
+    "evidence_sufficient_for_partial_scope": {
+      "domain": [
+        false,
+        true,
+        null
+      ],
+      "meaning": "INCLUSIVE existential: evidence supports at least one material portion, including when it supports full scope. Equivalent to supported_answerable_content_exists; not the exclusive partially_answerable gold enum."
+    },
+    "runtime_budget_exhausted": {
+      "domain": [
+        false,
+        true
+      ],
+      "meaning": "Configured runtime resource ceiling reached. Orthogonal to status; cannot upgrade an incomplete/unverified response to success or infer evidence insufficiency."
+    }
+  },
+  "condition_language": {
+    "eq": "Exact type-sensitive equality [predicate_name, literal]; JSON null is a distinct unknown, never false.",
+    "all": "Conjunction of child conditions.",
+    "any": "Disjunction of child conditions.",
+    "omitted_predicate_in_condition": "Wildcard over its declared domain; never implicit false."
+  },
+  "evaluation_contract": [
+    "Reject missing/extra keys or wrong types as INVALID_STATE with null final_status. Python/JSON numeric 0/1 are not booleans.",
+    "Collect ALL matching invalid-state rules; if any match, disposition INVALID_STATE and final_status null.",
+    "Otherwise collect all review rules; if any match, disposition REQUIRES_REVIEW and final_status null.",
+    "Otherwise exactly one runtime row MUST match, independently of row order. Emit VALID_STATE and that final_status. A zero/multiple match is a specification failure requiring review; it cannot receive success.",
+    "Retain input snapshot, matched rule IDs, exact evidence/answer/check hashes and every known secondary flag. Do not silently repair contradictions or infer missing predicates."
+  ],
+  "invalid_state_rules": [
+    {
+      "id": "I01",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "final_answer_exists",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "final_check_fresh",
+              true
+            ]
+          }
+        ]
+      },
+      "reason": "No final answer exists to bind a fresh final check."
+    },
+    {
+      "id": "I02",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "final_answer_exists",
+              false
+            ]
+          },
+          {
+            "any": [
+              {
+                "eq": [
+                  "citation_valid",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "citation_valid",
+                  false
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": "A current-final citation verdict requires final answer bytes."
+    },
+    {
+      "id": "I03",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "final_answer_exists",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "unsupported_material_claim_exists",
+              true
+            ]
+          }
+        ]
+      },
+      "reason": "No final answer can contain an asserted material claim."
+    },
+    {
+      "id": "I04",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "final_answer_exists",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "unresolved_material_aspects_exist",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "unresolved_material_aspects_disclosed",
+              true
+            ]
+          }
+        ]
+      },
+      "reason": "An absent final answer cannot disclose actual unresolved obligations."
+    },
+    {
+      "id": "I05",
+      "when": {
+        "any": [
+          {
+            "all": [
+              {
+                "eq": [
+                  "supported_answerable_content_exists",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "evidence_sufficient_for_partial_scope",
+                  false
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "eq": [
+                  "supported_answerable_content_exists",
+                  false
+                ]
+              },
+              {
+                "eq": [
+                  "evidence_sufficient_for_partial_scope",
+                  true
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": "The two inclusive support-existence predicates disagree."
+    },
+    {
+      "id": "I06",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "evidence_sufficient_for_full_scope",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "evidence_sufficient_for_partial_scope",
+              false
+            ]
+          }
+        ]
+      },
+      "reason": "Full support of a nonempty material scope implies some support."
+    },
+    {
+      "id": "I07",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "evidence_sufficient_for_full_scope",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "supported_answerable_content_exists",
+              false
+            ]
+          }
+        ]
+      },
+      "reason": "Full support implies supported content exists."
+    },
+    {
+      "id": "I08",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "supported_answerable_content_omitted",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "supported_answerable_content_exists",
+              false
+            ]
+          }
+        ]
+      },
+      "reason": "Supported omission requires supported content."
+    },
+    {
+      "id": "I09",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "supported_answerable_content_omitted",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "unresolved_material_aspects_exist",
+              false
+            ]
+          }
+        ]
+      },
+      "reason": "Supported omitted response content remains unresolved."
+    },
+    {
+      "id": "I10",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "evidence_sufficient_for_full_scope",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "unresolved_material_aspects_exist",
+              false
+            ]
+          }
+        ]
+      },
+      "reason": "An evidence/applicability-limited material scope necessarily retains unresolved portions."
+    },
+    {
+      "id": "I11",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "evidence_sufficient_for_full_scope",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "supported_answerable_content_omitted",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "unresolved_material_aspects_exist",
+              true
+            ]
+          }
+        ]
+      },
+      "reason": "With full support and no supported omission, no response obligation remains unresolved under these definitions."
+    },
+    {
+      "id": "I12",
+      "when": {
+        "all": [
+          {
+            "eq": [
+              "unresolved_material_aspects_exist",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "unresolved_material_aspects_disclosed",
+              false
+            ]
+          }
+        ]
+      },
+      "reason": "With no unresolved obligation disclosure completeness is canonically true, never false."
+    }
+  ],
+  "requires_review_rules": [
+    {
+      "id": "U01",
+      "when": {
+        "all": [
+          {
+            "all": [
+              {
+                "eq": [
+                  "execution_completed",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "final_answer_exists",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "eq": [
+              "final_check_fresh",
+              true
+            ]
+          },
+          {
+            "any": [
+              {
+                "eq": [
+                  "citation_valid",
+                  null
+                ]
+              },
+              {
+                "eq": [
+                  "supported_answerable_content_exists",
+                  null
+                ]
+              },
+              {
+                "eq": [
+                  "supported_answerable_content_omitted",
+                  null
+                ]
+              },
+              {
+                "eq": [
+                  "unresolved_material_aspects_exist",
+                  null
+                ]
+              },
+              {
+                "eq": [
+                  "unresolved_material_aspects_disclosed",
+                  null
+                ]
+              },
+              {
+                "eq": [
+                  "unsupported_material_claim_exists",
+                  null
+                ]
+              },
+              {
+                "eq": [
+                  "evidence_sufficient_for_full_scope",
+                  null
+                ]
+              },
+              {
+                "eq": [
+                  "evidence_sufficient_for_partial_scope",
+                  null
+                ]
+              }
+            ]
+          },
+          {
+            "any": [
+              {
+                "eq": [
+                  "citation_valid",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "citation_valid",
+                  null
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": "Fresh check provenance but one or more final semantic/citation predicates are unspecified; require explicit assessment or corrected freshness. Never fill null as false."
+    }
+  ],
+  "runtime_rows": [
+    {
+      "id": "R01",
+      "final_status": "runtime_error",
+      "when": {
+        "any": [
+          {
+            "eq": [
+              "execution_completed",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "final_answer_exists",
+              false
+            ]
+          }
+        ]
+      },
+      "reason": "Execution did not complete or required nonempty final output is missing; retain partial/error artifacts."
+    },
+    {
+      "id": "R02",
+      "final_status": "citation_failure",
+      "when": {
+        "all": [
+          {
+            "all": [
+              {
+                "eq": [
+                  "execution_completed",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "final_answer_exists",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "eq": [
+              "citation_valid",
+              false
+            ]
+          }
+        ]
+      },
+      "reason": "Known current required citation failure; other completeness/freshness defects retained."
+    },
+    {
+      "id": "R03",
+      "final_status": "verification_incomplete",
+      "when": {
+        "all": [
+          {
+            "all": [
+              {
+                "eq": [
+                  "execution_completed",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "final_answer_exists",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "any": [
+              {
+                "eq": [
+                  "citation_valid",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "citation_valid",
+                  null
+                ]
+              }
+            ]
+          },
+          {
+            "any": [
+              {
+                "eq": [
+                  "final_check_fresh",
+                  false
+                ]
+              },
+              {
+                "eq": [
+                  "final_check_fresh",
+                  null
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": "No conclusive current citation failure, but necessary final verification is missing/stale/unknown."
+    },
+    {
+      "id": "R04",
+      "final_status": "incomplete_answer",
+      "when": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "eq": [
+                      "execution_completed",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "final_answer_exists",
+                      true
+                    ]
+                  }
+                ]
+              },
+              {
+                "eq": [
+                  "citation_valid",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "final_check_fresh",
+                  true
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "citation_valid",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "citation_valid",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "supported_answerable_content_exists",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "supported_answerable_content_exists",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "supported_answerable_content_omitted",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "supported_answerable_content_omitted",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_exist",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_exist",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_disclosed",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_disclosed",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unsupported_material_claim_exists",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unsupported_material_claim_exists",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_full_scope",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_full_scope",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_partial_scope",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_partial_scope",
+                      false
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "any": [
+              {
+                "eq": [
+                  "supported_answerable_content_omitted",
+                  true
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_exist",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_disclosed",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "eq": [
+                  "unsupported_material_claim_exists",
+                  true
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": "Supported omission, undisclosed unresolved material obligation or unsupported material wording remains."
+    },
+    {
+      "id": "R05",
+      "final_status": "insufficient_evidence",
+      "when": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "eq": [
+                      "execution_completed",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "final_answer_exists",
+                      true
+                    ]
+                  }
+                ]
+              },
+              {
+                "eq": [
+                  "citation_valid",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "final_check_fresh",
+                  true
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "citation_valid",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "citation_valid",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "supported_answerable_content_exists",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "supported_answerable_content_exists",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "supported_answerable_content_omitted",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "supported_answerable_content_omitted",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_exist",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_exist",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_disclosed",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_disclosed",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unsupported_material_claim_exists",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unsupported_material_claim_exists",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_full_scope",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_full_scope",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_partial_scope",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_partial_scope",
+                      false
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "eq": [
+                  "supported_answerable_content_omitted",
+                  false
+                ]
+              },
+              {
+                "eq": [
+                  "unsupported_material_claim_exists",
+                  false
+                ]
+              },
+              {
+                "eq": [
+                  "unresolved_material_aspects_disclosed",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "eq": [
+              "supported_answerable_content_exists",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "evidence_sufficient_for_full_scope",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "evidence_sufficient_for_partial_scope",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "unresolved_material_aspects_exist",
+              true
+            ]
+          }
+        ]
+      },
+      "reason": "Nonempty calibrated disclosure; no supported material legal portion from available evidence; no corpus-wide absence claim."
+    },
+    {
+      "id": "R06",
+      "final_status": "success_partial_with_disclosure",
+      "when": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "eq": [
+                      "execution_completed",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "final_answer_exists",
+                      true
+                    ]
+                  }
+                ]
+              },
+              {
+                "eq": [
+                  "citation_valid",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "final_check_fresh",
+                  true
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "citation_valid",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "citation_valid",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "supported_answerable_content_exists",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "supported_answerable_content_exists",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "supported_answerable_content_omitted",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "supported_answerable_content_omitted",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_exist",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_exist",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_disclosed",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_disclosed",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unsupported_material_claim_exists",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unsupported_material_claim_exists",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_full_scope",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_full_scope",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_partial_scope",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_partial_scope",
+                      false
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "eq": [
+                  "supported_answerable_content_omitted",
+                  false
+                ]
+              },
+              {
+                "eq": [
+                  "unsupported_material_claim_exists",
+                  false
+                ]
+              },
+              {
+                "eq": [
+                  "unresolved_material_aspects_disclosed",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "eq": [
+              "supported_answerable_content_exists",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "evidence_sufficient_for_partial_scope",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "evidence_sufficient_for_full_scope",
+              false
+            ]
+          },
+          {
+            "eq": [
+              "unresolved_material_aspects_exist",
+              true
+            ]
+          }
+        ]
+      },
+      "reason": "Some supported material content answered and every remaining evidence/applicability-limited obligation disclosed."
+    },
+    {
+      "id": "R07",
+      "final_status": "success_complete",
+      "when": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "eq": [
+                      "execution_completed",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "final_answer_exists",
+                      true
+                    ]
+                  }
+                ]
+              },
+              {
+                "eq": [
+                  "citation_valid",
+                  true
+                ]
+              },
+              {
+                "eq": [
+                  "final_check_fresh",
+                  true
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "citation_valid",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "citation_valid",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "supported_answerable_content_exists",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "supported_answerable_content_exists",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "supported_answerable_content_omitted",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "supported_answerable_content_omitted",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_exist",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_exist",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_disclosed",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unresolved_material_aspects_disclosed",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "unsupported_material_claim_exists",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "unsupported_material_claim_exists",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_full_scope",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_full_scope",
+                      false
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_partial_scope",
+                      true
+                    ]
+                  },
+                  {
+                    "eq": [
+                      "evidence_sufficient_for_partial_scope",
+                      false
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "eq": [
+                  "supported_answerable_content_omitted",
+                  false
+                ]
+              },
+              {
+                "eq": [
+                  "unsupported_material_claim_exists",
+                  false
+                ]
+              },
+              {
+                "eq": [
+                  "unresolved_material_aspects_disclosed",
+                  true
+                ]
+              }
+            ]
+          },
+          {
+            "eq": [
+              "supported_answerable_content_exists",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "evidence_sufficient_for_partial_scope",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "evidence_sufficient_for_full_scope",
+              true
+            ]
+          },
+          {
+            "eq": [
+              "unresolved_material_aspects_exist",
+              false
+            ]
+          }
+        ]
+      },
+      "reason": "All scoped material content supported and answered with current required checks; runtime estimate only."
+    }
+  ],
+  "secondary_fields": {
+    "citation_state": {
+      "true": "pass",
+      "false": "fail",
+      "null": "unknown"
+    },
+    "execution_state": {
+      "execution_completed_true": "completed",
+      "execution_completed_false": "failed",
+      "note": "Missing final answer may yield runtime_error while the pipeline completion flag is true; preserve that distinction and output-missing flag."
+    },
+    "completeness_state": "Independently derive full | partial | insufficient | incomplete | unknown from scope/support/omission/disclosure/unsupported predicates; do not erase it on citation/runtime error. Unknown semantics remain unknown. Full means full support, no unresolved obligations or defects; partial means some support, non-full scope, no defects and complete disclosure; insufficient means no material support, no unsupported assertions and complete disclosure; any known material defect means incomplete.",
+    "unresolved_aspects": "Preserve all explicit/admitted unresolved IDs, reasons and disclosure spans, including supported omissions; candidates/terminal exclusions remain separately auditable.",
+    "stop_reason": "Preserve actual recorded terminating cause: scope_addressed | evidence_limit | no_value_expansion | budget_exhausted | unsearchable_gap | execution_failure; status alone cannot reconstruct it.",
+    "runtime_budget_exhausted": "Retain independently; true can coexist with a verified complete answer if the last permitted call completed the scope.",
+    "secondary_failure_flags": "All known current errors, missing-answer/check failures, unsupported claims and supported omissions; retain historical failed attempts separately."
+  },
+  "invalid_or_review_handling": "No final runtime status is asserted. Preserve provenance and halt positive status reporting pending explicit corrected version/review; no fabricated answer or extra budget implied."
+}

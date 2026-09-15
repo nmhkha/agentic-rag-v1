@@ -1,0 +1,17 @@
+{
+  "schema": "phase5c1-final-artifact-hashes-v0",
+  "files": {
+    "consolidate_research_v0.py": "007ec4b03e08777d99aafef61f95e3e419910dd6cc6982f59a5cc80ecc697d1c",
+    "integrity_before_after_v0.json": "52b18079376f6002ebb4ad7de245013f1eb4536e80821122699f059261970b8b",
+    "integrity_before_inventory_v0.json": "619a4c9f12b1e24595ad1e172af69b4d12756315b19540b4837c5db13e0bba8f",
+    "phase5c1_console_v0.txt": "77d576193a28f18307034fe40256524cde9f2045372d066ea271c011b49ddc8e",
+    "phase5c1_decision_log_v0.md": "b83853e6a9b75ce0e8113fc84d6e2bb891ade8ad612290419677e0ebbe7d56ae",
+    "phase5c1_evidence_matrix_v0.json": "7fe3a92f044d9ab18f81811cff60b37f540c1b5f8fc393142701b023b71ff667",
+    "phase5c1_exploratory_diagnostic_v0.json": "8545d62d1aa793f343100c820e62b722c8b6a316d2d47e2254335b72c31ecb2d",
+    "phase5c1_manifest_v0.json": "dcb19a86ccefe083b8adc9acfabd3a927ffdd87beeaeec06d2920e8b20c1e9b1",
+    "phase5c1_problem_requirement_map_v0.json": "2e69d6b26e10e7c4907ec8eb5ca8794c726dfd0a9a1191277bef9b2acecd5828",
+    "phase5c1_research_synthesis_v0.md": "da4d2bdea95531c06d792416af3d63dd7533094fa42818df1546429d1b182779",
+    "phase5c1_validation_v0.json": "ff48f92ff3a4bddf569beab1d839a2bdf964a2fc4da31bca8057be3260617164"
+  },
+  "coverage": "Every Phase 5C.1 artifact except this hash inventory itself; avoids circular self-hashing. No output file is modified after this seal."
+}

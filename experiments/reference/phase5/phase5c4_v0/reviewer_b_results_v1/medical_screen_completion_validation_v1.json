@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "candidate_comparisons": 60,
+  "reference_records": 1,
+  "exact_duplicate_count": 0,
+  "trivial_paraphrase_count": 0,
+  "strong_near_duplicate_count": 0,
+  "previous_flags_and_historical_results_unchanged": true,
+  "substantive_protected_hashes_unchanged": true,
+  "reference_and_packet_hashes_verified": true,
+  "public_safe_files_query_free": [
+    "phase5c4b_review_summary_v1.md",
+    "phase5c4b_agreement_ready_summary_v1.json",
+    "phase5c4b_access_manifest_v1.json",
+    "phase5c4b_validation_v1.json",
+    "phase5c4b_console_v1.txt",
+    "medical_screen_integrity_before_after_v1.json"
+  ],
+  "full_contamination_screening": "60/60 COMPLETE",
+  "independent_human_legal_review_complete": false,
+  "validation_scope": "Artifact consistency and reference-text screening only, no production/evaluator or legal adjudication."
+}

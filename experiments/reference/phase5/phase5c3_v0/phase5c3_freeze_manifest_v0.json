@@ -1,0 +1,367 @@
+{
+  "schema": "phase5c3-freeze-manifest-v0",
+  "phase": "5C.3",
+  "created_at_utc": "2026-09-10T08:32:43.092936+00:00",
+  "phase_status": "PASS",
+  "phase5c2_original_status": "DRAFT_FOR_EXTERNAL_REVIEW",
+  "phase5c3_review_status": "PASS_WITH_REQUIRED_AMENDMENTS",
+  "phase5c3_freeze_status": "FROZEN",
+  "external_review_disposition": "PASS WITH MINOR REVISIONS",
+  "major_methodological_blocker": "NONE",
+  "review_basis": "External disposition and required amendments supplied by user; local incorporation and consistency review. No new external reviewer contacted.",
+  "request_source": {
+    "path": "/home/minhkha/.codex/attachments/ad3a6bf8-0c22-4b7f-a95a-efebf705a06f/pasted-text.txt",
+    "sha256": "1d04688470e7d7598f4b01a636c7ec99c67f2b9dcf888034412ca1eef12fe607",
+    "size_bytes": 19887
+  },
+  "design_only": true,
+  "output_namespace": "data/evaluation/generation/phase5/phase5c3_v0",
+  "phase5c1_authoritative_artifacts": {
+    "data/evaluation/generation/phase5/phase5c1_v0/consolidate_research_v0.py": {
+      "sha256": "007ec4b03e08777d99aafef61f95e3e419910dd6cc6982f59a5cc80ecc697d1c",
+      "size_bytes": 64524
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/final_artifact_hashes_v0.json": {
+      "sha256": "c66eb0b49c00b0f9dc1ccaa5b2619ff2201c771528b515b0d35ccd52e239a44c",
+      "size_bytes": 1393
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/integrity_before_after_v0.json": {
+      "sha256": "52b18079376f6002ebb4ad7de245013f1eb4536e80821122699f059261970b8b",
+      "size_bytes": 5678128
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/integrity_before_inventory_v0.json": {
+      "sha256": "619a4c9f12b1e24595ad1e172af69b4d12756315b19540b4837c5db13e0bba8f",
+      "size_bytes": 5676401
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_console_v0.txt": {
+      "sha256": "77d576193a28f18307034fe40256524cde9f2045372d066ea271c011b49ddc8e",
+      "size_bytes": 2763
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_decision_log_v0.md": {
+      "sha256": "b83853e6a9b75ce0e8113fc84d6e2bb891ade8ad612290419677e0ebbe7d56ae",
+      "size_bytes": 2473
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_evidence_matrix_v0.json": {
+      "sha256": "7fe3a92f044d9ab18f81811cff60b37f540c1b5f8fc393142701b023b71ff667",
+      "size_bytes": 115575
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_exploratory_diagnostic_v0.json": {
+      "sha256": "8545d62d1aa793f343100c820e62b722c8b6a316d2d47e2254335b72c31ecb2d",
+      "size_bytes": 8364
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_manifest_v0.json": {
+      "sha256": "dcb19a86ccefe083b8adc9acfabd3a927ffdd87beeaeec06d2920e8b20c1e9b1",
+      "size_bytes": 100732
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_problem_requirement_map_v0.json": {
+      "sha256": "2e69d6b26e10e7c4907ec8eb5ca8794c726dfd0a9a1191277bef9b2acecd5828",
+      "size_bytes": 9465
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_research_synthesis_v0.md": {
+      "sha256": "da4d2bdea95531c06d792416af3d63dd7533094fa42818df1546429d1b182779",
+      "size_bytes": 37972
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_validation_v0.json": {
+      "sha256": "ff48f92ff3a4bddf569beab1d839a2bdf964a2fc4da31bca8057be3260617164",
+      "size_bytes": 34343
+    }
+  },
+  "phase5c2_all_artifacts": {
+    "data/evaluation/generation/phase5/phase5c2_v0/final_artifact_hashes_v0.json": {
+      "sha256": "ea05d4d225bbf18eb1217b33f4afb669e2bf07b3317ef27b89cf6398ec4fb448",
+      "size_bytes": 1993
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/integrity_baseline_v0.json": {
+      "sha256": "ade1d7ec6ee56af85674d0acebcab637bfad66badceb01961258ae1b91f93d5c",
+      "size_bytes": 5679004
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/integrity_before_after_v0.json": {
+      "sha256": "6018df682eb377d5e43e0aa0e92cb8c4bd579e333059c59987dd00498147d345",
+      "size_bytes": 5680820
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_challenge_set_design_v0.md": {
+      "sha256": "1f8514571e3fdea048e26eaa399961b54ff2e5af7dd1111fa1904976c0532dc0",
+      "size_bytes": 22031
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_console_v0.txt": {
+      "sha256": "8d5d94d7f23adce3b7bc3329f9df29730652dbde14ef30883fc5a2ea75e7b0c6",
+      "size_bytes": 1145
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_decision_log_v0.md": {
+      "sha256": "a68e7266ddc672f53ac88de733141fc05d0142c5c183cd730ffa0e98577a61b0",
+      "size_bytes": 7567
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_evaluation_protocol_draft_v0.md": {
+      "sha256": "6209c20771d0bf7e7791d878637cb5e7ead8c01f7b3e1b08a6c13a99895a96ca",
+      "size_bytes": 31374
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_manifest_v0.json": {
+      "sha256": "c6d98731c01696299dce134e587163e07d0269cf95dff05b75f16428d967b60e",
+      "size_bytes": 11390
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_requirement_validation_matrix_v0.json": {
+      "sha256": "71caa700ec77bbe998caed8764d2ebcfd6cf23d1628513d5894bdb621cd1520e",
+      "size_bytes": 18680
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_trace_schema_design_v0.json": {
+      "sha256": "e75cba2402593c79157f439f3ffc079003df9330d2f58c3a7523249a0f571e24",
+      "size_bytes": 23233
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_v2_requirements_design_v0.md": {
+      "sha256": "0328ec76ae710402abe323c00363550686b439384b048e483f30fb55554d1658",
+      "size_bytes": 25618
+    },
+    "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_validation_v0.json": {
+      "sha256": "869fd0ea657fd83a2f0aa4edef15d6de144b952ad8ca0db0f06d8cc2a7f2c134",
+      "size_bytes": 10625
+    }
+  },
+  "source_binding_checks_passed": 48,
+  "binding_registry": "phase5c3_spec_bindings_v0.json",
+  "trace_matrix_amendment": "phase5c3_trace_matrix_amendment_v0.json",
+  "frozen_specification": "phase5c3_frozen_design_spec_v0.md",
+  "controller_decision_table": "phase5c3_controller_status_decision_table_v0.json",
+  "amendments": {
+    "A1": "INCORPORATED_MANDATORY_HOLDOUT_BLINDNESS",
+    "A2": "INCORPORATED_FINAL_AUTHORIZED_V2_PRIMARY_RULE",
+    "A3": "INCORPORATED_PROVISIONAL_MARGIN_GOVERNANCE",
+    "A4": "INCORPORATED_GLOBAL_PROVIDER_QUOTA_SCHEDULER"
+  },
+  "frozen_labels": {
+    "Answer Revision": "Insufficient evidence",
+    "Evidence Expansion": "Insufficient evidence"
+  },
+  "goal_persistence_status": "UNCONFIRMED_TIER_C",
+  "aspect_ledger": "MULTI_AXIS_PRESERVED",
+  "requirement_decisions": {
+    "V2-R1": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R2": "REFINE",
+    "V2-R3": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R4": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R5": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R6": "KEEP_AS_IS"
+  },
+  "historical_benchmark": {
+    "queries": 31,
+    "points": 102,
+    "replaced": false,
+    "scoring_modified": false,
+    "role": "PRIMARY HISTORICAL COMPARABILITY BENCHMARK",
+    "untouched_confirmatory_holdout": false,
+    "reason": "Its outcomes informed v2 requirements.",
+    "allowed_future_uses": [
+      "historical comparison",
+      "regression",
+      "compatibility"
+    ]
+  },
+  "primary_contrast": {
+    "rule": "FINAL_EXTERNALLY_AUTHORIZED_V2 − FROZEN_V1",
+    "authorized_final_v2": null,
+    "sealed_primary_arm": null,
+    "C_final": "C − V1",
+    "E_final_if_expansion_authorized": "E − V1",
+    "decision_phase": "5C.5 before implementation and TEST exposure",
+    "seal_fields": [
+      "final_v2_definition",
+      "primary_contrast",
+      "secondary_contrasts",
+      "mechanism_bundle_membership"
+    ]
+  },
+  "acceptance_margins": {
+    "status": "PROVISIONAL DESIGN MARGINS — NOT YET FROZEN",
+    "numeric_acceptance_margins_frozen": false,
+    "provisional_candidates": {
+      "delta_AC_min": 0.05,
+      "epsilon_G": 0.02,
+      "epsilon_CC": 0.02,
+      "epsilon_UCR": 0.02
+    },
+    "approved_values": {
+      "delta_AC_min": null,
+      "epsilon_G": null,
+      "epsilon_CC": null,
+      "epsilon_UCR": null
+    },
+    "governance": "phase5c3_margin_governance_v0.md",
+    "future_approval_phase": "5C.5 after 5C.4 annotation/rubric/denominator structure",
+    "stop_if_unapproved_at_test_seal": true,
+    "TEST_scores_may_inform_margins": false
+  },
+  "quota_scheduler": {
+    "requirement": "GLOBAL PROVIDER REQUEST SCHEDULER",
+    "governance": "phase5c3_quota_scheduler_requirements_v0.md",
+    "config_name": "provider_rate_limit_config",
+    "execution_time_quota_config": null,
+    "must_resolve_and_seal_before_live_production": true,
+    "historical_RPM_context_only": 15,
+    "current_quota_verified": false
+  },
+  "challenge_design": {
+    "status": "PREFERRED DESIGN TARGET",
+    "candidates": 60,
+    "retained": 48,
+    "DEV": 16,
+    "HOLDOUT_TEST": 32,
+    "reserve": 12,
+    "alternatives_retained_DEV_TEST": [
+      [
+        36,
+        12,
+        24
+      ],
+      [
+        60,
+        20,
+        40
+      ]
+    ],
+    "dimensions": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10"
+    ],
+    "D6_status": "empirical_unverified",
+    "D6_observed_count": null,
+    "cluster_isolation": "MANDATORY",
+    "actual_records_created": 0,
+    "power_certified": false
+  },
+  "repetitions": {
+    "production_preferred": 3,
+    "production_minimum": 2,
+    "production_optional_stronger": 5,
+    "judge_fixed_subset_size_if_retained": 8,
+    "judge_passes": 3,
+    "judge_subset_status": "resource-limited judge stability audit",
+    "subset_selection": "deterministic hash/stratified rule sealed before outputs, no disagreement/performance selection"
+  },
+  "runtime_gold_access": "FORBIDDEN",
+  "runtime_projection_fields": [
+    "query_id",
+    "query"
+  ],
+  "validation": {
+    "file": "phase5c3_validation_v0.json",
+    "all_gates_pass": true,
+    "gate_count": 27,
+    "table_combinations_checked": 157464,
+    "preexisting_integrity": "PASS",
+    "source_integrity_file": "integrity_before_after_v0.json"
+  },
+  "research_decision": {
+    "agentic_v2_research_justified": "YES",
+    "agentic_v2_implementation_authorized": "NOT YET",
+    "challenge_construction_authorized_next": "YES",
+    "authorized_next_scope": "Phase 5C.4 dataset construction and independent legal annotation, with dataset freeze gates; not v2 implementation.",
+    "next_phase_started": false
+  },
+  "future_sequence": [
+    "5C.3 external review + amendment + design freeze",
+    "5C.4 challenge construction + independent legal annotation + dataset freeze",
+    "5C.5 DEV-only baseline confirmation + mechanism authorization + acceptance-margin finalization + final-v2 decision rule",
+    "5D.1 authorized Agentic v2 implementation using DEV only",
+    "5D.2 implementation/config/protocol sealing + blind HOLDOUT TEST production",
+    "5D.3 evaluator join + repeated-run analysis + attribution + research conclusion"
+  ],
+  "execution_audit": {
+    "basis": "Observed session tool/action audit: local filesystem and Python standard-library JSON/hash/finite-domain design checks only; no project imports or live provider tools. Not OS-wide packet/process attestation.",
+    "network_api_calls": 0,
+    "production_calls": 0,
+    "evaluator_calls": 0,
+    "retrieval_inference_calls": 0,
+    "reranking_inference_calls": 0,
+    "answer_generation_calls": 0,
+    "benchmark_runs": 0,
+    "bootstrap_runs": 0,
+    "chatbot_diagnostic_runs": 0,
+    "A3_A4_runs": 0,
+    "challenge_queries_created": 0,
+    "challenge_gold_records_created": 0,
+    "DEV_TEST_records_created": 0,
+    "legal_aspects_created": 0,
+    "v2_implementation": "NOT_STARTED",
+    "later_phase_started": false
+  },
+  "artifact_hashes": {
+    "integrity_baseline_v0.json": {
+      "sha256": "7fc04586a648abbead8ee4eb5b3248ef44323b4f82bfae1edd8bc44b882f281b",
+      "size_bytes": 7001012
+    },
+    "integrity_before_after_v0.json": {
+      "sha256": "b201c64b6eedacf6b5fb9c48193414e0c65f8bb78c677706ccf74d804e7c81c3",
+      "size_bytes": 7003460
+    },
+    "phase5c3_console_v0.txt": {
+      "sha256": "0f3519f579536fb4f11ef6f3b95400f89b273a827e6d9a4c2d471d18f0dc3108",
+      "size_bytes": 1207
+    },
+    "phase5c3_controller_status_decision_table_v0.json": {
+      "sha256": "7bc3657066e63efcf1e4f1f61e447ec4205fff4af6dfa33136a5e998edd63082",
+      "size_bytes": 40118
+    },
+    "phase5c3_decision_table_validation_v0.json": {
+      "sha256": "e70018e9a7aaf985ffc6f01a2be0f7782c2c1b598e3cd8bd9564c6a1243556e0",
+      "size_bytes": 2029
+    },
+    "phase5c3_design_amendments_v0.md": {
+      "sha256": "9653e43729861f99a57116f8fb50550f99c4197046d33e103f2df7908ab1e644",
+      "size_bytes": 7772
+    },
+    "phase5c3_external_review_v0.md": {
+      "sha256": "a4f5b7610e0d4c6ec8b20d1dae0d0d0cc3f2dfeaed4a3bb57f2543ff07468925",
+      "size_bytes": 7433
+    },
+    "phase5c3_frozen_design_spec_v0.md": {
+      "sha256": "8832e11cb6181913273fccc7abc6b4dfc6fb01dee7f57a9de50409e907c7c990",
+      "size_bytes": 14277
+    },
+    "phase5c3_margin_governance_v0.md": {
+      "sha256": "db39a21f260dece9816c937de2af4859102858276913862d4e4ed41013e65b9a",
+      "size_bytes": 4559
+    },
+    "phase5c3_quota_scheduler_requirements_v0.md": {
+      "sha256": "6d5de9e5d61cfbd3a19edd8de3ca4ebb3febeaadfce7cd614033c4fc126f662d",
+      "size_bytes": 6529
+    },
+    "phase5c3_spec_bindings_v0.json": {
+      "sha256": "3507739309e3fb5abf61321c1bd9bb044cbe620218b80a72234020bdd839309d",
+      "size_bytes": 5362
+    },
+    "phase5c3_trace_matrix_amendment_v0.json": {
+      "sha256": "d8c8fa6ac9df1da5fe94e50824443f42a881695eebd81e615f0e73aec3b05b3c",
+      "size_bytes": 8110
+    },
+    "phase5c3_validation_v0.json": {
+      "sha256": "1aafda3855bec4816f31e159bcef3468dae3ba7cca04e3577744719be8fa94d0",
+      "size_bytes": 17218
+    }
+  },
+  "hash_coverage_note": "Manifest binds completed design, review, amendment, table, governance, validation, console and integrity artifacts. final_artifact_hashes_v0.json binds every final output including this manifest, excluding only itself to avoid circular self-hashing.",
+  "final_artifact_names": [
+    "final_artifact_hashes_v0.json",
+    "integrity_baseline_v0.json",
+    "integrity_before_after_v0.json",
+    "phase5c3_console_v0.txt",
+    "phase5c3_controller_status_decision_table_v0.json",
+    "phase5c3_decision_table_validation_v0.json",
+    "phase5c3_design_amendments_v0.md",
+    "phase5c3_external_review_v0.md",
+    "phase5c3_freeze_manifest_v0.json",
+    "phase5c3_frozen_design_spec_v0.md",
+    "phase5c3_margin_governance_v0.md",
+    "phase5c3_quota_scheduler_requirements_v0.md",
+    "phase5c3_spec_bindings_v0.json",
+    "phase5c3_trace_matrix_amendment_v0.json",
+    "phase5c3_validation_v0.json"
+  ],
+  "stop": "STOP; do not start Phase 5C.4 in this session."
+}

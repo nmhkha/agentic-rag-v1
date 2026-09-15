@@ -1,0 +1,157 @@
+{
+  "schema": "phase5c3-spec-bindings-v0",
+  "composition": "All inherited normative clauses apply unless specifically superseded below. Specialized 5C.3 contracts govern their domains; no source draft metadata changes historical bytes.",
+  "inherited_normative_sources": [
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_v2_requirements_design_v0.md",
+      "sha256": "0328ec76ae710402abe323c00363550686b439384b048e483f30fb55554d1658",
+      "selectors": "sections 1–11: requirements and future gates; historical current-phase/draft/zero-action declarations remain provenance",
+      "overrides": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "CSTAT",
+        "REPEAT"
+      ]
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_challenge_set_design_v0.md",
+      "sha256": "1f8514571e3fdea048e26eaa399961b54ff2e5af7dd1111fa1904976c0532dc0",
+      "selectors": "sections 1–8: future construction, access, taxonomy, sampling, gold and QA; current-phase actions remain provenance",
+      "overrides": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "CSTAT",
+        "REPEAT"
+      ]
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_evaluation_protocol_draft_v0.md",
+      "sha256": "6209c20771d0bf7e7791d878637cb5e7ead8c01f7b3e1b08a6c13a99895a96ca",
+      "selectors": "sections 1–7: future protocol/denominators with A1–A4 and stated refinements",
+      "overrides": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "CSTAT",
+        "REPEAT"
+      ]
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_trace_schema_design_v0.json",
+      "sha256": "e75cba2402593c79157f439f3ffc079003df9330d2f58c3a7523249a0f571e24",
+      "selectors": "all field definitions, stage_catalog, invariants, evaluator_side_join_design, historical_reference_budgets; draft metadata remains source provenance",
+      "overrides": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "CSTAT",
+        "REPEAT"
+      ]
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_requirement_validation_matrix_v0.json",
+      "sha256": "71caa700ec77bbe998caed8764d2ebcfd6cf23d1628513d5894bdb621cd1520e",
+      "selectors": "/requirements (all six), /frozen_labels, runtime prohibitions; source draft status remains provenance",
+      "overrides": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "CSTAT",
+        "REPEAT"
+      ]
+    }
+  ],
+  "override_locations": {
+    "A1": {
+      "requirements": "§§2,10",
+      "challenge": "§2",
+      "evaluation": "§2",
+      "trace": "runtime_forbidden_inputs, envelope_fields and invariants; custodian-side release/exposure contract",
+      "matrix": [
+        "V2-R5",
+        "V2-R6"
+      ],
+      "log": "DC2-13, DC2-24"
+    },
+    "A2": {
+      "requirements": "§10 future authorization",
+      "challenge": "§5 workload conditional on actual arm plan; §8",
+      "evaluation": "§1 E is not automatic final v2; §5 all primary/secondary contrast wording; §§4,6 only if actual arm exists",
+      "trace": "envelope metadata is minimal runtime config, actual arm bundle stays orchestration-side",
+      "matrix": [
+        "V2-R1",
+        "V2-R2",
+        "V2-R3",
+        "V2-R4",
+        "V2-R6"
+      ],
+      "log": "DC2-21"
+    },
+    "A3": {
+      "requirements": "§10 acceptance approval timing",
+      "challenge": "§8 timing; §5 costs remain planning only",
+      "evaluation": "§5 numeric margins replaced with approved-symbol governance; §2 pre-TEST gate",
+      "trace": "no gold/margin outcomes enter runtime; margin hash stays trusted orchestration-side",
+      "matrix": [
+        "V2-R1",
+        "V2-R2",
+        "V2-R3",
+        "V2-R4",
+        "V2-R6"
+      ],
+      "log": "DC2-23"
+    },
+    "A4": {
+      "requirements": "§8",
+      "challenge": "§5 quota-dependent workload",
+      "evaluation": "§§2,6",
+      "trace": "ProductionLLMCall.physical_attempts and all other provider physical attempts; separate evaluator ledger same domain scheduling",
+      "matrix": [
+        "V2-R6"
+      ],
+      "log": "DC2-18, DC2-24"
+    },
+    "CSTAT": {
+      "requirements": "§9 replaced final-status derivation",
+      "trace": "Finalization and status invariant",
+      "matrix": [
+        "V2-R2",
+        "V2-R3",
+        "V2-R6"
+      ],
+      "evaluation": "§4 controller calibration remains evaluator-side, never a runtime gold verdict"
+    },
+    "REPEAT": {
+      "evaluation": "§3 explicit four uncertainty sources, eight-query audit label",
+      "challenge": "§5 resource/power caveats",
+      "matrix": [
+        "V2-R6"
+      ]
+    }
+  },
+  "historical_only_sources": [
+    "phase5c2_decision_log_v0.md",
+    "phase5c2_manifest_v0.json",
+    "phase5c2_console_v0.txt",
+    "integrity_before_after_v0.json",
+    "phase5c2_validation_v0.json",
+    "final_artifact_hashes_v0.json",
+    "integrity_baseline_v0.json"
+  ],
+  "effective_requirement_decisions": {
+    "V2-R1": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R2": "REFINE",
+    "V2-R3": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R4": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R5": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R6": "KEEP_AS_IS"
+  },
+  "freeze_not_implementation": true
+}

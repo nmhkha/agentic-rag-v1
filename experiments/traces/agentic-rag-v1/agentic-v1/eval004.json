@@ -1,0 +1,1320 @@
+{
+  "run_id": "agentic-v1-eval004",
+  "query": "Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 32,
+  "initial_top5": [
+    "142-2026-ND-CP_dieu-15_khoan-1",
+    "134-2025-QH15_dieu-14_khoan-1_diem-a",
+    "142-2026-ND-CP_dieu-11_khoan-5",
+    "134-2025-QH15_dieu-14_khoan-3",
+    "134-2025-QH15_dieu-14_khoan-6"
+  ],
+  "coverage_check": {
+    "sufficient": true,
+    "missing_aspects": [],
+    "reason": "Các bằng chứng đã cung cấp đầy đủ thông tin về các biện pháp quản lý mà nhà cung cấp hệ thống AI rủi ro cao phải duy trì, bao gồm hệ thống quản lý rủi ro, biện pháp rà soát, cơ chế giám sát và lưu trữ nhật ký vận hành."
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [
+    {
+      "rank": 1,
+      "evidence_id": "E1",
+      "chunk_id": "142-2026-ND-CP_dieu-15_khoan-1",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-15",
+      "article": "15",
+      "article_label": "Điều 15",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": null,
+      "point_label": null,
+      "text": "Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thiết lập và duy trì hệ thống quản lý rủi ro đối với hệ thống do mình cung cấp phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 1\nNhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thiết lập và duy trì hệ thống quản lý rủi ro đối với hệ thống do mình cung cấp phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 6.188962936401367,
+      "bm25_rank": 1,
+      "dense_rank": 1,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 1,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-15_khoan-1",
+      "point_id": null
+    },
+    {
+      "rank": 2,
+      "evidence_id": "E2",
+      "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-a",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-14",
+      "article": "14",
+      "article_label": "Điều 14",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": "a",
+      "point_label": "Điểm a",
+      "text": "Thiết lập và duy trì biện pháp quản lý rủi ro và thường xuyên rà soát khi hệ thống có thay đổi đáng kể hoặc phát sinh rủi ro mới;",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 1\nĐiểm a)\nThiết lập và duy trì biện pháp quản lý rủi ro và thường xuyên rà soát khi hệ thống có thay đổi đáng kể hoặc phát sinh rủi ro mới;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 4.751913070678711,
+      "bm25_rank": 2,
+      "dense_rank": 7,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 2,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-14_khoan-1",
+      "point_id": "134-2025-QH15_dieu-14_khoan-1_diem-a"
+    },
+    {
+      "rank": 3,
+      "evidence_id": "E3",
+      "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-11",
+      "article": "11",
+      "article_label": "Điều 11",
+      "clause": "5",
+      "clause_label": "Khoản 5",
+      "point": null,
+      "point_label": null,
+      "text": "Trường hợp hệ thống trí tuệ nhân tạo phải phân loại lại thành rủi ro cao theo quy định tại điểm a khoản 1 Điều này, nhà cung cấp, bên triển khai áp dụng thời gian chuyển tiếp tối đa 12 tháng kể từ ngày quyết định sửa đổi, bổ sung Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao của Thủ tướng Chính phủ có hiệu lực để hoàn thiện hồ sơ và thủ tục đánh giá sự phù hợp theo quy định của Luật Trí tuệ nhân tạo. Trong thời hạn chuyển tiếp, hệ thống được phép tiếp tục hoạt động nhưng nhà cung cấp, bên triển khai phải thiết lập và duy trì cơ chế giám sát thực chất của con người. Người thực hiện giám sát phải được bảo đảm đủ thông tin, thẩm quyền để đánh giá độc lập, can thiệp hoặc bác bỏ kết quả của hệ thống; đồng thời, nhà cung cấp, bên triển khai phải lưu trữ đầy đủ nhật ký vận hành và các quyết định can thiệp để phục vụ công tác thanh tra, kiểm tra.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 11. Rà soát và cập nhật mức độ rủi ro\nKhoản 5\nTrường hợp hệ thống trí tuệ nhân tạo phải phân loại lại thành rủi ro cao theo quy định tại điểm a khoản 1 Điều này, nhà cung cấp, bên triển khai áp dụng thời gian chuyển tiếp tối đa 12 tháng kể từ ngày quyết định sửa đổi, bổ sung Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao của Thủ tướng Chính phủ có hiệu lực để hoàn thiện hồ sơ và thủ tục đánh giá sự phù hợp theo quy định của Luật Trí tuệ nhân tạo. Trong thời hạn chuyển tiếp, hệ thống được phép tiếp tục hoạt động nhưng nhà cung cấp, bên triển khai phải thiết lập và duy trì cơ chế giám sát thực chất của con người. Người thực hiện giám sát phải được bảo đảm đủ thông tin, thẩm quyền để đánh giá độc lập, can thiệp hoặc bác bỏ kết quả của hệ thống; đồng thời, nhà cung cấp, bên triển khai phải lưu trữ đầy đủ nhật ký vận hành và các quyết định can thiệp để phục vụ công tác thanh tra, kiểm tra.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 4.164655685424805,
+      "bm25_rank": 7,
+      "dense_rank": 5,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 3,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-11_khoan-5",
+      "point_id": null
+    },
+    {
+      "rank": 4,
+      "evidence_id": "E4",
+      "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-14",
+      "article": "14",
+      "article_label": "Điều 14",
+      "clause": "3",
+      "clause_label": "Khoản 3",
+      "point": null,
+      "point_label": null,
+      "text": "Người sử dụng hệ thống trí tuệ nhân tạo có rủi ro cao có trách nhiệm tuân thủ quy trình vận hành, hướng dẫn kỹ thuật và các biện pháp bảo đảm an toàn; không can thiệp trái phép làm thay đổi tính năng của hệ thống; thông báo kịp thời các sự cố phát sinh cho bên triền khai.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 3\nNgười sử dụng hệ thống trí tuệ nhân tạo có rủi ro cao có trách nhiệm tuân thủ quy trình vận hành, hướng dẫn kỹ thuật và các biện pháp bảo đảm an toàn; không can thiệp trái phép làm thay đổi tính năng của hệ thống; thông báo kịp thời các sự cố phát sinh cho bên triền khai.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 4.140763282775879,
+      "bm25_rank": null,
+      "dense_rank": 3,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 4,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-14_khoan-3",
+      "point_id": null
+    },
+    {
+      "rank": 5,
+      "evidence_id": "E5",
+      "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-14",
+      "article": "14",
+      "article_label": "Điều 14",
+      "clause": "6",
+      "clause_label": "Khoản 6",
+      "point": null,
+      "point_label": null,
+      "text": "Nhà cung cấp nước ngoài có hệ thống trí tuệ nhân tạo có rủi ro cao được cung cấp tại Việt Nam phải có đầu mối liên hệ hợp pháp tại Việt Nam; trường hợp hệ thống thuộc diện bắt buộc chứng nhận sự phù hợp trước khi đưa vào sử dụng, phải có hiện diện thương mại hoặc đại diện được ủy quyền tại Việt Nam.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 6\nNhà cung cấp nước ngoài có hệ thống trí tuệ nhân tạo có rủi ro cao được cung cấp tại Việt Nam phải có đầu mối liên hệ hợp pháp tại Việt Nam; trường hợp hệ thống thuộc diện bắt buộc chứng nhận sự phù hợp trước khi đưa vào sử dụng, phải có hiện diện thương mại hoặc đại diện được ủy quyền tại Việt Nam.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 3.7100255489349365,
+      "bm25_rank": 4,
+      "dense_rank": 8,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 5,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-14_khoan-6",
+      "point_id": null
+    }
+  ],
+  "final_top5": [
+    "142-2026-ND-CP_dieu-15_khoan-1",
+    "134-2025-QH15_dieu-14_khoan-1_diem-a",
+    "142-2026-ND-CP_dieu-11_khoan-5",
+    "134-2025-QH15_dieu-14_khoan-3",
+    "134-2025-QH15_dieu-14_khoan-6"
+  ],
+  "draft_answer": "Nhà cung cấp hệ thống trí tuệ nhân tạo rủi ro cao phải thiết lập và duy trì hệ thống quản lý rủi ro phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống [E1]; thiết lập và duy trì biện pháp quản lý rủi ro, đồng thời thường xuyên rà soát khi hệ thống có thay đổi đáng kể hoặc phát sinh rủi ro mới [E2]. Ngoài ra, trong trường hợp hệ thống bị phân loại lại thành rủi ro cao, nhà cung cấp phải thiết lập và duy trì cơ chế giám sát thực chất của con người (với người giám sát đủ thông tin, thẩm quyền đánh giá độc lập, can thiệp hoặc bác bỏ kết quả) và lưu trữ đầy đủ nhật ký vận hành cùng các quyết định can thiệp [E3]. Đối với nhà cung cấp nước ngoài, phải có đầu mối liên hệ hợp pháp tại Việt Nam hoặc hiện diện thương mại/đại diện được ủy quyền tùy theo diện bắt buộc chứng nhận [E5].",
+  "completeness_check": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "Câu trả lời đã bao quát đầy đủ các biện pháp quản lý mà nhà cung cấp hệ thống AI rủi ro cao phải duy trì theo các bằng chứng được cung cấp."
+  },
+  "revision_used": false,
+  "citation_check": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E5"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required_by_deterministic_gate",
+    "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": "Nhà cung cấp hệ thống trí tuệ nhân tạo rủi ro cao phải thiết lập và duy trì hệ thống quản lý rủi ro phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống [E1]; thiết lập và duy trì biện pháp quản lý rủi ro, đồng thời thường xuyên rà soát khi hệ thống có thay đổi đáng kể hoặc phát sinh rủi ro mới [E2]. Ngoài ra, trong trường hợp hệ thống bị phân loại lại thành rủi ro cao, nhà cung cấp phải thiết lập và duy trì cơ chế giám sát thực chất của con người (với người giám sát đủ thông tin, thẩm quyền đánh giá độc lập, can thiệp hoặc bác bỏ kết quả) và lưu trữ đầy đủ nhật ký vận hành cùng các quyết định can thiệp [E3]. Đối với nhà cung cấp nước ngoài, phải có đầu mối liên hệ hợp pháp tại Việt Nam hoặc hiện diện thương mại/đại diện được ủy quyền tùy theo diện bắt buộc chứng nhận [E5].",
+  "final_status": "success",
+  "retrieval_calls": [
+    {
+      "call_number": 1,
+      "round": 0,
+      "query": "Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?",
+      "sub_query": false,
+      "bm25_depth": 20,
+      "dense_depth": 20,
+      "candidate_chunk_ids": [
+        "142-2026-ND-CP_dieu-15_khoan-1",
+        "134-2025-QH15_dieu-14_khoan-1_diem-a",
+        "134-2025-QH15_dieu-14_khoan-2_diem-c",
+        "134-2025-QH15_dieu-14_khoan-6",
+        "142-2026-ND-CP_dieu-10_khoan-2",
+        "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+        "142-2026-ND-CP_dieu-11_khoan-5",
+        "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+        "134-2025-QH15_dieu-11_khoan-5",
+        "142-2026-ND-CP_dieu-17_khoan-4",
+        "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+        "142-2026-ND-CP_dieu-15_khoan-3",
+        "142-2026-ND-CP_dieu-15_khoan-5_diem-đ",
+        "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+        "142-2026-ND-CP_dieu-15_khoan-4",
+        "134-2025-QH15_dieu-10_khoan-1",
+        "134-2025-QH15_dieu-14_khoan-5",
+        "142-2026-ND-CP_dieu-15_khoan-6",
+        "142-2026-ND-CP_dieu-10_khoan-1",
+        "134-2025-QH15_dieu-27_khoan-3",
+        "134-2025-QH15_dieu-14_khoan-3",
+        "134-2025-QH15_dieu-15_khoan-1_diem-b",
+        "134-2025-QH15_dieu-15_khoan-2_diem-a",
+        "134-2025-QH15_dieu-14_khoan-2_diem-e",
+        "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-12_khoan-1",
+        "142-2026-ND-CP_dieu-15_khoan-5_diem-a",
+        "134-2025-QH15_dieu-14_khoan-4",
+        "134-2025-QH15_dieu-14_khoan-1_diem-c",
+        "134-2025-QH15_dieu-14_khoan-2_diem-a",
+        "134-2025-QH15_dieu-15_khoan-1_diem-a",
+        "134-2025-QH15_dieu-14_khoan-1_diem-g"
+      ],
+      "candidate_count": 32,
+      "reranker_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-1",
+          "rank": 1,
+          "reranker_score": 6.188962936401367
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-a",
+          "rank": 2,
+          "reranker_score": 4.751913070678711
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+          "rank": 3,
+          "reranker_score": 4.164655685424805
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+          "rank": 4,
+          "reranker_score": 4.140763282775879
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+          "rank": 5,
+          "reranker_score": 3.7100255489349365
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-5",
+          "rank": 6,
+          "reranker_score": 3.5215375423431396
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+          "rank": 7,
+          "reranker_score": 3.4138286113739014
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-đ",
+          "rank": 8,
+          "reranker_score": 3.2345590591430664
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+          "rank": 9,
+          "reranker_score": 3.0491104125976562
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+          "rank": 10,
+          "reranker_score": 2.956268310546875
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-4",
+          "rank": 11,
+          "reranker_score": 2.877570867538452
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-c",
+          "rank": 12,
+          "reranker_score": 2.8541951179504395
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+          "rank": 13,
+          "reranker_score": 2.669745445251465
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+          "rank": 14,
+          "reranker_score": 2.3146324157714844
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-e",
+          "rank": 15,
+          "reranker_score": 1.873751163482666
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+          "rank": 16,
+          "reranker_score": 1.7243952751159668
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+          "rank": 17,
+          "reranker_score": 1.3739023208618164
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-a",
+          "rank": 18,
+          "reranker_score": 1.3089985847473145
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-g",
+          "rank": 19,
+          "reranker_score": 1.2856290340423584
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-a",
+          "rank": 20,
+          "reranker_score": 1.0659000873565674
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-4",
+          "rank": 21,
+          "reranker_score": 0.9699012637138367
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+          "rank": 22,
+          "reranker_score": 0.9387405514717102
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+          "rank": 23,
+          "reranker_score": 0.9218721389770508
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+          "rank": 24,
+          "reranker_score": 0.7806615829467773
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+          "rank": 25,
+          "reranker_score": 0.5413695573806763
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-a",
+          "rank": 26,
+          "reranker_score": 0.4347553253173828
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "rank": 27,
+          "reranker_score": 0.1840326189994812
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+          "rank": 28,
+          "reranker_score": -0.19059139490127563
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-1",
+          "rank": 29,
+          "reranker_score": -1.2225652933120728
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-17_khoan-4",
+          "rank": 30,
+          "reranker_score": -1.3144111633300781
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-5",
+          "rank": 31,
+          "reranker_score": -1.3441312313079834
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+          "rank": 32,
+          "reranker_score": -2.757399082183838
+        }
+      ],
+      "top5_chunk_ids": [
+        "142-2026-ND-CP_dieu-15_khoan-1",
+        "134-2025-QH15_dieu-14_khoan-1_diem-a",
+        "142-2026-ND-CP_dieu-11_khoan-5",
+        "134-2025-QH15_dieu-14_khoan-3",
+        "134-2025-QH15_dieu-14_khoan-6"
+      ],
+      "candidate_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-1",
+          "bm25_rank": 1,
+          "dense_rank": 1
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-a",
+          "bm25_rank": 2,
+          "dense_rank": 7
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-c",
+          "bm25_rank": 3,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+          "bm25_rank": 4,
+          "dense_rank": 8
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+          "bm25_rank": 5,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+          "bm25_rank": 6,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+          "bm25_rank": 7,
+          "dense_rank": 5
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+          "bm25_rank": 8,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-5",
+          "bm25_rank": 9,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-17_khoan-4",
+          "bm25_rank": 10,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+          "bm25_rank": 11,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+          "bm25_rank": 12,
+          "dense_rank": 2
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-đ",
+          "bm25_rank": 13,
+          "dense_rank": 10
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+          "bm25_rank": 14,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-4",
+          "bm25_rank": 15,
+          "dense_rank": 4
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+          "bm25_rank": 16,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-5",
+          "bm25_rank": 17,
+          "dense_rank": 6
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+          "bm25_rank": 18,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-1",
+          "bm25_rank": 19,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+          "bm25_rank": 20,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 3
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 9
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 11
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-e",
+          "bm25_rank": null,
+          "dense_rank": 12
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 13
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 14
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 15
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-4",
+          "bm25_rank": null,
+          "dense_rank": 16
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+          "bm25_rank": null,
+          "dense_rank": 17
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 18
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 19
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-g",
+          "bm25_rank": null,
+          "dense_rank": 20
+        }
+      ]
+    }
+  ],
+  "retrieval_call_count": 1,
+  "llm_calls": [
+    {
+      "call_number": 1,
+      "stage": "coverage_check"
+    },
+    {
+      "call_number": 2,
+      "stage": "answer_generation"
+    },
+    {
+      "call_number": 3,
+      "stage": "completeness_check"
+    }
+  ],
+  "llm_call_count": 3,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?",
+    "initial_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "142-2026-ND-CP_dieu-15_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-15",
+        "article": "15",
+        "article_label": "Điều 15",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thiết lập và duy trì hệ thống quản lý rủi ro đối với hệ thống do mình cung cấp phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 1\nNhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thiết lập và duy trì hệ thống quản lý rủi ro đối với hệ thống do mình cung cấp phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 6.188962936401367,
+        "bm25_rank": 1,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-15_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-a",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-14",
+        "article": "14",
+        "article_label": "Điều 14",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Thiết lập và duy trì biện pháp quản lý rủi ro và thường xuyên rà soát khi hệ thống có thay đổi đáng kể hoặc phát sinh rủi ro mới;",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 1\nĐiểm a)\nThiết lập và duy trì biện pháp quản lý rủi ro và thường xuyên rà soát khi hệ thống có thay đổi đáng kể hoặc phát sinh rủi ro mới;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.751913070678711,
+        "bm25_rank": 2,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-14_khoan-1",
+        "point_id": "134-2025-QH15_dieu-14_khoan-1_diem-a"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-11",
+        "article": "11",
+        "article_label": "Điều 11",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": null,
+        "point_label": null,
+        "text": "Trường hợp hệ thống trí tuệ nhân tạo phải phân loại lại thành rủi ro cao theo quy định tại điểm a khoản 1 Điều này, nhà cung cấp, bên triển khai áp dụng thời gian chuyển tiếp tối đa 12 tháng kể từ ngày quyết định sửa đổi, bổ sung Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao của Thủ tướng Chính phủ có hiệu lực để hoàn thiện hồ sơ và thủ tục đánh giá sự phù hợp theo quy định của Luật Trí tuệ nhân tạo. Trong thời hạn chuyển tiếp, hệ thống được phép tiếp tục hoạt động nhưng nhà cung cấp, bên triển khai phải thiết lập và duy trì cơ chế giám sát thực chất của con người. Người thực hiện giám sát phải được bảo đảm đủ thông tin, thẩm quyền để đánh giá độc lập, can thiệp hoặc bác bỏ kết quả của hệ thống; đồng thời, nhà cung cấp, bên triển khai phải lưu trữ đầy đủ nhật ký vận hành và các quyết định can thiệp để phục vụ công tác thanh tra, kiểm tra.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 11. Rà soát và cập nhật mức độ rủi ro\nKhoản 5\nTrường hợp hệ thống trí tuệ nhân tạo phải phân loại lại thành rủi ro cao theo quy định tại điểm a khoản 1 Điều này, nhà cung cấp, bên triển khai áp dụng thời gian chuyển tiếp tối đa 12 tháng kể từ ngày quyết định sửa đổi, bổ sung Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao của Thủ tướng Chính phủ có hiệu lực để hoàn thiện hồ sơ và thủ tục đánh giá sự phù hợp theo quy định của Luật Trí tuệ nhân tạo. Trong thời hạn chuyển tiếp, hệ thống được phép tiếp tục hoạt động nhưng nhà cung cấp, bên triển khai phải thiết lập và duy trì cơ chế giám sát thực chất của con người. Người thực hiện giám sát phải được bảo đảm đủ thông tin, thẩm quyền để đánh giá độc lập, can thiệp hoặc bác bỏ kết quả của hệ thống; đồng thời, nhà cung cấp, bên triển khai phải lưu trữ đầy đủ nhật ký vận hành và các quyết định can thiệp để phục vụ công tác thanh tra, kiểm tra.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 4.164655685424805,
+        "bm25_rank": 7,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-11_khoan-5",
+        "point_id": null
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-14",
+        "article": "14",
+        "article_label": "Điều 14",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Người sử dụng hệ thống trí tuệ nhân tạo có rủi ro cao có trách nhiệm tuân thủ quy trình vận hành, hướng dẫn kỹ thuật và các biện pháp bảo đảm an toàn; không can thiệp trái phép làm thay đổi tính năng của hệ thống; thông báo kịp thời các sự cố phát sinh cho bên triền khai.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 3\nNgười sử dụng hệ thống trí tuệ nhân tạo có rủi ro cao có trách nhiệm tuân thủ quy trình vận hành, hướng dẫn kỹ thuật và các biện pháp bảo đảm an toàn; không can thiệp trái phép làm thay đổi tính năng của hệ thống; thông báo kịp thời các sự cố phát sinh cho bên triền khai.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.140763282775879,
+        "bm25_rank": null,
+        "dense_rank": 3,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-14_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-14",
+        "article": "14",
+        "article_label": "Điều 14",
+        "clause": "6",
+        "clause_label": "Khoản 6",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp nước ngoài có hệ thống trí tuệ nhân tạo có rủi ro cao được cung cấp tại Việt Nam phải có đầu mối liên hệ hợp pháp tại Việt Nam; trường hợp hệ thống thuộc diện bắt buộc chứng nhận sự phù hợp trước khi đưa vào sử dụng, phải có hiện diện thương mại hoặc đại diện được ủy quyền tại Việt Nam.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 6\nNhà cung cấp nước ngoài có hệ thống trí tuệ nhân tạo có rủi ro cao được cung cấp tại Việt Nam phải có đầu mối liên hệ hợp pháp tại Việt Nam; trường hợp hệ thống thuộc diện bắt buộc chứng nhận sự phù hợp trước khi đưa vào sử dụng, phải có hiện diện thương mại hoặc đại diện được ủy quyền tại Việt Nam.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 3.7100255489349365,
+        "bm25_rank": 4,
+        "dense_rank": 8,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-14_khoan-6",
+        "point_id": null
+      }
+    ],
+    "current_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "142-2026-ND-CP_dieu-15_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-15",
+        "article": "15",
+        "article_label": "Điều 15",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thiết lập và duy trì hệ thống quản lý rủi ro đối với hệ thống do mình cung cấp phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 1\nNhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thiết lập và duy trì hệ thống quản lý rủi ro đối với hệ thống do mình cung cấp phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 6.188962936401367,
+        "bm25_rank": 1,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-15_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-a",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-14",
+        "article": "14",
+        "article_label": "Điều 14",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Thiết lập và duy trì biện pháp quản lý rủi ro và thường xuyên rà soát khi hệ thống có thay đổi đáng kể hoặc phát sinh rủi ro mới;",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 1\nĐiểm a)\nThiết lập và duy trì biện pháp quản lý rủi ro và thường xuyên rà soát khi hệ thống có thay đổi đáng kể hoặc phát sinh rủi ro mới;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.751913070678711,
+        "bm25_rank": 2,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-14_khoan-1",
+        "point_id": "134-2025-QH15_dieu-14_khoan-1_diem-a"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-11",
+        "article": "11",
+        "article_label": "Điều 11",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": null,
+        "point_label": null,
+        "text": "Trường hợp hệ thống trí tuệ nhân tạo phải phân loại lại thành rủi ro cao theo quy định tại điểm a khoản 1 Điều này, nhà cung cấp, bên triển khai áp dụng thời gian chuyển tiếp tối đa 12 tháng kể từ ngày quyết định sửa đổi, bổ sung Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao của Thủ tướng Chính phủ có hiệu lực để hoàn thiện hồ sơ và thủ tục đánh giá sự phù hợp theo quy định của Luật Trí tuệ nhân tạo. Trong thời hạn chuyển tiếp, hệ thống được phép tiếp tục hoạt động nhưng nhà cung cấp, bên triển khai phải thiết lập và duy trì cơ chế giám sát thực chất của con người. Người thực hiện giám sát phải được bảo đảm đủ thông tin, thẩm quyền để đánh giá độc lập, can thiệp hoặc bác bỏ kết quả của hệ thống; đồng thời, nhà cung cấp, bên triển khai phải lưu trữ đầy đủ nhật ký vận hành và các quyết định can thiệp để phục vụ công tác thanh tra, kiểm tra.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 11. Rà soát và cập nhật mức độ rủi ro\nKhoản 5\nTrường hợp hệ thống trí tuệ nhân tạo phải phân loại lại thành rủi ro cao theo quy định tại điểm a khoản 1 Điều này, nhà cung cấp, bên triển khai áp dụng thời gian chuyển tiếp tối đa 12 tháng kể từ ngày quyết định sửa đổi, bổ sung Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao của Thủ tướng Chính phủ có hiệu lực để hoàn thiện hồ sơ và thủ tục đánh giá sự phù hợp theo quy định của Luật Trí tuệ nhân tạo. Trong thời hạn chuyển tiếp, hệ thống được phép tiếp tục hoạt động nhưng nhà cung cấp, bên triển khai phải thiết lập và duy trì cơ chế giám sát thực chất của con người. Người thực hiện giám sát phải được bảo đảm đủ thông tin, thẩm quyền để đánh giá độc lập, can thiệp hoặc bác bỏ kết quả của hệ thống; đồng thời, nhà cung cấp, bên triển khai phải lưu trữ đầy đủ nhật ký vận hành và các quyết định can thiệp để phục vụ công tác thanh tra, kiểm tra.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 4.164655685424805,
+        "bm25_rank": 7,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-11_khoan-5",
+        "point_id": null
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-14",
+        "article": "14",
+        "article_label": "Điều 14",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Người sử dụng hệ thống trí tuệ nhân tạo có rủi ro cao có trách nhiệm tuân thủ quy trình vận hành, hướng dẫn kỹ thuật và các biện pháp bảo đảm an toàn; không can thiệp trái phép làm thay đổi tính năng của hệ thống; thông báo kịp thời các sự cố phát sinh cho bên triền khai.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 3\nNgười sử dụng hệ thống trí tuệ nhân tạo có rủi ro cao có trách nhiệm tuân thủ quy trình vận hành, hướng dẫn kỹ thuật và các biện pháp bảo đảm an toàn; không can thiệp trái phép làm thay đổi tính năng của hệ thống; thông báo kịp thời các sự cố phát sinh cho bên triền khai.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.140763282775879,
+        "bm25_rank": null,
+        "dense_rank": 3,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-14_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-14",
+        "article": "14",
+        "article_label": "Điều 14",
+        "clause": "6",
+        "clause_label": "Khoản 6",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp nước ngoài có hệ thống trí tuệ nhân tạo có rủi ro cao được cung cấp tại Việt Nam phải có đầu mối liên hệ hợp pháp tại Việt Nam; trường hợp hệ thống thuộc diện bắt buộc chứng nhận sự phù hợp trước khi đưa vào sử dụng, phải có hiện diện thương mại hoặc đại diện được ủy quyền tại Việt Nam.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 6\nNhà cung cấp nước ngoài có hệ thống trí tuệ nhân tạo có rủi ro cao được cung cấp tại Việt Nam phải có đầu mối liên hệ hợp pháp tại Việt Nam; trường hợp hệ thống thuộc diện bắt buộc chứng nhận sự phù hợp trước khi đưa vào sử dụng, phải có hiện diện thương mại hoặc đại diện được ủy quyền tại Việt Nam.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 3.7100255489349365,
+        "bm25_rank": 4,
+        "dense_rank": 8,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-14_khoan-6",
+        "point_id": null
+      }
+    ],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": true,
+      "missing_aspects": [],
+      "reason": "Các bằng chứng đã cung cấp đầy đủ thông tin về các biện pháp quản lý mà nhà cung cấp hệ thống AI rủi ro cao phải duy trì, bao gồm hệ thống quản lý rủi ro, biện pháp rà soát, cơ chế giám sát và lưu trữ nhật ký vận hành."
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": "Nhà cung cấp hệ thống trí tuệ nhân tạo rủi ro cao phải thiết lập và duy trì hệ thống quản lý rủi ro phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống [E1]; thiết lập và duy trì biện pháp quản lý rủi ro, đồng thời thường xuyên rà soát khi hệ thống có thay đổi đáng kể hoặc phát sinh rủi ro mới [E2]. Ngoài ra, trong trường hợp hệ thống bị phân loại lại thành rủi ro cao, nhà cung cấp phải thiết lập và duy trì cơ chế giám sát thực chất của con người (với người giám sát đủ thông tin, thẩm quyền đánh giá độc lập, can thiệp hoặc bác bỏ kết quả) và lưu trữ đầy đủ nhật ký vận hành cùng các quyết định can thiệp [E3]. Đối với nhà cung cấp nước ngoài, phải có đầu mối liên hệ hợp pháp tại Việt Nam hoặc hiện diện thương mại/đại diện được ủy quyền tùy theo diện bắt buộc chứng nhận [E5].",
+    "completeness_check": {
+      "complete": true,
+      "missing_points": [],
+      "reason": "Câu trả lời đã bao quát đầy đủ các biện pháp quản lý mà nhà cung cấp hệ thống AI rủi ro cao phải duy trì theo các bằng chứng được cung cấp."
+    },
+    "citation_check": {
+      "valid": true,
+      "cited_evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required_by_deterministic_gate",
+      "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+      "reviewed_claims": []
+    },
+    "revision_count": 0,
+    "citation_revision_count": 0,
+    "final_answer": "Nhà cung cấp hệ thống trí tuệ nhân tạo rủi ro cao phải thiết lập và duy trì hệ thống quản lý rủi ro phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống [E1]; thiết lập và duy trì biện pháp quản lý rủi ro, đồng thời thường xuyên rà soát khi hệ thống có thay đổi đáng kể hoặc phát sinh rủi ro mới [E2]. Ngoài ra, trong trường hợp hệ thống bị phân loại lại thành rủi ro cao, nhà cung cấp phải thiết lập và duy trì cơ chế giám sát thực chất của con người (với người giám sát đủ thông tin, thẩm quyền đánh giá độc lập, can thiệp hoặc bác bỏ kết quả) và lưu trữ đầy đủ nhật ký vận hành cùng các quyết định can thiệp [E3]. Đối với nhà cung cấp nước ngoài, phải có đầu mối liên hệ hợp pháp tại Việt Nam hoặc hiện diện thương mại/đại diện được ủy quyền tùy theo diện bắt buộc chứng nhận [E5].",
+    "final_status": "success",
+    "run_id": "agentic-v1-eval004",
+    "initial_top5": [
+      "142-2026-ND-CP_dieu-15_khoan-1",
+      "134-2025-QH15_dieu-14_khoan-1_diem-a",
+      "142-2026-ND-CP_dieu-11_khoan-5",
+      "134-2025-QH15_dieu-14_khoan-3",
+      "134-2025-QH15_dieu-14_khoan-6"
+    ],
+    "expanded_candidates": [],
+    "final_top5": [
+      "142-2026-ND-CP_dieu-15_khoan-1",
+      "134-2025-QH15_dieu-14_khoan-1_diem-a",
+      "142-2026-ND-CP_dieu-11_khoan-5",
+      "134-2025-QH15_dieu-14_khoan-3",
+      "134-2025-QH15_dieu-14_khoan-6"
+    ],
+    "retrieval_calls": [
+      {
+        "call_number": 1,
+        "round": 0,
+        "query": "Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?",
+        "sub_query": false,
+        "bm25_depth": 20,
+        "dense_depth": 20,
+        "candidate_chunk_ids": [
+          "142-2026-ND-CP_dieu-15_khoan-1",
+          "134-2025-QH15_dieu-14_khoan-1_diem-a",
+          "134-2025-QH15_dieu-14_khoan-2_diem-c",
+          "134-2025-QH15_dieu-14_khoan-6",
+          "142-2026-ND-CP_dieu-10_khoan-2",
+          "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+          "142-2026-ND-CP_dieu-11_khoan-5",
+          "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+          "134-2025-QH15_dieu-11_khoan-5",
+          "142-2026-ND-CP_dieu-17_khoan-4",
+          "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+          "142-2026-ND-CP_dieu-15_khoan-3",
+          "142-2026-ND-CP_dieu-15_khoan-5_diem-đ",
+          "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+          "142-2026-ND-CP_dieu-15_khoan-4",
+          "134-2025-QH15_dieu-10_khoan-1",
+          "134-2025-QH15_dieu-14_khoan-5",
+          "142-2026-ND-CP_dieu-15_khoan-6",
+          "142-2026-ND-CP_dieu-10_khoan-1",
+          "134-2025-QH15_dieu-27_khoan-3",
+          "134-2025-QH15_dieu-14_khoan-3",
+          "134-2025-QH15_dieu-15_khoan-1_diem-b",
+          "134-2025-QH15_dieu-15_khoan-2_diem-a",
+          "134-2025-QH15_dieu-14_khoan-2_diem-e",
+          "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "142-2026-ND-CP_dieu-12_khoan-1",
+          "142-2026-ND-CP_dieu-15_khoan-5_diem-a",
+          "134-2025-QH15_dieu-14_khoan-4",
+          "134-2025-QH15_dieu-14_khoan-1_diem-c",
+          "134-2025-QH15_dieu-14_khoan-2_diem-a",
+          "134-2025-QH15_dieu-15_khoan-1_diem-a",
+          "134-2025-QH15_dieu-14_khoan-1_diem-g"
+        ],
+        "candidate_count": 32,
+        "reranker_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-1",
+            "rank": 1,
+            "reranker_score": 6.188962936401367
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-a",
+            "rank": 2,
+            "reranker_score": 4.751913070678711
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+            "rank": 3,
+            "reranker_score": 4.164655685424805
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+            "rank": 4,
+            "reranker_score": 4.140763282775879
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+            "rank": 5,
+            "reranker_score": 3.7100255489349365
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-5",
+            "rank": 6,
+            "reranker_score": 3.5215375423431396
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+            "rank": 7,
+            "reranker_score": 3.4138286113739014
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-đ",
+            "rank": 8,
+            "reranker_score": 3.2345590591430664
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+            "rank": 9,
+            "reranker_score": 3.0491104125976562
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+            "rank": 10,
+            "reranker_score": 2.956268310546875
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-4",
+            "rank": 11,
+            "reranker_score": 2.877570867538452
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-c",
+            "rank": 12,
+            "reranker_score": 2.8541951179504395
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+            "rank": 13,
+            "reranker_score": 2.669745445251465
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+            "rank": 14,
+            "reranker_score": 2.3146324157714844
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-e",
+            "rank": 15,
+            "reranker_score": 1.873751163482666
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+            "rank": 16,
+            "reranker_score": 1.7243952751159668
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+            "rank": 17,
+            "reranker_score": 1.3739023208618164
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-a",
+            "rank": 18,
+            "reranker_score": 1.3089985847473145
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-g",
+            "rank": 19,
+            "reranker_score": 1.2856290340423584
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-a",
+            "rank": 20,
+            "reranker_score": 1.0659000873565674
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-4",
+            "rank": 21,
+            "reranker_score": 0.9699012637138367
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+            "rank": 22,
+            "reranker_score": 0.9387405514717102
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+            "rank": 23,
+            "reranker_score": 0.9218721389770508
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+            "rank": 24,
+            "reranker_score": 0.7806615829467773
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+            "rank": 25,
+            "reranker_score": 0.5413695573806763
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-a",
+            "rank": 26,
+            "reranker_score": 0.4347553253173828
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+            "rank": 27,
+            "reranker_score": 0.1840326189994812
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+            "rank": 28,
+            "reranker_score": -0.19059139490127563
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-1",
+            "rank": 29,
+            "reranker_score": -1.2225652933120728
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-17_khoan-4",
+            "rank": 30,
+            "reranker_score": -1.3144111633300781
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-5",
+            "rank": 31,
+            "reranker_score": -1.3441312313079834
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+            "rank": 32,
+            "reranker_score": -2.757399082183838
+          }
+        ],
+        "top5_chunk_ids": [
+          "142-2026-ND-CP_dieu-15_khoan-1",
+          "134-2025-QH15_dieu-14_khoan-1_diem-a",
+          "142-2026-ND-CP_dieu-11_khoan-5",
+          "134-2025-QH15_dieu-14_khoan-3",
+          "134-2025-QH15_dieu-14_khoan-6"
+        ],
+        "candidate_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-1",
+            "bm25_rank": 1,
+            "dense_rank": 1
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-a",
+            "bm25_rank": 2,
+            "dense_rank": 7
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-c",
+            "bm25_rank": 3,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+            "bm25_rank": 4,
+            "dense_rank": 8
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+            "bm25_rank": 5,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+            "bm25_rank": 6,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+            "bm25_rank": 7,
+            "dense_rank": 5
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+            "bm25_rank": 8,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-5",
+            "bm25_rank": 9,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-17_khoan-4",
+            "bm25_rank": 10,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+            "bm25_rank": 11,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+            "bm25_rank": 12,
+            "dense_rank": 2
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-đ",
+            "bm25_rank": 13,
+            "dense_rank": 10
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+            "bm25_rank": 14,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-4",
+            "bm25_rank": 15,
+            "dense_rank": 4
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+            "bm25_rank": 16,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-5",
+            "bm25_rank": 17,
+            "dense_rank": 6
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+            "bm25_rank": 18,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-1",
+            "bm25_rank": 19,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+            "bm25_rank": 20,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 3
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 9
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 11
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-e",
+            "bm25_rank": null,
+            "dense_rank": 12
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 13
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 14
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 15
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-4",
+            "bm25_rank": null,
+            "dense_rank": 16
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+            "bm25_rank": null,
+            "dense_rank": 17
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 18
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 19
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-g",
+            "bm25_rank": null,
+            "dense_rank": 20
+          }
+        ]
+      }
+    ],
+    "llm_calls": [
+      {
+        "call_number": 1,
+        "stage": "coverage_check"
+      },
+      {
+        "call_number": 2,
+        "stage": "answer_generation"
+      },
+      {
+        "call_number": 3,
+        "stage": "completeness_check"
+      }
+    ],
+    "expansion_used": false,
+    "revision_used": false,
+    "citation_revision_used": false,
+    "execution_error": null,
+    "transitions": [
+      "initialized",
+      "initial_retrieval",
+      "coverage_check",
+      "answer_generation",
+      "completeness_check",
+      "citation_check",
+      "final:success"
+    ]
+  },
+  "timestamp": "2026-09-05T14:05:50.759394+00:00"
+}

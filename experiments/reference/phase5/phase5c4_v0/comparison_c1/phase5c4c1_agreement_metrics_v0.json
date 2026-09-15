@@ -1,0 +1,520 @@
+{
+  "status": "PASS",
+  "measurement_type": "DESCRIPTIVE_STRUCTURAL_AGREEMENT",
+  "not_legal_reliability_certification": true,
+  "answerability": {
+    "eligible_denominator": 60,
+    "raw_agreement_count": 59,
+    "raw_agreement": 0.9833333333333333,
+    "confusion_matrix_A_rows_B_columns": {
+      "fully_answerable": {
+        "fully_answerable": 44,
+        "partially_answerable": 0,
+        "insufficient_evidence": 0
+      },
+      "partially_answerable": {
+        "fully_answerable": 0,
+        "partially_answerable": 8,
+        "insufficient_evidence": 0
+      },
+      "insufficient_evidence": {
+        "fully_answerable": 0,
+        "partially_answerable": 1,
+        "insufficient_evidence": 7
+      }
+    },
+    "eligibility": "All 60 exact-ID matched candidates",
+    "interpretation": "Descriptive agreement only; no legal correctness or reliability certification."
+  },
+  "admission": {
+    "eligible_denominator": 60,
+    "raw_agreement_count": 49,
+    "raw_agreement": 0.8166666666666667,
+    "confusion_matrix_A_rows_B_columns": {
+      "retain": {
+        "retain": 48,
+        "reserve": 0,
+        "exclude": 0,
+        "needs_adjudication": 0
+      },
+      "reserve": {
+        "retain": 9,
+        "reserve": 1,
+        "exclude": 0,
+        "needs_adjudication": 0
+      },
+      "exclude": {
+        "retain": 1,
+        "reserve": 0,
+        "exclude": 0,
+        "needs_adjudication": 1
+      }
+    },
+    "eligibility": "All 60 candidates; A provisional DEV/TEST retain labels both projected to retain for descriptive comparison only",
+    "interpretation": "Descriptive agreement only; no legal correctness or reliability certification."
+  },
+  "applicability_equivalent_one_to_one": {
+    "eligible_denominator": 83,
+    "raw_agreement_count": 69,
+    "raw_agreement": 0.8313253012048193,
+    "confusion_matrix_A_rows_B_columns": {
+      "direct": {
+        "direct": 69,
+        "conditional": 0,
+        "not_applicable": 0,
+        "uncertain": 0
+      },
+      "conditional": {
+        "direct": 2,
+        "conditional": 0,
+        "not_applicable": 0,
+        "uncertain": 0
+      },
+      "not_applicable": {
+        "direct": 0,
+        "conditional": 0,
+        "not_applicable": 0,
+        "uncertain": 0
+      },
+      "uncertain": {
+        "direct": 12,
+        "conditional": 0,
+        "not_applicable": 0,
+        "uncertain": 0
+      }
+    },
+    "eligibility": "Only semantically equivalent 1:1 mappings; different label targets remain explicitly flagged",
+    "interpretation": "Descriptive agreement only; no legal correctness or reliability certification."
+  },
+  "sufficiency_equivalent_one_to_one": {
+    "eligible_denominator": 83,
+    "raw_agreement_count": 83,
+    "raw_agreement": 1.0,
+    "confusion_matrix_A_rows_B_columns": {
+      "sufficient_support": {
+        "sufficient_support": 70,
+        "partial_support": 0,
+        "no_support_in_corpus": 0
+      },
+      "partial_support": {
+        "sufficient_support": 0,
+        "partial_support": 1,
+        "no_support_in_corpus": 0
+      },
+      "no_support_in_corpus": {
+        "sufficient_support": 0,
+        "partial_support": 0,
+        "no_support_in_corpus": 12
+      }
+    },
+    "eligibility": "Only semantically equivalent 1:1 mappings",
+    "interpretation": "Descriptive agreement only; no legal correctness or reliability certification."
+  },
+  "applicability_all_one_to_one_diagnostic": {
+    "eligible_denominator": 109,
+    "raw_agreement_count": 94,
+    "raw_agreement": 0.8623853211009175,
+    "confusion_matrix_A_rows_B_columns": {
+      "direct": {
+        "direct": 92,
+        "conditional": 0,
+        "not_applicable": 0,
+        "uncertain": 0
+      },
+      "conditional": {
+        "direct": 3,
+        "conditional": 1,
+        "not_applicable": 0,
+        "uncertain": 0
+      },
+      "not_applicable": {
+        "direct": 0,
+        "conditional": 0,
+        "not_applicable": 0,
+        "uncertain": 0
+      },
+      "uncertain": {
+        "direct": 12,
+        "conditional": 0,
+        "not_applicable": 0,
+        "uncertain": 1
+      }
+    },
+    "eligibility": "All 1:1 mappings including broad/narrow/ambiguous; descriptive diagnostic only",
+    "interpretation": "Descriptive agreement only; no legal correctness or reliability certification."
+  },
+  "sufficiency_all_one_to_one_diagnostic": {
+    "eligible_denominator": 109,
+    "raw_agreement_count": 108,
+    "raw_agreement": 0.9908256880733946,
+    "confusion_matrix_A_rows_B_columns": {
+      "sufficient_support": {
+        "sufficient_support": 95,
+        "partial_support": 0,
+        "no_support_in_corpus": 0
+      },
+      "partial_support": {
+        "sufficient_support": 0,
+        "partial_support": 1,
+        "no_support_in_corpus": 0
+      },
+      "no_support_in_corpus": {
+        "sufficient_support": 0,
+        "partial_support": 1,
+        "no_support_in_corpus": 12
+      }
+    },
+    "eligibility": "All 1:1 mappings including broad/narrow/ambiguous; no pooled multi-aspect label",
+    "interpretation": "Descriptive agreement only; no legal correctness or reliability certification."
+  },
+  "dimensions": {
+    "D1": {
+      "both_present": 14,
+      "A_only": 0,
+      "B_only": 0,
+      "both_absent": 46,
+      "eligible_denominator": 60,
+      "agreement_count": 60,
+      "raw_agreement": 1.0,
+      "confusion_matrix_A_rows_B_columns": {
+        "false": {
+          "false": 46,
+          "true": 0
+        },
+        "true": {
+          "false": 0,
+          "true": 14
+        }
+      }
+    },
+    "D2": {
+      "both_present": 28,
+      "A_only": 0,
+      "B_only": 0,
+      "both_absent": 32,
+      "eligible_denominator": 60,
+      "agreement_count": 60,
+      "raw_agreement": 1.0,
+      "confusion_matrix_A_rows_B_columns": {
+        "false": {
+          "false": 32,
+          "true": 0
+        },
+        "true": {
+          "false": 0,
+          "true": 28
+        }
+      }
+    },
+    "D3": {
+      "both_present": 27,
+      "A_only": 2,
+      "B_only": 0,
+      "both_absent": 31,
+      "eligible_denominator": 60,
+      "agreement_count": 58,
+      "raw_agreement": 0.9666666666666667,
+      "confusion_matrix_A_rows_B_columns": {
+        "false": {
+          "false": 31,
+          "true": 0
+        },
+        "true": {
+          "false": 2,
+          "true": 27
+        }
+      }
+    },
+    "D4": {
+      "both_present": 15,
+      "A_only": 2,
+      "B_only": 3,
+      "both_absent": 40,
+      "eligible_denominator": 60,
+      "agreement_count": 55,
+      "raw_agreement": 0.9166666666666666,
+      "confusion_matrix_A_rows_B_columns": {
+        "false": {
+          "false": 40,
+          "true": 3
+        },
+        "true": {
+          "false": 2,
+          "true": 15
+        }
+      }
+    },
+    "D5": {
+      "both_present": 27,
+      "A_only": 2,
+      "B_only": 0,
+      "both_absent": 31,
+      "eligible_denominator": 60,
+      "agreement_count": 58,
+      "raw_agreement": 0.9666666666666667,
+      "confusion_matrix_A_rows_B_columns": {
+        "false": {
+          "false": 31,
+          "true": 0
+        },
+        "true": {
+          "false": 2,
+          "true": 27
+        }
+      }
+    },
+    "D7": {
+      "both_present": 28,
+      "A_only": 0,
+      "B_only": 4,
+      "both_absent": 28,
+      "eligible_denominator": 60,
+      "agreement_count": 56,
+      "raw_agreement": 0.9333333333333333,
+      "confusion_matrix_A_rows_B_columns": {
+        "false": {
+          "false": 28,
+          "true": 4
+        },
+        "true": {
+          "false": 0,
+          "true": 28
+        }
+      }
+    },
+    "D8": {
+      "both_present": 36,
+      "A_only": 0,
+      "B_only": 18,
+      "both_absent": 6,
+      "eligible_denominator": 60,
+      "agreement_count": 42,
+      "raw_agreement": 0.7,
+      "confusion_matrix_A_rows_B_columns": {
+        "false": {
+          "false": 6,
+          "true": 18
+        },
+        "true": {
+          "false": 0,
+          "true": 36
+        }
+      }
+    },
+    "D9": {
+      "both_present": 36,
+      "A_only": 2,
+      "B_only": 10,
+      "both_absent": 12,
+      "eligible_denominator": 60,
+      "agreement_count": 48,
+      "raw_agreement": 0.8,
+      "confusion_matrix_A_rows_B_columns": {
+        "false": {
+          "false": 12,
+          "true": 10
+        },
+        "true": {
+          "false": 2,
+          "true": 36
+        }
+      }
+    },
+    "D10": {
+      "both_present": 16,
+      "A_only": 0,
+      "B_only": 0,
+      "both_absent": 44,
+      "eligible_denominator": 60,
+      "agreement_count": 60,
+      "raw_agreement": 1.0,
+      "confusion_matrix_A_rows_B_columns": {
+        "false": {
+          "false": 44,
+          "true": 0
+        },
+        "true": {
+          "false": 0,
+          "true": 16
+        }
+      }
+    }
+  },
+  "D6": "EMPIRICAL_UNVERIFIED",
+  "scope": {
+    "explicit_asks": {
+      "eligible_denominator": 60,
+      "normalized_text_agreement_count": 0,
+      "normalized_text_agreement": 0.0,
+      "wording_or_content_difference_count": 60,
+      "warning": "Text agreement is not semantic/legal agreement; differing facts/exclusions/asks remain unresolved unless explicitly reviewed."
+    },
+    "bounded_interpretation": {
+      "eligible_denominator": 60,
+      "normalized_text_agreement_count": 0,
+      "normalized_text_agreement": 0.0,
+      "wording_or_content_difference_count": 60,
+      "warning": "Text agreement is not semantic/legal agreement; differing facts/exclusions/asks remain unresolved unless explicitly reviewed."
+    },
+    "relevant_user_facts": {
+      "eligible_denominator": 60,
+      "normalized_text_agreement_count": 0,
+      "normalized_text_agreement": 0.0,
+      "wording_or_content_difference_count": 60,
+      "warning": "Text agreement is not semantic/legal agreement; differing facts/exclusions/asks remain unresolved unless explicitly reviewed."
+    },
+    "unspecified_facts": {
+      "eligible_denominator": 60,
+      "normalized_text_agreement_count": 0,
+      "normalized_text_agreement": 0.0,
+      "wording_or_content_difference_count": 60,
+      "warning": "Text agreement is not semantic/legal agreement; differing facts/exclusions/asks remain unresolved unless explicitly reviewed."
+    },
+    "excluded_scope": {
+      "eligible_denominator": 60,
+      "normalized_text_agreement_count": 0,
+      "normalized_text_agreement": 0.0,
+      "wording_or_content_difference_count": 60,
+      "warning": "Text agreement is not semantic/legal agreement; differing facts/exclusions/asks remain unresolved unless explicitly reviewed."
+    }
+  },
+  "aspects": {
+    "A_total": 139,
+    "B_total": 155,
+    "relationship_counts": {
+      "equivalent": 83,
+      "A_only": 5,
+      "B_only": 16,
+      "B_broader": 20,
+      "A_split_into_B": 8,
+      "ambiguous": 7,
+      "B_split_into_A": 3,
+      "A_broader": 4
+    },
+    "A_aspects_in_mapping_groups": 134,
+    "B_aspects_in_mapping_groups": 139,
+    "unmatched_A": 5,
+    "unmatched_B": 16,
+    "equivalent_one_to_one_matches": 83,
+    "boundary_disagreement_groups": 36,
+    "atomization_disagreement_groups": 18,
+    "candidate_level_full_aspect_equivalence": 26,
+    "mapping_group_denominator": 146,
+    "matched_is_not_equivalent": "Broad/narrow, split and ambiguous associations are counted as mapped, not as equivalent matches."
+  },
+  "support_structure": {
+    "mapped_group_denominator": 125,
+    "classification_counts": {
+      "equivalent support": 82,
+      "B superset": 30,
+      "unresolved support disagreement": 7,
+      "materially different support": 1,
+      "alternative-valid candidate": 1,
+      "A superset": 4
+    },
+    "equivalent_structure_count": 82,
+    "raw_structural_agreement": 0.656,
+    "absent_bundles_on_both_sides": 12,
+    "validity_not_adjudicated": true
+  },
+  "contamination_historical_31": {
+    "eligible_denominator": 60,
+    "raw_agreement_count": 59,
+    "raw_agreement": 0.9833333333333333,
+    "confusion_matrix_A_rows_B_columns": {
+      "exact_duplicate": {
+        "exact_duplicate": 0,
+        "trivial_paraphrase": 0,
+        "strong_near_duplicate": 0,
+        "same_scenario_proposition_bundle": 0,
+        "no_issue": 0
+      },
+      "trivial_paraphrase": {
+        "exact_duplicate": 0,
+        "trivial_paraphrase": 0,
+        "strong_near_duplicate": 0,
+        "same_scenario_proposition_bundle": 0,
+        "no_issue": 0
+      },
+      "strong_near_duplicate": {
+        "exact_duplicate": 0,
+        "trivial_paraphrase": 0,
+        "strong_near_duplicate": 0,
+        "same_scenario_proposition_bundle": 0,
+        "no_issue": 1
+      },
+      "same_scenario_proposition_bundle": {
+        "exact_duplicate": 0,
+        "trivial_paraphrase": 0,
+        "strong_near_duplicate": 0,
+        "same_scenario_proposition_bundle": 0,
+        "no_issue": 0
+      },
+      "no_issue": {
+        "exact_duplicate": 0,
+        "trivial_paraphrase": 0,
+        "strong_near_duplicate": 0,
+        "same_scenario_proposition_bundle": 0,
+        "no_issue": 59
+      }
+    },
+    "eligibility": "60 candidates; common authorized historical 31 texts",
+    "interpretation": "Descriptive agreement only; no legal correctness or reliability certification."
+  },
+  "contamination_medical": {
+    "eligible_denominator": 60,
+    "raw_agreement_count": 60,
+    "raw_agreement": 1.0,
+    "confusion_matrix_A_rows_B_columns": {
+      "exact_duplicate": {
+        "exact_duplicate": 0,
+        "trivial_paraphrase": 0,
+        "strong_near_duplicate": 0,
+        "same_scenario_proposition_bundle": 0,
+        "no_issue": 0
+      },
+      "trivial_paraphrase": {
+        "exact_duplicate": 0,
+        "trivial_paraphrase": 0,
+        "strong_near_duplicate": 0,
+        "same_scenario_proposition_bundle": 0,
+        "no_issue": 0
+      },
+      "strong_near_duplicate": {
+        "exact_duplicate": 0,
+        "trivial_paraphrase": 0,
+        "strong_near_duplicate": 0,
+        "same_scenario_proposition_bundle": 0,
+        "no_issue": 0
+      },
+      "same_scenario_proposition_bundle": {
+        "exact_duplicate": 0,
+        "trivial_paraphrase": 0,
+        "strong_near_duplicate": 0,
+        "same_scenario_proposition_bundle": 0,
+        "no_issue": 0
+      },
+      "no_issue": {
+        "exact_duplicate": 0,
+        "trivial_paraphrase": 0,
+        "strong_near_duplicate": 0,
+        "same_scenario_proposition_bundle": 0,
+        "no_issue": 60
+      }
+    },
+    "eligibility": "60 candidates; same single exploratory reference",
+    "interpretation": "Descriptive agreement only; no legal correctness or reliability certification."
+  },
+  "internal_contamination_comparability": {
+    "B_flagged_undirected_pairs": 7,
+    "A_explicit_shared_relation_crosswalk_pairs": 8,
+    "union_pairs_reviewed": 12,
+    "pooled_category_agreement": null,
+    "reason": "A cluster rationales and B positive pair flags are not identically categorized; absent labels are not imputed as negative judgments."
+  },
+  "candidates_with_full_substantive_agreement": 0,
+  "candidates_with_one_or_more_unresolved_differences": 60,
+  "full_agreement_interpretation": "Conservative confirmed-agreement count. Any unresolved scope wording/content equivalence, predicate, evidence, category or substantive difference blocks full agreement; this is not a count of legally wrong candidates.",
+  "independent_human_legal_review_complete": false,
+  "human_legal_review_gate": "HUMAN_LEGAL_REVIEW_REQUIRED"
+}

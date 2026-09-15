@@ -1,0 +1,115 @@
+{
+  "run_id": "38b4db206b79400281c9d39e40c84766",
+  "query": "Tôi đang định vibe code một ứng dụng AI giúp doanh nghiệp phân tích hồ sơ ứng viên tuyển dụng. Trước khi bắt đầu xây sản phẩm ở Việt Nam, tôi cần biết pháp luật hiện hành yêu cầu gì liên quan đến việc thu thập và sử dụng dữ liệu ứng viên, cách hệ thống AI được phép sử dụng, trách nhiệm của bên cung cấp và bên triển khai, cũng như những trường hợp nào tôi cần đặc biệt lưu ý để tránh vi phạm pháp luật?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 0,
+  "initial_top5": [],
+  "coverage_check": {
+    "sufficient": false,
+    "missing_aspects": [],
+    "reason": ""
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [],
+  "final_top5": [],
+  "draft_answer": null,
+  "completeness_check": {
+    "complete": false,
+    "missing_points": [],
+    "reason": ""
+  },
+  "revision_used": false,
+  "citation_check": {
+    "valid": false,
+    "cited_evidence_ids": [],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required",
+    "alignment_reason": "",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": null,
+  "final_status": "execution_error",
+  "retrieval_calls": [],
+  "retrieval_call_count": 0,
+  "llm_calls": [],
+  "llm_call_count": 0,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Tôi đang định vibe code một ứng dụng AI giúp doanh nghiệp phân tích hồ sơ ứng viên tuyển dụng. Trước khi bắt đầu xây sản phẩm ở Việt Nam, tôi cần biết pháp luật hiện hành yêu cầu gì liên quan đến việc thu thập và sử dụng dữ liệu ứng viên, cách hệ thống AI được phép sử dụng, trách nhiệm của bên cung cấp và bên triển khai, cũng như những trường hợp nào tôi cần đặc biệt lưu ý để tránh vi phạm pháp luật?",
+    "initial_evidence": [],
+    "current_evidence": [],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": false,
+      "missing_aspects": [],
+      "reason": ""
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": null,
+    "completeness_check": {
+      "complete": false,
+      "missing_points": [],
+      "reason": ""
+    },
+    "citation_check": {
+      "valid": false,
+      "cited_evidence_ids": [],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required",
+      "alignment_reason": "",
+      "reviewed_claims": []
+    },
+    "revision_count": 0,
+    "citation_revision_count": 0,
+    "final_answer": null,
+    "final_status": "execution_error",
+    "run_id": "38b4db206b79400281c9d39e40c84766",
+    "initial_top5": [],
+    "expanded_candidates": [],
+    "final_top5": [],
+    "retrieval_calls": [],
+    "llm_calls": [],
+    "expansion_used": false,
+    "revision_used": false,
+    "citation_revision_used": false,
+    "execution_error": {
+      "type": "RuntimeError",
+      "message": "Missing LLM configuration: RAG_LLM_MODEL, RAG_LLM_BASE_URL, RAG_LLM_API_KEY"
+    },
+    "transitions": [
+      "initialized",
+      "final:execution_error"
+    ]
+  },
+  "timestamp": "2026-09-13T07:15:38.629677+00:00"
+}

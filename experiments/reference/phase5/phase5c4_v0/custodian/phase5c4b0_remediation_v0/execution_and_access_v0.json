@@ -1,0 +1,75 @@
+{
+  "role": "TRUSTED_DATASET_CUSTODIAN",
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "current_context_reviewer_b_annotation": "FORBIDDEN",
+  "previous_reviewer_b_attempt": {
+    "status": "REVIEWER_B_PACKET_CONTAMINATED",
+    "phase_status": "FAIL",
+    "candidates_annotated": 0,
+    "substantive_A_labels_read": false,
+    "reusable_for_annotation": false,
+    "disqualification": "PERMANENT"
+  },
+  "fresh_B_session_required": true,
+  "seed_commitment": "bc4b94120401a38db96be7cd4bdff35da8e3efd1d47784739d6a24fa38adf654",
+  "seed_committed_at_utc": "2026-09-11T13:57:27.187943+00:00",
+  "seed_commitment_serialization": "UTF8 compact JSON provenance before input/output hashes and committed_provenance_keys are added",
+  "seed_commitment_key_order": [
+    "schema",
+    "committed_at_utc",
+    "seed_hex",
+    "id_key_hex",
+    "seed_source",
+    "algorithm",
+    "id_algorithm",
+    "quality_blind",
+    "seed_reselection",
+    "annotation_quality_or_system_performance_inputs",
+    "input_hash_serialization",
+    "output_hash_serialization",
+    "authorized_roles",
+    "reviewer_b_access"
+  ],
+  "permitted_additions": {
+    "visible_files": [
+      "reviewer_b_annotation_instructions_v1.md",
+      "reviewer_b_packet_manifest_v1.json",
+      "reviewer_b_queries_v1.jsonl"
+    ],
+    "custodian_files": [
+      "contaminated_packet_quarantine_v0.json",
+      "reviewer_b_id_mapping_v1.json",
+      "reviewer_b_packet_projection_audit_v1.json",
+      "reviewer_b_shuffle_provenance_v1.json"
+    ],
+    "remediation_directory": "data/evaluation/generation/phase5/phase5c4_v0/custodian/phase5c4b0_remediation_v0",
+    "remediation_files": [
+      "artifact_hashes_v0.json",
+      "execution_and_access_v0.json",
+      "fresh_reviewer_b_handoff_v1.md",
+      "integrity_baseline_v0.json",
+      "integrity_before_after_v0.json",
+      "phase5c4b0_console_v0.txt",
+      "phase5c4b0_review_summary_v0.md",
+      "phase5c4b0_validation_v0.json",
+      "sanitize_reviewer_b_v1.py"
+    ]
+  },
+  "HOLDOUT_STORAGE_ISOLATION": "NOT_YET_ENFORCED",
+  "isolation_limit": "Owner-only files do not prevent same-owner contexts from reading; no role-separated storage tested.",
+  "annotation_performed": 0,
+  "D6": "EMPIRICAL_UNVERIFIED",
+  "network_api_calls": 0,
+  "production_calls": 0,
+  "evaluator_calls": 0,
+  "retrieval_reranking_inference_calls": 0,
+  "system_outputs_substantively_accessed": 0,
+  "additional_generation_calls": 0,
+  "annotation_research_calls": 0,
+  "exact_queries_printed_publicly": false,
+  "dataset_freeze_ready": false,
+  "execution_basis": "Task-initiated local standard-library JSON, filesystem and hashing operations only. Binary hashing of all project files is distinct from substantive system-output inspection. No OS-wide network attestation claimed.",
+  "source_access": "Canonical source parsed locally for exact query projection and private existing-ID/order audit only; no new judgments and no A/B comparison. Source values not printed.",
+  "visible_input_boundary": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1",
+  "hashing_boundary": "All preexisting regular project files; symlinks not followed"
+}

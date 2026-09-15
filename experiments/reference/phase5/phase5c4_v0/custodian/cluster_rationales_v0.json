@@ -1,0 +1,521 @@
+[
+  {
+    "cluster_id": "c_3e0e5b749d53dcb68b85",
+    "query_ids": [
+      "q_1642611dc39f3f0e302f",
+      "q_2f80182d7e1efdf966c7",
+      "q_dbb862f75f4b23442a3d"
+    ],
+    "scenario_task_key": "research_integrity",
+    "split_family": "DEV",
+    "rationale": "A01/A13/D01 share AI research/publication integrity; variation adds closed-lab, data-access or copyright boundary needs. Entire cluster DEV, including reserve, prevents reuse across TEST.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_635a786f13283134d50a",
+    "query_ids": [
+      "q_c435ea84a01bd76f8166",
+      "q_c281e8c976e7207bf144"
+    ],
+    "scenario_task_key": "foreign_contact",
+    "split_family": "DEV",
+    "rationale": "A02/C15 share foreign high-risk supplier contact versus mandatory-certification representation; same material legal branch. Entire cluster DEV family; reserve cannot migrate to TEST.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_74b76488d2fbc2b624f9",
+    "query_ids": [
+      "q_c13f165c8ac1296c1449"
+    ],
+    "scenario_task_key": "education_release",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_d58a3518b02bbed4644e",
+    "query_ids": [
+      "q_c8a99d5afd80afefa090"
+    ],
+    "scenario_task_key": "private_compute_sharing",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_925d38e539391bdfd0c5",
+    "query_ids": [
+      "q_0562c6d6516359c63413"
+    ],
+    "scenario_task_key": "public_benefits_fairness",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_1e7c150419dd6661ca87",
+    "query_ids": [
+      "q_dcc92aaa0791fa98004c",
+      "q_4a979d778bce4f6552ab"
+    ],
+    "scenario_task_key": "art_publication_transparency",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "A06/B10 share AI artwork made public and adapted label placement. Distinct ethical versus handoff obligations, but common scenario-template exposure is conservatively clustered in TEST.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_69a632d3c293b6e6204c",
+    "query_ids": [
+      "q_9f10deed791a1ec07d04"
+    ],
+    "scenario_task_key": "open_source_marking",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_b3f205bdf9a773097e08",
+    "query_ids": [
+      "q_a195fa72dea87b439d7a",
+      "q_4d28afa77e15a3afd8f1"
+    ],
+    "scenario_task_key": "significant_integration",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "A08/B06 share significant integration and changed-risk workflow; one focuses supplier release and one deployer reclassification. Conservative same TEST cluster.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_6c19e6506b0f372144ed",
+    "query_ids": [
+      "q_b67987d68e10d7d0986d"
+    ],
+    "scenario_task_key": "public_energy_design",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_45bf040da44f5ecfeb85",
+    "query_ids": [
+      "q_81bb95ba1f19f186ab25"
+    ],
+    "scenario_task_key": "accessible_public_interface",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_8aa99ca729efc3f25ffa",
+    "query_ids": [
+      "q_1f06ae333c1e3c774329"
+    ],
+    "scenario_task_key": "legacy_education_portal",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_9b9c631247429f413b7f",
+    "query_ids": [
+      "q_fcae400ebdbdbe36cce8"
+    ],
+    "scenario_task_key": "harm_without_operator_fault",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_f0a425afd2551b0e8936",
+    "query_ids": [
+      "q_b603d3ddf288b72f3954"
+    ],
+    "scenario_task_key": "open_research_support",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_4aa9aa4510e320e7c652",
+    "query_ids": [
+      "q_1ade66d9d5bb022b867f",
+      "q_afa050568a2a155f495b"
+    ],
+    "scenario_task_key": "mixed_defence_civilian",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_5d4d1f63f81b1a4247c6",
+    "query_ids": [
+      "q_efb22fad6d7dad9fa17a"
+    ],
+    "scenario_task_key": "small_sandbox_entry",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_12f68a73419c590790ac",
+    "query_ids": [
+      "q_555fa4b2dfa1d3f428df"
+    ],
+    "scenario_task_key": "sandbox_voucher_settlement",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_47e6bc9553e93e6ca9c3",
+    "query_ids": [
+      "q_4f81b0869e9d14221596"
+    ],
+    "scenario_task_key": "public_change_training",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_cf0bbda0d334ee4795a8",
+    "query_ids": [
+      "q_97f3e68f1e2cce1b2bf4",
+      "q_11a30508142a0893b998"
+    ],
+    "scenario_task_key": "voluntary_support_information",
+    "split_family": "DEV",
+    "rationale": "B04/C14 share optional electronic information/template in voluntary-sharing support. Entire cluster DEV family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_49b9089d8ef082d6c250",
+    "query_ids": [
+      "q_8357958f95ff2e0baa41"
+    ],
+    "scenario_task_key": "foreign_assessment_recognition",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_1ded81f314fb90b9beee",
+    "query_ids": [
+      "q_6f97ffb51be5fdaf892f"
+    ],
+    "scenario_task_key": "asset_incident_deadlines",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_951a0fa917db3f369f9a",
+    "query_ids": [
+      "q_8324e664cda8a81236ed",
+      "q_14e8b10bc8926bd979f0"
+    ],
+    "scenario_task_key": "data_operator_access",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_af571f5e8036b4730281",
+    "query_ids": [
+      "q_328ee3ab8c3e08738fd1",
+      "q_b7d036582f1f01ec746f"
+    ],
+    "scenario_task_key": "third_party_brand_provider",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "B09/C06 share own-brand provider identity despite outsourced model development. Entire cluster TEST.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_803b16d481ffdbb8f1f0",
+    "query_ids": [
+      "q_10309a829e08c3a4fecf"
+    ],
+    "scenario_task_key": "recognized_cluster_training",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_a52604a568db1cef973d",
+    "query_ids": [
+      "q_d5df8d6efaee273f39d3"
+    ],
+    "scenario_task_key": "classification_electronic_notice",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_11a0dde3ac62a57c9a11",
+    "query_ids": [
+      "q_0e4980e0bb419c668b44"
+    ],
+    "scenario_task_key": "post_sandbox_transition",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_710601534f4581d969b8",
+    "query_ids": [
+      "q_90f3303b7d7b22395d96"
+    ],
+    "scenario_task_key": "academic_workforce_cooperation",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_f989c0cd0b58cdf45736",
+    "query_ids": [
+      "q_8207ae5a788317993abd"
+    ],
+    "scenario_task_key": "personal_noncommercial",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_8c7df02d25b19af69ed5",
+    "query_ids": [
+      "q_7a2a93af56c529c8ef41"
+    ],
+    "scenario_task_key": "office_medium_exception",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_a36ad4b7d7eaf1772bb9",
+    "query_ids": [
+      "q_d26cb3f576e88854d6d8"
+    ],
+    "scenario_task_key": "private_ethics_scope",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_208cd9d086022723930d",
+    "query_ids": [
+      "q_a4eada08ab842902e775"
+    ],
+    "scenario_task_key": "standalone_model_classification",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_ea315a3e6163c8ce10b2",
+    "query_ids": [
+      "q_bc2e1864c7f8705e3966"
+    ],
+    "scenario_task_key": "regulator_catalogue_role",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_95d7519d8e06bd5be26d",
+    "query_ids": [
+      "q_50069fac66d1e12205cf"
+    ],
+    "scenario_task_key": "routine_update_exception",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_c2558296e7490ea960e0",
+    "query_ids": [
+      "q_9a930d0151f1f2cbb452"
+    ],
+    "scenario_task_key": "ordinary_insurance_vs_sandbox",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_2c9d1c416b9506792417",
+    "query_ids": [
+      "q_641743d24f2f6ba314bd"
+    ],
+    "scenario_task_key": "public_model_security_actor",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_e1c74b7279d8030ba9e1",
+    "query_ids": [
+      "q_025b90f0aa489f1f483f"
+    ],
+    "scenario_task_key": "sandbox_level_one_real_people",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_17077aeb0679d39cc283",
+    "query_ids": [
+      "q_5a8c3a6939072e9d256a"
+    ],
+    "scenario_task_key": "state_secret_publication",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_a5e6c3a9688a50343068",
+    "query_ids": [
+      "q_af1b2d179667a0c14929"
+    ],
+    "scenario_task_key": "developer_incident_role",
+    "split_family": "EXCLUDED",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_6931e014b7a47876ef0a",
+    "query_ids": [
+      "q_fc35aef795821c34b6f1"
+    ],
+    "scenario_task_key": "core_technology_tax",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_7ca3576d79dfe022f390",
+    "query_ids": [
+      "q_29b66d9a5f0ae2ef98a4"
+    ],
+    "scenario_task_key": "label_fine_amount",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_eafb31dc5328b8adac03",
+    "query_ids": [
+      "q_4fe83fa6e245d03c20fc"
+    ],
+    "scenario_task_key": "notice_api_specification",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_cb4a1f8170a0e10e4402",
+    "query_ids": [
+      "q_1e3dead5b493f0725223"
+    ],
+    "scenario_task_key": "procurement_preference_rate",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_050c3ef171d534c1e178",
+    "query_ids": [
+      "q_8ccdc3c4ee85dadcd60d"
+    ],
+    "scenario_task_key": "technical_log_retention_boundary",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_f0370b3ccc0a4e55a7d6",
+    "query_ids": [
+      "q_89ad16a113cd52847d7c"
+    ],
+    "scenario_task_key": "dataset_access_fee",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_cc870a9e29f326ccbd27",
+    "query_ids": [
+      "q_74a9553aea20f985c661"
+    ],
+    "scenario_task_key": "conformity_numeric_threshold",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_7fa1164c1cbe26547fd9",
+    "query_ids": [
+      "q_2082d6e4ad79123c6d14"
+    ],
+    "scenario_task_key": "compensation_quantification",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_0bc59c76d67beb4caeb7",
+    "query_ids": [
+      "q_88f96f6661303a520be5"
+    ],
+    "scenario_task_key": "assessor_live_register",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_df993b60ea1aa3190e98",
+    "query_ids": [
+      "q_39d7771240b14f062898"
+    ],
+    "scenario_task_key": "core_data_catalogue_lookup",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_f10ad63d862ce7751e55",
+    "query_ids": [
+      "q_df59222dfdcfceaa0aac"
+    ],
+    "scenario_task_key": "cross_border_personal_data_procedure",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_5d76f64a2f90485328db",
+    "query_ids": [
+      "q_182d7b08c6e0fdc0ae46"
+    ],
+    "scenario_task_key": "fund_fiscal_allocation",
+    "split_family": "DEV",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_3a3dc07ddd84d1b946e4",
+    "query_ids": [
+      "q_6570dddcf3bb1e16516f"
+    ],
+    "scenario_task_key": "criminal_provision_lookup",
+    "split_family": "HOLDOUT_TEST",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  },
+  {
+    "cluster_id": "c_7c092794448154f6a72f",
+    "query_ids": [
+      "q_90695ba7553824abd1e6"
+    ],
+    "scenario_task_key": "ambiguous_reclassification_transition",
+    "split_family": "EXCLUDED",
+    "rationale": "Distinct bounded legal decision and proposition bundle. Same-Article pairs reviewed without merging merely for shared source. Any material predicate variant is confined to the same split family.",
+    "needs_second_review": true
+  }
+]

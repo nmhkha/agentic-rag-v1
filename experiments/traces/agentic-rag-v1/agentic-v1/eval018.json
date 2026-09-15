@@ -1,0 +1,1184 @@
+{
+  "run_id": "agentic-v1-eval018",
+  "query": "Sau khi kết thúc thử nghiệm, cơ quan có thẩm quyền xử lý kết quả như thế nào?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 26,
+  "initial_top5": [
+    "142-2026-ND-CP_dieu-27_khoan-1",
+    "142-2026-ND-CP_dieu-27_khoan-5",
+    "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+    "134-2025-QH15_dieu-21_khoan-3",
+    "142-2026-ND-CP_dieu-27_khoan-2_diem-a"
+  ],
+  "coverage_check": {
+    "sufficient": true,
+    "missing_aspects": [],
+    "reason": "Bằng chứng đã cung cấp đầy đủ thông tin về việc cơ quan có thẩm quyền xử lý kết quả sau khi kết thúc thử nghiệm, bao gồm việc tổ chức đánh giá, cấp Giấy xác nhận hoàn thành thử nghiệm hoặc trả lời bằng văn bản khi từ chối, và công nhận toàn bộ hoặc một phần kết quả thử nghiệm."
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [
+    {
+      "rank": 1,
+      "evidence_id": "E1",
+      "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-27",
+      "article": "27",
+      "article_label": "Điều 27",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": null,
+      "point_label": null,
+      "text": "Trong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo tổng kết theo quy định tại Nghị định này, cơ quan đã ban hành giấy xác nhận tham gia cơ chế thử nghiệm có kiểm soát tổ chức đánh giá kết quả thử nghiệm và cấp Giấy xác nhận hoàn thành thử nghiệm có kiểm soát theo Mẫu AI04 tại Phụ lục ban hành kèm theo Nghị định này. Trường hợp từ chối cấp Giấy xác nhận, cơ quan có thẩm quyền phải trả lời bằng văn bản và nêu rõ lý do. Trường hợp có nhu cầu gia hạn thời gian thử nghiệm, chậm nhất 15 ngày làm việc trước khi kết thúc thời hạn, tổ chức, cá nhân nộp Đơn đề nghị gia hạn theo mẫu tại Phụ lục AI03c hoặc AI03d và Báo cáo tổng kết quá trình thử nghiệm theo mẫu tại Phụ lục AI08a hoặc AI08b. Trong thời hạn 10 ngày làm việc, cơ quan có thẩm quyền thẩm định, quyết định gia hạn và cấp gia hạn Giấy xác nhận tham gia thử nghiệm; trường hợp không chấp thuận hoặc không gia hạn Giấy xác nhận tham gia thử nghiệm phải có văn bản trả lời và nêu rõ lý do.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 1\nTrong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo tổng kết theo quy định tại Nghị định này, cơ quan đã ban hành giấy xác nhận tham gia cơ chế thử nghiệm có kiểm soát tổ chức đánh giá kết quả thử nghiệm và cấp Giấy xác nhận hoàn thành thử nghiệm có kiểm soát theo Mẫu AI04 tại Phụ lục ban hành kèm theo Nghị định này. Trường hợp từ chối cấp Giấy xác nhận, cơ quan có thẩm quyền phải trả lời bằng văn bản và nêu rõ lý do. Trường hợp có nhu cầu gia hạn thời gian thử nghiệm, chậm nhất 15 ngày làm việc trước khi kết thúc thời hạn, tổ chức, cá nhân nộp Đơn đề nghị gia hạn theo mẫu tại Phụ lục AI03c hoặc AI03d và Báo cáo tổng kết quá trình thử nghiệm theo mẫu tại Phụ lục AI08a hoặc AI08b. Trong thời hạn 10 ngày làm việc, cơ quan có thẩm quyền thẩm định, quyết định gia hạn và cấp gia hạn Giấy xác nhận tham gia thử nghiệm; trường hợp không chấp thuận hoặc không gia hạn Giấy xác nhận tham gia thử nghiệm phải có văn bản trả lời và nêu rõ lý do.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 3.4103052616119385,
+      "bm25_rank": 2,
+      "dense_rank": 1,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 1,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-27_khoan-1",
+      "point_id": null
+    },
+    {
+      "rank": 2,
+      "evidence_id": "E2",
+      "chunk_id": "142-2026-ND-CP_dieu-27_khoan-5",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-27",
+      "article": "27",
+      "article_label": "Điều 27",
+      "clause": "5",
+      "clause_label": "Khoản 5",
+      "point": null,
+      "point_label": null,
+      "text": "Trường hợp việc điều chỉnh làm vượt quá phạm vi, điều kiện, giới hạn đã được xác định thì được coi là mở rộng phạm vi vận hành và việc xem xét, chấp thuận được thực hiện theo quy định tại Điều 23 của Nghị định này. Trường hợp việc mở rộng làm thay đổi phạm vi địa bàn, lĩnh vực quản lý hoặc cấp độ thử nghiệm dẫn đến thay đổi thẩm quyền theo quy định tại Điều 23 của Nghị định này, tổ chức, cá nhân phải đề nghị cơ quan có thẩm quyền tương ứng xem xét, chấp thuận trước khi thực hiện.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 5\nTrường hợp việc điều chỉnh làm vượt quá phạm vi, điều kiện, giới hạn đã được xác định thì được coi là mở rộng phạm vi vận hành và việc xem xét, chấp thuận được thực hiện theo quy định tại Điều 23 của Nghị định này. Trường hợp việc mở rộng làm thay đổi phạm vi địa bàn, lĩnh vực quản lý hoặc cấp độ thử nghiệm dẫn đến thay đổi thẩm quyền theo quy định tại Điều 23 của Nghị định này, tổ chức, cá nhân phải đề nghị cơ quan có thẩm quyền tương ứng xem xét, chấp thuận trước khi thực hiện.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 2.678811550140381,
+      "bm25_rank": 7,
+      "dense_rank": 5,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 2,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-27_khoan-5",
+      "point_id": null
+    },
+    {
+      "rank": 3,
+      "evidence_id": "E3",
+      "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-27",
+      "article": "27",
+      "article_label": "Điều 27",
+      "clause": "6",
+      "clause_label": "Khoản 6",
+      "point": "a",
+      "point_label": "Điểm a",
+      "text": "Đã hoàn thành nội dung thử nghiệm và đã khắc phục sự cố theo yêu cầu của cơ quan nhà nước có thẩm quyền;",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 6\nĐiểm a)\nĐã hoàn thành nội dung thử nghiệm và đã khắc phục sự cố theo yêu cầu của cơ quan nhà nước có thẩm quyền;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 2.390063762664795,
+      "bm25_rank": 1,
+      "dense_rank": 2,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 3,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-27_khoan-6",
+      "point_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a"
+    },
+    {
+      "rank": 4,
+      "evidence_id": "E4",
+      "chunk_id": "134-2025-QH15_dieu-21_khoan-3",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-21",
+      "article": "21",
+      "article_label": "Điều 21",
+      "clause": "3",
+      "clause_label": "Khoản 3",
+      "point": null,
+      "point_label": null,
+      "text": "Cơ quan nhà nước có thẩm quyền chủ trì, phối hợp với cơ quan có liên quan tiếp nhận, thẩm định và xử lý hồ sơ theo quy trình thẩm định và phản hồi nhanh; giám sát quá trình thử nghiệm và quyết định tạm dừng hoặc chấm dứt thử nghiệm khi có rủi ro ảnh hưởng đến an toàn, an ninh hoặc quyền, lợi ích hợp pháp của tổ chức, cá nhân.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nỨNG DỤNG TRÍ TUỆ NHÂN TẠO, PHÁT TRIỂN HỆ SINH THÁI\nĐiều 21. Cơ chế thử nghiệm có kiểm soát đối với trí tuệ nhân tạo\nKhoản 3\nCơ quan nhà nước có thẩm quyền chủ trì, phối hợp với cơ quan có liên quan tiếp nhận, thẩm định và xử lý hồ sơ theo quy trình thẩm định và phản hồi nhanh; giám sát quá trình thử nghiệm và quyết định tạm dừng hoặc chấm dứt thử nghiệm khi có rủi ro ảnh hưởng đến an toàn, an ninh hoặc quyền, lợi ích hợp pháp của tổ chức, cá nhân.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 1.8773738145828247,
+      "bm25_rank": 13,
+      "dense_rank": 7,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 4,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-21_khoan-3",
+      "point_id": null
+    },
+    {
+      "rank": 5,
+      "evidence_id": "E5",
+      "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-a",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-27",
+      "article": "27",
+      "article_label": "Điều 27",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": "a",
+      "point_label": "Điểm a",
+      "text": "Công nhận toàn bộ hoặc một phần kết quả thử nghiệm phục vụ đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo;",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 2\nĐiểm a)\nCông nhận toàn bộ hoặc một phần kết quả thử nghiệm phục vụ đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 1.7657270431518555,
+      "bm25_rank": 4,
+      "dense_rank": 15,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 5,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-27_khoan-2",
+      "point_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-a"
+    }
+  ],
+  "final_top5": [
+    "142-2026-ND-CP_dieu-27_khoan-1",
+    "142-2026-ND-CP_dieu-27_khoan-5",
+    "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+    "134-2025-QH15_dieu-21_khoan-3",
+    "142-2026-ND-CP_dieu-27_khoan-2_diem-a"
+  ],
+  "draft_answer": "Trong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo tổng kết, cơ quan đã ban hành giấy xác nhận tham gia cơ chế thử nghiệm có kiểm soát tổ chức đánh giá kết quả thử nghiệm và cấp Giấy xác nhận hoàn thành thử nghiệm có kiểm soát, hoặc trả lời bằng văn bản và nêu rõ lý do nếu từ chối cấp [E1]. Đồng thời, kết quả thử nghiệm có thể được công nhận toàn bộ hoặc một phần để phục vụ đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo [E5].",
+  "completeness_check": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "Câu trả lời đã bao quát đầy đủ các nội dung xử lý kết quả thử nghiệm theo các tài liệu được cung cấp."
+  },
+  "revision_used": false,
+  "citation_check": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E1",
+      "E5"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required_by_deterministic_gate",
+    "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": "Trong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo tổng kết, cơ quan đã ban hành giấy xác nhận tham gia cơ chế thử nghiệm có kiểm soát tổ chức đánh giá kết quả thử nghiệm và cấp Giấy xác nhận hoàn thành thử nghiệm có kiểm soát, hoặc trả lời bằng văn bản và nêu rõ lý do nếu từ chối cấp [E1]. Đồng thời, kết quả thử nghiệm có thể được công nhận toàn bộ hoặc một phần để phục vụ đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo [E5].",
+  "final_status": "success",
+  "retrieval_calls": [
+    {
+      "call_number": 1,
+      "round": 0,
+      "query": "Sau khi kết thúc thử nghiệm, cơ quan có thẩm quyền xử lý kết quả như thế nào?",
+      "sub_query": false,
+      "bm25_depth": 20,
+      "dense_depth": 20,
+      "candidate_chunk_ids": [
+        "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+        "142-2026-ND-CP_dieu-27_khoan-1",
+        "142-2026-ND-CP_dieu-27_khoan-8",
+        "142-2026-ND-CP_dieu-27_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-23_khoan-5_diem-c",
+        "142-2026-ND-CP_dieu-27_khoan-9",
+        "142-2026-ND-CP_dieu-27_khoan-5",
+        "142-2026-ND-CP_dieu-27_khoan-7",
+        "142-2026-ND-CP_dieu-10_khoan-2",
+        "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+        "142-2026-ND-CP_dieu-27_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-25_khoan-4",
+        "134-2025-QH15_dieu-21_khoan-3",
+        "142-2026-ND-CP_dieu-22_khoan-6",
+        "142-2026-ND-CP_dieu-21_khoan-9",
+        "142-2026-ND-CP_dieu-27_khoan-3",
+        "134-2025-QH15_dieu-10_khoan-6",
+        "142-2026-ND-CP_dieu-20_khoan-6",
+        "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+        "142-2026-ND-CP_dieu-25_khoan-1_diem-c",
+        "142-2026-ND-CP_dieu-13_khoan-5",
+        "142-2026-ND-CP_dieu-23_khoan-4",
+        "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+        "142-2026-ND-CP_dieu-23_khoan-3_diem-b",
+        "142-2026-ND-CP_dieu-27_khoan-4",
+        "142-2026-ND-CP_dieu-23_khoan-1"
+      ],
+      "candidate_count": 26,
+      "reranker_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+          "rank": 1,
+          "reranker_score": 3.4103052616119385
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-5",
+          "rank": 2,
+          "reranker_score": 2.678811550140381
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+          "rank": 3,
+          "reranker_score": 2.390063762664795
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-21_khoan-3",
+          "rank": 4,
+          "reranker_score": 1.8773738145828247
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-a",
+          "rank": 5,
+          "reranker_score": 1.7657270431518555
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-9",
+          "rank": 6,
+          "reranker_score": 1.6710398197174072
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-8",
+          "rank": 7,
+          "reranker_score": 1.4873325824737549
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-21_khoan-9",
+          "rank": 8,
+          "reranker_score": 1.4830892086029053
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-b",
+          "rank": 9,
+          "reranker_score": 1.170316219329834
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-25_khoan-1_diem-c",
+          "rank": 10,
+          "reranker_score": 0.9886832237243652
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-5_diem-c",
+          "rank": 11,
+          "reranker_score": 0.6855616569519043
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+          "rank": 12,
+          "reranker_score": 0.5942736268043518
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-4",
+          "rank": 13,
+          "reranker_score": 0.46240755915641785
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-6",
+          "rank": 14,
+          "reranker_score": 0.38444215059280396
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-7",
+          "rank": 15,
+          "reranker_score": 0.3486664295196533
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-3",
+          "rank": 16,
+          "reranker_score": 0.3355933427810669
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-b",
+          "rank": 17,
+          "reranker_score": 0.13314107060432434
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-25_khoan-4",
+          "rank": 18,
+          "reranker_score": -0.07866594195365906
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-22_khoan-6",
+          "rank": 19,
+          "reranker_score": -0.18471743166446686
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+          "rank": 20,
+          "reranker_score": -0.221003919839859
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-4",
+          "rank": 21,
+          "reranker_score": -0.23645925521850586
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-1",
+          "rank": 22,
+          "reranker_score": -0.3126472532749176
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-5",
+          "rank": 23,
+          "reranker_score": -1.235412359237671
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+          "rank": 24,
+          "reranker_score": -1.3656171560287476
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+          "rank": 25,
+          "reranker_score": -2.6475603580474854
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+          "rank": 26,
+          "reranker_score": -3.2977147102355957
+        }
+      ],
+      "top5_chunk_ids": [
+        "142-2026-ND-CP_dieu-27_khoan-1",
+        "142-2026-ND-CP_dieu-27_khoan-5",
+        "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+        "134-2025-QH15_dieu-21_khoan-3",
+        "142-2026-ND-CP_dieu-27_khoan-2_diem-a"
+      ],
+      "candidate_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+          "bm25_rank": 1,
+          "dense_rank": 2
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+          "bm25_rank": 2,
+          "dense_rank": 1
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-8",
+          "bm25_rank": 3,
+          "dense_rank": 8
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-a",
+          "bm25_rank": 4,
+          "dense_rank": 15
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-5_diem-c",
+          "bm25_rank": 5,
+          "dense_rank": 13
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-9",
+          "bm25_rank": 6,
+          "dense_rank": 3
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-5",
+          "bm25_rank": 7,
+          "dense_rank": 5
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-7",
+          "bm25_rank": 8,
+          "dense_rank": 16
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+          "bm25_rank": 9,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+          "bm25_rank": 10,
+          "dense_rank": 19
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-b",
+          "bm25_rank": 11,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-25_khoan-4",
+          "bm25_rank": 12,
+          "dense_rank": 4
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-21_khoan-3",
+          "bm25_rank": 13,
+          "dense_rank": 7
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-22_khoan-6",
+          "bm25_rank": 14,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-21_khoan-9",
+          "bm25_rank": 15,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-3",
+          "bm25_rank": 16,
+          "dense_rank": 6
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-6",
+          "bm25_rank": 17,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+          "bm25_rank": 18,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+          "bm25_rank": 19,
+          "dense_rank": 17
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-25_khoan-1_diem-c",
+          "bm25_rank": 20,
+          "dense_rank": 9
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-5",
+          "bm25_rank": null,
+          "dense_rank": 10
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-4",
+          "bm25_rank": null,
+          "dense_rank": 11
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+          "bm25_rank": null,
+          "dense_rank": 12
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 14
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-4",
+          "bm25_rank": null,
+          "dense_rank": 18
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 20
+        }
+      ]
+    }
+  ],
+  "retrieval_call_count": 1,
+  "llm_calls": [
+    {
+      "call_number": 1,
+      "stage": "coverage_check"
+    },
+    {
+      "call_number": 2,
+      "stage": "answer_generation"
+    },
+    {
+      "call_number": 3,
+      "stage": "completeness_check"
+    }
+  ],
+  "llm_call_count": 3,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Sau khi kết thúc thử nghiệm, cơ quan có thẩm quyền xử lý kết quả như thế nào?",
+    "initial_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Trong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo tổng kết theo quy định tại Nghị định này, cơ quan đã ban hành giấy xác nhận tham gia cơ chế thử nghiệm có kiểm soát tổ chức đánh giá kết quả thử nghiệm và cấp Giấy xác nhận hoàn thành thử nghiệm có kiểm soát theo Mẫu AI04 tại Phụ lục ban hành kèm theo Nghị định này. Trường hợp từ chối cấp Giấy xác nhận, cơ quan có thẩm quyền phải trả lời bằng văn bản và nêu rõ lý do. Trường hợp có nhu cầu gia hạn thời gian thử nghiệm, chậm nhất 15 ngày làm việc trước khi kết thúc thời hạn, tổ chức, cá nhân nộp Đơn đề nghị gia hạn theo mẫu tại Phụ lục AI03c hoặc AI03d và Báo cáo tổng kết quá trình thử nghiệm theo mẫu tại Phụ lục AI08a hoặc AI08b. Trong thời hạn 10 ngày làm việc, cơ quan có thẩm quyền thẩm định, quyết định gia hạn và cấp gia hạn Giấy xác nhận tham gia thử nghiệm; trường hợp không chấp thuận hoặc không gia hạn Giấy xác nhận tham gia thử nghiệm phải có văn bản trả lời và nêu rõ lý do.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 1\nTrong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo tổng kết theo quy định tại Nghị định này, cơ quan đã ban hành giấy xác nhận tham gia cơ chế thử nghiệm có kiểm soát tổ chức đánh giá kết quả thử nghiệm và cấp Giấy xác nhận hoàn thành thử nghiệm có kiểm soát theo Mẫu AI04 tại Phụ lục ban hành kèm theo Nghị định này. Trường hợp từ chối cấp Giấy xác nhận, cơ quan có thẩm quyền phải trả lời bằng văn bản và nêu rõ lý do. Trường hợp có nhu cầu gia hạn thời gian thử nghiệm, chậm nhất 15 ngày làm việc trước khi kết thúc thời hạn, tổ chức, cá nhân nộp Đơn đề nghị gia hạn theo mẫu tại Phụ lục AI03c hoặc AI03d và Báo cáo tổng kết quá trình thử nghiệm theo mẫu tại Phụ lục AI08a hoặc AI08b. Trong thời hạn 10 ngày làm việc, cơ quan có thẩm quyền thẩm định, quyết định gia hạn và cấp gia hạn Giấy xác nhận tham gia thử nghiệm; trường hợp không chấp thuận hoặc không gia hạn Giấy xác nhận tham gia thử nghiệm phải có văn bản trả lời và nêu rõ lý do.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.4103052616119385,
+        "bm25_rank": 2,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-27_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-27_khoan-5",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": null,
+        "point_label": null,
+        "text": "Trường hợp việc điều chỉnh làm vượt quá phạm vi, điều kiện, giới hạn đã được xác định thì được coi là mở rộng phạm vi vận hành và việc xem xét, chấp thuận được thực hiện theo quy định tại Điều 23 của Nghị định này. Trường hợp việc mở rộng làm thay đổi phạm vi địa bàn, lĩnh vực quản lý hoặc cấp độ thử nghiệm dẫn đến thay đổi thẩm quyền theo quy định tại Điều 23 của Nghị định này, tổ chức, cá nhân phải đề nghị cơ quan có thẩm quyền tương ứng xem xét, chấp thuận trước khi thực hiện.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 5\nTrường hợp việc điều chỉnh làm vượt quá phạm vi, điều kiện, giới hạn đã được xác định thì được coi là mở rộng phạm vi vận hành và việc xem xét, chấp thuận được thực hiện theo quy định tại Điều 23 của Nghị định này. Trường hợp việc mở rộng làm thay đổi phạm vi địa bàn, lĩnh vực quản lý hoặc cấp độ thử nghiệm dẫn đến thay đổi thẩm quyền theo quy định tại Điều 23 của Nghị định này, tổ chức, cá nhân phải đề nghị cơ quan có thẩm quyền tương ứng xem xét, chấp thuận trước khi thực hiện.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.678811550140381,
+        "bm25_rank": 7,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-27_khoan-5",
+        "point_id": null
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "6",
+        "clause_label": "Khoản 6",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Đã hoàn thành nội dung thử nghiệm và đã khắc phục sự cố theo yêu cầu của cơ quan nhà nước có thẩm quyền;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 6\nĐiểm a)\nĐã hoàn thành nội dung thử nghiệm và đã khắc phục sự cố theo yêu cầu của cơ quan nhà nước có thẩm quyền;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.390063762664795,
+        "bm25_rank": 1,
+        "dense_rank": 2,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-27_khoan-6",
+        "point_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a"
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "134-2025-QH15_dieu-21_khoan-3",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-21",
+        "article": "21",
+        "article_label": "Điều 21",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan nhà nước có thẩm quyền chủ trì, phối hợp với cơ quan có liên quan tiếp nhận, thẩm định và xử lý hồ sơ theo quy trình thẩm định và phản hồi nhanh; giám sát quá trình thử nghiệm và quyết định tạm dừng hoặc chấm dứt thử nghiệm khi có rủi ro ảnh hưởng đến an toàn, an ninh hoặc quyền, lợi ích hợp pháp của tổ chức, cá nhân.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nỨNG DỤNG TRÍ TUỆ NHÂN TẠO, PHÁT TRIỂN HỆ SINH THÁI\nĐiều 21. Cơ chế thử nghiệm có kiểm soát đối với trí tuệ nhân tạo\nKhoản 3\nCơ quan nhà nước có thẩm quyền chủ trì, phối hợp với cơ quan có liên quan tiếp nhận, thẩm định và xử lý hồ sơ theo quy trình thẩm định và phản hồi nhanh; giám sát quá trình thử nghiệm và quyết định tạm dừng hoặc chấm dứt thử nghiệm khi có rủi ro ảnh hưởng đến an toàn, an ninh hoặc quyền, lợi ích hợp pháp của tổ chức, cá nhân.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 1.8773738145828247,
+        "bm25_rank": 13,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-21_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-a",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Công nhận toàn bộ hoặc một phần kết quả thử nghiệm phục vụ đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 2\nĐiểm a)\nCông nhận toàn bộ hoặc một phần kết quả thử nghiệm phục vụ đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 1.7657270431518555,
+        "bm25_rank": 4,
+        "dense_rank": 15,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-27_khoan-2",
+        "point_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-a"
+      }
+    ],
+    "current_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Trong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo tổng kết theo quy định tại Nghị định này, cơ quan đã ban hành giấy xác nhận tham gia cơ chế thử nghiệm có kiểm soát tổ chức đánh giá kết quả thử nghiệm và cấp Giấy xác nhận hoàn thành thử nghiệm có kiểm soát theo Mẫu AI04 tại Phụ lục ban hành kèm theo Nghị định này. Trường hợp từ chối cấp Giấy xác nhận, cơ quan có thẩm quyền phải trả lời bằng văn bản và nêu rõ lý do. Trường hợp có nhu cầu gia hạn thời gian thử nghiệm, chậm nhất 15 ngày làm việc trước khi kết thúc thời hạn, tổ chức, cá nhân nộp Đơn đề nghị gia hạn theo mẫu tại Phụ lục AI03c hoặc AI03d và Báo cáo tổng kết quá trình thử nghiệm theo mẫu tại Phụ lục AI08a hoặc AI08b. Trong thời hạn 10 ngày làm việc, cơ quan có thẩm quyền thẩm định, quyết định gia hạn và cấp gia hạn Giấy xác nhận tham gia thử nghiệm; trường hợp không chấp thuận hoặc không gia hạn Giấy xác nhận tham gia thử nghiệm phải có văn bản trả lời và nêu rõ lý do.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 1\nTrong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo tổng kết theo quy định tại Nghị định này, cơ quan đã ban hành giấy xác nhận tham gia cơ chế thử nghiệm có kiểm soát tổ chức đánh giá kết quả thử nghiệm và cấp Giấy xác nhận hoàn thành thử nghiệm có kiểm soát theo Mẫu AI04 tại Phụ lục ban hành kèm theo Nghị định này. Trường hợp từ chối cấp Giấy xác nhận, cơ quan có thẩm quyền phải trả lời bằng văn bản và nêu rõ lý do. Trường hợp có nhu cầu gia hạn thời gian thử nghiệm, chậm nhất 15 ngày làm việc trước khi kết thúc thời hạn, tổ chức, cá nhân nộp Đơn đề nghị gia hạn theo mẫu tại Phụ lục AI03c hoặc AI03d và Báo cáo tổng kết quá trình thử nghiệm theo mẫu tại Phụ lục AI08a hoặc AI08b. Trong thời hạn 10 ngày làm việc, cơ quan có thẩm quyền thẩm định, quyết định gia hạn và cấp gia hạn Giấy xác nhận tham gia thử nghiệm; trường hợp không chấp thuận hoặc không gia hạn Giấy xác nhận tham gia thử nghiệm phải có văn bản trả lời và nêu rõ lý do.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.4103052616119385,
+        "bm25_rank": 2,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-27_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-27_khoan-5",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": null,
+        "point_label": null,
+        "text": "Trường hợp việc điều chỉnh làm vượt quá phạm vi, điều kiện, giới hạn đã được xác định thì được coi là mở rộng phạm vi vận hành và việc xem xét, chấp thuận được thực hiện theo quy định tại Điều 23 của Nghị định này. Trường hợp việc mở rộng làm thay đổi phạm vi địa bàn, lĩnh vực quản lý hoặc cấp độ thử nghiệm dẫn đến thay đổi thẩm quyền theo quy định tại Điều 23 của Nghị định này, tổ chức, cá nhân phải đề nghị cơ quan có thẩm quyền tương ứng xem xét, chấp thuận trước khi thực hiện.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 5\nTrường hợp việc điều chỉnh làm vượt quá phạm vi, điều kiện, giới hạn đã được xác định thì được coi là mở rộng phạm vi vận hành và việc xem xét, chấp thuận được thực hiện theo quy định tại Điều 23 của Nghị định này. Trường hợp việc mở rộng làm thay đổi phạm vi địa bàn, lĩnh vực quản lý hoặc cấp độ thử nghiệm dẫn đến thay đổi thẩm quyền theo quy định tại Điều 23 của Nghị định này, tổ chức, cá nhân phải đề nghị cơ quan có thẩm quyền tương ứng xem xét, chấp thuận trước khi thực hiện.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.678811550140381,
+        "bm25_rank": 7,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-27_khoan-5",
+        "point_id": null
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "6",
+        "clause_label": "Khoản 6",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Đã hoàn thành nội dung thử nghiệm và đã khắc phục sự cố theo yêu cầu của cơ quan nhà nước có thẩm quyền;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 6\nĐiểm a)\nĐã hoàn thành nội dung thử nghiệm và đã khắc phục sự cố theo yêu cầu của cơ quan nhà nước có thẩm quyền;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.390063762664795,
+        "bm25_rank": 1,
+        "dense_rank": 2,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-27_khoan-6",
+        "point_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a"
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "134-2025-QH15_dieu-21_khoan-3",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-21",
+        "article": "21",
+        "article_label": "Điều 21",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan nhà nước có thẩm quyền chủ trì, phối hợp với cơ quan có liên quan tiếp nhận, thẩm định và xử lý hồ sơ theo quy trình thẩm định và phản hồi nhanh; giám sát quá trình thử nghiệm và quyết định tạm dừng hoặc chấm dứt thử nghiệm khi có rủi ro ảnh hưởng đến an toàn, an ninh hoặc quyền, lợi ích hợp pháp của tổ chức, cá nhân.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nỨNG DỤNG TRÍ TUỆ NHÂN TẠO, PHÁT TRIỂN HỆ SINH THÁI\nĐiều 21. Cơ chế thử nghiệm có kiểm soát đối với trí tuệ nhân tạo\nKhoản 3\nCơ quan nhà nước có thẩm quyền chủ trì, phối hợp với cơ quan có liên quan tiếp nhận, thẩm định và xử lý hồ sơ theo quy trình thẩm định và phản hồi nhanh; giám sát quá trình thử nghiệm và quyết định tạm dừng hoặc chấm dứt thử nghiệm khi có rủi ro ảnh hưởng đến an toàn, an ninh hoặc quyền, lợi ích hợp pháp của tổ chức, cá nhân.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 1.8773738145828247,
+        "bm25_rank": 13,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-21_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-a",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Công nhận toàn bộ hoặc một phần kết quả thử nghiệm phục vụ đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm\nKhoản 2\nĐiểm a)\nCông nhận toàn bộ hoặc một phần kết quả thử nghiệm phục vụ đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 1.7657270431518555,
+        "bm25_rank": 4,
+        "dense_rank": 15,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-27_khoan-2",
+        "point_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-a"
+      }
+    ],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": true,
+      "missing_aspects": [],
+      "reason": "Bằng chứng đã cung cấp đầy đủ thông tin về việc cơ quan có thẩm quyền xử lý kết quả sau khi kết thúc thử nghiệm, bao gồm việc tổ chức đánh giá, cấp Giấy xác nhận hoàn thành thử nghiệm hoặc trả lời bằng văn bản khi từ chối, và công nhận toàn bộ hoặc một phần kết quả thử nghiệm."
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": "Trong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo tổng kết, cơ quan đã ban hành giấy xác nhận tham gia cơ chế thử nghiệm có kiểm soát tổ chức đánh giá kết quả thử nghiệm và cấp Giấy xác nhận hoàn thành thử nghiệm có kiểm soát, hoặc trả lời bằng văn bản và nêu rõ lý do nếu từ chối cấp [E1]. Đồng thời, kết quả thử nghiệm có thể được công nhận toàn bộ hoặc một phần để phục vụ đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo [E5].",
+    "completeness_check": {
+      "complete": true,
+      "missing_points": [],
+      "reason": "Câu trả lời đã bao quát đầy đủ các nội dung xử lý kết quả thử nghiệm theo các tài liệu được cung cấp."
+    },
+    "citation_check": {
+      "valid": true,
+      "cited_evidence_ids": [
+        "E1",
+        "E5"
+      ],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required_by_deterministic_gate",
+      "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+      "reviewed_claims": []
+    },
+    "revision_count": 0,
+    "citation_revision_count": 0,
+    "final_answer": "Trong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo tổng kết, cơ quan đã ban hành giấy xác nhận tham gia cơ chế thử nghiệm có kiểm soát tổ chức đánh giá kết quả thử nghiệm và cấp Giấy xác nhận hoàn thành thử nghiệm có kiểm soát, hoặc trả lời bằng văn bản và nêu rõ lý do nếu từ chối cấp [E1]. Đồng thời, kết quả thử nghiệm có thể được công nhận toàn bộ hoặc một phần để phục vụ đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo [E5].",
+    "final_status": "success",
+    "run_id": "agentic-v1-eval018",
+    "initial_top5": [
+      "142-2026-ND-CP_dieu-27_khoan-1",
+      "142-2026-ND-CP_dieu-27_khoan-5",
+      "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+      "134-2025-QH15_dieu-21_khoan-3",
+      "142-2026-ND-CP_dieu-27_khoan-2_diem-a"
+    ],
+    "expanded_candidates": [],
+    "final_top5": [
+      "142-2026-ND-CP_dieu-27_khoan-1",
+      "142-2026-ND-CP_dieu-27_khoan-5",
+      "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+      "134-2025-QH15_dieu-21_khoan-3",
+      "142-2026-ND-CP_dieu-27_khoan-2_diem-a"
+    ],
+    "retrieval_calls": [
+      {
+        "call_number": 1,
+        "round": 0,
+        "query": "Sau khi kết thúc thử nghiệm, cơ quan có thẩm quyền xử lý kết quả như thế nào?",
+        "sub_query": false,
+        "bm25_depth": 20,
+        "dense_depth": 20,
+        "candidate_chunk_ids": [
+          "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+          "142-2026-ND-CP_dieu-27_khoan-1",
+          "142-2026-ND-CP_dieu-27_khoan-8",
+          "142-2026-ND-CP_dieu-27_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-23_khoan-5_diem-c",
+          "142-2026-ND-CP_dieu-27_khoan-9",
+          "142-2026-ND-CP_dieu-27_khoan-5",
+          "142-2026-ND-CP_dieu-27_khoan-7",
+          "142-2026-ND-CP_dieu-10_khoan-2",
+          "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+          "142-2026-ND-CP_dieu-27_khoan-2_diem-b",
+          "142-2026-ND-CP_dieu-25_khoan-4",
+          "134-2025-QH15_dieu-21_khoan-3",
+          "142-2026-ND-CP_dieu-22_khoan-6",
+          "142-2026-ND-CP_dieu-21_khoan-9",
+          "142-2026-ND-CP_dieu-27_khoan-3",
+          "134-2025-QH15_dieu-10_khoan-6",
+          "142-2026-ND-CP_dieu-20_khoan-6",
+          "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+          "142-2026-ND-CP_dieu-25_khoan-1_diem-c",
+          "142-2026-ND-CP_dieu-13_khoan-5",
+          "142-2026-ND-CP_dieu-23_khoan-4",
+          "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+          "142-2026-ND-CP_dieu-23_khoan-3_diem-b",
+          "142-2026-ND-CP_dieu-27_khoan-4",
+          "142-2026-ND-CP_dieu-23_khoan-1"
+        ],
+        "candidate_count": 26,
+        "reranker_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+            "rank": 1,
+            "reranker_score": 3.4103052616119385
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-5",
+            "rank": 2,
+            "reranker_score": 2.678811550140381
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+            "rank": 3,
+            "reranker_score": 2.390063762664795
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-21_khoan-3",
+            "rank": 4,
+            "reranker_score": 1.8773738145828247
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-a",
+            "rank": 5,
+            "reranker_score": 1.7657270431518555
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-9",
+            "rank": 6,
+            "reranker_score": 1.6710398197174072
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-8",
+            "rank": 7,
+            "reranker_score": 1.4873325824737549
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-21_khoan-9",
+            "rank": 8,
+            "reranker_score": 1.4830892086029053
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-b",
+            "rank": 9,
+            "reranker_score": 1.170316219329834
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-25_khoan-1_diem-c",
+            "rank": 10,
+            "reranker_score": 0.9886832237243652
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-5_diem-c",
+            "rank": 11,
+            "reranker_score": 0.6855616569519043
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+            "rank": 12,
+            "reranker_score": 0.5942736268043518
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-4",
+            "rank": 13,
+            "reranker_score": 0.46240755915641785
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-6",
+            "rank": 14,
+            "reranker_score": 0.38444215059280396
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-7",
+            "rank": 15,
+            "reranker_score": 0.3486664295196533
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-3",
+            "rank": 16,
+            "reranker_score": 0.3355933427810669
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-b",
+            "rank": 17,
+            "reranker_score": 0.13314107060432434
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-25_khoan-4",
+            "rank": 18,
+            "reranker_score": -0.07866594195365906
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-22_khoan-6",
+            "rank": 19,
+            "reranker_score": -0.18471743166446686
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+            "rank": 20,
+            "reranker_score": -0.221003919839859
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-4",
+            "rank": 21,
+            "reranker_score": -0.23645925521850586
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-1",
+            "rank": 22,
+            "reranker_score": -0.3126472532749176
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-5",
+            "rank": 23,
+            "reranker_score": -1.235412359237671
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+            "rank": 24,
+            "reranker_score": -1.3656171560287476
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+            "rank": 25,
+            "reranker_score": -2.6475603580474854
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+            "rank": 26,
+            "reranker_score": -3.2977147102355957
+          }
+        ],
+        "top5_chunk_ids": [
+          "142-2026-ND-CP_dieu-27_khoan-1",
+          "142-2026-ND-CP_dieu-27_khoan-5",
+          "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+          "134-2025-QH15_dieu-21_khoan-3",
+          "142-2026-ND-CP_dieu-27_khoan-2_diem-a"
+        ],
+        "candidate_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+            "bm25_rank": 1,
+            "dense_rank": 2
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+            "bm25_rank": 2,
+            "dense_rank": 1
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-8",
+            "bm25_rank": 3,
+            "dense_rank": 8
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-a",
+            "bm25_rank": 4,
+            "dense_rank": 15
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-5_diem-c",
+            "bm25_rank": 5,
+            "dense_rank": 13
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-9",
+            "bm25_rank": 6,
+            "dense_rank": 3
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-5",
+            "bm25_rank": 7,
+            "dense_rank": 5
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-7",
+            "bm25_rank": 8,
+            "dense_rank": 16
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+            "bm25_rank": 9,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-b",
+            "bm25_rank": 10,
+            "dense_rank": 19
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-2_diem-b",
+            "bm25_rank": 11,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-25_khoan-4",
+            "bm25_rank": 12,
+            "dense_rank": 4
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-21_khoan-3",
+            "bm25_rank": 13,
+            "dense_rank": 7
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-22_khoan-6",
+            "bm25_rank": 14,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-21_khoan-9",
+            "bm25_rank": 15,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-3",
+            "bm25_rank": 16,
+            "dense_rank": 6
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-6",
+            "bm25_rank": 17,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+            "bm25_rank": 18,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+            "bm25_rank": 19,
+            "dense_rank": 17
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-25_khoan-1_diem-c",
+            "bm25_rank": 20,
+            "dense_rank": 9
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-5",
+            "bm25_rank": null,
+            "dense_rank": 10
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-4",
+            "bm25_rank": null,
+            "dense_rank": 11
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+            "bm25_rank": null,
+            "dense_rank": 12
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 14
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-4",
+            "bm25_rank": null,
+            "dense_rank": 18
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 20
+          }
+        ]
+      }
+    ],
+    "llm_calls": [
+      {
+        "call_number": 1,
+        "stage": "coverage_check"
+      },
+      {
+        "call_number": 2,
+        "stage": "answer_generation"
+      },
+      {
+        "call_number": 3,
+        "stage": "completeness_check"
+      }
+    ],
+    "expansion_used": false,
+    "revision_used": false,
+    "citation_revision_used": false,
+    "execution_error": null,
+    "transitions": [
+      "initialized",
+      "initial_retrieval",
+      "coverage_check",
+      "answer_generation",
+      "completeness_check",
+      "citation_check",
+      "final:success"
+    ]
+  },
+  "timestamp": "2026-09-05T14:17:04.899579+00:00"
+}

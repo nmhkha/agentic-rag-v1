@@ -1,0 +1,71 @@
+{
+  "phase": "5C.4-D",
+  "role": "MODEL_BASED_ADJUDICATOR_C",
+  "reviewer_type": "MODEL_BASED_ADJUDICATOR",
+  "independent_human_legal_validation": false,
+  "benchmark_type": "RESOURCE_CONSTRAINED_MODEL_ADJUDICATED",
+  "D6": "EMPIRICAL_UNVERIFIED",
+  "dataset_frozen": false,
+  "holdout_storage_isolation": "HOLDOUT_STORAGE_ISOLATION_NOT_YET_ENFORCED",
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "created_at_utc": "2026-09-13T06:35:04.666304+00:00",
+  "status": "NOT_ADJUDICATED",
+  "counts_denominator": 0,
+  "dimensions": {
+    "D1": {
+      "retained": 0,
+      "DEV": 0,
+      "HOLDOUT_TEST": 0,
+      "membership_adjudicated": false
+    },
+    "D2": {
+      "retained": 0,
+      "DEV": 0,
+      "HOLDOUT_TEST": 0,
+      "membership_adjudicated": false
+    },
+    "D3": {
+      "retained": 0,
+      "DEV": 0,
+      "HOLDOUT_TEST": 0,
+      "membership_adjudicated": false
+    },
+    "D4": {
+      "retained": 0,
+      "DEV": 0,
+      "HOLDOUT_TEST": 0,
+      "membership_adjudicated": false
+    },
+    "D5": {
+      "retained": 0,
+      "DEV": 0,
+      "HOLDOUT_TEST": 0,
+      "membership_adjudicated": false
+    },
+    "D7": {
+      "retained": 0,
+      "DEV": 0,
+      "HOLDOUT_TEST": 0,
+      "membership_adjudicated": false
+    },
+    "D8": {
+      "retained": 0,
+      "DEV": 0,
+      "HOLDOUT_TEST": 0,
+      "membership_adjudicated": false
+    },
+    "D9": {
+      "retained": 0,
+      "DEV": 0,
+      "HOLDOUT_TEST": 0,
+      "membership_adjudicated": false
+    },
+    "D10": {
+      "retained": 0,
+      "DEV": 0,
+      "HOLDOUT_TEST": 0,
+      "membership_adjudicated": false
+    }
+  },
+  "note": "Zero counts reflect an empty selection, not adjudicated dimension absence."
+}

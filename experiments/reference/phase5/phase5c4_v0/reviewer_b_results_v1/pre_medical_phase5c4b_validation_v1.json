@@ -1,0 +1,106 @@
+{
+  "schema": "phase5c4b-validation-v1",
+  "status": "PASS",
+  "status_scope": "Clean independent substantive B pass; user-authorized deferred medical contamination reference remains pending.",
+  "independent_annotation_gates_pass": true,
+  "all_end_to_end_dataset_gates_complete": false,
+  "sanitized_packet_verified": "PASS",
+  "visible_candidate_fields": [
+    "review_id_b",
+    "query"
+  ],
+  "independence_audit": "PASS",
+  "annotation_structural_validation": "PASS",
+  "annotation_structural_check_count": 6012,
+  "support_anchor_correction_audit": "PASS_PRESERVED_PRIOR_BYTES",
+  "no_scope_proposition_answerability_or_dimension_value_changes_after_text_screen": true,
+  "contamination_screening": "PENDING_SANITIZED_REFERENCE",
+  "missing_reference_user_authorized_to_defer": true,
+  "corpus_only_annotation": true,
+  "D6": "EMPIRICAL_UNVERIFIED",
+  "no_exact_query_in_public_reports_or_result_console": true,
+  "session_tool_output_query_read_explicitly_authorized": true,
+  "preexisting_integrity": "PASS",
+  "additions_only_allowed_namespace": true,
+  "counts": {
+    "candidates": 60,
+    "scopes": 60,
+    "required_aspects": 60,
+    "support_bundles": 60,
+    "applicability": 60,
+    "answerability": 60,
+    "dimensions": 60,
+    "admission_recommendations": 60,
+    "new_candidate_contamination_screen": 60,
+    "historical_31_contamination_screen": 60,
+    "medical_chatbot_contamination_screen": 0,
+    "full_contamination_screen": 0,
+    "material_aspects": 155,
+    "answerability_counts": {
+      "fully_answerable": 44,
+      "insufficient_evidence": 7,
+      "partially_answerable": 9
+    },
+    "answer_role_counts": {
+      "substantive_supported": 139,
+      "unresolved_disclosure": 13,
+      "qualified_partial": 3
+    },
+    "admission_counts": {
+      "RETAIN": 58,
+      "NEEDS_ADJUDICATION": 1,
+      "RESERVE": 1
+    },
+    "dimension_counts": {
+      "D1": 14,
+      "D2": 28,
+      "D3": 27,
+      "D4": 18,
+      "D5": 27,
+      "D7": 32,
+      "D8": 54,
+      "D9": 46,
+      "D10": 16
+    },
+    "candidate_semantic_similarity_flag_pairs": 7
+  },
+  "independence": {
+    "annotation_A_read": false,
+    "A_substantive_metadata_seen": false,
+    "system_output_read": false,
+    "retrieval_inference": 0,
+    "reranking_inference": 0,
+    "network_api": 0,
+    "production_calls": 0,
+    "evaluator_calls": 0,
+    "comparison_with_A_performed": false,
+    "adjudication_performed": false,
+    "independent_context": true,
+    "independent_human_legal_review": false,
+    "old_reviewer_packet_semantically_read": false,
+    "old_contamination_reference_opened": false,
+    "annotation_A_or_system_content_emitted_by_hash_worker": false,
+    "audit_interpretation": "annotation_A_read/system_output_read denote substantive inspection by the reviewer. A local hash worker read opaque file bytes solely to compute integrity digests; no parsing or content output for prohibited files.",
+    "hash_worker_reads_are_separately_enumerated": true,
+    "basis": "Observed tool actions and explicit artifact reads; not an OS-wide process/network attestation."
+  },
+  "ready_for_trusted_comparison": true,
+  "ready_for_final_dataset_freeze": false,
+  "PASS_does_not_mean": [
+    "full contamination screening complete",
+    "A/B agreement",
+    "adjudication",
+    "human legal review",
+    "dataset freeze",
+    "storage isolation enforcement",
+    "v2 authorization"
+  ],
+  "public_safe_files_checked": [
+    "phase5c4b_review_summary_v1.md",
+    "phase5c4b_agreement_ready_summary_v1.json",
+    "phase5c4b_access_manifest_v1.json",
+    "phase5c4b_validation_v1.json",
+    "integrity_before_after_v1.json",
+    "phase5c4b_console_v1.txt"
+  ]
+}

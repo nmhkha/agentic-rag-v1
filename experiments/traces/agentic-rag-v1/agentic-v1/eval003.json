@@ -1,0 +1,1226 @@
+{
+  "run_id": "agentic-v1-eval003",
+  "query": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro vào thời điểm nào?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 28,
+  "initial_top5": [
+    "142-2026-ND-CP_dieu-12_khoan-1",
+    "142-2026-ND-CP_dieu-12_khoan-4",
+    "142-2026-ND-CP_dieu-12_khoan-6",
+    "134-2025-QH15_dieu-10_khoan-1",
+    "142-2026-ND-CP_dieu-10_khoan-2"
+  ],
+  "coverage_check": {
+    "sufficient": true,
+    "missing_aspects": [],
+    "reason": "Bằng chứng đã cung cấp đầy đủ thông tin về thời điểm nhà cung cấp phải lập hồ sơ phân loại rủi ro (trước khi đưa hệ thống trí tuệ nhân tạo có rủi ro cao và rủi ro trung bình vào sử dụng)."
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [
+    {
+      "rank": 1,
+      "evidence_id": "E1",
+      "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-12",
+      "article": "12",
+      "article_label": "Điều 12",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": null,
+      "point_label": null,
+      "text": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro đối với hệ thống trí tuệ nhân tạo có rủi ro cao và hệ thống trí tuệ nhân tạo có rủi ro trung bình trước khi đưa hệ thống vào sử dụng theo quy định tại khoản 1 Điều 10 của Luật Trí tuệ nhân tạo.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 12. Hồ sơ phân loại rủi ro của hệ thống trí tuệ nhân tạo\nKhoản 1\nNhà cung cấp phải lập hồ sơ phân loại rủi ro đối với hệ thống trí tuệ nhân tạo có rủi ro cao và hệ thống trí tuệ nhân tạo có rủi ro trung bình trước khi đưa hệ thống vào sử dụng theo quy định tại khoản 1 Điều 10 của Luật Trí tuệ nhân tạo.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 3.9158036708831787,
+      "bm25_rank": 1,
+      "dense_rank": 1,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 1,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-12_khoan-1",
+      "point_id": null
+    },
+    {
+      "rank": 2,
+      "evidence_id": "E2",
+      "chunk_id": "142-2026-ND-CP_dieu-12_khoan-4",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-12",
+      "article": "12",
+      "article_label": "Điều 12",
+      "clause": "4",
+      "clause_label": "Khoản 4",
+      "point": null,
+      "point_label": null,
+      "text": "Việc lập, cung cấp và quản lý hồ sơ phân loại rủi ro không bắt buộc nhà cung cấp phải tiết lộ mã nguồn, bộ tham số mô hình, thuật toán chi tiết, dữ liệu huấn luyện thô hoặc các thông tin thuộc danh mục bí mật nhà nước, bí mật kinh doanh, bí mật công nghệ theo quy định tại điểm e khoản 1 Điều 14 của Luật Trí tuệ nhân tạo, trừ trường hợp pháp luật có quy định khác.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 12. Hồ sơ phân loại rủi ro của hệ thống trí tuệ nhân tạo\nKhoản 4\nViệc lập, cung cấp và quản lý hồ sơ phân loại rủi ro không bắt buộc nhà cung cấp phải tiết lộ mã nguồn, bộ tham số mô hình, thuật toán chi tiết, dữ liệu huấn luyện thô hoặc các thông tin thuộc danh mục bí mật nhà nước, bí mật kinh doanh, bí mật công nghệ theo quy định tại điểm e khoản 1 Điều 14 của Luật Trí tuệ nhân tạo, trừ trường hợp pháp luật có quy định khác.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 2.565073013305664,
+      "bm25_rank": 4,
+      "dense_rank": 12,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 2,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-12_khoan-4",
+      "point_id": null
+    },
+    {
+      "rank": 3,
+      "evidence_id": "E3",
+      "chunk_id": "142-2026-ND-CP_dieu-12_khoan-6",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-12",
+      "article": "12",
+      "article_label": "Điều 12",
+      "clause": "6",
+      "clause_label": "Khoản 6",
+      "point": null,
+      "point_label": null,
+      "text": "Nhà cung cấp, bên triển khai có trách nhiệm lưu trữ hồ sơ phân loại trong suốt thời gian hệ thống hoạt động.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 12. Hồ sơ phân loại rủi ro của hệ thống trí tuệ nhân tạo\nKhoản 6\nNhà cung cấp, bên triển khai có trách nhiệm lưu trữ hồ sơ phân loại trong suốt thời gian hệ thống hoạt động.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 2.069364547729492,
+      "bm25_rank": 5,
+      "dense_rank": 6,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 3,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-12_khoan-6",
+      "point_id": null
+    },
+    {
+      "rank": 4,
+      "evidence_id": "E4",
+      "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-10",
+      "article": "10",
+      "article_label": "Điều 10",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": null,
+      "point_label": null,
+      "text": "Nhà cung cấp tự phân loại hệ thống trí tuệ nhân tạo trước khi đưa vào sử dụng. Hệ thống được phân loại là rủi ro trung bình hoặc rủi ro cao phải có hồ sơ phân loại kèm theo.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 10. Phân loại và thông báo hệ thống trí tuệ nhân tạo\nKhoản 1\nNhà cung cấp tự phân loại hệ thống trí tuệ nhân tạo trước khi đưa vào sử dụng. Hệ thống được phân loại là rủi ro trung bình hoặc rủi ro cao phải có hồ sơ phân loại kèm theo.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 1.2935492992401123,
+      "bm25_rank": 3,
+      "dense_rank": 5,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 4,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-10_khoan-1",
+      "point_id": null
+    },
+    {
+      "rank": 5,
+      "evidence_id": "E5",
+      "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-10",
+      "article": "10",
+      "article_label": "Điều 10",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": null,
+      "point_label": null,
+      "text": "Nhà cung cấp không bắt buộc phải sử dụng Công cụ hỗ trợ phân loại rủi ro tự động quy định tại khoản 1 Điều này. Cơ quan nhà nước có thẩm quyền không được yêu cầu nhà cung cấp phải nộp kết quả phân loại xuất từ Công cụ này như một thành phần hồ sơ bắt buộc trong bất kỳ thủ tục hành chính nào.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 10. Công cụ hỗ trợ phân loại rủi ro tự động\nKhoản 2\nNhà cung cấp không bắt buộc phải sử dụng Công cụ hỗ trợ phân loại rủi ro tự động quy định tại khoản 1 Điều này. Cơ quan nhà nước có thẩm quyền không được yêu cầu nhà cung cấp phải nộp kết quả phân loại xuất từ Công cụ này như một thành phần hồ sơ bắt buộc trong bất kỳ thủ tục hành chính nào.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 1.2641549110412598,
+      "bm25_rank": 2,
+      "dense_rank": 2,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 5,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-10_khoan-2",
+      "point_id": null
+    }
+  ],
+  "final_top5": [
+    "142-2026-ND-CP_dieu-12_khoan-1",
+    "142-2026-ND-CP_dieu-12_khoan-4",
+    "142-2026-ND-CP_dieu-12_khoan-6",
+    "134-2025-QH15_dieu-10_khoan-1",
+    "142-2026-ND-CP_dieu-10_khoan-2"
+  ],
+  "draft_answer": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro đối với hệ thống trí tuệ nhân tạo có rủi ro cao và hệ thống trí tuệ nhân tạo có rủi ro trung bình trước khi đưa hệ thống vào sử dụng [E1].",
+  "completeness_check": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "Câu trả lời đã nêu đầy đủ thời điểm nhà cung cấp phải lập hồ sơ phân loại rủi ro (trước khi đưa hệ thống vào sử dụng) theo đúng nội dung tại E1."
+  },
+  "revision_used": false,
+  "citation_check": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E1"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required_by_deterministic_gate",
+    "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro đối với hệ thống trí tuệ nhân tạo có rủi ro cao và hệ thống trí tuệ nhân tạo có rủi ro trung bình trước khi đưa hệ thống vào sử dụng [E1].",
+  "final_status": "success",
+  "retrieval_calls": [
+    {
+      "call_number": 1,
+      "round": 0,
+      "query": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro vào thời điểm nào?",
+      "sub_query": false,
+      "bm25_depth": 20,
+      "dense_depth": 20,
+      "candidate_chunk_ids": [
+        "142-2026-ND-CP_dieu-12_khoan-1",
+        "142-2026-ND-CP_dieu-10_khoan-2",
+        "134-2025-QH15_dieu-10_khoan-1",
+        "142-2026-ND-CP_dieu-12_khoan-4",
+        "142-2026-ND-CP_dieu-12_khoan-6",
+        "142-2026-ND-CP_dieu-11_khoan-5",
+        "134-2025-QH15_dieu-14_khoan-1_diem-c",
+        "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-12_khoan-7",
+        "142-2026-ND-CP_dieu-12_khoan-5",
+        "142-2026-ND-CP_dieu-3_khoan-2",
+        "142-2026-ND-CP_dieu-12_khoan-3",
+        "134-2025-QH15_dieu-10_khoan-4",
+        "142-2026-ND-CP_dieu-10_khoan-3",
+        "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+        "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+        "142-2026-ND-CP_dieu-12_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-10_khoan-4",
+        "142-2026-ND-CP_dieu-14_khoan-1",
+        "134-2025-QH15_dieu-14_khoan-6",
+        "134-2025-QH15_dieu-10_khoan-3",
+        "142-2026-ND-CP_dieu-11_khoan-3_diem-b",
+        "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+        "142-2026-ND-CP_dieu-11_khoan-4",
+        "134-2025-QH15_dieu-15_khoan-1_diem-b",
+        "134-2025-QH15_dieu-15_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-11_khoan-2",
+        "134-2025-QH15_dieu-10_khoan-2"
+      ],
+      "candidate_count": 28,
+      "reranker_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+          "rank": 1,
+          "reranker_score": 3.9158036708831787
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-4",
+          "rank": 2,
+          "reranker_score": 2.565073013305664
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-6",
+          "rank": 3,
+          "reranker_score": 2.069364547729492
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+          "rank": 4,
+          "reranker_score": 1.2935492992401123
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+          "rank": 5,
+          "reranker_score": 1.2641549110412598
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+          "rank": 6,
+          "reranker_score": 0.9524533748626709
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-3",
+          "rank": 7,
+          "reranker_score": 0.8594444394111633
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-7",
+          "rank": 8,
+          "reranker_score": 0.8270642161369324
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+          "rank": 9,
+          "reranker_score": 0.7909376621246338
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "rank": 10,
+          "reranker_score": 0.5939415097236633
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-5",
+          "rank": 11,
+          "reranker_score": 0.38780996203422546
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-3",
+          "rank": 12,
+          "reranker_score": 0.19037318229675293
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-4",
+          "rank": 13,
+          "reranker_score": 0.1223689615726471
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+          "rank": 14,
+          "reranker_score": 0.08057521283626556
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-4",
+          "rank": 15,
+          "reranker_score": -0.06549858301877975
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-2",
+          "rank": 16,
+          "reranker_score": -0.5363738536834717
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-4",
+          "rank": 17,
+          "reranker_score": -0.5557889342308044
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-a",
+          "rank": 18,
+          "reranker_score": -0.8266760110855103
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-3",
+          "rank": 19,
+          "reranker_score": -0.9123072624206543
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-3_khoan-2",
+          "rank": 20,
+          "reranker_score": -1.1055824756622314
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-b",
+          "rank": 21,
+          "reranker_score": -1.2080023288726807
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-2",
+          "rank": 22,
+          "reranker_score": -2.092230796813965
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+          "rank": 23,
+          "reranker_score": -2.120593786239624
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+          "rank": 24,
+          "reranker_score": -2.938326358795166
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+          "rank": 25,
+          "reranker_score": -3.014199733734131
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+          "rank": 26,
+          "reranker_score": -3.5238616466522217
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+          "rank": 27,
+          "reranker_score": -5.341098785400391
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+          "rank": 28,
+          "reranker_score": -5.852715492248535
+        }
+      ],
+      "top5_chunk_ids": [
+        "142-2026-ND-CP_dieu-12_khoan-1",
+        "142-2026-ND-CP_dieu-12_khoan-4",
+        "142-2026-ND-CP_dieu-12_khoan-6",
+        "134-2025-QH15_dieu-10_khoan-1",
+        "142-2026-ND-CP_dieu-10_khoan-2"
+      ],
+      "candidate_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+          "bm25_rank": 1,
+          "dense_rank": 1
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+          "bm25_rank": 2,
+          "dense_rank": 2
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+          "bm25_rank": 3,
+          "dense_rank": 5
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-4",
+          "bm25_rank": 4,
+          "dense_rank": 12
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-6",
+          "bm25_rank": 5,
+          "dense_rank": 6
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+          "bm25_rank": 6,
+          "dense_rank": 8
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+          "bm25_rank": 7,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "bm25_rank": 8,
+          "dense_rank": 15
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-7",
+          "bm25_rank": 9,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-5",
+          "bm25_rank": 10,
+          "dense_rank": 13
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-3_khoan-2",
+          "bm25_rank": 11,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-3",
+          "bm25_rank": 12,
+          "dense_rank": 17
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-4",
+          "bm25_rank": 13,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-3",
+          "bm25_rank": 14,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+          "bm25_rank": 15,
+          "dense_rank": 3
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+          "bm25_rank": 16,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-a",
+          "bm25_rank": 17,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-4",
+          "bm25_rank": 18,
+          "dense_rank": 11
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+          "bm25_rank": 19,
+          "dense_rank": 4
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+          "bm25_rank": 20,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 7
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 9
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+          "bm25_rank": null,
+          "dense_rank": 10
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-4",
+          "bm25_rank": null,
+          "dense_rank": 14
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 16
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 18
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-2",
+          "bm25_rank": null,
+          "dense_rank": 19
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-2",
+          "bm25_rank": null,
+          "dense_rank": 20
+        }
+      ]
+    }
+  ],
+  "retrieval_call_count": 1,
+  "llm_calls": [
+    {
+      "call_number": 1,
+      "stage": "coverage_check"
+    },
+    {
+      "call_number": 2,
+      "stage": "answer_generation"
+    },
+    {
+      "call_number": 3,
+      "stage": "completeness_check"
+    }
+  ],
+  "llm_call_count": 3,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro vào thời điểm nào?",
+    "initial_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-12",
+        "article": "12",
+        "article_label": "Điều 12",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro đối với hệ thống trí tuệ nhân tạo có rủi ro cao và hệ thống trí tuệ nhân tạo có rủi ro trung bình trước khi đưa hệ thống vào sử dụng theo quy định tại khoản 1 Điều 10 của Luật Trí tuệ nhân tạo.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 12. Hồ sơ phân loại rủi ro của hệ thống trí tuệ nhân tạo\nKhoản 1\nNhà cung cấp phải lập hồ sơ phân loại rủi ro đối với hệ thống trí tuệ nhân tạo có rủi ro cao và hệ thống trí tuệ nhân tạo có rủi ro trung bình trước khi đưa hệ thống vào sử dụng theo quy định tại khoản 1 Điều 10 của Luật Trí tuệ nhân tạo.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.9158036708831787,
+        "bm25_rank": 1,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-12_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-12_khoan-4",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-12",
+        "article": "12",
+        "article_label": "Điều 12",
+        "clause": "4",
+        "clause_label": "Khoản 4",
+        "point": null,
+        "point_label": null,
+        "text": "Việc lập, cung cấp và quản lý hồ sơ phân loại rủi ro không bắt buộc nhà cung cấp phải tiết lộ mã nguồn, bộ tham số mô hình, thuật toán chi tiết, dữ liệu huấn luyện thô hoặc các thông tin thuộc danh mục bí mật nhà nước, bí mật kinh doanh, bí mật công nghệ theo quy định tại điểm e khoản 1 Điều 14 của Luật Trí tuệ nhân tạo, trừ trường hợp pháp luật có quy định khác.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 12. Hồ sơ phân loại rủi ro của hệ thống trí tuệ nhân tạo\nKhoản 4\nViệc lập, cung cấp và quản lý hồ sơ phân loại rủi ro không bắt buộc nhà cung cấp phải tiết lộ mã nguồn, bộ tham số mô hình, thuật toán chi tiết, dữ liệu huấn luyện thô hoặc các thông tin thuộc danh mục bí mật nhà nước, bí mật kinh doanh, bí mật công nghệ theo quy định tại điểm e khoản 1 Điều 14 của Luật Trí tuệ nhân tạo, trừ trường hợp pháp luật có quy định khác.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.565073013305664,
+        "bm25_rank": 4,
+        "dense_rank": 12,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-12_khoan-4",
+        "point_id": null
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-12_khoan-6",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-12",
+        "article": "12",
+        "article_label": "Điều 12",
+        "clause": "6",
+        "clause_label": "Khoản 6",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp, bên triển khai có trách nhiệm lưu trữ hồ sơ phân loại trong suốt thời gian hệ thống hoạt động.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 12. Hồ sơ phân loại rủi ro của hệ thống trí tuệ nhân tạo\nKhoản 6\nNhà cung cấp, bên triển khai có trách nhiệm lưu trữ hồ sơ phân loại trong suốt thời gian hệ thống hoạt động.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.069364547729492,
+        "bm25_rank": 5,
+        "dense_rank": 6,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-12_khoan-6",
+        "point_id": null
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-10",
+        "article": "10",
+        "article_label": "Điều 10",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp tự phân loại hệ thống trí tuệ nhân tạo trước khi đưa vào sử dụng. Hệ thống được phân loại là rủi ro trung bình hoặc rủi ro cao phải có hồ sơ phân loại kèm theo.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 10. Phân loại và thông báo hệ thống trí tuệ nhân tạo\nKhoản 1\nNhà cung cấp tự phân loại hệ thống trí tuệ nhân tạo trước khi đưa vào sử dụng. Hệ thống được phân loại là rủi ro trung bình hoặc rủi ro cao phải có hồ sơ phân loại kèm theo.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 1.2935492992401123,
+        "bm25_rank": 3,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-10_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-10",
+        "article": "10",
+        "article_label": "Điều 10",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp không bắt buộc phải sử dụng Công cụ hỗ trợ phân loại rủi ro tự động quy định tại khoản 1 Điều này. Cơ quan nhà nước có thẩm quyền không được yêu cầu nhà cung cấp phải nộp kết quả phân loại xuất từ Công cụ này như một thành phần hồ sơ bắt buộc trong bất kỳ thủ tục hành chính nào.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 10. Công cụ hỗ trợ phân loại rủi ro tự động\nKhoản 2\nNhà cung cấp không bắt buộc phải sử dụng Công cụ hỗ trợ phân loại rủi ro tự động quy định tại khoản 1 Điều này. Cơ quan nhà nước có thẩm quyền không được yêu cầu nhà cung cấp phải nộp kết quả phân loại xuất từ Công cụ này như một thành phần hồ sơ bắt buộc trong bất kỳ thủ tục hành chính nào.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 1.2641549110412598,
+        "bm25_rank": 2,
+        "dense_rank": 2,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-10_khoan-2",
+        "point_id": null
+      }
+    ],
+    "current_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-12",
+        "article": "12",
+        "article_label": "Điều 12",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro đối với hệ thống trí tuệ nhân tạo có rủi ro cao và hệ thống trí tuệ nhân tạo có rủi ro trung bình trước khi đưa hệ thống vào sử dụng theo quy định tại khoản 1 Điều 10 của Luật Trí tuệ nhân tạo.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 12. Hồ sơ phân loại rủi ro của hệ thống trí tuệ nhân tạo\nKhoản 1\nNhà cung cấp phải lập hồ sơ phân loại rủi ro đối với hệ thống trí tuệ nhân tạo có rủi ro cao và hệ thống trí tuệ nhân tạo có rủi ro trung bình trước khi đưa hệ thống vào sử dụng theo quy định tại khoản 1 Điều 10 của Luật Trí tuệ nhân tạo.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.9158036708831787,
+        "bm25_rank": 1,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-12_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-12_khoan-4",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-12",
+        "article": "12",
+        "article_label": "Điều 12",
+        "clause": "4",
+        "clause_label": "Khoản 4",
+        "point": null,
+        "point_label": null,
+        "text": "Việc lập, cung cấp và quản lý hồ sơ phân loại rủi ro không bắt buộc nhà cung cấp phải tiết lộ mã nguồn, bộ tham số mô hình, thuật toán chi tiết, dữ liệu huấn luyện thô hoặc các thông tin thuộc danh mục bí mật nhà nước, bí mật kinh doanh, bí mật công nghệ theo quy định tại điểm e khoản 1 Điều 14 của Luật Trí tuệ nhân tạo, trừ trường hợp pháp luật có quy định khác.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 12. Hồ sơ phân loại rủi ro của hệ thống trí tuệ nhân tạo\nKhoản 4\nViệc lập, cung cấp và quản lý hồ sơ phân loại rủi ro không bắt buộc nhà cung cấp phải tiết lộ mã nguồn, bộ tham số mô hình, thuật toán chi tiết, dữ liệu huấn luyện thô hoặc các thông tin thuộc danh mục bí mật nhà nước, bí mật kinh doanh, bí mật công nghệ theo quy định tại điểm e khoản 1 Điều 14 của Luật Trí tuệ nhân tạo, trừ trường hợp pháp luật có quy định khác.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.565073013305664,
+        "bm25_rank": 4,
+        "dense_rank": 12,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-12_khoan-4",
+        "point_id": null
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-12_khoan-6",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-12",
+        "article": "12",
+        "article_label": "Điều 12",
+        "clause": "6",
+        "clause_label": "Khoản 6",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp, bên triển khai có trách nhiệm lưu trữ hồ sơ phân loại trong suốt thời gian hệ thống hoạt động.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 12. Hồ sơ phân loại rủi ro của hệ thống trí tuệ nhân tạo\nKhoản 6\nNhà cung cấp, bên triển khai có trách nhiệm lưu trữ hồ sơ phân loại trong suốt thời gian hệ thống hoạt động.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.069364547729492,
+        "bm25_rank": 5,
+        "dense_rank": 6,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-12_khoan-6",
+        "point_id": null
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-10",
+        "article": "10",
+        "article_label": "Điều 10",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp tự phân loại hệ thống trí tuệ nhân tạo trước khi đưa vào sử dụng. Hệ thống được phân loại là rủi ro trung bình hoặc rủi ro cao phải có hồ sơ phân loại kèm theo.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 10. Phân loại và thông báo hệ thống trí tuệ nhân tạo\nKhoản 1\nNhà cung cấp tự phân loại hệ thống trí tuệ nhân tạo trước khi đưa vào sử dụng. Hệ thống được phân loại là rủi ro trung bình hoặc rủi ro cao phải có hồ sơ phân loại kèm theo.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 1.2935492992401123,
+        "bm25_rank": 3,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-10_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-10",
+        "article": "10",
+        "article_label": "Điều 10",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp không bắt buộc phải sử dụng Công cụ hỗ trợ phân loại rủi ro tự động quy định tại khoản 1 Điều này. Cơ quan nhà nước có thẩm quyền không được yêu cầu nhà cung cấp phải nộp kết quả phân loại xuất từ Công cụ này như một thành phần hồ sơ bắt buộc trong bất kỳ thủ tục hành chính nào.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 10. Công cụ hỗ trợ phân loại rủi ro tự động\nKhoản 2\nNhà cung cấp không bắt buộc phải sử dụng Công cụ hỗ trợ phân loại rủi ro tự động quy định tại khoản 1 Điều này. Cơ quan nhà nước có thẩm quyền không được yêu cầu nhà cung cấp phải nộp kết quả phân loại xuất từ Công cụ này như một thành phần hồ sơ bắt buộc trong bất kỳ thủ tục hành chính nào.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 1.2641549110412598,
+        "bm25_rank": 2,
+        "dense_rank": 2,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-10_khoan-2",
+        "point_id": null
+      }
+    ],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": true,
+      "missing_aspects": [],
+      "reason": "Bằng chứng đã cung cấp đầy đủ thông tin về thời điểm nhà cung cấp phải lập hồ sơ phân loại rủi ro (trước khi đưa hệ thống trí tuệ nhân tạo có rủi ro cao và rủi ro trung bình vào sử dụng)."
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro đối với hệ thống trí tuệ nhân tạo có rủi ro cao và hệ thống trí tuệ nhân tạo có rủi ro trung bình trước khi đưa hệ thống vào sử dụng [E1].",
+    "completeness_check": {
+      "complete": true,
+      "missing_points": [],
+      "reason": "Câu trả lời đã nêu đầy đủ thời điểm nhà cung cấp phải lập hồ sơ phân loại rủi ro (trước khi đưa hệ thống vào sử dụng) theo đúng nội dung tại E1."
+    },
+    "citation_check": {
+      "valid": true,
+      "cited_evidence_ids": [
+        "E1"
+      ],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required_by_deterministic_gate",
+      "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+      "reviewed_claims": []
+    },
+    "revision_count": 0,
+    "citation_revision_count": 0,
+    "final_answer": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro đối với hệ thống trí tuệ nhân tạo có rủi ro cao và hệ thống trí tuệ nhân tạo có rủi ro trung bình trước khi đưa hệ thống vào sử dụng [E1].",
+    "final_status": "success",
+    "run_id": "agentic-v1-eval003",
+    "initial_top5": [
+      "142-2026-ND-CP_dieu-12_khoan-1",
+      "142-2026-ND-CP_dieu-12_khoan-4",
+      "142-2026-ND-CP_dieu-12_khoan-6",
+      "134-2025-QH15_dieu-10_khoan-1",
+      "142-2026-ND-CP_dieu-10_khoan-2"
+    ],
+    "expanded_candidates": [],
+    "final_top5": [
+      "142-2026-ND-CP_dieu-12_khoan-1",
+      "142-2026-ND-CP_dieu-12_khoan-4",
+      "142-2026-ND-CP_dieu-12_khoan-6",
+      "134-2025-QH15_dieu-10_khoan-1",
+      "142-2026-ND-CP_dieu-10_khoan-2"
+    ],
+    "retrieval_calls": [
+      {
+        "call_number": 1,
+        "round": 0,
+        "query": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro vào thời điểm nào?",
+        "sub_query": false,
+        "bm25_depth": 20,
+        "dense_depth": 20,
+        "candidate_chunk_ids": [
+          "142-2026-ND-CP_dieu-12_khoan-1",
+          "142-2026-ND-CP_dieu-10_khoan-2",
+          "134-2025-QH15_dieu-10_khoan-1",
+          "142-2026-ND-CP_dieu-12_khoan-4",
+          "142-2026-ND-CP_dieu-12_khoan-6",
+          "142-2026-ND-CP_dieu-11_khoan-5",
+          "134-2025-QH15_dieu-14_khoan-1_diem-c",
+          "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "142-2026-ND-CP_dieu-12_khoan-7",
+          "142-2026-ND-CP_dieu-12_khoan-5",
+          "142-2026-ND-CP_dieu-3_khoan-2",
+          "142-2026-ND-CP_dieu-12_khoan-3",
+          "134-2025-QH15_dieu-10_khoan-4",
+          "142-2026-ND-CP_dieu-10_khoan-3",
+          "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+          "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+          "142-2026-ND-CP_dieu-12_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-10_khoan-4",
+          "142-2026-ND-CP_dieu-14_khoan-1",
+          "134-2025-QH15_dieu-14_khoan-6",
+          "134-2025-QH15_dieu-10_khoan-3",
+          "142-2026-ND-CP_dieu-11_khoan-3_diem-b",
+          "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+          "142-2026-ND-CP_dieu-11_khoan-4",
+          "134-2025-QH15_dieu-15_khoan-1_diem-b",
+          "134-2025-QH15_dieu-15_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-11_khoan-2",
+          "134-2025-QH15_dieu-10_khoan-2"
+        ],
+        "candidate_count": 28,
+        "reranker_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+            "rank": 1,
+            "reranker_score": 3.9158036708831787
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-4",
+            "rank": 2,
+            "reranker_score": 2.565073013305664
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-6",
+            "rank": 3,
+            "reranker_score": 2.069364547729492
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+            "rank": 4,
+            "reranker_score": 1.2935492992401123
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+            "rank": 5,
+            "reranker_score": 1.2641549110412598
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+            "rank": 6,
+            "reranker_score": 0.9524533748626709
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-3",
+            "rank": 7,
+            "reranker_score": 0.8594444394111633
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-7",
+            "rank": 8,
+            "reranker_score": 0.8270642161369324
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+            "rank": 9,
+            "reranker_score": 0.7909376621246338
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+            "rank": 10,
+            "reranker_score": 0.5939415097236633
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-5",
+            "rank": 11,
+            "reranker_score": 0.38780996203422546
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-3",
+            "rank": 12,
+            "reranker_score": 0.19037318229675293
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-4",
+            "rank": 13,
+            "reranker_score": 0.1223689615726471
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+            "rank": 14,
+            "reranker_score": 0.08057521283626556
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-4",
+            "rank": 15,
+            "reranker_score": -0.06549858301877975
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-2",
+            "rank": 16,
+            "reranker_score": -0.5363738536834717
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-4",
+            "rank": 17,
+            "reranker_score": -0.5557889342308044
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-a",
+            "rank": 18,
+            "reranker_score": -0.8266760110855103
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-3",
+            "rank": 19,
+            "reranker_score": -0.9123072624206543
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-3_khoan-2",
+            "rank": 20,
+            "reranker_score": -1.1055824756622314
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-b",
+            "rank": 21,
+            "reranker_score": -1.2080023288726807
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-2",
+            "rank": 22,
+            "reranker_score": -2.092230796813965
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+            "rank": 23,
+            "reranker_score": -2.120593786239624
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+            "rank": 24,
+            "reranker_score": -2.938326358795166
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+            "rank": 25,
+            "reranker_score": -3.014199733734131
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+            "rank": 26,
+            "reranker_score": -3.5238616466522217
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+            "rank": 27,
+            "reranker_score": -5.341098785400391
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+            "rank": 28,
+            "reranker_score": -5.852715492248535
+          }
+        ],
+        "top5_chunk_ids": [
+          "142-2026-ND-CP_dieu-12_khoan-1",
+          "142-2026-ND-CP_dieu-12_khoan-4",
+          "142-2026-ND-CP_dieu-12_khoan-6",
+          "134-2025-QH15_dieu-10_khoan-1",
+          "142-2026-ND-CP_dieu-10_khoan-2"
+        ],
+        "candidate_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-1",
+            "bm25_rank": 1,
+            "dense_rank": 1
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+            "bm25_rank": 2,
+            "dense_rank": 2
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-1",
+            "bm25_rank": 3,
+            "dense_rank": 5
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-4",
+            "bm25_rank": 4,
+            "dense_rank": 12
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-6",
+            "bm25_rank": 5,
+            "dense_rank": 6
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+            "bm25_rank": 6,
+            "dense_rank": 8
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+            "bm25_rank": 7,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+            "bm25_rank": 8,
+            "dense_rank": 15
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-7",
+            "bm25_rank": 9,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-5",
+            "bm25_rank": 10,
+            "dense_rank": 13
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-3_khoan-2",
+            "bm25_rank": 11,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-3",
+            "bm25_rank": 12,
+            "dense_rank": 17
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-4",
+            "bm25_rank": 13,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-3",
+            "bm25_rank": 14,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-a",
+            "bm25_rank": 15,
+            "dense_rank": 3
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+            "bm25_rank": 16,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-a",
+            "bm25_rank": 17,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-4",
+            "bm25_rank": 18,
+            "dense_rank": 11
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+            "bm25_rank": 19,
+            "dense_rank": 4
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-6",
+            "bm25_rank": 20,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 7
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-3_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 9
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+            "bm25_rank": null,
+            "dense_rank": 10
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-4",
+            "bm25_rank": null,
+            "dense_rank": 14
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 16
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 18
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-2",
+            "bm25_rank": null,
+            "dense_rank": 19
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-2",
+            "bm25_rank": null,
+            "dense_rank": 20
+          }
+        ]
+      }
+    ],
+    "llm_calls": [
+      {
+        "call_number": 1,
+        "stage": "coverage_check"
+      },
+      {
+        "call_number": 2,
+        "stage": "answer_generation"
+      },
+      {
+        "call_number": 3,
+        "stage": "completeness_check"
+      }
+    ],
+    "expansion_used": false,
+    "revision_used": false,
+    "citation_revision_used": false,
+    "execution_error": null,
+    "transitions": [
+      "initialized",
+      "initial_retrieval",
+      "coverage_check",
+      "answer_generation",
+      "completeness_check",
+      "citation_check",
+      "final:success"
+    ]
+  },
+  "timestamp": "2026-09-05T14:05:22.180614+00:00"
+}

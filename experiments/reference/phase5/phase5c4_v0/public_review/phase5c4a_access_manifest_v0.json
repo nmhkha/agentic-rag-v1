@@ -1,0 +1,274 @@
+{
+  "contains_holdout_plaintext": true,
+  "authorized_roles": [
+    "DATASET_CUSTODIAN",
+    "LEGAL_REVIEWER"
+  ],
+  "implementation_access": "FORBIDDEN",
+  "role": "DATASET_CUSTODIAN",
+  "holdout_test_content_exposed_to_this_context": true,
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "isolation_status": "HOLDOUT_STORAGE_ISOLATION_NOT_YET_ENFORCED",
+  "filesystem_enforcement": {
+    "private_directory_modes": "0700",
+    "private_file_modes": "0600",
+    "same_owner_implementation_read_prevented": false,
+    "role_separated_accounts_or_ACLs": false
+  },
+  "phase5c4c_freeze": "BLOCKED_UNTIL_ENFORCEABLE_HOLDOUT_ROLE_SEPARATION",
+  "plaintext_path_inventory": [
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+      "contains_holdout_plaintext": true,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "c22594e058ea8f5766cc5c4077aee3f0c678825cc5b908eeee700d22a62af2e4",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/authored_tasks_v0.py",
+      "contains_holdout_plaintext": true,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "a02ed43ddbeab61822f1358500c30eb6114ba56c6f6fbfd8f768815c64e2c926",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/build_construction_v0.py",
+      "contains_holdout_plaintext": false,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "64d707bf587b2e9c24c19b1bfe2ffd285e601dd9ef1c5fb501be5e2efb7dada9",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/challenge_candidates_v0.jsonl",
+      "contains_holdout_plaintext": true,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "cb2c4bc443cd10b01496a26cf6d477f482eb84e2daf50600bedaccdce347b029",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/cluster_rationales_v0.json",
+      "contains_holdout_plaintext": true,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "3560731fea7a9997d1f06b2a813ef1eba8af22552e325f2a40051fd055f87d46",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/construction_notes_v0.json",
+      "contains_holdout_plaintext": true,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "10b261598844dd39cd7530c40798246fa99336d86ddeaaf3cf82ebb4e6b428cd",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/contamination_screening_details_v0.json",
+      "contains_holdout_plaintext": true,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "a886eb8b0ee2bb3f5a5cf137d677c1973b41e7a18c767255dd41309011abca96",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/corpus_absence_audits_v0.jsonl",
+      "contains_holdout_plaintext": true,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "dfce1e0590e0e76d54dcc6e7f39d4be218613de27ff7d77238bfcd28480d51e7",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/corpus_mapping_v0.json",
+      "contains_holdout_plaintext": false,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "2cf80e2e55055ca2fe3ed90b402b7fcb6d98fd9fdd9a7851f575e74c99ff1f9d",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/custodian_manifest_v0.json",
+      "contains_holdout_plaintext": false,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "a1c028f3d2126c3dc830a5f9cacff9ec02e52ca4dbc50407dbbdaead73673fbb",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/exclusion_log_v0.jsonl",
+      "contains_holdout_plaintext": false,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "68fffc01580ef3ff58d4dcd7146b7d880f5963e9b06b8c273dd7b054132b7a53",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/explicit_asks_v0.json",
+      "contains_holdout_plaintext": true,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "9815f3e9078c4e40dd011c8a37160468881c6df41a6d19ef008b969b675d2088",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/exposure_events_v0.jsonl",
+      "contains_holdout_plaintext": false,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "9dce4eaa4794a27f393dd35568b9bcefdbc25f469ec57838262740b77dba25b2",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_comparison_after_independent_v0.jsonl",
+      "contains_holdout_plaintext": true,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "6e280a04b5fa9def8c040129cf927efc532827f11c8dd6c097e59b7a4c6143d8",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/split_assignment_provisional_v0.json",
+      "contains_holdout_plaintext": false,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "ec49c15acb7d2016f660b43ec7a23112a6a6113b8e99c6d16e29569b9f23c2a8",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/01_independent_review_units_v0.jsonl",
+      "contains_holdout_plaintext": true,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "e805dfcfe282fa1893f015980f1c18153cb032e6cd3b2b6dfc576e841e61b0f9",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/README_independent_review_v0.md",
+      "contains_holdout_plaintext": false,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "2410ab18aab0dffaa81cacdd0eb816ba55ab65c1be843bedec4c398e9d45a87e",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/complete_corpus_evidence_v0.json",
+      "contains_holdout_plaintext": false,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "510642c61928286a553aff9263a16665953118152b31f78445f51aa8a5292350",
+      "note": "Complete-corpus copy alone is not query-selected gold."
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/contamination_query_only_sources_v0.json",
+      "contains_holdout_plaintext": false,
+      "authorized_roles": [
+        "DATASET_CUSTODIAN",
+        "LEGAL_REVIEWER"
+      ],
+      "implementation_access": "FORBIDDEN",
+      "mode_octal": "0o600",
+      "owner_uid": 1000,
+      "sha256": "ab167baeae320ed639185233828cb987b41efbccb5c257129b4879332c8cae5d",
+      "note": "Restricted artifact; hashes identify provisional bytes, not dataset freeze."
+    }
+  ],
+  "console_exact_TEST_text_printed": false,
+  "tool_authoring_payloads": "Source-write requests necessarily carry custodian plaintext in this context. They are part of the exposed custodian session; do not hand the conversation to implementers. No plaintext returned by stdout or included in final public report.",
+  "public_metadata_is_not_runner_input": true,
+  "production_release": "NOT_CREATED_NOT_AUTHORIZED",
+  "reviewer_B_comparison_release": "Only after independent B judgments saved; workflow condition, no technical seal claim.",
+  "timestamp_utc": "2026-09-11T07:56:14.685736+00:00"
+}

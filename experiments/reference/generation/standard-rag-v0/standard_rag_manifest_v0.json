@@ -1,0 +1,81 @@
+{
+  "benchmark_version": "standard-rag-eval-v0",
+  "created_at": "2026-09-02T09:11:40.967743+00:00",
+  "completed_at": "2026-09-02T09:25:09.367240+00:00",
+  "corpus_version": "corpus-v0.1",
+  "retrieval_evaluation_version": "retrieval_eval.jsonl (frozen)",
+  "generation_evaluation_version": "generation-eval-v1",
+  "generation_dataset_status": "verified",
+  "retrieval": {
+    "pipeline": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+    "bm25_version": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense_version": "dense-jina-v3-v0",
+    "dense_model": "jinaai/jina-embeddings-v3",
+    "dense_revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6",
+    "dense_depth": 20,
+    "candidate_construction": "BM25@20 union Dense@20, deduplicated by chunk_id",
+    "reranker_model": "BAAI/bge-reranker-v2-m3",
+    "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "top_k": 5,
+    "fusion": null
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "prompt_sha256": "0141aad79a262960eeeb88d9b138bc092ea15caeb0407a5ebadad27b8268d39e",
+  "llm_provider": "openai-compatible",
+  "llm_model": "gemini-3.5-flash-lite",
+  "llm_temperature": 0,
+  "semantic_audit": {
+    "method": "structured LLM audit of answer, citations, required points, and Top-5 evidence",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0,
+    "not_part_of_retrieval_pipeline": true
+  },
+  "dataset_hashes": {
+    "generation_verified_sha256": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+    "generation_verified_manifest_sha256": "693b2b3f0839bdefc380254de2640e47d9b5a81ff4c14f9acccbd5ee4c242fbe",
+    "retrieval_eval_sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+    "corpus_chunks_sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+    "result_dataset_sha256": "691f98cdffe29d6f4f2bfff8ad93c540447ee9cb4c78c3e48c003e2c2c4f487e"
+  },
+  "source_verified_manifest": {
+    "evaluation_version": "generation-eval-v1",
+    "dataset_status": "verified",
+    "query_count": 31,
+    "required_point_count": 102,
+    "answerable_count": 31,
+    "insufficient_evidence_count": 0,
+    "source_retrieval_eval_sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+    "source_corpus_sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+    "generation_eval_v1_draft_sha256": "672d0e3dea074247ef25aa2ab8da31cb2581f3f40ab247c1db8b459bf9057ebe",
+    "generation_eval_v1_verified_sha256": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+    "human_reviewed_queries": [
+      "eval008",
+      "eval019",
+      "eval022",
+      "eval025",
+      "eval028"
+    ],
+    "annotation_method": "Codex-assisted draft + human review",
+    "verified_at": "2026-09-02T14:56:36+07:00"
+  },
+  "package_versions": {
+    "torch": "2.5.1+cpu",
+    "transformers": "4.46.3",
+    "numpy": "2.5.2",
+    "rank-bm25": "installed"
+  },
+  "python_executable": "/home/minhkha/kk/TTTN/legal-agentic-rag/.venv/bin/python",
+  "code_commit_hash": null,
+  "code_commit_note": "Repository is not a Git working tree; commit hash unavailable.",
+  "query_count": 31,
+  "sample_audit_seed": 20260902,
+  "sample_audit_query_ids": [
+    "eval026",
+    "eval008",
+    "eval019",
+    "eval030",
+    "eval023"
+  ],
+  "no_dataset_mutation": true
+}

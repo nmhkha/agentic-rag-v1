@@ -1,0 +1,254 @@
+{
+  "status": "PASS",
+  "phase5c3_status": "PASS",
+  "phase5c3_freeze_status": "FROZEN",
+  "checked_at_utc": "2026-09-11T07:56:14.685736+00:00",
+  "hash_bindings": [
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/consolidate_research_v0.py",
+      "sha256": "007ec4b03e08777d99aafef61f95e3e419910dd6cc6982f59a5cc80ecc697d1c"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/final_artifact_hashes_v0.json",
+      "sha256": "c66eb0b49c00b0f9dc1ccaa5b2619ff2201c771528b515b0d35ccd52e239a44c"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/integrity_before_after_v0.json",
+      "sha256": "52b18079376f6002ebb4ad7de245013f1eb4536e80821122699f059261970b8b"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/integrity_before_inventory_v0.json",
+      "sha256": "619a4c9f12b1e24595ad1e172af69b4d12756315b19540b4837c5db13e0bba8f"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_console_v0.txt",
+      "sha256": "77d576193a28f18307034fe40256524cde9f2045372d066ea271c011b49ddc8e"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_decision_log_v0.md",
+      "sha256": "b83853e6a9b75ce0e8113fc84d6e2bb891ade8ad612290419677e0ebbe7d56ae"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_evidence_matrix_v0.json",
+      "sha256": "7fe3a92f044d9ab18f81811cff60b37f540c1b5f8fc393142701b023b71ff667"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_exploratory_diagnostic_v0.json",
+      "sha256": "8545d62d1aa793f343100c820e62b722c8b6a316d2d47e2254335b72c31ecb2d"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_manifest_v0.json",
+      "sha256": "dcb19a86ccefe083b8adc9acfabd3a927ffdd87beeaeec06d2920e8b20c1e9b1"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_problem_requirement_map_v0.json",
+      "sha256": "2e69d6b26e10e7c4907ec8eb5ca8794c726dfd0a9a1191277bef9b2acecd5828"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_research_synthesis_v0.md",
+      "sha256": "da4d2bdea95531c06d792416af3d63dd7533094fa42818df1546429d1b182779"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_validation_v0.json",
+      "sha256": "ff48f92ff3a4bddf569beab1d839a2bdf964a2fc4da31bca8057be3260617164"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/final_artifact_hashes_v0.json",
+      "sha256": "ea05d4d225bbf18eb1217b33f4afb669e2bf07b3317ef27b89cf6398ec4fb448"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/integrity_baseline_v0.json",
+      "sha256": "ade1d7ec6ee56af85674d0acebcab637bfad66badceb01961258ae1b91f93d5c"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/integrity_before_after_v0.json",
+      "sha256": "6018df682eb377d5e43e0aa0e92cb8c4bd579e333059c59987dd00498147d345"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_challenge_set_design_v0.md",
+      "sha256": "1f8514571e3fdea048e26eaa399961b54ff2e5af7dd1111fa1904976c0532dc0"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_console_v0.txt",
+      "sha256": "8d5d94d7f23adce3b7bc3329f9df29730652dbde14ef30883fc5a2ea75e7b0c6"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_decision_log_v0.md",
+      "sha256": "a68e7266ddc672f53ac88de733141fc05d0142c5c183cd730ffa0e98577a61b0"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_evaluation_protocol_draft_v0.md",
+      "sha256": "6209c20771d0bf7e7791d878637cb5e7ead8c01f7b3e1b08a6c13a99895a96ca"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_manifest_v0.json",
+      "sha256": "c6d98731c01696299dce134e587163e07d0269cf95dff05b75f16428d967b60e"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_requirement_validation_matrix_v0.json",
+      "sha256": "71caa700ec77bbe998caed8764d2ebcfd6cf23d1628513d5894bdb621cd1520e"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_trace_schema_design_v0.json",
+      "sha256": "e75cba2402593c79157f439f3ffc079003df9330d2f58c3a7523249a0f571e24"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_v2_requirements_design_v0.md",
+      "sha256": "0328ec76ae710402abe323c00363550686b439384b048e483f30fb55554d1658"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_validation_v0.json",
+      "sha256": "869fd0ea657fd83a2f0aa4edef15d6de144b952ad8ca0db0f06d8cc2a7f2c134"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/integrity_baseline_v0.json",
+      "sha256": "7fc04586a648abbead8ee4eb5b3248ef44323b4f82bfae1edd8bc44b882f281b"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/integrity_before_after_v0.json",
+      "sha256": "b201c64b6eedacf6b5fb9c48193414e0c65f8bb78c677706ccf74d804e7c81c3"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_console_v0.txt",
+      "sha256": "0f3519f579536fb4f11ef6f3b95400f89b273a827e6d9a4c2d471d18f0dc3108"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_controller_status_decision_table_v0.json",
+      "sha256": "7bc3657066e63efcf1e4f1f61e447ec4205fff4af6dfa33136a5e998edd63082"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_decision_table_validation_v0.json",
+      "sha256": "e70018e9a7aaf985ffc6f01a2be0f7782c2c1b598e3cd8bd9564c6a1243556e0"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_design_amendments_v0.md",
+      "sha256": "9653e43729861f99a57116f8fb50550f99c4197046d33e103f2df7908ab1e644"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_external_review_v0.md",
+      "sha256": "a4f5b7610e0d4c6ec8b20d1dae0d0d0cc3f2dfeaed4a3bb57f2543ff07468925"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_frozen_design_spec_v0.md",
+      "sha256": "8832e11cb6181913273fccc7abc6b4dfc6fb01dee7f57a9de50409e907c7c990"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_margin_governance_v0.md",
+      "sha256": "db39a21f260dece9816c937de2af4859102858276913862d4e4ed41013e65b9a"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_quota_scheduler_requirements_v0.md",
+      "sha256": "6d5de9e5d61cfbd3a19edd8de3ca4ebb3febeaadfce7cd614033c4fc126f662d"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_spec_bindings_v0.json",
+      "sha256": "3507739309e3fb5abf61321c1bd9bb044cbe620218b80a72234020bdd839309d"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_trace_matrix_amendment_v0.json",
+      "sha256": "d8c8fa6ac9df1da5fe94e50824443f42a881695eebd81e615f0e73aec3b05b3c"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_validation_v0.json",
+      "sha256": "1aafda3855bec4816f31e159bcef3468dae3ba7cca04e3577744719be8fa94d0"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/integrity_baseline_v0.json",
+      "sha256": "7fc04586a648abbead8ee4eb5b3248ef44323b4f82bfae1edd8bc44b882f281b"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/integrity_before_after_v0.json",
+      "sha256": "b201c64b6eedacf6b5fb9c48193414e0c65f8bb78c677706ccf74d804e7c81c3"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_console_v0.txt",
+      "sha256": "0f3519f579536fb4f11ef6f3b95400f89b273a827e6d9a4c2d471d18f0dc3108"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_controller_status_decision_table_v0.json",
+      "sha256": "7bc3657066e63efcf1e4f1f61e447ec4205fff4af6dfa33136a5e998edd63082"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_decision_table_validation_v0.json",
+      "sha256": "e70018e9a7aaf985ffc6f01a2be0f7782c2c1b598e3cd8bd9564c6a1243556e0"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_design_amendments_v0.md",
+      "sha256": "9653e43729861f99a57116f8fb50550f99c4197046d33e103f2df7908ab1e644"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_external_review_v0.md",
+      "sha256": "a4f5b7610e0d4c6ec8b20d1dae0d0d0cc3f2dfeaed4a3bb57f2543ff07468925"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "sha256": "16e53fcfe4501fd8df148bc8b63a789ec8f814b5260da52b00c3a901cde6baab"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_frozen_design_spec_v0.md",
+      "sha256": "8832e11cb6181913273fccc7abc6b4dfc6fb01dee7f57a9de50409e907c7c990"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_margin_governance_v0.md",
+      "sha256": "db39a21f260dece9816c937de2af4859102858276913862d4e4ed41013e65b9a"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_quota_scheduler_requirements_v0.md",
+      "sha256": "6d5de9e5d61cfbd3a19edd8de3ca4ebb3febeaadfce7cd614033c4fc126f662d"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_spec_bindings_v0.json",
+      "sha256": "3507739309e3fb5abf61321c1bd9bb044cbe620218b80a72234020bdd839309d"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_trace_matrix_amendment_v0.json",
+      "sha256": "d8c8fa6ac9df1da5fe94e50824443f42a881695eebd81e615f0e73aec3b05b3c"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_validation_v0.json",
+      "sha256": "1aafda3855bec4816f31e159bcef3468dae3ba7cca04e3577744719be8fa94d0"
+    },
+    {
+      "path": "data/versions/corpus-v0.1/articles.jsonl",
+      "sha256": "fa8584bb2deda06fc216334f4030722a7ae7f5bbc329fec7cf3dd527cb864cf9",
+      "binding_source": "phase5c3/integrity_before_after_v0.json#after_entries"
+    },
+    {
+      "path": "data/versions/corpus-v0.1/corpus_validation_summary.csv",
+      "sha256": "61c49798aa35d16428a87105533055c7d68a773cdceaae1c7dbfc2825cdd2586",
+      "binding_source": "phase5c3/integrity_before_after_v0.json#after_entries"
+    },
+    {
+      "path": "data/versions/corpus-v0.1/chunks.jsonl",
+      "sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "binding_source": "phase5c3/integrity_before_after_v0.json#after_entries"
+    },
+    {
+      "path": "data/versions/corpus-v0.1/corpus_validation_manifest.json",
+      "sha256": "931776bf70f5f25c95c9ead061f75fa51443fc168dbda8db7bb9f63611d5bde9",
+      "binding_source": "phase5c3/integrity_before_after_v0.json#after_entries"
+    },
+    {
+      "path": "data/versions/corpus-v0.1/documents.csv",
+      "sha256": "8d0208708676317b28a681d4c5a5a74014ef2b7d9e1c29dab0594cca5eefadce",
+      "binding_source": "phase5c3/integrity_before_after_v0.json#after_entries"
+    },
+    {
+      "path": "data/versions/corpus-v0.1/corpus_validation_details.txt",
+      "sha256": "2810d835d2601cc2f26564a0d0ddd75c58c504012e9a9479bcf1d9d346b23275",
+      "binding_source": "phase5c3/integrity_before_after_v0.json#after_entries"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/query_inputs_v0.json",
+      "sha256": "1d29c4304f61d7c2235d7cab37e2bbf63a35e0c0caf6873d7e458e23904ebc78",
+      "binding_source": "phase5c3/integrity_before_after_v0.json#after_entries"
+    },
+    {
+      "path": "data/evaluation/dev_queries.jsonl",
+      "sha256": "8ec68966ea6b6d0932a8fc03ae4e9a56495f89fe7ea568baebd5cd680eb270a2",
+      "binding_source": "phase5c3/integrity_before_after_v0.json#after_entries"
+    }
+  ],
+  "authoritative_read_scope": "All 5C.3 Markdown and JSON artifacts; large integrity inventories parsed in full. Hash-bound 5C.2 challenge/gold schema and evaluation denominator clauses read. No system answers inspected.",
+  "legal_authority": "Only frozen corpus-v0.1; source hash checking is not reading historical answers."
+}

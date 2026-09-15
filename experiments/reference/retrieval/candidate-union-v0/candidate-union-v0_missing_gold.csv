@@ -1,0 +1,22 @@
+query_id,query,difficulty,query_type,gold_chunk_id,gold_article_id,bm25_full_corpus_rank,dense_full_corpus_rank
+eval004,Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?,medium,actor_obligation,142-2026-ND-CP_dieu-15_khoan-2_diem-a,142-2026-ND-CP_dieu-15,59,63
+eval004,Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?,medium,actor_obligation,142-2026-ND-CP_dieu-15_khoan-2_diem-b,142-2026-ND-CP_dieu-15,118,38
+eval004,Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?,medium,actor_obligation,142-2026-ND-CP_dieu-15_khoan-2_diem-d,142-2026-ND-CP_dieu-15,23,27
+eval004,Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?,medium,actor_obligation,142-2026-ND-CP_dieu-15_khoan-2_diem-đ,142-2026-ND-CP_dieu-15,39,44
+eval005a,Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,hard,actor_obligation,134-2025-QH15_dieu-14_khoan-1_diem-a,134-2025-QH15_dieu-14,64,41
+eval005a,Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,hard,actor_obligation,134-2025-QH15_dieu-14_khoan-1_diem-b,134-2025-QH15_dieu-14,117,47
+eval005a,Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,hard,actor_obligation,134-2025-QH15_dieu-14_khoan-1_diem-c,134-2025-QH15_dieu-14,97,30
+eval005a,Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,hard,actor_obligation,134-2025-QH15_dieu-14_khoan-1_diem-d,134-2025-QH15_dieu-14,90,119
+eval005a,Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,hard,actor_obligation,134-2025-QH15_dieu-14_khoan-1_diem-g,134-2025-QH15_dieu-14,82,31
+eval005b,Bên triển khai hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,hard,actor_obligation,134-2025-QH15_dieu-14_khoan-2_diem-a,134-2025-QH15_dieu-14,49,56
+eval005b,Bên triển khai hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,hard,actor_obligation,134-2025-QH15_dieu-14_khoan-2_diem-b,134-2025-QH15_dieu-14,89,124
+eval005b,Bên triển khai hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,hard,actor_obligation,134-2025-QH15_dieu-14_khoan-2_diem-c,134-2025-QH15_dieu-14,58,83
+eval005b,Bên triển khai hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,hard,actor_obligation,134-2025-QH15_dieu-14_khoan-2_diem-e,134-2025-QH15_dieu-14,88,45
+eval008,Trường hợp nào nội dung do AI tạo ra cần giúp người tiếp nhận nhận biết rõ nguồn gốc?,medium,condition,142-2026-ND-CP_dieu-18_khoan-2_diem-a,142-2026-ND-CP_dieu-18,25,79
+eval011,"Cơ chế thử nghiệm có kiểm soát cho phép tổ chức, cá nhân được hưởng những cơ chế gì trong phạm vi thử nghiệm?",medium,sandbox,134-2025-QH15_dieu-21_khoan-2_diem-a,134-2025-QH15_dieu-21,110,95
+eval011,"Cơ chế thử nghiệm có kiểm soát cho phép tổ chức, cá nhân được hưởng những cơ chế gì trong phạm vi thử nghiệm?",medium,sandbox,134-2025-QH15_dieu-21_khoan-2_diem-b,134-2025-QH15_dieu-21,109,86
+eval022,Cơ quan quản lý có trách nhiệm gì đối với việc xây dựng và cập nhật dữ liệu mở phục vụ AI?,medium,actor_obligation,142-2026-ND-CP_dieu-32_khoan-5_diem-c,142-2026-ND-CP_dieu-32,188,85
+eval023,Quy định về bảo đảm khả năng kết nối và khai thác dữ liệu phục vụ trí tuệ nhân tạo là gì?,easy,data_governance,134-2025-QH15_dieu-17_khoan-3,134-2025-QH15_dieu-17,30,27
+eval026,Báo cáo đánh giá tác động khi sử dụng AI trong khu vực công cần đề cập những nội dung gì?,medium,public_sector,142-2026-ND-CP_dieu-20_khoan-3_diem-c,142-2026-ND-CP_dieu-20,33,32
+eval027,Nguyên tắc đạo đức khi phát triển và sử dụng trí tuệ nhân tạo được đặt ra như thế nào?,medium,ethics,134-2025-QH15_dieu-26_khoan-1_diem-a,134-2025-QH15_dieu-26,42,29
+eval027,Nguyên tắc đạo đức khi phát triển và sử dụng trí tuệ nhân tạo được đặt ra như thế nào?,medium,ethics,134-2025-QH15_dieu-26_khoan-1_diem-c,134-2025-QH15_dieu-26,24,36

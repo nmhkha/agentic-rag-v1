@@ -1,0 +1,96 @@
+{
+  "schema_version": "phase5c4a-custodian-manifest-v0",
+  "created_at_utc": "2026-09-11T07:56:14.685736+00:00",
+  "role": "DATASET_CUSTODIAN",
+  "annotator": "ANNOTATOR_A",
+  "holdout_test_content_exposed_to_this_context": true,
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "annotation_status": "PENDING_INDEPENDENT_REVIEW",
+  "dataset_frozen": false,
+  "query_gold_split_locked": false,
+  "independent_reviews_completed": 0,
+  "counts": {
+    "DEV": 16,
+    "HOLDOUT_TEST": 32,
+    "RESERVE": 10,
+    "EXCLUDE": 2
+  },
+  "candidate_count": 60,
+  "retained_count": 48,
+  "corpus_sha256": "4d5c3cdcede585beabe2fd04abaed96ea6f7ce1cf7e31be055832c1b3057cb1f",
+  "source_files": {
+    "data/versions/corpus-v0.1/articles.jsonl": {
+      "sha256": "fa8584bb2deda06fc216334f4030722a7ae7f5bbc329fec7cf3dd527cb864cf9",
+      "size_bytes": 317310
+    },
+    "data/versions/corpus-v0.1/chunks.jsonl": {
+      "sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "size_bytes": 2326073
+    },
+    "data/versions/corpus-v0.1/corpus_validation_details.txt": {
+      "sha256": "2810d835d2601cc2f26564a0d0ddd75c58c504012e9a9479bcf1d9d346b23275",
+      "size_bytes": 1505
+    },
+    "data/versions/corpus-v0.1/corpus_validation_manifest.json": {
+      "sha256": "931776bf70f5f25c95c9ead061f75fa51443fc168dbda8db7bb9f63611d5bde9",
+      "size_bytes": 1233
+    },
+    "data/versions/corpus-v0.1/corpus_validation_summary.csv": {
+      "sha256": "61c49798aa35d16428a87105533055c7d68a773cdceaae1c7dbfc2825cdd2586",
+      "size_bytes": 514
+    },
+    "data/versions/corpus-v0.1/documents.csv": {
+      "sha256": "8d0208708676317b28a681d4c5a5a74014ef2b7d9e1c29dab0594cca5eefadce",
+      "size_bytes": 1943
+    }
+  },
+  "annotation_protocol": "Frozen 5C.3 composition and hash-bound 5C.2 challenge §§3–7, with current 5C.4-A first-pass-only request.",
+  "annotation_protocol_sha256": "9b2188d2a1b1b3293122ca7cb980ea55104508220736988ea62f5fc110c0ada7",
+  "split_manifest_sha256": "ec49c15acb7d2016f660b43ec7a23112a6a6113b8e99c6d16e29569b9f23c2a8",
+  "primary_artifact_hashes": {
+    "annotation_A_v0.jsonl": "c22594e058ea8f5766cc5c4077aee3f0c678825cc5b908eeee700d22a62af2e4",
+    "authored_tasks_v0.py": "a02ed43ddbeab61822f1358500c30eb6114ba56c6f6fbfd8f768815c64e2c926",
+    "build_construction_v0.py": "64d707bf587b2e9c24c19b1bfe2ffd285e601dd9ef1c5fb501be5e2efb7dada9",
+    "construction_notes_v0.json": "10b261598844dd39cd7530c40798246fa99336d86ddeaaf3cf82ebb4e6b428cd",
+    "contamination_screening_details_v0.json": "a886eb8b0ee2bb3f5a5cf137d677c1973b41e7a18c767255dd41309011abca96",
+    "corpus_absence_audits_v0.jsonl": "dfce1e0590e0e76d54dcc6e7f39d4be218613de27ff7d77238bfcd28480d51e7",
+    "reviewer_b_comparison_after_independent_v0.jsonl": "6e280a04b5fa9def8c040129cf927efc532827f11c8dd6c097e59b7a4c6143d8",
+    "explicit_asks_v0.json": "9815f3e9078c4e40dd011c8a37160468881c6df41a6d19ef008b969b675d2088",
+    "cluster_rationales_v0.json": "3560731fea7a9997d1f06b2a813ef1eba8af22552e325f2a40051fd055f87d46",
+    "exclusion_log_v0.jsonl": "68fffc01580ef3ff58d4dcd7146b7d880f5963e9b06b8c273dd7b054132b7a53",
+    "challenge_candidates_v0.jsonl": "cb2c4bc443cd10b01496a26cf6d477f482eb84e2daf50600bedaccdce347b029",
+    "corpus_mapping_v0.json": "2cf80e2e55055ca2fe3ed90b402b7fcb6d98fd9fdd9a7851f575e74c99ff1f9d",
+    "split_assignment_provisional_v0.json": "ec49c15acb7d2016f660b43ec7a23112a6a6113b8e99c6d16e29569b9f23c2a8",
+    "exposure_events_v0.jsonl": "9dce4eaa4794a27f393dd35568b9bcefdbc25f469ec57838262740b77dba25b2"
+  },
+  "execution_audit": {
+    "basis": "This session used local filesystem reads/writes, hashing and Python standard-library structural/lexical checks only. Counts describe task-initiated calls, not OS-wide packet/process attestation or the hosting assistant itself.",
+    "network_api_calls": 0,
+    "production_calls": 0,
+    "evaluator_calls": 0,
+    "retrieval_inference_calls": 0,
+    "reranker_inference_calls": 0,
+    "answer_generation_runs": 0,
+    "system_answers_inspected": 0,
+    "v2_implementation": "NOT_STARTED",
+    "independent_reviewer_B_completed": 0,
+    "adjudication_completed": 0,
+    "dataset_frozen": false
+  },
+  "shortfalls": [
+    {
+      "kind": "reserve_count",
+      "preferred": 12,
+      "actual": 10,
+      "reason": "Two of the 60 candidates excluded: internal source-reference ambiguity and conservative historical near-duplicate screening. Quality takes precedence; 48 retained target remains provisional. Do not fill reserves by forcing a legal interpretation or keeping near-duplicates."
+    },
+    {
+      "kind": "cluster_stratum_feasibility",
+      "retained_cross_primary_family_clusters": 4,
+      "disposition": "External review must reconcile whole-cluster resampling with frozen primary-family stratum language before final dataset freeze; no frozen-design reinterpretation or cluster splitting in this phase."
+    }
+  ],
+  "access_isolation": "HOLDOUT_STORAGE_ISOLATION_NOT_YET_ENFORCED",
+  "future_freeze_gate": "BLOCKED: enforce role separation, complete B review and later authorized adjudication/signoff; approve or resolve any quality/coverage shortfall.",
+  "integrity_check_is_not_annotation_certification": true
+}

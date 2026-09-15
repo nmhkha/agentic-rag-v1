@@ -1,0 +1,63 @@
+CHƯƠNG I — QUY ĐỊNH CHUNG
+    Điều 1. Phạm vi điều chỉnh [khoản=3, điểm=15]
+    Điều 2. Đối tượng áp dụng [khoản=2, điểm=0]
+    Điều 3. Giải thích từ ngữ [khoản=8, điểm=0]
+    Điều 4. Cổng thông tin điện tử một cửa về trí tuệ nhân tạo và Cơ sở dữ liệu quốc gia về hệ thống trí tuệ nhân tạo [khoản=4, điểm=10]
+
+CHƯƠNG II — PHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO
+    Điều 5. Nguyên tắc phân loại và đánh giá sự phù hợp hệ thống trí tuệ nhân tạo [khoản=8, điểm=0]
+    Điều 6. Phân loại hệ thống trí tuệ nhân tạo [khoản=4, điểm=3]
+    Điều 7. Danh mục và quy trình ban hành hệ thống trí tuệ nhân tạo có rủi ro cao [khoản=2, điểm=6]
+    Điều 8. Tiêu chí và nguyên tắc xây dựng Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao [khoản=5, điểm=7]
+    Điều 9. Phân loại hệ thống trí tuệ nhân tạo có rủi ro trung bình [khoản=3, điểm=7]
+    Điều 10. Công cụ hỗ trợ phân loại rủi ro tự động [khoản=4, điểm=0]
+    Điều 11. Rà soát và cập nhật mức độ rủi ro [khoản=5, điểm=6]
+    Điều 12. Hồ sơ phân loại rủi ro của hệ thống trí tuệ nhân tạo [khoản=7, điểm=4]
+    Điều 13. Đánh giá sự phù hợp đối với hệ thống trí tuệ nhân tạo có rủi ro cao [khoản=6, điểm=19]
+    Điều 14. Thông báo kết quả phân loại rủi ro đối với hệ thống trí tuệ nhân tạo [khoản=4, điểm=2]
+    Điều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao [khoản=6, điểm=10]
+
+CHƯƠNG III — MINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ
+    Điều 16. Nguyên tắc minh bạch và giải trình [khoản=6, điểm=3]
+    Điều 17. Đánh dấu kỹ thuật đối với nội dung do hệ thống trí tuệ nhân tạo tạo ra [khoản=6, điểm=6]
+    Điều 18. Thông báo và gắn nhãn hiển thị đối với nội dung do hệ thống trí tuệ nhân tạo tạo ra [khoản=7, điểm=15]
+    Điều 19. Báo cáo và xử lý sự cố nghiêm trọng [khoản=8, điểm=10]
+    Điều 20. Đánh giá tác động khi sử dụng hệ thống trí tuệ nhân tạo trong cơ quan nhà nước [khoản=9, điểm=10]
+
+CHƯƠNG IV — CƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT
+    Điều 21. Nguyên tắc thực hiện cơ chế thử nghiệm có kiểm soát đối với hệ thống trí tuệ nhân tạo [khoản=9, điểm=12]
+    Điều 22. Phân loại cấp độ thử nghiệm có kiểm soát [khoản=6, điểm=13]
+    Điều 23. Thẩm quyền và quy trình chấp thuận tham gia cơ chế thử nghiệm có kiểm soát [khoản=8, điểm=12]
+    Điều 24. Điều kiện và hồ sơ tham gia thử nghiệm [khoản=5, điểm=10]
+    Điều 25. Giám sát và báo cáo trong quá trình thử nghiệm có kiểm soát [khoản=4, điểm=7]
+    Điều 26. Hỗ trợ tài chính cho thử nghiệm có kiểm soát [khoản=6, điểm=13]
+    Điều 27. Kết thúc thử nghiệm và chuyển tiếp sau thử nghiệm [khoản=9, điểm=4]
+
+CHƯƠNG V — HẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ
+    Điều 28. Hạ tầng trí tuệ nhân tạo quốc gia [khoản=7, điểm=9]
+    Điều 29. Nguyên tắc phát triển, điều phối và huy động nguồn lực hạ tầng trí tuệ nhân tạo quốc gia [khoản=5, điểm=8]
+    Điều 30. Kết nối, chia sẻ và khai thác hạ tầng trí tuệ nhân tạo quốc gia [khoản=3, điểm=6]
+    Điều 31. Tiêu chuẩn, quy chuẩn kỹ thuật và kiểm tra đối với hạ tầng trí tuệ nhân tạo quốc gia [khoản=3, điểm=4]
+    Điều 32. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo [khoản=6, điểm=12]
+    Điều 33. Cơ chế hỗ trợ phát triển trí tuệ nhân tạo thông qua chia sẻ tự nguyện [khoản=5, điểm=10]
+    Điều 34. Tổ chức thực hiện hỗ trợ phi tài chính [khoản=6, điểm=3]
+    Điều 35. Khai thác và sử dụng dữ liệu phục vụ phát triển trí tuệ nhân tạo [khoản=6, điểm=14]
+    Điều 36. Bảo đảm an ninh, an toàn hạ tầng và dữ liệu phục vụ phát triển trí tuệ nhân tạo [khoản=4, điểm=3]
+    Điều 37. Cơ chế, biện pháp thúc đẩy làm chủ công nghệ trí tuệ nhân tạo [khoản=5, điểm=10]
+
+CHƯƠNG VI — PHÁT TRIỂN HỆ SINH THÁI ĐỔI MỚI SÁNG TẠO VÀ THỊ TRƯỜNG TRÍ TUỆ NHÂN TẠO
+    Điều 38. Phát triển hệ sinh thái và thị trường trí tuệ nhân tạo [khoản=4, điểm=3]
+    Điều 39. Cụm liên kết trí tuệ nhân tạo [khoản=6, điểm=12]
+    Điều 40. Cơ chế hỗ trợ phát triển trí tuệ nhân tạo thông qua Phiếu hỗ trợ [khoản=10, điểm=25]
+
+CHƯƠNG VII — TRÁCH NHIỆM CỦA CÁC CƠ QUAN, TỔ CHỨC
+    Điều 41. Trách nhiệm của Bộ Khoa học và Công nghệ [khoản=12, điểm=6]
+    Điều 42. Trách nhiệm của Bộ Công an [khoản=9, điểm=0]
+    Điều 43. Trách nhiệm của các bộ, cơ quan ngang bộ và các cơ quan khác thuộc thẩm quyền của Chính phủ [khoản=5, điểm=0]
+    Điều 44. Trách nhiệm của Ủy ban nhân dân cấp tỉnh [khoản=6, điểm=0]
+
+CHƯƠNG VIII — ĐIỀU KHOẢN THI HÀNH
+    Điều 45. Hiệu lực thi hành [khoản=0, điểm=0]
+    Điều 46. Điều khoản chuyển tiếp [khoản=3, điểm=0]
+
+PHỤ LỤC KHÔNG PARSE THÀNH ĐIỀU: bắt đầu dòng 741, 1192 dòng không rỗng

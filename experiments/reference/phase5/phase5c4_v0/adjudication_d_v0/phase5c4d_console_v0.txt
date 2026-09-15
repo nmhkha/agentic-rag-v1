@@ -1,0 +1,97 @@
+Phase 5C.4-D status:
+FAIL
+
+Role:
+MODEL_BASED_ADJUDICATOR_C
+
+Candidates adjudicated:
+0/60
+
+Final retained:
+0/36
+
+DEV:
+0/12
+
+HOLDOUT TEST:
+0/24
+
+Reserve:
+0
+
+Excluded:
+0
+
+Unresolved legal ambiguity retained:
+0 / 0
+
+Primary task families represented:
+0/4
+
+Cluster separation:
+FAIL
+
+Historical contamination:
+REVIEW_REQUIRED
+
+Medical diagnostic contamination:
+REVIEW_REQUIRED
+
+D1 retained:
+0
+D2 retained:
+0
+D3 retained:
+0
+D4 retained:
+0
+D5 retained:
+0
+D6:
+EMPIRICAL_UNVERIFIED
+D7 retained:
+0
+D8 retained:
+0
+D9 retained:
+0
+D10 retained:
+0
+
+Independent human legal validation:
+NO
+
+Benchmark type:
+RESOURCE-CONSTRAINED MODEL-ADJUDICATED
+
+System outputs inspected:
+NO
+
+Network/API calls:
+0
+
+Production/evaluator calls:
+0
+
+Retrieval/reranking inference:
+0
+
+HOLDOUT storage isolation:
+NOT_YET_ENFORCED
+
+Dataset frozen:
+NO
+
+Agentic v2 implementation:
+NOT STARTED
+
+Preexisting artifact integrity:
+PASS
+
+Ready for HOLDOUT isolation + blind D6 characterization:
+NO
+
+Stop reason:
+Historical system-performance conclusions encountered in a design document. All 60 candidates remain unadjudicated.
+
+STOP

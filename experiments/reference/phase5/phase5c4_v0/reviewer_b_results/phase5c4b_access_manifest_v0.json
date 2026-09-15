@@ -1,0 +1,57 @@
+{
+  "role": "INDEPENDENT_ANNOTATOR_B",
+  "reviewer_type": "MODEL_BASED_INDEPENDENT_ANNOTATOR",
+  "independent_context": true,
+  "independent_human_legal_review": false,
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "schema": "phase5c4b-access-manifest-v0",
+  "authorized_role": "INDEPENDENT_ANNOTATOR_B",
+  "implementation_access": "FORBIDDEN",
+  "contains_holdout_plaintext": true,
+  "contains_holdout_plaintext_scope": "Supplied input packet only",
+  "results_contain_holdout_plaintext": false,
+  "exact_holdout_query_text_printed_publicly": false,
+  "HOLDOUT_storage_isolation": "NOT_YET_ENFORCED",
+  "technical_isolation_implemented": false,
+  "isolation_audit_scope": "README disclosure only; no deny-rule or separate-account filesystem tests performed.",
+  "source_files_opened": [
+    {
+      "path": "/home/minhkha/.codex/attachments/c4cc1d11-af98-4e04-ac3c-fb5e865e8f2c/pasted-text.txt",
+      "mode": "request_text_read"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "mode": "design_manifest_text_read"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/01_independent_review_units_v0.jsonl",
+      "mode": "local_JSON_structural_preflight_only",
+      "values_exposed_to_model": false,
+      "query_text_exposed_to_model": false
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/README_independent_review_v0.md",
+      "mode": "packet_instructions_text_read"
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/integrity_baseline_v0.json",
+      "mode": "self_authored_integrity_inventory_read"
+    }
+  ],
+  "binary_hash_access_note": "All preexisting regular project files were opened as binary streams solely to compute SHA-256, including prohibited annotation/system artifacts if present. No such content was printed, semantically parsed, or entered into model context. annotation_A_read=false and system_output_read=false refer to substantive inspection; binary hash access is explicitly not denied.",
+  "binary_hash_file_inventory": "integrity_baseline_v0.json",
+  "execution_audit": {
+    "annotation_A_read": false,
+    "annotation_A_substantive_labels_entered_context": false,
+    "A_vs_B_comparison_read": false,
+    "system_output_read": false,
+    "retrieval_inference": 0,
+    "reranking_inference": 0,
+    "network_api": 0,
+    "production_calls": 0,
+    "evaluator_calls": 0,
+    "answer_generation_calls": 0,
+    "benchmark_runs": 0,
+    "audit_basis": "Observed actions in this session, not OS-wide process or network attestation. Local JSON inspection and SHA-256 hashing only. No additional generation API invoked; this session is itself model-based."
+  }
+}

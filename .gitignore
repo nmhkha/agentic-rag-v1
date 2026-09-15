@@ -1,0 +1,21 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# New/disposable experiment runs; frozen reference evidence remains tracked.
+experiments/runs/**
+!experiments/runs/
+!experiments/runs/retrieval/
+!experiments/runs/generation/
+
+# Local evaluation scratch outputs.
+/tmp/

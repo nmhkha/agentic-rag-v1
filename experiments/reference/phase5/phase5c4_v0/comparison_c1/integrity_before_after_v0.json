@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "preexisting_regular_files": 26916,
+  "preexisting_symlinks": 4,
+  "all_preexisting_files_byte_identical": true,
+  "modes_and_symlink_targets_unchanged": true,
+  "before_inventory_sha256": "875741c117ea56fc21a87ee57c3a0da1acb79975172d961c229026dfb5f92d52",
+  "after_preexisting_inventory_sha256": "875741c117ea56fc21a87ee57c3a0da1acb79975172d961c229026dfb5f92d52",
+  "changed_or_missing": [],
+  "all_additions_under_comparison_c1": true,
+  "additions_at_integrity_sweep": [
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_applicability_sufficiency_comparison_v0.jsonl",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_aspect_mapping_v0.jsonl",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_candidate_alignment_v0.json",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_contamination_comparison_v0.jsonl",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_corpus_audit_comparison_v0.jsonl",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_disagreement_registry_v0.jsonl",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_scope_comparison_v0.jsonl",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_support_comparison_v0.jsonl",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/build_comparison_v0.py",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/integrity_baseline_v0.json",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_agreement_metrics_v0.json",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_disagreement_summary_v0.json",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/semantic_mapping_decisions_v0.py",
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/source_integrity_validation_v0.json"
+  ],
+  "baseline_file": "integrity_baseline_v0.json",
+  "baseline_sha256": "77157feaa4794c4fb3c183bbe825c4d5165c044d66d5ea3e2bf511803aa55ca5",
+  "scope": "All preexisting project files including hidden and virtualenv; opaque binary hashes only for failed B/system artifacts; symlinks not followed. Remaining C1 reports are new files in this directory."
+}

@@ -1,0 +1,136 @@
+{
+  "count_status": "FIRST_PASS_PROPOSED",
+  "total_candidates": 60,
+  "retained": 48,
+  "provisional_splits": {
+    "DEV": 16,
+    "HOLDOUT_TEST": 32,
+    "RESERVE": 10,
+    "EXCLUDE": 2
+  },
+  "families": {
+    "deployment_scope_assessment": {
+      "DEV": 4,
+      "HOLDOUT_TEST": 8,
+      "RESERVE": 3
+    },
+    "multi_duty_procedural_synthesis": {
+      "DEV": 4,
+      "HOLDOUT_TEST": 8,
+      "RESERVE": 3
+    },
+    "actor_condition_applicability": {
+      "DEV": 4,
+      "HOLDOUT_TEST": 8,
+      "EXCLUDE": 1,
+      "RESERVE": 2
+    },
+    "corpus_boundary_partial_answer_handling": {
+      "DEV": 4,
+      "HOLDOUT_TEST": 8,
+      "RESERVE": 2,
+      "EXCLUDE": 1
+    }
+  },
+  "answerability_by_split": {
+    "DEV": {
+      "fully_answerable": 12,
+      "partially_answerable": 2,
+      "insufficient_evidence": 2
+    },
+    "HOLDOUT_TEST": {
+      "fully_answerable": 24,
+      "partially_answerable": 4,
+      "insufficient_evidence": 4
+    },
+    "RESERVE": {
+      "fully_answerable": 7,
+      "partially_answerable": 2,
+      "insufficient_evidence": 1
+    },
+    "EXCLUDE": {
+      "fully_answerable": 1,
+      "insufficient_evidence": 1
+    }
+  },
+  "controls_by_split": {
+    "DEV": 7,
+    "HOLDOUT_TEST": 9,
+    "RESERVE": 2,
+    "EXCLUDE": 1
+  },
+  "D9_condition_composition": {
+    "DEV": {
+      "conditions_support_application": 6,
+      "unmet_or_unknown_material_condition": 6,
+      "unit": "queries; positive/negative may overlap. Positive count uses A-selected actual duty/status application, not merely every successful exclusion conclusion."
+    },
+    "HOLDOUT_TEST": {
+      "conditions_support_application": 18,
+      "unmet_or_unknown_material_condition": 9,
+      "unit": "queries; positive/negative may overlap. Positive count uses A-selected actual duty/status application, not merely every successful exclusion conclusion."
+    },
+    "RESERVE": {
+      "conditions_support_application": 1,
+      "unmet_or_unknown_material_condition": 1,
+      "unit": "queries; positive/negative may overlap. Positive count uses A-selected actual duty/status application, not merely every successful exclusion conclusion."
+    },
+    "EXCLUDE": {
+      "conditions_support_application": 1,
+      "unmet_or_unknown_material_condition": 0,
+      "unit": "queries; positive/negative may overlap. Positive count uses A-selected actual duty/status application, not merely every successful exclusion conclusion."
+    }
+  },
+  "P_Q_U_aggregate_by_split": {
+    "DEV": {
+      "P+": 33,
+      "U": 4
+    },
+    "HOLDOUT_TEST": {
+      "P+": 71,
+      "U": 8,
+      "Q": 2
+    },
+    "RESERVE": {
+      "P+": 18,
+      "Q": 1,
+      "U": 3
+    },
+    "EXCLUDE": {
+      "P+": 1,
+      "U": 1
+    }
+  },
+  "P_plus_count_histogram_by_split": {
+    "DEV": {
+      "0": 2,
+      "1": 6,
+      "3": 5,
+      "4": 3
+    },
+    "HOLDOUT_TEST": {
+      "0": 4,
+      "1": 8,
+      "2": 4,
+      "3": 9,
+      "4": 7
+    },
+    "RESERVE": {
+      "0": 1,
+      "1": 4,
+      "2": 1,
+      "3": 4
+    },
+    "EXCLUDE": {
+      "0": 1,
+      "1": 1
+    }
+  },
+  "P_plus_nonempty_query_counts": {
+    "DEV": 14,
+    "HOLDOUT_TEST": 28,
+    "RESERVE": 9,
+    "EXCLUDE": 1
+  },
+  "no_power_certification": true
+}

@@ -1,0 +1,184 @@
+{
+  "schema": "phase5c4-resource-constrained-amendment-validation-v0",
+  "phase_status": "PASS",
+  "checks": [
+    {
+      "check": "TARGET_36_12_24",
+      "status": "PASS"
+    },
+    {
+      "check": "TARGET_ARITHMETIC",
+      "status": "PASS"
+    },
+    {
+      "check": "RESOURCE_RATIONALE_EXPLICIT",
+      "status": "PASS"
+    },
+    {
+      "check": "HONEST_TRACK_LABEL",
+      "status": "PASS"
+    },
+    {
+      "check": "NO_FALSE_HUMAN_VALIDATION",
+      "status": "PASS"
+    },
+    {
+      "check": "INDEPENDENT_C_AUTHORIZED_NOT_STARTED",
+      "status": "PASS"
+    },
+    {
+      "check": "INDEPENDENCE_FROM_A_B_C1",
+      "status": "PASS"
+    },
+    {
+      "check": "C_INPUTS_DEFINED",
+      "status": "PASS"
+    },
+    {
+      "check": "SELECTION_CRITERIA_AND_GATES_COMPLETE",
+      "status": "PASS"
+    },
+    {
+      "check": "NO_SYSTEM_OUTCOME_SELECTION",
+      "status": "PASS"
+    },
+    {
+      "check": "NO_AGREEMENT_ONLY_SELECTION",
+      "status": "PASS"
+    },
+    {
+      "check": "UNRESOLVED_AMBIGUITY_NOT_RETAINED",
+      "status": "PASS"
+    },
+    {
+      "check": "SUPPORT_AND_ABSENCE_GATES",
+      "status": "PASS"
+    },
+    {
+      "check": "MATERIAL_ADJUDICATION_AND_NORMALIZATION_PROTOCOL",
+      "status": "PASS"
+    },
+    {
+      "check": "FOUR_TASK_FAMILIES",
+      "status": "PASS"
+    },
+    {
+      "check": "DIMENSION_COVERAGE_WITHOUT_FORCED_QUOTAS",
+      "status": "PASS"
+    },
+    {
+      "check": "D6_UNMEASURED_UNUSED",
+      "status": "PASS"
+    },
+    {
+      "check": "WHOLE_CLUSTERS_AND_DEV_EXPOSURE_PRESERVED",
+      "status": "PASS"
+    },
+    {
+      "check": "NO_FORCED_TARGET",
+      "status": "PASS"
+    },
+    {
+      "check": "HOLDOUT_BLINDNESS_NOT_RELAXED",
+      "status": "PASS"
+    },
+    {
+      "check": "VALIDATED_ACCESS_BOUNDARY_REQUIRED",
+      "status": "PASS"
+    },
+    {
+      "check": "TEST_ACCESS_DENIAL_COMPLETE",
+      "status": "PASS"
+    },
+    {
+      "check": "HISTORICAL_BENCHMARK_SEPARATE",
+      "status": "PASS"
+    },
+    {
+      "check": "NO_FINAL_ACCEPTANCE_MARGINS",
+      "status": "PASS"
+    },
+    {
+      "check": "PROTOCOL_ONLY_NO_SELECTION_OR_IMPLEMENTATION",
+      "status": "PASS"
+    },
+    {
+      "check": "EXPOSED_CONTEXT_IMPLEMENTATION_FORBIDDEN",
+      "status": "PASS"
+    },
+    {
+      "check": "VERSIONED_OVERRIDE_DOMAINS_EXPLICIT",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_ALL_HARD_GATES_CAN_PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_EACH_FAILED_GATE_BLOCKS_0",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_EACH_FAILED_GATE_BLOCKS_1",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_EACH_FAILED_GATE_BLOCKS_2",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_EACH_FAILED_GATE_BLOCKS_3",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_EACH_FAILED_GATE_BLOCKS_4",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_EACH_FAILED_GATE_BLOCKS_5",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_EACH_FAILED_GATE_BLOCKS_6",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_EACH_FAILED_GATE_BLOCKS_7",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_AMBIGUITY_BLOCKS_RETENTION",
+      "status": "PASS"
+    },
+    {
+      "check": "CONTROL_MISSING_GATE_BLOCKS_RETENTION",
+      "status": "PASS"
+    }
+  ],
+  "check_count": 38,
+  "source_bindings_checked": 35,
+  "source_bindings_status": "PASS",
+  "required_pass_gates": {
+    "resource_constraint_rationale": "PASS",
+    "honest_benchmark_claim": "PASS",
+    "no_false_human_validation": "PASS",
+    "36_equals_12_plus_24": "PASS",
+    "C_adjudication_authorized": "PASS",
+    "no_system_outcome_selection": "PASS",
+    "D6_unmeasured": "PASS",
+    "HOLDOUT_blindness_preserved": "PASS",
+    "no_inference_API": "PASS",
+    "old_artifacts_unchanged": "PASS"
+  },
+  "validation_scope": "Protocol consistency, source provenance and artifact integrity only; not legal adjudication or dataset validation.",
+  "human_legal_validation": "NOT COMPLETED",
+  "C_adjudication_started": false,
+  "selection_started": false,
+  "D6": "EMPIRICAL_UNVERIFIED",
+  "storage_isolation": "NOT_YET_ENFORCED",
+  "preexisting_integrity": "PASS",
+  "ready_for_model_adjudication_final_selection": true,
+  "ready_for_final_dataset_freeze": false,
+  "no_candidate_text_or_gold_authored": true,
+  "no_system_outputs_inspected": true
+}

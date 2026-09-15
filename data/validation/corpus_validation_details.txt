@@ -1,0 +1,27 @@
+CORPUS VALIDATION REPORT
+================================================================================
+
+Errors: 0
+Warnings: 4
+Info: 7
+
+ERRORS
+--------------------------------------------------------------------------------
+Không có lỗi.
+
+WARNINGS
+--------------------------------------------------------------------------------
+1. 1 chunk ngắn hơn 20 ký tự: ['142-2026-ND-CP_dieu-32_khoan-1_diem-a']
+2. 134-2025-QH15: text trùng nguyên văn ở ['134-2025-QH15_dieu-9_khoan-3', '134-2025-QH15_dieu-13_khoan-6', '134-2025-QH15_dieu-14_khoan-7', '134-2025-QH15_dieu-21_khoan-4']; text='Chính phủ quy định chi tiết Điều này.'
+3. 134-2025-QH15: text trùng nguyên văn ở ['134-2025-QH15_dieu-14_khoan-1_diem-đ', '134-2025-QH15_dieu-14_khoan-2_diem-d']; text='Thực hiện nghĩa vụ minh bạch và xử lý sự cố theo quy định tại Điều 11 và Điều 12 của Luật này;'
+4. 142-2026-ND-CP: text trùng nguyên văn ở ['142-2026-ND-CP_dieu-24_khoan-2_diem-a', '142-2026-ND-CP_dieu-24_khoan-3_diem-a']; text='Đơn đề nghị tham gia cơ chế thử nghiệm có kiểm soát theo Mẫu AI03a đối với tổ chức hoặc Mẫu AI03b đố'
+
+INFO
+--------------------------------------------------------------------------------
+1. 134-2025-QH15: đủ 35 Điều
+2. 142-2026-ND-CP: đủ 46 Điều
+3. 05-2026-TT-BKHCN: đủ 5 Điều
+4. Corpus version: corpus-v0.1
+5. 134-2025-QH15: 206 Chunk
+6. 142-2026-ND-CP: 503 Chunk
+7. 05-2026-TT-BKHCN: 28 Chunk

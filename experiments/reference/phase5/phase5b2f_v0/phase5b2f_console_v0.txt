@@ -1,0 +1,133 @@
+Phase 5B.2-F status: PASS
+
+SEMANTIC COMPLETENESS
+R2: 31/31
+A1: 31/31
+A2: 31/31
+Total: 93/93
+
+Network/API calls:
+0
+
+Production calls:
+0
+
+Evaluator calls:
+0
+
+R1 → R2 REPLICATION
+AC macro: 0.723655913978 → 0.696774193548
+Delta: -0.026881720430
+AC micro: 0.637254901961 → 0.617647058824
+Supported points: 65/102 → 63/102
+Points gained: 1
+`eval027/P4`
+Points lost: 3
+`eval002/P2`, `eval022/P2`, `eval026/P1`
+Net: -2
+Gross churn: 4
+R2 better / tied / R1 better: 1 / 27 / 3
+Replication variation: one observed same-configuration replication; not formal variance or noise distribution.
+
+R2 vs A1 — ANSWER REVISION
+AC macro:
+R2 0.696774193548
+A1 0.662365591398
+Delta 0.034408602151
+AC micro:
+R2 63/102
+A1 59/102
+Delta 0.039215686275
+Both supported: 59
+Only R2: 4
+`eval005b/P4`, `eval013/P3`, `eval013/P4`, `eval029/P2`
+Only A1: 0
+None
+Neither: 39
+Net R2 contribution: 4
+Gross churn: 4
+R2 better / tied / A1 better: 3 / 28 / 0
+Mean paired AC delta: 0.034408602151
+Median paired AC delta: 0.000000000000
+95% paired bootstrap CI: [0.000000000000, 0.079569892473]
+Revision-triggered queries: eval005b, eval007, eval013, eval029
+Triggered-stratum AC: R2 macro 0.566666666667, micro 9/19; A1 macro 0.300000000000, micro 5/19
+Production LLM:
+R2 101
+A1 94
+Savings 7
+Replication-attribution flag: false
+Separate replication gross-churn flag: true
+Interpretation: Insufficient evidence
+H1: Insufficient evidence
+Descriptive losses in 3/4 revision-triggered queries; four points; attribution limited by churn; safety tradeoffs.
+
+R2 vs A2 — EVIDENCE EXPANSION
+AC macro:
+R2 0.696774193548
+A2 0.696774193548
+Delta 0.000000000000
+AC micro:
+R2 63/102
+A2 62/102
+Delta 0.009803921569
+Both supported: 59
+Only R2: 4
+`eval007/P4`, `eval014/P1`, `eval014/P2`, `eval014/P4`
+Only A2: 3
+`eval022/P1`, `eval022/P2`, `eval026/P1`
+Neither: 36
+Net R2 contribution: 1
+Gross churn: 7
+R2 better / tied / A2 better: 2 / 27 / 2
+Mean paired AC delta: 0.000000000000
+Median paired AC delta: 0.000000000000
+95% paired bootstrap CI: [-0.064516129032, 0.072580645161]
+Expansion-triggered queries: eval001, eval005a, eval005b, eval006, eval011, eval013, eval014, eval016, eval023
+Triggered-stratum AC: R2 macro 0.446296296296, micro 14/36; A2 macro 0.362962962963, micro 11/36
+Retrieval calls:
+R2 42
+A2 31
+Savings 11
+Merge-reranks:
+R2 9
+A2 0
+Savings 9
+Replication-attribution flag: true
+Separate replication gross-churn flag: false
+Interpretation: Insufficient evidence
+H2: Insufficient evidence
+Tied full-set macro AC; +1 net R2 point, +3 triggered points; cheaper A2; magnitude safeguard limits attribution.
+
+CITATION / SAFETY
+| Variant | Metric | Macro | Defined queries | Pooled micro / rate | Raw numerator / denominator |
+|---|---|---|---|---|---|
+| R1 | Citation Completeness | 0.723655913978 | 31 | 0.637254901961 | 65/102 |
+| R1 | Citation Correctness | 0.982795698925 | 31 | 0.978723404255 | 92/94 |
+| R1 | Groundedness | 0.966666666667 | 31 | 0.958762886598 | 93/97 |
+| R1 | Unsupported Claim Rate ↓ | 0.033333333333 | 31 | 0.041237113402 | 4/97 |
+| R1 | Citation syntax validity | 1.000000000000 | 31 | 1.000000000000 | 31/31 |
+| R2 | Citation Completeness | 0.696774193548 | 31 | 0.617647058824 | 63/102 |
+| R2 | Citation Correctness | 0.935483870968 | 31 | 0.964705882353 | 82/85 |
+| R2 | Groundedness | 0.935483870968 | 31 | 0.965517241379 | 84/87 |
+| R2 | Unsupported Claim Rate ↓ | 0.064516129032 | 31 | 0.034482758621 | 3/87 |
+| R2 | Citation syntax validity | 1.000000000000 | 31 | 1.000000000000 | 31/31 |
+| A1 | Citation Completeness | 0.662365591398 | 31 | 0.578431372549 | 59/102 |
+| A1 | Citation Correctness | 0.967741935484 | 31 | 0.974025974026 | 75/77 |
+| A1 | Groundedness | 0.967741935484 | 31 | 0.961538461538 | 75/78 |
+| A1 | Unsupported Claim Rate ↓ | 0.032258064516 | 31 | 0.038461538462 | 3/78 |
+| A1 | Citation syntax validity | 1.000000000000 | 31 | 1.000000000000 | 31/31 |
+| A2 | Citation Completeness | 0.696774193548 | 31 | 0.607843137255 | 62/102 |
+| A2 | Citation Correctness | 0.967741935484 | 31 | 0.988505747126 | 86/87 |
+| A2 | Groundedness | 0.959677419355 | 31 | 0.977272727273 | 86/88 |
+| A2 | Unsupported Claim Rate ↓ | 0.040322580645 | 31 | 0.022727272727 | 2/88 |
+| A2 | Citation syntax validity | 1.000000000000 | 31 | 1.000000000000 | 31/31 |
+Macro and pooled micro can move in different directions. Raw Groundedness and UCR computed independently.
+
+H3: NOT TESTED
+
+INTEGRITY
+Historical/frozen artifacts unchanged: PASS
+
+Ready for Phase 5C: YES
+External review only; Phase 5C not started. STOP.

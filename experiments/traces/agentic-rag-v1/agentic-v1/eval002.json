@@ -1,0 +1,1204 @@
+{
+  "run_id": "agentic-v1-eval002",
+  "query": "Ai có thẩm quyền ban hành danh mục hệ thống trí tuệ nhân tạo có rủi ro cao?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 26,
+  "initial_top5": [
+    "142-2026-ND-CP_dieu-8_khoan-5",
+    "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+    "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+    "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+    "142-2026-ND-CP_dieu-6_khoan-3_diem-a"
+  ],
+  "coverage_check": {
+    "sufficient": true,
+    "missing_aspects": [],
+    "reason": "Các văn bản pháp luật cung cấp đầy đủ thông tin xác định Thủ tướng Chính phủ là người có thẩm quyền ban hành danh mục hệ thống trí tuệ nhân tạo có rủi ro cao."
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [
+    {
+      "rank": 1,
+      "evidence_id": "E1",
+      "chunk_id": "142-2026-ND-CP_dieu-8_khoan-5",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-8",
+      "article": "8",
+      "article_label": "Điều 8",
+      "clause": "5",
+      "clause_label": "Khoản 5",
+      "point": null,
+      "point_label": null,
+      "text": "Trường hợp hệ thống trí tuệ nhân tạo đáp ứng trường hợp quy định tại khoản 2 Điều này nhưng có bằng chứng kỹ thuật hoặc thực tiễn có thể đo lường được cho thấy hệ thống tồn tại nguy cơ, lỗ hổng nghiêm trọng có khả năng trực tiếp gây thiệt hại đến quốc phòng, an ninh hoặc trật tự, an toàn xã hội, Thủ tướng Chính phủ xem xét đưa vào Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao và nêu rõ căn cứ trong Quyết định ban hành Danh mục.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 8. Tiêu chí và nguyên tắc xây dựng Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 5\nTrường hợp hệ thống trí tuệ nhân tạo đáp ứng trường hợp quy định tại khoản 2 Điều này nhưng có bằng chứng kỹ thuật hoặc thực tiễn có thể đo lường được cho thấy hệ thống tồn tại nguy cơ, lỗ hổng nghiêm trọng có khả năng trực tiếp gây thiệt hại đến quốc phòng, an ninh hoặc trật tự, an toàn xã hội, Thủ tướng Chính phủ xem xét đưa vào Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao và nêu rõ căn cứ trong Quyết định ban hành Danh mục.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 7.05256462097168,
+      "bm25_rank": 6,
+      "dense_rank": 1,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 1,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-8_khoan-5",
+      "point_id": null
+    },
+    {
+      "rank": 2,
+      "evidence_id": "E2",
+      "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-7",
+      "article": "7",
+      "article_label": "Điều 7",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": "d",
+      "point_label": "Điểm d",
+      "text": "Bộ Khoa học và Công nghệ có trách nhiệm chủ trì, phối hợp với các bộ, cơ quan ngang bộ và các tổ chức liên quan tổng hợp, xây dựng và trình Thủ tướng Chính phủ ban hành, sửa đổi, bổ sung Danh mục quy định tại khoản 1 Điều này trên cơ sở tiêu chí, nguyên tắc quy định tại Điều 8 của Nghị định này.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 7. Danh mục và quy trình ban hành hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm d)\nBộ Khoa học và Công nghệ có trách nhiệm chủ trì, phối hợp với các bộ, cơ quan ngang bộ và các tổ chức liên quan tổng hợp, xây dựng và trình Thủ tướng Chính phủ ban hành, sửa đổi, bổ sung Danh mục quy định tại khoản 1 Điều này trên cơ sở tiêu chí, nguyên tắc quy định tại Điều 8 của Nghị định này.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 6.695451736450195,
+      "bm25_rank": 13,
+      "dense_rank": 4,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 2,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-7_khoan-2",
+      "point_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-d"
+    },
+    {
+      "rank": 3,
+      "evidence_id": "E3",
+      "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-7",
+      "article": "7",
+      "article_label": "Điều 7",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": "c",
+      "point_label": "Điểm c",
+      "text": "Cơ quan trung ương của tổ chức chính trị, tổ chức chính trị - xã hội có quyền đề xuất bổ sung vào Danh mục đối với các hệ thống trí tuệ nhân tạo có rủi ro cao được sử dụng trong công tác đánh giá, quy hoạch, luân chuyển, bổ nhiệm nhân sự thuộc hệ thống chính trị để Thủ tướng Chính phủ xem xét, quyết định;",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 7. Danh mục và quy trình ban hành hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm c)\nCơ quan trung ương của tổ chức chính trị, tổ chức chính trị - xã hội có quyền đề xuất bổ sung vào Danh mục đối với các hệ thống trí tuệ nhân tạo có rủi ro cao được sử dụng trong công tác đánh giá, quy hoạch, luân chuyển, bổ nhiệm nhân sự thuộc hệ thống chính trị để Thủ tướng Chính phủ xem xét, quyết định;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 6.547895431518555,
+      "bm25_rank": 3,
+      "dense_rank": 7,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 3,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-7_khoan-2",
+      "point_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-c"
+    },
+    {
+      "rank": 4,
+      "evidence_id": "E4",
+      "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-7",
+      "article": "7",
+      "article_label": "Điều 7",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": "b",
+      "point_label": "Điểm b",
+      "text": "Các bộ, cơ quan ngang bộ trong phạm vi nhiệm vụ, quyền hạn của mình chịu trách nhiệm rà soát, đánh giá và đề xuất, sửa đổi, bổ sung Danh mục đối với hệ thống trí tuệ nhân tạo thuộc lĩnh vực quản lý, gửi Bộ Khoa học và Công nghệ để tổng hợp, thẩm định;",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 7. Danh mục và quy trình ban hành hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm b)\nCác bộ, cơ quan ngang bộ trong phạm vi nhiệm vụ, quyền hạn của mình chịu trách nhiệm rà soát, đánh giá và đề xuất, sửa đổi, bổ sung Danh mục đối với hệ thống trí tuệ nhân tạo thuộc lĩnh vực quản lý, gửi Bộ Khoa học và Công nghệ để tổng hợp, thẩm định;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 5.9112653732299805,
+      "bm25_rank": 5,
+      "dense_rank": 5,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 4,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-7_khoan-2",
+      "point_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-b"
+    },
+    {
+      "rank": 5,
+      "evidence_id": "E5",
+      "chunk_id": "142-2026-ND-CP_dieu-6_khoan-3_diem-a",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-6",
+      "article": "6",
+      "article_label": "Điều 6",
+      "clause": "3",
+      "clause_label": "Khoản 3",
+      "point": "a",
+      "point_label": "Điểm a",
+      "text": "Hệ thống trí tuệ nhân tạo được phân loại rủi ro cao là các hệ thống thuộc Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao do Thủ tướng Chính phủ ban hành theo quy định tại khoản 4 Điều 13 của Luật Trí tuệ nhân tạo;",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 6. Phân loại hệ thống trí tuệ nhân tạo\nKhoản 3\nĐiểm a)\nHệ thống trí tuệ nhân tạo được phân loại rủi ro cao là các hệ thống thuộc Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao do Thủ tướng Chính phủ ban hành theo quy định tại khoản 4 Điều 13 của Luật Trí tuệ nhân tạo;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 5.874603271484375,
+      "bm25_rank": 8,
+      "dense_rank": 9,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 5,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-6_khoan-3",
+      "point_id": "142-2026-ND-CP_dieu-6_khoan-3_diem-a"
+    }
+  ],
+  "final_top5": [
+    "142-2026-ND-CP_dieu-8_khoan-5",
+    "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+    "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+    "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+    "142-2026-ND-CP_dieu-6_khoan-3_diem-a"
+  ],
+  "draft_answer": "Thủ tướng Chính phủ có thẩm quyền xem xét và ban hành Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao [E1][E2][E5].",
+  "completeness_check": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "Câu trả lời đã nêu đầy đủ thẩm quyền ban hành của Thủ tướng Chính phủ và trách nhiệm xây dựng, trình của Bộ Khoa học và Công nghệ theo đúng các tài liệu được cung cấp."
+  },
+  "revision_used": true,
+  "citation_check": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E1",
+      "E2",
+      "E5"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required_by_deterministic_gate",
+    "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": "Thủ tướng Chính phủ có thẩm quyền xem xét và ban hành Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao [E1][E2][E5]. Bên cạnh đó, Bộ Khoa học và Công nghệ có trách nhiệm chủ trì, phối hợp với các bộ, cơ quan ngang bộ và các tổ chức liên quan tổng hợp, xây dựng và trình Thủ tướng Chính phủ ban hành, sửa đổi, bổ sung danh mục này [E2].",
+  "final_status": "success",
+  "retrieval_calls": [
+    {
+      "call_number": 1,
+      "round": 0,
+      "query": "Ai có thẩm quyền ban hành danh mục hệ thống trí tuệ nhân tạo có rủi ro cao?",
+      "sub_query": false,
+      "bm25_depth": 20,
+      "dense_depth": 20,
+      "candidate_chunk_ids": [
+        "142-2026-ND-CP_dieu-7_khoan-1_diem-a",
+        "142-2026-ND-CP_dieu-7_khoan-1_diem-b",
+        "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+        "142-2026-ND-CP_dieu-7_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-8_khoan-5",
+        "142-2026-ND-CP_dieu-9_khoan-1_diem-a",
+        "142-2026-ND-CP_dieu-6_khoan-3_diem-a",
+        "142-2026-ND-CP_dieu-8_khoan-4",
+        "142-2026-ND-CP_dieu-8_khoan-3",
+        "134-2025-QH15_dieu-13_khoan-4",
+        "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+        "142-2026-ND-CP_dieu-11_khoan-1_diem-c",
+        "142-2026-ND-CP_dieu-41_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-13_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+        "134-2025-QH15_dieu-13_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+        "142-2026-ND-CP_dieu-15_khoan-4",
+        "142-2026-ND-CP_dieu-14_khoan-1",
+        "134-2025-QH15_dieu-10_khoan-3",
+        "142-2026-ND-CP_dieu-8_khoan-2_diem-d",
+        "142-2026-ND-CP_dieu-8_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-15_khoan-6",
+        "142-2026-ND-CP_dieu-13_khoan-3"
+      ],
+      "candidate_count": 26,
+      "reranker_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-5",
+          "rank": 1,
+          "reranker_score": 7.05256462097168
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+          "rank": 2,
+          "reranker_score": 6.695451736450195
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+          "rank": 3,
+          "reranker_score": 6.547895431518555
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+          "rank": 4,
+          "reranker_score": 5.9112653732299805
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-6_khoan-3_diem-a",
+          "rank": 5,
+          "reranker_score": 5.874603271484375
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-a",
+          "rank": 6,
+          "reranker_score": 5.733981132507324
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-13_khoan-4",
+          "rank": 7,
+          "reranker_score": 5.351810455322266
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-41_khoan-2_diem-a",
+          "rank": 8,
+          "reranker_score": 4.9270758628845215
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-9_khoan-1_diem-a",
+          "rank": 9,
+          "reranker_score": 4.585637092590332
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-4",
+          "rank": 10,
+          "reranker_score": 4.125397682189941
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-3",
+          "rank": 11,
+          "reranker_score": 4.004292011260986
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-1_diem-c",
+          "rank": 12,
+          "reranker_score": 3.871952533721924
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-3",
+          "rank": 13,
+          "reranker_score": 3.714515209197998
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+          "rank": 14,
+          "reranker_score": 3.7106175422668457
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+          "rank": 15,
+          "reranker_score": 3.4635252952575684
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-1_diem-b",
+          "rank": 16,
+          "reranker_score": 3.43328857421875
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+          "rank": 17,
+          "reranker_score": 3.234567880630493
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-3",
+          "rank": 18,
+          "reranker_score": 3.1178054809570312
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-1_diem-a",
+          "rank": 19,
+          "reranker_score": 2.8487205505371094
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-13_khoan-2_diem-a",
+          "rank": 20,
+          "reranker_score": 2.5611777305603027
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-a",
+          "rank": 21,
+          "reranker_score": 2.5076215267181396
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-d",
+          "rank": 22,
+          "reranker_score": 2.195068597793579
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-a",
+          "rank": 23,
+          "reranker_score": 1.8657293319702148
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-4",
+          "rank": 24,
+          "reranker_score": 1.775799036026001
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+          "rank": 25,
+          "reranker_score": 1.2811230421066284
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+          "rank": 26,
+          "reranker_score": 1.1563129425048828
+        }
+      ],
+      "top5_chunk_ids": [
+        "142-2026-ND-CP_dieu-8_khoan-5",
+        "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+        "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+        "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-6_khoan-3_diem-a"
+      ],
+      "candidate_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-1_diem-a",
+          "bm25_rank": 1,
+          "dense_rank": 12
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-1_diem-b",
+          "bm25_rank": 2,
+          "dense_rank": 13
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+          "bm25_rank": 3,
+          "dense_rank": 7
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-a",
+          "bm25_rank": 4,
+          "dense_rank": 8
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+          "bm25_rank": 5,
+          "dense_rank": 5
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-5",
+          "bm25_rank": 6,
+          "dense_rank": 1
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-9_khoan-1_diem-a",
+          "bm25_rank": 7,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-6_khoan-3_diem-a",
+          "bm25_rank": 8,
+          "dense_rank": 9
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-4",
+          "bm25_rank": 9,
+          "dense_rank": 2
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-3",
+          "bm25_rank": 10,
+          "dense_rank": 3
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-13_khoan-4",
+          "bm25_rank": 11,
+          "dense_rank": 15
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+          "bm25_rank": 12,
+          "dense_rank": 6
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+          "bm25_rank": 13,
+          "dense_rank": 4
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-1_diem-c",
+          "bm25_rank": 14,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-41_khoan-2_diem-a",
+          "bm25_rank": 15,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-a",
+          "bm25_rank": 16,
+          "dense_rank": 16
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+          "bm25_rank": 17,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-13_khoan-2_diem-a",
+          "bm25_rank": 18,
+          "dense_rank": 17
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+          "bm25_rank": 19,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-4",
+          "bm25_rank": 20,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 10
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 11
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-d",
+          "bm25_rank": null,
+          "dense_rank": 14
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 18
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+          "bm25_rank": null,
+          "dense_rank": 19
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 20
+        }
+      ]
+    }
+  ],
+  "retrieval_call_count": 1,
+  "llm_calls": [
+    {
+      "call_number": 1,
+      "stage": "coverage_check"
+    },
+    {
+      "call_number": 2,
+      "stage": "answer_generation"
+    },
+    {
+      "call_number": 3,
+      "stage": "completeness_check"
+    },
+    {
+      "call_number": 4,
+      "stage": "answer_revision"
+    },
+    {
+      "call_number": 5,
+      "stage": "completeness_check"
+    }
+  ],
+  "llm_call_count": 5,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Ai có thẩm quyền ban hành danh mục hệ thống trí tuệ nhân tạo có rủi ro cao?",
+    "initial_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "142-2026-ND-CP_dieu-8_khoan-5",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-8",
+        "article": "8",
+        "article_label": "Điều 8",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": null,
+        "point_label": null,
+        "text": "Trường hợp hệ thống trí tuệ nhân tạo đáp ứng trường hợp quy định tại khoản 2 Điều này nhưng có bằng chứng kỹ thuật hoặc thực tiễn có thể đo lường được cho thấy hệ thống tồn tại nguy cơ, lỗ hổng nghiêm trọng có khả năng trực tiếp gây thiệt hại đến quốc phòng, an ninh hoặc trật tự, an toàn xã hội, Thủ tướng Chính phủ xem xét đưa vào Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao và nêu rõ căn cứ trong Quyết định ban hành Danh mục.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 8. Tiêu chí và nguyên tắc xây dựng Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 5\nTrường hợp hệ thống trí tuệ nhân tạo đáp ứng trường hợp quy định tại khoản 2 Điều này nhưng có bằng chứng kỹ thuật hoặc thực tiễn có thể đo lường được cho thấy hệ thống tồn tại nguy cơ, lỗ hổng nghiêm trọng có khả năng trực tiếp gây thiệt hại đến quốc phòng, an ninh hoặc trật tự, an toàn xã hội, Thủ tướng Chính phủ xem xét đưa vào Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao và nêu rõ căn cứ trong Quyết định ban hành Danh mục.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 7.05256462097168,
+        "bm25_rank": 6,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-8_khoan-5",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-7",
+        "article": "7",
+        "article_label": "Điều 7",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "d",
+        "point_label": "Điểm d",
+        "text": "Bộ Khoa học và Công nghệ có trách nhiệm chủ trì, phối hợp với các bộ, cơ quan ngang bộ và các tổ chức liên quan tổng hợp, xây dựng và trình Thủ tướng Chính phủ ban hành, sửa đổi, bổ sung Danh mục quy định tại khoản 1 Điều này trên cơ sở tiêu chí, nguyên tắc quy định tại Điều 8 của Nghị định này.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 7. Danh mục và quy trình ban hành hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm d)\nBộ Khoa học và Công nghệ có trách nhiệm chủ trì, phối hợp với các bộ, cơ quan ngang bộ và các tổ chức liên quan tổng hợp, xây dựng và trình Thủ tướng Chính phủ ban hành, sửa đổi, bổ sung Danh mục quy định tại khoản 1 Điều này trên cơ sở tiêu chí, nguyên tắc quy định tại Điều 8 của Nghị định này.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 6.695451736450195,
+        "bm25_rank": 13,
+        "dense_rank": 4,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-7_khoan-2",
+        "point_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-d"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-7",
+        "article": "7",
+        "article_label": "Điều 7",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "c",
+        "point_label": "Điểm c",
+        "text": "Cơ quan trung ương của tổ chức chính trị, tổ chức chính trị - xã hội có quyền đề xuất bổ sung vào Danh mục đối với các hệ thống trí tuệ nhân tạo có rủi ro cao được sử dụng trong công tác đánh giá, quy hoạch, luân chuyển, bổ nhiệm nhân sự thuộc hệ thống chính trị để Thủ tướng Chính phủ xem xét, quyết định;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 7. Danh mục và quy trình ban hành hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm c)\nCơ quan trung ương của tổ chức chính trị, tổ chức chính trị - xã hội có quyền đề xuất bổ sung vào Danh mục đối với các hệ thống trí tuệ nhân tạo có rủi ro cao được sử dụng trong công tác đánh giá, quy hoạch, luân chuyển, bổ nhiệm nhân sự thuộc hệ thống chính trị để Thủ tướng Chính phủ xem xét, quyết định;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 6.547895431518555,
+        "bm25_rank": 3,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-7_khoan-2",
+        "point_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-c"
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-7",
+        "article": "7",
+        "article_label": "Điều 7",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "b",
+        "point_label": "Điểm b",
+        "text": "Các bộ, cơ quan ngang bộ trong phạm vi nhiệm vụ, quyền hạn của mình chịu trách nhiệm rà soát, đánh giá và đề xuất, sửa đổi, bổ sung Danh mục đối với hệ thống trí tuệ nhân tạo thuộc lĩnh vực quản lý, gửi Bộ Khoa học và Công nghệ để tổng hợp, thẩm định;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 7. Danh mục và quy trình ban hành hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm b)\nCác bộ, cơ quan ngang bộ trong phạm vi nhiệm vụ, quyền hạn của mình chịu trách nhiệm rà soát, đánh giá và đề xuất, sửa đổi, bổ sung Danh mục đối với hệ thống trí tuệ nhân tạo thuộc lĩnh vực quản lý, gửi Bộ Khoa học và Công nghệ để tổng hợp, thẩm định;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 5.9112653732299805,
+        "bm25_rank": 5,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-7_khoan-2",
+        "point_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-b"
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-6_khoan-3_diem-a",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-6",
+        "article": "6",
+        "article_label": "Điều 6",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Hệ thống trí tuệ nhân tạo được phân loại rủi ro cao là các hệ thống thuộc Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao do Thủ tướng Chính phủ ban hành theo quy định tại khoản 4 Điều 13 của Luật Trí tuệ nhân tạo;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 6. Phân loại hệ thống trí tuệ nhân tạo\nKhoản 3\nĐiểm a)\nHệ thống trí tuệ nhân tạo được phân loại rủi ro cao là các hệ thống thuộc Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao do Thủ tướng Chính phủ ban hành theo quy định tại khoản 4 Điều 13 của Luật Trí tuệ nhân tạo;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 5.874603271484375,
+        "bm25_rank": 8,
+        "dense_rank": 9,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-6_khoan-3",
+        "point_id": "142-2026-ND-CP_dieu-6_khoan-3_diem-a"
+      }
+    ],
+    "current_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "142-2026-ND-CP_dieu-8_khoan-5",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-8",
+        "article": "8",
+        "article_label": "Điều 8",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": null,
+        "point_label": null,
+        "text": "Trường hợp hệ thống trí tuệ nhân tạo đáp ứng trường hợp quy định tại khoản 2 Điều này nhưng có bằng chứng kỹ thuật hoặc thực tiễn có thể đo lường được cho thấy hệ thống tồn tại nguy cơ, lỗ hổng nghiêm trọng có khả năng trực tiếp gây thiệt hại đến quốc phòng, an ninh hoặc trật tự, an toàn xã hội, Thủ tướng Chính phủ xem xét đưa vào Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao và nêu rõ căn cứ trong Quyết định ban hành Danh mục.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 8. Tiêu chí và nguyên tắc xây dựng Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 5\nTrường hợp hệ thống trí tuệ nhân tạo đáp ứng trường hợp quy định tại khoản 2 Điều này nhưng có bằng chứng kỹ thuật hoặc thực tiễn có thể đo lường được cho thấy hệ thống tồn tại nguy cơ, lỗ hổng nghiêm trọng có khả năng trực tiếp gây thiệt hại đến quốc phòng, an ninh hoặc trật tự, an toàn xã hội, Thủ tướng Chính phủ xem xét đưa vào Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao và nêu rõ căn cứ trong Quyết định ban hành Danh mục.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 7.05256462097168,
+        "bm25_rank": 6,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-8_khoan-5",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-7",
+        "article": "7",
+        "article_label": "Điều 7",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "d",
+        "point_label": "Điểm d",
+        "text": "Bộ Khoa học và Công nghệ có trách nhiệm chủ trì, phối hợp với các bộ, cơ quan ngang bộ và các tổ chức liên quan tổng hợp, xây dựng và trình Thủ tướng Chính phủ ban hành, sửa đổi, bổ sung Danh mục quy định tại khoản 1 Điều này trên cơ sở tiêu chí, nguyên tắc quy định tại Điều 8 của Nghị định này.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 7. Danh mục và quy trình ban hành hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm d)\nBộ Khoa học và Công nghệ có trách nhiệm chủ trì, phối hợp với các bộ, cơ quan ngang bộ và các tổ chức liên quan tổng hợp, xây dựng và trình Thủ tướng Chính phủ ban hành, sửa đổi, bổ sung Danh mục quy định tại khoản 1 Điều này trên cơ sở tiêu chí, nguyên tắc quy định tại Điều 8 của Nghị định này.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 6.695451736450195,
+        "bm25_rank": 13,
+        "dense_rank": 4,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-7_khoan-2",
+        "point_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-d"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-7",
+        "article": "7",
+        "article_label": "Điều 7",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "c",
+        "point_label": "Điểm c",
+        "text": "Cơ quan trung ương của tổ chức chính trị, tổ chức chính trị - xã hội có quyền đề xuất bổ sung vào Danh mục đối với các hệ thống trí tuệ nhân tạo có rủi ro cao được sử dụng trong công tác đánh giá, quy hoạch, luân chuyển, bổ nhiệm nhân sự thuộc hệ thống chính trị để Thủ tướng Chính phủ xem xét, quyết định;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 7. Danh mục và quy trình ban hành hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm c)\nCơ quan trung ương của tổ chức chính trị, tổ chức chính trị - xã hội có quyền đề xuất bổ sung vào Danh mục đối với các hệ thống trí tuệ nhân tạo có rủi ro cao được sử dụng trong công tác đánh giá, quy hoạch, luân chuyển, bổ nhiệm nhân sự thuộc hệ thống chính trị để Thủ tướng Chính phủ xem xét, quyết định;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 6.547895431518555,
+        "bm25_rank": 3,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-7_khoan-2",
+        "point_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-c"
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-7",
+        "article": "7",
+        "article_label": "Điều 7",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "b",
+        "point_label": "Điểm b",
+        "text": "Các bộ, cơ quan ngang bộ trong phạm vi nhiệm vụ, quyền hạn của mình chịu trách nhiệm rà soát, đánh giá và đề xuất, sửa đổi, bổ sung Danh mục đối với hệ thống trí tuệ nhân tạo thuộc lĩnh vực quản lý, gửi Bộ Khoa học và Công nghệ để tổng hợp, thẩm định;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 7. Danh mục và quy trình ban hành hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm b)\nCác bộ, cơ quan ngang bộ trong phạm vi nhiệm vụ, quyền hạn của mình chịu trách nhiệm rà soát, đánh giá và đề xuất, sửa đổi, bổ sung Danh mục đối với hệ thống trí tuệ nhân tạo thuộc lĩnh vực quản lý, gửi Bộ Khoa học và Công nghệ để tổng hợp, thẩm định;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 5.9112653732299805,
+        "bm25_rank": 5,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-7_khoan-2",
+        "point_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-b"
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-6_khoan-3_diem-a",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-6",
+        "article": "6",
+        "article_label": "Điều 6",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Hệ thống trí tuệ nhân tạo được phân loại rủi ro cao là các hệ thống thuộc Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao do Thủ tướng Chính phủ ban hành theo quy định tại khoản 4 Điều 13 của Luật Trí tuệ nhân tạo;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 6. Phân loại hệ thống trí tuệ nhân tạo\nKhoản 3\nĐiểm a)\nHệ thống trí tuệ nhân tạo được phân loại rủi ro cao là các hệ thống thuộc Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao do Thủ tướng Chính phủ ban hành theo quy định tại khoản 4 Điều 13 của Luật Trí tuệ nhân tạo;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 5.874603271484375,
+        "bm25_rank": 8,
+        "dense_rank": 9,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-6_khoan-3",
+        "point_id": "142-2026-ND-CP_dieu-6_khoan-3_diem-a"
+      }
+    ],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": true,
+      "missing_aspects": [],
+      "reason": "Các văn bản pháp luật cung cấp đầy đủ thông tin xác định Thủ tướng Chính phủ là người có thẩm quyền ban hành danh mục hệ thống trí tuệ nhân tạo có rủi ro cao."
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": "Thủ tướng Chính phủ có thẩm quyền xem xét và ban hành Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao [E1][E2][E5].",
+    "completeness_check": {
+      "complete": true,
+      "missing_points": [],
+      "reason": "Câu trả lời đã nêu đầy đủ thẩm quyền ban hành của Thủ tướng Chính phủ và trách nhiệm xây dựng, trình của Bộ Khoa học và Công nghệ theo đúng các tài liệu được cung cấp."
+    },
+    "citation_check": {
+      "valid": true,
+      "cited_evidence_ids": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required_by_deterministic_gate",
+      "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+      "reviewed_claims": []
+    },
+    "revision_count": 1,
+    "citation_revision_count": 0,
+    "final_answer": "Thủ tướng Chính phủ có thẩm quyền xem xét và ban hành Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao [E1][E2][E5]. Bên cạnh đó, Bộ Khoa học và Công nghệ có trách nhiệm chủ trì, phối hợp với các bộ, cơ quan ngang bộ và các tổ chức liên quan tổng hợp, xây dựng và trình Thủ tướng Chính phủ ban hành, sửa đổi, bổ sung danh mục này [E2].",
+    "final_status": "success",
+    "run_id": "agentic-v1-eval002",
+    "initial_top5": [
+      "142-2026-ND-CP_dieu-8_khoan-5",
+      "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+      "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+      "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+      "142-2026-ND-CP_dieu-6_khoan-3_diem-a"
+    ],
+    "expanded_candidates": [],
+    "final_top5": [
+      "142-2026-ND-CP_dieu-8_khoan-5",
+      "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+      "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+      "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+      "142-2026-ND-CP_dieu-6_khoan-3_diem-a"
+    ],
+    "retrieval_calls": [
+      {
+        "call_number": 1,
+        "round": 0,
+        "query": "Ai có thẩm quyền ban hành danh mục hệ thống trí tuệ nhân tạo có rủi ro cao?",
+        "sub_query": false,
+        "bm25_depth": 20,
+        "dense_depth": 20,
+        "candidate_chunk_ids": [
+          "142-2026-ND-CP_dieu-7_khoan-1_diem-a",
+          "142-2026-ND-CP_dieu-7_khoan-1_diem-b",
+          "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+          "142-2026-ND-CP_dieu-7_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+          "142-2026-ND-CP_dieu-8_khoan-5",
+          "142-2026-ND-CP_dieu-9_khoan-1_diem-a",
+          "142-2026-ND-CP_dieu-6_khoan-3_diem-a",
+          "142-2026-ND-CP_dieu-8_khoan-4",
+          "142-2026-ND-CP_dieu-8_khoan-3",
+          "134-2025-QH15_dieu-13_khoan-4",
+          "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+          "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+          "142-2026-ND-CP_dieu-11_khoan-1_diem-c",
+          "142-2026-ND-CP_dieu-41_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-13_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+          "134-2025-QH15_dieu-13_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+          "142-2026-ND-CP_dieu-15_khoan-4",
+          "142-2026-ND-CP_dieu-14_khoan-1",
+          "134-2025-QH15_dieu-10_khoan-3",
+          "142-2026-ND-CP_dieu-8_khoan-2_diem-d",
+          "142-2026-ND-CP_dieu-8_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-15_khoan-6",
+          "142-2026-ND-CP_dieu-13_khoan-3"
+        ],
+        "candidate_count": 26,
+        "reranker_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-5",
+            "rank": 1,
+            "reranker_score": 7.05256462097168
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+            "rank": 2,
+            "reranker_score": 6.695451736450195
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+            "rank": 3,
+            "reranker_score": 6.547895431518555
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+            "rank": 4,
+            "reranker_score": 5.9112653732299805
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-6_khoan-3_diem-a",
+            "rank": 5,
+            "reranker_score": 5.874603271484375
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-a",
+            "rank": 6,
+            "reranker_score": 5.733981132507324
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-13_khoan-4",
+            "rank": 7,
+            "reranker_score": 5.351810455322266
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-41_khoan-2_diem-a",
+            "rank": 8,
+            "reranker_score": 4.9270758628845215
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-9_khoan-1_diem-a",
+            "rank": 9,
+            "reranker_score": 4.585637092590332
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-4",
+            "rank": 10,
+            "reranker_score": 4.125397682189941
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-3",
+            "rank": 11,
+            "reranker_score": 4.004292011260986
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-1_diem-c",
+            "rank": 12,
+            "reranker_score": 3.871952533721924
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-3",
+            "rank": 13,
+            "reranker_score": 3.714515209197998
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+            "rank": 14,
+            "reranker_score": 3.7106175422668457
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+            "rank": 15,
+            "reranker_score": 3.4635252952575684
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-1_diem-b",
+            "rank": 16,
+            "reranker_score": 3.43328857421875
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+            "rank": 17,
+            "reranker_score": 3.234567880630493
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-3",
+            "rank": 18,
+            "reranker_score": 3.1178054809570312
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-1_diem-a",
+            "rank": 19,
+            "reranker_score": 2.8487205505371094
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-13_khoan-2_diem-a",
+            "rank": 20,
+            "reranker_score": 2.5611777305603027
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-a",
+            "rank": 21,
+            "reranker_score": 2.5076215267181396
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-d",
+            "rank": 22,
+            "reranker_score": 2.195068597793579
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-a",
+            "rank": 23,
+            "reranker_score": 1.8657293319702148
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-4",
+            "rank": 24,
+            "reranker_score": 1.775799036026001
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+            "rank": 25,
+            "reranker_score": 1.2811230421066284
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+            "rank": 26,
+            "reranker_score": 1.1563129425048828
+          }
+        ],
+        "top5_chunk_ids": [
+          "142-2026-ND-CP_dieu-8_khoan-5",
+          "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+          "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+          "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+          "142-2026-ND-CP_dieu-6_khoan-3_diem-a"
+        ],
+        "candidate_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-1_diem-a",
+            "bm25_rank": 1,
+            "dense_rank": 12
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-1_diem-b",
+            "bm25_rank": 2,
+            "dense_rank": 13
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-c",
+            "bm25_rank": 3,
+            "dense_rank": 7
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-a",
+            "bm25_rank": 4,
+            "dense_rank": 8
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-b",
+            "bm25_rank": 5,
+            "dense_rank": 5
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-5",
+            "bm25_rank": 6,
+            "dense_rank": 1
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-9_khoan-1_diem-a",
+            "bm25_rank": 7,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-6_khoan-3_diem-a",
+            "bm25_rank": 8,
+            "dense_rank": 9
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-4",
+            "bm25_rank": 9,
+            "dense_rank": 2
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-3",
+            "bm25_rank": 10,
+            "dense_rank": 3
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-13_khoan-4",
+            "bm25_rank": 11,
+            "dense_rank": 15
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+            "bm25_rank": 12,
+            "dense_rank": 6
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-d",
+            "bm25_rank": 13,
+            "dense_rank": 4
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-1_diem-c",
+            "bm25_rank": 14,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-41_khoan-2_diem-a",
+            "bm25_rank": 15,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-a",
+            "bm25_rank": 16,
+            "dense_rank": 16
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-23_khoan-3_diem-c",
+            "bm25_rank": 17,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-13_khoan-2_diem-a",
+            "bm25_rank": 18,
+            "dense_rank": 17
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+            "bm25_rank": 19,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-4",
+            "bm25_rank": 20,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 10
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 11
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-d",
+            "bm25_rank": null,
+            "dense_rank": 14
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 18
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-6",
+            "bm25_rank": null,
+            "dense_rank": 19
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 20
+          }
+        ]
+      }
+    ],
+    "llm_calls": [
+      {
+        "call_number": 1,
+        "stage": "coverage_check"
+      },
+      {
+        "call_number": 2,
+        "stage": "answer_generation"
+      },
+      {
+        "call_number": 3,
+        "stage": "completeness_check"
+      },
+      {
+        "call_number": 4,
+        "stage": "answer_revision"
+      },
+      {
+        "call_number": 5,
+        "stage": "completeness_check"
+      }
+    ],
+    "expansion_used": false,
+    "revision_used": true,
+    "citation_revision_used": false,
+    "execution_error": null,
+    "transitions": [
+      "initialized",
+      "initial_retrieval",
+      "coverage_check",
+      "answer_generation",
+      "completeness_check",
+      "answer_revision",
+      "completeness_check",
+      "citation_check",
+      "final:success"
+    ]
+  },
+  "timestamp": "2026-09-05T14:04:59.396119+00:00"
+}

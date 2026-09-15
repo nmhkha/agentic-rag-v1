@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-09-12T08:58:07.319581+00:00",
+  "baseline_file": "medical_screen_integrity_baseline_v1.json",
+  "baseline_sha256": "fc039cafd984bb69e538bd30d7b9a7bea739d2d2c181e283ec434a44720b977e",
+  "outside_namespace_file_count": 26871,
+  "changed_outside_namespace": [],
+  "added_outside_namespace": [],
+  "symlink_targets_unchanged": true,
+  "protected_substantive_files": {
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/evidence_anchor_corrections_v1.json": {
+      "before": "ed52077b2c86edd6b6f602afce1f68f585f9e02ac978615d2b1a9e0816c063ed",
+      "after": "ed52077b2c86edd6b6f602afce1f68f585f9e02ac978615d2b1a9e0816c063ed"
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_substantive_locked_v1.jsonl": {
+      "before": "f55ae02a845ab7c2f2dcf8b59a5574e64465cb6a071347868137be8a0576f1dc",
+      "after": "f55ae02a845ab7c2f2dcf8b59a5574e64465cb6a071347868137be8a0576f1dc"
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/authored_specs_v1.py": {
+      "before": "9e7f8a0c161eb6f2c3592c6b63dbf2e43e0c23972aa0caa2f6d888efbee771b4",
+      "after": "9e7f8a0c161eb6f2c3592c6b63dbf2e43e0c23972aa0caa2f6d888efbee771b4"
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl": {
+      "before": "53801d252828b69efd781a9091d0927120783627c32a98833666910085ace770",
+      "after": "53801d252828b69efd781a9091d0927120783627c32a98833666910085ace770"
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/reviewer_b_corpus_audit_v1.json": {
+      "before": "fa9c76af14e3f6b32c59ba4b858dc64cfdd28ec93295b69bcd11faad4a34e281",
+      "after": "fa9c76af14e3f6b32c59ba4b858dc64cfdd28ec93295b69bcd11faad4a34e281"
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_structural_validation_v1.json": {
+      "before": "ac412cbaf8232168197937155a60ccd10e71164f4a98bdcf41b094de17d70223",
+      "after": "ac412cbaf8232168197937155a60ccd10e71164f4a98bdcf41b094de17d70223"
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_pre_anchor_correction_v1.jsonl": {
+      "before": "612fa1513574628b628f9e688e931968a4cb849560f311d896c3c55296a4e59d",
+      "after": "612fa1513574628b628f9e688e931968a4cb849560f311d896c3c55296a4e59d"
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/build_b_annotations_v1.py": {
+      "before": "c04004f032f41274cfe4dd4d76924b520587832732fa20850118f702c05282fc",
+      "after": "c04004f032f41274cfe4dd4d76924b520587832732fa20850118f702c05282fc"
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/substantive_lock_v1.json": {
+      "before": "2730ea87064bcbb48089d2ab1e99589c70974b61200386230bb125fff95ca451",
+      "after": "2730ea87064bcbb48089d2ab1e99589c70974b61200386230bb125fff95ca451"
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/scoped_corpus_reviews_v1.json": {
+      "before": "2cf12db9a28bcc6ea64f0a1f78db41a7e0183e74cf262b0436471f0582d45466",
+      "after": "2cf12db9a28bcc6ea64f0a1f78db41a7e0183e74cf262b0436471f0582d45466"
+    }
+  },
+  "substantive_bytes_unchanged": true,
+  "input_reference_sha256": "3d1b8b0368fc0eebc1f8c08dd66daf123f0ceb94deaf40e6ed27f1c2fa4b9006",
+  "input_packet_sha256": "dace0b18b2bc5975e2c63e223536e9d4316735241f3d4b3a5461e7347e132342",
+  "custodian_artifacts_opened_for_semantic_read": false
+}

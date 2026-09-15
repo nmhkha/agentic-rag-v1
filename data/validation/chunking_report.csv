@@ -1,0 +1,4 @@
+﻿document_id,article_count,chunk_count,article_chunk_count,article_intro_chunk_count,clause_chunk_count,point_chunk_count,minimum_chunk_characters,maximum_chunk_characters,average_chunk_characters,invalid_chunk_count,invalid_chunk_ids,warning_chunk_count,warning_chunk_ids,duplicate_chunk_ids,status
+05-2026-TT-BKHCN,5,28,1,1,9,17,58,901,245.64,0,,0,,,success
+134-2025-QH15,35,206,3,1,135,67,36,593,208.36,0,,0,,,success
+142-2026-ND-CP,46,503,1,6,167,329,11,954,194.50,0,,1,142-2026-ND-CP_dieu-32_khoan-1_diem-a,,needs_review

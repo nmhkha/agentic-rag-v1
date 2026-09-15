@@ -1,0 +1,65 @@
+{
+  "query": "Ai chịu trách nhiệm khi hệ thống AI gây sự cố",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "retrieved_chunk_ids": [
+    "134-2025-QH15_dieu-12_khoan-1",
+    "134-2025-QH15_dieu-12_khoan-5",
+    "142-2026-ND-CP_dieu-42_khoan-5",
+    "134-2025-QH15_dieu-12_khoan-2_diem-a",
+    "134-2025-QH15_dieu-29_khoan-2"
+  ],
+  "reranker_scores": [
+    4.26224946975708,
+    2.90352201461792,
+    2.6596503257751465,
+    2.4812722206115723,
+    2.4388720989227295
+  ],
+  "formatted_evidence_ids": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5"
+  ],
+  "model": "gemini-2.5-flash",
+  "provider": "openai-compatible",
+  "prompt_version": "legal-rag-prompt-v0",
+  "raw_model_response": "{\n  \"answer\": \"Khi hệ thống trí tuệ nhân tạo (AI) gây sự cố, các bên sau đây có trách nhiệm: \\n\\n1.  **Trách nhiệm chung về an toàn và khắc phục sự cố**: Nhà phát triển, nhà cung cấp, bên triển khai và người sử dụng hệ thống AI có trách nhiệm bảo đảm an toàn, an ninh, độ tin cậy, đồng thời kịp thời phát hiện và khắc phục sự cố có khả năng gây tổn hại đến con người, tài sản, dữ liệu hoặc trật tự xã hội [E1]. Đặc biệt, nhà phát triển và nhà cung cấp phải khẩn trương áp dụng biện pháp kỹ thuật để khắc phục, tạm dừng hoặc thu hồi hệ thống, đồng thời thông báo cho cơ quan có thẩm quyền [E4].\\n2.  **Trách nhiệm bồi thường thiệt hại (đối với hệ thống AI rủi ro cao)**: Trường hợp hệ thống AI có rủi ro cao được quản lý, vận hành và sử dụng đúng quy định nhưng vẫn phát sinh thiệt hại, bên triển khai phải chịu trách nhiệm bồi thường cho người bị thiệt hại. Sau khi bồi thường, bên triển khai có thể yêu cầu nhà cung cấp, nhà phát triển hoặc các bên liên quan hoàn trả khoản tiền bồi thường nếu có thỏa thuận giữa các bên [E5].\\n3.  **Trách nhiệm của cơ quan nhà nước**: Chính phủ quy định việc báo cáo và trách nhiệm của các cơ quan, tổ chức, cá nhân có liên quan phù hợp với mức độ nghiêm trọng của sự cố và phạm vi ảnh hưởng của hệ thống AI [E2]. Một cơ quan có thẩm quyền sẽ chủ trì xác minh, xử lý theo quy định của pháp luật đối với sự cố AI nghiêm trọng có dấu hiệu ảnh hưởng đến an ninh quốc gia, trật tự, an toàn xã hội; đồng thời phối hợp với Bộ Khoa học và Công nghệ và cơ quan có liên quan trong việc xác định nguyên nhân và hướng dẫn biện pháp khắc phục theo thẩm quyền [E3].\",\n  \"used_evidence_ids\": [\n    \"E1\",\n    \"E4\",\n    \"E5\",\n    \"E2\",\n    \"E3\"\n  ],\n  \"insufficient_evidence\": false,\n  \"missing_information\": []\n}",
+  "parsed_result": {
+    "answer": "Khi hệ thống trí tuệ nhân tạo (AI) gây sự cố, các bên sau đây có trách nhiệm: \n\n1.  **Trách nhiệm chung về an toàn và khắc phục sự cố**: Nhà phát triển, nhà cung cấp, bên triển khai và người sử dụng hệ thống AI có trách nhiệm bảo đảm an toàn, an ninh, độ tin cậy, đồng thời kịp thời phát hiện và khắc phục sự cố có khả năng gây tổn hại đến con người, tài sản, dữ liệu hoặc trật tự xã hội [E1]. Đặc biệt, nhà phát triển và nhà cung cấp phải khẩn trương áp dụng biện pháp kỹ thuật để khắc phục, tạm dừng hoặc thu hồi hệ thống, đồng thời thông báo cho cơ quan có thẩm quyền [E4].\n2.  **Trách nhiệm bồi thường thiệt hại (đối với hệ thống AI rủi ro cao)**: Trường hợp hệ thống AI có rủi ro cao được quản lý, vận hành và sử dụng đúng quy định nhưng vẫn phát sinh thiệt hại, bên triển khai phải chịu trách nhiệm bồi thường cho người bị thiệt hại. Sau khi bồi thường, bên triển khai có thể yêu cầu nhà cung cấp, nhà phát triển hoặc các bên liên quan hoàn trả khoản tiền bồi thường nếu có thỏa thuận giữa các bên [E5].\n3.  **Trách nhiệm của cơ quan nhà nước**: Chính phủ quy định việc báo cáo và trách nhiệm của các cơ quan, tổ chức, cá nhân có liên quan phù hợp với mức độ nghiêm trọng của sự cố và phạm vi ảnh hưởng của hệ thống AI [E2]. Một cơ quan có thẩm quyền sẽ chủ trì xác minh, xử lý theo quy định của pháp luật đối với sự cố AI nghiêm trọng có dấu hiệu ảnh hưởng đến an ninh quốc gia, trật tự, an toàn xã hội; đồng thời phối hợp với Bộ Khoa học và Công nghệ và cơ quan có liên quan trong việc xác định nguyên nhân và hướng dẫn biện pháp khắc phục theo thẩm quyền [E3].",
+    "used_evidence_ids": [
+      "E1",
+      "E4",
+      "E5",
+      "E2",
+      "E3"
+    ],
+    "insufficient_evidence": false,
+    "missing_information": []
+  },
+  "citation_validation": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E1",
+      "E4",
+      "E5",
+      "E2",
+      "E3"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "duplicate_citations": [],
+    "errors": []
+  },
+  "timestamp": "2026-08-24T08:42:41.379660+00:00"
+}

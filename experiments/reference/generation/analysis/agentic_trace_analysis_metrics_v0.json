@@ -1,0 +1,1250 @@
+{
+  "analysis_version": "phase-4e-agentic-trace-analysis-v0",
+  "status": "PASS",
+  "read_only_analysis": true,
+  "query_count": 31,
+  "required_point_count": 102,
+  "answer_completeness": {
+    "standard_macro": 0.6752688172043011,
+    "standard_supported_points": 60,
+    "standard_micro": 0.5882352941176471,
+    "agentic_macro": 0.7236559139784946,
+    "agentic_supported_points": 65,
+    "agentic_micro": 0.6372549019607843,
+    "macro_delta": 0.048387096774193505,
+    "micro_delta": 0.04901960784313719,
+    "gained_required_points": 6,
+    "lost_required_points": 1,
+    "net_required_point_gain": 5
+  },
+  "benchmark_reconciliation": {
+    "answer_completeness": {
+      "standard_macro": 0.6752688172043011,
+      "agentic_macro": 0.7236559139784946,
+      "raw_delta": 0.048387096774193505,
+      "oriented_improvement": 0.048387096774193505,
+      "query_denominator": 31
+    },
+    "citation_completeness": {
+      "standard_macro": 0.6752688172043011,
+      "agentic_macro": 0.7236559139784946,
+      "raw_delta": 0.048387096774193505,
+      "oriented_improvement": 0.048387096774193505,
+      "query_denominator": 31
+    },
+    "citation_correctness": {
+      "standard_macro": 0.9612903225806452,
+      "agentic_macro": 0.9827956989247312,
+      "raw_delta": 0.021505376344086002,
+      "oriented_improvement": 0.021505376344086002,
+      "query_denominator": 31
+    },
+    "groundedness": {
+      "standard_macro": 0.9612903225806452,
+      "agentic_macro": 0.9666666666666667,
+      "raw_delta": 0.005376344086021501,
+      "oriented_improvement": 0.005376344086021501,
+      "query_denominator": 31
+    },
+    "unsupported_claim_rate": {
+      "standard_macro": 0.03870967741935484,
+      "agentic_macro": 0.03333333333333333,
+      "raw_delta": -0.0053763440860215075,
+      "oriented_improvement": 0.0053763440860215075,
+      "query_denominator": 31
+    }
+  },
+  "additional_micro_metrics": {
+    "standard": {
+      "citation_completeness": 0.5882352941176471,
+      "citation_supported_point_count": 60,
+      "citation_correctness": 0.9651162790697675,
+      "groundedness": 0.9651162790697675,
+      "unsupported_claim_rate": 0.03488372093023256,
+      "claim_counts": {
+        "claim_count": 86,
+        "grounded_claim_count": 83,
+        "unsupported_claim_count": 3,
+        "cited_claim_count": 86,
+        "correctly_cited_claim_count": 83
+      }
+    },
+    "agentic": {
+      "citation_completeness": 0.6372549019607843,
+      "citation_supported_point_count": 65,
+      "citation_correctness": 0.9787234042553191,
+      "groundedness": 0.9587628865979382,
+      "unsupported_claim_rate": 0.041237113402061855,
+      "claim_counts": {
+        "claim_count": 97,
+        "grounded_claim_count": 93,
+        "unsupported_claim_count": 4,
+        "cited_claim_count": 94,
+        "correctly_cited_claim_count": 92
+      }
+    }
+  },
+  "summary_reconciliation_status": "PASS",
+  "summary_omissions": [
+    "Original Agentic Markdown and comparison_vs_standard_rag omit Answer Completeness; recovered from underlying records.",
+    "Original Agentic summary has no micro Answer Completeness; computed as 65/102."
+  ],
+  "intervention_profiles": {
+    "none": 19,
+    "expansion_only": 5,
+    "answer_revision_only": 5,
+    "citation_revision_only": 0,
+    "multiple": 2
+  },
+  "outcomes": {
+    "improved": 5,
+    "improved_with_tradeoff": 0,
+    "no_change": 23,
+    "regressed": 3,
+    "inconclusive": 0
+  },
+  "intervention_outcome_matrix": {
+    "none": {
+      "queries": 19,
+      "improved": 0,
+      "improved_with_tradeoff": 0,
+      "no_change": 18,
+      "regressed": 1,
+      "inconclusive": 0
+    },
+    "expansion_only": {
+      "queries": 5,
+      "improved": 2,
+      "improved_with_tradeoff": 0,
+      "no_change": 2,
+      "regressed": 1,
+      "inconclusive": 0
+    },
+    "answer_revision_only": {
+      "queries": 5,
+      "improved": 2,
+      "improved_with_tradeoff": 0,
+      "no_change": 3,
+      "regressed": 0,
+      "inconclusive": 0
+    },
+    "citation_revision_only": {
+      "queries": 0,
+      "improved": 0,
+      "improved_with_tradeoff": 0,
+      "no_change": 0,
+      "regressed": 0,
+      "inconclusive": 0
+    },
+    "multiple": {
+      "queries": 2,
+      "improved": 1,
+      "improved_with_tradeoff": 0,
+      "no_change": 0,
+      "regressed": 1,
+      "inconclusive": 0
+    }
+  },
+  "expansion": {
+    "queries": 6,
+    "without_expansion": 25,
+    "query_ids": [
+      "eval001",
+      "eval005a",
+      "eval006",
+      "eval013",
+      "eval014",
+      "eval016"
+    ],
+    "average_subqueries": 1.1666666666666667,
+    "final_top5_changed": 1,
+    "final_top5_unchanged": 5,
+    "membership_changed": 1,
+    "average_new_final_chunks_among_expanded": 0.16666666666666666,
+    "average_new_final_chunks_all_queries": 0.03225806451612903,
+    "gold_supporting_chunks_added_count": 0,
+    "gold_supporting_chunks_removed_count": 0,
+    "outcomes": {
+      "improved": 2,
+      "improved_with_tradeoff": 0,
+      "no_change": 2,
+      "regressed": 2,
+      "inconclusive": 0
+    }
+  },
+  "answer_revision": {
+    "queries": 7,
+    "query_ids": [
+      "eval002",
+      "eval005b",
+      "eval010",
+      "eval013",
+      "eval022",
+      "eval026",
+      "eval029"
+    ],
+    "draft_to_final_changed": 7,
+    "initial_checker_payloads_retained": 0,
+    "directly_confirmed_benchmark_pre_post_effects": 0,
+    "exact_standard_answer_draft_proxy_query_ids": [
+      "eval002"
+    ],
+    "outcomes": {
+      "improved": 3,
+      "improved_with_tradeoff": 0,
+      "no_change": 3,
+      "regressed": 1,
+      "inconclusive": 0
+    }
+  },
+  "citation_revision": {
+    "queries": 1,
+    "query_ids": [
+      "eval005b"
+    ],
+    "final_validator_pass": 1,
+    "original_validator_payload_retained": 0,
+    "outcomes": {
+      "improved": 1,
+      "improved_with_tradeoff": 0,
+      "no_change": 0,
+      "regressed": 0,
+      "inconclusive": 0
+    }
+  },
+  "self_check_calibration": {
+    "internal_complete_and_benchmark_complete": 13,
+    "internal_complete_but_benchmark_incomplete": 17,
+    "internal_incomplete_but_benchmark_complete": 1,
+    "internal_incomplete_and_benchmark_incomplete": 0,
+    "success_status_but_benchmark_incomplete": 15,
+    "potential_false_success_query_ids": [
+      "eval001",
+      "eval004",
+      "eval005a",
+      "eval005b",
+      "eval007",
+      "eval008",
+      "eval011",
+      "eval013",
+      "eval014",
+      "eval016",
+      "eval018",
+      "eval022",
+      "eval023",
+      "eval025",
+      "eval027",
+      "eval028",
+      "eval030"
+    ],
+    "success_status_but_benchmark_incomplete_query_ids": [
+      "eval004",
+      "eval005a",
+      "eval005b",
+      "eval007",
+      "eval008",
+      "eval011",
+      "eval013",
+      "eval016",
+      "eval018",
+      "eval022",
+      "eval023",
+      "eval025",
+      "eval027",
+      "eval028",
+      "eval030"
+    ],
+    "internal_incomplete_but_benchmark_complete_query_ids": [
+      "eval010"
+    ],
+    "last_completeness_check_precedes_citation_revision_query_ids": [
+      "eval005b"
+    ],
+    "status_breakdown": {
+      "incomplete_answer": {
+        "queries": 1,
+        "benchmark_incomplete": 0,
+        "citation_correctness_lt_1": 0,
+        "groundedness_lt_1": 0,
+        "query_ids": [
+          "eval010"
+        ]
+      },
+      "insufficient_evidence": {
+        "queries": 2,
+        "benchmark_incomplete": 2,
+        "citation_correctness_lt_1": 0,
+        "groundedness_lt_1": 1,
+        "query_ids": [
+          "eval001",
+          "eval014"
+        ]
+      },
+      "success": {
+        "queries": 28,
+        "benchmark_incomplete": 15,
+        "citation_correctness_lt_1": 2,
+        "groundedness_lt_1": 2,
+        "query_ids": [
+          "eval002",
+          "eval003",
+          "eval004",
+          "eval005a",
+          "eval005b",
+          "eval006",
+          "eval007",
+          "eval008",
+          "eval009",
+          "eval011",
+          "eval012",
+          "eval013",
+          "eval015",
+          "eval016",
+          "eval017",
+          "eval018",
+          "eval019",
+          "eval020",
+          "eval021",
+          "eval022",
+          "eval023",
+          "eval024",
+          "eval025",
+          "eval026",
+          "eval027",
+          "eval028",
+          "eval029",
+          "eval030"
+        ]
+      }
+    }
+  },
+  "efficiency": {
+    "retrieval_call_statistics": {
+      "mean": 1.2258064516129032,
+      "median": 1,
+      "max": 3,
+      "total": 38,
+      "distribution": {
+        "1": 25,
+        "2": 5,
+        "3": 1
+      }
+    },
+    "average_retrieval_calls": 1.2258064516129032,
+    "median_retrieval_calls": 1,
+    "max_retrieval_calls": 3,
+    "production_llm_call_statistics": {
+      "mean": 3.4838709677419355,
+      "median": 3,
+      "max": 6,
+      "total": 108,
+      "distribution": {
+        "3": 24,
+        "5": 6,
+        "6": 1
+      }
+    },
+    "average_production_llm_calls": 3.4838709677419355,
+    "median_production_llm_calls": 3,
+    "max_production_llm_calls": 6,
+    "by_profile": {
+      "none": {
+        "queries": 19,
+        "retrieval_calls": {
+          "mean": 1,
+          "median": 1,
+          "max": 1,
+          "total": 19,
+          "distribution": {
+            "1": 19
+          }
+        },
+        "production_llm_calls": {
+          "mean": 3,
+          "median": 3,
+          "max": 3,
+          "total": 57,
+          "distribution": {
+            "3": 19
+          }
+        }
+      },
+      "expansion_only": {
+        "queries": 5,
+        "retrieval_calls": {
+          "mean": 2.2,
+          "median": 2,
+          "max": 3,
+          "total": 11,
+          "distribution": {
+            "2": 4,
+            "3": 1
+          }
+        },
+        "production_llm_calls": {
+          "mean": 3,
+          "median": 3,
+          "max": 3,
+          "total": 15,
+          "distribution": {
+            "3": 5
+          }
+        }
+      },
+      "answer_revision_only": {
+        "queries": 5,
+        "retrieval_calls": {
+          "mean": 1,
+          "median": 1,
+          "max": 1,
+          "total": 5,
+          "distribution": {
+            "1": 5
+          }
+        },
+        "production_llm_calls": {
+          "mean": 5,
+          "median": 5,
+          "max": 5,
+          "total": 25,
+          "distribution": {
+            "5": 5
+          }
+        }
+      },
+      "citation_revision_only": {
+        "queries": 0,
+        "retrieval_calls": {
+          "mean": null,
+          "median": null,
+          "max": null,
+          "total": 0,
+          "distribution": {}
+        },
+        "production_llm_calls": {
+          "mean": null,
+          "median": null,
+          "max": null,
+          "total": 0,
+          "distribution": {}
+        }
+      },
+      "multiple": {
+        "queries": 2,
+        "retrieval_calls": {
+          "mean": 1.5,
+          "median": 1.5,
+          "max": 2,
+          "total": 3,
+          "distribution": {
+            "1": 1,
+            "2": 1
+          }
+        },
+        "production_llm_calls": {
+          "mean": 5.5,
+          "median": 5.5,
+          "max": 6,
+          "total": 11,
+          "distribution": {
+            "5": 1,
+            "6": 1
+          }
+        }
+      }
+    },
+    "production_llm_stage_counts": {
+      "coverage_check": 31,
+      "answer_generation": 31,
+      "completeness_check": 38,
+      "answer_revision": 7,
+      "citation_revision": 1
+    },
+    "additional_evidence_merge_rerank_operations": 6,
+    "standard_configured_calls_per_query": {
+      "retrieval_calls": 1,
+      "answer_generation_llm_calls": 1,
+      "basis": "frozen Standard runner performs one retrieve and one answer-generation call; evaluator excluded; transport retries unobserved"
+    },
+    "overhead_vs_standard_logical_calls": {
+      "retrieval_calls": 7,
+      "production_llm_calls": 77,
+      "retrieval_ratio": 1.2258064516129032,
+      "production_llm_ratio": 3.4838709677419355
+    },
+    "accounting_note": "Logical production controller calls only, excluding frozen judge/evaluation attempts. Expansion merge reranks are separate from retrieval-call totals. Transport retries, token counts and cost are not measured by these traces."
+  },
+  "rates": {
+    "expansion_rate": 0.1935483870967742,
+    "answer_revision_rate": 0.22580645161290322,
+    "citation_revision_rate": 0.03225806451612903,
+    "semantic_citation_check_rate": 0.0
+  },
+  "budget_compliance": {
+    "status": "PASS",
+    "configured": {
+      "max_retrieval_expansions": 1,
+      "max_sub_queries": 3,
+      "max_answer_revisions": 1,
+      "max_citation_revisions": 1,
+      "max_llm_calls": 6
+    },
+    "violations": [],
+    "maximum_observed": {
+      "retrieval_expansion_rounds": 1,
+      "subqueries": 2,
+      "answer_revisions": 1,
+      "citation_revisions": 1,
+      "production_llm_calls": 6
+    }
+  },
+  "failure_response_alignment": {
+    "evidence_expansion": {
+      "target_present": 5,
+      "target_absent": 1,
+      "query_ids": [
+        "eval001",
+        "eval005a",
+        "eval006",
+        "eval013",
+        "eval014",
+        "eval016"
+      ]
+    },
+    "answer_revision": {
+      "target_present": 3,
+      "target_absent": 4,
+      "query_ids": [
+        "eval002",
+        "eval005b",
+        "eval010",
+        "eval013",
+        "eval022",
+        "eval026",
+        "eval029"
+      ]
+    },
+    "citation_revision": {
+      "target_present": 0,
+      "target_absent": 1,
+      "query_ids": [
+        "eval005b"
+      ]
+    }
+  },
+  "failure_point_gain_loss": {
+    "retrieval_miss": {
+      "standard_point_count": 16,
+      "gained_points": 0,
+      "lost_points": 0
+    },
+    "evidence_coverage": {
+      "standard_point_count": 17,
+      "gained_points": 2,
+      "lost_points": 0
+    },
+    "answer_generation": {
+      "standard_point_count": 9,
+      "gained_points": 4,
+      "lost_points": 0
+    },
+    "citation": {
+      "standard_point_count": 4,
+      "gained_points": 0,
+      "lost_points": 0
+    },
+    "none": {
+      "standard_point_count": 56,
+      "gained_points": 0,
+      "lost_points": 1
+    }
+  },
+  "rescued_queries": {
+    "fully": [
+      "eval002"
+    ],
+    "partially": [
+      "eval005b",
+      "eval014",
+      "eval022"
+    ]
+  },
+  "no_observed_gain_intervention_query_ids": [
+    "eval001",
+    "eval005a",
+    "eval006",
+    "eval010",
+    "eval013",
+    "eval026",
+    "eval029"
+  ],
+  "unchanged_quality_intervention_query_ids": [
+    "eval005a",
+    "eval006",
+    "eval010",
+    "eval026",
+    "eval029"
+  ],
+  "regression_query_ids": [
+    "eval001",
+    "eval013",
+    "eval027"
+  ],
+  "network_api_calls": "NONE",
+  "causal_claims": "NOT ESTABLISHED — observational trace analysis only",
+  "gold_usage": "post-hoc evaluator-side only; no production module imported or executed",
+  "tests": {
+    "status": "PASS",
+    "count": 20,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 /tmp/test_phase4e_analysis.py",
+    "output": "test_aggregate_reconciliation (__main__.TraceAnalysisTests.test_aggregate_reconciliation) ... ok\ntest_bad_summary_is_rejected (__main__.TraceAnalysisTests.test_bad_summary_is_rejected) ... ok\ntest_budget_and_real_call_accounting (__main__.TraceAnalysisTests.test_budget_and_real_call_accounting) ... ok\ntest_duplicate_query_detection (__main__.TraceAnalysisTests.test_duplicate_query_detection) ... ok\ntest_equality_tolerance (__main__.TraceAnalysisTests.test_equality_tolerance) ... ok\ntest_gained_lost_points (__main__.TraceAnalysisTests.test_gained_lost_points) ... ok\ntest_intervention_profiles (__main__.TraceAnalysisTests.test_intervention_profiles) ... ok\ntest_micro_claim_metrics_need_distinct_denominators (__main__.TraceAnalysisTests.test_micro_claim_metrics_need_distinct_denominators) ... ok\ntest_mismatched_query_id (__main__.TraceAnalysisTests.test_mismatched_query_id) ... ok\ntest_mismatched_query_text (__main__.TraceAnalysisTests.test_mismatched_query_text) ... ok\ntest_mismatched_trace_run_id (__main__.TraceAnalysisTests.test_mismatched_trace_run_id) ... ok\ntest_missing_intermediate_check_is_not_invented (__main__.TraceAnalysisTests.test_missing_intermediate_check_is_not_invented) ... ok\ntest_missing_trace_detection (__main__.TraceAnalysisTests.test_missing_trace_detection) ... ok\ntest_multiple_interventions (__main__.TraceAnalysisTests.test_multiple_interventions) ... ok\ntest_outcome_classification (__main__.TraceAnalysisTests.test_outcome_classification) ... ok\ntest_production_llm_accounting_excludes_evaluator (__main__.TraceAnalysisTests.test_production_llm_accounting_excludes_evaluator) ... ok\ntest_production_llm_count_mismatch (__main__.TraceAnalysisTests.test_production_llm_count_mismatch) ... ok\ntest_source_readonly_integrity (__main__.TraceAnalysisTests.test_source_readonly_integrity) ... ok\ntest_success_vs_benchmark_calibration (__main__.TraceAnalysisTests.test_success_vs_benchmark_calibration) ... ok\ntest_unsupported_claim_rate_orientation (__main__.TraceAnalysisTests.test_unsupported_claim_rate_orientation) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.249s\n\nOK\n"
+  },
+  "inputs": {
+    "generation_ground_truth": "data/evaluation/generation/generation_eval_v1_verified.json",
+    "standard_rag_result": "data/evaluation/generation/standard_rag_eval_v0.jsonl",
+    "retrieval_benchmark": "data/evaluation/retrieval_eval.jsonl",
+    "corpus": "data/versions/corpus-v0.1/chunks.jsonl",
+    "agentic_results": "data/evaluation/generation/agentic_rag_eval_v1_agentic-v1.jsonl",
+    "agentic_metrics_manifest": "data/evaluation/generation/agentic_rag_metrics_v1_agentic-v1.json",
+    "agentic_traces": "data/rag/traces/agentic-rag-v1/agentic-v1/",
+    "phase4a_points": "data/evaluation/generation/failure_analysis_points_v0.jsonl",
+    "phase4a_queries": "data/evaluation/generation/failure_analysis_queries_v0.json",
+    "phase4a_metrics": "data/evaluation/generation/failure_analysis_metrics_v0.json"
+  },
+  "input_integrity": {
+    "status": "PASS",
+    "trace_count": 31,
+    "embedded_disk_trace_exact_match": 31,
+    "standard_count": 31,
+    "agentic_count": 31,
+    "gold_query_count": 31,
+    "phase4a_query_count": 31,
+    "required_points": 102,
+    "duplicates": 0,
+    "missing_traces": 0,
+    "malformed_traces": 0,
+    "text_mismatches": 0,
+    "initial_top5_match_standard_count": 31,
+    "dataset_version": "generation-eval-v1",
+    "dataset_status": "verified",
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "legal-rag-prompt-v0",
+    "retrieval_config": {
+      "bm25": "BM25-simple-v0",
+      "bm25_depth": 20,
+      "dense": "dense-jina-v3-v0",
+      "dense_depth": 20,
+      "candidate_merge": "union_deduplicate_by_chunk_id",
+      "fusion": null,
+      "reranker": "BAAI/bge-reranker-v2-m3",
+      "top_k": 5
+    },
+    "evaluation_methodology": "shared saved-score definitions and shared evaluator judge_prompt/parse_judge/point_audit; historical full code provenance unavailable"
+  },
+  "source_integrity": {
+    "status": "PASS",
+    "source_file_count": 113,
+    "hashes": {
+      "data/evaluation/generation/ANNOTATION_WORKFLOW.md": {
+        "before_sha256": "37854d15ccb9e2c525c16a46cda7eddad80b0dbb88135791ba06958070e5f204",
+        "after_sha256": "37854d15ccb9e2c525c16a46cda7eddad80b0dbb88135791ba06958070e5f204",
+        "unchanged": true
+      },
+      "data/evaluation/generation/agentic_rag_eval_v1_agentic-v1.jsonl": {
+        "before_sha256": "a8d6a4bb5f18ddd79d6fcf98d8330b009e44764759e5f135e894528ad715b06e",
+        "after_sha256": "a8d6a4bb5f18ddd79d6fcf98d8330b009e44764759e5f135e894528ad715b06e",
+        "unchanged": true
+      },
+      "data/evaluation/generation/agentic_rag_metrics_v1_agentic-v1.json": {
+        "before_sha256": "ca0459b683bcec40833b69f288497b5d6e6bd2640daa1910ab0f18b7ff4bf1d5",
+        "after_sha256": "ca0459b683bcec40833b69f288497b5d6e6bd2640daa1910ab0f18b7ff4bf1d5",
+        "unchanged": true
+      },
+      "data/evaluation/generation/backups/generation_eval_v1.20260902-145534.json": {
+        "before_sha256": "672d0e3dea074247ef25aa2ab8da31cb2581f3f40ab247c1db8b459bf9057ebe",
+        "after_sha256": "672d0e3dea074247ef25aa2ab8da31cb2581f3f40ab247c1db8b459bf9057ebe",
+        "unchanged": true
+      },
+      "data/evaluation/generation/failure_analysis_metrics_v0.json": {
+        "before_sha256": "d2ea8278285d78fcbe9c4adf613bc90b5762b8fa62ea45deb03393194a4b7fb7",
+        "after_sha256": "d2ea8278285d78fcbe9c4adf613bc90b5762b8fa62ea45deb03393194a4b7fb7",
+        "unchanged": true
+      },
+      "data/evaluation/generation/failure_analysis_points_v0.jsonl": {
+        "before_sha256": "bbc6993d0ff7108e5f39f6b34bd8549bff15493c3c435adefc3514b0cf1f1f53",
+        "after_sha256": "bbc6993d0ff7108e5f39f6b34bd8549bff15493c3c435adefc3514b0cf1f1f53",
+        "unchanged": true
+      },
+      "data/evaluation/generation/failure_analysis_queries_v0.json": {
+        "before_sha256": "842871677c4345562d92384e2abeb9f3f69da1d8f0158891dd02aea9200bd10e",
+        "after_sha256": "842871677c4345562d92384e2abeb9f3f69da1d8f0158891dd02aea9200bd10e",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_annotation_audit_v1.md": {
+        "before_sha256": "a5d5c427d56b522def7a6d5b57e57ab4a1357dc97dc4264bfcd322c4b50ac77c",
+        "after_sha256": "a5d5c427d56b522def7a6d5b57e57ab4a1357dc97dc4264bfcd322c4b50ac77c",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_annotation_v1_report.md": {
+        "before_sha256": "deea80456981e5a1606ce3441f568fb18074f58d887ab0fa78ce7ecc45127394",
+        "after_sha256": "deea80456981e5a1606ce3441f568fb18074f58d887ab0fa78ce7ecc45127394",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_annotation_v1_review.md": {
+        "before_sha256": "bef478931bbfe4e94aa62b0c9be49f1ab3f36b07097b0b78e687622401b9f4a3",
+        "after_sha256": "bef478931bbfe4e94aa62b0c9be49f1ab3f36b07097b0b78e687622401b9f4a3",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_eval_v0.json": {
+        "before_sha256": "df533a099d153112fc84f7c0287aae7a71c98f17cd64d4757ae39bcdb76b6fde",
+        "after_sha256": "df533a099d153112fc84f7c0287aae7a71c98f17cd64d4757ae39bcdb76b6fde",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_eval_v0.schema.json": {
+        "before_sha256": "388d2b2d69408f0c681aa58a3127b581525c43618bb57d26528a482f7af44b07",
+        "after_sha256": "388d2b2d69408f0c681aa58a3127b581525c43618bb57d26528a482f7af44b07",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_eval_v0_manifest.json": {
+        "before_sha256": "1c176886ba3cec0f9eff132905d7255047d8d3d58d7a26850cafc94ab715370e",
+        "after_sha256": "1c176886ba3cec0f9eff132905d7255047d8d3d58d7a26850cafc94ab715370e",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_eval_v1.json": {
+        "before_sha256": "672d0e3dea074247ef25aa2ab8da31cb2581f3f40ab247c1db8b459bf9057ebe",
+        "after_sha256": "672d0e3dea074247ef25aa2ab8da31cb2581f3f40ab247c1db8b459bf9057ebe",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_eval_v1.schema.json": {
+        "before_sha256": "ce26168fe96f1a8622d238318f4376a2baf5e9b3fd2cf1430b5490312dc0cc6a",
+        "after_sha256": "ce26168fe96f1a8622d238318f4376a2baf5e9b3fd2cf1430b5490312dc0cc6a",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_eval_v1_manifest.json": {
+        "before_sha256": "54d4cbc081ddc37ce1f40d4c78e52dd26c98c541c54fd4379276194ec0e54e44",
+        "after_sha256": "54d4cbc081ddc37ce1f40d4c78e52dd26c98c541c54fd4379276194ec0e54e44",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_eval_v1_verified.json": {
+        "before_sha256": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+        "after_sha256": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+        "unchanged": true
+      },
+      "data/evaluation/generation/generation_eval_v1_verified_manifest.json": {
+        "before_sha256": "693b2b3f0839bdefc380254de2640e47d9b5a81ff4c14f9acccbd5ee4c242fbe",
+        "after_sha256": "693b2b3f0839bdefc380254de2640e47d9b5a81ff4c14f9acccbd5ee4c242fbe",
+        "unchanged": true
+      },
+      "data/evaluation/generation/partials/standard_rag_eval_v0_partial.20260902-151753.jsonl": {
+        "before_sha256": "2f159f7b496ddf273b1da56796e62f57dc182fda6ce64ae6c86deb54e52f43b3",
+        "after_sha256": "2f159f7b496ddf273b1da56796e62f57dc182fda6ce64ae6c86deb54e52f43b3",
+        "unchanged": true
+      },
+      "data/evaluation/generation/partials/standard_rag_eval_v0_partial.20260902-155801.jsonl": {
+        "before_sha256": "15a09bc6c88ebee8bcfdc9652c93e281bb6906e52c9b3dae9315ea47fc3ca80c",
+        "after_sha256": "15a09bc6c88ebee8bcfdc9652c93e281bb6906e52c9b3dae9315ea47fc3ca80c",
+        "unchanged": true
+      },
+      "data/evaluation/generation/reports/agentic_rag_eval_v1_agentic-v1.md": {
+        "before_sha256": "f87b5999a8a1b6d43a46f98caea912f4acbfa9ebfd4f3cfaf6419cf1b9e82ea2",
+        "after_sha256": "f87b5999a8a1b6d43a46f98caea912f4acbfa9ebfd4f3cfaf6419cf1b9e82ea2",
+        "unchanged": true
+      },
+      "data/evaluation/generation/reports/standard_rag_eval_v0.md": {
+        "before_sha256": "8dc7a635fa4c9663a9fdbe1d36956bd1e327403d2b18d4c430dd48567235add2",
+        "after_sha256": "8dc7a635fa4c9663a9fdbe1d36956bd1e327403d2b18d4c430dd48567235add2",
+        "unchanged": true
+      },
+      "data/evaluation/generation/reports/standard_rag_failure_analysis_v0.md": {
+        "before_sha256": "0d42160f2bc6427a31c2cc661c12edf2806bf85f3cdcdef4de26a5e47b4ee3ab",
+        "after_sha256": "0d42160f2bc6427a31c2cc661c12edf2806bf85f3cdcdef4de26a5e47b4ee3ab",
+        "unchanged": true
+      },
+      "data/evaluation/generation/standard_rag_eval_v0.jsonl": {
+        "before_sha256": "691f98cdffe29d6f4f2bfff8ad93c540447ee9cb4c78c3e48c003e2c2c4f487e",
+        "after_sha256": "691f98cdffe29d6f4f2bfff8ad93c540447ee9cb4c78c3e48c003e2c2c4f487e",
+        "unchanged": true
+      },
+      "data/evaluation/generation/standard_rag_manifest_v0.json": {
+        "before_sha256": "bb0a4c56873f118b47f29b0aead8d2c30fa2b0a14702707762fe4c63f6c3a3ae",
+        "after_sha256": "bb0a4c56873f118b47f29b0aead8d2c30fa2b0a14702707762fe4c63f6c3a3ae",
+        "unchanged": true
+      },
+      "data/evaluation/generation/standard_rag_metrics_v0.json": {
+        "before_sha256": "720cc8acd5c05d819c3b5f74bd46db8a4217eb93eee8abf2ea50ba229748ffe9",
+        "after_sha256": "720cc8acd5c05d819c3b5f74bd46db8a4217eb93eee8abf2ea50ba229748ffe9",
+        "unchanged": true
+      },
+      "data/evaluation/retrieval_eval.jsonl": {
+        "before_sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+        "after_sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+        "unchanged": true
+      },
+      "data/rag/legal-rag-v0_manifest.json": {
+        "before_sha256": "980a436fb44c727d26d4cab6059457b54dd915015c42fd8a4e2dc90bdb759058",
+        "after_sha256": "980a436fb44c727d26d4cab6059457b54dd915015c42fd8a4e2dc90bdb759058",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval001.json": {
+        "before_sha256": "25141dceea56ca96a7377588a7c64d4e2585ca867c4416da22ca174f90bf564d",
+        "after_sha256": "25141dceea56ca96a7377588a7c64d4e2585ca867c4416da22ca174f90bf564d",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval002.json": {
+        "before_sha256": "8c54c15847d99f63c225de41e4f770ff74efc0b1d29b5fb0350c68d52ee768ff",
+        "after_sha256": "8c54c15847d99f63c225de41e4f770ff74efc0b1d29b5fb0350c68d52ee768ff",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval003.json": {
+        "before_sha256": "b53cc17ec50ffd631c1ceda0047e87a2049804bb86e59cab2eee20f7b6cedd59",
+        "after_sha256": "b53cc17ec50ffd631c1ceda0047e87a2049804bb86e59cab2eee20f7b6cedd59",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval004.json": {
+        "before_sha256": "479db80a3c421d17c52034c6abc66c5a865332a7071ad2a95cbd65d1b64e3135",
+        "after_sha256": "479db80a3c421d17c52034c6abc66c5a865332a7071ad2a95cbd65d1b64e3135",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval005a.json": {
+        "before_sha256": "b709ab073fa60ca9bc20421018149e3e1b5f12997ada77cea4edab2a2f11d2ba",
+        "after_sha256": "b709ab073fa60ca9bc20421018149e3e1b5f12997ada77cea4edab2a2f11d2ba",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval005b.json": {
+        "before_sha256": "bf159d710d5873700d13369b101b430480d5602c595ce1e6dafcdf3a9bab726d",
+        "after_sha256": "bf159d710d5873700d13369b101b430480d5602c595ce1e6dafcdf3a9bab726d",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval006.json": {
+        "before_sha256": "954756d2b452499323051b507cea38d541fe03c24cfc92db1117e228ce739641",
+        "after_sha256": "954756d2b452499323051b507cea38d541fe03c24cfc92db1117e228ce739641",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval007.json": {
+        "before_sha256": "997faabee29b9a26f80ecf7fb01931b7de9ac269c5f007b512fb7cbfe94b4a0b",
+        "after_sha256": "997faabee29b9a26f80ecf7fb01931b7de9ac269c5f007b512fb7cbfe94b4a0b",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval008.json": {
+        "before_sha256": "87c78f08d17ae969d605a30323459719a5763bc112e9386eae741db643826315",
+        "after_sha256": "87c78f08d17ae969d605a30323459719a5763bc112e9386eae741db643826315",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval009.json": {
+        "before_sha256": "4dcfd8b5fc2c7aa32c886ea68e83edded394a471a991bb30bb4cf248526bbbc4",
+        "after_sha256": "4dcfd8b5fc2c7aa32c886ea68e83edded394a471a991bb30bb4cf248526bbbc4",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval010.json": {
+        "before_sha256": "7b653d8ba8bfd6248ea06d696a0cac58ce464b0860caf34b3175d2d0a42b30a0",
+        "after_sha256": "7b653d8ba8bfd6248ea06d696a0cac58ce464b0860caf34b3175d2d0a42b30a0",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval011.json": {
+        "before_sha256": "b734c28db4268e7056fb83ae2de4ab699c86494198c965b58adc575cb4386c56",
+        "after_sha256": "b734c28db4268e7056fb83ae2de4ab699c86494198c965b58adc575cb4386c56",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval012.json": {
+        "before_sha256": "c8dbeff63de34d6d71f4a99a9bb621c49804d02abc739481328d8f4da2320c3e",
+        "after_sha256": "c8dbeff63de34d6d71f4a99a9bb621c49804d02abc739481328d8f4da2320c3e",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval013.json": {
+        "before_sha256": "f9405c6865ca4fc5823bc8904e4f295cc9611d06f25062eb4035385d375eed97",
+        "after_sha256": "f9405c6865ca4fc5823bc8904e4f295cc9611d06f25062eb4035385d375eed97",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval014.json": {
+        "before_sha256": "c46fe23270427a64557a903f4083f0642c06f9a9013b120b7a9e33d593db2cdf",
+        "after_sha256": "c46fe23270427a64557a903f4083f0642c06f9a9013b120b7a9e33d593db2cdf",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval015.json": {
+        "before_sha256": "2798812d76030967c09dc0aaf2254cefb64e0d3296b244f7362e0015fa405228",
+        "after_sha256": "2798812d76030967c09dc0aaf2254cefb64e0d3296b244f7362e0015fa405228",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval016.json": {
+        "before_sha256": "7a683265ef29edea00c5fdc1e3e99471cb227e711b9020aadd80188125200478",
+        "after_sha256": "7a683265ef29edea00c5fdc1e3e99471cb227e711b9020aadd80188125200478",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval017.json": {
+        "before_sha256": "82ce503a45908cdc4f2f18a32474763fef791d03909e3e2efab9ded1b85fe098",
+        "after_sha256": "82ce503a45908cdc4f2f18a32474763fef791d03909e3e2efab9ded1b85fe098",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval018.json": {
+        "before_sha256": "aca28a01ca545c70d552f819329b499d16d8eba8fee730b316c057345ab2a936",
+        "after_sha256": "aca28a01ca545c70d552f819329b499d16d8eba8fee730b316c057345ab2a936",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval019.json": {
+        "before_sha256": "e8fdba42ac5e999e5c5951ffa771e193f4424824e4d0cd2ffeb40e860578dba5",
+        "after_sha256": "e8fdba42ac5e999e5c5951ffa771e193f4424824e4d0cd2ffeb40e860578dba5",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval020.json": {
+        "before_sha256": "c4f9c93f8d7928a2f6a03c6d4bf0e0ae53f9e6eb18de775df006fba6f253ca16",
+        "after_sha256": "c4f9c93f8d7928a2f6a03c6d4bf0e0ae53f9e6eb18de775df006fba6f253ca16",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval021.json": {
+        "before_sha256": "0deb2e716908d3ad68aeea1cf8660224c9515669550a2358811b235b81c71f27",
+        "after_sha256": "0deb2e716908d3ad68aeea1cf8660224c9515669550a2358811b235b81c71f27",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval022.json": {
+        "before_sha256": "e1988000bb9fe1ad5d13d7904e28af149f07c94e96b41de2c26d651b34ff26f3",
+        "after_sha256": "e1988000bb9fe1ad5d13d7904e28af149f07c94e96b41de2c26d651b34ff26f3",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval023.json": {
+        "before_sha256": "61c963adbdc89a4d0618bffa8facef3cbdc4118d91f30861b62485733fc153fc",
+        "after_sha256": "61c963adbdc89a4d0618bffa8facef3cbdc4118d91f30861b62485733fc153fc",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval024.json": {
+        "before_sha256": "97148165e4286826e003ad0be172663491430a8466cd96417bd4e300b3f2a029",
+        "after_sha256": "97148165e4286826e003ad0be172663491430a8466cd96417bd4e300b3f2a029",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval025.json": {
+        "before_sha256": "c9c08a8e76cb74d05b1bab1019a16c3387a2bea3fcef0f7ad38d49caf65a6938",
+        "after_sha256": "c9c08a8e76cb74d05b1bab1019a16c3387a2bea3fcef0f7ad38d49caf65a6938",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval026.json": {
+        "before_sha256": "faf9191e612b4049d84fa6738d155c1a2172495ee06c5a5e57f31e5d230a338c",
+        "after_sha256": "faf9191e612b4049d84fa6738d155c1a2172495ee06c5a5e57f31e5d230a338c",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval027.json": {
+        "before_sha256": "c342f074ddd4cdfb27f712f4e9bbc8ea273f206fb897407e7edd092c968dfc24",
+        "after_sha256": "c342f074ddd4cdfb27f712f4e9bbc8ea273f206fb897407e7edd092c968dfc24",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval028.json": {
+        "before_sha256": "b8a71c5999f7a12c63a8eb2996177f9ae6cf412320ba999413ccd1ed4f902343",
+        "after_sha256": "b8a71c5999f7a12c63a8eb2996177f9ae6cf412320ba999413ccd1ed4f902343",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval029.json": {
+        "before_sha256": "adf9f47115dbba09df89e4bba2cb8b4051b5bfa2b346e21a4d0ab9fd225cc8d0",
+        "after_sha256": "adf9f47115dbba09df89e4bba2cb8b4051b5bfa2b346e21a4d0ab9fd225cc8d0",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval030.json": {
+        "before_sha256": "e4f4a77a477ad41fa01105ad0907bf5e6a6bb5348cae986bc313249e84434b55",
+        "after_sha256": "e4f4a77a477ad41fa01105ad0907bf5e6a6bb5348cae986bc313249e84434b55",
+        "unchanged": true
+      },
+      "data/rag/traces/agentic-rag-v1_smoke.json": {
+        "before_sha256": "326e6a560652e93093af40791dbfdcabffd6e890d522d9f6424e008f2519c5d2",
+        "after_sha256": "326e6a560652e93093af40791dbfdcabffd6e890d522d9f6424e008f2519c5d2",
+        "unchanged": true
+      },
+      "data/rag/traces/legal-rag-v0_20260824T082500.431067Z.json": {
+        "before_sha256": "0a9ee647a2f6468157827dc2112010fce80f3b4e2dc117540b37e5ac843ab4e1",
+        "after_sha256": "0a9ee647a2f6468157827dc2112010fce80f3b4e2dc117540b37e5ac843ab4e1",
+        "unchanged": true
+      },
+      "data/rag/traces/legal-rag-v0_20260824T083023.964302Z.json": {
+        "before_sha256": "805abef3464fba3e1be725de17f0b06545371c16c816dd278fff6886149a5807",
+        "after_sha256": "805abef3464fba3e1be725de17f0b06545371c16c816dd278fff6886149a5807",
+        "unchanged": true
+      },
+      "data/rag/traces/legal-rag-v0_20260824T083324.619096Z.json": {
+        "before_sha256": "b06560190732660351cbd3294cad400e9ee2d664946d15758204b00e01ff1214",
+        "after_sha256": "b06560190732660351cbd3294cad400e9ee2d664946d15758204b00e01ff1214",
+        "unchanged": true
+      },
+      "data/rag/traces/legal-rag-v0_20260824T083822.282992Z.json": {
+        "before_sha256": "bfc0adce8e7cd250abf9007738084b4c5549ace60dafe602aabf1ccfe443c899",
+        "after_sha256": "bfc0adce8e7cd250abf9007738084b4c5549ace60dafe602aabf1ccfe443c899",
+        "unchanged": true
+      },
+      "data/rag/traces/legal-rag-v0_20260824T084241.384282Z.json": {
+        "before_sha256": "fdb5d897e7f0d2307c73766dd8570e87a6e83005f456c21ae72e3a469dcd0e1b",
+        "after_sha256": "fdb5d897e7f0d2307c73766dd8570e87a6e83005f456c21ae72e3a469dcd0e1b",
+        "unchanged": true
+      },
+      "data/rag/traces/legal-rag-v0_20260824T084747.340310Z.json": {
+        "before_sha256": "1d88e7b697902ff7139c6c6089b7cf142411923fa8928f4379163e14b9f8b351",
+        "after_sha256": "1d88e7b697902ff7139c6c6089b7cf142411923fa8928f4379163e14b9f8b351",
+        "unchanged": true
+      },
+      "data/versions/corpus-v0.1/articles.jsonl": {
+        "before_sha256": "fa8584bb2deda06fc216334f4030722a7ae7f5bbc329fec7cf3dd527cb864cf9",
+        "after_sha256": "fa8584bb2deda06fc216334f4030722a7ae7f5bbc329fec7cf3dd527cb864cf9",
+        "unchanged": true
+      },
+      "data/versions/corpus-v0.1/chunks.jsonl": {
+        "before_sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+        "after_sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+        "unchanged": true
+      },
+      "data/versions/corpus-v0.1/corpus_validation_details.txt": {
+        "before_sha256": "2810d835d2601cc2f26564a0d0ddd75c58c504012e9a9479bcf1d9d346b23275",
+        "after_sha256": "2810d835d2601cc2f26564a0d0ddd75c58c504012e9a9479bcf1d9d346b23275",
+        "unchanged": true
+      },
+      "data/versions/corpus-v0.1/corpus_validation_manifest.json": {
+        "before_sha256": "931776bf70f5f25c95c9ead061f75fa51443fc168dbda8db7bb9f63611d5bde9",
+        "after_sha256": "931776bf70f5f25c95c9ead061f75fa51443fc168dbda8db7bb9f63611d5bde9",
+        "unchanged": true
+      },
+      "data/versions/corpus-v0.1/corpus_validation_summary.csv": {
+        "before_sha256": "61c49798aa35d16428a87105533055c7d68a773cdceaae1c7dbfc2825cdd2586",
+        "after_sha256": "61c49798aa35d16428a87105533055c7d68a773cdceaae1c7dbfc2825cdd2586",
+        "unchanged": true
+      },
+      "data/versions/corpus-v0.1/documents.csv": {
+        "before_sha256": "8d0208708676317b28a681d4c5a5a74014ef2b7d9e1c29dab0594cca5eefadce",
+        "after_sha256": "8d0208708676317b28a681d4c5a5a74014ef2b7d9e1c29dab0594cca5eefadce",
+        "unchanged": true
+      },
+      "prompts/legal_rag_v0.txt": {
+        "before_sha256": "0141aad79a262960eeeb88d9b138bc092ea15caeb0407a5ebadad27b8268d39e",
+        "after_sha256": "0141aad79a262960eeeb88d9b138bc092ea15caeb0407a5ebadad27b8268d39e",
+        "unchanged": true
+      },
+      "scripts/agentic_rag.py": {
+        "before_sha256": "e415429b39786e9cb7dc46488718fcda0fc164ca4a84e49d95630835188745b6",
+        "after_sha256": "e415429b39786e9cb7dc46488718fcda0fc164ca4a84e49d95630835188745b6",
+        "unchanged": true
+      },
+      "scripts/analyze_candidate_coverage.py": {
+        "before_sha256": "ccd9e558ff1f478f2c226e6c5ef03727878b2e7f0c9e2ff14893b680b23695ad",
+        "after_sha256": "ccd9e558ff1f478f2c226e6c5ef03727878b2e7f0c9e2ff14893b680b23695ad",
+        "unchanged": true
+      },
+      "scripts/analyze_standard_rag_failures.py": {
+        "before_sha256": "2aa8f64f995bdccf1363e9b8c60a1115c903407329715fef056c0c1324fd23dd",
+        "after_sha256": "2aa8f64f995bdccf1363e9b8c60a1115c903407329715fef056c0c1324fd23dd",
+        "unchanged": true
+      },
+      "scripts/annotate_retrieval_eval.py": {
+        "before_sha256": "2acd0625801520816871ff6f14ae4a1b56095b12b7d92c75134526ce575e0a07",
+        "after_sha256": "2acd0625801520816871ff6f14ae4a1b56095b12b7d92c75134526ce575e0a07",
+        "unchanged": true
+      },
+      "scripts/bm25_baseline.py": {
+        "before_sha256": "704f6ba51889411f4891ddad615e54eb68672583e37aea6b5a9afca90c378ac8",
+        "after_sha256": "704f6ba51889411f4891ddad615e54eb68672583e37aea6b5a9afca90c378ac8",
+        "unchanged": true
+      },
+      "scripts/build_chunks.py": {
+        "before_sha256": "da4045b0256d060582074b802b79d2d9f34052b2edcaf347d91de804b536ed78",
+        "after_sha256": "da4045b0256d060582074b802b79d2d9f34052b2edcaf347d91de804b536ed78",
+        "unchanged": true
+      },
+      "scripts/build_dense_index.py": {
+        "before_sha256": "b4f78e0c5f80771f629a1e770dd4ccabee9121d83666564bed68f69d281ab1fd",
+        "after_sha256": "b4f78e0c5f80771f629a1e770dd4ccabee9121d83666564bed68f69d281ab1fd",
+        "unchanged": true
+      },
+      "scripts/build_generation_eval_v1.py": {
+        "before_sha256": "93321abcd3574727424308cbe4adc1e6e06b3a30b7ddbb7dbbc0e00b41495332",
+        "after_sha256": "93321abcd3574727424308cbe4adc1e6e06b3a30b7ddbb7dbbc0e00b41495332",
+        "unchanged": true
+      },
+      "scripts/check_register.py": {
+        "before_sha256": "9557c0791e3919c8797b6b80c36ae15348224e10b68f8c189f53bf36ba0feb10",
+        "after_sha256": "9557c0791e3919c8797b6b80c36ae15348224e10b68f8c189f53bf36ba0feb10",
+        "unchanged": true
+      },
+      "scripts/citation_validator.py": {
+        "before_sha256": "7e5eeb43e2c9316909e7c297f05dbaa9171eb51c3a5db76bd26944c6a36232fc",
+        "after_sha256": "7e5eeb43e2c9316909e7c297f05dbaa9171eb51c3a5db76bd26944c6a36232fc",
+        "unchanged": true
+      },
+      "scripts/clean_docx_text.py": {
+        "before_sha256": "c123316e243b7b55464edc28b151bebbffd64b967f0a1deb574a0bb0e6e73275",
+        "after_sha256": "c123316e243b7b55464edc28b151bebbffd64b967f0a1deb574a0bb0e6e73275",
+        "unchanged": true
+      },
+      "scripts/create_verification_samples.py": {
+        "before_sha256": "c5499cc84c33a2942da7969ee232f5e29747135a449d8557c5c2fd0df0518505",
+        "after_sha256": "c5499cc84c33a2942da7969ee232f5e29747135a449d8557c5c2fd0df0518505",
+        "unchanged": true
+      },
+      "scripts/dense_baseline.py": {
+        "before_sha256": "030602670a13bc17aac4ab97dd65209a5825c4ef790fd25c0c3b6c2224fe99a8",
+        "after_sha256": "030602670a13bc17aac4ab97dd65209a5825c4ef790fd25c0c3b6c2224fe99a8",
+        "unchanged": true
+      },
+      "scripts/evaluate_agentic_rag.py": {
+        "before_sha256": "b78ad3224be4bd996d494f870dab3caaf0cc2680ad54d832936624db9dcc04c9",
+        "after_sha256": "b78ad3224be4bd996d494f870dab3caaf0cc2680ad54d832936624db9dcc04c9",
+        "unchanged": true
+      },
+      "scripts/evaluate_bm25.py": {
+        "before_sha256": "060fedbc186598149de1d545058bb6ba67549968fc78542fc2850aa75362cce2",
+        "after_sha256": "060fedbc186598149de1d545058bb6ba67549968fc78542fc2850aa75362cce2",
+        "unchanged": true
+      },
+      "scripts/evaluate_dense.py": {
+        "before_sha256": "d4e262b0dc8bf644285f9453c061306e18d3e80c1e46f1b6fcb6926384c7538c",
+        "after_sha256": "d4e262b0dc8bf644285f9453c061306e18d3e80c1e46f1b6fcb6926384c7538c",
+        "unchanged": true
+      },
+      "scripts/evaluate_hybrid.py": {
+        "before_sha256": "aba1d2f9d84052668640ef8df73d95018fbb806c6d7f823a14f37324f42d7ef9",
+        "after_sha256": "aba1d2f9d84052668640ef8df73d95018fbb806c6d7f823a14f37324f42d7ef9",
+        "unchanged": true
+      },
+      "scripts/evaluate_reranker.py": {
+        "before_sha256": "1b8b078e520087431373daf34d32e599bc4b83fcf51d266a4d08e08749440c81",
+        "after_sha256": "1b8b078e520087431373daf34d32e599bc4b83fcf51d266a4d08e08749440c81",
+        "unchanged": true
+      },
+      "scripts/evaluate_standard_rag.py": {
+        "before_sha256": "0c8a8def9966b94c946d80ddbfbf31a4ddd446e3e6eb49f02c89254a2f032bf7",
+        "after_sha256": "0c8a8def9966b94c946d80ddbfbf31a4ddd446e3e6eb49f02c89254a2f032bf7",
+        "unchanged": true
+      },
+      "scripts/evidence_formatter.py": {
+        "before_sha256": "f9ad9f39944f6ec72bea920822f17c53e7ac95bf9ac416a1d53382ab8e04d259",
+        "after_sha256": "f9ad9f39944f6ec72bea920822f17c53e7ac95bf9ac416a1d53382ab8e04d259",
+        "unchanged": true
+      },
+      "scripts/extract_docx.py": {
+        "before_sha256": "256c7b10e709c66f2424714575ed435f6b5d8f6a18eff08b72450ec93b034379",
+        "after_sha256": "256c7b10e709c66f2424714575ed435f6b5d8f6a18eff08b72450ec93b034379",
+        "unchanged": true
+      },
+      "scripts/generate_human_review_report.py": {
+        "before_sha256": "aa9bb4525c2897d65f8c3d30ef1c50088ae0647035571940052a2cbdf5a14284",
+        "after_sha256": "aa9bb4525c2897d65f8c3d30ef1c50088ae0647035571940052a2cbdf5a14284",
+        "unchanged": true
+      },
+      "scripts/hash_raw_files.py": {
+        "before_sha256": "2891a9fc5997b82781e65471fd6e690cdb936d3676be87b4a27fcaa344c6877a",
+        "after_sha256": "2891a9fc5997b82781e65471fd6e690cdb936d3676be87b4a27fcaa344c6877a",
+        "unchanged": true
+      },
+      "scripts/hybrid_rrf.py": {
+        "before_sha256": "864e02129fa8fa4e21fe596a82b7c6592693abae90312605c30abe5110975470",
+        "after_sha256": "864e02129fa8fa4e21fe596a82b7c6592693abae90312605c30abe5110975470",
+        "unchanged": true
+      },
+      "scripts/inspect_chunk_issues.py": {
+        "before_sha256": "2701eda4f36d9e23493b5e38cce47934cc2941af00ccf58bbcc3d2a1a55733f3",
+        "after_sha256": "2701eda4f36d9e23493b5e38cce47934cc2941af00ccf58bbcc3d2a1a55733f3",
+        "unchanged": true
+      },
+      "scripts/llm_client.py": {
+        "before_sha256": "b60c064aad63ef92d320af697791ec65c5c30c35caee8a7e174c3ef37724bf84",
+        "after_sha256": "b60c064aad63ef92d320af697791ec65c5c30c35caee8a7e174c3ef37724bf84",
+        "unchanged": true
+      },
+      "scripts/parse_legal_structure.py": {
+        "before_sha256": "cb4c0fbcc95034b98fe7cb492fdab501a9cedac3b3d5ac889ee28a34d7f97215",
+        "after_sha256": "cb4c0fbcc95034b98fe7cb492fdab501a9cedac3b3d5ac889ee28a34d7f97215",
+        "unchanged": true
+      },
+      "scripts/rag_baseline.py": {
+        "before_sha256": "ae5a2dd7b0f89d7969c16c5d711e229bd1673df43e188f9a7296086e57d9b95a",
+        "after_sha256": "ae5a2dd7b0f89d7969c16c5d711e229bd1673df43e188f9a7296086e57d9b95a",
+        "unchanged": true
+      },
+      "scripts/reranker_baseline.py": {
+        "before_sha256": "609c2eb42f52265fa0a630697cedd2e000b9b5a52a4b0a848259d597e2bb6f85",
+        "after_sha256": "609c2eb42f52265fa0a630697cedd2e000b9b5a52a4b0a848259d597e2bb6f85",
+        "unchanged": true
+      },
+      "scripts/response_formatter.py": {
+        "before_sha256": "ccc506802981ca3e200b043c4c279e94b2dc3dbdaa8f60317a6d69369154f7e0",
+        "after_sha256": "ccc506802981ca3e200b043c4c279e94b2dc3dbdaa8f60317a6d69369154f7e0",
+        "unchanged": true
+      },
+      "scripts/retrieval_pipeline.py": {
+        "before_sha256": "5080df6e2bbfb33cf945f3fa797107ac7d510cab1f6e2bc4f3bf25741766fd42",
+        "after_sha256": "5080df6e2bbfb33cf945f3fa797107ac7d510cab1f6e2bc4f3bf25741766fd42",
+        "unchanged": true
+      },
+      "scripts/update_source_hashes.py": {
+        "before_sha256": "a9d2a7ea91c627b6c1fa2628ae60894bd6d4c78795092e551b4ed8a0d492f5c8",
+        "after_sha256": "a9d2a7ea91c627b6c1fa2628ae60894bd6d4c78795092e551b4ed8a0d492f5c8",
+        "unchanged": true
+      },
+      "scripts/update_verification_status.py": {
+        "before_sha256": "7b6ecc51704d8ccc047b42b3ed29044063714b259c7aff4e0ec7a66b28a3bf88",
+        "after_sha256": "7b6ecc51704d8ccc047b42b3ed29044063714b259c7aff4e0ec7a66b28a3bf88",
+        "unchanged": true
+      },
+      "scripts/validate_corpus.py": {
+        "before_sha256": "27c2c3cbeb68426658c1fe20fe6baa3376232a81b329e837f73e0bf54b2c9f95",
+        "after_sha256": "27c2c3cbeb68426658c1fe20fe6baa3376232a81b329e837f73e0bf54b2c9f95",
+        "unchanged": true
+      },
+      "scripts/validate_generation_eval.py": {
+        "before_sha256": "b8b5cc4eff89bc41eae0ff3f4bf3379c7ba6c11d508b8ec4d1082d5e7a18c824",
+        "after_sha256": "b8b5cc4eff89bc41eae0ff3f4bf3379c7ba6c11d508b8ec4d1082d5e7a18c824",
+        "unchanged": true
+      },
+      "scripts/validate_retrieval_eval.py": {
+        "before_sha256": "22f4f8f1df97f6d060ce87c856bac130b33fce30a88c8c4a5892d130cfff9ab5",
+        "after_sha256": "22f4f8f1df97f6d060ce87c856bac130b33fce30a88c8c4a5892d130cfff9ab5",
+        "unchanged": true
+      },
+      "tests/test_agentic_evaluation.py": {
+        "before_sha256": "1c6151b848dec324e855b5ac45521bc4937e0a4759af58ac40746a79fe7a62d2",
+        "after_sha256": "1c6151b848dec324e855b5ac45521bc4937e0a4759af58ac40746a79fe7a62d2",
+        "unchanged": true
+      },
+      "tests/test_agentic_rag.py": {
+        "before_sha256": "b3dcc8c5a630f2a459ba3298034479659b28e85cadbef9109ee9b3159cce8d71",
+        "after_sha256": "b3dcc8c5a630f2a459ba3298034479659b28e85cadbef9109ee9b3159cce8d71",
+        "unchanged": true
+      },
+      "tests/test_generation_eval.py": {
+        "before_sha256": "a4d6f67223545de9705a9f4da2b8ca4fa5752b91229103947cae3f45a2c16d17",
+        "after_sha256": "a4d6f67223545de9705a9f4da2b8ca4fa5752b91229103947cae3f45a2c16d17",
+        "unchanged": true
+      },
+      "tests/test_rag_runtime.py": {
+        "before_sha256": "1a213900811d07deaf709fa48126e94e58a0a0a65476b92151e55a26db038c07",
+        "after_sha256": "1a213900811d07deaf709fa48126e94e58a0a0a65476b92151e55a26db038c07",
+        "unchanged": true
+      }
+    }
+  },
+  "reproducibility": {
+    "method": "Extract scripts below to /tmp; extract source_integrity.hashes[*].before_sha256 into /tmp/phase4e_source_hashes.json. Run tests with python3 -B. The analysis build() function is read-only and can be rerun. Renderer refuses existing outputs; use an isolated copy with the three output paths absent to reproduce outputs. ROOT in scripts identifies the original workspace. No third-party package or runtime module is imported.",
+    "scripts": {
+      "phase4e_analysis.py": {
+        "sha256": "911df6108a0a14719fd7bd559859ca0bd18c294ae41306a8fe94822a35a4fcc1",
+        "source": "#!/usr/bin/env python3\n\"\"\"Phase 4E: standard-library-only, evaluator-side frozen-artifact analysis.\n\nNo production modules are imported. The only repository writes are the three\nnew Phase 4E outputs. Existing outputs are never overwritten.\n\"\"\"\nimport collections\nimport hashlib\nimport json\nimport math\nimport re\nimport statistics\nfrom pathlib import Path\n\nROOT = Path('/home/minhkha/kk/TTTN/legal-agentic-rag')\nBASE = ROOT / 'data/evaluation/generation'\nEPS = 1e-9\nMETRICS = ['answer_completeness', 'citation_completeness', 'citation_correctness', 'groundedness', 'unsupported_claim_rate']\nPROFILES = {'none': 'P0 — No Substantive Intervention', 'expansion_only': 'P1 — Evidence Expansion Only', 'answer_revision_only': 'P2 — Answer Revision Only', 'citation_revision_only': 'P3 — Citation Revision Only', 'multiple': 'P4 — Multiple Interventions'}\nOUTCOMES = {'improved': 'O1 — Improved', 'improved_with_tradeoff': 'O2 — Improved with Trade-off', 'no_change': 'O3 — No Change', 'regressed': 'O4 — Regressed', 'inconclusive': 'O5 — Inconclusive'}\nOBSERVATIONS = dict(zip(OUTCOMES, ['observed_gain', 'observed_tradeoff', 'no_observed_gain', 'observed_regression', 'inconclusive']))\nBUDGETS = {'max_retrieval_expansions': 1, 'max_sub_queries': 3, 'max_answer_revisions': 1, 'max_citation_revisions': 1, 'max_llm_calls': 6}\nCONFIG = {'bm25': 'BM25-simple-v0', 'bm25_depth': 20, 'dense': 'dense-jina-v3-v0', 'dense_depth': 20, 'candidate_merge': 'union_deduplicate_by_chunk_id', 'fusion': None, 'reranker': 'BAAI/bge-reranker-v2-m3', 'top_k': 5}\nSTAGES = {'coverage_check', 'answer_generation', 'completeness_check', 'answer_revision', 'citation_revision', 'semantic_citation_alignment'}\n\ndef require(condition, message):\n    if not condition:\n        raise ValueError(message)\n\ndef close(a, b):\n    return a is not None and b is not None and abs(a-b) <= EPS\n\ndef read(path):\n    return json.loads(Path(path).read_text(encoding='utf-8'))\n\ndef read_lines(path):\n    return [json.loads(line) for line in Path(path).read_text(encoding='utf-8').splitlines() if line.strip()]\n\ndef digest(path):\n    return hashlib.sha256(Path(path).read_bytes()).hexdigest()\n\ndef index_unique(rows, label):\n    result = {}\n    for row in rows:\n        q = row['query_id']\n        require(q not in result, f'{label}: duplicate query ID {q}')\n        result[q] = row\n    return result\n\ndef align(reference, other, label):\n    require(set(reference) == set(other), f'{label}: missing/extra query IDs: {sorted(set(reference)^set(other))}')\n    for q in reference:\n        require(reference[q]['query'] == other[q]['query'], f'{label}: mismatched query text {q}')\n\ndef validate_trace_links(agentic, traces):\n    require(set(agentic) == set(traces), 'missing/extra trace')\n    for q, row in agentic.items():\n        t = traces[q]\n        require(t['run_id'] == f'agentic-v1-{q}', f'mismatched trace query ID {q}')\n        require(t['query'] == row['query'], f'mismatched trace query text {q}')\n        require(t == row['trace'], f'embedded/disk trace mismatch {q}')\n\ndef profile(expansion, answer, citation):\n    flags = [expansion, answer, citation]\n    require(all(isinstance(x, bool) for x in flags), 'intervention flags must be boolean')\n    if sum(flags) >= 2:\n        return 'multiple'\n    return next((p for f, p in zip(flags, ['expansion_only', 'answer_revision_only', 'citation_revision_only']) if f), 'none')\n\ndef oriented_deltas(standard, agentic):\n    return {m: None if standard.get(m) is None or agentic.get(m) is None else\n            (standard[m]-agentic[m] if m == 'unsupported_claim_rate' else agentic[m]-standard[m]) for m in METRICS}\n\ndef outcome(deltas):\n    if any(x is None or not math.isfinite(x) for x in deltas.values()) or set(deltas) != set(METRICS):\n        return 'inconclusive'\n    up = any(x > EPS for x in deltas.values())\n    down = any(x < -EPS for x in deltas.values())\n    return 'improved_with_tradeoff' if up and down else 'improved' if up else 'regressed' if down else 'no_change'\n\ndef point_changes(standard, agentic):\n    return sorted(set(agentic)-set(standard)), sorted(set(standard)-set(agentic))\n\ndef production_calls(trace):\n    calls = trace['llm_calls']\n    require(all(c['stage'] in STAGES for c in calls), 'ambiguous or non-production LLM call stage')\n    require([c['call_number'] for c in calls] == list(range(1, len(calls)+1)), 'LLM call numbering mismatch')\n    require(len(calls) == trace['llm_call_count'], 'LLM count mismatch')\n    return len(calls)\n\ndef calibrate(complete, benchmark, status):\n    require(isinstance(complete, bool), 'missing internal completeness decision')\n    bc = close(benchmark, 1)\n    key = ('internal_complete' if complete else 'internal_incomplete') + ('_and_benchmark_complete' if complete and bc else '_but_benchmark_incomplete' if complete else '_but_benchmark_complete' if bc else '_and_benchmark_incomplete')\n    return key, status == 'success' and not bc\n\ndef count_all(values, keys):\n    c = collections.Counter(values)\n    return {k: c[k] for k in keys}\n\ndef stats(values):\n    if not values:\n        return {'mean': None, 'median': None, 'max': None, 'total': 0, 'distribution': {}}\n    return {'mean': statistics.mean(values), 'median': statistics.median(values), 'max': max(values), 'total': sum(values), 'distribution': dict(sorted(collections.Counter(values).items()))}\n\ndef citations(answer):\n    return list(dict.fromkeys(re.findall(r'\\bE\\d+\\b', answer)))\n\ndef lexical_body(answer):\n    return ' '.join(re.sub(r'\\[E\\d+\\]', '', answer).split())\n\ndef evidence_signature(evidence):\n    # Compare content and the citation map, without irrelevant runtime audit metadata.\n    return [(e['evidence_id'], e['chunk_id'], e['text'], e['retrieval_text']) for e in evidence]\n\ndef check_before_hashes():\n    hashes = read('/tmp/phase4e_source_hashes.json')\n    for path, expected in hashes.items():\n        require(digest(ROOT/path) == expected, f'Source changed: {path}')\n    return hashes\n\ndef validate_and_load():\n    before = check_before_hashes()\n    am = read(BASE/'agentic_rag_metrics_v1_agentic-v1.json')\n    sm = read(BASE/'standard_rag_manifest_v0.json')\n    gm = read(BASE/'generation_eval_v1_verified_manifest.json')\n    fm = read(BASE/'failure_analysis_metrics_v0.json')\n    gold_payload = read(ROOT/fm['inputs']['generation_ground_truth'])\n    gold = index_unique(gold_payload['items'], 'gold')\n    standard = index_unique(read_lines(ROOT/fm['inputs']['standard_rag_result']), 'Standard RAG')\n    agentic = index_unique(read_lines(BASE/'agentic_rag_eval_v1_agentic-v1.jsonl'), 'Agentic RAG v1')\n    failures = index_unique(read(BASE/'failure_analysis_queries_v0.json')['queries'], 'Phase 4A')\n    points = read_lines(BASE/'failure_analysis_points_v0.jsonl')\n    retrieval = index_unique(read_lines(ROOT/fm['inputs']['retrieval_benchmark']), 'retrieval evaluation')\n    standard_metrics = read(BASE/'standard_rag_metrics_v0.json')\n    for name, rows in [('gold',gold),('Standard',standard),('Agentic',agentic),('Phase 4A', failures),('retrieval',retrieval)]:\n        require(len(rows) == 31, f'{name} count !=31')\n        align(gold, rows, name)\n    require(gold_payload['evaluation_version'] == sm['generation_evaluation_version'] == gm['evaluation_version'] == 'generation-eval-v1', 'dataset version mismatch')\n    require(gold_payload['dataset_status'] == gm['dataset_status'] == sm['generation_dataset_status'] == 'verified', 'dataset not verified')\n    require(sum(len(g['required_points']) for g in gold.values()) == 102, 'required point count !=102')\n    point_index = {}\n    for p in points:\n        key = p['query_id'], p['point_id']\n        require(key not in point_index, f'duplicate Phase 4A point {key}')\n        point_index[key] = p\n    expected_points = {(q,p['point_id']) for q,g in gold.items() for p in g['required_points']}\n    require(len(expected_points) == 102 and set(point_index) == expected_points, 'Phase 4A/gold point mismatch')\n    paths = {'generation_verified_sha256': fm['inputs']['generation_ground_truth'], 'retrieval_eval_sha256': fm['inputs']['retrieval_benchmark'], 'corpus_chunks_sha256': fm['inputs']['corpus'], 'results_sha256': 'data/evaluation/generation/agentic_rag_eval_v1_agentic-v1.jsonl', 'standard_rag_metrics_sha256': 'data/evaluation/generation/standard_rag_metrics_v0.json', 'prompt_sha256': 'prompts/legal_rag_v0.txt'}\n    for key,path in paths.items():\n        require(before[path] == am['manifest']['dataset_hashes'][key], f'Agentic manifest hash mismatch {key}')\n        if key in sm['dataset_hashes']:\n            require(before[path] == sm['dataset_hashes'][key], f'Standard manifest hash mismatch {key}')\n        if key in fm['input_hashes']:\n            require(before[path] == fm['input_hashes'][key], f'Phase 4A hash mismatch {key}')\n    for key,path in [('result_dataset_sha256',fm['inputs']['standard_rag_result']),('generation_verified_manifest_sha256','data/evaluation/generation/generation_eval_v1_verified_manifest.json')]:\n        require(before[path] == sm['dataset_hashes'][key], f'Standard hash mismatch {key}')\n    for key,path in [('standard_rag_result_sha256',fm['inputs']['standard_rag_result']),('standard_rag_manifest_sha256','data/evaluation/generation/standard_rag_manifest_v0.json'),('generation_verified_manifest_sha256','data/evaluation/generation/generation_eval_v1_verified_manifest.json')]:\n        require(before[path] == fm['input_hashes'][key], f'Phase 4A hash mismatch {key}')\n    require(gm['generation_eval_v1_verified_sha256'] == before[paths['generation_verified_sha256']], 'gold manifest hash mismatch')\n    require(gm['source_corpus_sha256'] == before[paths['corpus_chunks_sha256']], 'gold corpus hash mismatch')\n    require(gm['source_retrieval_eval_sha256'] == gold_payload['source_retrieval_eval_sha256'] == before[paths['retrieval_eval_sha256']], 'gold retrieval hash mismatch')\n    for manifest in [am['manifest'],sm]:\n        require(manifest['llm_model'] == 'gemini-3.5-flash-lite', 'model mismatch')\n        require(manifest['prompt_version'] == 'legal-rag-prompt-v0', 'prompt mismatch')\n        require(manifest['corpus_version'] == 'corpus-v0.1', 'corpus version mismatch')\n    require(am['manifest']['retrieval_config'] == CONFIG, 'Agentic config mismatch')\n    require(sm['prompt_sha256'] == before['prompts/legal_rag_v0.txt'], 'Standard prompt hash mismatch')\n    traces = {}\n    trace_paths = []\n    for q,row in agentic.items():\n        path = Path(row['trace_path'])\n        require(path.is_file(), f'missing trace {q}')\n        require(path.parent == ROOT/'data/rag/traces/agentic-rag-v1/agentic-v1', 'unexpected trace directory')\n        require(path.stem == q, f'trace filename mismatch {q}')\n        trace_paths.append(path)\n        traces[q] = read(path)\n    require(len(set(trace_paths)) == 31, 'trace referenced more than once')\n    require(set(trace_paths) == set(trace_paths[0].parent.glob('*.json')), 'missing/extra production trace')\n    validate_trace_links(agentic,traces)\n    for q,g in gold.items():\n        s,a,t,f = standard[q],agentic[q],traces[q],failures[q]\n        pids = [p['point_id'] for p in g['required_points']]\n        require(len(set(pids)) == len(pids), f'duplicate gold point {q}')\n        require(g['annotation_status'] == 'verified', f'unverified query {q}')\n        for row in [s,a]:\n            require(row['required_point_ids'] == pids, f'required points mismatch {q}')\n            for k in ['supported_point_ids','citation_supported_point_ids']:\n                require(len(row[k]) == len(set(row[k])) and set(row[k]) <= set(pids), f'point IDs invalid {q}/{k}')\n            require(set(row['citation_supported_point_ids']) <= set(row['supported_point_ids']), f'cited support mismatch {q}')\n            require(row['generation_error'] is None and row['evaluation_error'] is None, f'benchmark error {q}')\n            require(close(row['citation_completeness'],len(row['citation_supported_point_ids'])/len(pids)), f'citation completeness mismatch {q}')\n        require(close(a['answer_completeness'],len(a['supported_point_ids'])/len(pids)), f'answer completeness mismatch {q}')\n        require(set(s['unsupported_point_ids']) == set(pids)-set(s['supported_point_ids']), f'unsupported IDs mismatch {q}')\n        require(close(f['answer_completeness'],len(s['supported_point_ids'])/len(pids)), f'Phase 4A metric mismatch {q}')\n        require(f['supported_points'] == s['supported_point_ids'], f'Phase 4A support mismatch {q}')\n        for p in g['required_points']:\n            fp=point_index[q,p['point_id']]\n            require(fp['supporting_chunk_ids'] == p['supporting_chunk_ids'], f'Phase 4A gold support mismatch {q}')\n            require((fp['answer_support']=='full') == (p['point_id'] in s['supported_point_ids']), f'Phase 4A point support mismatch {q}')\n        for row in [s,t]:\n            require(row['model'] == 'gemini-3.5-flash-lite' and row['prompt_version'] == 'legal-rag-prompt-v0', f'per-query model/prompt mismatch {q}')\n            require(row['retrieval_config'] == CONFIG, f'per-query retrieval config mismatch {q}')\n        require(t['initial_top5'] == s['retrieved_chunk_ids'] == f['top5_chunk_ids'], f'initial evidence mismatch {q}')\n        require(t['final_top5'] == [e['chunk_id'] for e in t['final_evidence']], f'final evidence mismatch {q}')\n        require(len(set(t['final_top5'])) == len(t['final_top5']) == 5, f'final evidence size mismatch {q}')\n        require(t['state']['execution_error'] is None, f'trace execution error {q}')\n        for k in ['query','run_id','coverage_check','missing_aspects','sub_queries','draft_answer','completeness_check','citation_check','final_answer','final_status','initial_top5','final_top5','retrieval_calls','llm_calls','expansion_used','revision_used','citation_revision_used']:\n            require(t[k] == t['state'][k], f'trace/state disagreement {q}/{k}')\n        require(t['expansion_candidates'] == t['state']['expanded_candidates'], f'expanded candidates mismatch {q}')\n        require(t['final_evidence'] == t['state']['current_evidence'], f'current evidence mismatch {q}')\n        require(a['status'] == t['final_status'], f'status mismatch {q}')\n        require(t['budgets'] == BUDGETS, f'budget configuration mismatch {q}')\n        n = production_calls(t)\n        require(n <= BUDGETS['max_llm_calls'], f'LLM budget violation {q}')\n        rc=t['retrieval_calls']; stages=[c['stage'] for c in t['llm_calls']]\n        require(len(rc)==t['retrieval_call_count']==1+len(t['sub_queries']), f'retrieval calls mismatch {q}')\n        require([c['call_number'] for c in rc] == list(range(1,len(rc)+1)), f'retrieval numbering mismatch {q}')\n        require(rc[0]['round']==0 and not rc[0]['sub_query'] and rc[0]['query']==g['query'], f'initial retrieval malformed {q}')\n        require([c['query'] for c in rc[1:]]==t['sub_queries'], f'subquery mismatch {q}')\n        require(all(c['round']==1 and c['sub_query'] for c in rc[1:]), f'expansion round violation {q}')\n        require(len(t['sub_queries'])<=3 and t['state']['retrieval_round']<=1, f'expansion budget violation {q}')\n        require(bool(rc[1:])==t['expansion_used'], f'expansion flag mismatch {q}')\n        require(t['expansion_used']==(not t['coverage_check']['sufficient'] and bool(t['missing_aspects'])), f'coverage/expansion trigger mismatch {q}')\n        require(t['state']['transitions'].count('evidence_merge_rerank')==int(t['expansion_used']), f'evidence merge count mismatch {q}')\n        require(t['state']['revision_count']==stages.count('answer_revision')==int(t['revision_used'])<=1, f'answer revision budget/flag mismatch {q}')\n        require(t['state']['citation_revision_count']==stages.count('citation_revision')==int(t['citation_revision_used'])<=1, f'citation revision budget/flag mismatch {q}')\n        require(stages.count('completeness_check')==1+int(t['revision_used']), f'completeness call mismatch {q}')\n        require(stages.count('coverage_check')==stages.count('answer_generation')==1, f'initial check/generation count mismatch {q}')\n        require(stages.count('semantic_citation_alignment')==int(t['citation_check']['alignment_checked']), f'semantic call mismatch {q}')\n        require(n==3+2*int(t['revision_used'])+int(t['citation_revision_used'])+int(t['citation_check']['alignment_checked']), f'production accounting mismatch {q}')\n        require([v for v in t['state']['transitions'] if v in STAGES]==stages, f'transitions/calls mismatch {q}')\n        judge=a['judge']; jp={p['point_id']:p for p in judge['points']}\n        require(len(jp)==len(judge['points']) and set(jp)==set(pids), f'judge points mismatch {q}')\n        require([p for p in pids if jp[p]['supported']]==a['supported_point_ids'], f'judge support mismatch {q}')\n        for row,j in [(s,{k:s['judge_'+k] for k in ['claim_count','grounded_claim_count','unsupported_claim_count','cited_claim_count','correctly_cited_claim_count']}),(a,judge)]:\n            for metric,num,den in [('citation_correctness','correctly_cited_claim_count','cited_claim_count'),('groundedness','grounded_claim_count','claim_count'),('unsupported_claim_rate','unsupported_claim_count','claim_count')]:\n                require(j[den]>0 and close(row[metric],j[num]/j[den]), f'claim metric mismatch {q}/{metric}')\n    return {'before':before,'agentic_metrics':am,'standard_manifest':sm,'gold_manifest':gm,'failure_metrics':fm,'gold':gold,'standard':standard,'agentic':agentic,'failures':failures,'point_index':point_index,'traces':traces,'standard_metrics':standard_metrics}\n\ndef analyze_query(q, inputs):\n    s,a,t,g,f = (inputs[k][q] for k in ['standard','agentic','traces','gold','failures'])\n    standard = {m:s.get(m) for m in METRICS}\n    standard['answer_completeness']=len(s['supported_point_ids'])/len(s['required_point_ids'])\n    deltas=oriented_deltas(standard,a); oc=outcome(deltas)\n    p=profile(t['expansion_used'],t['revision_used'],t['citation_revision_used'])\n    gained,lost=point_changes(s['supported_point_ids'],a['supported_point_ids'])\n    added,removed=point_changes(t['initial_top5'],t['final_top5'])\n    gold_chunks={c for point in g['required_points'] for c in point['supporting_chunk_ids']}\n    draft=t['draft_answer']; final=t['final_answer']\n    row={'query_id':q,'query':g['query'],'trace_path':str(Path(a['trace_path']).relative_to(ROOT)),'required_point_ids':a['required_point_ids'],'required_point_count':len(a['required_point_ids'])}\n    for m in METRICS:\n        row['standard_'+m]=standard[m]; row['agentic_'+m]=a[m]\n        row['unsupported_claim_improvement' if m=='unsupported_claim_rate' else 'delta_'+m]=deltas[m]\n    row.update({'oriented_metric_deltas':deltas,'standard_supported_point_ids':s['supported_point_ids'],'agentic_supported_point_ids':a['supported_point_ids'],'gained_supported_point_ids':gained,'lost_supported_point_ids':lost,'interventions':{'evidence_expansion':t['expansion_used'],'answer_revision':t['revision_used'],'citation_revision':t['citation_revision_used']},'primary_intervention_profile':PROFILES[p],'profile_key':p,'quality_outcome':OUTCOMES[oc],'outcome_key':oc,'coverage_check':t['coverage_check'],'missing_aspects':t['missing_aspects'],'subqueries':t['sub_queries'],'subquery_count':len(t['sub_queries']),'expanded_candidate_chunk_ids':t['expansion_candidates'],'initial_top5_chunk_ids':t['initial_top5'],'final_top5_chunk_ids':t['final_top5'],'added_final_evidence_chunk_ids':added,'removed_initial_evidence_chunk_ids':removed,'final_top5_order_changed':t['initial_top5']!=t['final_top5'],'final_top5_membership_changed':bool(added or removed),'gold_supporting_chunks_added_by_expansion':sorted(set(added)&gold_chunks),'gold_supporting_chunks_removed_by_expansion':sorted(set(removed)&gold_chunks),'gold_overlap_interpretation':'post-hoc gold-support overlap; not semantic sufficiency','initial_gold_support_overlap':sorted(set(t['initial_top5'])&gold_chunks),'final_gold_support_overlap':sorted(set(t['final_top5'])&gold_chunks),'expansion_observation':OBSERVATIONS[oc] if t['expansion_used'] else None,'attribution_note':'multiple interventions — attribution not isolated' if p=='multiple' else 'single intervention; observational association only' if p!='none' else 'No Substantive Intervention; generation/evaluator variability remains possible','retrieval_calls':len(t['retrieval_calls']),'production_llm_calls':production_calls(t),'production_llm_stages':[c['stage'] for c in t['llm_calls']],'retrieval_call_details':[{k:c[k] for k in ['call_number','round','query','sub_query','candidate_count','candidate_chunk_ids','top5_chunk_ids']} for c in t['retrieval_calls']],'execution_path_raw':t['state']['transitions'],'final_status':t['final_status'],'budgets':t['budgets'],'budget_compliance':'PASS','standard_failure_profile':{k:f[k] for k in ['primary_failure_counts','overall_root_cause','query_taxonomy','has_retrieval_miss','has_evidence_coverage_issue','has_generation_issue','has_citation_issue']},'standard_answer':s['answer'],'draft_answer':draft,'final_answer':final,'draft_to_final_answer_changed':draft!=final,'draft_to_final_non_citation_text_changed':lexical_body(draft)!=lexical_body(final),'standard_to_agentic_answer_changed':s['answer']!=final,'draft_citation_ids':citations(draft),'final_citation_ids':citations(final),'draft_to_final_citation_ids_changed':set(citations(draft))!=set(citations(final)),'draft_equals_standard_answer':draft==s['answer'],'draft_evidence_equals_standard_content_and_citation_map':evidence_signature(t['final_evidence'])==evidence_signature(s['evidence']),'deterministic_citation_check':t['citation_check'],'semantic_citation_check_used':t['citation_check']['alignment_checked'],'frozen_agentic_judge':a['judge'],'direct_revision_benchmark_effect_confirmed':False})\n    if t['revision_used']:\n        row['initial_completeness_check']={'complete':None,'missing_points':None,'reason':None,'availability':'not_retained; final check overwrites initial check','inferred_trigger_complete':False,'inference_basis':'answer_revision transition and read-only controller branch inspection'}\n    else:\n        row['initial_completeness_check']={**t['completeness_check'],'availability':'retained; the sole completeness check'}\n    row['final_completeness_check']={**t['completeness_check'],'scope':'last internal completeness decision; before Citation Revision' if t['citation_revision_used'] else 'final answer','recheck_used':t['revision_used']}\n    row['initial_to_final_evidence_content_and_citation_map_unchanged']=evidence_signature(t['state']['initial_evidence'])==evidence_signature(t['final_evidence'])\n    row['standard_final_cited_chunk_ids']=sorted(e['chunk_id'] for e in s['evidence'] if e['evidence_id'] in s['cited_evidence_ids'])\n    row['agentic_final_cited_chunk_ids']=sorted(e['chunk_id'] for e in t['final_evidence'] if e['evidence_id'] in t['citation_check']['cited_evidence_ids'])\n    row['standard_to_agentic_cited_chunks_changed']=row['standard_final_cited_chunk_ids']!=row['agentic_final_cited_chunk_ids']\n    row['citation_revision_observation']={'used':t['citation_revision_used'],'pre_revision_answer':None if t['citation_revision_used'] else 'not_applicable','pre_validator_status':None,'pre_validator_failure_inferred':t['citation_revision_used'],'pre_validator_issue_details':None,'final_validator_valid':t['citation_check']['valid'],'validator_fix':'trace-consistent inferred failure-to-pass; exact failure not retained' if t['citation_revision_used'] else 'not_applicable','substantive_content_change_during_citation_revision':'not_identifiable: post-Answer-Revision/pre-Citation-Revision answer not retained' if t['citation_revision_used'] else 'not_applicable','benchmark_association':OBSERVATIONS[oc] if t['citation_revision_used'] else None}\n    row['rescue_type']='fully_rescued' if standard['answer_completeness']<1-EPS and close(a['answer_completeness'],1) else 'partially_rescued' if deltas['answer_completeness']>EPS and a['answer_completeness']<1-EPS else None\n    row['regressions']=[{'metric':m,'standard':standard[m],'agentic':a[m],'oriented_delta':v} for m,v in deltas.items() if v is not None and v < -EPS]\n    row['self_check_calibration'],row['success_status_but_benchmark_incomplete']=calibrate(t['completeness_check']['complete'],a['answer_completeness'],t['final_status'])\n    row['failure_response_alignment']={'expansion_target_present':f['has_retrieval_miss'] or f['has_evidence_coverage_issue'],'answer_revision_target_present':f['has_generation_issue'],'citation_revision_target_present':f['has_citation_issue'],'interpretation':'post-hoc alignment; runtime did not receive Phase 4A labels'}\n    row['point_changes_detail']=[{'query_id':q,'point_id':pid,'change':direction,'point_text':next(pt['description'] for pt in g['required_points'] if pt['point_id']==pid),'standard_primary_failure':inputs['point_index'][q,pid]['primary_failure'],'agentic_judge_reason':next(pt['reason'] for pt in a['judge']['points'] if pt['point_id']==pid)} for direction,pids in [('gained',gained),('lost',lost)] for pid in pids]\n    names={'initialized':'START','initial_retrieval':'Initial Retrieval','coverage_check':'Evidence Coverage Check','evidence_merge_rerank':'Evidence Merge / Final Evidence Selection','answer_generation':'Answer Generation','completeness_check':'Answer Completeness Check','answer_revision':'Answer Revision','citation_check':'Deterministic Citation Check','citation_revision':'Citation Revision','citation_recheck':'Deterministic Citation Re-check','semantic_citation_alignment':'Semantic Citation Check'}\n    path=[]; complete_seen=False\n    for v in t['state']['transitions']:\n        label='END ('+v.split(':',1)[1]+')' if v.startswith('final:') else 'Targeted Evidence Expansion (subquery '+v.rsplit('_',1)[1]+')' if v.startswith('expansion_retrieval_') else names[v]\n        if v=='completeness_check':\n            if complete_seen: label='Final Completeness Re-check'\n            complete_seen=True\n        path.append(label)\n    row['execution_path']=path\n    row['trace_assessment']=case_note(row)\n    return row\n\ndef case_note(r):\n    notes={\n      'eval001':'Expansion adds article 10 clause 3 and removes a non-gold initial chunk, but the missing low-risk definition remains outside final Top-5. The draft/final answer adds a low-risk mention and still abstains. Frozen groundedness falls from 1 to 0.5; the judge retains aggregate claim counts, not claim-specific reasons. No Answer Revision or Citation Revision occurred. Evidence removal of a required-point supporting chunk is not observed.',\n      'eval002':'Answer Revision adds the ministry coordination/submission responsibility (P2) with citation E2. Draft text exactly matches the frozen Standard answer and the evidence content/citation map is identical. This is the strongest trace-consistent revision association; the frozen Standard audit is an exact-draft proxy, not a separately run draft audit.',\n      'eval005a':'Expansion leaves ordered Top-5 unchanged. Neither answer covers any of the seven complete required propositions according to the frozen evaluator; the internal complete decision and success status disagree with benchmark completeness 0.',\n      'eval005b':'Answer Revision and Citation Revision occur on unchanged evidence. The final answer adds transparency and incident-handling obligations (P4). Citation recheck passes, but the answer between the two revisions and the original validator errors were not retained. Their separate contributions cannot be isolated; the final completeness decision precedes Citation Revision.',\n      'eval006':'Expansion leaves ordered Top-5 unchanged; all five quality metrics remain unchanged and Answer Completeness stays 1. The trigger sought another clause beyond the already satisfied frozen required points; this does not prove the trigger incorrect.',\n      'eval010':'Answer Revision changes the reporting sentence, yet benchmark completeness stays 1. The final internal checker requests an explanation obligation associated with E5 beyond the two frozen required points and returns incomplete_answer. This illustrates a difference in target definitions, not a formal checker false positive/negative.',\n      'eval013':'Expansion leaves ordered Top-5 unchanged. Answer Revision appends the highest-applicable-testing-level sentence, which was already in the frozen Standard answer. Citation Correctness and Groundedness fall to 0.8, while completeness stays 0.6. The final judge gives aggregate claim counts without locating its unsupported claim; no evidence establishes that revision introduced unsupported content.',\n      'eval014':'Expansion leaves ordered Top-5 unchanged. The generated draft/final answer gives more detail for application forms and testing-project contents; the frozen evaluator gains P1, P2 and P4 despite continued abstention. Expansion did not introduce final evidence, so its contribution is not isolated from generation/evaluator variation.',\n      'eval016':'Expansion leaves ordered Top-5 unchanged. The new answer omits several specific form identifiers present in Standard; the frozen evaluator reports higher citation correctness and groundedness, with unchanged required-point coverage. This is consistent with a narrower answer but does not isolate an expansion effect.',\n      'eval022':'Answer Revision appends the agency database collection/quality/annotation responsibility with E1. The frozen evaluator gains P2 and improves all five oriented metrics, while P1 and P3 remain unsupported. Evidence stays unchanged; draft benchmark scores were not retained.',\n      'eval026':'Answer Revision adds system description and intended use (E5), which the Standard answer already included. Final metrics remain at 1 for completeness/citations/groundedness and 0 unsupported rate. No gain over Standard does not exclude recovery from an incomplete Agentic draft.',\n      'eval027':'No Substantive Intervention and unchanged initial/final evidence. Frozen evaluator loses P4 (innovation/social responsibility); the final internal checker still declares complete and success. Standard point labels are retained without per-point judge rationales, so generation wording and evaluator variability cannot be separated.',\n      'eval029':'Answer Revision appends an impact-assessment report obligation (E4), while the two frozen required points and all five quality metrics remain unchanged. The added material extends beyond the frozen point set; it is not evidence of a wrong trigger.'}\n    return notes.get(r['query_id'], 'No Substantive Intervention; Initial Retrieval, Evidence Coverage Check, Answer Generation, Answer Completeness Check and Deterministic Citation Check are recorded. '+('Internal complete/success disagrees with incomplete frozen benchmark coverage.' if r['agentic_answer_completeness']<1 else 'All frozen quality metrics are unchanged.'))\n\ndef summarize(rows, inputs):\n    require(len(rows)==31 and len({r['query_id'] for r in rows})==31, 'query accounting failed')\n    total=sum(r['required_point_count'] for r in rows); require(total==102,'point accounting failed')\n    profiles=count_all((r['profile_key'] for r in rows),PROFILES); outcomes=count_all((r['outcome_key'] for r in rows),OUTCOMES)\n    require(sum(profiles.values())==sum(outcomes.values())==31,'classification accounting failed')\n    for summary in [inputs['standard_metrics'],inputs['agentic_metrics']['metrics']]:\n        require(summary['query_count']==summary['completed_query_count']==31 and summary['required_point_count']==102, 'summary query/point counts mismatch')\n        require(summary['generation_error_count']==summary['evaluation_error_count']==0, 'summary error counts mismatch')\n    require(inputs['agentic_metrics']['metrics']['judged_query_count']==31,'judged query count mismatch')\n    require(dict(collections.Counter(r['final_status'] for r in rows))==inputs['agentic_metrics']['metrics']['status_counts'],'status summary mismatch')\n    require(sum(r['citation_valid'] for r in inputs['standard'].values())==inputs['standard_metrics']['citation_syntax_validity']['valid_count'],'citation validator summary mismatch')\n    ac={}\n    for side in ['standard','agentic']:\n        ac[side+'_macro']=statistics.mean(r[side+'_answer_completeness'] for r in rows)\n        ac[side+'_supported_points']=sum(len(r[side+'_supported_point_ids']) for r in rows)\n        ac[side+'_micro']=ac[side+'_supported_points']/total\n    ac.update({'macro_delta':ac['agentic_macro']-ac['standard_macro'],'micro_delta':ac['agentic_micro']-ac['standard_micro'],'gained_required_points':sum(len(r['gained_supported_point_ids']) for r in rows),'lost_required_points':sum(len(r['lost_supported_point_ids']) for r in rows)})\n    ac['net_required_point_gain']=ac['gained_required_points']-ac['lost_required_points']\n    require(ac['net_required_point_gain']==ac['agentic_supported_points']-ac['standard_supported_points'],'point net mismatch')\n    comparisons={}\n    for m in METRICS:\n        sv=statistics.mean(r['standard_'+m] for r in rows); av=statistics.mean(r['agentic_'+m] for r in rows)\n        comparisons[m]={'standard_macro':sv,'agentic_macro':av,'raw_delta':av-sv,'oriented_improvement':sv-av if m=='unsupported_claim_rate' else av-sv,'query_denominator':31}\n        require(close(sv,inputs['standard_metrics'][m]['macro']),f'Standard summary mismatch {m}')\n        require(close(av,inputs['agentic_metrics']['metrics'][m]),f'Agentic summary mismatch {m}')\n        if m!='answer_completeness':\n            c=inputs['agentic_metrics']['comparison_vs_standard_rag'][m]\n            require(close(sv,c['standard_rag']) and close(av,c['agentic_rag']) and close(av-sv,c['delta']),f'comparison mismatch {m}')\n    require(close(ac['standard_micro'],inputs['standard_metrics']['answer_completeness']['micro']),'Standard micro mismatch')\n    require(ac['standard_supported_points']==inputs['failure_metrics']['aggregate']['fully_supported_points']==inputs['standard_metrics']['supported_point_count'],'Standard point count mismatch')\n    require(ac['agentic_supported_points']==inputs['agentic_metrics']['metrics']['supported_point_count'],'Agentic point count mismatch')\n    micros={}\n    for side in ['standard','agentic']:\n        records=inputs[side].values()\n        cited=sum(len(r['citation_supported_point_ids']) for r in records)\n        counts={k:sum(r['judge_'+k] if side=='standard' else r['judge'][k] for r in records) for k in ['claim_count','grounded_claim_count','unsupported_claim_count','cited_claim_count','correctly_cited_claim_count']}\n        micros[side]={'citation_completeness':cited/total,'citation_supported_point_count':cited,'citation_correctness':counts['correctly_cited_claim_count']/counts['cited_claim_count'],'groundedness':counts['grounded_claim_count']/counts['claim_count'],'unsupported_claim_rate':counts['unsupported_claim_count']/counts['claim_count'],'claim_counts':counts}\n    expanded=[r for r in rows if r['interventions']['evidence_expansion']]; revised=[r for r in rows if r['interventions']['answer_revision']]; cited=[r for r in rows if r['interventions']['citation_revision']]\n    calibration=count_all((r['self_check_calibration'] for r in rows),['internal_complete_and_benchmark_complete','internal_complete_but_benchmark_incomplete','internal_incomplete_but_benchmark_complete','internal_incomplete_and_benchmark_incomplete'])\n    calibration['success_status_but_benchmark_incomplete']=sum(r['success_status_but_benchmark_incomplete'] for r in rows)\n    calibration['potential_false_success_query_ids']=[r['query_id'] for r in rows if r['self_check_calibration']=='internal_complete_but_benchmark_incomplete']\n    calibration['success_status_but_benchmark_incomplete_query_ids']=[r['query_id'] for r in rows if r['success_status_but_benchmark_incomplete']]\n    calibration['internal_incomplete_but_benchmark_complete_query_ids']=[r['query_id'] for r in rows if r['self_check_calibration']=='internal_incomplete_but_benchmark_complete']\n    calibration['last_completeness_check_precedes_citation_revision_query_ids']=[r['query_id'] for r in cited]\n    calibration['status_breakdown']={s:{'queries':len(group),'benchmark_incomplete':sum(r['agentic_answer_completeness']<1-EPS for r in group),'citation_correctness_lt_1':sum(r['agentic_citation_correctness']<1-EPS for r in group),'groundedness_lt_1':sum(r['agentic_groundedness']<1-EPS for r in group),'query_ids':[r['query_id'] for r in group]} for s in sorted({r['final_status'] for r in rows}) for group in [[r for r in rows if r['final_status']==s]]}\n    eff={}\n    for field,prefix in [('retrieval_calls','retrieval'),('production_llm_calls','production_llm')]:\n        st=stats([r[field] for r in rows]); eff[prefix+'_call_statistics']=st\n        for k,v in [('average','mean'),('median','median'),('max','max')]: eff[k+'_'+field]=st[v]\n    eff['by_profile']={p:{'queries':len(group),'retrieval_calls':stats([r['retrieval_calls'] for r in group]),'production_llm_calls':stats([r['production_llm_calls'] for r in group])} for p in PROFILES for group in [[r for r in rows if r['profile_key']==p]]}\n    eff['production_llm_stage_counts']=dict(collections.Counter(stage for r in rows for stage in r['production_llm_stages']))\n    eff['additional_evidence_merge_rerank_operations']=len(expanded)\n    eff['standard_configured_calls_per_query']={'retrieval_calls':1,'answer_generation_llm_calls':1,'basis':'frozen Standard runner performs one retrieve and one answer-generation call; evaluator excluded; transport retries unobserved'}\n    eff['overhead_vs_standard_logical_calls']={'retrieval_calls':sum(r['retrieval_calls'] for r in rows)-31,'production_llm_calls':sum(r['production_llm_calls'] for r in rows)-31,'retrieval_ratio':eff['average_retrieval_calls'],'production_llm_ratio':eff['average_production_llm_calls']}\n    eff['accounting_note']='Logical production controller calls only, excluding frozen judge/evaluation attempts. Expansion merge reranks are separate from retrieval-call totals. Transport retries, token counts and cost are not measured by these traces.'\n    matrix={p:{'queries':profiles[p],**count_all((r['outcome_key'] for r in rows if r['profile_key']==p),OUTCOMES)} for p in PROFILES}\n    for oc in OUTCOMES: require(sum(matrix[p][oc] for p in PROFILES)==outcomes[oc],'matrix column mismatch')\n    for p in PROFILES: require(sum(matrix[p][oc] for oc in OUTCOMES)==profiles[p],'matrix row mismatch')\n    for r in rows:\n        require(point_changes(r['standard_supported_point_ids'],r['agentic_supported_point_ids'])==(r['gained_supported_point_ids'],r['lost_supported_point_ids']),'point-set mismatch')\n        require(r['outcome_key']==outcome(r['oriented_metric_deltas']),'outcome mismatch')\n    rates={'expansion_rate':len(expanded)/31,'answer_revision_rate':len(revised)/31,'citation_revision_rate':len(cited)/31,'semantic_citation_check_rate':sum(r['semantic_citation_check_used'] for r in rows)/31}\n    for key in rates: require(close(rates[key],inputs['agentic_metrics']['metrics']['revision_rate' if key=='answer_revision_rate' else key]),f'rate summary mismatch {key}')\n    for key,trace_key in [('average_retrieval_calls','average_retrieval_calls'),('average_llm_calls','average_production_llm_calls')]: require(close(inputs['agentic_metrics']['metrics'][key],eff[trace_key]),f'efficiency summary mismatch {key}')\n    alignments={behavior:{'target_present':sum(r['failure_response_alignment'][target] for r in group),'target_absent':sum(not r['failure_response_alignment'][target] for r in group),'query_ids':[r['query_id'] for r in group]} for behavior,target,group in [('evidence_expansion','expansion_target_present',expanded),('answer_revision','answer_revision_target_present',revised),('citation_revision','citation_revision_target_present',cited)]}\n    failure_categories=['retrieval_miss','evidence_coverage','answer_generation','citation','none']\n    failure_points={k:{'standard_point_count':sum(p['primary_failure']==k for p in inputs['point_index'].values()),'gained_points':sum(d['change']=='gained' and d['standard_primary_failure']==k for r in rows for d in r['point_changes_detail']),'lost_points':sum(d['change']=='lost' and d['standard_primary_failure']==k for r in rows for d in r['point_changes_detail'])} for k in failure_categories}\n    for k,v in failure_points.items(): require(v['standard_point_count']==inputs['failure_metrics']['aggregate']['primary_failure_counts'][k],f'Phase4A aggregate mismatch {k}')\n    return {'analysis_version':'phase-4e-agentic-trace-analysis-v0','status':'PASS','read_only_analysis':True,'query_count':31,'required_point_count':102,'answer_completeness':ac,'benchmark_reconciliation':comparisons,'additional_micro_metrics':micros,'summary_reconciliation_status':'PASS','summary_omissions':['Original Agentic Markdown and comparison_vs_standard_rag omit Answer Completeness; recovered from underlying records.','Original Agentic summary has no micro Answer Completeness; computed as 65/102.'],'intervention_profiles':profiles,'outcomes':outcomes,'intervention_outcome_matrix':matrix,'expansion':{'queries':len(expanded),'without_expansion':31-len(expanded),'query_ids':[r['query_id'] for r in expanded],'average_subqueries':statistics.mean(r['subquery_count'] for r in expanded),'final_top5_changed':sum(r['final_top5_order_changed'] for r in expanded),'final_top5_unchanged':sum(not r['final_top5_order_changed'] for r in expanded),'membership_changed':sum(r['final_top5_membership_changed'] for r in expanded),'average_new_final_chunks_among_expanded':statistics.mean(len(r['added_final_evidence_chunk_ids']) for r in expanded),'average_new_final_chunks_all_queries':sum(len(r['added_final_evidence_chunk_ids']) for r in rows)/31,'gold_supporting_chunks_added_count':sum(len(r['gold_supporting_chunks_added_by_expansion']) for r in expanded),'gold_supporting_chunks_removed_count':sum(len(r['gold_supporting_chunks_removed_by_expansion']) for r in expanded),'outcomes':count_all((r['outcome_key'] for r in expanded),OUTCOMES)},'answer_revision':{'queries':len(revised),'query_ids':[r['query_id'] for r in revised],'draft_to_final_changed':sum(r['draft_to_final_answer_changed'] for r in revised),'initial_checker_payloads_retained':0,'directly_confirmed_benchmark_pre_post_effects':0,'exact_standard_answer_draft_proxy_query_ids':[r['query_id'] for r in revised if r['draft_equals_standard_answer'] and r['draft_evidence_equals_standard_content_and_citation_map']],'outcomes':count_all((r['outcome_key'] for r in revised),OUTCOMES)},'citation_revision':{'queries':len(cited),'query_ids':[r['query_id'] for r in cited],'final_validator_pass':sum(r['deterministic_citation_check']['valid'] for r in cited),'original_validator_payload_retained':0,'outcomes':count_all((r['outcome_key'] for r in cited),OUTCOMES)},'self_check_calibration':calibration,'efficiency':eff,'rates':rates,'budget_compliance':{'status':'PASS','configured':BUDGETS,'violations':[],'maximum_observed':{'retrieval_expansion_rounds':max(inputs['traces'][r['query_id']]['state']['retrieval_round'] for r in rows),'subqueries':max(r['subquery_count'] for r in rows),'answer_revisions':max(inputs['traces'][r['query_id']]['state']['revision_count'] for r in rows),'citation_revisions':max(inputs['traces'][r['query_id']]['state']['citation_revision_count'] for r in rows),'production_llm_calls':max(r['production_llm_calls'] for r in rows)}},'failure_response_alignment':alignments,'failure_point_gain_loss':failure_points,'rescued_queries':{'fully':[r['query_id'] for r in rows if r['rescue_type']=='fully_rescued'],'partially':[r['query_id'] for r in rows if r['rescue_type']=='partially_rescued']},'no_observed_gain_intervention_query_ids':[r['query_id'] for r in rows if r['profile_key']!='none' and r['outcome_key'] in ['no_change','regressed']],'unchanged_quality_intervention_query_ids':[r['query_id'] for r in rows if r['profile_key']!='none' and r['outcome_key']=='no_change'],'regression_query_ids':[r['query_id'] for r in rows if r['regressions']],'network_api_calls':'NONE','causal_claims':'NOT ESTABLISHED — observational trace analysis only','gold_usage':'post-hoc evaluator-side only; no production module imported or executed'}\n\ndef build():\n    inputs=validate_and_load()\n    rows=[analyze_query(q,inputs) for q in sorted(inputs['gold'])]\n    return inputs,rows,summarize(rows,inputs)\n\nif __name__=='__main__':\n    inputs,rows,metrics=build()\n    print(json.dumps(metrics,ensure_ascii=False,indent=2))\n"
+      },
+      "test_phase4e_analysis.py": {
+        "sha256": "b860d96c828853f4b3c24228a1f95bccbfed408bf1452228ef1dd4fe13648286",
+        "source": "\"\"\"Deterministic Phase 4E tests; no external APIs or production imports.\"\"\"\nimport copy\nimport json\nimport socket\nimport tempfile\nimport unittest\nfrom pathlib import Path\nfrom unittest.mock import patch\nimport phase4e_analysis as a\n\n\nclass TraceAnalysisTests(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        cls.network_guard = patch.object(socket.socket, 'connect', side_effect=AssertionError('Network forbidden'))\n        cls.network_guard.start()\n        cls.inputs, cls.rows, cls.metrics = a.build()\n\n    @classmethod\n    def tearDownClass(cls):\n        cls.network_guard.stop()\n\n    def test_duplicate_query_detection(self):\n        with self.assertRaisesRegex(ValueError,'duplicate'):\n            a.index_unique([{'query_id':'q'},{'query_id':'q'}],'fixture')\n\n    def test_missing_trace_detection(self):\n        with self.assertRaisesRegex(ValueError,'missing/extra trace'):\n            a.validate_trace_links({'q':{}},{})\n\n    def test_mismatched_query_id(self):\n        with self.assertRaisesRegex(ValueError,'query IDs'):\n            a.align({'q':{'query':'same'}},{'other':{'query':'same'}},'fixture')\n\n    def test_mismatched_query_text(self):\n        with self.assertRaisesRegex(ValueError,'query text'):\n            a.align({'q':{'query':'same'}},{'q':{'query':'different'}},'fixture')\n\n    def test_mismatched_trace_run_id(self):\n        t={'run_id':'agentic-v1-other','query':'text'}\n        with self.assertRaisesRegex(ValueError,'query ID'):\n            a.validate_trace_links({'q':{'query':'text','trace':t}},{'q':t})\n\n    def test_intervention_profiles(self):\n        for flags,want in [((False,False,False),'none'),((True,False,False),'expansion_only'),((False,True,False),'answer_revision_only'),((False,False,True),'citation_revision_only')]:\n            with self.subTest(flags=flags): self.assertEqual(a.profile(*flags),want)\n\n    def test_multiple_interventions(self):\n        for flags in [(True,True,False),(True,False,True),(False,True,True),(True,True,True)]:\n            with self.subTest(flags=flags): self.assertEqual(a.profile(*flags),'multiple')\n\n    def test_outcome_classification(self):\n        for values,want in [([0,0,0,0,0],'no_change'),([0.2,0,0,0,0],'improved'),([-0.2,0,0,0,0],'regressed'),([0.2,-0.1,0,0,0],'improved_with_tradeoff'),([None,0,0,0,0],'inconclusive'),([float('nan'),0,0,0,0],'inconclusive')]:\n            with self.subTest(want=want): self.assertEqual(a.outcome(dict(zip(a.METRICS,values))),want)\n\n    def test_equality_tolerance(self):\n        self.assertEqual(a.outcome(dict.fromkeys(a.METRICS,a.EPS)),'no_change')\n        self.assertEqual(a.outcome(dict.fromkeys(a.METRICS,-a.EPS)),'no_change')\n        self.assertEqual(a.outcome(dict.fromkeys(a.METRICS,a.EPS*1.01)),'improved')\n\n    def test_unsupported_claim_rate_orientation(self):\n        s=dict.fromkeys(a.METRICS,0.5); r=dict(s); r['unsupported_claim_rate']=0.25\n        d=a.oriented_deltas(s,r)\n        self.assertEqual(d['unsupported_claim_rate'],0.25)\n        self.assertEqual(a.outcome(d),'improved')\n        self.assertEqual(a.outcome(a.oriented_deltas(r,s)),'regressed')\n\n    def test_gained_lost_points(self):\n        self.assertEqual(a.point_changes(['P1','P2'],['P2','P3']),(['P3'],['P1']))\n\n    def test_production_llm_accounting_excludes_evaluator(self):\n        t={'llm_calls':[{'call_number':1,'stage':'answer_generation'}],'llm_call_count':1,'evaluation_attempts':9,'judge':{'calls':99}}\n        self.assertEqual(a.production_calls(t),1)\n        t['llm_calls'][0]['stage']='evaluation_judge'\n        with self.assertRaisesRegex(ValueError,'non-production'): a.production_calls(t)\n\n    def test_production_llm_count_mismatch(self):\n        with self.assertRaisesRegex(ValueError,'count mismatch'):\n            a.production_calls({'llm_calls':[],'llm_call_count':1})\n\n    def test_aggregate_reconciliation(self):\n        m=self.metrics\n        self.assertEqual((m['query_count'],m['required_point_count']),(31,102))\n        self.assertEqual(sum(m['intervention_profiles'].values()),31)\n        self.assertEqual(sum(m['outcomes'].values()),31)\n        self.assertEqual((m['answer_completeness']['standard_supported_points'],m['answer_completeness']['agentic_supported_points']),(60,65))\n        self.assertEqual((m['answer_completeness']['gained_required_points'],m['answer_completeness']['lost_required_points']),(6,1))\n        self.assertAlmostEqual(m['answer_completeness']['macro_delta'],1.5/31)\n        self.assertAlmostEqual(m['answer_completeness']['micro_delta'],5/102)\n        for p,row in m['intervention_outcome_matrix'].items(): self.assertEqual(sum(row[o] for o in a.OUTCOMES),row['queries'])\n\n    def test_bad_summary_is_rejected(self):\n        inputs=copy.deepcopy(self.inputs)\n        inputs['agentic_metrics']['metrics']['groundedness']=0.1\n        with self.assertRaisesRegex(ValueError,'summary mismatch'):\n            a.summarize(self.rows,inputs)\n\n    def test_success_vs_benchmark_calibration(self):\n        self.assertEqual(a.calibrate(True,0.5,'success'),('internal_complete_but_benchmark_incomplete',True))\n        self.assertEqual(a.calibrate(True,0.5,'insufficient_evidence'),('internal_complete_but_benchmark_incomplete',False))\n        self.assertEqual(a.calibrate(False,1,'incomplete_answer'),('internal_incomplete_but_benchmark_complete',False))\n        self.assertEqual(a.calibrate(False,0.5,'incomplete_answer'),('internal_incomplete_and_benchmark_incomplete',False))\n        self.assertEqual(a.calibrate(True,1,'success'),('internal_complete_and_benchmark_complete',False))\n        c=self.metrics['self_check_calibration']\n        self.assertEqual(c['internal_complete_but_benchmark_incomplete'],17)\n        self.assertEqual(c['success_status_but_benchmark_incomplete'],15)\n\n    def test_missing_intermediate_check_is_not_invented(self):\n        rows={r['query_id']:r for r in self.rows}\n        self.assertIsNone(rows['eval002']['initial_completeness_check']['complete'])\n        self.assertEqual(rows['eval005b']['final_completeness_check']['scope'],'last internal completeness decision; before Citation Revision')\n        self.assertIsNone(rows['eval005b']['citation_revision_observation']['pre_validator_issue_details'])\n\n    def test_budget_and_real_call_accounting(self):\n        self.assertEqual(sum(r['production_llm_calls'] for r in self.rows),108)\n        self.assertEqual(sum(r['retrieval_calls'] for r in self.rows),38)\n        self.assertEqual(self.metrics['budget_compliance']['violations'],[])\n        self.assertEqual(self.metrics['expansion']['final_top5_changed'],1)\n\n    def test_source_readonly_integrity(self):\n        self.assertEqual(a.check_before_hashes(),self.inputs['before'])\n        with tempfile.TemporaryDirectory() as folder:\n            path=Path(folder)/'source.json'; path.write_text('{\"frozen\": true}\\n')\n            before=a.digest(path); a.read(path)\n            self.assertEqual(before,a.digest(path))\n            path.write_text('{\"frozen\": false}\\n')\n            self.assertNotEqual(before,a.digest(path))\n\n    def test_micro_claim_metrics_need_distinct_denominators(self):\n        m=self.metrics['additional_micro_metrics']\n        self.assertAlmostEqual(m['agentic']['groundedness'],93/97)\n        self.assertAlmostEqual(m['agentic']['citation_correctness'],92/94)\n        self.assertLess(m['agentic']['groundedness'],m['standard']['groundedness'])\n        self.assertGreater(self.metrics['benchmark_reconciliation']['groundedness']['raw_delta'],0)\n\n\nif __name__=='__main__':\n    unittest.main(verbosity=2)\n"
+      },
+      "phase4e_report.py": {
+        "sha256": "fa599d5747b1e5d2c53c7ad2c5f53f17b28e73fe4eb35f666a134786823134f1",
+        "source": "\"\"\"Render only the three authorized artifacts after deterministic validation.\"\"\"\nimport json\nimport re\nimport subprocess\nimport sys\nfrom pathlib import Path\nimport phase4e_analysis as a\n\nOUTPUTS=[a.BASE/'agentic_trace_analysis_v0.jsonl',a.BASE/'agentic_trace_analysis_metrics_v0.json',a.BASE/'reports/agentic_trace_analysis_v0.md']\n\ndef fmt(value):\n    return '—' if value is None else f'{value:.6f}' if isinstance(value,float) else str(value)\n\ndef cell(value):\n    return fmt(value).replace('|','\\\\|').replace('\\n','<br>')\n\ndef table(headers,rows):\n    return '\\n'.join(['| '+' | '.join(headers)+' |','|'+'|'.join(['---']*len(headers))+'|']+['| '+' | '.join(cell(v) for v in row)+' |' for row in rows])\n\ndef ids(values):\n    return ', '.join('`'+v+'`' for v in values) or '—'\n\ndef trace_link(r):\n    return '['+r['query_id']+'](../../../rag/traces/agentic-rag-v1/agentic-v1/'+r['query_id']+'.json)'\n\ndef report(inputs,rows,m):\n    ac=m['answer_completeness']; eff=m['efficiency']; cal=m['self_check_calibration']\n    sections=[]\n    def add(title,*paragraphs):\n        sections.append('## '+title+'\\n\\n'+'\\n\\n'.join(paragraphs))\n    add('1. Executive Summary',\n        '**Phase 4E status: PASS.** Read-only post-hoc analysis covers **31/31 production traces and 102/102 query-scoped required points**. No inference, retrieval, external API, new semantic judge, benchmark rerun, threshold tuning or ablation was performed.',\n        'Agentic RAG v1 intervened conditionally: 19 queries had **No Substantive Intervention**; 6 used Targeted Evidence Expansion, 7 used Answer Revision and 1 used Citation Revision. Two queries combined interventions. All 31 executed Evidence Coverage Check and Answer Completeness Check; none executed Semantic Citation Check. Checks alone are not Substantive Interventions.',\n        f'The five oriented benchmark metrics classify **5 Improved, 0 Improved with Trade-off, 23 No Change, 3 Regressed and 0 Inconclusive**. Answer Completeness macro rises from **{ac[\"standard_macro\"]:.6f} to {ac[\"agentic_macro\"]:.6f}** (+{ac[\"macro_delta\"]:.6f}); micro rises from **60/102 to 65/102** (+5/102). Six required points were gained and one lost. One query is fully rescued and three partially rescued. Regressions are eval001, eval013 and eval027; only eval027 loses a required point.',\n        'The production traces record **38 retrieval calls and 108 logical production LLM calls**, averaging 1.225806 and 3.483871 per query. Relative to the frozen Standard runner’s one retrieval and one generation call per query, this is +7 retrieval calls and +77 production LLM calls. Six additional Evidence Merge reranks are outside the retrieval-call total. All configured budgets were respected.',\n        'The strongest helpful association is Answer Revision on eval002: the draft exactly matches the frozen Standard answer, evidence content/citation mapping is identical, and the final answer adds the previously unsupported P2. Expansion has mixed associations: only one of six expansions changes final Top-5, and no annotated supporting chunk is added. The largest completeness gain, eval014, occurs with unchanged final evidence and cannot be uniquely attributed to expansion.',\n        '**Most important remaining weakness:** internal completeness and success are poor substitutes for benchmark required-point coverage. There are **17 potential completeness false-success / evaluator disagreements**, including **15 success statuses with incomplete benchmark answers**. In addition, macro Groundedness improves while pooled micro Groundedness declines; average improvements should not conceal this change in claim composition.')\n    source_rows=[('Agentic production traces','31 JSON files; each benchmark trace_path resolved','data/rag/traces/agentic-rag-v1/agentic-v1/'),('Agentic benchmark results','agentic-rag-eval-v1 / agentic-v1','data/evaluation/generation/agentic_rag_eval_v1_agentic-v1.jsonl'),('Agentic metrics + manifest','31 completed, 31 judged','data/evaluation/generation/agentic_rag_metrics_v1_agentic-v1.json'),('Agentic source report','comparison omits Answer Completeness','data/evaluation/generation/reports/agentic_rag_eval_v1_agentic-v1.md'),('Standard benchmark results','standard-rag-eval-v0; Phase 4A control','data/evaluation/generation/standard_rag_eval_v0.jsonl'),('Standard metrics','31 completed, 102 required points','data/evaluation/generation/standard_rag_metrics_v0.json'),('Standard manifest','frozen retrieval/model/prompt and hashes','data/evaluation/generation/standard_rag_manifest_v0.json'),('Gold + verification manifest','generation-eval-v1; verified; 31/102','data/evaluation/generation/generation_eval_v1_verified.json; generation_eval_v1_verified_manifest.json'),('Phase 4A points/queries/metrics','phase-4a-standard-rag-failure-analysis-v0','data/evaluation/generation/failure_analysis_points_v0.jsonl; failure_analysis_queries_v0.json; failure_analysis_metrics_v0.json'),('Corpus','corpus-v0.1','data/versions/corpus-v0.1/chunks.jsonl'),('Retrieval evaluation','frozen','data/evaluation/retrieval_eval.jsonl')]\n    hash_paths=['data/versions/corpus-v0.1/chunks.jsonl','data/evaluation/retrieval_eval.jsonl','data/evaluation/generation/generation_eval_v1_verified.json','data/evaluation/generation/standard_rag_eval_v0.jsonl','data/evaluation/generation/agentic_rag_eval_v1_agentic-v1.jsonl']\n    add('2. Inputs and Integrity',\n        table(['Input','Identification','Repository path'],source_rows),\n        'Authoritative paths were established from the Phase 4A `inputs`, the Standard manifest, the Agentic metrics manifest, the evaluator’s artifact constants and each benchmark row’s `trace_path`. All 31 disk traces equal their embedded benchmark traces, including full state. Query IDs and exact query text align across Standard, Agentic, gold, Phase 4A query records and frozen retrieval evaluation. No duplicate query, missing trace, malformed trace, duplicate trace reference or missing benchmark result was found. All 102 `(query_id, point_id)` pairs reconcile across both benchmarks, verified gold and Phase 4A point records; local IDs such as P1 recur across queries and are not globally unique.',\n        'Both systems use `gemini-3.5-flash-lite`, `legal-rag-prompt-v0`, `corpus-v0.1`, and the identical verified generation dataset hash. Frozen Standard retrieval is **BM25-simple-v0 @20 + dense-jina-v3-v0 @20 → union/dedup → BAAI/bge-reranker-v2-m3 → Top-5** (no fusion). Standard dense revision: `ab036b023d30b4d1138c4c3bfa9f0c445ab455d6`; reranker revision: `953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e`. All 31 Agentic Initial Retrieval Top-5 lists equal the frozen Standard lists. Agentic enabled all three intervention mechanisms.',\n        'Evaluation compatibility is supported by shared `judge_prompt`, `parse_judge` and `point_audit` functions used by both existing evaluator implementations, the identical required-point set, and reconciliation of every saved score to saved point/claim counts. The Standard manifest records a structured semantic audit using `gemini-3.5-flash-lite` at temperature 0; the Agentic evaluator constructs a separate judge client and enforces the same expected model. Production LLM call lists are separate from evaluator results. This analysis reads source code for schema/method interpretation only and imports no production/evaluation runtime module. Historical source commits and complete judge prompt/response provenance are not fully recorded, so identical historical execution cannot be independently reconstructed beyond the frozen artifacts.',\n        '**Source integrity before/after: PASS.** SHA-256 was recorded before analysis and verified again after writing outputs for all 113 snapshotted source files, including corpus, benchmark/gold files, all traces, runtime/evaluator source, prompts, and existing tests. The metrics JSON contains every before/after hash. Available manifest hashes also match current inputs. No source was repaired or modified.',\n        table(['Source','Before SHA-256','After SHA-256','Result'],[(p,inputs['before'][p],inputs['before'][p],'PASS') for p in hash_paths]),\n        'Non-blocking source limitations are retained and reported: the original Agentic comparison Markdown/JSON omit Answer Completeness comparison; its summary omits micro Answer Completeness; some gold annotation notes still refer to draft creation even though dataset/item status and the verification manifest are verified. These omissions/stale notes do not change the frozen labels or numerical comparability. The repository is not a Git working tree, as already documented by the Standard manifest.',\n        'Exactly three repository files are added: `agentic_trace_analysis_v0.jsonl`, `agentic_trace_analysis_metrics_v0.json`, and this report. To satisfy the three-file restriction while adding deterministic analysis tests, executable analysis, renderer and test code live in `/tmp/phase4e_analysis.py`, `/tmp/phase4e_report.py`, and `/tmp/test_phase4e_analysis.py`. Their exact source text and hashes are archived inside the metrics JSON under `reproducibility`, so reproduction does not depend on temporary-file retention. The complete original source hash inventory is also embedded. **20 deterministic tests pass**, covering duplicate/missing/mismatched inputs, all profiles/outcomes, UCR orientation, point sets, production accounting, aggregate reconciliation, calibration, missing intermediate states, budgets and source integrity. Tests block socket connections. No network/API call occurred.')\n    macro_rows=[]\n    for metric,v in m['benchmark_reconciliation'].items():\n        macro_rows.append((metric.replace('_',' ').title()+' (macro)',v['standard_macro'],v['agentic_macro'],v['raw_delta'],v['oriented_improvement']))\n    macro_rows.insert(1,('Answer Completeness (micro)',ac['standard_micro'],ac['agentic_micro'],ac['micro_delta'],ac['micro_delta']))\n    micro=m['additional_micro_metrics']\n    add('3. Benchmark Reconciliation',\n        table(['Metric','Standard RAG','Agentic RAG v1','Raw Agentic − Standard','Oriented improvement'],macro_rows),\n        'Macro = unweighted mean of 31 per-query values. Answer Completeness micro = total supported required points / 102. Both benchmarks have all five quality metrics available for all 31 queries. Standard per-row Answer Completeness is reconstructed from its persisted supported/required point IDs because its result rows do not have an explicit score field. All recorded macro summaries and comparison deltas reconcile within epsilon = 1e-9. Standard micro and Phase 4A’s 60 supported points also reconcile; Agentic’s 65 supported points reconcile with its summary.',\n        'Citation Completeness equals Answer Completeness in this particular frozen run because every supported point is also citation-supported. This equality is observed data, not a general metric definition. Groundedness and Unsupported Claim Rate are complementary here and are not independent evidence of two separate effects. The query outcome classifier uses the requested five metrics regardless of that dependence.',\n        table(['Additional pooled micro metric','Standard RAG','Agentic RAG v1','Raw Agentic − Standard'],[(k.replace('_',' ').title(),micro['standard'][k],micro['agentic'][k],micro['agentic'][k]-micro['standard'][k]) for k in ['citation_completeness','citation_correctness','groundedness','unsupported_claim_rate']]),\n        'Micro Citation Completeness uses 60/102 versus 65/102. Micro Citation Correctness uses 83/86 versus 92/94 cited claims. Micro Groundedness uses **83/86 versus 93/97 total claims**; micro Unsupported Claim Rate uses **3/86 versus 4/97**. Thus pooled Groundedness regresses by 0.006353 and pooled UCR increases by 0.006353, despite favorable macro changes. Claim counts differ between answers and these are additional descriptive aggregates, not matched-claim causal comparisons. They do not replace the frozen macro benchmark or change the specified per-query outcome definitions.',\n        'The original Standard citation syntax validity is 30/31 (eval012 invalid); Agentic is 31/31. eval012 performed no Citation Revision and its five specified quality metrics do not change, illustrating why deterministic validator status is reported separately from benchmark semantic citation quality.')\n    add('4. Agent Execution Statistics',\n        table(['Primary profile','Queries','Rate'],[(a.PROFILES[p],n,n/31) for p,n in m['intervention_profiles'].items()]),\n        'P0–P4 are mutually exclusive and sum to 31. Expansion/Answer Revision/Citation Revision usage counts overlap: the two multiple-intervention cases are eval013 (expansion + Answer Revision) and eval005b (Answer Revision + Citation Revision). No Citation Revision Only query was observed.',\n        table(['Production calls','Total','Mean','Median','Max','Distribution (calls: queries)'],[(label,eff[k]['total'],eff[k]['mean'],eff[k]['median'],eff[k]['max'],json.dumps(eff[k]['distribution'])) for label,k in [('Retrieval','retrieval_call_statistics'),('LLM','production_llm_call_statistics')]]),\n        table(['Budget','Configured limit','Maximum observed'],[(k,v,m['budget_compliance']['maximum_observed'][obs]) for k,v,obs in [('Retrieval expansion rounds',1,'retrieval_expansion_rounds'),('Subqueries',3,'subqueries'),('Answer Revisions',1,'answer_revisions'),('Citation Revisions',1,'citation_revisions'),('Production LLM calls',6,'production_llm_calls')]]),\n        '**Budget compliance: PASS; violations: none.** One expansion round may contain multiple retrieval calls (eval001 has two subqueries and three total retrieval calls). A second completeness call is a Final Completeness Re-check, not a second Answer Revision. The raw transition paths, explicit normalized execution paths, individual retrieval calls, stage lists, coverage/missing aspects, initial/final evidence and retained answers are included for every query in JSONL.',\n        table(['Query / trace','Actual execution path','Retrieval / production LLM'],[(trace_link(r),' → '.join(r['execution_path']),f'{r[\"retrieval_calls\"]} / {r[\"production_llm_calls\"]}') for r in rows]))\n    expanded=[r for r in rows if r['interventions']['evidence_expansion']]\n    expansion_detail=[]\n    for r in expanded:\n        expansion_detail.append('### '+trace_link(r)+'\\n\\n'+r['query']+'\\n\\n'+'Coverage missing aspects: '+json.dumps(r['missing_aspects'],ensure_ascii=False)+'.\\n\\n'+'Targeted subqueries: '+json.dumps(r['subqueries'],ensure_ascii=False)+'.\\n\\n'+'Initial Top-5: '+ids(r['initial_top5_chunk_ids'])+'.\\n\\n'+'Final Top-5: '+ids(r['final_top5_chunk_ids'])+'.\\n\\n'+'Added: '+ids(r['added_final_evidence_chunk_ids'])+'; removed: '+ids(r['removed_initial_evidence_chunk_ids'])+'.\\n\\n'+r['trace_assessment']+' '+r['attribution_note']+'.')\n    add('5. Evidence Expansion Analysis',\n        'Targeted Evidence Expansion ran for **6 queries**, with **25 without expansion**. Seven subqueries were issued (mean **1.166667** among expanded queries). Final Top-5 order and membership changed in **1/6** and were unchanged in **5/6**. The mean newly introduced final evidence count is **0.166667** among expanded queries (0.032258 across all queries). No rank-only changes were observed.',\n        table(['Query','Subqueries','Expanded unique candidates','Final Top-5 changed','Added / removed','Gold support added','Observation'],[(trace_link(r),r['subquery_count'],len(r['expanded_candidate_chunk_ids']),r['final_top5_order_changed'],f'{len(r[\"added_final_evidence_chunk_ids\"])} / {len(r[\"removed_initial_evidence_chunk_ids\"])}',len(r['gold_supporting_chunks_added_by_expansion']),r['expansion_observation']) for r in expanded]),\n        '**Post-hoc gold-support overlap only:** none of the expanded queries adds or removes a chunk in the union of the query’s annotated required-point supporting sets. This is not semantic sufficiency: non-gold chunks may support a proposition. Only eval001 changes final evidence, adding `134-2025-QH15_dieu-10_khoan-3` and removing `142-2026-ND-CP_dieu-8_khoan-1_diem-a`. The missing low-risk definition (`134-2025-QH15_dieu-9_khoan-1_diem-c`) appears in expanded candidates but remains outside final Top-5. There is no observed removal of an annotated required-point supporting chunk; usefulness beyond gold overlap is not established.',\n        'Expansion has 2 observed gains, 2 no-observed-gain outcomes and 2 regressions. The two gains (eval014 and eval016) both retain the same final Top-5 content and citation mapping. eval013 combines expansion and Answer Revision: **multiple interventions — attribution not isolated**. Existing artifacts do not isolate expansion as the explanation for final metric changes.',\n        *expansion_detail)\n    revised=[r for r in rows if r['interventions']['answer_revision']]\n    revision_details=[]\n    for r in revised:\n        revision_details.append('### '+trace_link(r)+'\\n\\n'+r['query']+'\\n\\n'+r['trace_assessment']+'\\n\\n'+'**Pre-revision draft:**\\n\\n'+r['draft_answer']+'\\n\\n'+'**Final answer:**\\n\\n'+r['final_answer']+'\\n\\n'+'Final internal check: '+json.dumps(r['final_completeness_check'],ensure_ascii=False)+'.')\n    add('6. Answer Revision Analysis',\n        '**7 queries used Answer Revision**, and all seven have text changes between stored draft and final answer. Three final outcomes improve relative to Standard, three are unchanged, and one regresses. Five are Answer Revision Only; eval013 also expands and eval005b also revises citations.',\n        table(['Query','Profile','Draft → final text changed','Initial internal complete','Last internal complete','Standard AC → Agentic AC','Final outcome'],[(trace_link(r),r['primary_intervention_profile'],r['draft_to_final_answer_changed'],'not retained (false inferred from branch)',r['final_completeness_check']['complete'],f'{r[\"standard_answer_completeness\"]:.6f} → {r[\"agentic_answer_completeness\"]:.6f}',r['quality_outcome']) for r in revised]),\n        'The trace stores only the final completeness payload, overwriting the initial result. The initial false decision can be inferred from the recorded Answer Revision transition and controller branch, but its missing-points list/reason cannot be recovered. Those fields are null in JSONL with an explicit availability note. No new judge was introduced. No query is marked as having a directly confirmed separately benchmarked draft-to-final effect. eval002 provides unusually strong evidence through an exact draft match to the frozen Standard answer with identical evidence content and citation mapping; this is labelled a frozen-Standard draft proxy, and historical evaluator variation still cannot be excluded.',\n        'For eval005b, draft-to-final differences span both Answer Revision and Citation Revision. The intermediate answer immediately before Citation Revision is absent. In all cases distinguish “revision changed the answer” and “final Agentic result improved relative to Standard” from an isolated contribution of revision.',\n        *revision_details)\n    cr=next(r for r in rows if r['interventions']['citation_revision'])\n    add('7. Citation Revision Analysis',\n        '**1 query used Citation Revision: eval005b**, also using Answer Revision. Its trace records `citation_check → citation_revision → citation_recheck`, and the final deterministic validator is valid with cited IDs E1, E4, E5 and no errors. Alignment method is `not_required_after_targeted_revision`. Semantic Citation Check was not used.',\n        'The original deterministic error payload and the answer immediately before Citation Revision are not retained. A validator failure followed by a pass is trace-consistent and inferred from the transition and guarded runtime branch; the precise error (for example formatting, unknown ID or mismatch) is **unknown**. The original draft cites E1 and the final answer additionally cites E4 and E5, but these changes cannot be allocated between the two revisions. Whether Citation Revision altered substantive content is **not identifiable** from the retained intermediate artifacts.',\n        table(['Query','Pre-validator issue','Final validator','Citation Completeness Standard → Agentic','Citation Correctness Standard → Agentic','Observation'],[(trace_link(cr),'not retained; failure inferred','PASS',f'{cr[\"standard_citation_completeness\"]:.6f} → {cr[\"agentic_citation_completeness\"]:.6f}',f'{cr[\"standard_citation_correctness\"]:.6f} → {cr[\"agentic_citation_correctness\"]:.6f}','observed gain with multiple interventions; attribution not isolated')]),\n        'A validator fix and benchmark-quality improvement are different observations. Citation Correctness stays 1; Citation Completeness rises from 0 to 1/6 together with Answer Completeness. Existing evidence is insufficient to identify a separate citation-revision quality gain. The last completeness check occurred before Citation Revision and was not repeated afterward.')\n    disagreements=[r for r in rows if r['query_id'] in cal['potential_false_success_query_ids']]\n    add('8. Internal Self-check Calibration',\n        table(['Final internal completeness decision','Benchmark AC = 1','Benchmark AC < 1'],[('complete = true',cal['internal_complete_and_benchmark_complete'],cal['internal_complete_but_benchmark_incomplete']),('complete = false',cal['internal_incomplete_but_benchmark_complete'],cal['internal_incomplete_and_benchmark_incomplete'])]),\n        '**17/30 internal complete decisions accompany incomplete benchmark answers.** There are 13 true/complete agreements, 17 potential false-success / evaluator disagreements, 1 internal-incomplete/benchmark-complete disagreement (eval010), and 0 false/incomplete agreements. All 31 last internal decisions are available; eval005b’s decision precedes Citation Revision. These are not formal false positives or false negatives: the checker assesses completeness using query and retrieved evidence, while the frozen evaluator requires all annotated propositions including material conditions and scope.',\n        table(['Potential false-success query','Benchmark Answer Completeness','Final status','Internal reason'],[(trace_link(r),r['agentic_answer_completeness'],r['final_status'],r['final_completeness_check']['reason']) for r in disagreements]),\n        'eval010 illustrates the reverse disagreement: the benchmark’s two required points are supported, but the internal checker still asks for an explanation obligation in E5 and returns incomplete_answer. eval005a illustrates false-success risk: internal complete=true and success accompany 0/7 supported required points. eval027 loses P4 without triggering an intervention, yet receives complete=true and success.',\n        table(['Final status','Queries','Benchmark AC < 1','Citation Correctness < 1','Groundedness < 1'],[(status,v['queries'],v['benchmark_incomplete'],v['citation_correctness_lt_1'],v['groundedness_lt_1']) for status,v in cal['status_breakdown'].items()]),\n        '**15/28 success statuses accompany incomplete benchmark answers.** Success queries with Citation Correctness below 1 are eval013 (0.8) and eval022 (2/3); these same two have Groundedness below 1. Success is a controller termination label, not benchmark certification. eval001 and eval014 have internal complete=true but insufficient_evidence status because the generated answer declares insufficient evidence; the two fields should not be conflated. Every final deterministic citation check passes, yet these semantic deficiencies remain, and Semantic Citation Check is unused in all 31 traces.')\n    add('9. Standard Failure → Agent Response',\n        'This mapping uses frozen Phase 4A evaluator-side labels after production. The runtime did not receive Standard failure categories or gold labels. Query primary failure counts below exclude `none` when Phase 4A stores an empty issue map; the 102-point table in Section 10 includes `none` explicitly. Query taxonomies are retained exactly, and a query may contain multiple point failure categories.',\n        table(['Query','Standard Phase 4A failure profile','Agent intervention profile','Observed final outcome'],[(trace_link(r),r['standard_failure_profile']['query_taxonomy']+'; '+(json.dumps(r['standard_failure_profile']['primary_failure_counts']) if r['standard_failure_profile']['primary_failure_counts'] else 'none'),r['primary_intervention_profile'],r['quality_outcome']) for r in rows]),\n        table(['Behavior','Used where intended Standard target is present','Used where target is absent','Usage'],[(behavior,v['target_present'],v['target_absent'],len(v['query_ids'])) for behavior,v in m['failure_response_alignment'].items()]),\n        'Five of six expansions coincide with a Standard retrieval/evidence issue; eval006 was already benchmark-complete. Three of seven Answer Revisions coincide with a Phase 4A generation issue (eval002, eval005b, eval022); the other four target Agentic draft content or checker requirements even though the corresponding Standard failure category is absent. Citation Revision occurs on eval005b, which had no Standard citation issue; it responds to an issue in the Agentic execution. This is not a proven wrong trigger. Standard’s syntax failure on eval012 disappears without Citation Revision, while its five quality metrics stay unchanged.',\n        'The six gained points comprise four Standard answer_generation failures and two evidence_coverage failures; no retrieval_miss point is recovered. eval016’s citation/grounding improvement occurs without a required-point gain. This supports prioritizing generation omissions and checker/evidence selection behavior for controlled evaluation, without implying runtime awareness of the taxonomy.')\n    point_detail=[d for r in rows for d in r['point_changes_detail']]\n    add('10. Required-point Gain/Loss',\n        '**Standard supported: 60/102. Agentic supported: 65/102. Gained: 6. Lost: 1. Net gain: 5.** Sets are computed independently for each query: Agentic supported − Standard supported, and the reverse. No point is re-judged. Standard has 42 unsupported points; Agentic has 37.',\n        table(['Standard primary point category','All required points','Gained','Lost'],[(k,v['standard_point_count'],v['gained_points'],v['lost_points']) for k,v in m['failure_point_gain_loss'].items()]),\n        table(['Query','Point','Change','Frozen Standard primary failure','Required point'],[(d['query_id'],d['point_id'],d['change'],d['standard_primary_failure'],d['point_text']) for d in point_detail]),\n        'All 102 required points are accounted for through the query-scoped required ID arrays and the validated Phase 4A point partition. No global union of local P1/P2 identifiers was used. **Fully rescued:** eval002. **Partially rescued:** eval014, eval022, eval005b. “Rescued” refers only to the specified Answer Completeness definition; eval014 remains insufficient_evidence and eval005b/eval022 remain benchmark-incomplete.')\n    add('11. Intervention × Outcome Matrix',\n        table(['Intervention profile','Queries','Improved','Trade-off','No change','Regressed','Inconclusive'],[(a.PROFILES[p],v['queries'],*[v[o] for o in a.OUTCOMES]) for p,v in m['intervention_outcome_matrix'].items()]+[('Total',31,*[m['outcomes'][o] for o in a.OUTCOMES])]),\n        'Improvement orientation is Agentic − Standard for Answer Completeness, Citation Completeness, Citation Correctness and Groundedness, and Standard − Agentic for Unsupported Claim Rate. With epsilon = 1e-9 only for numerical equality: positive/no negative = Improved; both signs = Improved with Trade-off; all zero = No Change; negative/no positive = Regressed; a required metric missing = Inconclusive. All rows and columns reconcile to 31. “No meaningful change” is not an intervention profile.')\n    rescued=sorted([r for r in rows if r['rescue_type']],key=lambda r:(-r['delta_answer_completeness'],r['query_id']))\n    rescue_details=[]\n    for r in rescued:\n        rescue_details.append('### '+trace_link(r)+' — '+r['rescue_type'].replace('_',' ')+'\\n\\n'+r['query']+'\\n\\n'+f'Answer Completeness: **{r[\"standard_answer_completeness\"]:.6f} → {r[\"agentic_answer_completeness\"]:.6f}** (Δ {r[\"delta_answer_completeness\"]:.6f}). Gained points: '+ids(r['gained_supported_point_ids'])+'. Profile: '+r['primary_intervention_profile']+'.\\n\\n'+'Evidence added: '+ids(r['added_final_evidence_chunk_ids'])+'; removed: '+ids(r['removed_initial_evidence_chunk_ids'])+'. Draft-to-final answer text changed: '+str(r['draft_to_final_answer_changed'])+'; draft-to-final citation ID set changed: '+str(r['draft_to_final_citation_ids_changed'])+'; Standard-to-Agentic cited chunk set changed: '+str(r['standard_to_agentic_cited_chunks_changed'])+'.\\n\\n'+r['trace_assessment']+'\\n\\n'+f'Final Citation Completeness={r[\"agentic_citation_completeness\"]:.6f}, Citation Correctness={r[\"agentic_citation_correctness\"]:.6f}, Groundedness={r[\"agentic_groundedness\"]:.6f}, Unsupported Claim Rate={r[\"agentic_unsupported_claim_rate\"]:.6f}. '+r['attribution_note']+'.')\n    add('12. Rescued Queries',\n        'All four rescued cases are ranked primarily by Δ Answer Completeness, with citation and groundedness context below. This is the full rescue group, without forcing a fixed example count.',\n        table(['Rank','Query','Standard AC','Agentic AC','Delta','Gained points','Profile'],[(i,trace_link(r),r['standard_answer_completeness'],r['agentic_answer_completeness'],r['delta_answer_completeness'],ids(r['gained_supported_point_ids']),r['primary_intervention_profile']) for i,r in enumerate(rescued,1)]),\n        *rescue_details)\n    ng=[r for r in rows if r['query_id'] in m['no_observed_gain_intervention_query_ids']]\n    add('13. No-observed-gain Interventions',\n        '**7 intervention queries have no positive oriented benchmark change:** five No Change (eval005a, eval006, eval010, eval026, eval029) and two Regressed (eval001, eval013). Regressions are also analyzed separately. This definition excludes cases that improve one metric while worsening another; no trade-off cases occur in this dataset.',\n        table(['Query','Profile','Final outcome','Evidence added / removed','Draft → final changed','Production retrieval / LLM'],[(trace_link(r),r['primary_intervention_profile'],r['quality_outcome'],f'{len(r[\"added_final_evidence_chunk_ids\"])} / {len(r[\"removed_initial_evidence_chunk_ids\"])}',r['draft_to_final_answer_changed'],f'{r[\"retrieval_calls\"]} / {r[\"production_llm_calls\"]}') for r in ng]),\n        'The most important no-observed-gain pattern is expansion that leaves final evidence unchanged: eval005a and eval006 show no metric gain, and eval013 regresses alongside Answer Revision. Answer Revision on eval010, eval026 and eval029 changes text but adds no supported point relative to the frozen Standard answer. eval026 is a necessary caution: revision visibly restores a detail missing from its own draft but present in Standard, so “no gain over Standard” does not establish that revision was unnecessary.',\n        'Citation Revision has no isolated no-gain case: its only use overlaps Answer Revision and the final combined outcome improves. Do not label these triggers “false interventions”; the observations concern final benchmark gain, and the benchmark does not cover every reasonable internal-check requirement.')\n    regress=[r for r in rows if r['regressions']]\n    reg_details=[]\n    for r in regress:\n        reg_details.append('### '+trace_link(r)+'\\n\\n'+r['query']+'\\n\\n'+r['trace_assessment']+'\\n\\n'+'Profile: '+r['primary_intervention_profile']+'. Evidence added: '+ids(r['added_final_evidence_chunk_ids'])+'; removed: '+ids(r['removed_initial_evidence_chunk_ids'])+'. Answer Revision: '+str(r['interventions']['answer_revision'])+'; Citation Revision: '+str(r['interventions']['citation_revision'])+'.\\n\\n'+'Standard answer:\\n\\n'+r['standard_answer']+'\\n\\n'+'Final Agentic answer:\\n\\n'+r['final_answer'])\n    add('14. Regression Cases',\n        'All three queries with any negative oriented metric are listed. None also has a positive oriented metric, so all three are O4 Regressed. No significance threshold or statistical significance claim is introduced.',\n        table(['Query','Metric','Standard','Agentic','Oriented delta','Intervention profile'],[(trace_link(r),d['metric'],d['standard'],d['agentic'],d['oriented_delta'],r['primary_intervention_profile']) for r in regress for d in r['regressions']]),\n        'Evidence-removal inspection: eval001 removes one initial chunk, but it is not in any annotated required-point supporting set. The lost required point eval027/P4 occurs with unchanged evidence and no intervention. Added evidence in eval001 accompanies lower Groundedness and higher UCR, **not lower Answer Completeness** (0 → 0). No expanded query loses a supported required point. There is no isolated evidence that Answer Revision introduces unsupported content: eval013’s appended highest-level sentence already appears in Standard, while its final judge stores only aggregate unsupported-claim counts. Citation Revision is absent from all three regression traces; its possible substantive effect in eval005b remains unidentifiable.',\n        *reg_details)\n    add('15. Efficiency Analysis',\n        table(['Profile','Queries','Retrieval mean / median / max','Retrieval distribution','LLM mean / median / max','LLM distribution'],[(a.PROFILES[p],v['queries'],' / '.join(fmt(v['retrieval_calls'][k]) for k in ['mean','median','max']),json.dumps(v['retrieval_calls']['distribution']),' / '.join(fmt(v['production_llm_calls'][k]) for k in ['mean','median','max']),json.dumps(v['production_llm_calls']['distribution'])) for p,v in eff['by_profile'].items()]),\n        table(['Behavior','Queries','Rate'],[(label,n,n/31) for label,n in [('Targeted Evidence Expansion',6),('Answer Revision',7),('Citation Revision',1),('Semantic Citation Check',0)]]),\n        table(['Production LLM stage','Calls'],[(name,eff['production_llm_stage_counts'].get(stage,0)) for stage,name in [('coverage_check','Evidence Coverage Check'),('answer_generation','Answer Generation'),('completeness_check','Answer Completeness Check (31 initial + 7 rechecks)'),('answer_revision','Answer Revision'),('citation_revision','Citation Revision'),('semantic_citation_alignment','Semantic Citation Check')]]),\n        '**108 = 31 coverage checks + 31 answer generations + 38 completeness checks + 7 answer revisions + 1 citation revision.** Deterministic Citation Check and Evidence Merge use no LLM call. The 38 retrieval calls comprise 31 Initial Retrieval calls plus 7 expansion subqueries; six Evidence Merge reranks are additionally recorded by transitions. Therefore call counts alone omit extra reranker work.',\n        'The frozen Standard runner’s logical production baseline is 31 retrieval + 31 answer-generation calls. Agentic therefore records **1.225806× retrieval calls and 3.483871× production LLM calls** (+22.58% and +248.39%). All 19 No Substantive Intervention queries still execute three production LLM calls (57 total). The two checks that every query executes account for 62 of the 77 additional LLM calls; seven Answer Revisions plus rechecks account for 14, and Citation Revision for 1. Expansion uses targeted intents from the coverage response rather than a separate subquery-generation LLM call.',\n        'The observed aggregate quality gain is +5 net required points with this overhead, including five improved and three regressed queries. These totals are descriptive and do not assign points to particular calls. Production accounting excludes all evaluator/judge calls and evaluation attempts. Traces record logical controller invocations, not exact HTTP requests or possible transport retries. No exact token, monetary cost or latency data is available for this comparison, so none is estimated.')\n    add('16. Behavior Evidence Summary',\n        table(['Behavior','Intended target','Usage','Observed association','Attribution confidence','Evidence'],[\n          ('Evidence expansion','Retrieval / evidence coverage',6,'Observed mixed: 2 Improved, 2 No Change, 2 Regressed','Lower for a helpful evidence effect: five unchanged Top-5; mixed interventions on eval013','eval001, eval005a, eval006, eval013, eval014, eval016'),\n          ('Answer revision','Generation omission',7,'Observed mixed: 3 Improved, 3 No Change, 1 Regressed','Higher association for eval002: single intervention + exact draft proxy + state change; lower for combined/missing intermediate audits','eval002, eval005b, eval010, eval013, eval022, eval026, eval029'),\n          ('Citation revision','Citation issues',1,'Insufficient evidence for isolated quality effect; final validator passes and combined result improves','Lower: multiple interventions and missing pre-citation answer/errors','eval005b')]),\n        'Higher attribution confidence here means stronger observational support from a single substantive intervention and trace-consistent state change, not established causality. Answer Revision on eval002 is an **Observed helpful association** within an overall mixed Answer Revision pattern. Expansion’s only final evidence change coincides with regression on eval001; no beneficial evidence-addition effect is confirmed.')\n    add('17. Implications for Ablation',\n        '1. **Answer Completeness Check → Answer Revision → Final Completeness Re-check.** Isolate this chain against the same generation/evidence setup. eval002 is the strongest helpful association; eval022 gains P2; eval010/026/029 show no final gain over Standard, and eval013 regresses. Evaluate checker disagreement and whether revision recovers omissions in the Agentic draft. Preserve draft/final states and equivalent frozen evaluations in a future controlled design.',\n        '2. **Evidence Coverage Check → Targeted Evidence Expansion → Evidence Merge / Final Evidence Selection.** Isolate expansion and final evidence selection. Five of six expansions leave Top-5 unchanged, no annotated supporting chunks enter final context, and the only evidence change coincides with regression. Compare controlled behavior with the same initial evidence and generation settings before attributing gains or removing this mechanism.',\n        '3. **Citation Revision and Semantic Citation Check routing.** Isolate the deterministic repair path from Answer Revision and examine semantic routing with a separately designed evaluation. The sole repair case lacks intermediate payloads, Semantic Citation Check fires 0/31, and final semantic citation errors survive on eval013 and eval022. A final completeness check after citation edits is also a behavior worth evaluating in a controlled follow-up.',\n        'These are Phase 5 priorities, not executed changes. Pre-specify contrasts and success metrics using a separate development set; do not tune prompts, thresholds, models or budgets on these 31 final-evaluation queries. Report macro and micro quality, regressions and logical call overhead for future controlled experiments. No ablation or Phase 5 work was started.')\n    add('18. Limitations',\n        'Trace analysis is observational. Trace analysis does not establish causal contribution of individual interventions. Multiple interventions make attribution ambiguous. Internal Agent checks are not equivalent to the frozen benchmark evaluator. Gold labels were used only post-hoc by the analysis/evaluator and were not exposed to runtime. Causal claims require ablation or another controlled experiment.',\n        'The 31 queries are one frozen final-evaluation set, not replicated runs or a random sample supporting broad performance claims. Differences in answer generation and semantic evaluator judgments remain possible even at temperature 0. No Substantive Intervention is a control-path category, not a guarantee of text-identical outputs. eval027 demonstrates a regression without intervention; eval014 demonstrates improvement despite unchanged final evidence.',\n        'Initial completeness payloads are overwritten for all seven Answer Revision cases; exact pre-Citation-Revision answer/error state is absent; final internal completeness on eval005b precedes the final citation edit. There are no separately stored benchmark-equivalent Agentic draft evaluations. Standard point-level judge rationales and claim-specific error explanations are unavailable; saved binary required-point IDs and aggregate claim counts are authoritative. No semantic labels were invented from these gaps.',\n        'Gold-support chunk overlap is only a post-hoc proxy and can miss support from non-gold evidence. Phase 4A binary labels do not represent partial proposition coverage. Historical source commit provenance is absent. Logical call accounting does not include HTTP retries, elapsed latency, context/token differences or monetary cost. Micro claim metrics have different answer-level denominators across systems. Completeness/Citation Completeness equality and Groundedness/UCR complementarity mean the five metrics are partly redundant in these artifacts.',\n        '**Final validation:** 31/31 queries, 102/102 required points, no duplicates, profiles/outcomes/matrix totals reconcile, metric orientations and gained/lost sets verified, production/evaluation calls separated, budget compliance PASS, 20 deterministic tests PASS, source integrity before/after PASS. Exactly the three authorized output artifacts were created; runtime, source results, gold, prompts and retrieval were untouched. **Network/API calls: NONE. Causal claims: NOT ESTABLISHED — observational trace analysis only. Phase 4E complete; STOP.**')\n    return '# Phase 4E — Agentic RAG v1 Trace Analysis\\n\\n'+'\\n\\n'.join(sections)+'\\n'\n\ndef main():\n    for path in OUTPUTS:\n        a.require(not path.exists(),f'Output already exists; refusing overwrite: {path}')\n    inputs,rows,m=a.build()\n    test=subprocess.run([sys.executable,'-B','/tmp/test_phase4e_analysis.py'],capture_output=True,text=True)\n    a.require(test.returncode==0,'Deterministic tests failed:\\n'+test.stdout+test.stderr)\n    a.require('Ran 20 tests' in test.stderr,'Unexpected test count')\n    m['tests']={'status':'PASS','count':20,'command':'PYTHONDONTWRITEBYTECODE=1 python3 /tmp/test_phase4e_analysis.py','output':test.stdout+test.stderr}\n    m['inputs']={k:inputs['failure_metrics']['inputs'][k] for k in inputs['failure_metrics']['inputs']}\n    m['inputs'].update({'agentic_results':'data/evaluation/generation/agentic_rag_eval_v1_agentic-v1.jsonl','agentic_metrics_manifest':'data/evaluation/generation/agentic_rag_metrics_v1_agentic-v1.json','agentic_traces':'data/rag/traces/agentic-rag-v1/agentic-v1/','phase4a_points':'data/evaluation/generation/failure_analysis_points_v0.jsonl','phase4a_queries':'data/evaluation/generation/failure_analysis_queries_v0.json','phase4a_metrics':'data/evaluation/generation/failure_analysis_metrics_v0.json'})\n    m['input_integrity']={'status':'PASS','trace_count':31,'embedded_disk_trace_exact_match':31,'standard_count':31,'agentic_count':31,'gold_query_count':31,'phase4a_query_count':31,'required_points':102,'duplicates':0,'missing_traces':0,'malformed_traces':0,'text_mismatches':0,'initial_top5_match_standard_count':31,'dataset_version':'generation-eval-v1','dataset_status':'verified','model':'gemini-3.5-flash-lite','prompt':'legal-rag-prompt-v0','retrieval_config':a.CONFIG,'evaluation_methodology':'shared saved-score definitions and shared evaluator judge_prompt/parse_judge/point_audit; historical full code provenance unavailable'}\n    m['source_integrity']={'status':'PASS','source_file_count':len(inputs['before']),'hashes':{p:{'before_sha256':h,'after_sha256':a.digest(a.ROOT/p),'unchanged':a.digest(a.ROOT/p)==h} for p,h in inputs['before'].items()}}\n    m['reproducibility']={'method':'Extract scripts below to /tmp; extract source_integrity.hashes[*].before_sha256 into /tmp/phase4e_source_hashes.json. Run tests with python3 -B. The analysis build() function is read-only and can be rerun. Renderer refuses existing outputs; use an isolated copy with the three output paths absent to reproduce outputs. ROOT in scripts identifies the original workspace. No third-party package or runtime module is imported.','scripts':{Path(p).name:{'sha256':a.digest(p),'source':Path(p).read_text(encoding='utf-8')} for p in ['/tmp/phase4e_analysis.py','/tmp/test_phase4e_analysis.py','/tmp/phase4e_report.py']}}\n    m['output_paths']=[str(p.relative_to(a.ROOT)) for p in OUTPUTS]\n    m['validation']={'query_accounting':'31/31','required_point_accounting':'102/102','profiles_outcomes_matrix':'PASS','metric_orientation':'PASS','point_sets':'PASS','production_call_accounting':'PASS','budget_compliance':'PASS','no_runtime_imports':'PASS','source_before_after':'PASS','network_api_calls':'NONE','causal_claims':'NOT ESTABLISHED'}\n    md=report(inputs,rows,m)\n    a.require(len(re.findall(r'^## \\d+\\.',md,re.M))==18,'report section count mismatch')\n    a.require(not re.search(r'\\bcaused\\b',md,re.I),'disallowed causal language')\n    payloads=[''.join(json.dumps(r,ensure_ascii=False,allow_nan=False)+'\\n' for r in rows),json.dumps(m,ensure_ascii=False,indent=2,allow_nan=False)+'\\n',md]\n    # Writing uses exclusive creation; no pre-existing artifact can be truncated.\n    for path,payload in zip(OUTPUTS,payloads):\n        with path.open('x',encoding='utf-8') as f: f.write(payload)\n    a.check_before_hashes()\n    current={str(p.relative_to(a.ROOT)) for d in ['data/evaluation/generation','data/rag','data/versions/corpus-v0.1','scripts','prompts','tests'] for p in (a.ROOT/d).rglob('*') if p.is_file() and '__pycache__' not in p.parts}\n    new=current-set(inputs['before'])\n    a.require(new==set(m['output_paths']),f'Unexpected repository additions: {new}')\n    loaded=a.read_lines(OUTPUTS[0]); saved=a.read(OUTPUTS[1])\n    a.require(loaded==rows and saved==json.loads(json.dumps(m,ensure_ascii=False,allow_nan=False)),'serialized outputs mismatch')\n    a.require(OUTPUTS[2].read_text(encoding='utf-8')==md,'report write mismatch')\n    print(json.dumps({'status':'PASS','outputs':m['output_paths'],'output_sha256':{str(p.relative_to(a.ROOT)):a.digest(p) for p in OUTPUTS},'tests':20,'source_integrity':'PASS','query_count':31,'required_point_count':102},indent=2))\n\nif __name__=='__main__':\n    main()\n"
+      }
+    }
+  },
+  "output_paths": [
+    "data/evaluation/generation/agentic_trace_analysis_v0.jsonl",
+    "data/evaluation/generation/agentic_trace_analysis_metrics_v0.json",
+    "data/evaluation/generation/reports/agentic_trace_analysis_v0.md"
+  ],
+  "validation": {
+    "query_accounting": "31/31",
+    "required_point_accounting": "102/102",
+    "profiles_outcomes_matrix": "PASS",
+    "metric_orientation": "PASS",
+    "point_sets": "PASS",
+    "production_call_accounting": "PASS",
+    "budget_compliance": "PASS",
+    "no_runtime_imports": "PASS",
+    "source_before_after": "PASS",
+    "network_api_calls": "NONE",
+    "causal_claims": "NOT ESTABLISHED"
+  }
+}

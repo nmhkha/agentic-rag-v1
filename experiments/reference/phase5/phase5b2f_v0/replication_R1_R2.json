@@ -1,0 +1,1828 @@
+{
+  "contrast": "R2 - R1",
+  "deltas": {
+    "answer_completeness": {
+      "denominator": 0,
+      "macro": -0.026881720430107503,
+      "micro": -0.019607843137254832,
+      "numerator": -2
+    },
+    "citation_completeness": {
+      "denominator": 0,
+      "macro": -0.026881720430107503,
+      "micro": -0.019607843137254832,
+      "numerator": -2
+    },
+    "citation_correctness": {
+      "denominator": -9,
+      "macro": -0.047311827956989294,
+      "micro": -0.014017521902377927,
+      "numerator": -10
+    },
+    "citation_syntax_validity": {
+      "denominator": 0,
+      "macro": 0.0,
+      "micro": 0.0,
+      "numerator": 0
+    },
+    "groundedness": {
+      "denominator": -10,
+      "macro": -0.03118279569892468,
+      "micro": 0.006754354781372207,
+      "numerator": -9
+    },
+    "unsupported_claim_rate": {
+      "denominator": -10,
+      "macro": 0.03118279569892473,
+      "micro": -0.0067543547813722,
+      "numerator": -1
+    }
+  },
+  "description": "one observed same-configuration replication; not formal model variance, stochasticity CI, or noise distribution",
+  "gained_points": 1,
+  "gross_churn": 4,
+  "lost_points": 3,
+  "metrics": {
+    "R1": {
+      "answer_completeness": {
+        "denominator": 102,
+        "macro": 0.7236559139784946,
+        "macro_defined_queries": 31,
+        "micro": 0.6372549019607843,
+        "numerator": 65,
+        "raw": "65/102"
+      },
+      "citation_completeness": {
+        "denominator": 102,
+        "macro": 0.7236559139784946,
+        "macro_defined_queries": 31,
+        "micro": 0.6372549019607843,
+        "numerator": 65,
+        "raw": "65/102"
+      },
+      "citation_correctness": {
+        "denominator": 94,
+        "macro": 0.9827956989247312,
+        "macro_defined_queries": 31,
+        "micro": 0.9787234042553191,
+        "numerator": 92,
+        "raw": "92/94"
+      },
+      "citation_syntax_validity": {
+        "basis": "deterministic citation_valid; separate from semantic correctness",
+        "denominator": 31,
+        "macro": 1.0,
+        "macro_defined_queries": 31,
+        "micro": 1.0,
+        "numerator": 31,
+        "raw": "31/31"
+      },
+      "evaluation_errors": 0,
+      "generation_errors": 0,
+      "groundedness": {
+        "denominator": 97,
+        "macro": 0.9666666666666666,
+        "macro_defined_queries": 31,
+        "micro": 0.9587628865979382,
+        "numerator": 93,
+        "raw": "93/97"
+      },
+      "query_count": 31,
+      "raw_claim_counts": {
+        "cited_claim_count": 94,
+        "claim_count": 97,
+        "correctly_cited_claim_count": 92,
+        "grounded_claim_count": 93,
+        "unsupported_claim_count": 4
+      },
+      "raw_count_anomalies": [],
+      "required_point_count": 102,
+      "unsupported_claim_rate": {
+        "denominator": 97,
+        "macro": 0.03333333333333333,
+        "macro_defined_queries": 31,
+        "micro": 0.041237113402061855,
+        "numerator": 4,
+        "raw": "4/97"
+      }
+    },
+    "R2": {
+      "answer_completeness": {
+        "denominator": 102,
+        "macro": 0.6967741935483871,
+        "macro_defined_queries": 31,
+        "micro": 0.6176470588235294,
+        "numerator": 63,
+        "raw": "63/102"
+      },
+      "citation_completeness": {
+        "denominator": 102,
+        "macro": 0.6967741935483871,
+        "macro_defined_queries": 31,
+        "micro": 0.6176470588235294,
+        "numerator": 63,
+        "raw": "63/102"
+      },
+      "citation_correctness": {
+        "denominator": 85,
+        "macro": 0.9354838709677419,
+        "macro_defined_queries": 31,
+        "micro": 0.9647058823529412,
+        "numerator": 82,
+        "raw": "82/85"
+      },
+      "citation_syntax_validity": {
+        "basis": "deterministic citation_valid; separate from semantic correctness",
+        "denominator": 31,
+        "macro": 1.0,
+        "macro_defined_queries": 31,
+        "micro": 1.0,
+        "numerator": 31,
+        "raw": "31/31"
+      },
+      "evaluation_errors": 0,
+      "generation_errors": 0,
+      "groundedness": {
+        "denominator": 87,
+        "macro": 0.9354838709677419,
+        "macro_defined_queries": 31,
+        "micro": 0.9655172413793104,
+        "numerator": 84,
+        "raw": "84/87"
+      },
+      "query_count": 31,
+      "raw_claim_counts": {
+        "cited_claim_count": 85,
+        "claim_count": 87,
+        "correctly_cited_claim_count": 82,
+        "grounded_claim_count": 84,
+        "unsupported_claim_count": 3
+      },
+      "raw_count_anomalies": [],
+      "required_point_count": 102,
+      "unsupported_claim_rate": {
+        "denominator": 87,
+        "macro": 0.06451612903225806,
+        "macro_defined_queries": 31,
+        "micro": 0.034482758620689655,
+        "numerator": 3,
+        "raw": "3/87"
+      }
+    }
+  },
+  "net_point_difference": -2,
+  "per_query": [
+    {
+      "R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 0.5,
+        "unsupported_claim_rate": 0.5
+      },
+      "R2": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": true,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 1.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": -1.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": -0.5,
+        "unsupported_claim_rate": 0.5
+      },
+      "point_transitions": [
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P1",
+          "query_id": "eval001",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval001",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P3",
+          "query_id": "eval001",
+          "transition": "neither_supported"
+        }
+      ],
+      "query_id": "eval001"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": -0.5,
+        "citation_completeness": -0.5,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval002",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval002",
+          "transition": "only_R1"
+        }
+      ],
+      "query_id": "eval002"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval003",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval003"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval004",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval004",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P3",
+          "query_id": "eval004",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P4",
+          "query_id": "eval004",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P5",
+          "query_id": "eval004",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P6",
+          "query_id": "eval004",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval004"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P1",
+          "query_id": "eval005a",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval005a",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P3",
+          "query_id": "eval005a",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P4",
+          "query_id": "eval005a",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P5",
+          "query_id": "eval005a",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P6",
+          "query_id": "eval005a",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P7",
+          "query_id": "eval005a",
+          "transition": "neither_supported"
+        }
+      ],
+      "query_id": "eval005a"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.16666666666666666,
+        "citation_completeness": 0.16666666666666666,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.16666666666666666,
+        "citation_completeness": 0.16666666666666666,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P1",
+          "query_id": "eval005b",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval005b",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P3",
+          "query_id": "eval005b",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P4",
+          "query_id": "eval005b",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P5",
+          "query_id": "eval005b",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P6",
+          "query_id": "eval005b",
+          "transition": "neither_supported"
+        }
+      ],
+      "query_id": "eval005b"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval006",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval006",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval006",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval006"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval007",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval007",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P3",
+          "query_id": "eval007",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P4",
+          "query_id": "eval007",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P5",
+          "query_id": "eval007",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P6",
+          "query_id": "eval007",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval007"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.6666666666666666,
+        "citation_completeness": 0.6666666666666666,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.6666666666666666,
+        "citation_completeness": 0.6666666666666666,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval008",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval008",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval008",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval008"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval009",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval009"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval010",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval010",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval010"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P1",
+          "query_id": "eval011",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval011",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval011"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval012",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval012",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval012",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P4",
+          "query_id": "eval012",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval012"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.6,
+        "citation_completeness": 0.6,
+        "citation_correctness": 0.8,
+        "citation_syntax_validity": true,
+        "groundedness": 0.8,
+        "unsupported_claim_rate": 0.2
+      },
+      "R2": {
+        "answer_completeness": 0.6,
+        "citation_completeness": 0.6,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.19999999999999996,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.19999999999999996,
+        "unsupported_claim_rate": -0.2
+      },
+      "point_transitions": [
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P1",
+          "query_id": "eval013",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval013",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval013",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P4",
+          "query_id": "eval013",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P5",
+          "query_id": "eval013",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval013"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.75,
+        "citation_completeness": 0.75,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.75,
+        "citation_completeness": 0.75,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval014",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval014",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P3",
+          "query_id": "eval014",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P4",
+          "query_id": "eval014",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval014"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval015",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval015",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval015"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P1",
+          "query_id": "eval016",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval016",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval016",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P4",
+          "query_id": "eval016",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval016"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval017",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval017",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval017",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval017"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.75,
+        "citation_completeness": 0.75,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.75,
+        "citation_completeness": 0.75,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval018",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval018",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval018",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P4",
+          "query_id": "eval018",
+          "transition": "neither_supported"
+        }
+      ],
+      "query_id": "eval018"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval019",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval019",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval019",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval019"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval020",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval020"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval021",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval021",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval021",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval021"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.3333333333333333,
+        "citation_completeness": 0.3333333333333333,
+        "citation_correctness": 0.6666666666666666,
+        "citation_syntax_validity": true,
+        "groundedness": 0.6666666666666666,
+        "unsupported_claim_rate": 0.3333333333333333
+      },
+      "R2": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": true,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 1.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": -0.3333333333333333,
+        "citation_completeness": -0.3333333333333333,
+        "citation_correctness": -0.6666666666666666,
+        "citation_syntax_validity": 0.0,
+        "groundedness": -0.6666666666666666,
+        "unsupported_claim_rate": 0.6666666666666667
+      },
+      "point_transitions": [
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P1",
+          "query_id": "eval022",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval022",
+          "transition": "only_R1"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P3",
+          "query_id": "eval022",
+          "transition": "neither_supported"
+        }
+      ],
+      "query_id": "eval022"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval023",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval023",
+          "transition": "neither_supported"
+        }
+      ],
+      "query_id": "eval023"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval024",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval024"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.6666666666666666,
+        "citation_completeness": 0.6666666666666666,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.6666666666666666,
+        "citation_completeness": 0.6666666666666666,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval025",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P2",
+          "query_id": "eval025",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval025",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval025"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.75,
+        "citation_completeness": 0.75,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": -0.25,
+        "citation_completeness": -0.25,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": false,
+          "point_id": "P1",
+          "query_id": "eval026",
+          "transition": "only_R1"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval026",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval026",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P4",
+          "query_id": "eval026",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval026"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.75,
+        "citation_completeness": 0.75,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.25,
+        "citation_completeness": 0.25,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval027",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval027",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval027",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": true,
+          "point_id": "P4",
+          "query_id": "eval027",
+          "transition": "only_R2"
+        }
+      ],
+      "query_id": "eval027"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.75,
+        "citation_completeness": 0.75,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.75,
+        "citation_completeness": 0.75,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval028",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval028",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P3",
+          "query_id": "eval028",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P4",
+          "query_id": "eval028",
+          "transition": "neither_supported"
+        }
+      ],
+      "query_id": "eval028"
+    },
+    {
+      "R1": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P1",
+          "query_id": "eval029",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval029",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval029"
+    },
+    {
+      "R1": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "R2": {
+        "answer_completeness": 0.5,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "citation_syntax_validity": true,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "delta_R2_minus_R1": {
+        "answer_completeness": 0.0,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "citation_syntax_validity": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 0.0
+      },
+      "point_transitions": [
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P1",
+          "query_id": "eval030",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P2",
+          "query_id": "eval030",
+          "transition": "both_supported"
+        },
+        {
+          "R1_supported": false,
+          "R2_supported": false,
+          "point_id": "P3",
+          "query_id": "eval030",
+          "transition": "neither_supported"
+        },
+        {
+          "R1_supported": true,
+          "R2_supported": true,
+          "point_id": "P4",
+          "query_id": "eval030",
+          "transition": "both_supported"
+        }
+      ],
+      "query_id": "eval030"
+    }
+  ],
+  "point_transitions": {
+    "changed_point_ids": {
+      "only_R1": [
+        {
+          "point_id": "P2",
+          "query_id": "eval002"
+        },
+        {
+          "point_id": "P2",
+          "query_id": "eval022"
+        },
+        {
+          "point_id": "P1",
+          "query_id": "eval026"
+        }
+      ],
+      "only_R2": [
+        {
+          "point_id": "P4",
+          "query_id": "eval027"
+        }
+      ]
+    },
+    "counts": {
+      "both_supported": 62,
+      "neither_supported": 36,
+      "only_R1": 3,
+      "only_R2": 1
+    },
+    "denominator": 102,
+    "gross_churn": 4,
+    "net_R2_points": -2
+  },
+  "query_counts": {
+    "R1_better": 3,
+    "R2_better": 1,
+    "tie": 27
+  },
+  "warning": "Macro and pooled micro can move in different directions; display both."
+}

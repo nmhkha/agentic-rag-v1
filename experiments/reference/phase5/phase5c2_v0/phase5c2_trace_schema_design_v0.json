@@ -1,0 +1,461 @@
+{
+  "schema": "phase5c2-trace-schema-design-v0",
+  "artifact_status": "DRAFT FOR EXTERNAL REVIEW",
+  "design_only": true,
+  "implementation_status": "NOT_STARTED",
+  "schema_kind": "Conceptual field and invariant specification; not a runtime implementation or instantiated trace; no actual query, answer or gold records",
+  "source_requirements": [
+    "V2-R1",
+    "V2-R2",
+    "V2-R3",
+    "V2-R4",
+    "V2-R6"
+  ],
+  "runtime_forbidden_inputs": [
+    "required_legal_points_or_aspects_from_gold",
+    "gold_evidence_labels",
+    "reference_answer",
+    "evaluator_labels",
+    "difficulty_or_dimension_labels",
+    "TEST_quality_outputs",
+    "historical_answers_or_failure_analyses"
+  ],
+  "envelope_fields": {
+    "trace_schema_version": "string",
+    "run_id": "opaque string",
+    "system_config_hash": "sha256",
+    "implementation_hash": "sha256",
+    "corpus_hash": "sha256",
+    "retrieval_config_hash": "sha256",
+    "generation_model": "resolved model/version and settings; unknown provenance explicit",
+    "production_repeat_id": "opaque schedule slot, no difficulty encoding",
+    "query_id": "opaque string",
+    "original_query": "exact query bytes/string, never overwritten by normalization",
+    "original_query_hash": "sha256",
+    "runtime_normalized_query": "string if normalization occurs, preserve original separately",
+    "created_at_utc": "timestamp",
+    "sealed_at_utc": "timestamp or null if not sealed",
+    "events": "append-only StageEvent[]",
+    "evidence_snapshots": "immutable EvidenceSnapshot[]",
+    "aspect_snapshots": "immutable AspectSnapshot[] if candidate abstraction authorized",
+    "aspect_events": "append-only AspectEvent[]",
+    "answer_versions": "immutable AnswerVersion[]",
+    "retrieval_calls": "RetrievalCall[]",
+    "production_llm_calls": "ProductionLLMCall[] excluding evaluator",
+    "merge_rerank_operations": "MergeRerank[]",
+    "finalization": "Finalization object",
+    "production_seal": "external manifest hashes every final output and raw trace; no circular self-hash"
+  },
+  "StageEvent": {
+    "event_id": "unique string",
+    "sequence": "strictly increasing integer",
+    "stage_type": "one of stage_catalog keys",
+    "occurrence": "positive integer; never overwrite first occurrence",
+    "parent_event_ids": "event ID[]",
+    "status": "completed | skipped | not_reached | failed; null is not false",
+    "started_at": "timestamp or null when not reached",
+    "ended_at": "timestamp or null",
+    "input_refs": "immutable query/evidence/aspect/answer/config references and hashes",
+    "output_refs": "immutable payload/version references and hashes",
+    "raw_output": "exact stage payload in file or inline immutable bytes; no hidden chain of thought required",
+    "parsed_output": "validated decision data; preserve even when later superseded",
+    "parse_error": "string or null",
+    "reason": "concise decision rationale, not private reasoning transcript",
+    "skip_or_stop_reason": "explicit reason or null",
+    "call_ids": "retrieval or production IDs; empty for local stages",
+    "budget_before": "logical used/remaining by category",
+    "budget_after": "logical used/remaining by category"
+  },
+  "stage_catalog": {
+    "query_received": {
+      "order_hint": 1,
+      "when": "Always",
+      "preserve": "original query bytes/hash and opaque ID",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "initial_retrieval": {
+      "order_hint": 2,
+      "when": "Always unless runtime error",
+      "preserve": "initial candidates, ranks, initial_top5 and retrieval call",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "coverage_check_1": {
+      "order_hint": 3,
+      "when": "After initial evidence",
+      "preserve": "CoveragePayload, exact first raw/parsed check",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "aspect_identification": {
+      "order_hint": 4,
+      "when": "With query/coverage; abstraction conditional on R3 authorization",
+      "preserve": "detected aspects and origins; stage may share existing call, no extra budget",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "applicability_assessment_initial": {
+      "order_hint": 5,
+      "when": "Before interpreting initial support",
+      "preserve": "aspect-evidence applicability and predicate decisions",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "expansion_decision": {
+      "order_hint": 6,
+      "when": "After coverage",
+      "preserve": "DecisionPayload; skip/not_reached explicit",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "subqueries": {
+      "order_hint": 7,
+      "when": "Only if expansion authorized",
+      "preserve": "exact subquery strings, target aspects, informational differences; no examples in design",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "expansion_retrieval": {
+      "order_hint": 8,
+      "when": "Per executed subquery within one episode",
+      "preserve": "expansion evidence snapshots, calls, failure/early-stop records",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "evidence_merge": {
+      "order_hint": 9,
+      "when": "When expansion yields candidates",
+      "preserve": "merged candidate snapshot, dedup identity, merge-rerank operation",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "final_evidence_selection": {
+      "order_hint": 10,
+      "when": "After expansion or skip",
+      "preserve": "final_top5 snapshot; preserve initial and all expansion snapshots",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "applicability_assessment_final": {
+      "order_hint": 11,
+      "when": "After selection",
+      "preserve": "updated support/applicability, lost evidence and unresolved aspects",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "expansion_value": {
+      "order_hint": 12,
+      "when": "After attempted expansion; otherwise skipped",
+      "preserve": "ExpansionValueAccounting candidate versus final gain/loss",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "draft_generation": {
+      "order_hint": 13,
+      "when": "After final evidence",
+      "preserve": "immutable draft AnswerVersion",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "completeness_check_1": {
+      "order_hint": 14,
+      "when": "After draft",
+      "preserve": "CompletenessPayload bound to draft; never overwrite",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "revision_decision": {
+      "order_hint": 15,
+      "when": "After first completeness",
+      "preserve": "DecisionPayload with specific admissible targets and remaining budget",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "answer_revision": {
+      "order_hint": 16,
+      "when": "If authorized and feasible",
+      "preserve": "immutable revised AnswerVersion or failure; draft retained",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "completeness_check_2": {
+      "order_hint": 17,
+      "when": "After revised answer; explicitly skipped if no revision",
+      "preserve": "separate CompletenessPayload bound to revised version",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "citation_check": {
+      "order_hint": 18,
+      "when": "On currently selected answer",
+      "preserve": "CitationPayload with syntax and semantic distinction",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "citation_edit": {
+      "order_hint": 19,
+      "when": "If separately allowed under reference budget",
+      "preserve": "new answer version; optional branch, not proposed new mechanism",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "post_edit_verification": {
+      "order_hint": 20,
+      "when": "If citation edit changes answer",
+      "preserve": "necessary current-version checks or explicit unverified state; no automatic budget increase",
+      "repeat_policy": "append new occurrence; never overwrite"
+    },
+    "finalization": {
+      "order_hint": 21,
+      "when": "Always, including error envelope",
+      "preserve": "Finalization with status, unresolved aspects, costs and references",
+      "repeat_policy": "append new occurrence; never overwrite"
+    }
+  },
+  "EvidenceSnapshot": {
+    "snapshot_id": "unique string",
+    "scope": "initial_candidates | initial_top5 | expansion_candidates | merged_candidates | final_top5",
+    "ordered_evidence": "EvidenceItem[]",
+    "parent_snapshot_ids": "snapshot ID[]",
+    "source_event_id": "event ID",
+    "snapshot_hash": "sha256",
+    "citation_map": "evidence ID to chunk/content hash; stable run-local IDs, preserve each map"
+  },
+  "EvidenceItem": {
+    "evidence_id": "stable run-local ID, never recycled for different content",
+    "chunk_id": "corpus chunk ID",
+    "document_id": "corpus document ID",
+    "article_id": "corpus article ID",
+    "text": "exact text supplied or immutable reconstructable content reference",
+    "text_hash": "sha256",
+    "source_locator": "corpus structural/span reference",
+    "retrieval_call_ids": "IDs of calls contributing this item",
+    "ranks_scores": "per-stage rank/score with scorer identity, not directly comparable across different scorers",
+    "selected_for_generation": "boolean in each relevant snapshot"
+  },
+  "AspectSnapshot": {
+    "snapshot_id": "unique immutable ID",
+    "source_event_id": "event ID",
+    "aspects": "Aspect[] including candidate and terminal references",
+    "snapshot_hash": "sha256"
+  },
+  "Aspect": {
+    "aspect_id": "stable runtime ID; never evaluator gold ID",
+    "description": "runtime scoped aspect text",
+    "origin": "query_explicit | controller_inferred",
+    "origin_query_spans": "offset/span references for explicit origin or intent link",
+    "inference_rationale": "concise rationale and parent IDs for inferred origin",
+    "admission": "candidate | answer_worthy | excluded | merged",
+    "promotion_evidence_refs": "evidence/support/applicability assessment IDs or empty",
+    "scope": "bounded requested or supported subaspect",
+    "search_status": "not_searched | searched | search_blocked",
+    "support_status": "unassessed | sufficient | partial | not_found_in_available_evidence | conflicting",
+    "applicability_status": "unassessed | direct | conditional | not_applicable | uncertain",
+    "support_snapshot_id": "exact evidence snapshot assessed",
+    "applicability_decision_ids": "ApplicabilityDecision IDs",
+    "answer_disposition": "pending | answered_supported | answered_qualified | unresolved_disclosed | unresolved_undisclosed | excluded_with_reason | merged_into",
+    "answer_spans": "answer version ID plus offsets; cannot refer to a stale answer as final",
+    "unresolved_reason": "evidence_missing | applicability_unknown | evidence_conflict | supported_omission | budget | outside_scope | other with rationale",
+    "merged_into": "surviving aspect ID or null",
+    "last_event_id": "AspectEvent ID"
+  },
+  "AspectEvent": {
+    "event_id": "unique ID",
+    "aspect_id": "stable ID",
+    "controller_event_id": "stage ID",
+    "event_type": "identified | searched | support_assessed | applicability_assessed | promoted | demoted | merged | support_lost | answered | unresolved | excluded | reopened",
+    "before": "prior state reference or null only for identified",
+    "after": "new state reference",
+    "reason": "evidence/intent-bound rationale",
+    "supporting_refs": "query spans, evidence, answer or prior event IDs"
+  },
+  "ApplicabilityDecision": {
+    "decision_id": "unique ID",
+    "assessor": "runtime_estimate only in production",
+    "aspect_id": "runtime ID",
+    "evidence_id": "stable evidence ID",
+    "evidence_snapshot_id": "snapshot ID",
+    "support_spans": "source spans",
+    "relevance": "direct | contextual | irrelevant | uncertain",
+    "evidence_role": "normative_support | supporting_context | counterevidence",
+    "scope_predicates": "PredicateAssessment[]",
+    "actor_predicates": "PredicateAssessment[]",
+    "condition_predicates": "PredicateAssessment[]",
+    "applicability": "unassessed | direct | conditional | not_applicable | uncertain",
+    "support": "unassessed | sufficient | partial | not_found_in_available_evidence | conflicting",
+    "uncertainty": "explicit missing facts/legal ambiguity",
+    "rationale": "concise justification preserving conditions"
+  },
+  "PredicateAssessment": {
+    "predicate": "bounded requirement/condition text",
+    "query_fact_refs": "query spans or empty",
+    "evidence_refs": "evidence spans or empty",
+    "assessment": "met | unmet | unknown | not_required",
+    "rationale": "concise source-bound reason"
+  },
+  "CoveragePayload": {
+    "query_scope": "bounded runtime interpretation",
+    "aspect_snapshot_id": "runtime aspect inventory reference",
+    "evidence_snapshot_id": "exact initial/final evidence",
+    "sufficiency_estimate": "sufficient | partial | insufficient | uncertain",
+    "supported_aspect_ids": "runtime IDs",
+    "missing_evidence_aspect_ids": "runtime IDs",
+    "unresolved_condition_aspect_ids": "runtime IDs",
+    "applicability_decision_ids": "IDs",
+    "reason": "concise rationale"
+  },
+  "CompletenessPayload": {
+    "answer_version_id": "exact immutable answer checked",
+    "evidence_snapshot_id": "exact immutable evidence checked",
+    "aspect_snapshot_id": "exact aspect state checked",
+    "answer_covered_aspect_ids": "runtime IDs with answer spans",
+    "supported_omission_aspect_ids": "runtime IDs with supporting evidence links",
+    "missing_evidence_aspect_ids": "runtime IDs",
+    "unresolved_condition_aspect_ids": "runtime IDs",
+    "unsupported_claim_refs": "answer spans plus evidence reasoning",
+    "unresolved_disclosure_refs": "aspect IDs plus answer spans or missing flags",
+    "internal_full_complete": "boolean or null if unassessed; no gold certification",
+    "internal_bounded_adequacy": "boolean or null",
+    "uncertainty": "string or structured issues",
+    "reason": "concise rationale"
+  },
+  "DecisionPayload": {
+    "decision": "execute | skip | blocked | not_reached",
+    "target_aspect_ids": "runtime IDs",
+    "reasons": "concise intent/evidence/budget justification",
+    "admissible_actions": "bounded changes/search intents",
+    "budget_available": "explicit current caps/usage",
+    "expected_value_rationale": "prospective hypothesis, not evaluator value"
+  },
+  "ExpansionValueAccounting": {
+    "assessment_source": "runtime_estimate; independent evaluator version stored externally after sealing",
+    "before_snapshot_ids": "candidate and initial_top5 references",
+    "after_snapshot_ids": "expansion/merged/final references",
+    "target_aspect_ids": "runtime IDs",
+    "subquery_refs": "exact strings stored in subquery stage, source aspect IDs and informational difference rationale",
+    "new_unique_chunks": "IDs and count relative to previous candidate pool",
+    "new_articles": "IDs and count",
+    "new_documents": "IDs and count",
+    "candidate_new_supported_aspects": "IDs/count based on runtime assessment",
+    "final_new_supported_aspects": "IDs/count in final_top5",
+    "candidate_lost_supported_aspects": "IDs/count",
+    "final_lost_supported_aspects": "IDs/count, including evictions",
+    "newly_resolved_aspects": "IDs previously not sufficient now sufficiently supported with applicable evidence",
+    "condition_clarifications": "IDs plus justified refinement of uncertainty",
+    "irrelevant_new_evidence": "evidence IDs/count",
+    "applicability_failures": "evidence/aspect pair IDs/count",
+    "unknown_applicability": "pair IDs/count",
+    "final_topk_changed": "ordered-list comparison and set comparison booleans",
+    "no_demonstrated_value": "boolean or null with reason; novel chunks alone not value",
+    "retrieval_cost": "call IDs, merge IDs, attempts, wall time, known tokens where relevant"
+  },
+  "AnswerVersion": {
+    "answer_version_id": "unique immutable ID",
+    "kind": "draft | revised | citation_edited | selected_final",
+    "parent_answer_version_id": "ID or null for draft",
+    "answer_text": "exact generated text; no example instantiated here",
+    "answer_hash": "sha256",
+    "evidence_snapshot_id": "exact available generation/revision context",
+    "citation_map_snapshot_id": "matching immutable citation map",
+    "origin_event_id": "stage ID",
+    "claim_change_summary": "added/removed/changed claim spans; runtime estimates, not gold labels",
+    "selected_final_reference": "reference existing immutable version rather than overwrite"
+  },
+  "CitationPayload": {
+    "answer_version_id": "exact answer checked",
+    "evidence_snapshot_id": "exact source context",
+    "syntax_result": "pass | fail | not_checked",
+    "semantic_result": "pass | fail | uncertain | not_checked",
+    "method": "deterministic syntax / semantic method ID; cannot equate syntax to entailment",
+    "cited_claim_refs": "claim spans and attached evidence IDs",
+    "unknown_or_malformed_refs": "citation spans",
+    "applicability_assessment_refs": "IDs",
+    "errors": "retained issues",
+    "check_freshness": "current | stale"
+  },
+  "RetrievalCall": {
+    "call_id": "unique logical ID",
+    "event_id": "stage ID",
+    "kind": "initial | expansion",
+    "exact_query": "exact original/subquery text",
+    "target_aspect_ids": "runtime IDs or empty initial",
+    "retrieval_round": "nonnegative index, reference cap one expansion episode",
+    "input_config_hash": "frozen base config hash",
+    "candidate_result_snapshot_id": "snapshot ID or null on failure",
+    "physical_attempts": "attempt ID/status/timestamps/error; never hide retries",
+    "cpu_time": "measured or null",
+    "wall_time": "measured or null"
+  },
+  "ProductionLLMCall": {
+    "call_id": "unique logical ID",
+    "event_id": "stage ID",
+    "purpose": "coverage | generation | completeness | revision | citation_review_or_repair; no evaluator stages",
+    "model_config_hash": "resolved model/settings hash",
+    "request_payload_ref": "exact prompt/input payload and hash; exclude credentials",
+    "response_payload_ref": "raw response and hash or null on failure",
+    "physical_attempts": "ordered attempt ID/status/timestamps/transport error records",
+    "input_tokens": "known integer or null",
+    "output_tokens": "known integer or null",
+    "latency": "measured or null",
+    "retry_reason": "predeclared transport rule only, never quality",
+    "accepted_attempt_id": "first valid permitted attempt or null"
+  },
+  "MergeRerank": {
+    "operation_id": "unique ID",
+    "event_id": "stage ID",
+    "input_snapshot_ids": "candidate snapshot IDs",
+    "output_snapshot_id": "retained final evidence snapshot",
+    "config_hash": "reranker/budget config hash",
+    "cpu_time": "measured or null",
+    "wall_time": "measured or null",
+    "status": "completed | failed | not_reached"
+  },
+  "Finalization": {
+    "final_answer_version_id": "selected immutable answer ID or null on error",
+    "last_completeness_event_id": "current final check ID or null",
+    "last_citation_event_id": "current final check ID or null",
+    "execution_state": "completed | failed",
+    "answer_status": "full | partial | insufficient | incomplete | unknown",
+    "citation_state": "pass | fail | unknown",
+    "final_status": "success_complete | success_partial_with_disclosure | insufficient_evidence | incomplete_answer | citation_failure | verification_incomplete | runtime_error",
+    "status_source": "runtime_estimate; never benchmark_certified",
+    "stop_reason": "scope_addressed | evidence_limit | no_value_expansion | budget_exhausted | unsearchable_gap | execution_failure",
+    "unresolved_aspect_ids": "all explicit/admitted unresolved IDs with disclosure refs",
+    "excluded_candidate_refs": "terminal audit entries, not required answer content",
+    "secondary_failure_flags": "retain all known failures even if priority outcome masks them",
+    "totals": "logical retrieval/merge/production LLM calls, physical attempts, tokens, latency with unknowns",
+    "budget_limits": "resolved reference/future predeclared caps"
+  },
+  "invariants": [
+    "Every emitted stage is immutable and sequence ordered; event refs resolve; raw and parsed first completeness payloads survive all later checks.",
+    "Skipped/not_reached branches have explicit records and reasons; missing payloads are not empty successful checks.",
+    "Every answer/evidence/check snapshot has a stable ID and content hash; full stage reconstruction is possible from retained bytes and refs.",
+    "Revision stages reference draft and revised versions separately; final checks bind exact selected-final bytes.",
+    "Citation edit creates a new answer version; a stale completeness or semantic citation check cannot certify it. If budget cannot support necessary checks, use verification_incomplete.",
+    "Aspect identities persist across every later expected snapshot or resolve through an explicit merge/exclusion event; origin history is never lost.",
+    "Inferred candidates require evidence, defensible applicability and direct intent before admission; unsupported candidates do not create answer obligations.",
+    "An explicit unsupported ask persists as a disclosure obligation; runtime not_found_in_available_evidence is not corpus-wide absence.",
+    "Budget ceilings do not increase to accommodate schema fields; all attempted and failed calls are counted, evaluator calls excluded.",
+    "No gold, evaluator labels, TEST difficulty, reference answers or historical results enter production; evaluator enrichment stored in a separate post-seal namespace.",
+    "Production logs contain concise observable decisions and raw stage outputs, not credentials or demanded hidden chain of thought.",
+    "No runtime status is benchmark-certified; all secondary error/unresolved flags retained."
+  ],
+  "evaluator_side_join_design": {
+    "timing": "only after all planned production outputs sealed",
+    "join_keys": [
+      "query_id",
+      "run_id",
+      "system_config_hash",
+      "answer_version_id",
+      "answer_hash",
+      "production_seal_hash"
+    ],
+    "storage": "separate evaluator-only namespace, never mutate production trace",
+    "fields": [
+      "gold aspect mappings",
+      "validated applicability/support",
+      "draft/revised/final semantic labels",
+      "dimension and answerability labels",
+      "calibration and mechanism metrics",
+      "judge attempts and hashes"
+    ],
+    "runtime_readback": "FORBIDDEN"
+  },
+  "historical_reference_budgets": {
+    "final_top_k": 5,
+    "bm25_depth": 20,
+    "dense_depth": 20,
+    "max_retrieval_expansions": 1,
+    "max_subqueries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_logical_production_llm_calls": 6,
+    "sources": [
+      "scripts/agentic_rag.py",
+      "scripts/retrieval_pipeline.py"
+    ],
+    "note": "Read-only historical source references, not proposed new code paths. Budget increases are UNTESTED DESIGN OPTION."
+  }
+}

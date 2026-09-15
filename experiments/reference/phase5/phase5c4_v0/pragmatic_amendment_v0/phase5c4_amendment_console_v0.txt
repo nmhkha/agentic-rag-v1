@@ -1,0 +1,49 @@
+Phase 5C.4-C2-Lite amendment:
+PASS
+
+Benchmark track:
+RESOURCE-CONSTRAINED MODEL-ADJUDICATED
+
+Independent human legal validation:
+NO
+
+Third model adjudication authorized:
+YES
+
+Target retained:
+36
+
+Target DEV:
+12
+
+Target HOLDOUT TEST:
+24
+
+System-output-based selection:
+FORBIDDEN
+
+D6:
+EMPIRICAL_UNVERIFIED
+
+HOLDOUT blindness:
+REQUIRED
+
+HOLDOUT storage isolation:
+NOT_YET_ENFORCED
+
+Agentic v2 implementation:
+NOT STARTED
+
+Network/API calls:
+0
+
+Production/evaluator/retrieval calls:
+0
+
+Preexisting artifact integrity:
+PASS
+
+Ready for model adjudication/final challenge selection:
+YES
+
+STOP

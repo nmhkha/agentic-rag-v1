@@ -1,0 +1,63 @@
+{
+  "schema": "phase5c3-final-artifact-hashes-v0",
+  "algorithm": "SHA-256",
+  "scope": "Every final Phase 5C.3 artifact except this hash registry itself; no circular hash.",
+  "artifacts": {
+    "integrity_baseline_v0.json": {
+      "sha256": "7fc04586a648abbead8ee4eb5b3248ef44323b4f82bfae1edd8bc44b882f281b",
+      "size_bytes": 7001012
+    },
+    "integrity_before_after_v0.json": {
+      "sha256": "b201c64b6eedacf6b5fb9c48193414e0c65f8bb78c677706ccf74d804e7c81c3",
+      "size_bytes": 7003460
+    },
+    "phase5c3_console_v0.txt": {
+      "sha256": "0f3519f579536fb4f11ef6f3b95400f89b273a827e6d9a4c2d471d18f0dc3108",
+      "size_bytes": 1207
+    },
+    "phase5c3_controller_status_decision_table_v0.json": {
+      "sha256": "7bc3657066e63efcf1e4f1f61e447ec4205fff4af6dfa33136a5e998edd63082",
+      "size_bytes": 40118
+    },
+    "phase5c3_decision_table_validation_v0.json": {
+      "sha256": "e70018e9a7aaf985ffc6f01a2be0f7782c2c1b598e3cd8bd9564c6a1243556e0",
+      "size_bytes": 2029
+    },
+    "phase5c3_design_amendments_v0.md": {
+      "sha256": "9653e43729861f99a57116f8fb50550f99c4197046d33e103f2df7908ab1e644",
+      "size_bytes": 7772
+    },
+    "phase5c3_external_review_v0.md": {
+      "sha256": "a4f5b7610e0d4c6ec8b20d1dae0d0d0cc3f2dfeaed4a3bb57f2543ff07468925",
+      "size_bytes": 7433
+    },
+    "phase5c3_freeze_manifest_v0.json": {
+      "sha256": "16e53fcfe4501fd8df148bc8b63a789ec8f814b5260da52b00c3a901cde6baab",
+      "size_bytes": 14937
+    },
+    "phase5c3_frozen_design_spec_v0.md": {
+      "sha256": "8832e11cb6181913273fccc7abc6b4dfc6fb01dee7f57a9de50409e907c7c990",
+      "size_bytes": 14277
+    },
+    "phase5c3_margin_governance_v0.md": {
+      "sha256": "db39a21f260dece9816c937de2af4859102858276913862d4e4ed41013e65b9a",
+      "size_bytes": 4559
+    },
+    "phase5c3_quota_scheduler_requirements_v0.md": {
+      "sha256": "6d5de9e5d61cfbd3a19edd8de3ca4ebb3febeaadfce7cd614033c4fc126f662d",
+      "size_bytes": 6529
+    },
+    "phase5c3_spec_bindings_v0.json": {
+      "sha256": "3507739309e3fb5abf61321c1bd9bb044cbe620218b80a72234020bdd839309d",
+      "size_bytes": 5362
+    },
+    "phase5c3_trace_matrix_amendment_v0.json": {
+      "sha256": "d8c8fa6ac9df1da5fe94e50824443f42a881695eebd81e615f0e73aec3b05b3c",
+      "size_bytes": 8110
+    },
+    "phase5c3_validation_v0.json": {
+      "sha256": "1aafda3855bec4816f31e159bcef3468dae3ba7cca04e3577744719be8fa94d0",
+      "size_bytes": 17218
+    }
+  }
+}

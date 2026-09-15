@@ -1,0 +1,10 @@
+{
+  "schema": "phase5c4b-corpus-audit-v0",
+  "status": "NOT_STARTED_PACKET_CONTAMINATED",
+  "corpus_root": "data/versions/corpus-v0.1/",
+  "substantive_documents_reviewed": [],
+  "substantive_articles_reviewed": [],
+  "candidates_annotated": 0,
+  "corpus_absence_findings": [],
+  "note": "No corpus support or absence claims made. Corpus files are covered by project-wide binary integrity hashing only."
+}

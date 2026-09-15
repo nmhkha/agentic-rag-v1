@@ -1,0 +1,95 @@
+{
+  "phase": "5C.4-B1",
+  "status": "PASS",
+  "role": "TRUSTED_DATASET_CUSTODIAN",
+  "purpose": "contamination screening only",
+  "reference_status": "EXPLORATORY / NON-BENCHMARK / NON-CONFIRMATORY",
+  "not_gold_or_challenge_item": true,
+  "substantive_annotation_influence": "FORBIDDEN",
+  "source_used": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/contamination_query_only_sources_v0.json",
+  "source_sha256": "ab167baeae320ed639185233828cb987b41efbccb5c257129b4879332c8cae5d",
+  "source_record_index_zero_based": 40,
+  "source_record_keys": [
+    "id",
+    "query"
+  ],
+  "source_record_serialized_sha256": "06fb33ad2c7b1f9aa86246f6e3a52e5b2b76afb9b9125259c0930dda1a1a1d54",
+  "source_validation": {
+    "status": "PASS",
+    "plain_query_identifier_and_exact_text_only": true,
+    "source_record_forbidden_raw_scan_matches": 0,
+    "outer_wrapper_fields_copied": false,
+    "quarantine_bypassed_for_B": false,
+    "access_basis": "Explicit B1 custodian-only source inspection; old packet remains quarantined for B."
+  },
+  "sanitized_output": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1/contamination_reference_medical_v1.json",
+  "sanitized_output_sha256": "3d1b8b0368fc0eebc1f8c08dd66daf123f0ceb94deaf40e6ed27f1c2fa4b9006",
+  "reference_id": "expl_medical_001",
+  "reference_records": 1,
+  "allowed_fields": [
+    "reference_id",
+    "query"
+  ],
+  "source_query_utf8_sha256": "fa0abc24b04e2dfe9a4afbf83ac1d88f77cf08e40ab9fb442cccf4523379f7be",
+  "projected_query_utf8_sha256": "fa0abc24b04e2dfe9a4afbf83ac1d88f77cf08e40ab9fb442cccf4523379f7be",
+  "authoritative_user_query_utf8_sha256": "fa0abc24b04e2dfe9a4afbf83ac1d88f77cf08e40ab9fb442cccf4523379f7be",
+  "exact_byte_identity": "PASS",
+  "byte_identity_definition": "Decoded query strings encoded as UTF-8, compared exactly with no Unicode normalization, trimming or rewriting. JSON formatting is not query content.",
+  "structural_audit": "PASS",
+  "negative_controls_rejected": 13,
+  "forbidden_field_scan": {
+    "status": "PASS",
+    "pattern": "score|gold|answer|trace|retrieval|expansion|revision|failure|dimension|support|aspect|evidence|agentic|standard|annotator|intervention|answerability",
+    "raw_output_matches": 0,
+    "query_exemptions_needed": 0,
+    "scope": "Entire source record and entire output bytes including keys and values; exact canonical output layout enforced, no comments or extra bytes."
+  },
+  "semantic_leakage_audit": {
+    "status": "PASS",
+    "query_adjacent_information": "Fixed reference identifier only",
+    "query_copied_from_validated_source": true,
+    "system_outcomes_A_labels_gold_evidence_copied": false,
+    "interpretations_hypotheses_or_similarity_hints_copied": false
+  },
+  "integrity": {
+    "status": "PASS",
+    "preexisting_regular_files": 26897,
+    "preexisting_symlinks": 4,
+    "before_inventory_sha256": "24f5aacb0ea472d480640d7ba97986aef3ab2fee917bdc64c1e0dfdf7085a88c",
+    "after_inventory_sha256": "24f5aacb0ea472d480640d7ba97986aef3ab2fee917bdc64c1e0dfdf7085a88c",
+    "inventory_encoding": "UTF8 JSON, indent=2, ensure_ascii=False, paths sorted, trailing newline",
+    "all_preexisting_bytes_modes_and_symlink_targets_unchanged": true,
+    "changed_or_missing": [],
+    "allowed_B1_additions": [
+      "data/evaluation/generation/phase5/phase5c4_v0/custodian/phase5c4b1_reference_preparation_v0/prepare_medical_reference_v1.py",
+      "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1/contamination_reference_medical_v1.json",
+      "data/evaluation/generation/phase5/phase5c4_v0/custodian/phase5c4b1_reference_preparation_v0/medical_reference_projection_audit_v1.json",
+      "data/evaluation/generation/phase5/phase5c4_v0/custodian/phase5c4b1_reference_preparation_v0/phase5c4b1_console_v0.txt"
+    ],
+    "scope": "All preexisting regular project files streamed for hashes only, including annotation files without substantive inspection. B1-created script excluded from preexisting counts; its hash recorded separately."
+  },
+  "B0_compatibility": "Authorized additive B1 reference. Original B0 packet files, manifest and historical audit unchanged. B0 exact-three-file allowlist is a historical B0 check; this B1 audit records the extension.",
+  "execution": {
+    "annotation_B_substantive_results_opened": false,
+    "annotation_A_opened": false,
+    "annotation_performed": 0,
+    "A_B_comparison": 0,
+    "adjudication": 0,
+    "D6_runs": 0,
+    "candidate_query_or_split_changes": 0,
+    "network_api_calls": 0,
+    "production_evaluator_calls": 0,
+    "retrieval_reranking_inference": 0,
+    "system_outputs_substantively_accessed": 0,
+    "exact_diagnostic_query_printed_publicly": false,
+    "basis": "Task-initiated local standard-library operations only; binary integrity hashing is not substantive annotation/output inspection; not OS-wide network attestation."
+  },
+  "storage_isolation": "NOT_YET_ENFORCED",
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "reviewer_B_contamination_completion_ready": true,
+  "contamination_screening_performed_here": false,
+  "B_substantive_retry_status": "User-reported PASS; substantive B results not opened or independently reassessed in B1",
+  "dataset_freeze_ready": false,
+  "script_sha256": "6c2eb253ef4d15c07c82b7134e16e28519ae59e434d60e445998e2eca673551d",
+  "console_sha256": "2e4e97e1e494a730ad8c5ae40b924996bb014cec9112a3d224eff4977893c107"
+}

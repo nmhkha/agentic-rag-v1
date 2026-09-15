@@ -1,0 +1,100 @@
+{
+  "purpose": "C1 completed comparison and validation inventory; not dataset freeze",
+  "algorithm": "sha256",
+  "self_excluded": true,
+  "private_addendum_files": [
+    "validate_comparison_v0.py",
+    "comparison_check_results_v0.json",
+    "final_artifact_hashes_v0.json"
+  ],
+  "artifacts": {
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_applicability_sufficiency_comparison_v0.jsonl": {
+      "sha256": "8031e934ccf47fd524aecc1f7786b6f5e87748079c05ff103c29d2019a8be459",
+      "size_bytes": 1098437
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_aspect_mapping_v0.jsonl": {
+      "sha256": "2fdb677778533cfc65ade2a44909682520bb8215b96a0238328e3a98f7131267",
+      "size_bytes": 156564
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_candidate_alignment_v0.json": {
+      "sha256": "848a2bcb6511995813935ab341fb371cfd47aa34ddb38b34d83a24e509c4da49",
+      "size_bytes": 53824
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_contamination_comparison_v0.jsonl": {
+      "sha256": "84c9897e15ce5ac27df6b05cd4528e22aa1e0967c893617b81c839a999a46071",
+      "size_bytes": 78564
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_corpus_audit_comparison_v0.jsonl": {
+      "sha256": "4ce64b46e48fb1071889da5186732627697f3589a2e9a27c1a6fb44525482801",
+      "size_bytes": 14991
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_disagreement_registry_v0.jsonl": {
+      "sha256": "0a6b777456385e15d1c7a6f3410eedfa596b2e90547cb71a25de7f76e32f2fee",
+      "size_bytes": 435691
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_scope_comparison_v0.jsonl": {
+      "sha256": "d41f8c70c6db64f3a4422f00dedeffb3c52994dc74d24e245e69117944572f73",
+      "size_bytes": 208444
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/ab_support_comparison_v0.jsonl": {
+      "sha256": "41b6a718bacc293791115543e0f20cb17f99918b5c5a59c88fcd1bc297dacaec",
+      "size_bytes": 254283
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/artifact_hashes_v0.json": {
+      "sha256": "24b469bcf09eec33eb7926bb286feaca5f708c93e297381f6274a528ee75f7a1",
+      "size_bytes": 4298
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/build_comparison_v0.py": {
+      "sha256": "4f14bc5f0082684af0c91e07d41b7b36f5cfd7efdf788bb0224b7d7fe74a2e87",
+      "size_bytes": 54392
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/comparison_access_manifest_v0.json": {
+      "sha256": "f68e502fa3a9a1e3d6c6021a70a81ca0dfd1051bd04e0cde9de5b825d58eb99a",
+      "size_bytes": 1666
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/comparison_check_results_v0.json": {
+      "sha256": "b3c73d57c8b81120733c956bf36029d000cec843426b5d437cb345515d324031",
+      "size_bytes": 136863
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/integrity_baseline_v0.json": {
+      "sha256": "77157feaa4794c4fb3c183bbe825c4d5165c044d66d5ea3e2bf511803aa55ca5",
+      "size_bytes": 6812359
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/integrity_before_after_v0.json": {
+      "sha256": "235706b98ce0dbfdae5971a3159820946f08b1f4b2c388db83b69c230bc21bf8",
+      "size_bytes": 2260
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_agreement_metrics_v0.json": {
+      "sha256": "a113793b9bb24f0975f6c72c3f29283a3f0b483d04f8b69d8457d697f73fd716",
+      "size_bytes": 15405
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_comparison_report_v0.md": {
+      "sha256": "a054a1358bb3aacee13d0b919f7cfae286c492360ba473096a66644d5e3a4064",
+      "size_bytes": 3878
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_console_v0.txt": {
+      "sha256": "f6829fc0a925e0e923f5eb4d99022b4c6c6bd8cef10d26eb6a0f7938a317e911",
+      "size_bytes": 1032
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_disagreement_summary_v0.json": {
+      "sha256": "d28ebb3cabb33b8c3ca2c967387da7ef1fdc6bd34efbc7ff46b71205b17a0546",
+      "size_bytes": 14049
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/phase5c4c1_validation_v0.json": {
+      "sha256": "f8fd9c5cc75cb52c74e199c593ae4c1c5b9466f10dc5a2b2feb7774e51495f15",
+      "size_bytes": 3045
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/semantic_mapping_decisions_v0.py": {
+      "sha256": "49e93f19bde75f30fa5f893821017baecedb19e1cb9ee6758db266b68a826bf9",
+      "size_bytes": 9123
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/source_integrity_validation_v0.json": {
+      "sha256": "80a7d0ec09cf99773216ca20640706aa0ae2659bdb8e8e07904c728a6bdfd0f4",
+      "size_bytes": 45598
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/comparison_c1/validate_comparison_v0.py": {
+      "sha256": "d8a23398f3e3d75bc4b8f3fe544bf1021fa51073975b3646eb60ded89e5ef04d",
+      "size_bytes": 12019
+    }
+  }
+}

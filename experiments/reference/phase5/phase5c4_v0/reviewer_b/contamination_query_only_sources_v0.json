@@ -1,0 +1,177 @@
+{
+  "purpose": "Independent duplicate rejection only; never gold construction or imitation",
+  "source_hashes": {
+    "data/evaluation/generation/phase5/query_inputs_v0.json": "1d29c4304f61d7c2235d7cab37e2bbf63a35e0c0caf6873d7e458e23904ebc78",
+    "data/evaluation/dev_queries.jsonl": "8ec68966ea6b6d0932a8fc03ae4e9a56495f89fe7ea568baebd5cd680eb270a2"
+  },
+  "queries": [
+    {
+      "id": "historical:eval001",
+      "query": "Các mức phân loại rủi ro của hệ thống trí tuệ nhân tạo gồm những mức nào?"
+    },
+    {
+      "id": "historical:eval002",
+      "query": "Ai có thẩm quyền ban hành danh mục hệ thống trí tuệ nhân tạo có rủi ro cao?"
+    },
+    {
+      "id": "historical:eval003",
+      "query": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro vào thời điểm nào?"
+    },
+    {
+      "id": "historical:eval004",
+      "query": "Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?"
+    },
+    {
+      "id": "historical:eval005a",
+      "query": "Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?"
+    },
+    {
+      "id": "historical:eval005b",
+      "query": "Bên triển khai hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?"
+    },
+    {
+      "id": "historical:eval006",
+      "query": "Trách nhiệm minh bạch của nhà cung cấp hệ thống trí tuệ nhân tạo bao gồm những gì?"
+    },
+    {
+      "id": "historical:eval007",
+      "query": "Nội dung do AI tạo ra phải được thông báo hoặc gắn nhãn như thế nào?"
+    },
+    {
+      "id": "historical:eval008",
+      "query": "Trường hợp nào nội dung do AI tạo ra cần giúp người tiếp nhận nhận biết rõ nguồn gốc?"
+    },
+    {
+      "id": "historical:eval009",
+      "query": "Hệ thống AI tương tác trực tiếp với con người phải được thiết kế theo yêu cầu gì?"
+    },
+    {
+      "id": "historical:eval010",
+      "query": "Nhà cung cấp cần làm gì khi phát hiện sự cố liên quan đến hệ thống trí tuệ nhân tạo?"
+    },
+    {
+      "id": "historical:eval011",
+      "query": "Cơ chế thử nghiệm có kiểm soát cho phép tổ chức, cá nhân được hưởng những cơ chế gì trong phạm vi thử nghiệm?"
+    },
+    {
+      "id": "historical:eval012",
+      "query": "Cơ quan nào quyết định chấp thuận tham gia cơ chế thử nghiệm có kiểm soát?"
+    },
+    {
+      "id": "historical:eval013",
+      "query": "Việc phân loại cấp độ thử nghiệm có kiểm soát dựa trên những tiêu chí nào?"
+    },
+    {
+      "id": "historical:eval014",
+      "query": "Hồ sơ thông thường để tham gia cơ chế thử nghiệm có kiểm soát gồm những thành phần nào?"
+    },
+    {
+      "id": "historical:eval015",
+      "query": "Khi nào cơ quan có thẩm quyền có thể tạm dừng hoặc chấm dứt thử nghiệm?"
+    },
+    {
+      "id": "historical:eval016",
+      "query": "Tổ chức hoặc cá nhân phải báo cáo gì trong quá trình thử nghiệm có kiểm soát?"
+    },
+    {
+      "id": "historical:eval017",
+      "query": "Có thể gia hạn thời gian thử nghiệm có kiểm soát hay không và thủ tục thế nào?"
+    },
+    {
+      "id": "historical:eval018",
+      "query": "Sau khi kết thúc thử nghiệm, cơ quan có thẩm quyền xử lý kết quả như thế nào?"
+    },
+    {
+      "id": "historical:eval019",
+      "query": "Cơ sở dữ liệu quốc gia phục vụ trí tuệ nhân tạo được tổ chức theo những nguyên tắc nào?"
+    },
+    {
+      "id": "historical:eval020",
+      "query": "Dữ liệu mở có điều kiện được hiểu là gì?"
+    },
+    {
+      "id": "historical:eval021",
+      "query": "Những loại dữ liệu nào có thể được đưa vào cơ sở dữ liệu phục vụ trí tuệ nhân tạo?"
+    },
+    {
+      "id": "historical:eval022",
+      "query": "Cơ quan quản lý có trách nhiệm gì đối với việc xây dựng và cập nhật dữ liệu mở phục vụ AI?"
+    },
+    {
+      "id": "historical:eval023",
+      "query": "Quy định về bảo đảm khả năng kết nối và khai thác dữ liệu phục vụ trí tuệ nhân tạo là gì?"
+    },
+    {
+      "id": "historical:eval024",
+      "query": "Những hành vi nào liên quan đến AI bị nghiêm cấm khi lợi dụng nhóm người dễ bị tổn thương?"
+    },
+    {
+      "id": "historical:eval025",
+      "query": "Khi ứng dụng AI trong quản lý nhà nước, cơ quan vận hành phải đánh giá tác động trong trường hợp nào?"
+    },
+    {
+      "id": "historical:eval026",
+      "query": "Báo cáo đánh giá tác động khi sử dụng AI trong khu vực công cần đề cập những nội dung gì?"
+    },
+    {
+      "id": "historical:eval027",
+      "query": "Nguyên tắc đạo đức khi phát triển và sử dụng trí tuệ nhân tạo được đặt ra như thế nào?"
+    },
+    {
+      "id": "historical:eval028",
+      "query": "Tổ chức phát triển hoặc triển khai AI cần bảo đảm trách nhiệm giải trình ra sao?"
+    },
+    {
+      "id": "historical:eval029",
+      "query": "Theo Khung đạo đức trí tuệ nhân tạo quốc gia, khi hệ thống AI có thể ảnh hưởng đáng kể đến quyền con người thì cần áp dụng những biện pháp kiểm soát nào?"
+    },
+    {
+      "id": "historical:eval030",
+      "query": "Những yêu cầu nào giúp bảo đảm con người vẫn có khả năng giám sát và can thiệp vào hệ thống AI?"
+    },
+    {
+      "id": "existing_dev:dev001",
+      "query": "hệ thống trí tuệ nhân tạo rủi ro cao"
+    },
+    {
+      "id": "existing_dev:dev002",
+      "query": "nghĩa vụ minh bạch của hệ thống AI là gì"
+    },
+    {
+      "id": "existing_dev:dev003",
+      "query": "Ai chịu trách nhiệm khi hệ thống AI gây sự cố"
+    },
+    {
+      "id": "existing_dev:dev004",
+      "query": "Dữ liệu mở được quy định như thế nào?"
+    },
+    {
+      "id": "existing_dev:dev005",
+      "query": "Cơ chế thử nghiệm có kiểm soát là gì?"
+    },
+    {
+      "id": "existing_dev:dev006",
+      "query": "Điều kiện tham gia sandbox AI là gì?"
+    },
+    {
+      "id": "existing_dev:dev007",
+      "query": "Chủ thể phát triển AI có nghĩa vụ gì?"
+    },
+    {
+      "id": "existing_dev:dev008",
+      "query": "Quy định về quản lý rủi ro AI?"
+    },
+    {
+      "id": "existing_dev:dev009",
+      "query": "Khi nào phải thông báo cho người dùng rằng họ đang tương tác với AI?"
+    },
+    {
+      "id": "exploratory_medical",
+      "query": "Tôi muốn xây dựng một chatbot y tế, tôi cần lưu ý điều gì"
+    }
+  ],
+  "historical_benchmark_size": 31,
+  "existing_dev_size": 9,
+  "exploratory_status": "EXPLORATORY / NON-BENCHMARK / NON-CONFIRMATORY",
+  "contains_system_answers_or_historical_gold": false
+}

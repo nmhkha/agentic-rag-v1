@@ -1,0 +1,280 @@
+{
+  "schema": "phase5c2-manifest-v0",
+  "phase": "5C.2",
+  "artifact_status": "DRAFT FOR EXTERNAL REVIEW",
+  "design_only": true,
+  "design_structure_status": "PASS",
+  "created_at_utc": "2026-09-10T07:53:40.011392+00:00",
+  "output_namespace": "data/evaluation/generation/phase5/phase5c2_v0",
+  "scope": "READ-ONLY DESIGN ANALYSIS; only additive artifacts under output namespace",
+  "research_justification": "YES",
+  "implementation_authorization": "NOT YET",
+  "implementation_status": "NOT_STARTED",
+  "challenge_set_justified": true,
+  "benchmark_replaced": false,
+  "historical_benchmark": {
+    "query_count": 31,
+    "point_count": 102,
+    "role": "PRIMARY HISTORICAL COMPARABILITY BENCHMARK",
+    "v2_untouched_confirmatory_holdout": false,
+    "reason": "Historical R0/R1/R2/A1/A2 outcomes and failure analysis informed v2 requirements",
+    "future_uses": [
+      "historical comparison",
+      "regression reporting",
+      "compatibility reporting"
+    ]
+  },
+  "frozen_labels": {
+    "Answer Revision": "Insufficient evidence",
+    "Evidence Expansion": "Insufficient evidence"
+  },
+  "requirement_decisions": {
+    "V2-R1": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R2": "REFINE",
+    "V2-R3": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R4": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R5": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "V2-R6": "KEEP_AS_IS"
+  },
+  "source_findings": {
+    "F1": {
+      "tier": "A",
+      "allowed_claim": "Retrieval localizes relevant articles well on this frozen set but does not solve full evidence coverage."
+    },
+    "F2": {
+      "tier": "A",
+      "allowed_claim": "Evidence sufficient under frozen annotated-support criterion can coexist with generation omission."
+    },
+    "F3": {
+      "tier": "A",
+      "allowed_claim": "Observed historical AC improvement with higher logical call cost; attribution remains limited."
+    },
+    "F4": {
+      "tier": "A",
+      "allowed_claim": "One production run cannot establish every small difference as a mechanism effect."
+    },
+    "F5": {
+      "tier": "A",
+      "allowed_claim": "Descriptive positive, mechanism-specific signal justifies further research; Insufficient evidence remains frozen."
+    },
+    "F6": {
+      "tier": "A",
+      "allowed_claim": "Evidence Expansion v1 shows weak aggregate value relative to retrieval work on this benchmark; Insufficient evidence."
+    },
+    "F7": {
+      "tier": "B",
+      "allowed_claim": "many queries were resolved without invoking the corresponding intervention; resolved means the controller returned an output, not benchmark-complete."
+    },
+    "F8": {
+      "tier": "B",
+      "allowed_claim": "Frozen Phase 4E observes a completeness calibration mismatch and a false-success pattern."
+    },
+    "F9": {
+      "tier": "C",
+      "allowed_claim": "Hypothesis about retaining unresolved aspects through evidence, answer and final check."
+    }
+  },
+  "source_review": {
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_research_synthesis_v0.md": {
+      "sha256": "da4d2bdea95531c06d792416af3d63dd7533094fa42818df1546429d1b182779",
+      "size_bytes": 37972,
+      "review_scope": "Research synthesis/decision report read"
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_evidence_matrix_v0.json": {
+      "sha256": "7fe3a92f044d9ab18f81811cff60b37f540c1b5f8fc393142701b023b71ff667",
+      "size_bytes": 115575,
+      "review_scope": "Full structured artifact parsed for mapping/provenance/integrity"
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_problem_requirement_map_v0.json": {
+      "sha256": "2e69d6b26e10e7c4907ec8eb5ca8794c726dfd0a9a1191277bef9b2acecd5828",
+      "size_bytes": 9465,
+      "review_scope": "Full structured artifact parsed for mapping/provenance/integrity"
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_decision_log_v0.md": {
+      "sha256": "b83853e6a9b75ce0e8113fc84d6e2bb891ade8ad612290419677e0ebbe7d56ae",
+      "size_bytes": 2473,
+      "review_scope": "Research synthesis/decision report read"
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/phase5c1_manifest_v0.json": {
+      "sha256": "dcb19a86ccefe083b8adc9acfabd3a927ffdd87beeaeec06d2920e8b20c1e9b1",
+      "size_bytes": 100732,
+      "review_scope": "Full structured artifact parsed for mapping/provenance/integrity"
+    },
+    "data/evaluation/generation/phase5/phase5c1_v0/integrity_before_after_v0.json": {
+      "sha256": "52b18079376f6002ebb4ad7de245013f1eb4536e80821122699f059261970b8b",
+      "size_bytes": 5678128,
+      "review_scope": "Full structured artifact parsed for mapping/provenance/integrity"
+    },
+    "data/evaluation/generation/phase5/phase5a_ablation_spec_v0.md": {
+      "sha256": "51f1bf9e4db72ac3c3edeaf36ef5385dc9aff295c63068d4ffb07926ecb15b64",
+      "size_bytes": 36472,
+      "review_scope": "Historical relevant sections/constants read only; no imports or execution"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/phase5b2f_final_report_v0.md": {
+      "sha256": "c5a22d0f50cf48887fbc43dda8fc443b674aff12eebe7cd75d8f804dbb815432",
+      "size_bytes": 40137,
+      "review_scope": "Historical relevant sections/constants read only; no imports or execution"
+    },
+    "scripts/agentic_rag.py": {
+      "sha256": "e415429b39786e9cb7dc46488718fcda0fc164ca4a84e49d95630835188745b6",
+      "size_bytes": 30562,
+      "review_scope": "Historical relevant sections/constants read only; no imports or execution"
+    },
+    "scripts/retrieval_pipeline.py": {
+      "sha256": "5080df6e2bbfb33cf945f3fa797107ac7d510cab1f6e2bc4f3bf25741766fd42",
+      "size_bytes": 11031,
+      "review_scope": "Historical relevant sections/constants read only; no imports or execution"
+    }
+  },
+  "source_review_note": "Phase 5C.1 is primary synthesis. Its historical sources were not rerun; prior available-case outputs do not supersede final 93/93 authority. Source source-review registries are not a claim to have re-reviewed all 329 upstream files in this session.",
+  "sampling_design": {
+    "status": "PROPOSED_NOT_SAMPLED",
+    "total_candidates": 60,
+    "retained_total": 48,
+    "DEV": 16,
+    "HOLDOUT_TEST": 32,
+    "reserves": 12,
+    "primary_families": 4,
+    "minimum_dimension_targets": {
+      "D1": {
+        "DEV": 4,
+        "HOLDOUT_TEST": 8,
+        "basis": "corpus-first proposed construction gate"
+      },
+      "D2": {
+        "DEV": 4,
+        "HOLDOUT_TEST": 8,
+        "basis": "corpus-first proposed construction gate"
+      },
+      "D3": {
+        "DEV": 4,
+        "HOLDOUT_TEST": 8,
+        "basis": "corpus-first proposed construction gate"
+      },
+      "D4": {
+        "DEV": 4,
+        "HOLDOUT_TEST": 8,
+        "basis": "corpus-first proposed construction gate"
+      },
+      "D5": {
+        "DEV": 4,
+        "HOLDOUT_TEST": 8,
+        "basis": "corpus-first proposed construction gate"
+      },
+      "D6": {
+        "DEV": 4,
+        "HOLDOUT_TEST": 8,
+        "basis": "post-lock empirical target, no output-based selection"
+      },
+      "D7": {
+        "DEV": 4,
+        "HOLDOUT_TEST": 8,
+        "basis": "corpus-first proposed construction gate"
+      },
+      "D8": {
+        "DEV": 4,
+        "HOLDOUT_TEST": 8,
+        "basis": "corpus-first proposed construction gate"
+      },
+      "D9": {
+        "DEV": 4,
+        "HOLDOUT_TEST": 8,
+        "basis": "corpus-first proposed construction gate"
+      },
+      "D10": {
+        "DEV": 4,
+        "HOLDOUT_TEST": 8,
+        "basis": "corpus-first proposed construction gate"
+      }
+    },
+    "overlap_allowed": true,
+    "D6_observed_count": null,
+    "exact_queries_created": 0,
+    "gold_records_created": 0
+  },
+  "future_repetition_design": {
+    "production_preferred": 3,
+    "production_minimum": 2,
+    "production_stronger_optional": 5,
+    "judge_passes_on_fixed_preselected_eight_query_subset": 3,
+    "main_systems": 3,
+    "preferred_attribution_arms": 4,
+    "TEST_trajectories_main": 288,
+    "TEST_trajectories_with_attribution": 384
+  },
+  "runtime_gold_access": "FORBIDDEN",
+  "execution_audit": {
+    "basis": "Observed tools in this design session: local shell and standard-library filesystem/JSON/AST/hash operations only; no project module imports or external/network tool calls",
+    "network_api_calls": 0,
+    "production_calls": 0,
+    "evaluator_calls": 0,
+    "retrieval_inference_calls": 0,
+    "reranking_inference_calls": 0,
+    "answer_generation_calls": 0,
+    "benchmark_runs": 0,
+    "bootstrap_runs": 0,
+    "A3_A4_runs": 0,
+    "challenge_queries_created": 0,
+    "challenge_gold_records_created": 0,
+    "v2_implementation": "NOT_STARTED"
+  },
+  "future_phases": [
+    {
+      "phase": "5C.3",
+      "purpose": "External design review"
+    },
+    {
+      "phase": "5C.4",
+      "purpose": "Corpus-first challenge construction/annotation and dataset freeze"
+    },
+    {
+      "phase": "5C.5",
+      "purpose": "DEV baseline confirmation and implementation authorization review"
+    },
+    {
+      "phase": "5D.1",
+      "purpose": "Authorized DEV-only v2 implementation"
+    },
+    {
+      "phase": "5D.2",
+      "purpose": "Implementation/protocol seal and all HOLDOUT TEST production repeats"
+    },
+    {
+      "phase": "5D.3",
+      "purpose": "Evaluation and repeated-run/attribution analysis"
+    }
+  ],
+  "later_phase_started": false,
+  "recommended_next_phase": "Phase 5C.3 — External review of requirements, challenge-set design and evaluation protocol",
+  "integrity_reference": "integrity_before_after_v0.json",
+  "baseline_reference": "integrity_baseline_v0.json",
+  "validation_reference": "phase5c2_validation_v0.json",
+  "artifact_hashes": {
+    "integrity_baseline_v0.json": "ade1d7ec6ee56af85674d0acebcab637bfad66badceb01961258ae1b91f93d5c",
+    "phase5c2_challenge_set_design_v0.md": "1f8514571e3fdea048e26eaa399961b54ff2e5af7dd1111fa1904976c0532dc0",
+    "phase5c2_decision_log_v0.md": "a68e7266ddc672f53ac88de733141fc05d0142c5c183cd730ffa0e98577a61b0",
+    "phase5c2_evaluation_protocol_draft_v0.md": "6209c20771d0bf7e7791d878637cb5e7ead8c01f7b3e1b08a6c13a99895a96ca",
+    "phase5c2_requirement_validation_matrix_v0.json": "71caa700ec77bbe998caed8764d2ebcfd6cf23d1628513d5894bdb621cd1520e",
+    "phase5c2_trace_schema_design_v0.json": "e75cba2402593c79157f439f3ffc079003df9330d2f58c3a7523249a0f571e24",
+    "phase5c2_v2_requirements_design_v0.md": "0328ec76ae710402abe323c00363550686b439384b048e483f30fb55554d1658",
+    "phase5c2_validation_v0.json": "869fd0ea657fd83a2f0aa4edef15d6de144b952ad8ca0db0f06d8cc2a7f2c134"
+  },
+  "hash_coverage_note": "Manifest binds completed design/baseline/validation artifacts. final_artifact_hashes_v0.json binds all final files including manifest/integrity/console, excluding itself to avoid a circular self-hash.",
+  "phase_status": "PASS",
+  "preexisting_integrity_status": "PASS",
+  "ready_for_external_review": true,
+  "final_artifact_names": [
+    "final_artifact_hashes_v0.json",
+    "integrity_baseline_v0.json",
+    "integrity_before_after_v0.json",
+    "phase5c2_challenge_set_design_v0.md",
+    "phase5c2_console_v0.txt",
+    "phase5c2_decision_log_v0.md",
+    "phase5c2_evaluation_protocol_draft_v0.md",
+    "phase5c2_manifest_v0.json",
+    "phase5c2_requirement_validation_matrix_v0.json",
+    "phase5c2_trace_schema_design_v0.json",
+    "phase5c2_v2_requirements_design_v0.md",
+    "phase5c2_validation_v0.json"
+  ]
+}

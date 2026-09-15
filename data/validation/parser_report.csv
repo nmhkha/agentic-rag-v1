@@ -1,0 +1,4 @@
+﻿document_id,input_path,status,article_count,clause_count,point_count,first_article,last_article,duplicate_articles,numeric_article_gaps,suspicious_structure_line_count,preamble_nonempty_line_count,appendix_start_line,appendix_excluded_nonempty_line_count,error
+134-2025-QH15,data/extracted/134-2025-QH15.cleaned.txt,success,35,154,67,1,35,,,0,13,,0,
+142-2026-ND-CP,data/extracted/142-2026-ND-CP.cleaned.txt,success,46,259,329,1,46,,,0,15,741,1192,
+05-2026-TT-BKHCN,data/extracted/05-2026-TT-BKHCN.cleaned.txt,success,5,13,17,1,5,,,0,13,75,50,

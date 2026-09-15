@@ -1,0 +1,75 @@
+{
+  "schema": "phase5c4b-agreement-ready-v1",
+  "phase5c4b_retry_status": "PASS",
+  "status_scope": "Clean independent substantive B pass; user-authorized deferred medical contamination reference remains pending.",
+  "B_annotations_complete": true,
+  "candidate_count": 60,
+  "trusted_phase5c4c_comparison_input_ready": true,
+  "comparison_has_started": false,
+  "agreement_metrics_computed": false,
+  "full_contamination_screen_complete": false,
+  "contamination_status": "PENDING_SANITIZED_REFERENCE",
+  "completed_screen_sources": [
+    "new candidate query text",
+    "31 historical query-only inputs"
+  ],
+  "pending_screen_source": "Newly sanitized and audited exploratory medical chatbot query-only reference from Dataset Custodian",
+  "all_admission_recommendations_provisional_pending_full_uniqueness_review": true,
+  "independent_context_review_complete": true,
+  "independent_human_legal_review_complete": false,
+  "ready_for_final_dataset_freeze": false,
+  "dataset_frozen": false,
+  "holdout_storage_isolation_enforced": false,
+  "D6": "EMPIRICAL_UNVERIFIED",
+  "Agentic_v2_implementation": "NOT STARTED",
+  "annotation_file": "annotation_B_v1.jsonl",
+  "annotation_sha256": "53801d252828b69efd781a9091d0927120783627c32a98833666910085ace770",
+  "counts": {
+    "candidates": 60,
+    "scopes": 60,
+    "required_aspects": 60,
+    "support_bundles": 60,
+    "applicability": 60,
+    "answerability": 60,
+    "dimensions": 60,
+    "admission_recommendations": 60,
+    "new_candidate_contamination_screen": 60,
+    "historical_31_contamination_screen": 60,
+    "medical_chatbot_contamination_screen": 0,
+    "full_contamination_screen": 0,
+    "material_aspects": 155,
+    "answerability_counts": {
+      "fully_answerable": 44,
+      "insufficient_evidence": 7,
+      "partially_answerable": 9
+    },
+    "answer_role_counts": {
+      "substantive_supported": 139,
+      "unresolved_disclosure": 13,
+      "qualified_partial": 3
+    },
+    "admission_counts": {
+      "RETAIN": 58,
+      "NEEDS_ADJUDICATION": 1,
+      "RESERVE": 1
+    },
+    "dimension_counts": {
+      "D1": 14,
+      "D2": 28,
+      "D3": 27,
+      "D4": 18,
+      "D5": 27,
+      "D7": 32,
+      "D8": 54,
+      "D9": 46,
+      "D10": 16
+    },
+    "candidate_semantic_similarity_flag_pairs": 7
+  },
+  "required_next_trusted_actions": [
+    "Obtain audited sanitized medical reference and finish deferred text screen",
+    "Perform Phase 5C.4-C A/B comparison in an authorized trusted context",
+    "Resolve human legal review and legal adjudication requirements before freeze"
+  ],
+  "declaration": "B annotations complete and ready for trusted A/B comparison."
+}

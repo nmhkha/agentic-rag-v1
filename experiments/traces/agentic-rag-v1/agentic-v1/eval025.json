@@ -1,0 +1,1184 @@
+{
+  "run_id": "agentic-v1-eval025",
+  "query": "Khi ứng dụng AI trong quản lý nhà nước, cơ quan vận hành phải đánh giá tác động trong trường hợp nào?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 26,
+  "initial_top5": [
+    "134-2025-QH15_dieu-27_khoan-3",
+    "142-2026-ND-CP_dieu-20_khoan-2",
+    "142-2026-ND-CP_dieu-20_khoan-5",
+    "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+    "134-2025-QH15_dieu-27_khoan-4"
+  ],
+  "coverage_check": {
+    "sufficient": true,
+    "missing_aspects": [],
+    "reason": "Bằng chứng đã cung cấp đầy đủ các trường hợp cơ quan vận hành phải đánh giá tác động khi ứng dụng AI trong quản lý nhà nước, bao gồm hệ thống có rủi ro cao hoặc tác động đáng kể đến quyền con người, công bằng xã hội, lợi ích công cộng (Điều 27 Luật AI) và trường hợp hệ thống có thay đổi về mục đích, chức năng, dữ liệu hoặc phạm vi làm phát sinh rủi ro mới (Điều 20 Nghị định hướng dẫn)."
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [
+    {
+      "rank": 1,
+      "evidence_id": "E1",
+      "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-27",
+      "article": "27",
+      "article_label": "Điều 27",
+      "clause": "3",
+      "clause_label": "Khoản 3",
+      "point": null,
+      "point_label": null,
+      "text": "Cơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 27. Trách nhiệm đạo đức và đánh giá tác động khi ứng dụng trí tuệ nhân tạo trong quản lý nhà nước và cung cấp dịch vụ công\nKhoản 3\nCơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 4.462298393249512,
+      "bm25_rank": 1,
+      "dense_rank": 11,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 1,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-27_khoan-3",
+      "point_id": null
+    },
+    {
+      "rank": 2,
+      "evidence_id": "E2",
+      "chunk_id": "142-2026-ND-CP_dieu-20_khoan-2",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-20",
+      "article": "20",
+      "article_label": "Điều 20",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": null,
+      "point_label": null,
+      "text": "Trường hợp hệ thống trí tuệ nhân tạo quy định tại khoản 1 Điều này có thay đổi về mục đích sử dụng, chức năng chính, nguồn dữ liệu đầu vào chủ yếu hoặc phạm vi đối tượng áp dụng làm phát sinh rủi ro mới hoặc làm thay đổi mức độ rủi ro của hệ thống, cơ quan, đơn vị triển khai phải thực hiện đánh giá tác động bổ sung trước khi tiếp tục sử dụng hệ thống.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 20. Đánh giá tác động khi sử dụng hệ thống trí tuệ nhân tạo trong cơ quan nhà nước\nKhoản 2\nTrường hợp hệ thống trí tuệ nhân tạo quy định tại khoản 1 Điều này có thay đổi về mục đích sử dụng, chức năng chính, nguồn dữ liệu đầu vào chủ yếu hoặc phạm vi đối tượng áp dụng làm phát sinh rủi ro mới hoặc làm thay đổi mức độ rủi ro của hệ thống, cơ quan, đơn vị triển khai phải thực hiện đánh giá tác động bổ sung trước khi tiếp tục sử dụng hệ thống.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 3.9589614868164062,
+      "bm25_rank": 8,
+      "dense_rank": 1,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 2,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-20_khoan-2",
+      "point_id": null
+    },
+    {
+      "rank": 3,
+      "evidence_id": "E3",
+      "chunk_id": "142-2026-ND-CP_dieu-20_khoan-5",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-20",
+      "article": "20",
+      "article_label": "Điều 20",
+      "clause": "5",
+      "clause_label": "Khoản 5",
+      "point": null,
+      "point_label": null,
+      "text": "Cơ quan, đơn vị triển khai phải công khai báo cáo đánh giá tác động theo quy định tại khoản 4 Điều 27 Luật Trí tuệ nhân tạo, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân theo quy định của pháp luật.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 20. Đánh giá tác động khi sử dụng hệ thống trí tuệ nhân tạo trong cơ quan nhà nước\nKhoản 5\nCơ quan, đơn vị triển khai phải công khai báo cáo đánh giá tác động theo quy định tại khoản 4 Điều 27 Luật Trí tuệ nhân tạo, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân theo quy định của pháp luật.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 2.050311326980591,
+      "bm25_rank": 5,
+      "dense_rank": 6,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 3,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-20_khoan-5",
+      "point_id": null
+    },
+    {
+      "rank": 4,
+      "evidence_id": "E4",
+      "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-20",
+      "article": "20",
+      "article_label": "Điều 20",
+      "clause": "7",
+      "clause_label": "Khoản 7",
+      "point": "d",
+      "point_label": "Điểm d",
+      "text": "Được sử dụng để phát hiện, lựa chọn, sàng lọc hoặc giám sát tổ chức, cá nhân phục vụ hoạt động quản lý nhà nước.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 20. Đánh giá tác động khi sử dụng hệ thống trí tuệ nhân tạo trong cơ quan nhà nước\nKhoản 7\nĐiểm d)\nĐược sử dụng để phát hiện, lựa chọn, sàng lọc hoặc giám sát tổ chức, cá nhân phục vụ hoạt động quản lý nhà nước.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 2.0293588638305664,
+      "bm25_rank": 11,
+      "dense_rank": 5,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 4,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-20_khoan-7",
+      "point_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-d"
+    },
+    {
+      "rank": 5,
+      "evidence_id": "E5",
+      "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-27",
+      "article": "27",
+      "article_label": "Điều 27",
+      "clause": "4",
+      "clause_label": "Khoản 4",
+      "point": null,
+      "point_label": null,
+      "text": "Cơ quan lập báo cáo đánh giá tác động chịu trách nhiệm về nội dung, tính trung thực và đầy đủ của báo cáo; báo cáo được công khai theo quy định của pháp luật, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 27. Trách nhiệm đạo đức và đánh giá tác động khi ứng dụng trí tuệ nhân tạo trong quản lý nhà nước và cung cấp dịch vụ công\nKhoản 4\nCơ quan lập báo cáo đánh giá tác động chịu trách nhiệm về nội dung, tính trung thực và đầy đủ của báo cáo; báo cáo được công khai theo quy định của pháp luật, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 1.8145588636398315,
+      "bm25_rank": 6,
+      "dense_rank": 19,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 5,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-27_khoan-4",
+      "point_id": null
+    }
+  ],
+  "final_top5": [
+    "134-2025-QH15_dieu-27_khoan-3",
+    "142-2026-ND-CP_dieu-20_khoan-2",
+    "142-2026-ND-CP_dieu-20_khoan-5",
+    "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+    "134-2025-QH15_dieu-27_khoan-4"
+  ],
+  "draft_answer": "Cơ quan vận hành phải đánh giá tác động trong các trường hợp: (1) Khi vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng [E1]; (2) Khi hệ thống trí tuệ nhân tạo có thay đổi về mục đích sử dụng, chức năng chính, nguồn dữ liệu đầu vào chủ yếu hoặc phạm vi đối tượng áp dụng làm phát sinh rủi ro mới hoặc làm thay đổi mức độ rủi ro của hệ thống [E2].",
+  "completeness_check": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "Câu trả lời đã bao quát đầy đủ các trường hợp phải đánh giá tác động theo đúng các căn cứ được cung cấp tại E1 và E2."
+  },
+  "revision_used": false,
+  "citation_check": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required_by_deterministic_gate",
+    "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": "Cơ quan vận hành phải đánh giá tác động trong các trường hợp: (1) Khi vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng [E1]; (2) Khi hệ thống trí tuệ nhân tạo có thay đổi về mục đích sử dụng, chức năng chính, nguồn dữ liệu đầu vào chủ yếu hoặc phạm vi đối tượng áp dụng làm phát sinh rủi ro mới hoặc làm thay đổi mức độ rủi ro của hệ thống [E2].",
+  "final_status": "success",
+  "retrieval_calls": [
+    {
+      "call_number": 1,
+      "round": 0,
+      "query": "Khi ứng dụng AI trong quản lý nhà nước, cơ quan vận hành phải đánh giá tác động trong trường hợp nào?",
+      "sub_query": false,
+      "bm25_depth": 20,
+      "dense_depth": 20,
+      "candidate_chunk_ids": [
+        "134-2025-QH15_dieu-27_khoan-3",
+        "142-2026-ND-CP_dieu-20_khoan-3_diem-d",
+        "142-2026-ND-CP_dieu-20_khoan-8",
+        "134-2025-QH15_dieu-27_khoan-5",
+        "142-2026-ND-CP_dieu-20_khoan-5",
+        "134-2025-QH15_dieu-27_khoan-4",
+        "134-2025-QH15_dieu-27_khoan-1",
+        "142-2026-ND-CP_dieu-20_khoan-2",
+        "142-2026-ND-CP_dieu-20_khoan-7_diem-a",
+        "142-2026-ND-CP_dieu-10_khoan-2",
+        "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+        "142-2026-ND-CP_dieu-20_khoan-3_diem-b",
+        "142-2026-ND-CP_dieu-20_khoan-9",
+        "142-2026-ND-CP_dieu-20_khoan-4",
+        "142-2026-ND-CP_dieu-20_khoan-6",
+        "142-2026-ND-CP_dieu-27_khoan-1",
+        "142-2026-ND-CP_dieu-20_khoan-7_diem-b",
+        "142-2026-ND-CP_dieu-20_khoan-3_diem-c",
+        "142-2026-ND-CP_dieu-20_khoan-3_diem-a",
+        "142-2026-ND-CP_dieu-20_khoan-1_diem-a",
+        "142-2026-ND-CP_dieu-20_khoan-1_diem-b",
+        "142-2026-ND-CP_dieu-20_khoan-7_diem-c",
+        "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+        "134-2025-QH15_dieu-13_khoan-1",
+        "142-2026-ND-CP_dieu-13_khoan-5",
+        "142-2026-ND-CP_dieu-7_khoan-2_diem-a"
+      ],
+      "candidate_count": 26,
+      "reranker_ranks": [
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+          "rank": 1,
+          "reranker_score": 4.462298393249512
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-2",
+          "rank": 2,
+          "reranker_score": 3.9589614868164062
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-5",
+          "rank": 3,
+          "reranker_score": 2.050311326980591
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+          "rank": 4,
+          "reranker_score": 2.0293588638305664
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+          "rank": 5,
+          "reranker_score": 1.8145588636398315
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-a",
+          "rank": 6,
+          "reranker_score": 1.7867313623428345
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-b",
+          "rank": 7,
+          "reranker_score": 1.6146705150604248
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-1",
+          "rank": 8,
+          "reranker_score": 1.5114636421203613
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-4",
+          "rank": 9,
+          "reranker_score": 1.4602206945419312
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-1_diem-a",
+          "rank": 10,
+          "reranker_score": 1.450341820716858
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-c",
+          "rank": 11,
+          "reranker_score": 1.303640604019165
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+          "rank": 12,
+          "reranker_score": 1.2771153450012207
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-5",
+          "rank": 13,
+          "reranker_score": 1.1757218837738037
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-8",
+          "rank": 14,
+          "reranker_score": 1.124516487121582
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-d",
+          "rank": 15,
+          "reranker_score": 0.7913121581077576
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-b",
+          "rank": 16,
+          "reranker_score": 0.7124846577644348
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-1_diem-b",
+          "rank": 17,
+          "reranker_score": 0.5969882011413574
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-a",
+          "rank": 18,
+          "reranker_score": 0.275749146938324
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-c",
+          "rank": 19,
+          "reranker_score": 0.16790398955345154
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-9",
+          "rank": 20,
+          "reranker_score": -0.0409894734621048
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-5",
+          "rank": 21,
+          "reranker_score": -2.6810927391052246
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-13_khoan-1",
+          "rank": 22,
+          "reranker_score": -2.9102559089660645
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-a",
+          "rank": 23,
+          "reranker_score": -3.7185840606689453
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+          "rank": 24,
+          "reranker_score": -5.2675628662109375
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+          "rank": 25,
+          "reranker_score": -5.925202369689941
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+          "rank": 26,
+          "reranker_score": -6.185393333435059
+        }
+      ],
+      "top5_chunk_ids": [
+        "134-2025-QH15_dieu-27_khoan-3",
+        "142-2026-ND-CP_dieu-20_khoan-2",
+        "142-2026-ND-CP_dieu-20_khoan-5",
+        "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+        "134-2025-QH15_dieu-27_khoan-4"
+      ],
+      "candidate_ranks": [
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+          "bm25_rank": 1,
+          "dense_rank": 11
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-d",
+          "bm25_rank": 2,
+          "dense_rank": 12
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-8",
+          "bm25_rank": 3,
+          "dense_rank": 8
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-5",
+          "bm25_rank": 4,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-5",
+          "bm25_rank": 5,
+          "dense_rank": 6
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+          "bm25_rank": 6,
+          "dense_rank": 19
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-1",
+          "bm25_rank": 7,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-2",
+          "bm25_rank": 8,
+          "dense_rank": 1
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-a",
+          "bm25_rank": 9,
+          "dense_rank": 3
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+          "bm25_rank": 10,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+          "bm25_rank": 11,
+          "dense_rank": 5
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-b",
+          "bm25_rank": 12,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-9",
+          "bm25_rank": 13,
+          "dense_rank": 9
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-4",
+          "bm25_rank": 14,
+          "dense_rank": 4
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+          "bm25_rank": 15,
+          "dense_rank": 10
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+          "bm25_rank": 16,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-b",
+          "bm25_rank": 17,
+          "dense_rank": 13
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-c",
+          "bm25_rank": 18,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-a",
+          "bm25_rank": 19,
+          "dense_rank": 17
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-1_diem-a",
+          "bm25_rank": 20,
+          "dense_rank": 18
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-1_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 2
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-c",
+          "bm25_rank": null,
+          "dense_rank": 7
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 14
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-13_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 15
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-5",
+          "bm25_rank": null,
+          "dense_rank": 16
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 20
+        }
+      ]
+    }
+  ],
+  "retrieval_call_count": 1,
+  "llm_calls": [
+    {
+      "call_number": 1,
+      "stage": "coverage_check"
+    },
+    {
+      "call_number": 2,
+      "stage": "answer_generation"
+    },
+    {
+      "call_number": 3,
+      "stage": "completeness_check"
+    }
+  ],
+  "llm_call_count": 3,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Khi ứng dụng AI trong quản lý nhà nước, cơ quan vận hành phải đánh giá tác động trong trường hợp nào?",
+    "initial_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 27. Trách nhiệm đạo đức và đánh giá tác động khi ứng dụng trí tuệ nhân tạo trong quản lý nhà nước và cung cấp dịch vụ công\nKhoản 3\nCơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.462298393249512,
+        "bm25_rank": 1,
+        "dense_rank": 11,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-27_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-20_khoan-2",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-20",
+        "article": "20",
+        "article_label": "Điều 20",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": null,
+        "point_label": null,
+        "text": "Trường hợp hệ thống trí tuệ nhân tạo quy định tại khoản 1 Điều này có thay đổi về mục đích sử dụng, chức năng chính, nguồn dữ liệu đầu vào chủ yếu hoặc phạm vi đối tượng áp dụng làm phát sinh rủi ro mới hoặc làm thay đổi mức độ rủi ro của hệ thống, cơ quan, đơn vị triển khai phải thực hiện đánh giá tác động bổ sung trước khi tiếp tục sử dụng hệ thống.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 20. Đánh giá tác động khi sử dụng hệ thống trí tuệ nhân tạo trong cơ quan nhà nước\nKhoản 2\nTrường hợp hệ thống trí tuệ nhân tạo quy định tại khoản 1 Điều này có thay đổi về mục đích sử dụng, chức năng chính, nguồn dữ liệu đầu vào chủ yếu hoặc phạm vi đối tượng áp dụng làm phát sinh rủi ro mới hoặc làm thay đổi mức độ rủi ro của hệ thống, cơ quan, đơn vị triển khai phải thực hiện đánh giá tác động bổ sung trước khi tiếp tục sử dụng hệ thống.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.9589614868164062,
+        "bm25_rank": 8,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-20_khoan-2",
+        "point_id": null
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-20_khoan-5",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-20",
+        "article": "20",
+        "article_label": "Điều 20",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan, đơn vị triển khai phải công khai báo cáo đánh giá tác động theo quy định tại khoản 4 Điều 27 Luật Trí tuệ nhân tạo, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân theo quy định của pháp luật.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 20. Đánh giá tác động khi sử dụng hệ thống trí tuệ nhân tạo trong cơ quan nhà nước\nKhoản 5\nCơ quan, đơn vị triển khai phải công khai báo cáo đánh giá tác động theo quy định tại khoản 4 Điều 27 Luật Trí tuệ nhân tạo, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.050311326980591,
+        "bm25_rank": 5,
+        "dense_rank": 6,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-20_khoan-5",
+        "point_id": null
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-20",
+        "article": "20",
+        "article_label": "Điều 20",
+        "clause": "7",
+        "clause_label": "Khoản 7",
+        "point": "d",
+        "point_label": "Điểm d",
+        "text": "Được sử dụng để phát hiện, lựa chọn, sàng lọc hoặc giám sát tổ chức, cá nhân phục vụ hoạt động quản lý nhà nước.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 20. Đánh giá tác động khi sử dụng hệ thống trí tuệ nhân tạo trong cơ quan nhà nước\nKhoản 7\nĐiểm d)\nĐược sử dụng để phát hiện, lựa chọn, sàng lọc hoặc giám sát tổ chức, cá nhân phục vụ hoạt động quản lý nhà nước.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.0293588638305664,
+        "bm25_rank": 11,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-20_khoan-7",
+        "point_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-d"
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "4",
+        "clause_label": "Khoản 4",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan lập báo cáo đánh giá tác động chịu trách nhiệm về nội dung, tính trung thực và đầy đủ của báo cáo; báo cáo được công khai theo quy định của pháp luật, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 27. Trách nhiệm đạo đức và đánh giá tác động khi ứng dụng trí tuệ nhân tạo trong quản lý nhà nước và cung cấp dịch vụ công\nKhoản 4\nCơ quan lập báo cáo đánh giá tác động chịu trách nhiệm về nội dung, tính trung thực và đầy đủ của báo cáo; báo cáo được công khai theo quy định của pháp luật, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 1.8145588636398315,
+        "bm25_rank": 6,
+        "dense_rank": 19,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-27_khoan-4",
+        "point_id": null
+      }
+    ],
+    "current_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 27. Trách nhiệm đạo đức và đánh giá tác động khi ứng dụng trí tuệ nhân tạo trong quản lý nhà nước và cung cấp dịch vụ công\nKhoản 3\nCơ quan vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng phải lập báo cáo đánh giá tác động việc sử dụng hệ thống; báo cáo gồm việc xác định rủi ro, biện pháp kiểm soát và bảo đảm khả năng giám sát, can thiệp của con người.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.462298393249512,
+        "bm25_rank": 1,
+        "dense_rank": 11,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-27_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-20_khoan-2",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-20",
+        "article": "20",
+        "article_label": "Điều 20",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": null,
+        "point_label": null,
+        "text": "Trường hợp hệ thống trí tuệ nhân tạo quy định tại khoản 1 Điều này có thay đổi về mục đích sử dụng, chức năng chính, nguồn dữ liệu đầu vào chủ yếu hoặc phạm vi đối tượng áp dụng làm phát sinh rủi ro mới hoặc làm thay đổi mức độ rủi ro của hệ thống, cơ quan, đơn vị triển khai phải thực hiện đánh giá tác động bổ sung trước khi tiếp tục sử dụng hệ thống.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 20. Đánh giá tác động khi sử dụng hệ thống trí tuệ nhân tạo trong cơ quan nhà nước\nKhoản 2\nTrường hợp hệ thống trí tuệ nhân tạo quy định tại khoản 1 Điều này có thay đổi về mục đích sử dụng, chức năng chính, nguồn dữ liệu đầu vào chủ yếu hoặc phạm vi đối tượng áp dụng làm phát sinh rủi ro mới hoặc làm thay đổi mức độ rủi ro của hệ thống, cơ quan, đơn vị triển khai phải thực hiện đánh giá tác động bổ sung trước khi tiếp tục sử dụng hệ thống.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.9589614868164062,
+        "bm25_rank": 8,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-20_khoan-2",
+        "point_id": null
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-20_khoan-5",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-20",
+        "article": "20",
+        "article_label": "Điều 20",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan, đơn vị triển khai phải công khai báo cáo đánh giá tác động theo quy định tại khoản 4 Điều 27 Luật Trí tuệ nhân tạo, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân theo quy định của pháp luật.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 20. Đánh giá tác động khi sử dụng hệ thống trí tuệ nhân tạo trong cơ quan nhà nước\nKhoản 5\nCơ quan, đơn vị triển khai phải công khai báo cáo đánh giá tác động theo quy định tại khoản 4 Điều 27 Luật Trí tuệ nhân tạo, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.050311326980591,
+        "bm25_rank": 5,
+        "dense_rank": 6,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-20_khoan-5",
+        "point_id": null
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-20",
+        "article": "20",
+        "article_label": "Điều 20",
+        "clause": "7",
+        "clause_label": "Khoản 7",
+        "point": "d",
+        "point_label": "Điểm d",
+        "text": "Được sử dụng để phát hiện, lựa chọn, sàng lọc hoặc giám sát tổ chức, cá nhân phục vụ hoạt động quản lý nhà nước.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 20. Đánh giá tác động khi sử dụng hệ thống trí tuệ nhân tạo trong cơ quan nhà nước\nKhoản 7\nĐiểm d)\nĐược sử dụng để phát hiện, lựa chọn, sàng lọc hoặc giám sát tổ chức, cá nhân phục vụ hoạt động quản lý nhà nước.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.0293588638305664,
+        "bm25_rank": 11,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-20_khoan-7",
+        "point_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-d"
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-27",
+        "article": "27",
+        "article_label": "Điều 27",
+        "clause": "4",
+        "clause_label": "Khoản 4",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan lập báo cáo đánh giá tác động chịu trách nhiệm về nội dung, tính trung thực và đầy đủ của báo cáo; báo cáo được công khai theo quy định của pháp luật, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nĐẠO ĐỨC VÀ TRÁCH NHIỆM TRONG HOẠT ĐỘNG\nĐiều 27. Trách nhiệm đạo đức và đánh giá tác động khi ứng dụng trí tuệ nhân tạo trong quản lý nhà nước và cung cấp dịch vụ công\nKhoản 4\nCơ quan lập báo cáo đánh giá tác động chịu trách nhiệm về nội dung, tính trung thực và đầy đủ của báo cáo; báo cáo được công khai theo quy định của pháp luật, trừ nội dung thuộc bí mật nhà nước, bí mật kinh doanh hoặc dữ liệu cá nhân.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 1.8145588636398315,
+        "bm25_rank": 6,
+        "dense_rank": 19,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-27_khoan-4",
+        "point_id": null
+      }
+    ],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": true,
+      "missing_aspects": [],
+      "reason": "Bằng chứng đã cung cấp đầy đủ các trường hợp cơ quan vận hành phải đánh giá tác động khi ứng dụng AI trong quản lý nhà nước, bao gồm hệ thống có rủi ro cao hoặc tác động đáng kể đến quyền con người, công bằng xã hội, lợi ích công cộng (Điều 27 Luật AI) và trường hợp hệ thống có thay đổi về mục đích, chức năng, dữ liệu hoặc phạm vi làm phát sinh rủi ro mới (Điều 20 Nghị định hướng dẫn)."
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": "Cơ quan vận hành phải đánh giá tác động trong các trường hợp: (1) Khi vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng [E1]; (2) Khi hệ thống trí tuệ nhân tạo có thay đổi về mục đích sử dụng, chức năng chính, nguồn dữ liệu đầu vào chủ yếu hoặc phạm vi đối tượng áp dụng làm phát sinh rủi ro mới hoặc làm thay đổi mức độ rủi ro của hệ thống [E2].",
+    "completeness_check": {
+      "complete": true,
+      "missing_points": [],
+      "reason": "Câu trả lời đã bao quát đầy đủ các trường hợp phải đánh giá tác động theo đúng các căn cứ được cung cấp tại E1 và E2."
+    },
+    "citation_check": {
+      "valid": true,
+      "cited_evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required_by_deterministic_gate",
+      "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+      "reviewed_claims": []
+    },
+    "revision_count": 0,
+    "citation_revision_count": 0,
+    "final_answer": "Cơ quan vận hành phải đánh giá tác động trong các trường hợp: (1) Khi vận hành hệ thống trí tuệ nhân tạo có rủi ro cao hoặc có tác động đáng kể đến quyền con người, công bằng xã hội hoặc lợi ích công cộng [E1]; (2) Khi hệ thống trí tuệ nhân tạo có thay đổi về mục đích sử dụng, chức năng chính, nguồn dữ liệu đầu vào chủ yếu hoặc phạm vi đối tượng áp dụng làm phát sinh rủi ro mới hoặc làm thay đổi mức độ rủi ro của hệ thống [E2].",
+    "final_status": "success",
+    "run_id": "agentic-v1-eval025",
+    "initial_top5": [
+      "134-2025-QH15_dieu-27_khoan-3",
+      "142-2026-ND-CP_dieu-20_khoan-2",
+      "142-2026-ND-CP_dieu-20_khoan-5",
+      "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+      "134-2025-QH15_dieu-27_khoan-4"
+    ],
+    "expanded_candidates": [],
+    "final_top5": [
+      "134-2025-QH15_dieu-27_khoan-3",
+      "142-2026-ND-CP_dieu-20_khoan-2",
+      "142-2026-ND-CP_dieu-20_khoan-5",
+      "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+      "134-2025-QH15_dieu-27_khoan-4"
+    ],
+    "retrieval_calls": [
+      {
+        "call_number": 1,
+        "round": 0,
+        "query": "Khi ứng dụng AI trong quản lý nhà nước, cơ quan vận hành phải đánh giá tác động trong trường hợp nào?",
+        "sub_query": false,
+        "bm25_depth": 20,
+        "dense_depth": 20,
+        "candidate_chunk_ids": [
+          "134-2025-QH15_dieu-27_khoan-3",
+          "142-2026-ND-CP_dieu-20_khoan-3_diem-d",
+          "142-2026-ND-CP_dieu-20_khoan-8",
+          "134-2025-QH15_dieu-27_khoan-5",
+          "142-2026-ND-CP_dieu-20_khoan-5",
+          "134-2025-QH15_dieu-27_khoan-4",
+          "134-2025-QH15_dieu-27_khoan-1",
+          "142-2026-ND-CP_dieu-20_khoan-2",
+          "142-2026-ND-CP_dieu-20_khoan-7_diem-a",
+          "142-2026-ND-CP_dieu-10_khoan-2",
+          "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+          "142-2026-ND-CP_dieu-20_khoan-3_diem-b",
+          "142-2026-ND-CP_dieu-20_khoan-9",
+          "142-2026-ND-CP_dieu-20_khoan-4",
+          "142-2026-ND-CP_dieu-20_khoan-6",
+          "142-2026-ND-CP_dieu-27_khoan-1",
+          "142-2026-ND-CP_dieu-20_khoan-7_diem-b",
+          "142-2026-ND-CP_dieu-20_khoan-3_diem-c",
+          "142-2026-ND-CP_dieu-20_khoan-3_diem-a",
+          "142-2026-ND-CP_dieu-20_khoan-1_diem-a",
+          "142-2026-ND-CP_dieu-20_khoan-1_diem-b",
+          "142-2026-ND-CP_dieu-20_khoan-7_diem-c",
+          "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+          "134-2025-QH15_dieu-13_khoan-1",
+          "142-2026-ND-CP_dieu-13_khoan-5",
+          "142-2026-ND-CP_dieu-7_khoan-2_diem-a"
+        ],
+        "candidate_count": 26,
+        "reranker_ranks": [
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+            "rank": 1,
+            "reranker_score": 4.462298393249512
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-2",
+            "rank": 2,
+            "reranker_score": 3.9589614868164062
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-5",
+            "rank": 3,
+            "reranker_score": 2.050311326980591
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+            "rank": 4,
+            "reranker_score": 2.0293588638305664
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+            "rank": 5,
+            "reranker_score": 1.8145588636398315
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-a",
+            "rank": 6,
+            "reranker_score": 1.7867313623428345
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-b",
+            "rank": 7,
+            "reranker_score": 1.6146705150604248
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-1",
+            "rank": 8,
+            "reranker_score": 1.5114636421203613
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-4",
+            "rank": 9,
+            "reranker_score": 1.4602206945419312
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-1_diem-a",
+            "rank": 10,
+            "reranker_score": 1.450341820716858
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-c",
+            "rank": 11,
+            "reranker_score": 1.303640604019165
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+            "rank": 12,
+            "reranker_score": 1.2771153450012207
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-5",
+            "rank": 13,
+            "reranker_score": 1.1757218837738037
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-8",
+            "rank": 14,
+            "reranker_score": 1.124516487121582
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-d",
+            "rank": 15,
+            "reranker_score": 0.7913121581077576
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-b",
+            "rank": 16,
+            "reranker_score": 0.7124846577644348
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-1_diem-b",
+            "rank": 17,
+            "reranker_score": 0.5969882011413574
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-a",
+            "rank": 18,
+            "reranker_score": 0.275749146938324
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-c",
+            "rank": 19,
+            "reranker_score": 0.16790398955345154
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-9",
+            "rank": 20,
+            "reranker_score": -0.0409894734621048
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-5",
+            "rank": 21,
+            "reranker_score": -2.6810927391052246
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-13_khoan-1",
+            "rank": 22,
+            "reranker_score": -2.9102559089660645
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-a",
+            "rank": 23,
+            "reranker_score": -3.7185840606689453
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+            "rank": 24,
+            "reranker_score": -5.2675628662109375
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+            "rank": 25,
+            "reranker_score": -5.925202369689941
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+            "rank": 26,
+            "reranker_score": -6.185393333435059
+          }
+        ],
+        "top5_chunk_ids": [
+          "134-2025-QH15_dieu-27_khoan-3",
+          "142-2026-ND-CP_dieu-20_khoan-2",
+          "142-2026-ND-CP_dieu-20_khoan-5",
+          "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+          "134-2025-QH15_dieu-27_khoan-4"
+        ],
+        "candidate_ranks": [
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+            "bm25_rank": 1,
+            "dense_rank": 11
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-d",
+            "bm25_rank": 2,
+            "dense_rank": 12
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-8",
+            "bm25_rank": 3,
+            "dense_rank": 8
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-5",
+            "bm25_rank": 4,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-5",
+            "bm25_rank": 5,
+            "dense_rank": 6
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+            "bm25_rank": 6,
+            "dense_rank": 19
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-1",
+            "bm25_rank": 7,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-2",
+            "bm25_rank": 8,
+            "dense_rank": 1
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-a",
+            "bm25_rank": 9,
+            "dense_rank": 3
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-10_khoan-2",
+            "bm25_rank": 10,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+            "bm25_rank": 11,
+            "dense_rank": 5
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-b",
+            "bm25_rank": 12,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-9",
+            "bm25_rank": 13,
+            "dense_rank": 9
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-4",
+            "bm25_rank": 14,
+            "dense_rank": 4
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-6",
+            "bm25_rank": 15,
+            "dense_rank": 10
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+            "bm25_rank": 16,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-b",
+            "bm25_rank": 17,
+            "dense_rank": 13
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-c",
+            "bm25_rank": 18,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-3_diem-a",
+            "bm25_rank": 19,
+            "dense_rank": 17
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-1_diem-a",
+            "bm25_rank": 20,
+            "dense_rank": 18
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-1_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 2
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-20_khoan-7_diem-c",
+            "bm25_rank": null,
+            "dense_rank": 7
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 14
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-13_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 15
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-5",
+            "bm25_rank": null,
+            "dense_rank": 16
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-7_khoan-2_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 20
+          }
+        ]
+      }
+    ],
+    "llm_calls": [
+      {
+        "call_number": 1,
+        "stage": "coverage_check"
+      },
+      {
+        "call_number": 2,
+        "stage": "answer_generation"
+      },
+      {
+        "call_number": 3,
+        "stage": "completeness_check"
+      }
+    ],
+    "expansion_used": false,
+    "revision_used": false,
+    "citation_revision_used": false,
+    "execution_error": null,
+    "transitions": [
+      "initialized",
+      "initial_retrieval",
+      "coverage_check",
+      "answer_generation",
+      "completeness_check",
+      "citation_check",
+      "final:success"
+    ]
+  },
+  "timestamp": "2026-09-05T14:20:14.161843+00:00"
+}

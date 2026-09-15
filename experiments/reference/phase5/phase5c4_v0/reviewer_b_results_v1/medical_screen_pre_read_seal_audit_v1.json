@@ -1,0 +1,27 @@
+{
+  "captured_at_utc": "2026-09-12T08:52:37.926927+00:00",
+  "medical_query_text_seen": false,
+  "substantive_annotations_sealed_before_reference": true,
+  "checks": {
+    "final_annotation_matches_manifest": true,
+    "final_annotation_matches_hash_index": true,
+    "original_substantive_matches_prescreen_seal": true,
+    "candidate_count_sealed": 60
+  },
+  "sealed_at_utc": "2026-09-11T14:19:09.230630+00:00",
+  "final_annotation_sha256": "53801d252828b69efd781a9091d0927120783627c32a98833666910085ace770",
+  "original_substantive_sha256": "f55ae02a845ab7c2f2dcf8b59a5574e64465cb6a071347868137be8a0576f1dc",
+  "protected_files": {
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/evidence_anchor_corrections_v1.json": "ed52077b2c86edd6b6f602afce1f68f585f9e02ac978615d2b1a9e0816c063ed",
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_substantive_locked_v1.jsonl": "f55ae02a845ab7c2f2dcf8b59a5574e64465cb6a071347868137be8a0576f1dc",
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/authored_specs_v1.py": "9e7f8a0c161eb6f2c3592c6b63dbf2e43e0c23972aa0caa2f6d888efbee771b4",
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl": "53801d252828b69efd781a9091d0927120783627c32a98833666910085ace770",
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/reviewer_b_corpus_audit_v1.json": "fa9c76af14e3f6b32c59ba4b858dc64cfdd28ec93295b69bcd11faad4a34e281",
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_structural_validation_v1.json": "ac412cbaf8232168197937155a60ccd10e71164f4a98bdcf41b094de17d70223",
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_pre_anchor_correction_v1.jsonl": "612fa1513574628b628f9e688e931968a4cb849560f311d896c3c55296a4e59d",
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/build_b_annotations_v1.py": "c04004f032f41274cfe4dd4d76924b520587832732fa20850118f702c05282fc",
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/substantive_lock_v1.json": "2730ea87064bcbb48089d2ab1e99589c70974b61200386230bb125fff95ca451",
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/scoped_corpus_reviews_v1.json": "2cf12db9a28bcc6ea64f0a1f78db41a7e0183e74cf262b0436471f0582d45466"
+  },
+  "reference_authorization": "User confirms newly sanitized medical reference and Custodian audit PASS. No custodian audit content opened; only the new reference is authorized."
+}

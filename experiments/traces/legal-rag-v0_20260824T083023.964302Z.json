@@ -1,0 +1,65 @@
+{
+  "query": "nghĩa vụ minh bạch của hệ thống AI là gì",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "retrieved_chunk_ids": [
+    "142-2026-ND-CP_dieu-16_khoan-1",
+    "134-2025-QH15_dieu-11_khoan-1",
+    "134-2025-QH15_dieu-11_khoan-3",
+    "134-2025-QH15_dieu-14_khoan-1_diem-đ",
+    "134-2025-QH15_dieu-14_khoan-2_diem-d"
+  ],
+  "reranker_scores": [
+    3.518470048904419,
+    3.3600449562072754,
+    2.5250020027160645,
+    1.8094332218170166,
+    1.7603728771209717
+  ],
+  "formatted_evidence_ids": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5"
+  ],
+  "model": "gemini-2.5-flash",
+  "provider": "openai-compatible",
+  "prompt_version": "legal-rag-prompt-v0",
+  "raw_model_response": "{\n  \"answer\": \"Nghĩa vụ minh bạch của hệ thống AI bao gồm trách nhiệm của nhà cung cấp và bên triển khai hệ thống trí tuệ nhân tạo [E1]. Cụ thể, các nghĩa vụ này được quy định tại Điều 11 của Luật Trí tuệ nhân tạo [E1][E4][E5] và bao gồm: \\n1. Nhà cung cấp và bên triển khai phải thực hiện trách nhiệm minh bạch, thông báo, đánh dấu kỹ thuật và gắn nhãn hiển thị đối với hệ thống trí tuệ nhân tạo và nội dung do hệ thống tạo ra. Việc thực hiện trách nhiệm minh bạch phải phù hợp với mục đích sử dụng, bối cảnh triển khai và mức độ rủi ro của hệ thống [E1].\\n2. Nhà cung cấp phải đảm bảo hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác [E2].\\n3. Bên triển khai có trách nhiệm thông báo rõ ràng khi cung cấp ra công cộng văn bản, âm thanh, hình ảnh, video được tạo ra hoặc chỉnh sửa bằng hệ thống trí tuệ nhân tạo nếu nội dung đó có khả năng gây nhầm lẫn về tính xác thực của sự kiện, nhân vật, trừ trường hợp pháp luật có quy định khác [E3].\",\n  \"used_evidence_ids\": [\n    \"E1\",\n    \"E2\",\n    \"E3\",\n    \"E4\",\n    \"E5\"\n  ],\n  \"insufficient_evidence\": false,\n  \"missing_information\": []\n}",
+  "parsed_result": {
+    "answer": "Nghĩa vụ minh bạch của hệ thống AI bao gồm trách nhiệm của nhà cung cấp và bên triển khai hệ thống trí tuệ nhân tạo [E1]. Cụ thể, các nghĩa vụ này được quy định tại Điều 11 của Luật Trí tuệ nhân tạo [E1][E4][E5] và bao gồm: \n1. Nhà cung cấp và bên triển khai phải thực hiện trách nhiệm minh bạch, thông báo, đánh dấu kỹ thuật và gắn nhãn hiển thị đối với hệ thống trí tuệ nhân tạo và nội dung do hệ thống tạo ra. Việc thực hiện trách nhiệm minh bạch phải phù hợp với mục đích sử dụng, bối cảnh triển khai và mức độ rủi ro của hệ thống [E1].\n2. Nhà cung cấp phải đảm bảo hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác [E2].\n3. Bên triển khai có trách nhiệm thông báo rõ ràng khi cung cấp ra công cộng văn bản, âm thanh, hình ảnh, video được tạo ra hoặc chỉnh sửa bằng hệ thống trí tuệ nhân tạo nếu nội dung đó có khả năng gây nhầm lẫn về tính xác thực của sự kiện, nhân vật, trừ trường hợp pháp luật có quy định khác [E3].",
+    "used_evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ],
+    "insufficient_evidence": false,
+    "missing_information": []
+  },
+  "citation_validation": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E1",
+      "E4",
+      "E5",
+      "E2",
+      "E3"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "duplicate_citations": [],
+    "errors": []
+  },
+  "timestamp": "2026-08-24T08:30:23.964152+00:00"
+}

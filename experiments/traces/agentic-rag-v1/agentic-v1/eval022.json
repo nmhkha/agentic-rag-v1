@@ -1,0 +1,1290 @@
+{
+  "run_id": "agentic-v1-eval022",
+  "query": "Cơ quan quản lý có trách nhiệm gì đối với việc xây dựng và cập nhật dữ liệu mở phục vụ AI?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 30,
+  "initial_top5": [
+    "142-2026-ND-CP_dieu-43_khoan-4",
+    "142-2026-ND-CP_dieu-36_khoan-1",
+    "142-2026-ND-CP_dieu-42_khoan-3",
+    "134-2025-QH15_dieu-17_khoan-3",
+    "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+  ],
+  "coverage_check": {
+    "sufficient": true,
+    "missing_aspects": [],
+    "reason": "Các văn bản được cung cấp đã nêu rõ trách nhiệm của cơ quan quản lý đối với việc xây dựng và cập nhật dữ liệu mở phục vụ trí tuệ nhân tạo."
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [
+    {
+      "rank": 1,
+      "evidence_id": "E1",
+      "chunk_id": "142-2026-ND-CP_dieu-43_khoan-4",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-43",
+      "article": "43",
+      "article_label": "Điều 43",
+      "clause": "4",
+      "clause_label": "Khoản 4",
+      "point": null,
+      "point_label": null,
+      "text": "Tổ chức thu thập, tạo lập, bảo đảm chất lượng, gán nhãn, chú thích, chuẩn hóa, quản lý, khai thác cơ sở dữ liệu phục vụ trí tuệ nhân tạo thuộc phạm vi quản lý; chủ trì xây dựng, vận hành hạ tầng trí tuệ nhân tạo phục vụ quản lý nhà nước tại theo thẩm quyền; bảo đảm kết nối, chia sẻ với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo theo tiêu chuẩn, quy chuẩn kỹ thuật và yêu cầu về an ninh mạng theo quy định của pháp luật.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nTRÁCH NHIỆM CỦA CÁC CƠ QUAN, TỔ CHỨC\nĐiều 43. Trách nhiệm của các bộ, cơ quan ngang bộ và các cơ quan khác thuộc thẩm quyền của Chính phủ\nKhoản 4\nTổ chức thu thập, tạo lập, bảo đảm chất lượng, gán nhãn, chú thích, chuẩn hóa, quản lý, khai thác cơ sở dữ liệu phục vụ trí tuệ nhân tạo thuộc phạm vi quản lý; chủ trì xây dựng, vận hành hạ tầng trí tuệ nhân tạo phục vụ quản lý nhà nước tại theo thẩm quyền; bảo đảm kết nối, chia sẻ với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo theo tiêu chuẩn, quy chuẩn kỹ thuật và yêu cầu về an ninh mạng theo quy định của pháp luật.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 3.310117721557617,
+      "bm25_rank": 6,
+      "dense_rank": 7,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 1,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-43_khoan-4",
+      "point_id": null
+    },
+    {
+      "rank": 2,
+      "evidence_id": "E2",
+      "chunk_id": "142-2026-ND-CP_dieu-36_khoan-1",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-36",
+      "article": "36",
+      "article_label": "Điều 36",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": null,
+      "point_label": null,
+      "text": "Cơ quan, tổ chức quản lý, vận hành hạ tầng trí tuệ nhân tạo hoặc cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo có trách nhiệm áp dụng biện pháp kỹ thuật và biện pháp quản lý phù hợp với mục đích sử dụng, quy mô triển khai và mức độ rủi ro để bảo đảm an ninh, an toàn hạ tầng và dữ liệu theo quy định của pháp luật và phù hợp với tiêu chuẩn, quy chuẩn kỹ thuật quốc gia có liên quan.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 36. Bảo đảm an ninh, an toàn hạ tầng và dữ liệu phục vụ phát triển trí tuệ nhân tạo\nKhoản 1\nCơ quan, tổ chức quản lý, vận hành hạ tầng trí tuệ nhân tạo hoặc cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo có trách nhiệm áp dụng biện pháp kỹ thuật và biện pháp quản lý phù hợp với mục đích sử dụng, quy mô triển khai và mức độ rủi ro để bảo đảm an ninh, an toàn hạ tầng và dữ liệu theo quy định của pháp luật và phù hợp với tiêu chuẩn, quy chuẩn kỹ thuật quốc gia có liên quan.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 2.499105930328369,
+      "bm25_rank": 20,
+      "dense_rank": 16,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 2,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-36_khoan-1",
+      "point_id": null
+    },
+    {
+      "rank": 3,
+      "evidence_id": "E3",
+      "chunk_id": "142-2026-ND-CP_dieu-42_khoan-3",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-42",
+      "article": "42",
+      "article_label": "Điều 42",
+      "clause": "3",
+      "clause_label": "Khoản 3",
+      "point": null,
+      "point_label": null,
+      "text": "Là cơ quan chủ quản, chịu trách nhiệm xây dựng, quản lý, vận hành Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo tại Trung tâm dữ liệu quốc gia theo quy định của Nghị định này và pháp luật về dữ liệu.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nTRÁCH NHIỆM CỦA CÁC CƠ QUAN, TỔ CHỨC\nĐiều 42. Trách nhiệm của Bộ Công an\nKhoản 3\nLà cơ quan chủ quản, chịu trách nhiệm xây dựng, quản lý, vận hành Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo tại Trung tâm dữ liệu quốc gia theo quy định của Nghị định này và pháp luật về dữ liệu.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 2.4135055541992188,
+      "bm25_rank": 5,
+      "dense_rank": 1,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 3,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-42_khoan-3",
+      "point_id": null
+    },
+    {
+      "rank": 4,
+      "evidence_id": "E4",
+      "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-17",
+      "article": "17",
+      "article_label": "Điều 17",
+      "clause": "3",
+      "clause_label": "Khoản 3",
+      "point": null,
+      "point_label": null,
+      "text": "Cơ sở dữ liệu phục vụ trí tuệ nhân tạo của Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ và Ủy ban nhân dân các cấp được xây dựng, cập nhật và kết nối thống nhất với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo; bảo đảm tiêu chuẩn, quy chuẩn kỹ thuật, chất lượng dữ liệu và an toàn thông tin.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÁT TRIỂN HẠ TẦNG VÀ BẢO ĐẢM CHỦ QUYỀN\nĐiều 17. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 3\nCơ sở dữ liệu phục vụ trí tuệ nhân tạo của Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ và Ủy ban nhân dân các cấp được xây dựng, cập nhật và kết nối thống nhất với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo; bảo đảm tiêu chuẩn, quy chuẩn kỹ thuật, chất lượng dữ liệu và an toàn thông tin.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 2.2457258701324463,
+      "bm25_rank": 2,
+      "dense_rank": 8,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 4,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-17_khoan-3",
+      "point_id": null
+    },
+    {
+      "rank": 5,
+      "evidence_id": "E5",
+      "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-32",
+      "article": "32",
+      "article_label": "Điều 32",
+      "clause": "5",
+      "clause_label": "Khoản 5",
+      "point": "a",
+      "point_label": "Điểm a",
+      "text": "Xây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 32. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 5\nĐiểm a)\nXây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 2.191190719604492,
+      "bm25_rank": 1,
+      "dense_rank": null,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 5,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-32_khoan-5",
+      "point_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+    }
+  ],
+  "final_top5": [
+    "142-2026-ND-CP_dieu-43_khoan-4",
+    "142-2026-ND-CP_dieu-36_khoan-1",
+    "142-2026-ND-CP_dieu-42_khoan-3",
+    "134-2025-QH15_dieu-17_khoan-3",
+    "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+  ],
+  "draft_answer": "Bằng chứng hiện tại chưa đủ để kết luận về trách nhiệm cụ thể của cơ quan quản lý đối với riêng việc xây dựng và cập nhật \"dữ liệu mở\" phục vụ AI. Bằng chứng [E5] chỉ quy định chung về trách nhiệm \"Xây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý\" mà chưa làm rõ mối liên hệ trực tiếp với dữ liệu mở phục vụ AI.",
+  "completeness_check": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "The answer accurately addresses the query using the provided evidence, citing both the general provision on open data [E5] and the specific responsibilities regarding databases for artificial intelligence [E1]."
+  },
+  "revision_used": true,
+  "citation_check": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E5",
+      "E1"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required_by_deterministic_gate",
+    "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": "Bằng chứng hiện tại chưa đủ để kết luận về trách nhiệm cụ thể của cơ quan quản lý đối với riêng việc xây dựng và cập nhật \"dữ liệu mở\" phục vụ AI. Bằng chứng [E5] chỉ quy định chung về trách nhiệm \"Xây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý\" mà chưa làm rõ mối liên hệ trực tiếp với dữ liệu mở phục vụ AI. Tuy nhiên, theo Khoản 4 Điều 43 Nghị định 142/2026/NĐ-CP, cơ quan quản lý có trách nhiệm tổ chức thu thập, tạo lập, bảo đảm chất lượng, gán nhãn, chú thích, chuẩn hóa, quản lý, khai thác cơ sở dữ liệu phục vụ trí tuệ nhân tạo thuộc phạm vi quản lý [E1].",
+  "final_status": "success",
+  "retrieval_calls": [
+    {
+      "call_number": 1,
+      "round": 0,
+      "query": "Cơ quan quản lý có trách nhiệm gì đối với việc xây dựng và cập nhật dữ liệu mở phục vụ AI?",
+      "sub_query": false,
+      "bm25_depth": 20,
+      "dense_depth": 20,
+      "candidate_chunk_ids": [
+        "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+        "134-2025-QH15_dieu-17_khoan-3",
+        "134-2025-QH15_dieu-17_khoan-2",
+        "142-2026-ND-CP_dieu-42_khoan-2",
+        "142-2026-ND-CP_dieu-42_khoan-3",
+        "142-2026-ND-CP_dieu-43_khoan-4",
+        "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-42_khoan-9",
+        "142-2026-ND-CP_dieu-44_khoan-2",
+        "142-2026-ND-CP_dieu-32_khoan-3",
+        "142-2026-ND-CP_dieu-41_khoan-1",
+        "142-2026-ND-CP_dieu-43_khoan-1",
+        "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+        "142-2026-ND-CP_dieu-32_khoan-5_diem-b",
+        "142-2026-ND-CP_dieu-35_khoan-1",
+        "142-2026-ND-CP_dieu-28_khoan-2_diem-b",
+        "134-2025-QH15_dieu-14_khoan-1_diem-c",
+        "05-2026-TT-BKHCN_dieu-5_khoan-2",
+        "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-36_khoan-1",
+        "134-2025-QH15_dieu-31_khoan-1",
+        "142-2026-ND-CP_dieu-28_khoan-6",
+        "134-2025-QH15_dieu-17_khoan-1",
+        "142-2026-ND-CP_dieu-4_khoan-2",
+        "142-2026-ND-CP_dieu-29_khoan-4",
+        "134-2025-QH15_dieu-31_khoan-2",
+        "142-2026-ND-CP_dieu-42_khoan-8",
+        "134-2025-QH15_dieu-12_khoan-1",
+        "142-2026-ND-CP_dieu-15_khoan-3",
+        "134-2025-QH15_dieu-27_khoan-4"
+      ],
+      "candidate_count": 30,
+      "reranker_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-43_khoan-4",
+          "rank": 1,
+          "reranker_score": 3.310117721557617
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-36_khoan-1",
+          "rank": 2,
+          "reranker_score": 2.499105930328369
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-42_khoan-3",
+          "rank": 3,
+          "reranker_score": 2.4135055541992188
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+          "rank": 4,
+          "reranker_score": 2.2457258701324463
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+          "rank": 5,
+          "reranker_score": 2.191190719604492
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-44_khoan-2",
+          "rank": 6,
+          "reranker_score": 1.7798932790756226
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+          "rank": 7,
+          "reranker_score": 1.6708612442016602
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-3",
+          "rank": 8,
+          "reranker_score": 1.6481928825378418
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-42_khoan-8",
+          "rank": 9,
+          "reranker_score": 1.546294093132019
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-42_khoan-2",
+          "rank": 10,
+          "reranker_score": 1.4990779161453247
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-41_khoan-1",
+          "rank": 11,
+          "reranker_score": 1.4566340446472168
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-42_khoan-9",
+          "rank": 12,
+          "reranker_score": 1.419981837272644
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+          "rank": 13,
+          "reranker_score": 1.221343755722046
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+          "rank": 14,
+          "reranker_score": 1.1141119003295898
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-1",
+          "rank": 15,
+          "reranker_score": 0.7974750995635986
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-31_khoan-1",
+          "rank": 16,
+          "reranker_score": 0.5765304565429688
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-43_khoan-1",
+          "rank": 17,
+          "reranker_score": 0.5762730240821838
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-b",
+          "rank": 18,
+          "reranker_score": 0.2549057900905609
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-4_khoan-2",
+          "rank": 19,
+          "reranker_score": 0.15331768989562988
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-28_khoan-6",
+          "rank": 20,
+          "reranker_score": -0.8408007621765137
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+          "rank": 21,
+          "reranker_score": -0.899436891078949
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-12_khoan-1",
+          "rank": 22,
+          "reranker_score": -1.0702319145202637
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+          "rank": 23,
+          "reranker_score": -1.2564806938171387
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+          "rank": 24,
+          "reranker_score": -1.284104585647583
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-28_khoan-2_diem-b",
+          "rank": 25,
+          "reranker_score": -1.3988436460494995
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+          "rank": 26,
+          "reranker_score": -1.6478859186172485
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-29_khoan-4",
+          "rank": 27,
+          "reranker_score": -1.7946456670761108
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+          "rank": 28,
+          "reranker_score": -2.4237308502197266
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-31_khoan-2",
+          "rank": 29,
+          "reranker_score": -2.6979973316192627
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-2",
+          "rank": 30,
+          "reranker_score": -2.9342072010040283
+        }
+      ],
+      "top5_chunk_ids": [
+        "142-2026-ND-CP_dieu-43_khoan-4",
+        "142-2026-ND-CP_dieu-36_khoan-1",
+        "142-2026-ND-CP_dieu-42_khoan-3",
+        "134-2025-QH15_dieu-17_khoan-3",
+        "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+      ],
+      "candidate_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+          "bm25_rank": 1,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+          "bm25_rank": 2,
+          "dense_rank": 8
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+          "bm25_rank": 3,
+          "dense_rank": 9
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-42_khoan-2",
+          "bm25_rank": 4,
+          "dense_rank": 3
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-42_khoan-3",
+          "bm25_rank": 5,
+          "dense_rank": 1
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-43_khoan-4",
+          "bm25_rank": 6,
+          "dense_rank": 7
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+          "bm25_rank": 7,
+          "dense_rank": 15
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-42_khoan-9",
+          "bm25_rank": 8,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-44_khoan-2",
+          "bm25_rank": 9,
+          "dense_rank": 4
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-3",
+          "bm25_rank": 10,
+          "dense_rank": 14
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-41_khoan-1",
+          "bm25_rank": 11,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-43_khoan-1",
+          "bm25_rank": 12,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+          "bm25_rank": 13,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-b",
+          "bm25_rank": 14,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+          "bm25_rank": 15,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-28_khoan-2_diem-b",
+          "bm25_rank": 16,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+          "bm25_rank": 17,
+          "dense_rank": 11
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-2",
+          "bm25_rank": 18,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+          "bm25_rank": 19,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-36_khoan-1",
+          "bm25_rank": 20,
+          "dense_rank": 16
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-31_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 2
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-28_khoan-6",
+          "bm25_rank": null,
+          "dense_rank": 5
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 6
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-4_khoan-2",
+          "bm25_rank": null,
+          "dense_rank": 10
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-29_khoan-4",
+          "bm25_rank": null,
+          "dense_rank": 12
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-31_khoan-2",
+          "bm25_rank": null,
+          "dense_rank": 13
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-42_khoan-8",
+          "bm25_rank": null,
+          "dense_rank": 17
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-12_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 18
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 19
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+          "bm25_rank": null,
+          "dense_rank": 20
+        }
+      ]
+    }
+  ],
+  "retrieval_call_count": 1,
+  "llm_calls": [
+    {
+      "call_number": 1,
+      "stage": "coverage_check"
+    },
+    {
+      "call_number": 2,
+      "stage": "answer_generation"
+    },
+    {
+      "call_number": 3,
+      "stage": "completeness_check"
+    },
+    {
+      "call_number": 4,
+      "stage": "answer_revision"
+    },
+    {
+      "call_number": 5,
+      "stage": "completeness_check"
+    }
+  ],
+  "llm_call_count": 5,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Cơ quan quản lý có trách nhiệm gì đối với việc xây dựng và cập nhật dữ liệu mở phục vụ AI?",
+    "initial_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "142-2026-ND-CP_dieu-43_khoan-4",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-43",
+        "article": "43",
+        "article_label": "Điều 43",
+        "clause": "4",
+        "clause_label": "Khoản 4",
+        "point": null,
+        "point_label": null,
+        "text": "Tổ chức thu thập, tạo lập, bảo đảm chất lượng, gán nhãn, chú thích, chuẩn hóa, quản lý, khai thác cơ sở dữ liệu phục vụ trí tuệ nhân tạo thuộc phạm vi quản lý; chủ trì xây dựng, vận hành hạ tầng trí tuệ nhân tạo phục vụ quản lý nhà nước tại theo thẩm quyền; bảo đảm kết nối, chia sẻ với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo theo tiêu chuẩn, quy chuẩn kỹ thuật và yêu cầu về an ninh mạng theo quy định của pháp luật.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nTRÁCH NHIỆM CỦA CÁC CƠ QUAN, TỔ CHỨC\nĐiều 43. Trách nhiệm của các bộ, cơ quan ngang bộ và các cơ quan khác thuộc thẩm quyền của Chính phủ\nKhoản 4\nTổ chức thu thập, tạo lập, bảo đảm chất lượng, gán nhãn, chú thích, chuẩn hóa, quản lý, khai thác cơ sở dữ liệu phục vụ trí tuệ nhân tạo thuộc phạm vi quản lý; chủ trì xây dựng, vận hành hạ tầng trí tuệ nhân tạo phục vụ quản lý nhà nước tại theo thẩm quyền; bảo đảm kết nối, chia sẻ với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo theo tiêu chuẩn, quy chuẩn kỹ thuật và yêu cầu về an ninh mạng theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.310117721557617,
+        "bm25_rank": 6,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-43_khoan-4",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-36_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-36",
+        "article": "36",
+        "article_label": "Điều 36",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan, tổ chức quản lý, vận hành hạ tầng trí tuệ nhân tạo hoặc cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo có trách nhiệm áp dụng biện pháp kỹ thuật và biện pháp quản lý phù hợp với mục đích sử dụng, quy mô triển khai và mức độ rủi ro để bảo đảm an ninh, an toàn hạ tầng và dữ liệu theo quy định của pháp luật và phù hợp với tiêu chuẩn, quy chuẩn kỹ thuật quốc gia có liên quan.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 36. Bảo đảm an ninh, an toàn hạ tầng và dữ liệu phục vụ phát triển trí tuệ nhân tạo\nKhoản 1\nCơ quan, tổ chức quản lý, vận hành hạ tầng trí tuệ nhân tạo hoặc cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo có trách nhiệm áp dụng biện pháp kỹ thuật và biện pháp quản lý phù hợp với mục đích sử dụng, quy mô triển khai và mức độ rủi ro để bảo đảm an ninh, an toàn hạ tầng và dữ liệu theo quy định của pháp luật và phù hợp với tiêu chuẩn, quy chuẩn kỹ thuật quốc gia có liên quan.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.499105930328369,
+        "bm25_rank": 20,
+        "dense_rank": 16,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-36_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-42_khoan-3",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-42",
+        "article": "42",
+        "article_label": "Điều 42",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Là cơ quan chủ quản, chịu trách nhiệm xây dựng, quản lý, vận hành Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo tại Trung tâm dữ liệu quốc gia theo quy định của Nghị định này và pháp luật về dữ liệu.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nTRÁCH NHIỆM CỦA CÁC CƠ QUAN, TỔ CHỨC\nĐiều 42. Trách nhiệm của Bộ Công an\nKhoản 3\nLà cơ quan chủ quản, chịu trách nhiệm xây dựng, quản lý, vận hành Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo tại Trung tâm dữ liệu quốc gia theo quy định của Nghị định này và pháp luật về dữ liệu.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.4135055541992188,
+        "bm25_rank": 5,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-42_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-17",
+        "article": "17",
+        "article_label": "Điều 17",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ sở dữ liệu phục vụ trí tuệ nhân tạo của Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ và Ủy ban nhân dân các cấp được xây dựng, cập nhật và kết nối thống nhất với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo; bảo đảm tiêu chuẩn, quy chuẩn kỹ thuật, chất lượng dữ liệu và an toàn thông tin.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÁT TRIỂN HẠ TẦNG VÀ BẢO ĐẢM CHỦ QUYỀN\nĐiều 17. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 3\nCơ sở dữ liệu phục vụ trí tuệ nhân tạo của Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ và Ủy ban nhân dân các cấp được xây dựng, cập nhật và kết nối thống nhất với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo; bảo đảm tiêu chuẩn, quy chuẩn kỹ thuật, chất lượng dữ liệu và an toàn thông tin.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 2.2457258701324463,
+        "bm25_rank": 2,
+        "dense_rank": 8,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-17_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-32",
+        "article": "32",
+        "article_label": "Điều 32",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Xây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 32. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 5\nĐiểm a)\nXây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.191190719604492,
+        "bm25_rank": 1,
+        "dense_rank": null,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-32_khoan-5",
+        "point_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+      }
+    ],
+    "current_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "142-2026-ND-CP_dieu-43_khoan-4",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-43",
+        "article": "43",
+        "article_label": "Điều 43",
+        "clause": "4",
+        "clause_label": "Khoản 4",
+        "point": null,
+        "point_label": null,
+        "text": "Tổ chức thu thập, tạo lập, bảo đảm chất lượng, gán nhãn, chú thích, chuẩn hóa, quản lý, khai thác cơ sở dữ liệu phục vụ trí tuệ nhân tạo thuộc phạm vi quản lý; chủ trì xây dựng, vận hành hạ tầng trí tuệ nhân tạo phục vụ quản lý nhà nước tại theo thẩm quyền; bảo đảm kết nối, chia sẻ với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo theo tiêu chuẩn, quy chuẩn kỹ thuật và yêu cầu về an ninh mạng theo quy định của pháp luật.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nTRÁCH NHIỆM CỦA CÁC CƠ QUAN, TỔ CHỨC\nĐiều 43. Trách nhiệm của các bộ, cơ quan ngang bộ và các cơ quan khác thuộc thẩm quyền của Chính phủ\nKhoản 4\nTổ chức thu thập, tạo lập, bảo đảm chất lượng, gán nhãn, chú thích, chuẩn hóa, quản lý, khai thác cơ sở dữ liệu phục vụ trí tuệ nhân tạo thuộc phạm vi quản lý; chủ trì xây dựng, vận hành hạ tầng trí tuệ nhân tạo phục vụ quản lý nhà nước tại theo thẩm quyền; bảo đảm kết nối, chia sẻ với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo theo tiêu chuẩn, quy chuẩn kỹ thuật và yêu cầu về an ninh mạng theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.310117721557617,
+        "bm25_rank": 6,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-43_khoan-4",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-36_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-36",
+        "article": "36",
+        "article_label": "Điều 36",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ quan, tổ chức quản lý, vận hành hạ tầng trí tuệ nhân tạo hoặc cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo có trách nhiệm áp dụng biện pháp kỹ thuật và biện pháp quản lý phù hợp với mục đích sử dụng, quy mô triển khai và mức độ rủi ro để bảo đảm an ninh, an toàn hạ tầng và dữ liệu theo quy định của pháp luật và phù hợp với tiêu chuẩn, quy chuẩn kỹ thuật quốc gia có liên quan.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 36. Bảo đảm an ninh, an toàn hạ tầng và dữ liệu phục vụ phát triển trí tuệ nhân tạo\nKhoản 1\nCơ quan, tổ chức quản lý, vận hành hạ tầng trí tuệ nhân tạo hoặc cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo có trách nhiệm áp dụng biện pháp kỹ thuật và biện pháp quản lý phù hợp với mục đích sử dụng, quy mô triển khai và mức độ rủi ro để bảo đảm an ninh, an toàn hạ tầng và dữ liệu theo quy định của pháp luật và phù hợp với tiêu chuẩn, quy chuẩn kỹ thuật quốc gia có liên quan.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.499105930328369,
+        "bm25_rank": 20,
+        "dense_rank": 16,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-36_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-42_khoan-3",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-42",
+        "article": "42",
+        "article_label": "Điều 42",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Là cơ quan chủ quản, chịu trách nhiệm xây dựng, quản lý, vận hành Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo tại Trung tâm dữ liệu quốc gia theo quy định của Nghị định này và pháp luật về dữ liệu.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nTRÁCH NHIỆM CỦA CÁC CƠ QUAN, TỔ CHỨC\nĐiều 42. Trách nhiệm của Bộ Công an\nKhoản 3\nLà cơ quan chủ quản, chịu trách nhiệm xây dựng, quản lý, vận hành Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo tại Trung tâm dữ liệu quốc gia theo quy định của Nghị định này và pháp luật về dữ liệu.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.4135055541992188,
+        "bm25_rank": 5,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-42_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-17",
+        "article": "17",
+        "article_label": "Điều 17",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ sở dữ liệu phục vụ trí tuệ nhân tạo của Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ và Ủy ban nhân dân các cấp được xây dựng, cập nhật và kết nối thống nhất với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo; bảo đảm tiêu chuẩn, quy chuẩn kỹ thuật, chất lượng dữ liệu và an toàn thông tin.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÁT TRIỂN HẠ TẦNG VÀ BẢO ĐẢM CHỦ QUYỀN\nĐiều 17. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 3\nCơ sở dữ liệu phục vụ trí tuệ nhân tạo của Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ và Ủy ban nhân dân các cấp được xây dựng, cập nhật và kết nối thống nhất với Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo; bảo đảm tiêu chuẩn, quy chuẩn kỹ thuật, chất lượng dữ liệu và an toàn thông tin.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 2.2457258701324463,
+        "bm25_rank": 2,
+        "dense_rank": 8,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-17_khoan-3",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-32",
+        "article": "32",
+        "article_label": "Điều 32",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Xây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 32. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 5\nĐiểm a)\nXây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 2.191190719604492,
+        "bm25_rank": 1,
+        "dense_rank": null,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-32_khoan-5",
+        "point_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+      }
+    ],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": true,
+      "missing_aspects": [],
+      "reason": "Các văn bản được cung cấp đã nêu rõ trách nhiệm của cơ quan quản lý đối với việc xây dựng và cập nhật dữ liệu mở phục vụ trí tuệ nhân tạo."
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": "Bằng chứng hiện tại chưa đủ để kết luận về trách nhiệm cụ thể của cơ quan quản lý đối với riêng việc xây dựng và cập nhật \"dữ liệu mở\" phục vụ AI. Bằng chứng [E5] chỉ quy định chung về trách nhiệm \"Xây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý\" mà chưa làm rõ mối liên hệ trực tiếp với dữ liệu mở phục vụ AI.",
+    "completeness_check": {
+      "complete": true,
+      "missing_points": [],
+      "reason": "The answer accurately addresses the query using the provided evidence, citing both the general provision on open data [E5] and the specific responsibilities regarding databases for artificial intelligence [E1]."
+    },
+    "citation_check": {
+      "valid": true,
+      "cited_evidence_ids": [
+        "E5",
+        "E1"
+      ],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required_by_deterministic_gate",
+      "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+      "reviewed_claims": []
+    },
+    "revision_count": 1,
+    "citation_revision_count": 0,
+    "final_answer": "Bằng chứng hiện tại chưa đủ để kết luận về trách nhiệm cụ thể của cơ quan quản lý đối với riêng việc xây dựng và cập nhật \"dữ liệu mở\" phục vụ AI. Bằng chứng [E5] chỉ quy định chung về trách nhiệm \"Xây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý\" mà chưa làm rõ mối liên hệ trực tiếp với dữ liệu mở phục vụ AI. Tuy nhiên, theo Khoản 4 Điều 43 Nghị định 142/2026/NĐ-CP, cơ quan quản lý có trách nhiệm tổ chức thu thập, tạo lập, bảo đảm chất lượng, gán nhãn, chú thích, chuẩn hóa, quản lý, khai thác cơ sở dữ liệu phục vụ trí tuệ nhân tạo thuộc phạm vi quản lý [E1].",
+    "final_status": "success",
+    "run_id": "agentic-v1-eval022",
+    "initial_top5": [
+      "142-2026-ND-CP_dieu-43_khoan-4",
+      "142-2026-ND-CP_dieu-36_khoan-1",
+      "142-2026-ND-CP_dieu-42_khoan-3",
+      "134-2025-QH15_dieu-17_khoan-3",
+      "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+    ],
+    "expanded_candidates": [],
+    "final_top5": [
+      "142-2026-ND-CP_dieu-43_khoan-4",
+      "142-2026-ND-CP_dieu-36_khoan-1",
+      "142-2026-ND-CP_dieu-42_khoan-3",
+      "134-2025-QH15_dieu-17_khoan-3",
+      "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+    ],
+    "retrieval_calls": [
+      {
+        "call_number": 1,
+        "round": 0,
+        "query": "Cơ quan quản lý có trách nhiệm gì đối với việc xây dựng và cập nhật dữ liệu mở phục vụ AI?",
+        "sub_query": false,
+        "bm25_depth": 20,
+        "dense_depth": 20,
+        "candidate_chunk_ids": [
+          "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+          "134-2025-QH15_dieu-17_khoan-3",
+          "134-2025-QH15_dieu-17_khoan-2",
+          "142-2026-ND-CP_dieu-42_khoan-2",
+          "142-2026-ND-CP_dieu-42_khoan-3",
+          "142-2026-ND-CP_dieu-43_khoan-4",
+          "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-42_khoan-9",
+          "142-2026-ND-CP_dieu-44_khoan-2",
+          "142-2026-ND-CP_dieu-32_khoan-3",
+          "142-2026-ND-CP_dieu-41_khoan-1",
+          "142-2026-ND-CP_dieu-43_khoan-1",
+          "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+          "142-2026-ND-CP_dieu-32_khoan-5_diem-b",
+          "142-2026-ND-CP_dieu-35_khoan-1",
+          "142-2026-ND-CP_dieu-28_khoan-2_diem-b",
+          "134-2025-QH15_dieu-14_khoan-1_diem-c",
+          "05-2026-TT-BKHCN_dieu-5_khoan-2",
+          "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+          "142-2026-ND-CP_dieu-36_khoan-1",
+          "134-2025-QH15_dieu-31_khoan-1",
+          "142-2026-ND-CP_dieu-28_khoan-6",
+          "134-2025-QH15_dieu-17_khoan-1",
+          "142-2026-ND-CP_dieu-4_khoan-2",
+          "142-2026-ND-CP_dieu-29_khoan-4",
+          "134-2025-QH15_dieu-31_khoan-2",
+          "142-2026-ND-CP_dieu-42_khoan-8",
+          "134-2025-QH15_dieu-12_khoan-1",
+          "142-2026-ND-CP_dieu-15_khoan-3",
+          "134-2025-QH15_dieu-27_khoan-4"
+        ],
+        "candidate_count": 30,
+        "reranker_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-43_khoan-4",
+            "rank": 1,
+            "reranker_score": 3.310117721557617
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-36_khoan-1",
+            "rank": 2,
+            "reranker_score": 2.499105930328369
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-42_khoan-3",
+            "rank": 3,
+            "reranker_score": 2.4135055541992188
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+            "rank": 4,
+            "reranker_score": 2.2457258701324463
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+            "rank": 5,
+            "reranker_score": 2.191190719604492
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-44_khoan-2",
+            "rank": 6,
+            "reranker_score": 1.7798932790756226
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+            "rank": 7,
+            "reranker_score": 1.6708612442016602
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-3",
+            "rank": 8,
+            "reranker_score": 1.6481928825378418
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-42_khoan-8",
+            "rank": 9,
+            "reranker_score": 1.546294093132019
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-42_khoan-2",
+            "rank": 10,
+            "reranker_score": 1.4990779161453247
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-41_khoan-1",
+            "rank": 11,
+            "reranker_score": 1.4566340446472168
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-42_khoan-9",
+            "rank": 12,
+            "reranker_score": 1.419981837272644
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+            "rank": 13,
+            "reranker_score": 1.221343755722046
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+            "rank": 14,
+            "reranker_score": 1.1141119003295898
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-1",
+            "rank": 15,
+            "reranker_score": 0.7974750995635986
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-31_khoan-1",
+            "rank": 16,
+            "reranker_score": 0.5765304565429688
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-43_khoan-1",
+            "rank": 17,
+            "reranker_score": 0.5762730240821838
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-b",
+            "rank": 18,
+            "reranker_score": 0.2549057900905609
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-4_khoan-2",
+            "rank": 19,
+            "reranker_score": 0.15331768989562988
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-28_khoan-6",
+            "rank": 20,
+            "reranker_score": -0.8408007621765137
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+            "rank": 21,
+            "reranker_score": -0.899436891078949
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-12_khoan-1",
+            "rank": 22,
+            "reranker_score": -1.0702319145202637
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+            "rank": 23,
+            "reranker_score": -1.2564806938171387
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+            "rank": 24,
+            "reranker_score": -1.284104585647583
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-28_khoan-2_diem-b",
+            "rank": 25,
+            "reranker_score": -1.3988436460494995
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+            "rank": 26,
+            "reranker_score": -1.6478859186172485
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-29_khoan-4",
+            "rank": 27,
+            "reranker_score": -1.7946456670761108
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+            "rank": 28,
+            "reranker_score": -2.4237308502197266
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-31_khoan-2",
+            "rank": 29,
+            "reranker_score": -2.6979973316192627
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-2",
+            "rank": 30,
+            "reranker_score": -2.9342072010040283
+          }
+        ],
+        "top5_chunk_ids": [
+          "142-2026-ND-CP_dieu-43_khoan-4",
+          "142-2026-ND-CP_dieu-36_khoan-1",
+          "142-2026-ND-CP_dieu-42_khoan-3",
+          "134-2025-QH15_dieu-17_khoan-3",
+          "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+        ],
+        "candidate_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+            "bm25_rank": 1,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+            "bm25_rank": 2,
+            "dense_rank": 8
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+            "bm25_rank": 3,
+            "dense_rank": 9
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-42_khoan-2",
+            "bm25_rank": 4,
+            "dense_rank": 3
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-42_khoan-3",
+            "bm25_rank": 5,
+            "dense_rank": 1
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-43_khoan-4",
+            "bm25_rank": 6,
+            "dense_rank": 7
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+            "bm25_rank": 7,
+            "dense_rank": 15
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-42_khoan-9",
+            "bm25_rank": 8,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-44_khoan-2",
+            "bm25_rank": 9,
+            "dense_rank": 4
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-3",
+            "bm25_rank": 10,
+            "dense_rank": 14
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-41_khoan-1",
+            "bm25_rank": 11,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-43_khoan-1",
+            "bm25_rank": 12,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+            "bm25_rank": 13,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-b",
+            "bm25_rank": 14,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+            "bm25_rank": 15,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-28_khoan-2_diem-b",
+            "bm25_rank": 16,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-c",
+            "bm25_rank": 17,
+            "dense_rank": 11
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-5_khoan-2",
+            "bm25_rank": 18,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+            "bm25_rank": 19,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-36_khoan-1",
+            "bm25_rank": 20,
+            "dense_rank": 16
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-31_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 2
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-28_khoan-6",
+            "bm25_rank": null,
+            "dense_rank": 5
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 6
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-4_khoan-2",
+            "bm25_rank": null,
+            "dense_rank": 10
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-29_khoan-4",
+            "bm25_rank": null,
+            "dense_rank": 12
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-31_khoan-2",
+            "bm25_rank": null,
+            "dense_rank": 13
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-42_khoan-8",
+            "bm25_rank": null,
+            "dense_rank": 17
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-12_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 18
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 19
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+            "bm25_rank": null,
+            "dense_rank": 20
+          }
+        ]
+      }
+    ],
+    "llm_calls": [
+      {
+        "call_number": 1,
+        "stage": "coverage_check"
+      },
+      {
+        "call_number": 2,
+        "stage": "answer_generation"
+      },
+      {
+        "call_number": 3,
+        "stage": "completeness_check"
+      },
+      {
+        "call_number": 4,
+        "stage": "answer_revision"
+      },
+      {
+        "call_number": 5,
+        "stage": "completeness_check"
+      }
+    ],
+    "expansion_used": false,
+    "revision_used": true,
+    "citation_revision_used": false,
+    "execution_error": null,
+    "transitions": [
+      "initialized",
+      "initial_retrieval",
+      "coverage_check",
+      "answer_generation",
+      "completeness_check",
+      "answer_revision",
+      "completeness_check",
+      "citation_check",
+      "final:success"
+    ]
+  },
+  "timestamp": "2026-09-05T14:18:53.981070+00:00"
+}

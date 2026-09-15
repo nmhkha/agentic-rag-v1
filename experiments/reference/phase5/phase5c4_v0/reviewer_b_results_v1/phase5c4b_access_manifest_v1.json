@@ -1,0 +1,156 @@
+{
+  "schema": "phase5c4b-access-v1",
+  "role": "INDEPENDENT_ANNOTATOR_B",
+  "created_at_utc": "2026-09-11T14:32:21.943467+00:00",
+  "independence_audit": {
+    "annotation_A_read": false,
+    "A_substantive_metadata_seen": false,
+    "system_output_read": false,
+    "retrieval_inference": 0,
+    "reranking_inference": 0,
+    "network_api": 0,
+    "production_calls": 0,
+    "evaluator_calls": 0,
+    "comparison_with_A_performed": false,
+    "adjudication_performed": false,
+    "independent_context": true,
+    "independent_human_legal_review": false,
+    "old_reviewer_packet_semantically_read": false,
+    "old_contamination_reference_opened": false,
+    "annotation_A_or_system_content_emitted_by_hash_worker": false,
+    "audit_interpretation": "annotation_A_read/system_output_read denote substantive inspection by the reviewer. A local hash worker read opaque file bytes solely to compute integrity digests; no parsing or content output for prohibited files.",
+    "hash_worker_reads_are_separately_enumerated": true,
+    "basis": "Observed tool actions and explicit artifact reads; not an OS-wide process/network attestation."
+  },
+  "explicit_substantive_or_projected_input_reads": [
+    {
+      "path": "/home/minhkha/.codex/attachments/e68f2852-04b5-44fb-944d-0db448812cbf/pasted-text.txt",
+      "purpose": "user request",
+      "sha256": "56bcfbd8a4f1ea9192bce47c056308cb5d36dc000f077efb8c328777b67304e0",
+      "size_bytes": 10518
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/phase5c4b0_remediation_v0/fresh_reviewer_b_handoff_v1.md",
+      "purpose": "B0 candidate-independent handoff; expressly requested path discovery",
+      "sha256": "0dfa3b0732ac469e6cf2247ddd85abe73cad481b49b079b5681f7f9e6bf2780d",
+      "size_bytes": 1962
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1/reviewer_b_annotation_instructions_v1.md",
+      "purpose": "sanitized packet instructions",
+      "sha256": "a4e8f87b453b5c93adb56c9d955ae252a21f73a9cef5093917906b70ddaed338",
+      "size_bytes": 3243
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1/reviewer_b_packet_manifest_v1.json",
+      "purpose": "packet authority and hashes",
+      "sha256": "234a8e9107176900273c98f23de476b16e2ada8a836a7901f84dfb682ede0a6b",
+      "size_bytes": 762
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1/reviewer_b_queries_v1.jsonl",
+      "purpose": "initial structural-only parser; subsequently complete text read after user allowed session tool output",
+      "sha256": "dace0b18b2bc5975e2c63e223536e9d4316735241f3d4b3a5461e7347e132342",
+      "size_bytes": 21319
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_frozen_design_spec_v0.md",
+      "purpose": "candidate-independent frozen design",
+      "sha256": "8832e11cb6181913273fccc7abc6b4dfc6fb01dee7f57a9de50409e907c7c990",
+      "size_bytes": 14277
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_spec_bindings_v0.json",
+      "purpose": "candidate-independent source bindings",
+      "sha256": "3507739309e3fb5abf61321c1bd9bb044cbe620218b80a72234020bdd839309d",
+      "size_bytes": 5362
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c3_v0/phase5c3_freeze_manifest_v0.json",
+      "purpose": "frozen design status/hash authority; no historical outcomes artifact opened",
+      "sha256": "16e53fcfe4501fd8df148bc8b63a789ec8f814b5260da52b00c3a901cde6baab",
+      "size_bytes": 14937
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c2_v0/phase5c2_challenge_set_design_v0.md",
+      "purpose": "hash-bound inherited generic annotation rubric, taxonomy and P/Q/U semantics",
+      "sha256": "1f8514571e3fdea048e26eaa399961b54ff2e5af7dd1111fa1904976c0532dc0",
+      "size_bytes": 22031
+    },
+    {
+      "path": "data/versions/corpus-v0.1/documents.csv",
+      "purpose": "complete corpus document inventory",
+      "sha256": "8d0208708676317b28a681d4c5a5a74014ef2b7d9e1c29dab0594cca5eefadce",
+      "size_bytes": 1943
+    },
+    {
+      "path": "data/versions/corpus-v0.1/articles.jsonl",
+      "purpose": "complete hierarchy inspection of 86 articles, selected re-reads to recover truncated tool output",
+      "sha256": "fa8584bb2deda06fc216334f4030722a7ae7f5bbc329fec7cf3dd527cb864cf9",
+      "size_bytes": 317310
+    },
+    {
+      "path": "data/versions/corpus-v0.1/chunks.jsonl",
+      "purpose": "structure/count/identity inspection, exact B-selected evidence serialization and validation; selected parent_context re-read",
+      "sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "size_bytes": 2326073
+    },
+    {
+      "path": "data/evaluation/generation/phase5/query_inputs_v0.json",
+      "purpose": "after substantive lock only; verified 31 records containing exactly query_id/query; no gold/scores/outcomes fields",
+      "sha256": "1d29c4304f61d7c2235d7cab37e2bbf63a35e0c0caf6873d7e458e23904ebc78",
+      "size_bytes": 4548
+    },
+    {
+      "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1/contamination_reference_medical_v1.json",
+      "purpose": "User-authorized newly sanitized medical query-only reference, read after verification of B annotation seals.",
+      "sha256": "3d1b8b0368fc0eebc1f8c08dd66daf123f0ceb94deaf40e6ed27f1c2fa4b9006",
+      "size_bytes": 132
+    }
+  ],
+  "all_preexisting_hash_only_reads": "integrity_baseline_v1.json / files; integrity_before_after_v1.json / after",
+  "hash_worker_A_bytes_read": true,
+  "hash_worker_system_artifact_bytes_read": true,
+  "hash_read_note": "Intentional opaque integrity computation required by user; these bytes never entered reviewer semantic context.",
+  "filename_only_discovery": [
+    "ancestor AGENTS.md existence checks (none found)",
+    "rg --files for AGENTS.md under repository parent (no matches)",
+    "directory inventories for Phase 5C.3/5C.4/corpus; candidate-independent inherited rubric filename discovery",
+    "preexisting path inventory filtered for historical query-only resources; no output/gold/trace content searches"
+  ],
+  "generated_files_read_scope": "Files in the private retry namespace read by generation, screening, correction, validation, manifesting and integrity scripts; exact paths in generated_artifact_hashes_v1.json.",
+  "runtime_note": "Python standard-library loader/OS incidental reads are not syscall-traced; explicit artifact reads and all hash-worker file reads are recorded.",
+  "tool_metadata_discovery": "Local list of available tool names/descriptions inspected while checking for a private file reader; no connector/network tools invoked.",
+  "authorizations": [
+    {
+      "event": "session_query_tool_output_allowed",
+      "source": "user asynchronous reply",
+      "effect": "Exact query text may be read in this session tool output; it remains prohibited in public reports/result console."
+    },
+    {
+      "event": "old_contamination_reference_forbidden",
+      "source": "user asynchronous reply",
+      "effect": "Do not open old packet reference; wait for newly sanitized/audited reference from Dataset Custodian; pending screen does not compromise substantive independence."
+    },
+    {
+      "event": "sanitized_medical_reference_completion",
+      "source": "User continuation request",
+      "effect": "Compare all 60 candidate texts against newly audited reference only; update contamination results/public-safe summaries; preserve substantive B annotations."
+    }
+  ],
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "holdout_storage_isolation": "HOLDOUT_STORAGE_ISOLATION_NOT_YET_ENFORCED",
+  "independent_human_legal_review_complete": false,
+  "network_api_calls": 0,
+  "medical_contamination_completion": {
+    "status": "COMPLETE",
+    "candidate_count": 60,
+    "pre_read_seal_audit": "medical_screen_pre_read_seal_audit_v1.json",
+    "completion_audit": "medical_screening_completed_v1.json",
+    "integrity_audit": "medical_screen_integrity_before_after_v1.json",
+    "all_continuation_hash_reads": "medical_screen_integrity_baseline_v1.json / files",
+    "quarantined_packet_or_custodian_audit_content_read": false,
+    "annotation_A_read": false,
+    "substantive_annotation_write_count": 0
+  }
+}

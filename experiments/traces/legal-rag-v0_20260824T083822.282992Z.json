@@ -1,0 +1,65 @@
+{
+  "query": "hệ thống trí tuệ nhân tạo rủi ro cao",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "retrieved_chunk_ids": [
+    "134-2025-QH15_dieu-9_khoan-1_diem-a",
+    "142-2026-ND-CP_dieu-8_khoan-5",
+    "142-2026-ND-CP_dieu-6_khoan-3_diem-a",
+    "142-2026-ND-CP_dieu-15_khoan-1",
+    "134-2025-QH15_dieu-13_khoan-1"
+  ],
+  "reranker_scores": [
+    7.1817755699157715,
+    6.389564037322998,
+    6.107680320739746,
+    6.08821439743042,
+    5.889285087585449
+  ],
+  "formatted_evidence_ids": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5"
+  ],
+  "model": "gemini-2.5-flash",
+  "provider": "openai-compatible",
+  "prompt_version": "legal-rag-prompt-v0",
+  "raw_model_response": "{\n  \"answer\": \"Hệ thống trí tuệ nhân tạo có rủi ro cao là hệ thống có khả năng gây thiệt hại đáng kể đến tính mạng, sức khỏe, quyền và lợi ích hợp pháp của tổ chức, cá nhân, lợi ích quốc gia, lợi ích công cộng, an ninh quốc gia [E1]. Các hệ thống này được phân loại là rủi ro cao khi thuộc Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao do Thủ tướng Chính phủ ban hành [E3]. Thủ tướng Chính phủ có thể xem xét đưa một hệ thống vào Danh mục này nếu có bằng chứng kỹ thuật hoặc thực tiễn cho thấy hệ thống tồn tại nguy cơ, lỗ hổng nghiêm trọng có khả năng trực tiếp gây thiệt hại đến quốc phòng, an ninh hoặc trật tự, an toàn xã hội [E2].\\n\\nĐối với hệ thống trí tuệ nhân tạo có rủi ro cao, nhà cung cấp phải thiết lập và duy trì hệ thống quản lý rủi ro phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống [E4]. Ngoài ra, các hệ thống này phải được đánh giá sự phù hợp theo quy định của Luật Trí tuệ nhân tạo trước khi đưa vào sử dụng hoặc khi có thay đổi đáng kể trong quá trình sử dụng, và nếu có tiêu chuẩn, quy chuẩn kỹ thuật thì còn phải thực hiện đánh giá sự phù hợp theo quy định pháp luật về tiêu chuẩn, quy chuẩn kỹ thuật [E5].\",\n  \"used_evidence_ids\": [\n    \"E1\",\n    \"E3\",\n    \"E2\",\n    \"E4\",\n    \"E5\"\n  ],\n  \"insufficient_evidence\": false,\n  \"missing_information\": []\n}",
+  "parsed_result": {
+    "answer": "Hệ thống trí tuệ nhân tạo có rủi ro cao là hệ thống có khả năng gây thiệt hại đáng kể đến tính mạng, sức khỏe, quyền và lợi ích hợp pháp của tổ chức, cá nhân, lợi ích quốc gia, lợi ích công cộng, an ninh quốc gia [E1]. Các hệ thống này được phân loại là rủi ro cao khi thuộc Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao do Thủ tướng Chính phủ ban hành [E3]. Thủ tướng Chính phủ có thể xem xét đưa một hệ thống vào Danh mục này nếu có bằng chứng kỹ thuật hoặc thực tiễn cho thấy hệ thống tồn tại nguy cơ, lỗ hổng nghiêm trọng có khả năng trực tiếp gây thiệt hại đến quốc phòng, an ninh hoặc trật tự, an toàn xã hội [E2].\n\nĐối với hệ thống trí tuệ nhân tạo có rủi ro cao, nhà cung cấp phải thiết lập và duy trì hệ thống quản lý rủi ro phù hợp với mục đích sử dụng, phạm vi triển khai và mức độ rủi ro của hệ thống [E4]. Ngoài ra, các hệ thống này phải được đánh giá sự phù hợp theo quy định của Luật Trí tuệ nhân tạo trước khi đưa vào sử dụng hoặc khi có thay đổi đáng kể trong quá trình sử dụng, và nếu có tiêu chuẩn, quy chuẩn kỹ thuật thì còn phải thực hiện đánh giá sự phù hợp theo quy định pháp luật về tiêu chuẩn, quy chuẩn kỹ thuật [E5].",
+    "used_evidence_ids": [
+      "E1",
+      "E3",
+      "E2",
+      "E4",
+      "E5"
+    ],
+    "insufficient_evidence": false,
+    "missing_information": []
+  },
+  "citation_validation": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E1",
+      "E3",
+      "E2",
+      "E4",
+      "E5"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "duplicate_citations": [],
+    "errors": []
+  },
+  "timestamp": "2026-08-24T08:38:22.282894+00:00"
+}

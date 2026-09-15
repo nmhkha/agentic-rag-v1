@@ -1,0 +1,34 @@
+{
+  "validation_status": "passed",
+  "error_count": 0,
+  "warning_count": 4,
+  "document_count": 3,
+  "article_count": 86,
+  "chunk_count": 737,
+  "corpus_versions": [
+    "corpus-v0.1"
+  ],
+  "documents": [
+    {
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "verification_status": "verified",
+      "official_pdf_hash": "sha256:53be2f9993e5060cc0ce723fc506d6535c9358978dbbeff11324c8d6236cae69",
+      "working_docx_hash": "sha256:fc6e87ba1b7eea3bd1cb37099e9f6d5f1e37fcd8970cca894e6e67865cdd20b7"
+    },
+    {
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "verification_status": "verified",
+      "official_pdf_hash": "sha256:988fa7091b9f70615b8ae984e7e43b15293eb31398a113c86cc34f26666d5e40",
+      "working_docx_hash": "sha256:3e63b0ea3860b9d16247f52d887dea50cd2f7d0aa4d27be66b1ff3222da276e4"
+    },
+    {
+      "document_id": "05-2026-TT-BKHCN",
+      "document_number": "05/2026/TT-BKHCN",
+      "verification_status": "verified",
+      "official_pdf_hash": "sha256:45616232b7023fef199cce2d52d5896d1db59b990a74fd40648b262d11490220",
+      "working_docx_hash": "sha256:e17a3067d886007f781ab026aeced743a81cb5188fea6b95a96c0e446a81bef1"
+    }
+  ]
+}

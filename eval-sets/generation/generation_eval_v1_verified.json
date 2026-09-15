@@ -1,0 +1,1204 @@
+{
+  "evaluation_version": "generation-eval-v1",
+  "dataset_status": "verified",
+  "source_retrieval_eval_sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+  "items": [
+    {
+      "query_id": "eval001",
+      "query": "Các mức phân loại rủi ro của hệ thống trí tuệ nhân tạo gồm những mức nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Rủi ro cao: có thể gây thiệt hại đáng kể đến các lợi ích được luật bảo vệ.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-9_khoan-1_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Rủi ro trung bình: có thể gây nhầm lẫn, tác động hoặc thao túng vì người sử dụng không nhận biết được AI hoặc nội dung AI.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-9_khoan-1_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Rủi ro thấp: không thuộc trường hợp rủi ro cao hoặc trung bình.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-9_khoan-1_diem-c"
+          ]
+        }
+      ],
+      "reference_answer": "Gồm rủi ro cao (có thể gây thiệt hại đáng kể), trung bình (có thể gây nhầm lẫn, tác động hoặc thao túng vì không nhận biết AI/nội dung AI), và thấp (không thuộc hai trường hợp trên).",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Ba chunks liệt kê trực tiếp từng mức.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval002",
+      "query": "Ai có thẩm quyền ban hành danh mục hệ thống trí tuệ nhân tạo có rủi ro cao?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Thủ tướng Chính phủ có thẩm quyền ban hành, sửa đổi, bổ sung Danh mục hệ thống AI có rủi ro cao.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-7_khoan-2_diem-d"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Bộ Khoa học và Công nghệ chủ trì phối hợp xây dựng và trình Danh mục trên cơ sở tiêu chí, nguyên tắc của Nghị định.",
+          "importance": "important",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-7_khoan-2_diem-d"
+          ]
+        }
+      ],
+      "reference_answer": "Thủ tướng Chính phủ là người có thẩm quyền ban hành, sửa đổi, bổ sung Danh mục hệ thống AI có rủi ro cao. Bộ Khoa học và Công nghệ chủ trì phối hợp xây dựng và trình Danh mục.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Giữ phân biệt chủ thể trình và ban hành.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval003",
+      "query": "Nhà cung cấp phải lập hồ sơ phân loại rủi ro vào thời điểm nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Trước khi đưa hệ thống rủi ro cao hoặc trung bình vào sử dụng.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-12_khoan-1"
+          ]
+        }
+      ],
+      "reference_answer": "Trước khi đưa hệ thống vào sử dụng, đối với hệ thống AI rủi ro cao và trung bình.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Nêu cả thời điểm và phạm vi.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval004",
+      "query": "Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Thiết lập và duy trì hệ thống quản lý rủi ro phù hợp với mục đích, phạm vi triển khai và mức độ rủi ro.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-15_khoan-1"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Xác định và đánh giá các rủi ro có thể phát sinh đối với quyền, an toàn, an ninh hoặc lợi ích công cộng.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-15_khoan-2_diem-a"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Bảo đảm chất lượng, tính phù hợp và tính đại diện của dữ liệu huấn luyện, kiểm thử và đánh giá trong phạm vi cần thiết.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-15_khoan-2_diem-b"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Thiết kế và duy trì cơ chế giám sát, can thiệp của con người phù hợp với mức độ rủi ro.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-15_khoan-2_diem-c"
+          ]
+        },
+        {
+          "point_id": "P5",
+          "description": "Áp dụng biện pháp kỹ thuật hoặc quản lý để phòng ngừa, hạn chế hoặc kiểm soát rủi ro đã xác định.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-15_khoan-2_diem-d"
+          ]
+        },
+        {
+          "point_id": "P6",
+          "description": "Rà soát và cập nhật biện pháp quản lý rủi ro khi mô hình, dữ liệu, phương thức vận hành hoặc mục đích sử dụng thay đổi đáng kể.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-15_khoan-2_diem-đ"
+          ]
+        }
+      ],
+      "reference_answer": "Phải duy trì hệ thống quản lý rủi ro phù hợp mục đích, phạm vi và mức rủi ro; nhận diện rủi ro, bảo đảm dữ liệu phù hợp trong phạm vi cần thiết, có giám sát/can thiệp con người và biện pháp kiểm soát. Rà soát, cập nhật khi mô hình, dữ liệu, vận hành hoặc mục đích thay đổi đáng kể.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Giữ điều kiện tương xứng và thay đổi đáng kể.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval005a",
+      "query": "Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Nhà cung cấp phải thiết lập, duy trì và rà soát biện pháp quản lý rủi ro khi có thay đổi đáng kể hoặc rủi ro mới.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-1_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Nhà cung cấp phải quản trị dữ liệu huấn luyện, kiểm thử và vận hành, bảo đảm chất lượng trong phạm vi khả năng kỹ thuật và phù hợp mục đích sử dụng.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-1_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Nhà cung cấp phải lập, cập nhật, lưu giữ hồ sơ kỹ thuật và nhật ký ở mức cần thiết; cung cấp thông tin cần thiết, tương xứng cho kiểm tra nhưng không làm lộ bí mật kinh doanh.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-1_diem-c"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Nhà cung cấp phải thiết kế hệ thống bảo đảm khả năng giám sát và can thiệp của con người.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-1_diem-d"
+          ]
+        },
+        {
+          "point_id": "P5",
+          "description": "Nhà cung cấp phải thực hiện nghĩa vụ minh bạch và xử lý sự cố.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-1_diem-đ"
+          ]
+        },
+        {
+          "point_id": "P6",
+          "description": "Nhà cung cấp phải giải trình và cung cấp thông tin cần thiết cho cơ quan, người sử dụng và người bị ảnh hưởng; việc cung cấp không được bộc lộ mã nguồn, thuật toán chi tiết, tham số, bí mật kinh doanh hoặc bí mật công nghệ.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-1_diem-e"
+          ]
+        },
+        {
+          "point_id": "P7",
+          "description": "Nhà cung cấp phải phối hợp với cơ quan nhà nước có thẩm quyền và bên triển khai trong kiểm tra, đánh giá, hậu kiểm và khắc phục sự cố.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-1_diem-g"
+          ]
+        }
+      ],
+      "reference_answer": "Phải quản lý rủi ro, quản trị dữ liệu trong khả năng kỹ thuật và đúng mục đích, lưu giữ hồ sơ/nhật ký cần thiết, bảo đảm giám sát con người, minh bạch, xử lý sự cố, giải trình và phối hợp kiểm tra, hậu kiểm, khắc phục. Cung cấp thông tin không được buộc lộ bí mật kinh doanh/công nghệ.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Bảo lưu giới hạn kỹ thuật, tính cần thiết và bí mật.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval005b",
+      "query": "Bên triển khai hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Bên triển khai phải vận hành và giám sát hệ thống đúng mục đích, phạm vi và mức rủi ro đã phân loại, không làm phát sinh rủi ro mới hoặc cao hơn.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-2_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Bên triển khai phải bảo đảm an toàn, bảo mật dữ liệu và khả năng can thiệp của con người trong quá trình sử dụng.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-2_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Bên triển khai phải duy trì tuân thủ tiêu chuẩn, quy chuẩn kỹ thuật về AI trong quá trình vận hành.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-2_diem-c"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Bên triển khai phải thực hiện nghĩa vụ minh bạch và xử lý sự cố.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-2_diem-d"
+          ]
+        },
+        {
+          "point_id": "P5",
+          "description": "Bên triển khai phải giải trình và cung cấp thông tin cần thiết cho cơ quan, người sử dụng và người bị ảnh hưởng về việc vận hành, kiểm soát rủi ro và sự cố.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-2_diem-đ"
+          ]
+        },
+        {
+          "point_id": "P6",
+          "description": "Bên triển khai phải phối hợp với nhà cung cấp và cơ quan nhà nước có thẩm quyền trong kiểm tra, đánh giá, hậu kiểm và khắc phục sự cố.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-14_khoan-2_diem-e"
+          ]
+        }
+      ],
+      "reference_answer": "Phải vận hành, giám sát đúng mục đích, phạm vi và mức rủi ro đã phân loại, không phát sinh rủi ro mới/cao hơn; bảo đảm an toàn, bảo mật dữ liệu, can thiệp con người; tuân thủ chuẩn, minh bạch, xử lý sự cố, giải trình và phối hợp kiểm tra, hậu kiểm, khắc phục.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Giữ điều kiện không phát sinh rủi ro mới hoặc cao hơn.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval006",
+      "query": "Trách nhiệm minh bạch của nhà cung cấp hệ thống trí tuệ nhân tạo bao gồm những gì?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Bảo đảm người sử dụng biết mình đang tương tác với AI, trừ trường hợp pháp luật có quy định khác.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-11_khoan-1"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Đánh dấu âm thanh, hình ảnh và video do AI tạo ra ở định dạng máy đọc theo quy định.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-11_khoan-2"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Nhà cung cấp và bên triển khai phải duy trì thông tin minh bạch trong suốt quá trình cung cấp hệ thống, sản phẩm hoặc nội dung.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-11_khoan-5"
+          ]
+        }
+      ],
+      "reference_answer": "Phải bảo đảm người dùng biết đang tương tác với AI, trừ trường hợp pháp luật quy định khác; đánh dấu âm thanh, hình ảnh, video AI tạo ra ở định dạng máy đọc; và duy trì thông tin minh bạch suốt quá trình cung cấp.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Giữ ngoại lệ và phạm vi loại nội dung.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval007",
+      "query": "Nội dung do AI tạo ra phải được thông báo hoặc gắn nhãn như thế nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Thông báo hoặc nhãn phải rõ ràng, dễ hiểu và dễ nhận biết đối với người tiếp nhận.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-18_khoan-3_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Thông báo hoặc nhãn phải được thực hiện trước hoặc tại thời điểm người tiếp nhận tiếp cận nội dung.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-18_khoan-3_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Thông báo hoặc nhãn không được che giấu hoặc làm giảm khả năng nhận biết bản chất nội dung.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-18_khoan-3_diem-c"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Thông báo hoặc nhãn phải phù hợp với loại hình và phương thức cung cấp nội dung.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-18_khoan-3_diem-d"
+          ]
+        },
+        {
+          "point_id": "P5",
+          "description": "Thông báo hoặc nhãn không được gây cản trở đáng kể việc hiển thị, trình diễn hoặc sử dụng nội dung.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-18_khoan-3_diem-đ"
+          ]
+        },
+        {
+          "point_id": "P6",
+          "description": "Có thể hiển thị trực tiếp trên nội dung, tại tiêu đề/mô tả/chú thích, trên giao diện nền tảng, hoặc thông báo bằng âm thanh hay hình thức phù hợp khác.",
+          "importance": "important",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-18_khoan-5_diem-a",
+            "142-2026-ND-CP_dieu-18_khoan-5_diem-b",
+            "142-2026-ND-CP_dieu-18_khoan-5_diem-c",
+            "142-2026-ND-CP_dieu-18_khoan-5_diem-d"
+          ]
+        }
+      ],
+      "reference_answer": "Nhãn phải rõ ràng, dễ hiểu, dễ nhận biết, xuất hiện trước hoặc khi tiếp cận nội dung, không che giấu bản chất, phù hợp loại hình/cách cung cấp và không cản trở đáng kể việc sử dụng. Có thể hiển thị trực tiếp, ở tiêu đề/mô tả/chú thích, trên giao diện nền tảng hoặc bằng âm thanh/hình thức phù hợp khác.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Tách yêu cầu bắt buộc và các cách thể hiện.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval008",
+      "query": "Trường hợp nào nội dung do AI tạo ra cần giúp người tiếp nhận nhận biết rõ nguồn gốc?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Bên triển khai phải thông báo rõ ràng khi đưa ra công cộng nội dung AI tạo hoặc chỉnh sửa có khả năng gây nhầm lẫn về tính xác thực của sự kiện, nhân vật hoặc nguồn gốc.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-18_khoan-1"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Phạm vi đáng chú ý gồm nội dung mô phỏng/giả lập ngoại hình, giọng nói người thật hoặc tái hiện sự kiện thực tế; trường hợp tái hiện sự kiện có ngoại lệ khi pháp luật quy định khác.",
+          "importance": "important",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-18_khoan-2_diem-a",
+            "142-2026-ND-CP_dieu-18_khoan-2_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Đối với điện ảnh, chương trình nghệ thuật hoặc nội dung sáng tạo, bên triển khai trực tiếp đưa nội dung ra công cộng thực hiện thông báo/gắn nhãn theo đặc thù nhưng vẫn phải bảo đảm người tiếp nhận nhận biết rõ nguồn gốc AI.",
+          "importance": "important",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-18_khoan-6"
+          ]
+        }
+      ],
+      "reference_answer": "Phải thông báo rõ khi đưa ra công cộng nội dung AI tạo/sửa có thể gây nhầm lẫn về tính xác thực của sự kiện, nhân vật hoặc nguồn gốc, như mô phỏng người thật hoặc tái hiện sự kiện thực tế (trừ trường hợp pháp luật quy định khác). Với nội dung sáng tạo, bên đưa ra công cộng thực hiện theo đặc thù để người nhận biết rõ nguồn gốc.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Giữ điều kiện nhầm lẫn, ngoại lệ và chủ thể riêng.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval009",
+      "query": "Hệ thống AI tương tác trực tiếp với con người phải được thiết kế theo yêu cầu gì?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Người dùng nhận biết tương tác AI, trừ trường hợp pháp luật quy định khác.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-11_khoan-1"
+          ]
+        }
+      ],
+      "reference_answer": "Phải được thiết kế và vận hành để người dùng nhận biết đang tương tác với AI, trừ trường hợp pháp luật quy định khác.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Quy định trực tiếp kèm ngoại lệ.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval010",
+      "query": "Nhà cung cấp cần làm gì khi phát hiện sự cố liên quan đến hệ thống trí tuệ nhân tạo?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Khẩn trương áp dụng biện pháp kỹ thuật để khắc phục, tạm dừng hoặc thu hồi hệ thống.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-12_khoan-2_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Đồng thời thông báo sự cố cho cơ quan có thẩm quyền.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-12_khoan-2_diem-a"
+          ]
+        }
+      ],
+      "reference_answer": "Khẩn trương áp dụng biện pháp kỹ thuật để khắc phục, tạm dừng hoặc thu hồi hệ thống, đồng thời thông báo cơ quan có thẩm quyền.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Nêu đủ biện pháp và thông báo.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval011",
+      "query": "Cơ chế thử nghiệm có kiểm soát cho phép tổ chức, cá nhân được hưởng những cơ chế gì trong phạm vi thử nghiệm?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Có thể được công nhận kết quả đánh giá sự phù hợp trong phạm vi thử nghiệm.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-21_khoan-2_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Có thể được miễn, giảm hoặc điều chỉnh nghĩa vụ tuân thủ tương ứng trong phạm vi thử nghiệm.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-21_khoan-2_diem-b"
+          ]
+        }
+      ],
+      "reference_answer": "Có thể được công nhận kết quả đánh giá sự phù hợp và miễn, giảm hoặc điều chỉnh nghĩa vụ tuân thủ tương ứng.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Hai cơ chế liệt kê trực tiếp.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval012",
+      "query": "Cơ quan nào quyết định chấp thuận tham gia cơ chế thử nghiệm có kiểm soát?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Ủy ban nhân dân cấp tỉnh quyết định đối với hệ thống cấp độ 1 hoặc 2 triển khai trong phạm vi một tỉnh.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-23_khoan-3_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Bộ hoặc cơ quan ngang bộ quyết định đối với hệ thống cấp độ 1 hoặc 2 thuộc phạm vi quản lý nhà nước và triển khai từ hai tỉnh trở lên, hoặc do đơn vị thuộc phạm vi quản lý trực tiếp triển khai.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-23_khoan-3_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Bộ Công an quyết định đối với hệ thống AI cấp độ 3.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-23_khoan-3_diem-c"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Nếu hệ thống thuộc phạm vi quản lý của nhiều bộ, bộ quản lý ngành/lĩnh vực có phạm vi quản lý trực tiếp đối với hoạt động sử dụng chính có thẩm quyền.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-23_khoan-3_diem-c"
+          ]
+        }
+      ],
+      "reference_answer": "UBND cấp tỉnh xử lý cấp 1/2 trong một tỉnh; bộ/cơ quan ngang bộ xử lý cấp 1/2 thuộc phạm vi quản lý trong trường hợp liên tỉnh hoặc đơn vị trực thuộc; Bộ Công an xử lý cấp 3. Nếu nhiều bộ cùng quản lý, bộ quản lý trực tiếp hoạt động sử dụng chính có thẩm quyền.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Phụ thuộc cấp độ, địa bàn, phạm vi; đã giữ quy tắc đa bộ.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval013",
+      "query": "Việc phân loại cấp độ thử nghiệm có kiểm soát dựa trên những tiêu chí nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Mức độ rủi ro của hệ thống AI.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-22_khoan-1_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Tính chất của dữ liệu được sử dụng.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-22_khoan-1_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Phạm vi và quy mô triển khai thử nghiệm.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-22_khoan-1_diem-c"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Mức độ tác động đối với an ninh, trật tự, an toàn xã hội và quyền, lợi ích hợp pháp.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-22_khoan-1_diem-d"
+          ]
+        },
+        {
+          "point_id": "P5",
+          "description": "Nếu đáp ứng nhiều cấp độ thì phân loại theo cấp cao nhất, xét chức năng, mục đích sử dụng và tác động tổng thể, kể cả hệ thống nhiều thành phần.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-22_khoan-2"
+          ]
+        }
+      ],
+      "reference_answer": "Dựa trên mức rủi ro, tính chất dữ liệu, phạm vi/quy mô thử nghiệm và mức tác động. Nếu đáp ứng nhiều cấp độ thì xếp cấp cao nhất, xét chức năng, mục đích sử dụng và tác động tổng thể, kể cả hệ thống nhiều thành phần.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Bốn tiêu chí và quy tắc đa cấp độ.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval014",
+      "query": "Hồ sơ thông thường để tham gia cơ chế thử nghiệm có kiểm soát gồm những thành phần nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Đơn đề nghị tham gia cơ chế thử nghiệm theo mẫu tương ứng với tổ chức hoặc cá nhân.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-24_khoan-2_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Đề án thử nghiệm mô tả hệ thống, mục tiêu, phạm vi, thời gian và phương án quản lý rủi ro.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-24_khoan-2_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Tài liệu mô tả biện pháp bảo vệ quyền và lợi ích hợp pháp của tổ chức, cá nhân chịu tác động.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-24_khoan-2_diem-c"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Tài liệu mô tả năng lực kỹ thuật, nhân sự hoặc hạ tầng liên quan trực tiếp đến phạm vi thử nghiệm.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-24_khoan-2_diem-d"
+          ]
+        }
+      ],
+      "reference_answer": "Gồm đơn đề nghị theo mẫu; đề án nêu hệ thống, mục tiêu, phạm vi, thời gian, quản lý rủi ro; tài liệu bảo vệ quyền/lợi ích người chịu tác động; và tài liệu về năng lực kỹ thuật, nhân sự hoặc hạ tầng liên quan trực tiếp.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Đủ bốn thành phần gold.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval015",
+      "query": "Khi nào cơ quan có thẩm quyền có thể tạm dừng hoặc chấm dứt thử nghiệm?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Có rủi ro ảnh hưởng đến an toàn, an ninh hoặc quyền, lợi ích hợp pháp của tổ chức, cá nhân.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-21_khoan-3"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Tổ chức, cá nhân vi phạm giới hạn thử nghiệm hoặc không khắc phục sự cố theo yêu cầu của cơ quan có thẩm quyền.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-25_khoan-1_diem-c"
+          ]
+        }
+      ],
+      "reference_answer": "Khi có rủi ro ảnh hưởng an toàn, an ninh hoặc quyền, lợi ích hợp pháp; hoặc tổ chức/cá nhân vi phạm giới hạn thử nghiệm hay không khắc phục sự cố theo yêu cầu.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Hai nhóm căn cứ từ hai gold chunks.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval016",
+      "query": "Tổ chức hoặc cá nhân phải báo cáo gì trong quá trình thử nghiệm có kiểm soát?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Thử nghiệm cấp độ 1 hoặc 2 phải báo cáo định kỳ 06 tháng một lần.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-25_khoan-2_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Thử nghiệm cấp độ 3 phải báo cáo định kỳ 03 tháng một lần.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-25_khoan-2_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Phải báo cáo khi hệ thống xảy ra sự cố nghiêm trọng hoặc vượt giới hạn thử nghiệm đã xác định.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-25_khoan-3_diem-a",
+            "142-2026-ND-CP_dieu-25_khoan-3_diem-b"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Phải nộp báo cáo tổng kết chậm nhất 15 ngày trước khi kết thúc thời hạn thử nghiệm.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-25_khoan-4"
+          ]
+        }
+      ],
+      "reference_answer": "Báo cáo định kỳ: cấp 1/2 mỗi 6 tháng, cấp 3 mỗi 3 tháng; báo cáo sự cố nghiêm trọng hoặc vượt giới hạn; và nộp báo cáo tổng kết chậm nhất 15 ngày trước khi hết hạn.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Giữ phân loại báo cáo và mốc hạn.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval017",
+      "query": "Có thể gia hạn thời gian thử nghiệm có kiểm soát hay không và thủ tục thế nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Được đề nghị gia hạn bằng đơn gia hạn và báo cáo tổng kết nộp chậm nhất 15 ngày làm việc trước khi hết hạn.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-27_khoan-1"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Cơ quan có thẩm quyền thẩm định, quyết định và cấp gia hạn trong 10 ngày làm việc.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-27_khoan-1"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Nếu không chấp thuận hoặc không gia hạn thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-27_khoan-1"
+          ]
+        }
+      ],
+      "reference_answer": "Có. Nộp đơn gia hạn và báo cáo tổng kết chậm nhất 15 ngày làm việc trước khi hết hạn. Trong 10 ngày làm việc, cơ quan có thẩm quyền thẩm định, quyết định và cấp gia hạn; nếu không chấp thuận phải trả lời bằng văn bản, nêu rõ lý do.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Một chunk hỗ trợ toàn bộ thủ tục.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval018",
+      "query": "Sau khi kết thúc thử nghiệm, cơ quan có thẩm quyền xử lý kết quả như thế nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Trong 15 ngày làm việc từ khi nhận báo cáo tổng kết, cơ quan có thẩm quyền đánh giá và cấp giấy xác nhận hoàn thành.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-27_khoan-1"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Nếu từ chối cấp giấy xác nhận hoàn thành thì phải nêu rõ lý do.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-27_khoan-1"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Có thể công nhận toàn bộ hoặc một phần kết quả thử nghiệm để đánh giá sự phù hợp.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-27_khoan-2_diem-a"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Có thể miễn, giảm hoặc điều chỉnh nghĩa vụ tuân thủ trên cơ sở kết quả được công nhận.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-27_khoan-2_diem-b"
+          ]
+        }
+      ],
+      "reference_answer": "Trong 15 ngày làm việc từ khi nhận báo cáo tổng kết, cơ quan đánh giá và cấp giấy xác nhận hoàn thành; từ chối phải nêu lý do. Có thể công nhận toàn bộ/một phần kết quả để đánh giá sự phù hợp và miễn, giảm hoặc điều chỉnh nghĩa vụ.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Phân biệt thủ tục và tác dụng kết quả.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval019",
+      "query": "Cơ sở dữ liệu quốc gia phục vụ trí tuệ nhân tạo được tổ chức theo những nguyên tắc nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Cơ sở dữ liệu quốc gia về AI được tổ chức theo nguyên tắc mở.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-17_khoan-2"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Cơ sở dữ liệu quốc gia về AI được tổ chức theo nguyên tắc an toàn.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-17_khoan-2"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Cơ sở dữ liệu quốc gia về AI được tổ chức theo nguyên tắc có kiểm soát.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-17_khoan-2"
+          ]
+        }
+      ],
+      "reference_answer": "Cơ sở dữ liệu quốc gia về AI được tổ chức theo các nguyên tắc mở, an toàn và có kiểm soát.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Một chunk trực tiếp quy định nguyên tắc.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval020",
+      "query": "Dữ liệu mở có điều kiện được hiểu là gì?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Được truy cập/sử dụng khi đáp ứng điều kiện đăng ký, mục đích sử dụng và bảo mật.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-3_khoan-7"
+          ]
+        }
+      ],
+      "reference_answer": "Là dữ liệu được phép truy cập, sử dụng khi đáp ứng điều kiện về đăng ký, mục đích sử dụng và yêu cầu bảo mật theo pháp luật.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Định nghĩa trực tiếp.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval021",
+      "query": "Những loại dữ liệu nào có thể được đưa vào cơ sở dữ liệu phục vụ trí tuệ nhân tạo?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Dữ liệu mở có thể được đưa vào cơ sở dữ liệu phục vụ AI.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-32_khoan-1_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Dữ liệu mở có điều kiện có thể được đưa vào cơ sở dữ liệu phục vụ AI.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-32_khoan-1_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Dữ liệu thương mại của tổ chức, doanh nghiệp theo pháp luật có thể được đưa vào cơ sở dữ liệu phục vụ AI.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-32_khoan-1_diem-c"
+          ]
+        }
+      ],
+      "reference_answer": "Dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại của tổ chức, doanh nghiệp theo quy định pháp luật.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Ba loại được liệt kê trực tiếp.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval022",
+      "query": "Cơ quan quản lý có trách nhiệm gì đối với việc xây dựng và cập nhật dữ liệu mở phục vụ AI?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Trong phạm vi quản lý, cơ quan có trách nhiệm xây dựng và cập nhật dữ liệu mở phục vụ AI.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Cơ quan phải tổ chức thu thập, tạo lập, cập nhật, bảo đảm chất lượng, gán nhãn, chú thích và chuẩn hóa các bộ dữ liệu thiết yếu phục vụ phát triển AI.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-32_khoan-5_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Cơ quan phải thực hiện kết nối thống nhất, chia sẻ và khai thác Cơ sở dữ liệu quốc gia về AI theo pháp luật.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-32_khoan-5_diem-c"
+          ]
+        }
+      ],
+      "reference_answer": "Đối với dữ liệu mở phục vụ AI, cơ quan quản lý phải xây dựng, cập nhật dữ liệu trong phạm vi quản lý; tổ chức thu thập, tạo lập, cập nhật, bảo đảm chất lượng, gán nhãn, chú thích và chuẩn hóa các bộ dữ liệu thiết yếu; đồng thời kết nối thống nhất, chia sẻ và khai thác Cơ sở dữ liệu quốc gia về AI theo pháp luật.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Gold nêu ba loại dữ liệu dù câu hỏi tập trung dữ liệu mở.",
+      "annotation_confidence": "medium",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval023",
+      "query": "Quy định về bảo đảm khả năng kết nối và khai thác dữ liệu phục vụ trí tuệ nhân tạo là gì?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Cơ sở dữ liệu quốc gia về AI phải bảo đảm chất lượng, khả năng kết nối và khai thác.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-17_khoan-2"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Cơ sở dữ liệu của các bộ, cơ quan và địa phương phải được xây dựng, cập nhật, kết nối thống nhất với cơ sở dữ liệu quốc gia, bảo đảm tiêu chuẩn, chất lượng dữ liệu và an toàn thông tin.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-17_khoan-3"
+          ]
+        }
+      ],
+      "reference_answer": "CSDL quốc gia phải đáp ứng chất lượng, kết nối và khai thác. CSDL của các cơ quan phải được xây dựng, cập nhật, kết nối thống nhất với CSDL quốc gia, bảo đảm tiêu chuẩn, chất lượng dữ liệu và an toàn thông tin.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Hai tầng quy định được gold chunks hỗ trợ.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval024",
+      "query": "Những hành vi nào liên quan đến AI bị nghiêm cấm khi lợi dụng nhóm người dễ bị tổn thương?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Lợi dụng điểm yếu nhóm dễ bị tổn thương để gây tổn hại cho họ hoặc người khác.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-7_khoan-2_diem-c"
+          ]
+        }
+      ],
+      "reference_answer": "Nghiêm cấm lợi dụng điểm yếu của nhóm dễ bị tổn thương, gồm các nhóm được điều khoản liệt kê, để gây tổn hại cho chính họ hoặc người khác.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Giữ yếu tố lợi dụng và mục đích gây tổn hại.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval025",
+      "query": "Khi ứng dụng AI trong quản lý nhà nước, cơ quan vận hành phải đánh giá tác động trong trường hợp nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Phải đánh giá tác động khi hệ thống thuộc nhóm AI có rủi ro cao.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-20_khoan-1_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Phải đánh giá tác động khi hệ thống thuộc các trường hợp sử dụng tại khoản 7 Điều 20 và kết quả được dùng làm căn cứ trực tiếp để người có thẩm quyền ban hành quyết định hành chính.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-20_khoan-1_diem-b",
+            "142-2026-ND-CP_dieu-20_khoan-7_diem-a",
+            "142-2026-ND-CP_dieu-20_khoan-7_diem-b",
+            "142-2026-ND-CP_dieu-20_khoan-7_diem-c",
+            "142-2026-ND-CP_dieu-20_khoan-7_diem-d"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Phải đánh giá tác động bổ sung trước khi tiếp tục sử dụng nếu thay đổi về mục đích, chức năng, dữ liệu đầu vào hoặc phạm vi áp dụng làm phát sinh rủi ro mới hoặc thay đổi mức độ rủi ro.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-20_khoan-2"
+          ]
+        }
+      ],
+      "reference_answer": "Phải đánh giá tác động khi hệ thống AI có rủi ro cao hoặc thuộc trường hợp sử dụng tại khoản 7 Điều 20 mà kết quả là căn cứ trực tiếp để ban hành quyết định hành chính. Phải đánh giá bổ sung trước khi tiếp tục sử dụng nếu thay đổi về mục đích, chức năng, dữ liệu đầu vào hoặc phạm vi áp dụng làm phát sinh rủi ro mới hoặc thay đổi mức độ rủi ro.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Giữ quan hệ dẫn chiếu và điều kiện “căn cứ trực tiếp”.",
+      "annotation_confidence": "medium",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval026",
+      "query": "Báo cáo đánh giá tác động khi sử dụng AI trong khu vực công cần đề cập những nội dung gì?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Báo cáo phải mô tả hệ thống và mục đích sử dụng.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-20_khoan-3_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Báo cáo phải nhận diện và đánh giá rủi ro.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-20_khoan-3_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Báo cáo phải nêu biện pháp kiểm soát và giảm thiểu rủi ro.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-20_khoan-3_diem-c"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Báo cáo phải nêu cơ chế giám sát và can thiệp của con người khi vận hành.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "142-2026-ND-CP_dieu-20_khoan-3_diem-d"
+          ]
+        }
+      ],
+      "reference_answer": "Nêu mô tả hệ thống, mục đích sử dụng; nhận diện, đánh giá rủi ro; biện pháp kiểm soát, giảm thiểu; và cơ chế giám sát, can thiệp của con người khi vận hành.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Bốn nội dung gold.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval027",
+      "query": "Nguyên tắc đạo đức khi phát triển và sử dụng trí tuệ nhân tạo được đặt ra như thế nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Bảo đảm an toàn, độ tin cậy và không gây hại cho con người.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-26_khoan-1_diem-a"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Tôn trọng quyền con người, quyền công dân, bảo đảm công bằng, minh bạch và không phân biệt đối xử.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-26_khoan-1_diem-b"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Thúc đẩy hạnh phúc, thịnh vượng và phát triển bền vững của con người, cộng đồng và xã hội.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-26_khoan-1_diem-c"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Khuyến khích đổi mới sáng tạo và trách nhiệm xã hội trong nghiên cứu, phát triển và ứng dụng AI.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-26_khoan-1_diem-d"
+          ]
+        }
+      ],
+      "reference_answer": "Bảo đảm an toàn, độ tin cậy, không gây hại; tôn trọng quyền con người/công dân, công bằng, minh bạch, không phân biệt đối xử; thúc đẩy hạnh phúc, thịnh vượng, phát triển bền vững, đổi mới sáng tạo và trách nhiệm xã hội.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Bốn nguyên tắc gold được gộp thành target ngắn.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval028",
+      "query": "Tổ chức phát triển hoặc triển khai AI cần bảo đảm trách nhiệm giải trình ra sao?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Tổ chức, cá nhân phải xác định rõ các tác động mà hệ thống có thể gây ra.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Phải chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện và kiểm thử.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Phải phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Phải phân định trách nhiệm của các chủ thể trong vòng đời hệ thống và bảo đảm đầu mối tiếp nhận, xử lý khiếu nại, khắc phục hậu quả.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b"
+          ]
+        }
+      ],
+      "reference_answer": "Phải xác định tác động, chuẩn bị tài liệu giải thích và bằng chứng về thiết kế, huấn luyện, kiểm thử; phân định chủ thể giải trình các quyết định AI và trách nhiệm trong vòng đời; có đầu mối tiếp nhận, xử lý khiếu nại, khắc phục hậu quả.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Hai khía cạnh giải trình được gold hỗ trợ.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval029",
+      "query": "Theo Khung đạo đức trí tuệ nhân tạo quốc gia, khi hệ thống AI có thể ảnh hưởng đáng kể đến quyền con người thì cần áp dụng những biện pháp kiểm soát nào?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "Xây dựng cơ chế giám sát và can thiệp của con người phù hợp với mức độ ảnh hưởng, đồng thời duy trì kiểm soát và khả năng can thiệp đối với mọi quyết định, hành vi của AI.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Áp dụng biện pháp rà soát phù hợp để bảo đảm hệ thống không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, quyền tiếp cận thông tin, bình đẳng và các quyền hợp pháp khác.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-a"
+          ]
+        }
+      ],
+      "reference_answer": "Xây dựng giám sát và can thiệp con người phù hợp mức ảnh hưởng, duy trì kiểm soát với mọi quyết định/hành vi AI; đồng thời rà soát để không xâm phạm quyền riêng tư, dữ liệu cá nhân, tự do ý chí, tiếp cận thông tin, bình đẳng và quyền hợp pháp khác.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Hai lớp kiểm soát trong gold chunks.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    },
+    {
+      "query_id": "eval030",
+      "query": "Những yêu cầu nào giúp bảo đảm con người vẫn có khả năng giám sát và can thiệp vào hệ thống AI?",
+      "split": "eval",
+      "answerability": "answerable",
+      "required_points": [
+        {
+          "point_id": "P1",
+          "description": "AI phục vụ con người và không thay thế thẩm quyền, trách nhiệm của con người.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-4_khoan-2"
+          ]
+        },
+        {
+          "point_id": "P2",
+          "description": "Duy trì sự kiểm soát và khả năng can thiệp của con người đối với mọi quyết định và hành vi của AI.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-4_khoan-2"
+          ]
+        },
+        {
+          "point_id": "P3",
+          "description": "Bảo đảm an toàn hệ thống, an ninh dữ liệu và bảo mật thông tin.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-4_khoan-2"
+          ]
+        },
+        {
+          "point_id": "P4",
+          "description": "Bảo đảm khả năng kiểm tra và giám sát quá trình phát triển, vận hành hệ thống.",
+          "importance": "required",
+          "supporting_chunk_ids": [
+            "134-2025-QH15_dieu-4_khoan-2"
+          ]
+        }
+      ],
+      "reference_answer": "AI phục vụ con người, không thay thế thẩm quyền và trách nhiệm con người; phải duy trì kiểm soát và khả năng can thiệp với mọi quyết định, hành vi AI, cùng an toàn hệ thống, an ninh dữ liệu, bảo mật và khả năng kiểm tra, giám sát quá trình phát triển/vận hành.",
+      "annotation_notes": "Generation Annotation Audit v1 applied; annotation remains draft. Một chunk trực tiếp hỗ trợ toàn bộ yêu cầu.",
+      "annotation_confidence": "high",
+      "annotation_status": "verified"
+    }
+  ]
+}

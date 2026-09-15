@@ -1,0 +1,13 @@
+{
+  "evaluation_version": "generation-eval-v0",
+  "dataset_status": "template",
+  "dataset_sha256": "56985f4b90ff2c5ff82acb0ce7c196b716f9df955c6694fe9194863af085cf06",
+  "source_retrieval_eval": "data/evaluation/retrieval_eval.jsonl",
+  "source_retrieval_eval_sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+  "corpus_chunks": "data/versions/corpus-v0.1/chunks.jsonl",
+  "corpus_chunks_sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+  "query_count": 31,
+  "required_point_count": 0,
+  "answerability_counts": {"answerable": 31, "insufficient_evidence": 0},
+  "note": "Template only; required points and reference answers require human legal review before use as ground truth."
+}

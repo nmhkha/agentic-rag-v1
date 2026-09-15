@@ -1,0 +1,4 @@
+﻿document_id,document_number,article_count,expected_article_count,chunk_count,verification_status,official_source_url,status
+134-2025-QH15,134/2025/QH15,35,35,206,verified,https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160,success
+142-2026-ND-CP,142/2026/NĐ-CP,46,46,503,verified,https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160,success
+05-2026-TT-BKHCN,05/2026/TT-BKHCN,5,5,28,verified,https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6,success

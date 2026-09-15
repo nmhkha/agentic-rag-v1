@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "preexisting_regular_files": 26939,
+  "preexisting_symlinks": 4,
+  "all_preexisting_files_byte_identical": true,
+  "preexisting_modes_and_symlink_targets_unchanged": true,
+  "before_inventory_sha256": "6ea1cdaf47acce979802a5421a246ea76744b8d6d9b84867a9a98c2b6df3900f",
+  "after_preexisting_inventory_sha256": "6ea1cdaf47acce979802a5421a246ea76744b8d6d9b84867a9a98c2b6df3900f",
+  "baseline_file": "integrity_baseline_v0.json",
+  "baseline_sha256": "0340ca33b75b9b86afe937ba119fe29ca312259e454a9c9ff8e2d3995d77e691",
+  "changed_or_missing": [],
+  "new_paths_outside_namespace": [],
+  "additions_at_integrity_sweep": [
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/finalize_amendment_v0.py",
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/integrity_baseline_v0.json",
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_adjudicator_c_protocol_v0.md",
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_research_claim_boundaries_v0.md",
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_resource_constrained_amendment_v0.md",
+    "data/evaluation/generation/phase5/phase5c4_v0/pragmatic_amendment_v0/phase5c4_selection_rules_v0.json"
+  ],
+  "allowed_final_files": [
+    "phase5c4_resource_constrained_amendment_v0.md",
+    "phase5c4_research_claim_boundaries_v0.md",
+    "phase5c4_adjudicator_c_protocol_v0.md",
+    "phase5c4_selection_rules_v0.json",
+    "phase5c4_amendment_manifest_v0.json",
+    "phase5c4_amendment_validation_v0.json",
+    "integrity_before_after_v0.json",
+    "phase5c4_amendment_console_v0.txt",
+    "integrity_baseline_v0.json",
+    "finalize_amendment_v0.py",
+    "artifact_hashes_v0.json"
+  ],
+  "scope": "All preexisting project regular files hashed before and after; symlink targets/modes preserved; opaque binary hashing, not substantive system-output inspection. Remaining manifest/validation/console/hash files are additive in this namespace."
+}

@@ -1,0 +1,88 @@
+{
+  "created_at_utc": "2026-09-11T14:27:52.940434+00:00",
+  "reason": "Corpus hierarchy and AND-bundle necessity audit; not historical similarity or system outcomes.",
+  "original_pre_screen_lock_preserved": true,
+  "before_sha256": "612fa1513574628b628f9e688e931968a4cb849560f311d896c3c55296a4e59d",
+  "after_sha256": "53801d252828b69efd781a9091d0927120783627c32a98833666910085ace770",
+  "pre_correction_copy": "annotation_B_pre_anchor_correction_v1.jsonl",
+  "scope_propositions_answerability_dimension_values_changed": false,
+  "changes": [
+    {
+      "review_id_b": "rb_f864850e6a80362e03915df06d2dbfb6",
+      "aspect_id_b": "rb_f864850e6a80362e03915df06d2dbfb6:b_aspect_03",
+      "change": "Replace jointly unnecessary sibling-point bodies with one exact normative parent_context span.",
+      "old_chunk_ids": [
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-b",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-c",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-d",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-e",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-g",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-đ"
+      ],
+      "retained_anchor_chunk_id": "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+      "source_field": "parent_context"
+    },
+    {
+      "review_id_b": "rb_e0385abacbab8ba62565b3e7db5962ef",
+      "aspect_id_b": "rb_e0385abacbab8ba62565b3e7db5962ef:b_aspect_03",
+      "change": "Replace jointly unnecessary sibling-point bodies with one exact normative parent_context span.",
+      "old_chunk_ids": [
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-b",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-c",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-d",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-e",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-g",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-đ"
+      ],
+      "retained_anchor_chunk_id": "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+      "source_field": "parent_context"
+    },
+    {
+      "review_id_b": "rb_854d93c5fcd00b57d9b29a8bd52fea8c",
+      "aspect_id_b": "rb_854d93c5fcd00b57d9b29a8bd52fea8c:b_aspect_01",
+      "change": "Replace jointly unnecessary sibling-point bodies with one exact normative parent_context span.",
+      "old_chunk_ids": [
+        "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+        "142-2026-ND-CP_dieu-27_khoan-6_diem-b"
+      ],
+      "retained_anchor_chunk_id": "142-2026-ND-CP_dieu-27_khoan-6_diem-a",
+      "source_field": "parent_context"
+    },
+    {
+      "review_id_b": "rb_e23a2e20c7bcf86fe6257545462b439a",
+      "aspect_id_b": "rb_e23a2e20c7bcf86fe6257545462b439a:b_aspect_02",
+      "change": "Replace jointly unnecessary sibling-point bodies with one exact normative parent_context span.",
+      "old_chunk_ids": [
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-b",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-c",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-d",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-e",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-g",
+        "142-2026-ND-CP_dieu-13_khoan-6_diem-đ"
+      ],
+      "retained_anchor_chunk_id": "142-2026-ND-CP_dieu-13_khoan-6_diem-a",
+      "source_field": "parent_context"
+    },
+    {
+      "review_id_b": "rb_d282fd3bbc8852b89608868ee813f973",
+      "aspect_id_b": "rb_d282fd3bbc8852b89608868ee813f973:b_aspect_04",
+      "change": "Move redundant statutory restatement from required AND bundle to contextual evidence.",
+      "context_chunk_ids": [
+        "142-2026-ND-CP_dieu-39_khoan-5_diem-a",
+        "142-2026-ND-CP_dieu-39_khoan-5_diem-b"
+      ]
+    },
+    {
+      "review_id_b": "rb_1828c496a5ac13c10a580688b983b6dc",
+      "aspect_id_b": "rb_1828c496a5ac13c10a580688b983b6dc:b_aspect_03",
+      "change": "Move redundant statutory restatement from required AND bundle to contextual evidence.",
+      "context_chunk_ids": [
+        "134-2025-QH15_dieu-27_khoan-2"
+      ]
+    }
+  ],
+  "A_or_system_inputs_used": false
+}

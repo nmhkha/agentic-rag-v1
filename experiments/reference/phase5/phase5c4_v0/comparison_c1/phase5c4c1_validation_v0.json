@@ -1,0 +1,114 @@
+{
+  "phase": "5C.4-C1",
+  "phase_status": "PASS",
+  "role": "TRUSTED_DATASET_CUSTODIAN / COMPARISON_COORDINATOR",
+  "gates": [
+    {
+      "gate": "60_exact_canonical_mappings",
+      "status": "PASS"
+    },
+    {
+      "gate": "no_failed_B_comparison_input",
+      "status": "PASS"
+    },
+    {
+      "gate": "scope_compared",
+      "status": "PASS"
+    },
+    {
+      "gate": "aspects_semantically_mapped",
+      "status": "PASS"
+    },
+    {
+      "gate": "support_compared",
+      "status": "PASS"
+    },
+    {
+      "gate": "applicability_compared",
+      "status": "PASS"
+    },
+    {
+      "gate": "sufficiency_compared",
+      "status": "PASS"
+    },
+    {
+      "gate": "answerability_compared",
+      "status": "PASS"
+    },
+    {
+      "gate": "dimensions_compared",
+      "status": "PASS"
+    },
+    {
+      "gate": "admission_compared",
+      "status": "PASS"
+    },
+    {
+      "gate": "contamination_compared",
+      "status": "PASS"
+    },
+    {
+      "gate": "disagreements_retained_unresolved",
+      "status": "PASS"
+    },
+    {
+      "gate": "no_final_gold",
+      "status": "PASS"
+    },
+    {
+      "gate": "no_adjudication",
+      "status": "PASS"
+    },
+    {
+      "gate": "D6_untouched",
+      "status": "PASS"
+    },
+    {
+      "gate": "no_substantive_system_output_read",
+      "status": "PASS"
+    },
+    {
+      "gate": "no_API_network",
+      "status": "PASS"
+    },
+    {
+      "gate": "preexisting_integrity_PASS",
+      "status": "PASS"
+    }
+  ],
+  "records": {
+    "A": 60,
+    "B": 60,
+    "mapping": 60,
+    "unmapped": 0,
+    "duplicate_mapping": 0
+  },
+  "source_hash_bindings_verified": 127,
+  "semantic_review_scope": "Coordinator reading of paired bounded scopes, propositions and legal roles; ambiguous mappings explicit. No final legal correctness determined.",
+  "scope_equivalence_limit": "All components compared; text differences in asks/facts/exclusions are conservatively unresolved rather than auto-reconciled.",
+  "human_legal_review_complete": false,
+  "final_legal_adjudication_complete": false,
+  "final_gold_produced": false,
+  "D6": "EMPIRICAL_UNVERIFIED",
+  "storage_isolation": "NOT_YET_ENFORCED",
+  "dataset_frozen": false,
+  "network_api_calls": 0,
+  "production_evaluator_calls": 0,
+  "retrieval_reranking_inference": 0,
+  "system_outputs_substantively_inspected": 0,
+  "implementation": "NOT_STARTED",
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "preexisting_integrity": "PASS",
+  "ready_for_C2_legal_review_gate": true,
+  "ready_for_final_dataset_freeze": false,
+  "public_plaintext_scan": "PASS",
+  "public_safe_files": [
+    "phase5c4c1_comparison_report_v0.md",
+    "phase5c4c1_agreement_metrics_v0.json",
+    "phase5c4c1_disagreement_summary_v0.json",
+    "phase5c4c1_validation_v0.json",
+    "integrity_before_after_v0.json",
+    "phase5c4c1_console_v0.txt"
+  ],
+  "execution_basis": "Task-initiated local reads, comparisons, source-span normalization and binary hashes only; no production modules or external inference; no OS-wide network attestation."
+}

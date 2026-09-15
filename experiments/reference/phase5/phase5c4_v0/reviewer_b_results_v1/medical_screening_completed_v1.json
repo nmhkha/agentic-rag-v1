@@ -1,0 +1,125 @@
+{
+  "schema": "medical-contamination-screen-completion-v1",
+  "started_at_utc": "2026-09-12T08:57:58.763741+00:00",
+  "completed_at_utc": "2026-09-12T08:58:07.338043+00:00",
+  "status": "PASS",
+  "reviewer_role": "INDEPENDENT_ANNOTATOR_B",
+  "reviewer_type": "MODEL_BASED_INDEPENDENT_ANNOTATOR",
+  "independent_context": true,
+  "reference_file": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1/contamination_reference_medical_v1.json",
+  "reference_sha256": "3d1b8b0368fc0eebc1f8c08dd66daf123f0ceb94deaf40e6ed27f1c2fa4b9006",
+  "reference_visible_fields": [
+    "reference_id",
+    "query"
+  ],
+  "reference_count": 1,
+  "reference_schema_validation": "PASS",
+  "custodian_audit_PASS_basis": "Explicit user confirmation; no quarantined source or Custodian preparation/audit content opened.",
+  "substantive_annotations_sealed_before_medical_reference": true,
+  "pre_read_seal_audit": "medical_screen_pre_read_seal_audit_v1.json",
+  "annotation_B_sha256_before": "53801d252828b69efd781a9091d0927120783627c32a98833666910085ace770",
+  "annotation_B_sha256_after": "53801d252828b69efd781a9091d0927120783627c32a98833666910085ace770",
+  "original_substantive_lock_time": "2026-09-11T14:19:09.230630+00:00",
+  "substantive_annotations_modified": false,
+  "admission_recommendations_modified": false,
+  "historical_31_screening": {
+    "completed": 60,
+    "total": 60,
+    "previous_results_preserved": true
+  },
+  "candidate_internal_screening": {
+    "completed": 60,
+    "total": 60,
+    "previous_results_preserved": true
+  },
+  "medical_screening": {
+    "completed": 60,
+    "total": 60,
+    "exact_duplicates": 0,
+    "trivial_paraphrases": 0,
+    "strong_scenario_or_proposition_near_duplicates": 0,
+    "generic_template_overlap_count": 10
+  },
+  "full_contamination_screening": {
+    "completed": 60,
+    "total": 60,
+    "status": "COMPLETE"
+  },
+  "semantic_limit": "General AI planning wording alone is not a strong near-duplicate. No unstated medical risk class, duties or gold proposition bundle inferred.",
+  "semantic_results_file": "reviewer_b_medical_contamination_screen_v1.jsonl",
+  "annotation_A_read": false,
+  "A_substantive_metadata_seen": false,
+  "old_packet_read": false,
+  "system_outputs_read": false,
+  "network_api_calls": 0,
+  "production_evaluator_calls": 0,
+  "retrieval_reranking_inference": 0,
+  "D6": "EMPIRICAL_UNVERIFIED",
+  "A_B_comparison": false,
+  "adjudication": false,
+  "dataset_frozen": false,
+  "independent_human_legal_review_complete": false,
+  "holdout_storage_isolation": "NOT_YET_ENFORCED",
+  "prior_output_snapshots": {
+    "reviewer_b_contamination_flags_v1.jsonl": {
+      "backup": "pre_medical_reviewer_b_contamination_flags_v1.jsonl",
+      "sha256": "6e221d019f9c0951f69541d7bbbd73c2368e59da68da35440c9fef4162496c04",
+      "size_bytes": 68171
+    },
+    "phase5c4b_review_summary_v1.md": {
+      "backup": "pre_medical_phase5c4b_review_summary_v1.md",
+      "sha256": "f01612f21760d73cc14ae22438d1a0560e0e0304addfb0da5eef39f9b89fec01",
+      "size_bytes": 3542
+    },
+    "phase5c4b_agreement_ready_summary_v1.json": {
+      "backup": "pre_medical_phase5c4b_agreement_ready_summary_v1.json",
+      "sha256": "4b1bec807b450e936d7d686c19b0f6a5f7192de71907f5dca92ad0cfa0e97961",
+      "size_bytes": 2646
+    },
+    "phase5c4b_validation_v1.json": {
+      "backup": "pre_medical_phase5c4b_validation_v1.json",
+      "sha256": "01f3bbbee89cdd844310408000c125946a6ae3494a5a878e756c7546593cdb22",
+      "size_bytes": 3673
+    },
+    "phase5c4b_access_manifest_v1.json": {
+      "backup": "pre_medical_phase5c4b_access_manifest_v1.json",
+      "sha256": "e43be304fc9352d1269c0a724eeee0036d03632bdbd950411a8a52023af61113",
+      "size_bytes": 7161
+    },
+    "phase5c4b_console_v1.txt": {
+      "backup": "pre_medical_phase5c4b_console_v1.txt",
+      "sha256": "bcafda6f25c0346a15b70a6d849b4f87f16e81752cefa851b6fc2d93903ab828",
+      "size_bytes": 1226
+    },
+    "reviewer_b_manifest_v1.json": {
+      "backup": "pre_medical_reviewer_b_manifest_v1.json",
+      "sha256": "10eabb4bcad5a0d6dd00f10b114b12149df697480ce970bbca9653799b32cd03",
+      "size_bytes": 6560
+    },
+    "generated_artifact_hashes_v1.json": {
+      "backup": "pre_medical_generated_artifact_hashes_v1.json",
+      "sha256": "8f3f3a913c0f2bc7f5a7576b8740ed158644ba275da1d67d3122ea9d9cfdfec2",
+      "size_bytes": 6749
+    }
+  },
+  "integrity": "PASS",
+  "ready_for_phase5c4c_comparison": true,
+  "ready_for_final_dataset_freeze": false,
+  "read_audit": {
+    "new_substantive_input_only": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1/contamination_reference_medical_v1.json",
+    "candidate_text_source": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1/reviewer_b_queries_v1.jsonl",
+    "private_B_result_reads": [
+      "reviewer_b_contamination_flags_v1.jsonl",
+      "phase5c4b_review_summary_v1.md",
+      "phase5c4b_agreement_ready_summary_v1.json",
+      "phase5c4b_validation_v1.json",
+      "phase5c4b_access_manifest_v1.json",
+      "phase5c4b_console_v1.txt",
+      "reviewer_b_manifest_v1.json",
+      "medical_screen_pre_read_seal_audit_v1.json"
+    ],
+    "protected_B_annotations": "hash-only; no write",
+    "outside_namespace_hash_reads": "medical_screen_integrity_baseline_v1.json / files",
+    "new_input_path_discovery": "File paths/sizes only; no Custodian file content exposed."
+  }
+}

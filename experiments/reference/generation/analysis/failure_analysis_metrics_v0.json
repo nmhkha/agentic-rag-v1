@@ -1,0 +1,106 @@
+{
+  "analysis_version": "phase-4a-standard-rag-failure-analysis-v0",
+  "created_at": "2026-09-03T09:55:26.810829+00:00",
+  "read_only_analysis": true,
+  "inputs": {
+    "generation_ground_truth": "data/evaluation/generation/generation_eval_v1_verified.json",
+    "standard_rag_result": "data/evaluation/generation/standard_rag_eval_v0.jsonl",
+    "retrieval_benchmark": "data/evaluation/retrieval_eval.jsonl",
+    "corpus": "data/versions/corpus-v0.1/chunks.jsonl"
+  },
+  "input_hashes": {
+    "generation_verified_sha256": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+    "generation_verified_manifest_sha256": "693b2b3f0839bdefc380254de2640e47d9b5a81ff4c14f9acccbd5ee4c242fbe",
+    "standard_rag_result_sha256": "691f98cdffe29d6f4f2bfff8ad93c540447ee9cb4c78c3e48c003e2c2c4f487e",
+    "standard_rag_metrics_sha256": "720cc8acd5c05d819c3b5f74bd46db8a4217eb93eee8abf2ea50ba229748ffe9",
+    "standard_rag_manifest_sha256": "bb0a4c56873f118b47f29b0aead8d2c30fa2b0a14702707762fe4c63f6c3a3ae",
+    "retrieval_eval_sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+    "corpus_chunks_sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67"
+  },
+  "system": {
+    "llm_model": "gemini-3.5-flash-lite",
+    "retrieval": {
+      "pipeline": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "bm25_version": "BM25-simple-v0",
+      "bm25_depth": 20,
+      "dense_version": "dense-jina-v3-v0",
+      "dense_model": "jinaai/jina-embeddings-v3",
+      "dense_revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6",
+      "dense_depth": 20,
+      "candidate_construction": "BM25@20 union Dense@20, deduplicated by chunk_id",
+      "reranker_model": "BAAI/bge-reranker-v2-m3",
+      "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "top_k": 5,
+      "fusion": null
+    },
+    "prompt_version": "legal-rag-prompt-v0"
+  },
+  "partial_label_limit": "Phase 3 stored binary supported_point_ids; partial coverage is not separately identifiable.",
+  "aggregate": {
+    "query_count": 31,
+    "required_point_count": 102,
+    "answer_completeness_from_points": 0.5882352941176471,
+    "phase3_answer_completeness_macro": 0.6752688172043011,
+    "fully_supported_points": 60,
+    "partial_points": {
+      "count": 0,
+      "status": "not_separately_identifiable",
+      "reason": "Phase 3 result artifact stores binary supported_point_ids only; no partial labels were persisted. Unsupported points are conservatively recorded as missing."
+    },
+    "missing_points": 42,
+    "primary_failure_counts": {
+      "retrieval_miss": 16,
+      "evidence_coverage": 17,
+      "answer_generation": 9,
+      "citation": 4,
+      "none": 56
+    },
+    "primary_failure_percentages": {
+      "retrieval_miss": 0.1568627450980392,
+      "evidence_coverage": 0.16666666666666666,
+      "answer_generation": 0.08823529411764706,
+      "citation": 0.0392156862745098,
+      "none": 0.5490196078431373
+    },
+    "secondary_failure_counts": {
+      "answer_generation": 33
+    },
+    "citation_point_status_counts": {
+      "not_applicable": 42,
+      "correct": 56,
+      "incorrect": 4
+    },
+    "citation_syntax_valid_queries": 30,
+    "citation_syntax_invalid_query_ids": [
+      "eval012"
+    ],
+    "candidate_had_sufficient_evidence": 81,
+    "top5_retained_sufficient_evidence": 53,
+    "lost_during_reranking_top5": 28,
+    "generation_bottleneck_top5_sufficient_answer_incomplete": 9,
+    "query_level_taxonomy_counts": {
+      "F. Mixed failure": 5,
+      "D. Generation-limited": 2,
+      "A. Mostly successful": 13,
+      "B. Retrieval-limited": 4,
+      "C. Evidence-coverage-limited": 6,
+      "E. Citation-limited": 1
+    },
+    "reconstruction_mismatch_query_ids": [],
+    "retrieval_gold_coverage_is_not_answer_completeness": true
+  },
+  "worst_query_ids": [
+    "eval001",
+    "eval005a",
+    "eval005b",
+    "eval014",
+    "eval022"
+  ],
+  "best_query_ids": [
+    "eval003",
+    "eval006",
+    "eval009",
+    "eval010",
+    "eval012"
+  ]
+}

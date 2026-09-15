@@ -1,0 +1,180 @@
+{
+  "article_level": {
+    "bm25_any_gold_coverage": 0.967741935483871,
+    "bm25_full_gold_coverage": 0.967741935483871,
+    "dense_any_gold_coverage": 0.967741935483871,
+    "dense_full_gold_coverage": 0.967741935483871,
+    "union_any_gold_coverage": 0.967741935483871,
+    "union_full_gold_coverage": 0.967741935483871
+  },
+  "bm25_depth": 20,
+  "candidate_pool": {
+    "average_overlap_count": 9.612903225806452,
+    "average_overlap_ratio": 0.3297566497926886,
+    "average_size": 30.387096774193548,
+    "max_size": 38,
+    "min_size": 24,
+    "size_distribution": {
+      "24": 1,
+      "26": 4,
+      "28": 3,
+      "29": 4,
+      "30": 4,
+      "31": 3,
+      "32": 3,
+      "33": 6,
+      "34": 1,
+      "35": 1,
+      "38": 1
+    }
+  },
+  "chunk_level": {
+    "bm25_any_gold_coverage": 0.9354838709677419,
+    "bm25_full_gold_coverage": 0.6129032258064516,
+    "bm25_macro_candidate_recall": 0.7642089093701997,
+    "bm25_micro_candidate_recall": 0.7040816326530612,
+    "dense_any_gold_coverage": 0.9032258064516129,
+    "dense_full_gold_coverage": 0.4838709677419355,
+    "dense_macro_candidate_recall": 0.6800563236047107,
+    "dense_micro_candidate_recall": 0.5816326530612245,
+    "perfect_reranker_full_answer_candidate_coverage": 0.7096774193548387,
+    "perfect_reranker_hit_at_1_upper_bound": 0.967741935483871,
+    "union_any_gold_coverage": 0.967741935483871,
+    "union_full_gold_coverage": 0.7096774193548387,
+    "union_macro_candidate_recall": 0.8425499231950845,
+    "union_micro_candidate_recall": 0.7857142857142857
+  },
+  "dense_depth": 20,
+  "diagnostic_interpretation": "Candidate generation appears strong enough to justify testing a reranker. Candidate generation has very high any-gold coverage; ranking is likely the dominant bottleneck for most queries.",
+  "difficulty_breakdown": {
+    "easy": {
+      "average_candidate_pool_size": 30.9,
+      "macro_candidate_recall": 0.95,
+      "query_count": 10,
+      "union_any_gold_coverage": 1,
+      "union_full_gold_coverage": 0.9
+    },
+    "hard": {
+      "average_candidate_pool_size": 30.5,
+      "macro_candidate_recall": 0.8273809523809523,
+      "query_count": 8,
+      "union_any_gold_coverage": 1,
+      "union_full_gold_coverage": 0.75
+    },
+    "medium": {
+      "average_candidate_pool_size": 29.923076923076923,
+      "macro_candidate_recall": 0.7692307692307693,
+      "query_count": 13,
+      "union_any_gold_coverage": 0.9230769230769231,
+      "union_full_gold_coverage": 0.5384615384615384
+    }
+  },
+  "experiment": "candidate-union-v0",
+  "gold_source_attribution": {
+    "bm25_only_count": 20,
+    "bm25_only_ratio": 0.20408163265306123,
+    "both_count": 49,
+    "both_ratio": 0.5,
+    "dense_only_count": 8,
+    "dense_only_ratio": 0.08163265306122448,
+    "neither_count": 21,
+    "neither_ratio": 0.21428571428571427
+  },
+  "integrity": {
+    "corpus_integrity": "PASS",
+    "corpus_sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+    "evaluation_sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+    "gold_integrity": "PASS"
+  },
+  "missing_gold_chunk_count": 21,
+  "queries_with_no_gold_in_union": 1,
+  "query_count": 31,
+  "query_source_attribution": {
+    "bm25_only_finds_gold": 2,
+    "both_find_gold": 27,
+    "dense_only_finds_gold": 1,
+    "neither_finds_gold": 1
+  },
+  "query_type_breakdown": {
+    "accountability": {
+      "macro_candidate_recall": 1.0,
+      "query_count": 1,
+      "union_any_gold_coverage": 1
+    },
+    "actor_obligation": {
+      "macro_candidate_recall": 0.5238095238095238,
+      "query_count": 5,
+      "union_any_gold_coverage": 1
+    },
+    "authority": {
+      "macro_candidate_recall": 1.0,
+      "query_count": 2,
+      "union_any_gold_coverage": 1
+    },
+    "classification": {
+      "macro_candidate_recall": 1.0,
+      "query_count": 1,
+      "union_any_gold_coverage": 1
+    },
+    "condition": {
+      "macro_candidate_recall": 0.9166666666666666,
+      "query_count": 3,
+      "union_any_gold_coverage": 1
+    },
+    "data_governance": {
+      "macro_candidate_recall": 0.8333333333333334,
+      "query_count": 3,
+      "union_any_gold_coverage": 1
+    },
+    "definition": {
+      "macro_candidate_recall": 1.0,
+      "query_count": 1,
+      "union_any_gold_coverage": 1
+    },
+    "ethics": {
+      "macro_candidate_recall": 0.5,
+      "query_count": 1,
+      "union_any_gold_coverage": 1
+    },
+    "human_oversight": {
+      "macro_candidate_recall": 1.0,
+      "query_count": 1,
+      "union_any_gold_coverage": 1
+    },
+    "incident": {
+      "macro_candidate_recall": 1.0,
+      "query_count": 1,
+      "union_any_gold_coverage": 1
+    },
+    "procedure": {
+      "macro_candidate_recall": 1.0,
+      "query_count": 5,
+      "union_any_gold_coverage": 1
+    },
+    "prohibition": {
+      "macro_candidate_recall": 1.0,
+      "query_count": 1,
+      "union_any_gold_coverage": 1
+    },
+    "public_sector": {
+      "macro_candidate_recall": 0.875,
+      "query_count": 2,
+      "union_any_gold_coverage": 1
+    },
+    "rights_risk": {
+      "macro_candidate_recall": 1.0,
+      "query_count": 1,
+      "union_any_gold_coverage": 1
+    },
+    "sandbox": {
+      "macro_candidate_recall": 0.5,
+      "query_count": 2,
+      "union_any_gold_coverage": 0.5
+    },
+    "transparency": {
+      "macro_candidate_recall": 1.0,
+      "query_count": 1,
+      "union_any_gold_coverage": 1
+    }
+  }
+}

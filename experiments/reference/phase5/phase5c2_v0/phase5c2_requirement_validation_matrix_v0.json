@@ -1,0 +1,479 @@
+{
+  "schema": "phase5c2-requirement-validation-matrix-v0",
+  "artifact_status": "DRAFT FOR EXTERNAL REVIEW",
+  "design_only": true,
+  "implementation_authorization": "NOT YET",
+  "frozen_labels": {
+    "Answer Revision": "Insufficient evidence",
+    "Evidence Expansion": "Insufficient evidence"
+  },
+  "requirements": [
+    {
+      "requirement_id": "V2-R1",
+      "source_findings": [
+        "F2",
+        "F5"
+      ],
+      "evidence_tier": [
+        "A"
+      ],
+      "problem": "Generation omission; Completeness-aware Answer Revision",
+      "proposed_behavior": "Repair specifically identified supported applicable omissions, overstatements or missing disclosures using the same final evidence; retain draft/revised/final versions and current-version grounding/citation checks.",
+      "must_not_do": [
+        "Use runtime benchmark points",
+        "Invent unsupported law or unconditional duties",
+        "Treat disclosure as substantive point recovery",
+        "Silently retrieve or increase budgets during revision",
+        "Overwrite first completeness or draft",
+        "Infer isolated causal benefit from draft/final alone"
+      ],
+      "runtime_inputs": [
+        "original query",
+        "draft/version hash",
+        "final evidence/citation map",
+        "first completeness payload",
+        "runtime repair targets and origins",
+        "applicability/conditions",
+        "unresolved asks",
+        "remaining budget"
+      ],
+      "trace_requirements": [
+        "draft_generation",
+        "completeness_check_1",
+        "revision_decision",
+        "answer_revision",
+        "completeness_check_2",
+        "citation_check",
+        "post_edit_verification",
+        "finalization"
+      ],
+      "future_metrics": [
+        "Answer Completeness",
+        "draft→final point recovery",
+        "supported-claim change",
+        "unsupported claims introduced",
+        "mechanism-localized recovery",
+        "Citation Correctness",
+        "Groundedness",
+        "revision cost"
+      ],
+      "confirmation_needed_before_implementation": [
+        "External review of repair scope and explicit prototype authorization",
+        "Independent DEV evidence of supported omissions plus no-support negative controls",
+        "Reviewed legal/support/applicability rubric and budget/isolation feasibility"
+      ],
+      "adoption_confirmation": [
+        "Repeatable localized recovery across independent held-out cases and production runs",
+        "Safety margins and severe-claim gate pass",
+        "Bundle/controlled contrast limitations explicit and cost reported"
+      ],
+      "failure_modes": [
+        "Overgeneration",
+        "Wrong applicability",
+        "Lost supported draft content",
+        "Stale final checks",
+        "Checker-induced unnecessary revision"
+      ],
+      "runtime_forbidden_inputs": [
+        "required_legal_points_or_aspects_from_gold",
+        "gold_evidence_labels",
+        "reference_answer",
+        "evaluator_labels",
+        "difficulty_or_dimension_labels",
+        "TEST_quality_outputs",
+        "historical_answers_or_failure_analyses"
+      ],
+      "decision_status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "implementation_status": "NOT_STARTED",
+      "source_reference": "../phase5c1_v0/phase5c1_problem_requirement_map_v0.json",
+      "design_references": [
+        "phase5c2_v2_requirements_design_v0.md",
+        "phase5c2_evaluation_protocol_draft_v0.md"
+      ]
+    },
+    {
+      "requirement_id": "V2-R2",
+      "source_findings": [
+        "F8"
+      ],
+      "evidence_tier": [
+        "B"
+      ],
+      "problem": "Weak completeness/self-check calibration; Evidence-aware completeness verification",
+      "proposed_behavior": "Separately assess requested scope, applicable evidence support, actual answer coverage and unresolved evidence/conditions; distinguish supported omissions from evidence limits with runtime-only estimates.",
+      "must_not_do": [
+        "Conflate plausible answer with complete",
+        "Require every retrieved chunk in answer",
+        "Treat relevant evidence as required/applicable",
+        "Treat internal complete as gold certified",
+        "Turn REFINE into implementation permission"
+      ],
+      "runtime_inputs": [
+        "original query and scope",
+        "evidence snapshots",
+        "answer version",
+        "runtime aspect history when authorized",
+        "applicability and known unknowns"
+      ],
+      "trace_requirements": [
+        "coverage_check_1",
+        "applicability_assessment_initial",
+        "completeness_check_1",
+        "completeness_check_2",
+        "finalization"
+      ],
+      "future_metrics": [
+        "internal complete vs evaluator complete",
+        "status calibration",
+        "false-success rate",
+        "false-insufficient rate",
+        "Answer Completeness",
+        "production call overhead"
+      ],
+      "confirmation_needed_before_implementation": [
+        "Independent DEV examples of mismatch in both directions and supported omission versus absent evidence",
+        "External agreement on scope/status semantics",
+        "Review checker information and call-budget feasibility; explicit later authorization"
+      ],
+      "adoption_confirmation": [
+        "Improved calibration without indiscriminate insufficiency or safety/cost deterioration"
+      ],
+      "failure_modes": [
+        "Self-affirmation bias",
+        "Overly conservative abstention",
+        "Infinite scope",
+        "Loops",
+        "Retrieved-chunk checklist"
+      ],
+      "runtime_forbidden_inputs": [
+        "required_legal_points_or_aspects_from_gold",
+        "gold_evidence_labels",
+        "reference_answer",
+        "evaluator_labels",
+        "difficulty_or_dimension_labels",
+        "TEST_quality_outputs",
+        "historical_answers_or_failure_analyses"
+      ],
+      "decision_status": "REFINE",
+      "implementation_status": "NOT_STARTED",
+      "source_reference": "../phase5c1_v0/phase5c1_problem_requirement_map_v0.json",
+      "design_references": [
+        "phase5c2_v2_requirements_design_v0.md",
+        "phase5c2_evaluation_protocol_draft_v0.md"
+      ]
+    },
+    {
+      "requirement_id": "V2-R3",
+      "source_findings": [
+        "F9"
+      ],
+      "evidence_tier": [
+        "C"
+      ],
+      "problem": "Possible goal persistence from missing aspect → evidence → answer",
+      "proposed_behavior": "UNCONFIRMED candidate Aspect Ledger with persistent IDs, orthogonal origin/admission/search/support/applicability/disposition and append-only transitions; explicit unsupported asks require disclosure, inferred unsupported candidates do not force answer content.",
+      "must_not_do": [
+        "Promote Tier C to confirmed problem",
+        "Count the single medical diagnostic as confirmation",
+        "Force all inferred candidates into answer",
+        "Erase aspects after retrieval or dedup",
+        "Treat unavailable historical intermediate payload as observed disappearance"
+      ],
+      "runtime_inputs": [
+        "query spans and bounded intent",
+        "runtime inferred candidate rationale",
+        "runtime evidence/applicability decisions",
+        "prior ledger snapshots and transitions",
+        "answer spans",
+        "budgets"
+      ],
+      "trace_requirements": [
+        "aspect_identification",
+        "applicability_assessment_initial",
+        "applicability_assessment_final",
+        "answer_revision",
+        "finalization",
+        "AspectEvent and AspectSnapshot histories"
+      ],
+      "future_metrics": [
+        "supported applicable aspects identified",
+        "supported applicable aspects answered",
+        "unresolved aspects correctly disclosed",
+        "aspect disappearance rate",
+        "inferred-aspect false promotion"
+      ],
+      "confirmation_needed_before_implementation": [
+        "At least three distinct independent DEV carry-through cases across at least two task families/scenario clusters, reviewed by two assessors; proposed review floor, not power estimate",
+        "Stage-observable supported omissions or undisclosed explicit unresolved asks, with alternative explanations ruled out; medical diagnostic excluded",
+        "If historical v1 lacks needed state, mark unobservable and require separately authorized behavior-preserving observation before confirmation",
+        "External approval of ledger admission/merge/exclusion safeguards and explicit prototype authorization"
+      ],
+      "adoption_confirmation": [
+        "Evaluate only after problem confirmation",
+        "Reduced disappearance and better supported/disclosed coverage without overgeneration",
+        "Separate R3 causal claim requires isolated contrast; bundle result insufficient"
+      ],
+      "failure_modes": [
+        "Hallucinated obligations",
+        "Applicability misuse",
+        "Silent aspect deletion",
+        "False merges",
+        "Medical overfit",
+        "Invented reconstruction of missing state"
+      ],
+      "hypothesis_status": "UNCONFIRMED_TIER_C",
+      "runtime_forbidden_inputs": [
+        "required_legal_points_or_aspects_from_gold",
+        "gold_evidence_labels",
+        "reference_answer",
+        "evaluator_labels",
+        "difficulty_or_dimension_labels",
+        "TEST_quality_outputs",
+        "historical_answers_or_failure_analyses"
+      ],
+      "decision_status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "implementation_status": "NOT_STARTED",
+      "source_reference": "../phase5c1_v0/phase5c1_problem_requirement_map_v0.json",
+      "design_references": [
+        "phase5c2_v2_requirements_design_v0.md",
+        "phase5c2_evaluation_protocol_draft_v0.md"
+      ]
+    },
+    {
+      "requirement_id": "V2-R4",
+      "source_findings": [
+        "F1",
+        "F6",
+        "F7"
+      ],
+      "evidence_tier": [
+        "A",
+        "B"
+      ],
+      "problem": "Evidence Expansion efficiency; More selective / higher-value expansion policy",
+      "proposed_behavior": "Authorize bounded targeted searches only for specific evidence gaps; retain candidate/final support gains and losses, applicability and cost; stop when no new applicable value or budget remains.",
+      "must_not_do": [
+        "Delete expansion because aggregate effect weak",
+        "Always expand broad/hard queries",
+        "Tune on frozen 31 or v2 outputs",
+        "Count chunk novelty as legal value",
+        "Raise Top-K/rounds/subqueries/context by default",
+        "Make causal claims from triggered-only strata"
+      ],
+      "runtime_inputs": [
+        "query",
+        "initial/current evidence",
+        "specific runtime gap IDs",
+        "applicability and support estimates",
+        "subquery information-difference rationale",
+        "candidate/final novelty history",
+        "remaining budget"
+      ],
+      "trace_requirements": [
+        "expansion_decision",
+        "subqueries",
+        "expansion_retrieval",
+        "evidence_merge",
+        "final_evidence_selection",
+        "expansion_value",
+        "finalization"
+      ],
+      "future_metrics": [
+        "expansion trigger rate",
+        "candidate/final evidence gain and loss",
+        "newly resolved aspects",
+        "retrieval overhead",
+        "no-value expansion rate",
+        "expansion attributable answer benefit",
+        "applicability failures"
+      ],
+      "confirmation_needed_before_implementation": [
+        "Independent DEV corpus-first search-opportunity and no-value cases",
+        "Reviewed novelty/applicability/stop rubric and frozen-reference budget feasibility",
+        "D6 audit independent of v2, no retrieval-outcome selection",
+        "External implementation authorization"
+      ],
+      "adoption_confirmation": [
+        "Repeated C→E coverage and answer/adequacy gain in aggregate or predeclared adequately exposed strata",
+        "Triggered effects descriptive, variation/safety/cost reported",
+        "No automatic budget increases"
+      ],
+      "failure_modes": [
+        "Overly broad searches",
+        "Missed useful expansion",
+        "Redundant evidence",
+        "Support evicted from Top-5",
+        "Wrong actor/condition",
+        "Stochastic trigger confounding"
+      ],
+      "runtime_forbidden_inputs": [
+        "required_legal_points_or_aspects_from_gold",
+        "gold_evidence_labels",
+        "reference_answer",
+        "evaluator_labels",
+        "difficulty_or_dimension_labels",
+        "TEST_quality_outputs",
+        "historical_answers_or_failure_analyses"
+      ],
+      "decision_status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "implementation_status": "NOT_STARTED",
+      "source_reference": "../phase5c1_v0/phase5c1_problem_requirement_map_v0.json",
+      "design_references": [
+        "phase5c2_v2_requirements_design_v0.md",
+        "phase5c2_evaluation_protocol_draft_v0.md"
+      ]
+    },
+    {
+      "requirement_id": "V2-R5",
+      "source_findings": [
+        "F1",
+        "F2",
+        "F4",
+        "F7",
+        "F8",
+        "F9"
+      ],
+      "evidence_tier": [
+        "A",
+        "B",
+        "C"
+      ],
+      "problem": "Hard-query evaluation gap; Separate challenge/hard-query benchmark",
+      "proposed_behavior": "Design corpus-first independent challenge construction, legal gold schema and DEV/HOLDOUT separation while retaining the historical benchmark.",
+      "must_not_do": [
+        "Create actual queries or gold now",
+        "Select queries because v1 fails",
+        "Build gold from v2 output",
+        "Copy medical diagnostic into TEST",
+        "Expose TEST gold to implementers/runtime",
+        "Replace historical benchmark"
+      ],
+      "runtime_inputs": [
+        "Future strict query-only projection: opaque query_id and exact query string; no dimension metadata"
+      ],
+      "trace_requirements": [
+        "query_received",
+        "production seal and query hashes",
+        "external evaluator-only dataset/split/access manifests"
+      ],
+      "future_metrics": [
+        "dimension and cluster coverage",
+        "answerability distribution",
+        "annotation agreement",
+        "contamination/access audit",
+        "all scheduled output completeness"
+      ],
+      "confirmation_needed_before_implementation": [
+        "External design review before construction",
+        "Phase 5C.4 corpus-first annotation, whole-cluster split and freeze",
+        "Independent custodian and evaluator-side gold; implementer DEV-only access",
+        "D6 shortfall reported without output-guided substitution",
+        "Explicit separate later authorization for dataset construction and runtime implementation"
+      ],
+      "adoption_confirmation": [
+        "Independent held-out comparison with adequate coverage and recorded limitations",
+        "DEV never final confirmatory evidence"
+      ],
+      "failure_modes": [
+        "Benchmark overfit",
+        "Near-duplicate leakage",
+        "Gold/runtime contamination",
+        "Insufficient stratum size",
+        "Outcome-based query selection"
+      ],
+      "runtime_forbidden_inputs": [
+        "required_legal_points_or_aspects_from_gold",
+        "gold_evidence_labels",
+        "reference_answer",
+        "evaluator_labels",
+        "difficulty_or_dimension_labels",
+        "TEST_quality_outputs",
+        "historical_answers_or_failure_analyses"
+      ],
+      "decision_status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "implementation_status": "NOT_STARTED",
+      "source_reference": "../phase5c1_v0/phase5c1_problem_requirement_map_v0.json",
+      "design_references": [
+        "phase5c2_v2_requirements_design_v0.md",
+        "phase5c2_evaluation_protocol_draft_v0.md"
+      ]
+    },
+    {
+      "requirement_id": "V2-R6",
+      "source_findings": [
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "evidence_tier": [
+        "A"
+      ],
+      "problem": "Historical comparability and stochastic attribution",
+      "proposed_behavior": "Keep frozen labels and historical benchmark, provenance, paired transitions, macro/micro safety, separate call ledgers and preregistered multi-run/judge uncertainty safeguards.",
+      "must_not_do": [
+        "Relabel frozen A1/A2",
+        "Call one replication a variance estimate",
+        "Subtract historical replication delta from effects",
+        "Best-of-N selection or quality-triggered reruns",
+        "Pool points/runs as independent queries",
+        "Treat current design checks as deployed isolation"
+      ],
+      "runtime_inputs": [
+        "minimal sealed runtime configuration",
+        "opaque run/repeat slot and query",
+        "runtime corpus/model/retrieval inputs; analysis protocol remains evaluator-side"
+      ],
+      "trace_requirements": [
+        "immutable per-stage outputs",
+        "retrieval_calls",
+        "production_llm_calls",
+        "merge_rerank_operations",
+        "production seal",
+        "separate evaluator join after all production"
+      ],
+      "future_metrics": [
+        "paired AC deltas and point churn",
+        "macro/micro safety",
+        "query-sampling interval",
+        "per-production-repeat sensitivity",
+        "fixed-output judge agreement",
+        "cost and execution completeness"
+      ],
+      "confirmation_needed_before_implementation": [
+        "Safeguard specification retained; KEEP_AS_IS does not authorize other mechanisms",
+        "External approval of arms, repeats, metrics/margins and budget/isolation before future TEST",
+        "Future offline synthetic leakage and provenance gates before live execution"
+      ],
+      "adoption_confirmation": [
+        "All scheduled runs retained and sealed before evaluation",
+        "No quality-based selection; generation/judge/query uncertainty separated",
+        "No causal overclaim on inconclusive evidence"
+      ],
+      "failure_modes": [
+        "Selective reporting",
+        "Judge drift",
+        "Backend/config drift",
+        "Stale checks",
+        "Denominator bias",
+        "Historical contamination"
+      ],
+      "runtime_forbidden_inputs": [
+        "required_legal_points_or_aspects_from_gold",
+        "gold_evidence_labels",
+        "reference_answer",
+        "evaluator_labels",
+        "difficulty_or_dimension_labels",
+        "TEST_quality_outputs",
+        "historical_answers_or_failure_analyses"
+      ],
+      "decision_status": "KEEP_AS_IS",
+      "implementation_status": "NOT_STARTED",
+      "source_reference": "../phase5c1_v0/phase5c1_problem_requirement_map_v0.json",
+      "design_references": [
+        "phase5c2_v2_requirements_design_v0.md",
+        "phase5c2_evaluation_protocol_draft_v0.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "schema": "phase5c1-problem-requirement-map-v0",
+  "decision_classes": [
+    "KEEP_AS_IS",
+    "REFINE",
+    "INVESTIGATE_BEFORE_IMPLEMENTATION",
+    "DEFER",
+    "REJECT"
+  ],
+  "planning_only": true,
+  "problem_requirement_map": [
+    {
+      "problem_id": "P1",
+      "problem": "Generation omission",
+      "evidence": [
+        "F2",
+        "F5"
+      ],
+      "strength": "Tier A frozen omission evidence; revision contribution insufficient",
+      "candidate_requirement": "V2-R1",
+      "ready_for_v2_design": "YES — hypothesis/validation design only",
+      "status": "INVESTIGATE_BEFORE_IMPLEMENTATION"
+    },
+    {
+      "problem_id": "P2a",
+      "problem": "Weak completeness/self-check calibration",
+      "evidence": [
+        "F8"
+      ],
+      "strength": "Tier B observational mismatch",
+      "candidate_requirement": "V2-R2",
+      "ready_for_v2_design": "YES — refine requirement, no implementation",
+      "status": "REFINE"
+    },
+    {
+      "problem_id": "P2b",
+      "problem": "Explicit missing-aspect carry-through gap",
+      "evidence": [
+        "F9"
+      ],
+      "strength": "Tier C exploratory only",
+      "candidate_requirement": "V2-R3",
+      "ready_for_v2_design": "YES — confirmation-study design only; problem unconfirmed",
+      "status": "INVESTIGATE_BEFORE_IMPLEMENTATION"
+    },
+    {
+      "problem_id": "P3",
+      "problem": "Evidence Expansion efficiency",
+      "evidence": [
+        "F1",
+        "F6",
+        "F7"
+      ],
+      "strength": "Tier A weak aggregate result plus Tier B usage; no established causal utility",
+      "candidate_requirement": "V2-R4",
+      "ready_for_v2_design": "YES — candidate criteria and validation design only",
+      "status": "INVESTIGATE_BEFORE_IMPLEMENTATION"
+    },
+    {
+      "problem_id": "P4",
+      "problem": "Hard-query evaluation gap",
+      "evidence": [
+        "F1",
+        "F2",
+        "F4",
+        "F7",
+        "F8",
+        "F9"
+      ],
+      "strength": "A/B motivate evaluation coverage; C generates hypotheses only",
+      "candidate_requirement": "V2-R5",
+      "ready_for_v2_design": "YES — evaluation requirement, not production mechanism",
+      "status": "INVESTIGATE_BEFORE_IMPLEMENTATION"
+    },
+    {
+      "problem_id": "P5",
+      "problem": "Attribution and historical comparability",
+      "evidence": [
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "strength": "Tier A single replication plus frozen safeguards",
+      "candidate_requirement": "V2-R6",
+      "ready_for_v2_design": "YES — preserve research constraints",
+      "status": "KEEP_AS_IS"
+    }
+  ],
+  "candidate_requirements": [
+    {
+      "requirement_id": "V2-R1",
+      "problem": "Generation omission; Completeness-aware Answer Revision",
+      "evidence": [
+        "F2",
+        "F5"
+      ],
+      "evidence_tier": [
+        "A"
+      ],
+      "current_behavior": "Có evidence nhưng bỏ ý; current revision có descriptive positive signal, frozen label Insufficient evidence.",
+      "desired_behavior": "Revision có mục tiêu phục hồi các ý liên quan được evidence hỗ trợ, bảo toàn grounding/citation và báo phần chưa giải quyết.",
+      "why_justified": "9 omission points ở R0; R2-used stratum 9/19 so với 5/19.",
+      "known_risk": "Checker sai hoặc revision thêm claim unsupported; chi phí tăng.",
+      "how_to_evaluate_later": "Predeclare separate development/challenge evaluation, frozen historical reporting, draft/final completeness and safety, repeated paired runs and call budgets; no tuning on the 31 queries.",
+      "status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "planning_only": true
+    },
+    {
+      "requirement_id": "V2-R2",
+      "problem": "Weak completeness/self-check calibration; Evidence-aware completeness verification",
+      "evidence": [
+        "F8"
+      ],
+      "evidence_tier": [
+        "B"
+      ],
+      "current_behavior": "Internal complete=true có thể đi cùng benchmark-incomplete; 15 controller success chưa complete.",
+      "desired_behavior": "Quyết định complete/success phản ánh phạm vi evidence và các ý được trả lời, phân biệt insufficient evidence với omitted supported content.",
+      "why_justified": "Frozen Phase 4E mismatch có 17 trường hợp, nên đủ lý do refine requirement.",
+      "known_risk": "Checker quá bảo thủ, lặp sửa không cần thiết hoặc học lén gold; internal check không thể giả định biết benchmark labels.",
+      "how_to_evaluate_later": "On separately designed cases, predeclare calibration matrix and stop-status definitions, preserve each check/answer stage; benchmark labels stay evaluator-side.",
+      "status": "REFINE",
+      "planning_only": true
+    },
+    {
+      "requirement_id": "V2-R3",
+      "problem": "Possible goal persistence from missing aspect → evidence → answer",
+      "evidence": [
+        "F9"
+      ],
+      "evidence_tier": [
+        "C"
+      ],
+      "current_behavior": "Missing aspects dẫn tới subqueries, final evidence mở rộng nhưng final check chỉ mô tả những ý đã có trong answer.",
+      "desired_behavior": "Mỗi aspect đã nêu cần có kết cục rõ: được trả lời có hỗ trợ, chưa đủ evidence, hoặc ngoài phạm vi với lý do.",
+      "why_justified": "Một diagnostic gợi ý khoảng trống; chưa xác nhận thành problem tổng quát.",
+      "known_risk": "Ép trả lời mọi aspect tự sinh, đưa evidence không áp dụng vào answer hoặc overfit domain y tế.",
+      "how_to_evaluate_later": "requires confirmation on a separately designed challenge set; cross-domain aspect-to-evidence-to-answer review with explicit relevance/applicability, without hardcoded medical rules.",
+      "status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "planning_only": true
+    },
+    {
+      "requirement_id": "V2-R4",
+      "problem": "Evidence Expansion efficiency; More selective / higher-value expansion policy",
+      "evidence": [
+        "F1",
+        "F6",
+        "F7"
+      ],
+      "evidence_tier": [
+        "A",
+        "B"
+      ],
+      "current_behavior": "9/31 R2 expansions; 11 additional retrievals and 9 merge-reranks; macro AC tie with A2.",
+      "desired_behavior": "Expansion chỉ nên tiêu thêm công khi có cơ sở kỳ vọng bổ sung evidence liên quan và cải thiện answer, với budget và lợi ích quan sát được.",
+      "why_justified": "Weak aggregate contribution relative to measured retrieval work justifies examining selectivity, not deleting expansion.",
+      "known_risk": "Trigger quá chặt bỏ lỡ evidence phân tán; trigger quá rộng tốn công; one-run differences confound effects.",
+      "how_to_evaluate_later": "Future predeclared comparison of evidence gains/losses, final point support, calibration, safety and retrieval/merge cost on independent cases and repeated runs. No automatic increase in retrieval rounds.",
+      "status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "planning_only": true
+    },
+    {
+      "requirement_id": "V2-R5",
+      "problem": "Hard-query evaluation gap; Separate challenge/hard-query benchmark",
+      "evidence": [
+        "F1",
+        "F2",
+        "F4",
+        "F7",
+        "F8",
+        "F9"
+      ],
+      "evidence_tier": [
+        "A",
+        "B",
+        "C"
+      ],
+      "current_behavior": "Current frozen 31 queries give historical evidence but limited observed mechanism exposures; one broad exploratory query has no gold.",
+      "desired_behavior": "Thiết kế dataset riêng cho broad/open-ended, multi-aspect, multi-article, dispersed evidence, initial Top-5 partial, synthesis, omission risk và decomposition/reformulation opportunity.",
+      "why_justified": "Đủ lý do mở rộng phạm vi đánh giá nghiên cứu; không chứng minh benchmark hiện tại easy.",
+      "known_risk": "Selection theo lỗi v1, contamination từ chatbot diagnostic, tối ưu riêng challenge hoặc thay benchmark lịch sử.",
+      "how_to_evaluate_later": "Predeclare dataset, annotation/applicability criteria, splits, metrics and repeated-run protocol before running v2; retain frozen 31 as primary historical benchmark. No dataset created in 5C.1.",
+      "status": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+      "planning_only": true
+    },
+    {
+      "requirement_id": "V2-R6",
+      "problem": "Historical comparability and stochastic attribution",
+      "evidence": [
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "evidence_tier": [
+        "A"
+      ],
+      "current_behavior": "R1→R2 shows material variation; frozen precedence safeguards block stronger labels.",
+      "desired_behavior": "Giữ frozen historical benchmark, provenance, paired point transitions, macro/micro safety, separate call ledgers và predeclared attribution rules; future design must account for repeated runs.",
+      "why_justified": "Traceability and replication prevent interpreting small single-run differences as proven contribution.",
+      "known_risk": "Cost of future repeated runs; retrospective selection or changing labels from new outcomes.",
+      "how_to_evaluate_later": "Audit protocol/design before future execution; show all runs and query-sampling vs generation/judge uncertainty separately.",
+      "status": "KEEP_AS_IS",
+      "planning_only": true
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "phase5c2-final-artifact-hashes-v0",
+  "artifact_status": "DRAFT FOR EXTERNAL REVIEW",
+  "algorithm": "SHA-256",
+  "scope": "All final Phase 5C.2 files except this registry to avoid circular self-hashing",
+  "artifacts": {
+    "integrity_baseline_v0.json": {
+      "sha256": "ade1d7ec6ee56af85674d0acebcab637bfad66badceb01961258ae1b91f93d5c",
+      "size_bytes": 5679004
+    },
+    "integrity_before_after_v0.json": {
+      "sha256": "6018df682eb377d5e43e0aa0e92cb8c4bd579e333059c59987dd00498147d345",
+      "size_bytes": 5680820
+    },
+    "phase5c2_challenge_set_design_v0.md": {
+      "sha256": "1f8514571e3fdea048e26eaa399961b54ff2e5af7dd1111fa1904976c0532dc0",
+      "size_bytes": 22031
+    },
+    "phase5c2_console_v0.txt": {
+      "sha256": "8d5d94d7f23adce3b7bc3329f9df29730652dbde14ef30883fc5a2ea75e7b0c6",
+      "size_bytes": 1145
+    },
+    "phase5c2_decision_log_v0.md": {
+      "sha256": "a68e7266ddc672f53ac88de733141fc05d0142c5c183cd730ffa0e98577a61b0",
+      "size_bytes": 7567
+    },
+    "phase5c2_evaluation_protocol_draft_v0.md": {
+      "sha256": "6209c20771d0bf7e7791d878637cb5e7ead8c01f7b3e1b08a6c13a99895a96ca",
+      "size_bytes": 31374
+    },
+    "phase5c2_manifest_v0.json": {
+      "sha256": "c6d98731c01696299dce134e587163e07d0269cf95dff05b75f16428d967b60e",
+      "size_bytes": 11390
+    },
+    "phase5c2_requirement_validation_matrix_v0.json": {
+      "sha256": "71caa700ec77bbe998caed8764d2ebcfd6cf23d1628513d5894bdb621cd1520e",
+      "size_bytes": 18680
+    },
+    "phase5c2_trace_schema_design_v0.json": {
+      "sha256": "e75cba2402593c79157f439f3ffc079003df9330d2f58c3a7523249a0f571e24",
+      "size_bytes": 23233
+    },
+    "phase5c2_v2_requirements_design_v0.md": {
+      "sha256": "0328ec76ae710402abe323c00363550686b439384b048e483f30fb55554d1658",
+      "size_bytes": 25618
+    },
+    "phase5c2_validation_v0.json": {
+      "sha256": "869fd0ea657fd83a2f0aa4edef15d6de144b952ad8ca0db0f06d8cc2a7f2c134",
+      "size_bytes": 10625
+    }
+  }
+}

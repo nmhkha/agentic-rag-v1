@@ -1,0 +1,32 @@
+query_id,query,query_type,difficulty,gold_document_count,gold_article_count,gold_chunk_count,annotation_status,needs_manual_attention
+eval001,Các mức phân loại rủi ro của hệ thống trí tuệ nhân tạo gồm những mức nào?,classification,easy,1,1,3,verified,false
+eval002,Ai có thẩm quyền ban hành danh mục hệ thống trí tuệ nhân tạo có rủi ro cao?,authority,easy,1,1,1,verified,false
+eval003,Nhà cung cấp phải lập hồ sơ phân loại rủi ro vào thời điểm nào?,procedure,easy,1,1,1,verified,false
+eval004,Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?,actor_obligation,medium,1,1,6,verified,true
+eval005a,Nhà cung cấp hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,actor_obligation,hard,1,1,7,verified,true
+eval005b,Bên triển khai hệ thống trí tuệ nhân tạo có rủi ro cao phải thực hiện những nghĩa vụ quản lý nào?,actor_obligation,hard,1,1,6,verified,true
+eval006,Trách nhiệm minh bạch của nhà cung cấp hệ thống trí tuệ nhân tạo bao gồm những gì?,actor_obligation,medium,1,1,3,verified,false
+eval007,Nội dung do AI tạo ra phải được thông báo hoặc gắn nhãn như thế nào?,transparency,hard,1,1,9,verified,true
+eval008,Trường hợp nào nội dung do AI tạo ra cần giúp người tiếp nhận nhận biết rõ nguồn gốc?,condition,medium,1,1,4,verified,false
+eval009,Hệ thống AI tương tác trực tiếp với con người phải được thiết kế theo yêu cầu gì?,condition,easy,1,1,1,verified,false
+eval010,Nhà cung cấp cần làm gì khi phát hiện sự cố liên quan đến hệ thống trí tuệ nhân tạo?,incident,easy,1,1,1,verified,false
+eval011,"Cơ chế thử nghiệm có kiểm soát cho phép tổ chức, cá nhân được hưởng những cơ chế gì trong phạm vi thử nghiệm?",sandbox,medium,1,1,2,verified,false
+eval012,Cơ quan nào quyết định chấp thuận tham gia cơ chế thử nghiệm có kiểm soát?,authority,medium,1,1,3,verified,false
+eval013,Việc phân loại cấp độ thử nghiệm có kiểm soát dựa trên những tiêu chí nào?,sandbox,medium,1,1,5,verified,false
+eval014,Hồ sơ thông thường để tham gia cơ chế thử nghiệm có kiểm soát gồm những thành phần nào?,procedure,medium,1,1,4,verified,false
+eval015,Khi nào cơ quan có thẩm quyền có thể tạm dừng hoặc chấm dứt thử nghiệm?,condition,hard,2,2,2,verified,true
+eval016,Tổ chức hoặc cá nhân phải báo cáo gì trong quá trình thử nghiệm có kiểm soát?,procedure,medium,1,1,5,verified,false
+eval017,Có thể gia hạn thời gian thử nghiệm có kiểm soát hay không và thủ tục thế nào?,procedure,medium,1,1,1,verified,false
+eval018,"Sau khi kết thúc thử nghiệm, cơ quan có thẩm quyền xử lý kết quả như thế nào?",procedure,medium,1,1,3,verified,false
+eval019,Cơ sở dữ liệu quốc gia phục vụ trí tuệ nhân tạo được tổ chức theo những nguyên tắc nào?,data_governance,easy,1,1,1,verified,false
+eval020,Dữ liệu mở có điều kiện được hiểu là gì?,definition,easy,1,1,1,verified,false
+eval021,Những loại dữ liệu nào có thể được đưa vào cơ sở dữ liệu phục vụ trí tuệ nhân tạo?,data_governance,easy,1,1,3,verified,false
+eval022,Cơ quan quản lý có trách nhiệm gì đối với việc xây dựng và cập nhật dữ liệu mở phục vụ AI?,actor_obligation,medium,1,1,3,verified,false
+eval023,Quy định về bảo đảm khả năng kết nối và khai thác dữ liệu phục vụ trí tuệ nhân tạo là gì?,data_governance,easy,1,1,2,verified,false
+eval024,Những hành vi nào liên quan đến AI bị nghiêm cấm khi lợi dụng nhóm người dễ bị tổn thương?,prohibition,easy,1,1,1,verified,false
+eval025,"Khi ứng dụng AI trong quản lý nhà nước, cơ quan vận hành phải đánh giá tác động trong trường hợp nào?",public_sector,hard,1,1,7,verified,true
+eval026,Báo cáo đánh giá tác động khi sử dụng AI trong khu vực công cần đề cập những nội dung gì?,public_sector,medium,1,1,4,verified,false
+eval027,Nguyên tắc đạo đức khi phát triển và sử dụng trí tuệ nhân tạo được đặt ra như thế nào?,ethics,medium,1,1,4,verified,false
+eval028,Tổ chức phát triển hoặc triển khai AI cần bảo đảm trách nhiệm giải trình ra sao?,accountability,hard,1,1,2,verified,false
+eval029,"Theo Khung đạo đức trí tuệ nhân tạo quốc gia, khi hệ thống AI có thể ảnh hưởng đáng kể đến quyền con người thì cần áp dụng những biện pháp kiểm soát nào?",rights_risk,hard,1,1,2,verified,false
+eval030,Những yêu cầu nào giúp bảo đảm con người vẫn có khả năng giám sát và can thiệp vào hệ thống AI?,human_oversight,hard,1,1,1,verified,false

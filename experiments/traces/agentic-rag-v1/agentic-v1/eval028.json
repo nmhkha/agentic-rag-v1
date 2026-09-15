@@ -1,0 +1,1342 @@
+{
+  "run_id": "agentic-v1-eval028",
+  "query": "Tổ chức phát triển hoặc triển khai AI cần bảo đảm trách nhiệm giải trình ra sao?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 33,
+  "initial_top5": [
+    "134-2025-QH15_dieu-15_khoan-2_diem-b",
+    "134-2025-QH15_dieu-15_khoan-1_diem-c",
+    "134-2025-QH15_dieu-15_khoan-2_diem-a",
+    "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+    "142-2026-ND-CP_dieu-16_khoan-1"
+  ],
+  "coverage_check": {
+    "sufficient": true,
+    "missing_aspects": [],
+    "reason": "Các chứng cứ đã cung cấp đầy đủ thông tin về trách nhiệm giải trình của cả nhà cung cấp (tổ chức phát triển) và bên triển khai hệ thống trí tuệ nhân tạo."
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [
+    {
+      "rank": 1,
+      "evidence_id": "E1",
+      "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-b",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-15",
+      "article": "15",
+      "article_label": "Điều 15",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": "b",
+      "point_label": "Điểm b",
+      "text": "Bên triển khai có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro trung bình và thấp\nKhoản 2\nĐiểm b)\nBên triển khai có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 4.602234840393066,
+      "bm25_rank": 17,
+      "dense_rank": 5,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 1,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-15_khoan-2",
+      "point_id": "134-2025-QH15_dieu-15_khoan-2_diem-b"
+    },
+    {
+      "rank": 2,
+      "evidence_id": "E2",
+      "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-c",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-15",
+      "article": "15",
+      "article_label": "Điều 15",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": "c",
+      "point_label": "Điểm c",
+      "text": "Bên triển khai có trách nhiệm giải trình về việc vận hành, kiểm soát rủi ro, xử lý sự cố và bảo vệ quyền, lợi ích hợp pháp của tổ chức, cá nhân khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong quá trình thanh tra, kiểm tra hoặc xử lý sự cố;",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro trung bình và thấp\nKhoản 1\nĐiểm c)\nBên triển khai có trách nhiệm giải trình về việc vận hành, kiểm soát rủi ro, xử lý sự cố và bảo vệ quyền, lợi ích hợp pháp của tổ chức, cá nhân khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong quá trình thanh tra, kiểm tra hoặc xử lý sự cố;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 4.086925506591797,
+      "bm25_rank": 13,
+      "dense_rank": 7,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 2,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-15_khoan-1",
+      "point_id": "134-2025-QH15_dieu-15_khoan-1_diem-c"
+    },
+    {
+      "rank": 3,
+      "evidence_id": "E3",
+      "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-15",
+      "article": "15",
+      "article_label": "Điều 15",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": "a",
+      "point_label": "Điểm a",
+      "text": "Nhà cung cấp có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro trung bình và thấp\nKhoản 2\nĐiểm a)\nNhà cung cấp có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 3.7585031986236572,
+      "bm25_rank": null,
+      "dense_rank": 10,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 3,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-15_khoan-2",
+      "point_id": "134-2025-QH15_dieu-15_khoan-2_diem-a"
+    },
+    {
+      "rank": 4,
+      "evidence_id": "E4",
+      "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+      "document_id": "05-2026-TT-BKHCN",
+      "document_number": "05/2026/TT-BKHCN",
+      "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+      "article_id": "05-2026-TT-BKHCN_dieu-3",
+      "article": "3",
+      "article_label": "Điều 3",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": "d",
+      "point_label": "Điểm d",
+      "text": "Khả năng giải thích và trách nhiệm giải trình: Tổ chức, cá nhân xác định rõ các tác động mà hệ thống có thể gây ra, chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện, kiểm thử. Phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra.",
+      "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 2\nĐiểm d)\nKhả năng giải thích và trách nhiệm giải trình: Tổ chức, cá nhân xác định rõ các tác động mà hệ thống có thể gây ra, chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện, kiểm thử. Phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra.",
+      "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+      "reranker_score": 3.1563258171081543,
+      "bm25_rank": 2,
+      "dense_rank": 8,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 4,
+      "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+      "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-2",
+      "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d"
+    },
+    {
+      "rank": 5,
+      "evidence_id": "E5",
+      "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-16",
+      "article": "16",
+      "article_label": "Điều 16",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": null,
+      "point_label": null,
+      "text": "Nhà cung cấp và bên triển khai hệ thống trí tuệ nhân tạo phải thực hiện trách nhiệm minh bạch, thông báo, đánh dấu kỹ thuật và gắn nhãn hiển thị đối với hệ thống trí tuệ nhân tạo và nội dung do hệ thống tạo ra theo quy định tại Điều 11 của Luật Trí tuệ nhân tạo. Việc thực hiện trách nhiệm minh bạch phải phù hợp với mục đích sử dụng, bối cảnh triển khai và mức độ rủi ro của hệ thống.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 16. Nguyên tắc minh bạch và giải trình\nKhoản 1\nNhà cung cấp và bên triển khai hệ thống trí tuệ nhân tạo phải thực hiện trách nhiệm minh bạch, thông báo, đánh dấu kỹ thuật và gắn nhãn hiển thị đối với hệ thống trí tuệ nhân tạo và nội dung do hệ thống tạo ra theo quy định tại Điều 11 của Luật Trí tuệ nhân tạo. Việc thực hiện trách nhiệm minh bạch phải phù hợp với mục đích sử dụng, bối cảnh triển khai và mức độ rủi ro của hệ thống.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 3.011500358581543,
+      "bm25_rank": 7,
+      "dense_rank": 1,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 5,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-16_khoan-1",
+      "point_id": null
+    }
+  ],
+  "final_top5": [
+    "134-2025-QH15_dieu-15_khoan-2_diem-b",
+    "134-2025-QH15_dieu-15_khoan-1_diem-c",
+    "134-2025-QH15_dieu-15_khoan-2_diem-a",
+    "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+    "142-2026-ND-CP_dieu-16_khoan-1"
+  ],
+  "draft_answer": "Theo các quy định hiện hành, việc bảo đảm trách nhiệm giải trình của các tổ chức liên quan đến trí tuệ nhân tạo được quy định cụ thể như sau: Nhà cung cấp có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân [E3]. Bên triển khai có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong các trường hợp có dấu hiệu vi phạm pháp luật, ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân [E1], hoặc trong quá trình thanh tra, kiểm tra, xử lý sự cố liên quan đến việc vận hành, kiểm soát rủi ro, xử lý sự cố và bảo vệ quyền, lợi ích hợp pháp của tổ chức, cá nhân [E2]. Ngoài ra, các tổ chức, cá nhân cũng phải xác định rõ tác động của hệ thống, chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện, kiểm thử, đồng thời phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra [E4].",
+  "completeness_check": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "Câu trả lời đã bao quát đầy đủ các nội dung về trách nhiệm giải trình của nhà cung cấp, bên triển khai và các tổ chức theo quy định tại các nguồn E1, E2, E3 và E4."
+  },
+  "revision_used": false,
+  "citation_check": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E3",
+      "E1",
+      "E2",
+      "E4"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required_by_deterministic_gate",
+    "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": "Theo các quy định hiện hành, việc bảo đảm trách nhiệm giải trình của các tổ chức liên quan đến trí tuệ nhân tạo được quy định cụ thể như sau: Nhà cung cấp có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân [E3]. Bên triển khai có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong các trường hợp có dấu hiệu vi phạm pháp luật, ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân [E1], hoặc trong quá trình thanh tra, kiểm tra, xử lý sự cố liên quan đến việc vận hành, kiểm soát rủi ro, xử lý sự cố và bảo vệ quyền, lợi ích hợp pháp của tổ chức, cá nhân [E2]. Ngoài ra, các tổ chức, cá nhân cũng phải xác định rõ tác động của hệ thống, chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện, kiểm thử, đồng thời phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra [E4].",
+  "final_status": "success",
+  "retrieval_calls": [
+    {
+      "call_number": 1,
+      "round": 0,
+      "query": "Tổ chức phát triển hoặc triển khai AI cần bảo đảm trách nhiệm giải trình ra sao?",
+      "sub_query": false,
+      "bm25_depth": 20,
+      "dense_depth": 20,
+      "candidate_chunk_ids": [
+        "142-2026-ND-CP_dieu-16_khoan-6",
+        "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+        "142-2026-ND-CP_dieu-18_khoan-6",
+        "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+        "142-2026-ND-CP_dieu-19_khoan-2_diem-c",
+        "142-2026-ND-CP_dieu-17_khoan-5_diem-b",
+        "142-2026-ND-CP_dieu-16_khoan-1",
+        "134-2025-QH15_dieu-11_khoan-4",
+        "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-c",
+        "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+        "134-2025-QH15_dieu-14_khoan-1_diem-e",
+        "134-2025-QH15_dieu-14_khoan-2_diem-đ",
+        "134-2025-QH15_dieu-15_khoan-1_diem-c",
+        "134-2025-QH15_dieu-10_khoan-5_diem-c",
+        "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+        "142-2026-ND-CP_dieu-36_khoan-2",
+        "134-2025-QH15_dieu-15_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-25_khoan-4",
+        "134-2025-QH15_dieu-26_khoan-4",
+        "142-2026-ND-CP_dieu-17_khoan-2_diem-d",
+        "134-2025-QH15_dieu-12_khoan-1",
+        "134-2025-QH15_dieu-15_khoan-1_diem-b",
+        "142-2026-ND-CP_dieu-15_khoan-3",
+        "134-2025-QH15_dieu-29_khoan-2",
+        "134-2025-QH15_dieu-15_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-16_khoan-3",
+        "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+        "134-2025-QH15_dieu-11_khoan-5",
+        "134-2025-QH15_dieu-12_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-16_khoan-4",
+        "134-2025-QH15_dieu-11_khoan-3",
+        "142-2026-ND-CP_dieu-14_khoan-1",
+        "134-2025-QH15_dieu-27_khoan-4"
+      ],
+      "candidate_count": 33,
+      "reranker_ranks": [
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-b",
+          "rank": 1,
+          "reranker_score": 4.602234840393066
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-c",
+          "rank": 2,
+          "reranker_score": 4.086925506591797
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+          "rank": 3,
+          "reranker_score": 3.7585031986236572
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+          "rank": 4,
+          "reranker_score": 3.1563258171081543
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+          "rank": 5,
+          "reranker_score": 3.011500358581543
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-c",
+          "rank": 6,
+          "reranker_score": 2.9699947834014893
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+          "rank": 7,
+          "reranker_score": 2.917659044265747
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+          "rank": 8,
+          "reranker_score": 2.740177631378174
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-e",
+          "rank": 9,
+          "reranker_score": 2.738239049911499
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-6",
+          "rank": 10,
+          "reranker_score": 2.7052881717681885
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-4",
+          "rank": 11,
+          "reranker_score": 2.564438819885254
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-đ",
+          "rank": 12,
+          "reranker_score": 2.2864420413970947
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-12_khoan-1",
+          "rank": 13,
+          "reranker_score": 1.3004801273345947
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-3",
+          "rank": 14,
+          "reranker_score": 1.1500844955444336
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-36_khoan-2",
+          "rank": 15,
+          "reranker_score": 0.9692724943161011
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-3",
+          "rank": 16,
+          "reranker_score": 0.5626458525657654
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-4",
+          "rank": 17,
+          "reranker_score": 0.3623753786087036
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-29_khoan-2",
+          "rank": 18,
+          "reranker_score": -0.04917033016681671
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+          "rank": 19,
+          "reranker_score": -0.26420286297798157
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+          "rank": 20,
+          "reranker_score": -0.42058879137039185
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-19_khoan-2_diem-c",
+          "rank": 21,
+          "reranker_score": -0.4688001871109009
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-12_khoan-2_diem-a",
+          "rank": 22,
+          "reranker_score": -0.8839680552482605
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-5",
+          "rank": 23,
+          "reranker_score": -1.8225646018981934
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+          "rank": 24,
+          "reranker_score": -2.42617130279541
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+          "rank": 25,
+          "reranker_score": -2.489137649536133
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-5_diem-c",
+          "rank": 26,
+          "reranker_score": -2.503434658050537
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-25_khoan-4",
+          "rank": 27,
+          "reranker_score": -3.1125998497009277
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-18_khoan-6",
+          "rank": 28,
+          "reranker_score": -3.142592668533325
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-17_khoan-5_diem-b",
+          "rank": 29,
+          "reranker_score": -3.2102255821228027
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-17_khoan-2_diem-d",
+          "rank": 30,
+          "reranker_score": -3.9283816814422607
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+          "rank": 31,
+          "reranker_score": -3.996612548828125
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+          "rank": 32,
+          "reranker_score": -4.0156660079956055
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "rank": 33,
+          "reranker_score": -4.0249457359313965
+        }
+      ],
+      "top5_chunk_ids": [
+        "134-2025-QH15_dieu-15_khoan-2_diem-b",
+        "134-2025-QH15_dieu-15_khoan-1_diem-c",
+        "134-2025-QH15_dieu-15_khoan-2_diem-a",
+        "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+        "142-2026-ND-CP_dieu-16_khoan-1"
+      ],
+      "candidate_ranks": [
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-6",
+          "bm25_rank": 1,
+          "dense_rank": 18
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+          "bm25_rank": 2,
+          "dense_rank": 8
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-18_khoan-6",
+          "bm25_rank": 3,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+          "bm25_rank": 4,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-19_khoan-2_diem-c",
+          "bm25_rank": 5,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-17_khoan-5_diem-b",
+          "bm25_rank": 6,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+          "bm25_rank": 7,
+          "dense_rank": 1
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-4",
+          "bm25_rank": 8,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-c",
+          "bm25_rank": 9,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+          "bm25_rank": 10,
+          "dense_rank": 9
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-e",
+          "bm25_rank": 11,
+          "dense_rank": 14
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-đ",
+          "bm25_rank": 12,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-c",
+          "bm25_rank": 13,
+          "dense_rank": 7
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-10_khoan-5_diem-c",
+          "bm25_rank": 14,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+          "bm25_rank": 15,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-36_khoan-2",
+          "bm25_rank": 16,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-b",
+          "bm25_rank": 17,
+          "dense_rank": 5
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-25_khoan-4",
+          "bm25_rank": 18,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+          "bm25_rank": 19,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-17_khoan-2_diem-d",
+          "bm25_rank": 20,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-12_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 2
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 3
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 4
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-29_khoan-2",
+          "bm25_rank": null,
+          "dense_rank": 6
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 10
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 11
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 12
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-5",
+          "bm25_rank": null,
+          "dense_rank": 13
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-12_khoan-2_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 15
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-4",
+          "bm25_rank": null,
+          "dense_rank": 16
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 17
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 19
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+          "bm25_rank": null,
+          "dense_rank": 20
+        }
+      ]
+    }
+  ],
+  "retrieval_call_count": 1,
+  "llm_calls": [
+    {
+      "call_number": 1,
+      "stage": "coverage_check"
+    },
+    {
+      "call_number": 2,
+      "stage": "answer_generation"
+    },
+    {
+      "call_number": 3,
+      "stage": "completeness_check"
+    }
+  ],
+  "llm_call_count": 3,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Tổ chức phát triển hoặc triển khai AI cần bảo đảm trách nhiệm giải trình ra sao?",
+    "initial_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-b",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-15",
+        "article": "15",
+        "article_label": "Điều 15",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "b",
+        "point_label": "Điểm b",
+        "text": "Bên triển khai có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro trung bình và thấp\nKhoản 2\nĐiểm b)\nBên triển khai có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.602234840393066,
+        "bm25_rank": 17,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-15_khoan-2",
+        "point_id": "134-2025-QH15_dieu-15_khoan-2_diem-b"
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-c",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-15",
+        "article": "15",
+        "article_label": "Điều 15",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "c",
+        "point_label": "Điểm c",
+        "text": "Bên triển khai có trách nhiệm giải trình về việc vận hành, kiểm soát rủi ro, xử lý sự cố và bảo vệ quyền, lợi ích hợp pháp của tổ chức, cá nhân khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong quá trình thanh tra, kiểm tra hoặc xử lý sự cố;",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro trung bình và thấp\nKhoản 1\nĐiểm c)\nBên triển khai có trách nhiệm giải trình về việc vận hành, kiểm soát rủi ro, xử lý sự cố và bảo vệ quyền, lợi ích hợp pháp của tổ chức, cá nhân khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong quá trình thanh tra, kiểm tra hoặc xử lý sự cố;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.086925506591797,
+        "bm25_rank": 13,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-15_khoan-1",
+        "point_id": "134-2025-QH15_dieu-15_khoan-1_diem-c"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-15",
+        "article": "15",
+        "article_label": "Điều 15",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Nhà cung cấp có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro trung bình và thấp\nKhoản 2\nĐiểm a)\nNhà cung cấp có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 3.7585031986236572,
+        "bm25_rank": null,
+        "dense_rank": 10,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-15_khoan-2",
+        "point_id": "134-2025-QH15_dieu-15_khoan-2_diem-a"
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+        "document_id": "05-2026-TT-BKHCN",
+        "document_number": "05/2026/TT-BKHCN",
+        "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+        "article_id": "05-2026-TT-BKHCN_dieu-3",
+        "article": "3",
+        "article_label": "Điều 3",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "d",
+        "point_label": "Điểm d",
+        "text": "Khả năng giải thích và trách nhiệm giải trình: Tổ chức, cá nhân xác định rõ các tác động mà hệ thống có thể gây ra, chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện, kiểm thử. Phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra.",
+        "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 2\nĐiểm d)\nKhả năng giải thích và trách nhiệm giải trình: Tổ chức, cá nhân xác định rõ các tác động mà hệ thống có thể gây ra, chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện, kiểm thử. Phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra.",
+        "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "reranker_score": 3.1563258171081543,
+        "bm25_rank": 2,
+        "dense_rank": 8,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-2",
+        "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d"
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-16",
+        "article": "16",
+        "article_label": "Điều 16",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp và bên triển khai hệ thống trí tuệ nhân tạo phải thực hiện trách nhiệm minh bạch, thông báo, đánh dấu kỹ thuật và gắn nhãn hiển thị đối với hệ thống trí tuệ nhân tạo và nội dung do hệ thống tạo ra theo quy định tại Điều 11 của Luật Trí tuệ nhân tạo. Việc thực hiện trách nhiệm minh bạch phải phù hợp với mục đích sử dụng, bối cảnh triển khai và mức độ rủi ro của hệ thống.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 16. Nguyên tắc minh bạch và giải trình\nKhoản 1\nNhà cung cấp và bên triển khai hệ thống trí tuệ nhân tạo phải thực hiện trách nhiệm minh bạch, thông báo, đánh dấu kỹ thuật và gắn nhãn hiển thị đối với hệ thống trí tuệ nhân tạo và nội dung do hệ thống tạo ra theo quy định tại Điều 11 của Luật Trí tuệ nhân tạo. Việc thực hiện trách nhiệm minh bạch phải phù hợp với mục đích sử dụng, bối cảnh triển khai và mức độ rủi ro của hệ thống.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.011500358581543,
+        "bm25_rank": 7,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-16_khoan-1",
+        "point_id": null
+      }
+    ],
+    "current_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-b",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-15",
+        "article": "15",
+        "article_label": "Điều 15",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "b",
+        "point_label": "Điểm b",
+        "text": "Bên triển khai có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro trung bình và thấp\nKhoản 2\nĐiểm b)\nBên triển khai có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.602234840393066,
+        "bm25_rank": 17,
+        "dense_rank": 5,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-15_khoan-2",
+        "point_id": "134-2025-QH15_dieu-15_khoan-2_diem-b"
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-c",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-15",
+        "article": "15",
+        "article_label": "Điều 15",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "c",
+        "point_label": "Điểm c",
+        "text": "Bên triển khai có trách nhiệm giải trình về việc vận hành, kiểm soát rủi ro, xử lý sự cố và bảo vệ quyền, lợi ích hợp pháp của tổ chức, cá nhân khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong quá trình thanh tra, kiểm tra hoặc xử lý sự cố;",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro trung bình và thấp\nKhoản 1\nĐiểm c)\nBên triển khai có trách nhiệm giải trình về việc vận hành, kiểm soát rủi ro, xử lý sự cố và bảo vệ quyền, lợi ích hợp pháp của tổ chức, cá nhân khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong quá trình thanh tra, kiểm tra hoặc xử lý sự cố;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.086925506591797,
+        "bm25_rank": 13,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-15_khoan-1",
+        "point_id": "134-2025-QH15_dieu-15_khoan-1_diem-c"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-15",
+        "article": "15",
+        "article_label": "Điều 15",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Nhà cung cấp có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro trung bình và thấp\nKhoản 2\nĐiểm a)\nNhà cung cấp có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 3.7585031986236572,
+        "bm25_rank": null,
+        "dense_rank": 10,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-15_khoan-2",
+        "point_id": "134-2025-QH15_dieu-15_khoan-2_diem-a"
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+        "document_id": "05-2026-TT-BKHCN",
+        "document_number": "05/2026/TT-BKHCN",
+        "document_title": "Khung đạo đức trí tuệ nhân tạo quốc gia",
+        "article_id": "05-2026-TT-BKHCN_dieu-3",
+        "article": "3",
+        "article_label": "Điều 3",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "d",
+        "point_label": "Điểm d",
+        "text": "Khả năng giải thích và trách nhiệm giải trình: Tổ chức, cá nhân xác định rõ các tác động mà hệ thống có thể gây ra, chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện, kiểm thử. Phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra.",
+        "retrieval_text": "Khung đạo đức trí tuệ nhân tạo quốc gia\n05/2026/TT-BKHCN\nĐiều 3. Khung đạo đức trí tuệ nhân tạo quốc gia\nKhoản 2\nĐiểm d)\nKhả năng giải thích và trách nhiệm giải trình: Tổ chức, cá nhân xác định rõ các tác động mà hệ thống có thể gây ra, chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện, kiểm thử. Phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra.",
+        "official_source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "reranker_score": 3.1563258171081543,
+        "bm25_rank": 2,
+        "dense_rank": 8,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?classid=1&docid=217165&pageid=27160&typegroupid=6",
+        "clause_id": "05-2026-TT-BKHCN_dieu-3_khoan-2",
+        "point_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d"
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-16",
+        "article": "16",
+        "article_label": "Điều 16",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp và bên triển khai hệ thống trí tuệ nhân tạo phải thực hiện trách nhiệm minh bạch, thông báo, đánh dấu kỹ thuật và gắn nhãn hiển thị đối với hệ thống trí tuệ nhân tạo và nội dung do hệ thống tạo ra theo quy định tại Điều 11 của Luật Trí tuệ nhân tạo. Việc thực hiện trách nhiệm minh bạch phải phù hợp với mục đích sử dụng, bối cảnh triển khai và mức độ rủi ro của hệ thống.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nMINH BẠCH, GIẢI TRÌNH VÀ XỬ LÝ SỰ CỐ\nĐiều 16. Nguyên tắc minh bạch và giải trình\nKhoản 1\nNhà cung cấp và bên triển khai hệ thống trí tuệ nhân tạo phải thực hiện trách nhiệm minh bạch, thông báo, đánh dấu kỹ thuật và gắn nhãn hiển thị đối với hệ thống trí tuệ nhân tạo và nội dung do hệ thống tạo ra theo quy định tại Điều 11 của Luật Trí tuệ nhân tạo. Việc thực hiện trách nhiệm minh bạch phải phù hợp với mục đích sử dụng, bối cảnh triển khai và mức độ rủi ro của hệ thống.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.011500358581543,
+        "bm25_rank": 7,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-16_khoan-1",
+        "point_id": null
+      }
+    ],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": true,
+      "missing_aspects": [],
+      "reason": "Các chứng cứ đã cung cấp đầy đủ thông tin về trách nhiệm giải trình của cả nhà cung cấp (tổ chức phát triển) và bên triển khai hệ thống trí tuệ nhân tạo."
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": "Theo các quy định hiện hành, việc bảo đảm trách nhiệm giải trình của các tổ chức liên quan đến trí tuệ nhân tạo được quy định cụ thể như sau: Nhà cung cấp có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân [E3]. Bên triển khai có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong các trường hợp có dấu hiệu vi phạm pháp luật, ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân [E1], hoặc trong quá trình thanh tra, kiểm tra, xử lý sự cố liên quan đến việc vận hành, kiểm soát rủi ro, xử lý sự cố và bảo vệ quyền, lợi ích hợp pháp của tổ chức, cá nhân [E2]. Ngoài ra, các tổ chức, cá nhân cũng phải xác định rõ tác động của hệ thống, chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện, kiểm thử, đồng thời phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra [E4].",
+    "completeness_check": {
+      "complete": true,
+      "missing_points": [],
+      "reason": "Câu trả lời đã bao quát đầy đủ các nội dung về trách nhiệm giải trình của nhà cung cấp, bên triển khai và các tổ chức theo quy định tại các nguồn E1, E2, E3 và E4."
+    },
+    "citation_check": {
+      "valid": true,
+      "cited_evidence_ids": [
+        "E3",
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required_by_deterministic_gate",
+      "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+      "reviewed_claims": []
+    },
+    "revision_count": 0,
+    "citation_revision_count": 0,
+    "final_answer": "Theo các quy định hiện hành, việc bảo đảm trách nhiệm giải trình của các tổ chức liên quan đến trí tuệ nhân tạo được quy định cụ thể như sau: Nhà cung cấp có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong trường hợp có dấu hiệu vi phạm pháp luật hoặc ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân [E3]. Bên triển khai có trách nhiệm giải trình khi có yêu cầu của cơ quan nhà nước có thẩm quyền trong các trường hợp có dấu hiệu vi phạm pháp luật, ảnh hưởng đến quyền, lợi ích hợp pháp của tổ chức, cá nhân [E1], hoặc trong quá trình thanh tra, kiểm tra, xử lý sự cố liên quan đến việc vận hành, kiểm soát rủi ro, xử lý sự cố và bảo vệ quyền, lợi ích hợp pháp của tổ chức, cá nhân [E2]. Ngoài ra, các tổ chức, cá nhân cũng phải xác định rõ tác động của hệ thống, chuẩn bị tài liệu giải thích và bằng chứng về quá trình thiết kế, huấn luyện, kiểm thử, đồng thời phân định rõ chủ thể chịu trách nhiệm giải trình đối với các quyết định do hệ thống tạo ra [E4].",
+    "final_status": "success",
+    "run_id": "agentic-v1-eval028",
+    "initial_top5": [
+      "134-2025-QH15_dieu-15_khoan-2_diem-b",
+      "134-2025-QH15_dieu-15_khoan-1_diem-c",
+      "134-2025-QH15_dieu-15_khoan-2_diem-a",
+      "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+      "142-2026-ND-CP_dieu-16_khoan-1"
+    ],
+    "expanded_candidates": [],
+    "final_top5": [
+      "134-2025-QH15_dieu-15_khoan-2_diem-b",
+      "134-2025-QH15_dieu-15_khoan-1_diem-c",
+      "134-2025-QH15_dieu-15_khoan-2_diem-a",
+      "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+      "142-2026-ND-CP_dieu-16_khoan-1"
+    ],
+    "retrieval_calls": [
+      {
+        "call_number": 1,
+        "round": 0,
+        "query": "Tổ chức phát triển hoặc triển khai AI cần bảo đảm trách nhiệm giải trình ra sao?",
+        "sub_query": false,
+        "bm25_depth": 20,
+        "dense_depth": 20,
+        "candidate_chunk_ids": [
+          "142-2026-ND-CP_dieu-16_khoan-6",
+          "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+          "142-2026-ND-CP_dieu-18_khoan-6",
+          "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+          "142-2026-ND-CP_dieu-19_khoan-2_diem-c",
+          "142-2026-ND-CP_dieu-17_khoan-5_diem-b",
+          "142-2026-ND-CP_dieu-16_khoan-1",
+          "134-2025-QH15_dieu-11_khoan-4",
+          "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-c",
+          "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+          "134-2025-QH15_dieu-14_khoan-1_diem-e",
+          "134-2025-QH15_dieu-14_khoan-2_diem-đ",
+          "134-2025-QH15_dieu-15_khoan-1_diem-c",
+          "134-2025-QH15_dieu-10_khoan-5_diem-c",
+          "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+          "142-2026-ND-CP_dieu-36_khoan-2",
+          "134-2025-QH15_dieu-15_khoan-2_diem-b",
+          "142-2026-ND-CP_dieu-25_khoan-4",
+          "134-2025-QH15_dieu-26_khoan-4",
+          "142-2026-ND-CP_dieu-17_khoan-2_diem-d",
+          "134-2025-QH15_dieu-12_khoan-1",
+          "134-2025-QH15_dieu-15_khoan-1_diem-b",
+          "142-2026-ND-CP_dieu-15_khoan-3",
+          "134-2025-QH15_dieu-29_khoan-2",
+          "134-2025-QH15_dieu-15_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-16_khoan-3",
+          "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "134-2025-QH15_dieu-11_khoan-5",
+          "134-2025-QH15_dieu-12_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-16_khoan-4",
+          "134-2025-QH15_dieu-11_khoan-3",
+          "142-2026-ND-CP_dieu-14_khoan-1",
+          "134-2025-QH15_dieu-27_khoan-4"
+        ],
+        "candidate_count": 33,
+        "reranker_ranks": [
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-b",
+            "rank": 1,
+            "reranker_score": 4.602234840393066
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-c",
+            "rank": 2,
+            "reranker_score": 4.086925506591797
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+            "rank": 3,
+            "reranker_score": 3.7585031986236572
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+            "rank": 4,
+            "reranker_score": 3.1563258171081543
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+            "rank": 5,
+            "reranker_score": 3.011500358581543
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-c",
+            "rank": 6,
+            "reranker_score": 2.9699947834014893
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+            "rank": 7,
+            "reranker_score": 2.917659044265747
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+            "rank": 8,
+            "reranker_score": 2.740177631378174
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-e",
+            "rank": 9,
+            "reranker_score": 2.738239049911499
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-6",
+            "rank": 10,
+            "reranker_score": 2.7052881717681885
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-4",
+            "rank": 11,
+            "reranker_score": 2.564438819885254
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-đ",
+            "rank": 12,
+            "reranker_score": 2.2864420413970947
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-12_khoan-1",
+            "rank": 13,
+            "reranker_score": 1.3004801273345947
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-3",
+            "rank": 14,
+            "reranker_score": 1.1500844955444336
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-36_khoan-2",
+            "rank": 15,
+            "reranker_score": 0.9692724943161011
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-3",
+            "rank": 16,
+            "reranker_score": 0.5626458525657654
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-4",
+            "rank": 17,
+            "reranker_score": 0.3623753786087036
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-29_khoan-2",
+            "rank": 18,
+            "reranker_score": -0.04917033016681671
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+            "rank": 19,
+            "reranker_score": -0.26420286297798157
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+            "rank": 20,
+            "reranker_score": -0.42058879137039185
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-19_khoan-2_diem-c",
+            "rank": 21,
+            "reranker_score": -0.4688001871109009
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-12_khoan-2_diem-a",
+            "rank": 22,
+            "reranker_score": -0.8839680552482605
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-5",
+            "rank": 23,
+            "reranker_score": -1.8225646018981934
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+            "rank": 24,
+            "reranker_score": -2.42617130279541
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+            "rank": 25,
+            "reranker_score": -2.489137649536133
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-5_diem-c",
+            "rank": 26,
+            "reranker_score": -2.503434658050537
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-25_khoan-4",
+            "rank": 27,
+            "reranker_score": -3.1125998497009277
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-18_khoan-6",
+            "rank": 28,
+            "reranker_score": -3.142592668533325
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-17_khoan-5_diem-b",
+            "rank": 29,
+            "reranker_score": -3.2102255821228027
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-17_khoan-2_diem-d",
+            "rank": 30,
+            "reranker_score": -3.9283816814422607
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+            "rank": 31,
+            "reranker_score": -3.996612548828125
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+            "rank": 32,
+            "reranker_score": -4.0156660079956055
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+            "rank": 33,
+            "reranker_score": -4.0249457359313965
+          }
+        ],
+        "top5_chunk_ids": [
+          "134-2025-QH15_dieu-15_khoan-2_diem-b",
+          "134-2025-QH15_dieu-15_khoan-1_diem-c",
+          "134-2025-QH15_dieu-15_khoan-2_diem-a",
+          "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+          "142-2026-ND-CP_dieu-16_khoan-1"
+        ],
+        "candidate_ranks": [
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-6",
+            "bm25_rank": 1,
+            "dense_rank": 18
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+            "bm25_rank": 2,
+            "dense_rank": 8
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-18_khoan-6",
+            "bm25_rank": 3,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+            "bm25_rank": 4,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-19_khoan-2_diem-c",
+            "bm25_rank": 5,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-17_khoan-5_diem-b",
+            "bm25_rank": 6,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+            "bm25_rank": 7,
+            "dense_rank": 1
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-4",
+            "bm25_rank": 8,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-3_diem-c",
+            "bm25_rank": 9,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-19_khoan-3_diem-c",
+            "bm25_rank": 10,
+            "dense_rank": 9
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-e",
+            "bm25_rank": 11,
+            "dense_rank": 14
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-2_diem-đ",
+            "bm25_rank": 12,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-c",
+            "bm25_rank": 13,
+            "dense_rank": 7
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-10_khoan-5_diem-c",
+            "bm25_rank": 14,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+            "bm25_rank": 15,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-36_khoan-2",
+            "bm25_rank": 16,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-b",
+            "bm25_rank": 17,
+            "dense_rank": 5
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-25_khoan-4",
+            "bm25_rank": 18,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-26_khoan-4",
+            "bm25_rank": 19,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-17_khoan-2_diem-d",
+            "bm25_rank": 20,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-12_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 2
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-1_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 3
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 4
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-29_khoan-2",
+            "bm25_rank": null,
+            "dense_rank": 6
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-15_khoan-2_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 10
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 11
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 12
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-5",
+            "bm25_rank": null,
+            "dense_rank": 13
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-12_khoan-2_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 15
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-4",
+            "bm25_rank": null,
+            "dense_rank": 16
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 17
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-14_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 19
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-4",
+            "bm25_rank": null,
+            "dense_rank": 20
+          }
+        ]
+      }
+    ],
+    "llm_calls": [
+      {
+        "call_number": 1,
+        "stage": "coverage_check"
+      },
+      {
+        "call_number": 2,
+        "stage": "answer_generation"
+      },
+      {
+        "call_number": 3,
+        "stage": "completeness_check"
+      }
+    ],
+    "expansion_used": false,
+    "revision_used": false,
+    "citation_revision_used": false,
+    "execution_error": null,
+    "transitions": [
+      "initialized",
+      "initial_retrieval",
+      "coverage_check",
+      "answer_generation",
+      "completeness_check",
+      "citation_check",
+      "final:success"
+    ]
+  },
+  "timestamp": "2026-09-05T14:21:41.919261+00:00"
+}

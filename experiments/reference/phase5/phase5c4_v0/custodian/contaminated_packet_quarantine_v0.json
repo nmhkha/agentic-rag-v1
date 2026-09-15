@@ -1,0 +1,111 @@
+{
+  "status": "QUARANTINED_CONTAMINATED_INPUT",
+  "use_for_future_annotation": "FORBIDDEN",
+  "quarantine_mode": "Additive provenance/access prohibition; original files preserved in place; not an enforced filesystem boundary",
+  "contaminated_packet_files": {
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/01_independent_review_units_v0.jsonl": {
+      "kind": "file",
+      "sha256": "e805dfcfe282fa1893f015980f1c18153cb032e6cd3b2b6dfc576e841e61b0f9",
+      "size_bytes": 140624,
+      "mode": 384
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/README_independent_review_v0.md": {
+      "kind": "file",
+      "sha256": "2410ab18aab0dffaa81cacdd0eb816ba55ab65c1be843bedec4c398e9d45a87e",
+      "size_bytes": 2172,
+      "mode": 384
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/complete_corpus_evidence_v0.json": {
+      "kind": "file",
+      "sha256": "510642c61928286a553aff9263a16665953118152b31f78445f51aa8a5292350",
+      "size_bytes": 2941002,
+      "mode": 384
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b/contamination_query_only_sources_v0.json": {
+      "kind": "file",
+      "sha256": "ab167baeae320ed639185233828cb987b41efbccb5c257129b4879332c8cae5d",
+      "size_bytes": 7294,
+      "mode": 384
+    }
+  },
+  "previous_failed_attempt_files": {
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/annotation_B_v0.jsonl": {
+      "kind": "file",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "mode": 436
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/integrity_baseline_v0.json": {
+      "kind": "file",
+      "sha256": "7c2dfbfa118b4a326a244b82009e9bc1a427ea6b9e5e2115a530b1f1cdf8d1f6",
+      "size_bytes": 5691596,
+      "mode": 436
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/integrity_before_after_v0.json": {
+      "kind": "file",
+      "sha256": "d0f48af4973027f5f43898e3b91277f588f0cfe568df62edd7c27a90086f638d",
+      "size_bytes": 5692496,
+      "mode": 436
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/phase5c4b_access_manifest_v0.json": {
+      "kind": "file",
+      "sha256": "cd02d6026ee6b823ece82099e59584e106a7438f69e7e33ed2535c705ad574da",
+      "size_bytes": 2781,
+      "mode": 436
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/phase5c4b_agreement_ready_summary_v0.json": {
+      "kind": "file",
+      "sha256": "8fd3cec46f9d609b4ff82e3b5b16f0ce639085d2272871ee3a5ec4ec51ebc32c",
+      "size_bytes": 573,
+      "mode": 436
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/phase5c4b_console_v0.txt": {
+      "kind": "file",
+      "sha256": "d5cb6cabfff33dfee259cb07b87b425a07fd5d2812d22209f7bcbfc38b8f95f1",
+      "size_bytes": 953,
+      "mode": 436
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/phase5c4b_review_summary_v0.md": {
+      "kind": "file",
+      "sha256": "e9247e3b1aa4b1466570cbd29096e6e9f1950367d2a2039cb8c04d989d8e7593",
+      "size_bytes": 2579,
+      "mode": 436
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/phase5c4b_validation_v0.json": {
+      "kind": "file",
+      "sha256": "ce77141695294c9874c0de8c153c1104a510ea514870d610fdd5f799ca6c4770",
+      "size_bytes": 15675,
+      "mode": 436
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/reviewer_b_contamination_flags_v0.jsonl": {
+      "kind": "file",
+      "sha256": "6deadb9bef7335d7ad0dc5e14f38d56e38818bf40489ed4d667460a355adf678",
+      "size_bytes": 1057,
+      "mode": 436
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/reviewer_b_corpus_audit_v0.json": {
+      "kind": "file",
+      "sha256": "10f31536823028f7078e9546348e539ed05069d92b4f16bebd7c5531491836ed",
+      "size_bytes": 406,
+      "mode": 436
+    },
+    "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results/reviewer_b_manifest_v0.json": {
+      "kind": "file",
+      "sha256": "1fc2d8e3e512d8de0b94c83e81afa920ef88b76f13f5b450ee75b5f4e1b59641",
+      "size_bytes": 4754,
+      "mode": 436
+    }
+  },
+  "previous_reviewer_b_attempt": {
+    "status": "REVIEWER_B_PACKET_CONTAMINATED",
+    "phase_status": "FAIL",
+    "candidates_annotated": 0,
+    "substantive_A_labels_read": false,
+    "reusable_for_annotation": false,
+    "disqualification": "PERMANENT"
+  },
+  "old_files_deleted_moved_or_modified": false,
+  "historical_A_blindness_claim": "Superseded for future B routing by the preserved failed B audit and this v1 boundary; historical A files remain unchanged.",
+  "future_B_input": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_packet_v1",
+  "future_B_context": "BRAND_NEW_SESSION_REQUIRED"
+}

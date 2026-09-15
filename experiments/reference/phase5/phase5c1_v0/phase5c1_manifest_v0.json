@@ -1,0 +1,1705 @@
+{
+  "schema": "phase5c1-manifest-v0",
+  "created_at_utc": "2026-09-09T14:03:50.416855+00:00",
+  "phase": "5C.1",
+  "scope": "READ-ONLY RESEARCH SYNTHESIS; additive output only",
+  "status": "PASS",
+  "source_authority": {
+    "design": "data/evaluation/generation/phase5/phase5a_ablation_spec_v0.md",
+    "final_primary_namespace": "data/evaluation/generation/phase5/phase5b2f_v0",
+    "previous_available_case_diagnostics": "non-primary historical; retained unchanged"
+  },
+  "source_count": 329,
+  "sources_reviewed": {
+    "data/evaluation/generation/phase5/phase5a_ablation_manifest_v0.json": {
+      "sha256": "20893844b3bb7161b23d258476349e234675e404cd0b8a60fba17a376d8647cd",
+      "size_bytes": 102610,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5a_ablation_spec_v0.md": {
+      "sha256": "51f1bf9e4db72ac3c3edeaf36ef5385dc9aff295c63068d4ffb07926ecb15b64",
+      "size_bytes": 36472,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/phase5b2f_metrics_v0.json": {
+      "sha256": "87e18a692dab764c6a469fd694da982d91fc063664c940d0576743675533f59b",
+      "size_bytes": 352761,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/canonical_judgments_manifest.json": {
+      "sha256": "6a32b087dd3a5fa15a9f05151db921b750b751df6c3fa5df8bd0584cb585aea6",
+      "size_bytes": 119636,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/provenance_v0.json": {
+      "sha256": "e2c81b240550cbb477356c3db80cc05dd48d5206b390f9f82382c229276c9992",
+      "size_bytes": 5090,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/integrity_before_after_v0.json": {
+      "sha256": "3bb1493ef440be675255fc6d4587be0c94ec9594d514407b67ab9746f54d3a0b",
+      "size_bytes": 11601,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/final_artifact_hashes_v0.json": {
+      "sha256": "95b0791e9fe1cd443080ed9e6eea612a24e35610fe37781a2ec75ff67239af00",
+      "size_bytes": 3083,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/validation_v0.json": {
+      "sha256": "f532908c7a895b25edef81e8998aae37a2562ccab7f2f1d8e93d33342265bd22",
+      "size_bytes": 2028,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/recovery_completion_gate_v0.json": {
+      "sha256": "227b2c2c229c8a4a9df4c9cdc0832097023aa84636ebbd922e9f1925f55d6a78",
+      "size_bytes": 36268,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/reports/standard_rag_eval_v0.md": {
+      "sha256": "8dc7a635fa4c9663a9fdbe1d36956bd1e327403d2b18d4c430dd48567235add2",
+      "size_bytes": 5864,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/reports/standard_rag_failure_analysis_v0.md": {
+      "sha256": "0d42160f2bc6427a31c2cc661c12edf2806bf85f3cdcdef4de26a5e47b4ee3ab",
+      "size_bytes": 19556,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/reports/agentic_rag_eval_v1_agentic-v1.md": {
+      "sha256": "f87b5999a8a1b6d43a46f98caea912f4acbfa9ebfd4f3cfaf6419cf1b9e82ea2",
+      "size_bytes": 1205,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/reports/agentic_trace_analysis_v0.md": {
+      "sha256": "6aa6dffb0a33bd79ae6e6c2e874ec888a358cd2a8bc42c19369f5a1f7f654768",
+      "size_bytes": 98803,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/phase5b2f_final_report_v0.md": {
+      "sha256": "c5a22d0f50cf48887fbc43dda8fc443b674aff12eebe7cd75d8f804dbb815432",
+      "size_bytes": 40137,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/results/candidate-union-v0_report.md": {
+      "sha256": "bd61ab672c43f7f350d5d98be6e0da6bdf1859abfa577228eee29191b6f69930",
+      "size_bytes": 3655,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "retriever-reranker-comparison-v0.md": {
+      "sha256": "4587567ffc78c189e81bb488c3c9be6d87a94bccc7cd5b25d777c3090f9d38f8",
+      "size_bytes": 724,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/standard_rag_eval_v0.jsonl": {
+      "sha256": "691f98cdffe29d6f4f2bfff8ad93c540447ee9cb4c78c3e48c003e2c2c4f487e",
+      "size_bytes": 359858,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/agentic_rag_eval_v1_agentic-v1.jsonl": {
+      "sha256": "a8d6a4bb5f18ddd79d6fcf98d8330b009e44764759e5f135e894528ad715b06e",
+      "size_bytes": 2090257,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/standard_rag_metrics_v0.json": {
+      "sha256": "720cc8acd5c05d819c3b5f74bd46db8a4217eb93eee8abf2ea50ba229748ffe9",
+      "size_bytes": 21866,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/agentic_rag_metrics_v1_agentic-v1.json": {
+      "sha256": "ca0459b683bcec40833b69f288497b5d6e6bd2640daa1910ab0f18b7ff4bf1d5",
+      "size_bytes": 3021,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/failure_analysis_metrics_v0.json": {
+      "sha256": "d2ea8278285d78fcbe9c4adf613bc90b5762b8fa62ea45deb03393194a4b7fb7",
+      "size_bytes": 4045,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/failure_analysis_points_v0.jsonl": {
+      "sha256": "bbc6993d0ff7108e5f39f6b34bd8549bff15493c3c435adefc3514b0cf1f1f53",
+      "size_bytes": 231690,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/failure_analysis_queries_v0.json": {
+      "sha256": "842871677c4345562d92384e2abeb9f3f69da1d8f0158891dd02aea9200bd10e",
+      "size_bytes": 109386,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/agentic_trace_analysis_metrics_v0.json": {
+      "sha256": "ab10b4cd185cc41acc553cc991df74040cc980fd284c8217fdbdccc8c0bacab7",
+      "size_bytes": 151338,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/agentic_trace_analysis_v0.jsonl": {
+      "sha256": "750d33655f9038f7e3a4dc52160933f9cd742ca2d7a0b2142796c23f407e664a",
+      "size_bytes": 393703,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/versions/corpus-v0.1/corpus_validation_manifest.json": {
+      "sha256": "931776bf70f5f25c95c9ead061f75fa51443fc168dbda8db7bb9f63611d5bde9",
+      "size_bytes": 1233,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/results/candidate-union-v0_metrics.json": {
+      "sha256": "d329f16436d992107576cc25ee6d66261b93cfefaa4b3bc03556a8f88242d3ed",
+      "size_bytes": 5414,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/results/bge-reranker-v2-m3-v0_metrics.json": {
+      "sha256": "4442492f9233353af7eff798d94bef41740032cd2b1923b3e8913abf3bfb6ff3",
+      "size_bytes": 1083,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/efficiency_v0.json": {
+      "sha256": "5ecc0a8ff8d4e97900442f452ccd6da654933da646e90b4977c6e90219808dce",
+      "size_bytes": 5428,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/replication_R1_R2.json": {
+      "sha256": "8742111ab9909b31cc336509a6cf5434e3a4c4355678e3ee6d26b3f80fd0ce86",
+      "size_bytes": 50724,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/contrast_R2_A1.json": {
+      "sha256": "929fed01161b962ef78e924d3672f906b1c17e5b3a361b1f9791d161174676a2",
+      "size_bytes": 124363,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/contrast_R2_A2.json": {
+      "sha256": "2ce304f242e7592257bb5a5f50ebd4c44ee64e17bd0b11f6a641a4c4a3358ce1",
+      "size_bytes": 125557,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/bootstrap_R2_A1.json": {
+      "sha256": "f676f1eff5ed39c4a5bb9733ff314b3adecacfbe3a47e49477adfd23659f6c7b",
+      "size_bytes": 1167,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/bootstrap_R2_A2.json": {
+      "sha256": "edf1cb56c46ca111efe7aa35f6b33e7c83dc81419339d5b8d79d61541f624c94",
+      "size_bytes": 1167,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/point_transitions_R1_R2.jsonl": {
+      "sha256": "e6270d6a1c55879478c47814156942005b3736e28787474fdf702623afedc27d",
+      "size_bytes": 12205,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/point_transitions_R2_A1.jsonl": {
+      "sha256": "bffab174ca6cfbc76ae17aa90f4f6772e2cf59366d9d7ca2afaf66f61c363697",
+      "size_bytes": 12220,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/point_transitions_R2_A2.jsonl": {
+      "sha256": "849e7c27fa774dfa9b6786af7db087fe29f18617e7366f5e6f213b2e7345cc0a",
+      "size_bytes": 12187,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/full-agentic-replication/evaluation_complete.jsonl": {
+      "sha256": "b4a814e23ec27f0bf34a7a3d72abe6bb4a8f12a6a762a0700eebb42b11d73b7d",
+      "size_bytes": 2358173,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/full-agentic-replication/metrics.json": {
+      "sha256": "b4421528d9dd86698f7c61ef9919dfa21a64f73c8c538db1681ca1f31942f821",
+      "size_bytes": 1545,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/full-agentic-replication/run_manifest.json": {
+      "sha256": "98032d751ac75a32741eee72c3745618c297dc4d9580f04d1f31e3fe7bc3aa4c",
+      "size_bytes": 32369,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/full-agentic-replication/variant_manifest.json": {
+      "sha256": "cc4f30732d3f5ecf46b69f804aab905b5e82fc8fe82f9f89098e4bd17dc2a956",
+      "size_bytes": 4406,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/agentic-v1-no-answer-revision/evaluation_complete.jsonl": {
+      "sha256": "1b6c3cc6ddcca67526f1c8d917dd40eeaff1e3659dee78c94fbbd57f0da70e65",
+      "size_bytes": 2408101,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/agentic-v1-no-answer-revision/metrics.json": {
+      "sha256": "278f7e09e31825c69a98df32f70f7c6203c40d2fae86306eae6276f89d4c0b6a",
+      "size_bytes": 1542,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/agentic-v1-no-answer-revision/run_manifest.json": {
+      "sha256": "08873c040affd37d4fc11587761909cd436d95c4f9266744dfdfc089a672d4ff",
+      "size_bytes": 32371,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/agentic-v1-no-answer-revision/variant_manifest.json": {
+      "sha256": "9f7beb58b43658af823410d99aad247cc9022b6bdfd0c6ff9e1ee6f4b201076e",
+      "size_bytes": 4412,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/agentic-v1-no-evidence-expansion/evaluation_complete.jsonl": {
+      "sha256": "6d4c91ed386581906910cdda8f366ee9d304117df6ec3b7efec8c983a27215a6",
+      "size_bytes": 1614201,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2f_v0/agentic-v1-no-evidence-expansion/metrics.json": {
+      "sha256": "2cdd77d88ccc1a1b3321d5dc0f6604ff23a3795d9572c24ae5566b221cef0aa2",
+      "size_bytes": 1544,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/agentic-v1-no-evidence-expansion/run_manifest.json": {
+      "sha256": "ef99f3895af3e73d036a70a8d636d5d84be48f8d14747f3639fe636c5e30a18f",
+      "size_bytes": 31855,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/agentic-v1-no-evidence-expansion/variant_manifest.json": {
+      "sha256": "7d151d91a522f8ba0236664deade43aa19c35d07d926856e11fb93f6f87d66f5",
+      "size_bytes": 4415,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval001.json": {
+      "sha256": "357d50268c72666d55a5ba1e71696f20d6672fd716b2c8af2a0a88c575491c3d",
+      "size_bytes": 129308,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval001.json": {
+      "sha256": "607541307e97e2a3a15abce814fdc9b8b4999beb34efdee770e0dd871ac51433",
+      "size_bytes": 128128,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval002.json": {
+      "sha256": "9b213f86c5bfe7ea6ec41172412d790a593df1f138bb8a29a5d4db6dcd6fa77a",
+      "size_bytes": 47582,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval002.json": {
+      "sha256": "598466168456fdaaca2593fc1d296f1e8cc65fe90d4a160b1504895558ea96fb",
+      "size_bytes": 46472,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval003.json": {
+      "sha256": "bb03b9ff26910e60bd110c80b7567f7582227486fe25bd3e2d2469fdbd269818",
+      "size_bytes": 44424,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval003.json": {
+      "sha256": "341145f3f91f3cdb951c9816b9309ca21d5cb89b58de0cf905faffefe9d74208",
+      "size_bytes": 43481,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval004.json": {
+      "sha256": "430ea118f3f2d6bccae9cacae072e82e6c86d4882d60398cf52a00160a90dbef",
+      "size_bytes": 56306,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval004.json": {
+      "sha256": "fe7e57ffa8bb88ad6dcc609eef6e14c3a812102016a74308aa60a6c1791afd64",
+      "size_bytes": 54220,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval005a.json": {
+      "sha256": "6b6c0d854878ea17e0f96051089d743179bec260fb00fce267ad5a49a9f56f5d",
+      "size_bytes": 175773,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval005a.json": {
+      "sha256": "b45ff9d4caff1840b0ca5a6aaf5aeca6c1fec0481abfc0569f68c0277fc024e3",
+      "size_bytes": 173764,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval005b.json": {
+      "sha256": "53bba6f888124ec33fe41691f1301d631d2b141d6ba19bc863a5ab2acae3f111",
+      "size_bytes": 127045,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval005b.json": {
+      "sha256": "7d946b29aabfd86668501ed55485e45b25ac59189e792b9c6b780055bcaa6751",
+      "size_bytes": 124949,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval006.json": {
+      "sha256": "c3592e68b18637a735c675bc4282f45296092bcd52e53334876527bdbf42d34f",
+      "size_bytes": 125559,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval006.json": {
+      "sha256": "c7a6b7783b2bf642dfd85c0ee6256341d088869325bea30b48ddf32397187708",
+      "size_bytes": 123984,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval007.json": {
+      "sha256": "9f7e72f4906b01e70d1a30b6bebe0f86780abb0c82e8cd8fd8fdfd0adf64fd20",
+      "size_bytes": 51665,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval007.json": {
+      "sha256": "23360b16939c97cd622235dc62e66fcddb41be9595c94dab0360fa44ed2f30ce",
+      "size_bytes": 49588,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval008.json": {
+      "sha256": "7ed9dc80abcf62fc44dd9f1ce7d56246da9b8e6190bdc483035dfae116ca2dd9",
+      "size_bytes": 55152,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval008.json": {
+      "sha256": "4f710e520985fe21995975d534778fe4d71db10e2830df6e6ec098ef478fdd26",
+      "size_bytes": 53621,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval009.json": {
+      "sha256": "eb76a011e4add5cb36b7eac24e134de49e9b3195fa01998e59e01aec7a7b0a10",
+      "size_bytes": 47830,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval009.json": {
+      "sha256": "9bb78560f661a3ba1b816bba99b05d157417e888cc75b5941cf7c5fcde7fb43a",
+      "size_bytes": 46827,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval010.json": {
+      "sha256": "4cf70e6fcfbbd36e5d4522eb6b27c515a2faecc1515bd35235fcb2f1b9f2f40b",
+      "size_bytes": 50902,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval010.json": {
+      "sha256": "3e66f2f12b2f032669a544288f70e7127348015af1edb4dc4d0ee1f819047d1d",
+      "size_bytes": 49753,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval011.json": {
+      "sha256": "97891566875a5e67e3322d671e6830ffbe151a77bd5339cde2b830e8849963c8",
+      "size_bytes": 114212,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval011.json": {
+      "sha256": "a20640e88087fcec8c05ad5bb8335c8594ed0a5b39189ba0448924c05a4db442",
+      "size_bytes": 112970,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval012.json": {
+      "sha256": "560adc2c15188daf54d90becf6562a483007ede42f22126e939be9ec2ae041bb",
+      "size_bytes": 56197,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval012.json": {
+      "sha256": "4156c0abb2e3ea736d21c5879088e25854d309ad2c29b7328363c028afd34d01",
+      "size_bytes": 54575,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval013.json": {
+      "sha256": "62bc5096a0b7c5076167e70a85542538f154f0b6072808f7b8480bd6f0392bae",
+      "size_bytes": 101128,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval013.json": {
+      "sha256": "dfba6b2937d5bc052dedb507954d83c13af15aaf3a70bb35b367c129430dbc47",
+      "size_bytes": 99365,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval014.json": {
+      "sha256": "2f1899b53b68a332dadef1091a16f5895484a7ac578fd346191ae64c4b2dd7be",
+      "size_bytes": 119604,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval014.json": {
+      "sha256": "a5dc7fc4b4af4e5560c43102f34d73c4909a8d1daa5f016e1e4799a781576e05",
+      "size_bytes": 117919,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval015.json": {
+      "sha256": "d9b62a0e0cbbfd054bf4cc2ce7e3ff31765227fc25aa4398bc1d3c58e468392d",
+      "size_bytes": 55339,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval015.json": {
+      "sha256": "fe2991bc3aa330745ed191869f043631e7d01ac3e114fd7218fa693581fa932d",
+      "size_bytes": 54004,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval016.json": {
+      "sha256": "4fc6fb572f5075fae9966d1ac4103ae1e9929fbeacaa34b4b074fe1d0f0296ea",
+      "size_bytes": 116540,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval016.json": {
+      "sha256": "147623ec08871fedf51dbc8f549087087dac8fecc2a906410e5b9a83fd42ae44",
+      "size_bytes": 115056,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval017.json": {
+      "sha256": "4a33da3e6bd6e298bc43ff99abb173f1480ffdbb044d0ce3c4407c18cd571e11",
+      "size_bytes": 57150,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval017.json": {
+      "sha256": "b23ca279aa22202c0cf81010c08c2b7ec8fc26585e2fa6bcb367813689a1ef32",
+      "size_bytes": 55646,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval018.json": {
+      "sha256": "e167f39adc7619af89536882bb7d8d9e1f4391e27be90efdd3eacbec44e09bf7",
+      "size_bytes": 52712,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval018.json": {
+      "sha256": "2b5ca1221038770b98cc546db02fbdecedb7b141be4eaee0fbd161724750cfcc",
+      "size_bytes": 51079,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval019.json": {
+      "sha256": "1a3057d42f5ba50bc05b0ac700c30edfaab5645d884c37202f8427469ccf65be",
+      "size_bytes": 48282,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval019.json": {
+      "sha256": "9bb052a53e5e8acdca791d68fcd84f744a2cb20d03b1f870be4ad79e29e9acc8",
+      "size_bytes": 46895,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval020.json": {
+      "sha256": "c38467239e8e78f66ff6a1bc874c9d9def614f84b04fe4f473aa597fc9e51027",
+      "size_bytes": 41825,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval020.json": {
+      "sha256": "132bcbbbefde33f895eec99aa560cb286672f5d252fdbcbd59b2a264d2e0c286",
+      "size_bytes": 40801,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/R2/eval021/1/evaluation_record.json": {
+      "sha256": "3933f3e2b0f9a0b16cebe158542b80f303faf9e8b86c51e00e1f4f7a301c4fdb",
+      "size_bytes": 50024,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval021.json": {
+      "sha256": "bfd28b0396220cc4fef13ae69129d1c32b6bf1180af2c6edaaac33ca3600209f",
+      "size_bytes": 48854,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/R2/eval022/1/evaluation_record.json": {
+      "sha256": "25ed2e599b5fcb4738457d9936dd365ff69e18cb47a928f1b7d919bcf794d421",
+      "size_bytes": 49163,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval022.json": {
+      "sha256": "336bbee134fc00ce39c7da6b1228d803f6c5182472588d7e9fbd1176e15ed3b3",
+      "size_bytes": 48088,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/R2/eval023/1/evaluation_record.json": {
+      "sha256": "dec0fe339ab24d337f3d748124566b285097999ac915069e175c5ebd84a491a8",
+      "size_bytes": 159225,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval023.json": {
+      "sha256": "5f064422dd7554018f318fd66c7208ca4d3388a694b00f5f7538f78efd77335d",
+      "size_bytes": 158176,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/R2/eval024/1/evaluation_record.json": {
+      "sha256": "78126e534fbde701e0df2e6ce67d65fcef8b4f309f4bcce3f491c0d53300d413",
+      "size_bytes": 44644,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval024.json": {
+      "sha256": "1fd8911ab099f4362579928d08a9921b97fded3e1079aaae5a41d6835347cc0b",
+      "size_bytes": 43902,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/R2/eval025/1/evaluation_record.json": {
+      "sha256": "077258cc8e033922351a0a172ad46c97923ad2d7d23b6c026a16861c84b1378b",
+      "size_bytes": 47766,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval025.json": {
+      "sha256": "8afb2b7c42fa16d5b463ca80061cf192736186360d13646c8a4ce21c131e8fdb",
+      "size_bytes": 46318,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/R2/eval026/1/evaluation_record.json": {
+      "sha256": "65ec3a83756742e5d58fd50ccafc41253a25716ef1ec102e9d4a3329baaaff4c",
+      "size_bytes": 45966,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval026.json": {
+      "sha256": "fd21a6d9bbafca1cefc6542864e8719a4a2305df2eeffa69e0edb95586e5b56f",
+      "size_bytes": 44653,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/R2/eval027/1/evaluation_record.json": {
+      "sha256": "3dc7a376aae6146d39d641f55f18b3fc66ec2c57b2099ead79d68f1535827ef4",
+      "size_bytes": 49716,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval027.json": {
+      "sha256": "e235fc034652755f74e3ede2818865898c0787f8d2213159c3b0c2585b27183b",
+      "size_bytes": 48285,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/R2/eval028/1/evaluation_record.json": {
+      "sha256": "693c8e796e4ca12c4b914f9ed3127ed6f08e7e19df2ca2b31b123f13eaa8d04e",
+      "size_bytes": 53359,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval028.json": {
+      "sha256": "55e20ea1e233f3a114267b90ac1338f0625b7e27c11fd8cfa46116ea5c7b0d7a",
+      "size_bytes": 51797,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval029.json": {
+      "sha256": "735dce5d01836b25bbc37f94649d51be3044abe47aab437c8e6dc7fb2be6cbf6",
+      "size_bytes": 52728,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval029.json": {
+      "sha256": "0fd4b6f335e4ae8bb347f9ddd3468b24db38315883151a8a5550ce3e50c63bcc",
+      "size_bytes": 51358,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/full-agentic-replication/records/eval030.json": {
+      "sha256": "ac5f3d74e7780413ae8cf899667cb5c0ca2ab6fac541dc5c55203f457049d61b",
+      "size_bytes": 48533,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/outputs/eval030.json": {
+      "sha256": "826c5b9e6d077330c18afb67865e2f3db27a41c9629d571ed4dc359842dc11ea",
+      "size_bytes": 46929,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval001.json": {
+      "sha256": "5b4d7881768a7438668be7e5f1f3bd9a140ed58e0ad72b5bde6982cb4d806907",
+      "size_bytes": 117703,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval001.json": {
+      "sha256": "bde5f7dd779898a59f5f410a9c3373371c50f0646794af79f273604c031e5efa",
+      "size_bytes": 116568,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval002.json": {
+      "sha256": "a49529d42d321bc40c1c9982b46e5a6d45163e71ef30538f213180fb74450062",
+      "size_bytes": 47627,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval002.json": {
+      "sha256": "e08e10db6bf2dfc6ac1b76a7e0db4e549206ff0e09289ac8ef06c1cfed358c0a",
+      "size_bytes": 46486,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval003.json": {
+      "sha256": "b21bce176a2151ba7518f68a4316626bb2b3418d02cbc0f6db48c241b2444bc6",
+      "size_bytes": 44333,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval003.json": {
+      "sha256": "8fc3057ea673d7767dc05fc213daef180336b8ab91aa7bac7e76c8a5aadbe1f5",
+      "size_bytes": 43373,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval004.json": {
+      "sha256": "afb079a457d65c886306079d9e90711546ece99e54bc0a2a134ee5c21520a217",
+      "size_bytes": 53660,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval004.json": {
+      "sha256": "3b7d78d408b732037ed6439ae9b93444b1ff7a6bdf2bc369bfb8ae660b856f3e",
+      "size_bytes": 51612,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval005a.json": {
+      "sha256": "2a306386f70196ff3f287f33941470b441fb99ad73937af7dbd330b445cc3de2",
+      "size_bytes": 128192,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval005a.json": {
+      "sha256": "9a22d1aaeff35bb808a069e2f5ea1e0b29795bdc2defbf82384107fa4718950d",
+      "size_bytes": 126548,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval005b.json": {
+      "sha256": "f648b85d1ff0f2d28b483df8eac5e5d981f3cfbee1bf0323cd6b35b391a6f1da",
+      "size_bytes": 126226,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval005b.json": {
+      "sha256": "2f559b2fecf2fd28bcd7b9d468c098071b82475fc59eba98aa8e3257198021cd",
+      "size_bytes": 124693,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval006.json": {
+      "sha256": "197ed4f8d7809b944aede130a2c3951978dd8316a30583e377924c253aadb867",
+      "size_bytes": 122839,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval006.json": {
+      "sha256": "51a35aab394562194725ce32f4435bb755fb2f76530e8eda4188a301aa15ce31",
+      "size_bytes": 121078,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval007.json": {
+      "sha256": "9f6c6b66899d0bbabee704dcf47b019d1227ddd539aa7c0ebacbd50559f3f71d",
+      "size_bytes": 51284,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval007.json": {
+      "sha256": "74fbc520f5d18ff9f72d757012bacb441d7424734807aa7a6b4b117403195849",
+      "size_bytes": 49227,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval008.json": {
+      "sha256": "d1d63c019c9f10e8f2f7cd314a4afa0d7737e2a8cd13e04fdd7dcf61d8b97033",
+      "size_bytes": 54881,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval008.json": {
+      "sha256": "c7b8582b7f3c52f404529593cd138d134f5488fd4646b00574237c92e198195a",
+      "size_bytes": 53197,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval009.json": {
+      "sha256": "31036e1032e851d411dddf457e6ef64988547cfb37ae21880ba3501603639ce5",
+      "size_bytes": 47818,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval009.json": {
+      "sha256": "31d674156a8612c4f318b638dc65471d59525e4b37b45c15a495728125c03f7a",
+      "size_bytes": 46821,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval010.json": {
+      "sha256": "c51b800c3bdb842843b7593d86c44a32eaee7bbe53fff29ae7c424c7bc178b9a",
+      "size_bytes": 49474,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval010.json": {
+      "sha256": "f6ef3b0d69fc97a76e2c08365ba397b17a25a7cbaa1b16e46158d39f675df86a",
+      "size_bytes": 48329,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval011.json": {
+      "sha256": "4c1f3e2187be4e16dab28d96b03f8548135c22e8d4dd4f2b255b4ee270893c92",
+      "size_bytes": 118779,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval011.json": {
+      "sha256": "89bf1e1fff01ef2311e86f154c0264491857a6ce89cc8b35fa837ccfa87643fc",
+      "size_bytes": 117640,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval012.json": {
+      "sha256": "4fd81df06f6fe839747d57d75f9f00e66ccaa8304a9aa37dd2bd4b85c0236b23",
+      "size_bytes": 55440,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval012.json": {
+      "sha256": "84f22d31ce37a9ba88f429bc4fb54b01cf3e97697c7d86e225956b8913cef2a7",
+      "size_bytes": 53998,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval013.json": {
+      "sha256": "97f6ab5907f6b476d50e60acf4d6b80a8e5d733160ff35bbdcfecd9af8ad1290",
+      "size_bytes": 107755,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval013.json": {
+      "sha256": "c7c0c64456adf54073bd57cbf162e68267b3d7e9ffe49b0478dcb4ed9963e21d",
+      "size_bytes": 105986,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A1/eval014/1/evaluation_record.json": {
+      "sha256": "7c65e2d2c281cb6d6f9db0a1cc846c53f33c4273eda8880aa733fb7e7b7005ed",
+      "size_bytes": 118223,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval014.json": {
+      "sha256": "e5267643004d12c7e16ef07ee849d46627d0e6de653b6b2e7889a240a15bf26c",
+      "size_bytes": 116713,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval015.json": {
+      "sha256": "1febfa803f33b7823bfc3bf18a701ae47d685e783d50b278e84fdefebf619240",
+      "size_bytes": 55566,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval015.json": {
+      "sha256": "35c51b5fdc7eca11844f8d6508211ca97bdfda7ebfba33a0b67655e6e3ae43ab",
+      "size_bytes": 54184,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A1/eval016/1/evaluation_record.json": {
+      "sha256": "2ecf5c4b23d26eeaf4c3876ad1a902e207149103bb652275be66be9687c9aa9b",
+      "size_bytes": 118188,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval016.json": {
+      "sha256": "b6004e6d4eb860bad239d88fdf25f592d3b72db1d43a5593a0705ad1ee14bf09",
+      "size_bytes": 116773,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval017.json": {
+      "sha256": "195a1d1034c8f3ccc8f18769963bc4e8be1cfd86815895f91bcfe899dbfb3b9c",
+      "size_bytes": 56665,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval017.json": {
+      "sha256": "47c59b5c40d4296985a1dec905643337fbb94180e56ca1303e830aab588664ac",
+      "size_bytes": 55262,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval018.json": {
+      "sha256": "8859ca07c12ea40acdaa1325f1631619ad3705fa96b86ab9506317b7265a58a8",
+      "size_bytes": 52856,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval018.json": {
+      "sha256": "56a76314a8b42ade2d0b0c682732a26809920e9b00fa9b22030421faed9fb576",
+      "size_bytes": 51199,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A1/eval019/1/evaluation_record.json": {
+      "sha256": "9f5818c3d65097ddf2dc168bede0aa25aac1047cf9a0920ce749a6f9da25f3d8",
+      "size_bytes": 48094,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval019.json": {
+      "sha256": "e3b348723b7d98b37d7195e1e6e10fc62a89bb52a6a2d2f8c80302a9a85fe9b0",
+      "size_bytes": 46929,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A1/eval020/1/evaluation_record.json": {
+      "sha256": "91071947b46f70ab901933158d59cf68d00e84d272cd443c89b12205e8c92652",
+      "size_bytes": 41534,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval020.json": {
+      "sha256": "9bed064f7b85a16e340a6b4bb5c5ca4e6891fc9db75793a17d751f89ec4d1d69",
+      "size_bytes": 40857,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval021.json": {
+      "sha256": "159ec6a75137f13dcf4d408e9461dcf84d8619079b0ca6d06db33372c11f985e",
+      "size_bytes": 50090,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval021.json": {
+      "sha256": "ef8fd523417c3b68e85049c10575ca8cb48251940399c98bec179552bd1b564d",
+      "size_bytes": 48722,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A1/eval022/1/evaluation_record.json": {
+      "sha256": "2f5f90ba7bf14879fcc9d5c7c1c05610206fbe30901fcf274fa868341c67dc7d",
+      "size_bytes": 119388,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval022.json": {
+      "sha256": "9ef8ae3a991cd694876706bed7b7f3542c91394dc9109d6c8f3c7a9d53245f25",
+      "size_bytes": 118387,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A1/eval023/1/evaluation_record.json": {
+      "sha256": "29047868e24fbad732296b7c0f2248d7724551e227479d819acf6debf5b13365",
+      "size_bytes": 122706,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval023.json": {
+      "sha256": "6d839f97b504a71fef81f63d1eec9beddcb00128d0f36c4e904f09e417d8a208",
+      "size_bytes": 121572,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A1/eval024/2/evaluation_record.json": {
+      "sha256": "311d6a7d8207d2694639a6be713c327b09f0bd6f2613a462fca7354a10735467",
+      "size_bytes": 44825,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval024.json": {
+      "sha256": "0b3279c88383d7ce765acdedd6b91d92f29d280f44fe012d112695e7c6d35885",
+      "size_bytes": 44062,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A1/eval025/1/evaluation_record.json": {
+      "sha256": "5926d3aa8957ce8c3a4a72405d21418aac642d95b552d2a578572652a2ce4a35",
+      "size_bytes": 47697,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval025.json": {
+      "sha256": "cc1c4fd5d8708f8e14219544e8bd1b9b62d3453c6ae580a1197361edc64118b9",
+      "size_bytes": 46242,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A1/eval026/1/evaluation_record.json": {
+      "sha256": "9affe78fe2e8e525402c607f291b816a05557877fe2c167e99d72d2e9d9d02f6",
+      "size_bytes": 121647,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval026.json": {
+      "sha256": "7da1439c08fb096c3edafece5620d145e7724afc3a5fda9b042b7e24aff10bc2",
+      "size_bytes": 120328,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval027.json": {
+      "sha256": "56b447ef9e0e81491fbea901ba0cad02f7e6695bf53a590940d98c7cfe2a554b",
+      "size_bytes": 48586,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval027.json": {
+      "sha256": "07758cf49f40d2bb306abbde7664e9b0e63315e4e3916c17f18ae4784f67b40a",
+      "size_bytes": 46833,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval028.json": {
+      "sha256": "d7e54e8cb59a45f4029463ee72d6c59e281db3bb95580139300a1e72811bd504",
+      "size_bytes": 53430,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval028.json": {
+      "sha256": "3ffc2af33adc7c29ea76b3faa78d5881e45d73a61253f06a22b263f2ef88a8ef",
+      "size_bytes": 51679,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval029.json": {
+      "sha256": "6651b19d206310083c676d332a797d068273340dba1d73255178295f40a7b379",
+      "size_bytes": 50477,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval029.json": {
+      "sha256": "8ffdea130e818580c165978c5b672e9dbc08bb25029eb8bdbb82a942c5b38d44",
+      "size_bytes": 49325,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-answer-revision/records/eval030.json": {
+      "sha256": "26610ff95723c7189a58252a8a2db66a242f14f471b8c36e303ffb0ad0162d6a",
+      "size_bytes": 48371,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-answer-revision/outputs/eval030.json": {
+      "sha256": "8dd8e646d1a8ebca4697101daf26f0c84f83dbb2439d29fc1175ca369e265df3",
+      "size_bytes": 46733,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval001.json": {
+      "sha256": "67d9bb33e17d84d29a8c1394b53663ba89c821178b1bbd6cbea163111e12015d",
+      "size_bytes": 48152,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval001.json": {
+      "sha256": "405b542d9ee79af6737f9ee1a30bf526e50d8029159c95e3634efb50a75edc20",
+      "size_bytes": 47020,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval002.json": {
+      "sha256": "b18e4f7ca61694b5b917af9e08aee18875b4e5cb6f50f3d1abdcfbe51d5681af",
+      "size_bytes": 47625,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval002.json": {
+      "sha256": "9d1fdfcce8ab7819bd8213898f4884a8d64fa92a9bfdbf2419100b68d4d2f18c",
+      "size_bytes": 46484,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval003.json": {
+      "sha256": "a02a400194458fd41172594660e0d48e115cc8c04a72a62e67ab0f66a4376d47",
+      "size_bytes": 44187,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval003.json": {
+      "sha256": "c01ffaeac31264efc571df15876669215504ebede34305c67fd9da59d3aea57c",
+      "size_bytes": 43247,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval004.json": {
+      "sha256": "41361d39fdd1eb537f8a96f4e695f68a2a21bb9723ca5f1b7890baefa5c7378e",
+      "size_bytes": 56317,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval004.json": {
+      "sha256": "36208088e20c8d6f89298e79f415f0178e971526b97812931aa83a0a564fd2df",
+      "size_bytes": 54248,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval005a.json": {
+      "sha256": "d1703e8b06cefccbc57e2471fecc0fe7919f032d2a17a1acb2468bde2aa675dc",
+      "size_bytes": 54367,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval005a.json": {
+      "sha256": "7f236c25ab82f508d301a8d2035bfe9996bffe649210e87c981b0d73f46acb2b",
+      "size_bytes": 52159,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval005b.json": {
+      "sha256": "0d4bad218daadd4fb6944cade9dc1f8b19ba6ab245640f86b39cca29eed57460",
+      "size_bytes": 46566,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval005b.json": {
+      "sha256": "22be0b7231c84aed2ff3486b8ce46266767eb9e79c099024d5d6195dc62a8288",
+      "size_bytes": 44489,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval006.json": {
+      "sha256": "6d9802c3f88419d0039d73cc378212883cbaae9cb2cc11ca0a62ec0c08353e9b",
+      "size_bytes": 49991,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval006.json": {
+      "sha256": "f2427d9913f93b613f4d2976cb6849757d3b3a95cfd23ac0d0740e2de20364f1",
+      "size_bytes": 48507,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval007.json": {
+      "sha256": "a95b331cf6a2896c011c0812a04d847f141ea9b82e8cf2a227873ca70a39ebf0",
+      "size_bytes": 51441,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval007.json": {
+      "sha256": "9eb438cc485405b2b125ab5e3b43e6b97b00e87d071b679ac2e7afb0472fcfda",
+      "size_bytes": 49327,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval008.json": {
+      "sha256": "4fe291d524bf58880b17957330c1fa5f515720f37844ede90007bd7c927da48f",
+      "size_bytes": 54431,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval008.json": {
+      "sha256": "ba4a9c331a1a434190d23ee17c41aa0ed6e29ff89620a12076e7eff19bb9e62c",
+      "size_bytes": 52855,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval009.json": {
+      "sha256": "c40da48cc5b911a5010829dcddae526d3c9385ed4c5efdfd100c91400ff90dc7",
+      "size_bytes": 48053,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval009.json": {
+      "sha256": "f1b4cbc67c890e407b28c50395ea681b99ba568bfb1098c0e803312a4c000192",
+      "size_bytes": 47069,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval010.json": {
+      "sha256": "3fa3c0b106782fed624a37e77d23c1c016d33ef86480bf34ce1e16132e1283cf",
+      "size_bytes": 51202,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval010.json": {
+      "sha256": "840420555178d06c98d5aa8fe7d5f2f3960a95f4bbf5f3c3907d94db2e471804",
+      "size_bytes": 49972,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval011.json": {
+      "sha256": "a7f35c82dc81288aadf08e01f01a1f4fa910586aad6e361aae919249cdc6ce5d",
+      "size_bytes": 48395,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval011.json": {
+      "sha256": "b96ffab4f895934a00df702b6aab95bdb8335937b47b9221868d70d5b69e2925",
+      "size_bytes": 47192,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval012.json": {
+      "sha256": "911450ca6a9d95364d93cd71626ab841c0152d4d06ee1b856ae9fba8986cd33c",
+      "size_bytes": 55335,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval012.json": {
+      "sha256": "c11ba4959e70d4c57afaaff4401d99e4a7e02ee0cb6fb74036e3c7886d06ed3b",
+      "size_bytes": 53682,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval013.json": {
+      "sha256": "b0ac948296370d9034d17e5bca6d3548582e7266afea67e7b110a01c993202e4",
+      "size_bytes": 47567,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval013.json": {
+      "sha256": "9ad91f1fb8a786887e1bbf2f32b27df2fb1c09bb9c1e58ed2b9f28b31c604f81",
+      "size_bytes": 45760,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval014.json": {
+      "sha256": "293c9dc3ee559e445b31077c2d59ac19a1c19d0f171ff93e798b770e8442f033",
+      "size_bytes": 47919,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval014.json": {
+      "sha256": "97624a668e0ed1550cf4baecb05810035fc1def6b48660aaffee9474d7660f45",
+      "size_bytes": 46550,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval015/1/evaluation_record.json": {
+      "sha256": "8f38dfadf7b4bf683b34e835b4417f7a96f1eb57f339ec1f48151119f31befe7",
+      "size_bytes": 55456,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval015.json": {
+      "sha256": "a1b9f04f0f3e71abbab17e30b072cdea15f39ad06fa5c9e4bbcc88c61017d84c",
+      "size_bytes": 54286,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval016/1/evaluation_record.json": {
+      "sha256": "ef197a332f24be254dae620a315ad8f0113ab60ec7685f557ac21aa66fbdb6e0",
+      "size_bytes": 50436,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval016.json": {
+      "sha256": "b2db8491fbe83aeff685bdc94401ab2e471db5a03fdf9fa2585a973a99fe9e91",
+      "size_bytes": 49069,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval017/1/evaluation_record.json": {
+      "sha256": "afd06f185d04bb585237a3db29bc95281a28344e7f0c50f331c24a667aef5b4d",
+      "size_bytes": 56611,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval017.json": {
+      "sha256": "b37cd3c7fb794180ef4ebd5ea648e077a7f876a80fc36c53f20cd417a9dba1ca",
+      "size_bytes": 55274,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval018/1/evaluation_record.json": {
+      "sha256": "bf072f70d7e0b91dc2400699af66eb4ef687812643f0e1818a2850147661f0ae",
+      "size_bytes": 52408,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval018.json": {
+      "sha256": "09f4b85483603bf5efe64c8d118a34d02e778a65b504d9cbad00eff1a923f093",
+      "size_bytes": 51011,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval019/1/evaluation_record.json": {
+      "sha256": "39364a7cbf801e72128e3ce2503482df8fc4e8c5a66ed680f6561e22ab623695",
+      "size_bytes": 47971,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval019.json": {
+      "sha256": "644088113e1b4ed468af79749821283f9789178f09c5e455fedc95f6ba985a26",
+      "size_bytes": 46887,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval020/1/evaluation_record.json": {
+      "sha256": "154bef3fb714f54162c31e1710392489a54bb741b24365f627b8c1af0dcec853",
+      "size_bytes": 41720,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval020.json": {
+      "sha256": "37438f9fc77a316ad4d21933def40dc35d59fe7c5ff3d566e3051f0dcdf7ca1d",
+      "size_bytes": 40875,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval021.json": {
+      "sha256": "a1638ba3cbe45e0d3310f4cdd6962d2dd08ee918efe403925f9cd5a1ae9c1a95",
+      "size_bytes": 50531,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval021.json": {
+      "sha256": "662c5bf256b14cb5918fc3a44ae019008a7bd0f55addadf3f8f83dc60e7daca9",
+      "size_bytes": 49160,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval022/1/evaluation_record.json": {
+      "sha256": "c99153158081cb25ee7f0ef44ae0e69280003123d729cc4a1f21266304a72ccc",
+      "size_bytes": 48671,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval022.json": {
+      "sha256": "fefde0c33610fa0809de1f4530d4e5b34d9ddd736076153aa3e92c1b63afcdb6",
+      "size_bytes": 47451,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval023/1/evaluation_record.json": {
+      "sha256": "aa6d694ed5a2f6abe1eebb857b28ac28962321297487db0da2a7a0c84eabc011",
+      "size_bytes": 55751,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval023.json": {
+      "sha256": "edbeb09a0f6edcacb82317382e52db70811495cf360c3af8fc306cec14fa8141",
+      "size_bytes": 54636,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval024/1/evaluation_record.json": {
+      "sha256": "4d0119af294919ea86083e768c7f71d76e4de93eb9275a0b2fda740f6c9abfa2",
+      "size_bytes": 44935,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval024.json": {
+      "sha256": "db2e1046ff5c89941c562349a4342ce4c8b1a42869fdf478f7e9d4256849d598",
+      "size_bytes": 44168,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval025/1/evaluation_record.json": {
+      "sha256": "6e225c95b3321ec99747d9d09e1052afa95f6c5de2c6bf42bccb63cdfbf95057",
+      "size_bytes": 47604,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval025.json": {
+      "sha256": "d40b8b14ba5773bd32698b3904f0bdd0bde55f281de726b6eb0cb7891ad28edf",
+      "size_bytes": 46256,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval026/1/evaluation_record.json": {
+      "sha256": "64f2091e240feee70eec554f9fbb6e8e344d36c68b1f8450aa335e418ececbf4",
+      "size_bytes": 46831,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval026.json": {
+      "sha256": "0d562bc6b333d2d03b519ec35214572a91cd4532994fb8a645a70e3875c5a462",
+      "size_bytes": 45439,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2er2_v1/A2/eval027/1/evaluation_record.json": {
+      "sha256": "108e3f0aa3e05f3d8ddbf1ec02245f3af71215a11e36c3f3be3977a1e968ebc7",
+      "size_bytes": 49782,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval027.json": {
+      "sha256": "61b0b5932b690a87954183060430f4671bbc9092f52c437aaa2e7d132cee20b3",
+      "size_bytes": 48237,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval028.json": {
+      "sha256": "b63eb8c4ed36423c97f5d581f6e6522d394fd4f911f26421c0d02be1744ce811",
+      "size_bytes": 53353,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval028.json": {
+      "sha256": "7af0b14bf414d3cb779dd0b728eb05319347f782ae5b5e7fac67c25591930334",
+      "size_bytes": 51633,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval029.json": {
+      "sha256": "502c8e73e954ec8806ca5bc95defb6150cdb1687c6f009ea3eb7f85aad94509b",
+      "size_bytes": 54034,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval029.json": {
+      "sha256": "fd0f5a6b482f1e0f66a04c143c3637a7b7b1c0e984cb5fccbbee5df2b8eb4a3b",
+      "size_bytes": 52681,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/evaluation/generation/phase5/phase5b2e_v0/agentic-v1-no-evidence-expansion/records/eval030.json": {
+      "sha256": "0ac55a78b3644efeafe84e3b13e3dc5ec5cafac975104ca5f89fa38413dba772",
+      "size_bytes": 48375,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/agentic-v1-no-evidence-expansion/outputs/eval030.json": {
+      "sha256": "e679b03cee878f42cea2e69433fd0227c23253564c9cd3809ce773ec29853f5d",
+      "size_bytes": 46771,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval001.json": {
+      "sha256": "25141dceea56ca96a7377588a7c64d4e2585ca867c4416da22ca174f90bf564d",
+      "size_bytes": 206978,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval002.json": {
+      "sha256": "8c54c15847d99f63c225de41e4f770ff74efc0b1d29b5fb0350c68d52ee768ff",
+      "size_bytes": 58961,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval003.json": {
+      "sha256": "b53cc17ec50ffd631c1ceda0047e87a2049804bb86e59cab2eee20f7b6cedd59",
+      "size_bytes": 55378,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval004.json": {
+      "sha256": "479db80a3c421d17c52034c6abc66c5a865332a7071ad2a95cbd65d1b64e3135",
+      "size_bytes": 65944,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval005a.json": {
+      "sha256": "b709ab073fa60ca9bc20421018149e3e1b5f12997ada77cea4edab2a2f11d2ba",
+      "size_bytes": 151325,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval005b.json": {
+      "sha256": "bf159d710d5873700d13369b101b430480d5602c595ce1e6dafcdf3a9bab726d",
+      "size_bytes": 58314,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval006.json": {
+      "sha256": "954756d2b452499323051b507cea38d541fe03c24cfc92db1117e228ce739641",
+      "size_bytes": 151369,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval007.json": {
+      "sha256": "997faabee29b9a26f80ecf7fb01931b7de9ac269c5f007b512fb7cbfe94b4a0b",
+      "size_bytes": 60817,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval008.json": {
+      "sha256": "87c78f08d17ae969d605a30323459719a5763bc112e9386eae741db643826315",
+      "size_bytes": 67112,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval009.json": {
+      "sha256": "4dcfd8b5fc2c7aa32c886ea68e83edded394a471a991bb30bb4cf248526bbbc4",
+      "size_bytes": 61368,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval010.json": {
+      "sha256": "7b653d8ba8bfd6248ea06d696a0cac58ce464b0860caf34b3175d2d0a42b30a0",
+      "size_bytes": 62180,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval011.json": {
+      "sha256": "b734c28db4268e7056fb83ae2de4ab699c86494198c965b58adc575cb4386c56",
+      "size_bytes": 59554,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval012.json": {
+      "sha256": "c8dbeff63de34d6d71f4a99a9bb621c49804d02abc739481328d8f4da2320c3e",
+      "size_bytes": 66291,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval013.json": {
+      "sha256": "f9405c6865ca4fc5823bc8904e4f295cc9611d06f25062eb4035385d375eed97",
+      "size_bytes": 141328,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval014.json": {
+      "sha256": "c46fe23270427a64557a903f4083f0642c06f9a9013b120b7a9e33d593db2cdf",
+      "size_bytes": 144237,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval015.json": {
+      "sha256": "2798812d76030967c09dc0aaf2254cefb64e0d3296b244f7362e0015fa405228",
+      "size_bytes": 67369,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval016.json": {
+      "sha256": "7a683265ef29edea00c5fdc1e3e99471cb227e711b9020aadd80188125200478",
+      "size_bytes": 142925,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval017.json": {
+      "sha256": "82ce503a45908cdc4f2f18a32474763fef791d03909e3e2efab9ded1b85fe098",
+      "size_bytes": 68549,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval018.json": {
+      "sha256": "aca28a01ca545c70d552f819329b499d16d8eba8fee730b316c057345ab2a936",
+      "size_bytes": 62413,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval019.json": {
+      "sha256": "e8fdba42ac5e999e5c5951ffa771e193f4424824e4d0cd2ffeb40e860578dba5",
+      "size_bytes": 59536,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval020.json": {
+      "sha256": "c4f9c93f8d7928a2f6a03c6d4bf0e0ae53f9e6eb18de775df006fba6f253ca16",
+      "size_bytes": 53818,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval021.json": {
+      "sha256": "0deb2e716908d3ad68aeea1cf8660224c9515669550a2358811b235b81c71f27",
+      "size_bytes": 60958,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval022.json": {
+      "sha256": "e1988000bb9fe1ad5d13d7904e28af149f07c94e96b41de2c26d651b34ff26f3",
+      "size_bytes": 60725,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval023.json": {
+      "sha256": "61c963adbdc89a4d0618bffa8facef3cbdc4118d91f30861b62485733fc153fc",
+      "size_bytes": 68127,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval024.json": {
+      "sha256": "97148165e4286826e003ad0be172663491430a8466cd96417bd4e300b3f2a029",
+      "size_bytes": 56314,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval025.json": {
+      "sha256": "c9c08a8e76cb74d05b1bab1019a16c3387a2bea3fcef0f7ad38d49caf65a6938",
+      "size_bytes": 57340,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval026.json": {
+      "sha256": "faf9191e612b4049d84fa6738d155c1a2172495ee06c5a5e57f31e5d230a338c",
+      "size_bytes": 58079,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval027.json": {
+      "sha256": "c342f074ddd4cdfb27f712f4e9bbc8ea273f206fb897407e7edd092c968dfc24",
+      "size_bytes": 59772,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval028.json": {
+      "sha256": "b8a71c5999f7a12c63a8eb2996177f9ae6cf412320ba999413ccd1ed4f902343",
+      "size_bytes": 64431,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval029.json": {
+      "sha256": "adf9f47115dbba09df89e4bba2cb8b4051b5bfa2b346e21a4d0ab9fd225cc8d0",
+      "size_bytes": 65364,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1/agentic-v1/eval030.json": {
+      "sha256": "e4f4a77a477ad41fa01105ad0907bf5e6a6bb5348cae986bc313249e84434b55",
+      "size_bytes": 59035,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval001.json": {
+      "sha256": "4603644ef520caf3dd38cbc7b84817c5085fc13242cdde109dc38833f5e6195b",
+      "size_bytes": 127929,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval001.json": {
+      "sha256": "261435704bc299a2064c4dd0737e679b945dea30aa5d17d8a2a5ee043358c39d",
+      "size_bytes": 4907,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval002.json": {
+      "sha256": "8148bf11b88849c91b53059f35fea6b200dd9047b748762243283cf2abe9eb68",
+      "size_bytes": 46291,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval002.json": {
+      "sha256": "eee3ead9ebea9f287e32f06064b954977382f9077a90c87dd6f36bbf9f01d444",
+      "size_bytes": 3195,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval003.json": {
+      "sha256": "22c0367fa7a710ab813c5718063f9e2ba3f626bfc7d5a488b31cfa83072ecf5d",
+      "size_bytes": 43311,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval003.json": {
+      "sha256": "77d8d8a004ce25bcfb5613c3a916d02ebb3f08ee379baa4b4caa9a5ffa7b4eab",
+      "size_bytes": 3357,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval004.json": {
+      "sha256": "8171c4b956750537b2d03d43f5ede690aa4a53a07227450dcd47ba743536d5b8",
+      "size_bytes": 54037,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval004.json": {
+      "sha256": "03a7f6e6426866d7911f7deb5ea5733a059ac537ead962845e12a32077e4c37e",
+      "size_bytes": 4918,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval005a.json": {
+      "sha256": "d095b708cf7858770e5349f2971779f33dbb663420716d16ff1c21736367c507",
+      "size_bytes": 173552,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval005a.json": {
+      "sha256": "8f0bd707b92c10f9af53b58f01f37e9c0a7bd1d58027d42230a926a8b7506f3b",
+      "size_bytes": 5926,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval005b.json": {
+      "sha256": "c1b66c1930a31a1cb1ac42b4a8a2775f3118dba5ece4ff5c36e432e4c9b39c89",
+      "size_bytes": 124735,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval005b.json": {
+      "sha256": "f7958d87bf509b082168f0794cfccfc119c748b7ad1e33f99c063e0ceb245ff5",
+      "size_bytes": 6630,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval006.json": {
+      "sha256": "88ee73d25b53fd873c213f86ef35309a743007390e8a53d235e632157298664b",
+      "size_bytes": 123792,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval006.json": {
+      "sha256": "d3afea5af68732a8907ec60917cbca1bcff3fc558835944da9a0dc259377b01d",
+      "size_bytes": 5128,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval007.json": {
+      "sha256": "93a298299cfcc89066cc887380678386e83bac694d2903138fb3313a9aa4890a",
+      "size_bytes": 49414,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval007.json": {
+      "sha256": "6f1c356dcf0f7ca714056c3d9c2564d4c980986c75a525ff51099d122167b456",
+      "size_bytes": 7801,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval008.json": {
+      "sha256": "160aac7aea4c2b7bff8c3275f0c55b950bf765461ca14c8ede723efa6fa55a48",
+      "size_bytes": 53422,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval008.json": {
+      "sha256": "4d63da274da92eb7fc3ae362f5ce71413dc2b48b5168f85af25b6882ccb31fe8",
+      "size_bytes": 4043,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval009.json": {
+      "sha256": "aa9b375331dcdda61e311a4a659a562ab03c9353b6035341605d04d2e1f0c3eb",
+      "size_bytes": 46631,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval009.json": {
+      "sha256": "2aae174faba8753ea40a1970eb4abe31d58262beaaf4016359ca987bf9d85409",
+      "size_bytes": 3419,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval010.json": {
+      "sha256": "f17aeea621882ee4f2fdca6187a4ffcf9d2b3fa0f40a8b19dc52bf96fec9932f",
+      "size_bytes": 49556,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval010.json": {
+      "sha256": "16f93a790be54ea788947edf51e945e9217894d992c74e5fe4edfd2a1a7a1cbf",
+      "size_bytes": 4413,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval011.json": {
+      "sha256": "ea1aef56bc560a6ac244ccba020db2c11a73e742ff2161ee9f5635d3d17d7036",
+      "size_bytes": 112739,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval011.json": {
+      "sha256": "467cad5f0f5bc6ecac93bfc624b915ca58ee678e23eaae8313ed3b890033f2cc",
+      "size_bytes": 4505,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval012.json": {
+      "sha256": "14cffb19783ac96c061740911fc06f00a7405b6148d00f8c39edc7d77925ff5c",
+      "size_bytes": 54394,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval012.json": {
+      "sha256": "2bd9e76ada0398ee32c4c4b5d4bb623d91805290ddf52b06dda328f3b8927174",
+      "size_bytes": 4429,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval013.json": {
+      "sha256": "596f5cd5c37f60c3c53750475a058997eb0d5a7829dfc9c1380ed93451656a23",
+      "size_bytes": 99180,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval013.json": {
+      "sha256": "aceefc80fbd72a4c3df0704d8bf31baf7914d9c8cdad4f82f2373fb7cb95e4f8",
+      "size_bytes": 7916,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval014.json": {
+      "sha256": "5f1512ded1e93d5cb87d441b86422f55bcd17f0096c65ab67f9bd3465aaeef61",
+      "size_bytes": 117704,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval014.json": {
+      "sha256": "d8afb05917bece462b82cce3edd063f78da9d371d0528f2343622e69071d1789",
+      "size_bytes": 5203,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval015.json": {
+      "sha256": "32a9f1640aa49e396c7f9a7fac5675696e41733dc3a2dbff91ca805d30d0a300",
+      "size_bytes": 53824,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval015.json": {
+      "sha256": "57c5b93a22dd307415f33ee73162dd0685fc1effdb1e9fb2c1c77408e309f5f1",
+      "size_bytes": 3490,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval016.json": {
+      "sha256": "66431bf0c58a36a297c8029eafdbf60c178682d614e0afa4af2c6d59aba59c87",
+      "size_bytes": 114871,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval016.json": {
+      "sha256": "883284fc65c6766035d632df42d1ab2b37e5f5a3f1a467402beda3a7507f8be8",
+      "size_bytes": 4827,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval017.json": {
+      "sha256": "c150958111823303836458430c49dbaeccdceba792c06eecbb7e5dda9f45c98d",
+      "size_bytes": 55459,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval017.json": {
+      "sha256": "a9c2bd1545c098cb109da7fc4dac34dc99f5afa2e6254fcae4dde6e2b620f3af",
+      "size_bytes": 4024,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval018.json": {
+      "sha256": "8de00fccf33874cd8eef29587fccaa73df3fb1c35c465f60fd4b330664ddeede",
+      "size_bytes": 50893,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval018.json": {
+      "sha256": "517bc3635a836048d0ade37803cda6c18a9ef5028c92c23639a3e3099348adef",
+      "size_bytes": 3761,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval019.json": {
+      "sha256": "0be83b8abafb527ba6991112b98849bbdd411999abfc334f7972bd27970e3f90",
+      "size_bytes": 46690,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval019.json": {
+      "sha256": "fc9c991b31027e3d1db7e47d4dba133e8d892dcee14e65f8a9ed686281d0b306",
+      "size_bytes": 3299,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval020.json": {
+      "sha256": "09064de5961cf0e7c7ce754ffe361ee8b4575d31fb40e3b8435c739eeac293ea",
+      "size_bytes": 40656,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval020.json": {
+      "sha256": "5560f69708fd4a42f119981bf02d959cca527f07c5ac2820de33cf8fc5d0df41",
+      "size_bytes": 3010,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval021.json": {
+      "sha256": "ea9d86d52256610db0d10e1600cd0587875eda0da981c35d326f1b0672029185",
+      "size_bytes": 48651,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval021.json": {
+      "sha256": "96f73a2accc4e964254cf8a9690176df56670d7f7da19f20e87741f35d37cad7",
+      "size_bytes": 4160,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval022.json": {
+      "sha256": "64bc953fc2289a6d27892b54b440f4fe36d134603401ef9c4f75e239c6e597c2",
+      "size_bytes": 47879,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval022.json": {
+      "sha256": "c4df486f7a6fabf897917ab45a94403f194958f1c07ec242d5d8303144084476",
+      "size_bytes": 3969,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval023.json": {
+      "sha256": "fd168df75aac7533113116db5b6ad8d0b69284dcec41ffc2821123028915bd48",
+      "size_bytes": 157967,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval023.json": {
+      "sha256": "5d09b40e0f9ea2c4cde652b478e47ec1aabec44e8ab9107134f0085eb2b00c4d",
+      "size_bytes": 5808,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval024.json": {
+      "sha256": "f9352b0266d10eedbaecf98d907757e6ea1504272f2dfd2fea25a2251c524f99",
+      "size_bytes": 43698,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval024.json": {
+      "sha256": "5ad81512687e891a47eead2dec7969bd37a24b9bfc0708f784e8443e1dfef9d0",
+      "size_bytes": 3511,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval025.json": {
+      "sha256": "973f2fee93fb7e7eb1ce83584c784df3994bfdbc99b089d8ca3197887ed35583",
+      "size_bytes": 46102,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval025.json": {
+      "sha256": "3393718fa2e4da093cfca2437c5efcbf1e577cc4b92c7460abe93d18279e70de",
+      "size_bytes": 3963,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval026.json": {
+      "sha256": "01d37f9ad38dc6af1c14e52734bc1caa521393657fa896e013e56acd2c8ed6c3",
+      "size_bytes": 44451,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval026.json": {
+      "sha256": "4eab7c71849b7e2f3d86b11ab41a59ca63180b8eb28dc1623a937b503d5ad1a9",
+      "size_bytes": 3413,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval027.json": {
+      "sha256": "140d5d13bba6ec41c88db1ce448bf0bbc745cc9572e106a1c2e5298fb7fa985e",
+      "size_bytes": 48080,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval027.json": {
+      "sha256": "14ebc1cd9fbe1ae48506a80fb5ab4cca140424e1757d6a1a491834016081bc9d",
+      "size_bytes": 5247,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval028.json": {
+      "sha256": "40751ba5708f26d388576a9cf3ffe86ab0b8e05f2d843a41caf378a0001319bf",
+      "size_bytes": 51608,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval028.json": {
+      "sha256": "bc3e859eaaa327cb34a30b4fe8a825ced9fd6d76e1bf036b2fcd7a047fedd350",
+      "size_bytes": 4634,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval029.json": {
+      "sha256": "051082d1d22690b80b42c349f2fbcdac28c7f62d63710552628366766e092b3e",
+      "size_bytes": 51057,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval029.json": {
+      "sha256": "e59cd541543641d6dd8b64d5c8aa8e16b9a0e2f8f9ec268daff88c7d16716693",
+      "size_bytes": 7122,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/eval030.json": {
+      "sha256": "ff12f9bdf8b194f92c16b5a1eb08ef0aba6e5af24cdd383f37ed377e2b492ce2",
+      "size_bytes": 46718,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/phase5/full-agentic-replication/observations/eval030.json": {
+      "sha256": "b70bf68b2dd987771f739febfeb566eb4b84ddaea15c5b3daf4ac3badff768dd",
+      "size_bytes": 4315,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    },
+    "data/rag/traces/agentic-rag-v1_20260909T132915.670264Z.json": {
+      "sha256": "a50025ea85f6fae70de098923ee403503a830f4a25bd6010c3732e28019fbd84",
+      "size_bytes": 272394,
+      "review": "read and parsed in full; used for source reconciliation or research synthesis"
+    }
+  },
+  "evidence_findings_by_tier": {
+    "A": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "B": [
+      "F7",
+      "F8"
+    ],
+    "C": [
+      "F9"
+    ]
+  },
+  "frozen_labels": {
+    "A1": "Insufficient evidence",
+    "A2": "Insufficient evidence"
+  },
+  "network_api_calls": 0,
+  "production_calls": 0,
+  "evaluator_calls": 0,
+  "new_bootstrap_runs": 0,
+  "benchmark_reruns": 0,
+  "A3_A4_runs": 0,
+  "implementation_changes": false,
+  "challenge_dataset_created": false,
+  "benchmark_replaced": false,
+  "ready_for_phase5c2_design": true,
+  "phase5c2_started": false,
+  "output_namespace": "data/evaluation/generation/phase5/phase5c1_v0",
+  "integrity": "See integrity_before_after_v0.json; complete project scope, not only sources",
+  "artifact_hashes": {
+    "consolidate_research_v0.py": "007ec4b03e08777d99aafef61f95e3e419910dd6cc6982f59a5cc80ecc697d1c",
+    "integrity_before_inventory_v0.json": "619a4c9f12b1e24595ad1e172af69b4d12756315b19540b4837c5db13e0bba8f",
+    "phase5c1_decision_log_v0.md": "b83853e6a9b75ce0e8113fc84d6e2bb891ade8ad612290419677e0ebbe7d56ae",
+    "phase5c1_evidence_matrix_v0.json": "7fe3a92f044d9ab18f81811cff60b37f540c1b5f8fc393142701b023b71ff667",
+    "phase5c1_exploratory_diagnostic_v0.json": "8545d62d1aa793f343100c820e62b722c8b6a316d2d47e2254335b72c31ecb2d",
+    "phase5c1_problem_requirement_map_v0.json": "2e69d6b26e10e7c4907ec8eb5ca8794c726dfd0a9a1191277bef9b2acecd5828",
+    "phase5c1_research_synthesis_v0.md": "da4d2bdea95531c06d792416af3d63dd7533094fa42818df1546429d1b182779",
+    "phase5c1_validation_v0.json": "ff48f92ff3a4bddf569beab1d839a2bdf964a2fc4da31bca8057be3260617164"
+  },
+  "hash_coverage_note": "Manifest binds already-written analysis artifacts; final_artifact_hashes_v0.json binds manifest, integrity and console without circular self-hashing."
+}

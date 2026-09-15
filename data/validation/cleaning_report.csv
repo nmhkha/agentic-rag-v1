@@ -1,0 +1,4 @@
+﻿document_id,input_path,output_path,status,raw_character_count,cleaned_character_count,raw_nonempty_line_count,cleaned_nonempty_line_count,removed_line_count,error
+134-2025-QH15,data/extracted/134-2025-QH15.raw.txt,data/extracted/134-2025-QH15.cleaned.txt,success,48871,48864,293,293,0,
+142-2026-ND-CP,data/extracted/142-2026-ND-CP.raw.txt,data/extracted/142-2026-ND-CP.cleaned.txt,success,206488,206333,1911,1911,0,
+05-2026-TT-BKHCN,data/extracted/05-2026-TT-BKHCN.raw.txt,data/extracted/05-2026-TT-BKHCN.cleaned.txt,success,13527,13447,119,119,0,

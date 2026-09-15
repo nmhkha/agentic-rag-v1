@@ -1,0 +1,6 @@
+# Mỗi dòng bên dưới phải khớp chính xác với dòng cần xóa.
+# Không dùng regex ở file này để tránh xóa nhầm nội dung pháp luật.
+#
+# Ví dụ:
+# Tải văn bản tại LuatVietnam.vn
+# Bản quyền thuộc về LuatVietnam

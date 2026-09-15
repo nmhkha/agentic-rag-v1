@@ -1,0 +1,459 @@
+{
+  "candidate_count": 60,
+  "unresolved_issue_count": 503,
+  "candidate_priority_distribution": {
+    "LOW": 0,
+    "MEDIUM": 14,
+    "HIGH": 41,
+    "CRITICAL_REVIEW": 5
+  },
+  "issue_severity_distribution": {
+    "LOW": 0,
+    "MEDIUM": 367,
+    "HIGH": 123,
+    "CRITICAL_REVIEW": 13
+  },
+  "issue_field_family_counts": {
+    "scope": 268,
+    "required_aspects": 63,
+    "contamination": 25,
+    "material_predicates": 26,
+    "support_bundles": 43,
+    "dimensions": 43,
+    "applicability": 17,
+    "admission": 11,
+    "sufficiency": 3,
+    "answer_role": 3,
+    "answerability": 1
+  },
+  "candidates": [
+    {
+      "canonical_candidate_id": "q_1642611dc39f3f0e302f",
+      "unresolved_issue_count": 10,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_c435ea84a01bd76f8166",
+      "unresolved_issue_count": 15,
+      "comparison_priority": "CRITICAL_REVIEW",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_c13f165c8ac1296c1449",
+      "unresolved_issue_count": 13,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_c8a99d5afd80afefa090",
+      "unresolved_issue_count": 10,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_0562c6d6516359c63413",
+      "unresolved_issue_count": 12,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_dcc92aaa0791fa98004c",
+      "unresolved_issue_count": 10,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_9f10deed791a1ec07d04",
+      "unresolved_issue_count": 13,
+      "comparison_priority": "CRITICAL_REVIEW",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_a195fa72dea87b439d7a",
+      "unresolved_issue_count": 14,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_b67987d68e10d7d0986d",
+      "unresolved_issue_count": 6,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_81bb95ba1f19f186ab25",
+      "unresolved_issue_count": 8,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_1f06ae333c1e3c774329",
+      "unresolved_issue_count": 12,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_fcae400ebdbdbe36cce8",
+      "unresolved_issue_count": 12,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_2f80182d7e1efdf966c7",
+      "unresolved_issue_count": 11,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_b603d3ddf288b72f3954",
+      "unresolved_issue_count": 14,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_1ade66d9d5bb022b867f",
+      "unresolved_issue_count": 8,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_efb22fad6d7dad9fa17a",
+      "unresolved_issue_count": 8,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_555fa4b2dfa1d3f428df",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_4f81b0869e9d14221596",
+      "unresolved_issue_count": 10,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_97f3e68f1e2cce1b2bf4",
+      "unresolved_issue_count": 8,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_8357958f95ff2e0baa41",
+      "unresolved_issue_count": 10,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_4d28afa77e15a3afd8f1",
+      "unresolved_issue_count": 6,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_6f97ffb51be5fdaf892f",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_8324e664cda8a81236ed",
+      "unresolved_issue_count": 8,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_328ee3ab8c3e08738fd1",
+      "unresolved_issue_count": 10,
+      "comparison_priority": "CRITICAL_REVIEW",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_4a979d778bce4f6552ab",
+      "unresolved_issue_count": 12,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_10309a829e08c3a4fecf",
+      "unresolved_issue_count": 7,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_d5df8d6efaee273f39d3",
+      "unresolved_issue_count": 10,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_14e8b10bc8926bd979f0",
+      "unresolved_issue_count": 10,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_0e4980e0bb419c668b44",
+      "unresolved_issue_count": 12,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_90f3303b7d7b22395d96",
+      "unresolved_issue_count": 7,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_8207ae5a788317993abd",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_7a2a93af56c529c8ef41",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_d26cb3f576e88854d6d8",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_afa050568a2a155f495b",
+      "unresolved_issue_count": 6,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_a4eada08ab842902e775",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_b7d036582f1f01ec746f",
+      "unresolved_issue_count": 11,
+      "comparison_priority": "CRITICAL_REVIEW",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_bc2e1864c7f8705e3966",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_50069fac66d1e12205cf",
+      "unresolved_issue_count": 6,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_9a930d0151f1f2cbb452",
+      "unresolved_issue_count": 9,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_641743d24f2f6ba314bd",
+      "unresolved_issue_count": 7,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_025b90f0aa489f1f483f",
+      "unresolved_issue_count": 8,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_5a8c3a6939072e9d256a",
+      "unresolved_issue_count": 6,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_af1b2d179667a0c14929",
+      "unresolved_issue_count": 7,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_11a30508142a0893b998",
+      "unresolved_issue_count": 9,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_c281e8c976e7207bf144",
+      "unresolved_issue_count": 11,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_dbb862f75f4b23442a3d",
+      "unresolved_issue_count": 8,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_fc35aef795821c34b6f1",
+      "unresolved_issue_count": 6,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_29b66d9a5f0ae2ef98a4",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_4fe83fa6e245d03c20fc",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_1e3dead5b493f0725223",
+      "unresolved_issue_count": 7,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_8ccdc3c4ee85dadcd60d",
+      "unresolved_issue_count": 11,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_89ad16a113cd52847d7c",
+      "unresolved_issue_count": 6,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_74a9553aea20f985c661",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "MEDIUM",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_2082d6e4ad79123c6d14",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_88f96f6661303a520be5",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_39d7771240b14f062898",
+      "unresolved_issue_count": 7,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_df59222dfdcfceaa0aac",
+      "unresolved_issue_count": 5,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_182d7b08c6e0fdc0ae46",
+      "unresolved_issue_count": 7,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_6570dddcf3bb1e16516f",
+      "unresolved_issue_count": 6,
+      "comparison_priority": "HIGH",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    },
+    {
+      "canonical_candidate_id": "q_90695ba7553824abd1e6",
+      "unresolved_issue_count": 14,
+      "comparison_priority": "CRITICAL_REVIEW",
+      "full_substantive_agreement": false,
+      "status": "UNRESOLVED"
+    }
+  ],
+  "priority_is_not_correctness": true,
+  "all_issues_status": "UNRESOLVED",
+  "severity_unit": "Console severity counts are candidates classified by maximum issue severity; issue severities are reported separately.",
+  "legal_review_required_issues": 424,
+  "absence_high_priority_flags": 2,
+  "admission_review_required_flags": 3,
+  "human_legal_review_gate": "HUMAN_LEGAL_REVIEW_REQUIRED",
+  "dataset_freeze_ready": false
+}

@@ -1,0 +1,1230 @@
+{
+  "run_id": "agentic-v1-eval021",
+  "query": "Những loại dữ liệu nào có thể được đưa vào cơ sở dữ liệu phục vụ trí tuệ nhân tạo?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 28,
+  "initial_top5": [
+    "134-2025-QH15_dieu-17_khoan-5",
+    "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+    "134-2025-QH15_dieu-17_khoan-2",
+    "142-2026-ND-CP_dieu-35_khoan-1",
+    "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+  ],
+  "coverage_check": {
+    "sufficient": true,
+    "missing_aspects": [],
+    "reason": "Các văn bản cung cấp đầy đủ thông tin về các loại dữ liệu bao gồm dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại và các danh mục dữ liệu ưu tiên phục vụ phát triển trí tuệ nhân tạo."
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [
+    {
+      "rank": 1,
+      "evidence_id": "E1",
+      "chunk_id": "134-2025-QH15_dieu-17_khoan-5",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-17",
+      "article": "17",
+      "article_label": "Điều 17",
+      "clause": "5",
+      "clause_label": "Khoản 5",
+      "point": null,
+      "point_label": null,
+      "text": "Thủ tướng Chính phủ ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu, trong đó ưu tiên dữ liệu văn hóa, ngôn ngữ tiếng Việt và tiếng dân tộc thiểu số, dữ liệu thủ tục hành chính, y tế, giáo dục, nông nghiệp, môi trường, giao thông, kinh tế - xã hội và các lĩnh vực quan trọng khác.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÁT TRIỂN HẠ TẦNG VÀ BẢO ĐẢM CHỦ QUYỀN\nĐiều 17. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 5\nThủ tướng Chính phủ ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu, trong đó ưu tiên dữ liệu văn hóa, ngôn ngữ tiếng Việt và tiếng dân tộc thiểu số, dữ liệu thủ tục hành chính, y tế, giáo dục, nông nghiệp, môi trường, giao thông, kinh tế - xã hội và các lĩnh vực quan trọng khác.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 5.4169464111328125,
+      "bm25_rank": null,
+      "dense_rank": 11,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 1,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-17_khoan-5",
+      "point_id": null
+    },
+    {
+      "rank": 2,
+      "evidence_id": "E2",
+      "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-32",
+      "article": "32",
+      "article_label": "Điều 32",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": "c",
+      "point_label": "Điểm c",
+      "text": "Dữ liệu thương mại của tổ chức, doanh nghiệp theo quy định của pháp luật.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 32. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 1\nĐiểm c)\nDữ liệu thương mại của tổ chức, doanh nghiệp theo quy định của pháp luật.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 4.3481550216674805,
+      "bm25_rank": null,
+      "dense_rank": 4,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 2,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-32_khoan-1",
+      "point_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-c"
+    },
+    {
+      "rank": 3,
+      "evidence_id": "E3",
+      "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-17",
+      "article": "17",
+      "article_label": "Điều 17",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": null,
+      "point_label": null,
+      "text": "Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo do Nhà nước đầu tư, xây dựng và vận hành tại Trung tâm dữ liệu quốc gia; được tổ chức theo nguyên tắc mở, an toàn, có kiểm soát, đáp ứng yêu cầu về chất lượng, khả năng kết nối và khai thác; bao gồm dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại theo quy định của pháp luật.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÁT TRIỂN HẠ TẦNG VÀ BẢO ĐẢM CHỦ QUYỀN\nĐiều 17. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 2\nCơ sở dữ liệu quốc gia về trí tuệ nhân tạo do Nhà nước đầu tư, xây dựng và vận hành tại Trung tâm dữ liệu quốc gia; được tổ chức theo nguyên tắc mở, an toàn, có kiểm soát, đáp ứng yêu cầu về chất lượng, khả năng kết nối và khai thác; bao gồm dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại theo quy định của pháp luật.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 3.8681766986846924,
+      "bm25_rank": 5,
+      "dense_rank": 3,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 3,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-17_khoan-2",
+      "point_id": null
+    },
+    {
+      "rank": 4,
+      "evidence_id": "E4",
+      "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-35",
+      "article": "35",
+      "article_label": "Điều 35",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": null,
+      "point_label": null,
+      "text": "Tổ chức, cá nhân được khai thác, sử dụng dữ liệu trong các cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo khi đáp ứng điều kiện truy cập, phạm vi khai thác và mục đích sử dụng theo quy định của pháp luật về dữ liệu, bảo vệ dữ liệu cá nhân, sở hữu trí tuệ và điều kiện truy cập đã được cơ quan chủ quản dữ liệu hoặc chủ sở hữu dữ liệu công bố theo khoản 2 Điều này. Việc khai thác, sử dụng dữ liệu theo Điều này được thực hiện độc lập với cơ chế hỗ trợ quy định tại Điều 33 và Điều 34 của Nghị định này. Việc xác định điều kiện truy cập và tổ chức khai thác dữ liệu phải bảo đảm công khai, minh bạch, không phân biệt đối xử giữa các tổ chức, cá nhân đáp ứng cùng điều kiện truy cập theo quy định của pháp luật.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 35. Khai thác và sử dụng dữ liệu phục vụ phát triển trí tuệ nhân tạo\nKhoản 1\nTổ chức, cá nhân được khai thác, sử dụng dữ liệu trong các cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo khi đáp ứng điều kiện truy cập, phạm vi khai thác và mục đích sử dụng theo quy định của pháp luật về dữ liệu, bảo vệ dữ liệu cá nhân, sở hữu trí tuệ và điều kiện truy cập đã được cơ quan chủ quản dữ liệu hoặc chủ sở hữu dữ liệu công bố theo khoản 2 Điều này. Việc khai thác, sử dụng dữ liệu theo Điều này được thực hiện độc lập với cơ chế hỗ trợ quy định tại Điều 33 và Điều 34 của Nghị định này. Việc xác định điều kiện truy cập và tổ chức khai thác dữ liệu phải bảo đảm công khai, minh bạch, không phân biệt đối xử giữa các tổ chức, cá nhân đáp ứng cùng điều kiện truy cập theo quy định của pháp luật.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 3.0765490531921387,
+      "bm25_rank": 19,
+      "dense_rank": 2,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 4,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-35_khoan-1",
+      "point_id": null
+    },
+    {
+      "rank": 5,
+      "evidence_id": "E5",
+      "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-32",
+      "article": "32",
+      "article_label": "Điều 32",
+      "clause": "5",
+      "clause_label": "Khoản 5",
+      "point": "a",
+      "point_label": "Điểm a",
+      "text": "Xây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 32. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 5\nĐiểm a)\nXây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": 3.0613465309143066,
+      "bm25_rank": 12,
+      "dense_rank": 7,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 5,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-32_khoan-5",
+      "point_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+    }
+  ],
+  "final_top5": [
+    "134-2025-QH15_dieu-17_khoan-5",
+    "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+    "134-2025-QH15_dieu-17_khoan-2",
+    "142-2026-ND-CP_dieu-35_khoan-1",
+    "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+  ],
+  "draft_answer": "Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo bao gồm dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại theo quy định của pháp luật [E3]. Bên cạnh đó, Thủ tướng Chính phủ ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu, ưu tiên dữ liệu văn hóa, ngôn ngữ tiếng Việt và tiếng dân tộc thiểu số, thủ tục hành chính, y tế, giáo dục, nông nghiệp, môi trường, giao thông, kinh tế - xã hội và các lĩnh vực quan trọng khác [E1]. Ngoài ra, dữ liệu còn bao gồm dữ liệu thương mại của tổ chức, doanh nghiệp theo quy định của pháp luật [E2].",
+  "completeness_check": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "Câu trả lời đã bao quát đầy đủ các loại dữ liệu được đề cập trong các đoạn bằng chứng (E1, E2, E3) liên quan đến cơ sở dữ liệu và bộ dữ liệu phục vụ trí tuệ nhân tạo."
+  },
+  "revision_used": false,
+  "citation_check": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E3",
+      "E1",
+      "E2"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required_by_deterministic_gate",
+    "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": "Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo bao gồm dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại theo quy định của pháp luật [E3]. Bên cạnh đó, Thủ tướng Chính phủ ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu, ưu tiên dữ liệu văn hóa, ngôn ngữ tiếng Việt và tiếng dân tộc thiểu số, thủ tục hành chính, y tế, giáo dục, nông nghiệp, môi trường, giao thông, kinh tế - xã hội và các lĩnh vực quan trọng khác [E1]. Ngoài ra, dữ liệu còn bao gồm dữ liệu thương mại của tổ chức, doanh nghiệp theo quy định của pháp luật [E2].",
+  "final_status": "success",
+  "retrieval_calls": [
+    {
+      "call_number": 1,
+      "round": 0,
+      "query": "Những loại dữ liệu nào có thể được đưa vào cơ sở dữ liệu phục vụ trí tuệ nhân tạo?",
+      "sub_query": false,
+      "bm25_depth": 20,
+      "dense_depth": 20,
+      "candidate_chunk_ids": [
+        "134-2025-QH15_dieu-17_khoan-1",
+        "134-2025-QH15_dieu-17_khoan-3",
+        "134-2025-QH15_dieu-17_khoan-4",
+        "134-2025-QH15_dieu-17_khoan-6",
+        "134-2025-QH15_dieu-17_khoan-2",
+        "142-2026-ND-CP_dieu-32_khoan-1_diem-b",
+        "142-2026-ND-CP_dieu-35_khoan-6",
+        "134-2025-QH15_dieu-20_khoan-4",
+        "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+        "142-2026-ND-CP_dieu-32_khoan-5_diem-c",
+        "142-2026-ND-CP_dieu-3_khoan-8",
+        "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+        "134-2025-QH15_dieu-8_khoan-2",
+        "142-2026-ND-CP_dieu-32_khoan-1_diem-a",
+        "142-2026-ND-CP_dieu-32_khoan-4",
+        "142-2026-ND-CP_dieu-35_khoan-5_diem-c",
+        "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+        "142-2026-ND-CP_dieu-35_khoan-1",
+        "142-2026-ND-CP_dieu-4_khoan-2",
+        "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+        "142-2026-ND-CP_dieu-32_khoan-3",
+        "142-2026-ND-CP_dieu-35_khoan-3_diem-c",
+        "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+        "134-2025-QH15_dieu-17_khoan-5",
+        "142-2026-ND-CP_dieu-12_khoan-7",
+        "142-2026-ND-CP_dieu-32_khoan-6_diem-c",
+        "142-2026-ND-CP_dieu-39_khoan-5_diem-b"
+      ],
+      "candidate_count": 28,
+      "reranker_ranks": [
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-5",
+          "rank": 1,
+          "reranker_score": 5.4169464111328125
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+          "rank": 2,
+          "reranker_score": 4.3481550216674805
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+          "rank": 3,
+          "reranker_score": 3.8681766986846924
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+          "rank": 4,
+          "reranker_score": 3.0765490531921387
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+          "rank": 5,
+          "reranker_score": 3.0613465309143066
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-20_khoan-4",
+          "rank": 6,
+          "reranker_score": 2.77677583694458
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-a",
+          "rank": 7,
+          "reranker_score": 2.7416625022888184
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-1",
+          "rank": 8,
+          "reranker_score": 2.579789876937866
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-4",
+          "rank": 9,
+          "reranker_score": 2.321336269378662
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-3_khoan-8",
+          "rank": 10,
+          "reranker_score": 2.053851842880249
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-b",
+          "rank": 11,
+          "reranker_score": 1.7378976345062256
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-3",
+          "rank": 12,
+          "reranker_score": 1.6620523929595947
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+          "rank": 13,
+          "reranker_score": 1.4907536506652832
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-35_khoan-6",
+          "rank": 14,
+          "reranker_score": 1.3244357109069824
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-6",
+          "rank": 15,
+          "reranker_score": 1.3047821521759033
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-4_khoan-2",
+          "rank": 16,
+          "reranker_score": 1.2123736143112183
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+          "rank": 17,
+          "reranker_score": 1.176459550857544
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-39_khoan-5_diem-b",
+          "rank": 18,
+          "reranker_score": 0.8506711721420288
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-c",
+          "rank": 19,
+          "reranker_score": 0.7926546931266785
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-8_khoan-2",
+          "rank": 20,
+          "reranker_score": 0.7571300268173218
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-4",
+          "rank": 21,
+          "reranker_score": 0.4984416663646698
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-35_khoan-3_diem-c",
+          "rank": 22,
+          "reranker_score": 0.49048057198524475
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+          "rank": 23,
+          "reranker_score": 0.33393415808677673
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+          "rank": 24,
+          "reranker_score": -0.0794849619269371
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-35_khoan-5_diem-c",
+          "rank": 25,
+          "reranker_score": -0.25761717557907104
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-6_diem-c",
+          "rank": 26,
+          "reranker_score": -0.4758927524089813
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+          "rank": 27,
+          "reranker_score": -0.5315790176391602
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-7",
+          "rank": 28,
+          "reranker_score": -0.6747939586639404
+        }
+      ],
+      "top5_chunk_ids": [
+        "134-2025-QH15_dieu-17_khoan-5",
+        "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+        "134-2025-QH15_dieu-17_khoan-2",
+        "142-2026-ND-CP_dieu-35_khoan-1",
+        "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+      ],
+      "candidate_ranks": [
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-1",
+          "bm25_rank": 1,
+          "dense_rank": 1
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+          "bm25_rank": 2,
+          "dense_rank": 13
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-4",
+          "bm25_rank": 3,
+          "dense_rank": 6
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-6",
+          "bm25_rank": 4,
+          "dense_rank": 16
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+          "bm25_rank": 5,
+          "dense_rank": 3
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-b",
+          "bm25_rank": 6,
+          "dense_rank": 19
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-35_khoan-6",
+          "bm25_rank": 7,
+          "dense_rank": 18
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-20_khoan-4",
+          "bm25_rank": 8,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+          "bm25_rank": 9,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-c",
+          "bm25_rank": 10,
+          "dense_rank": 20
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-3_khoan-8",
+          "bm25_rank": 11,
+          "dense_rank": 5
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+          "bm25_rank": 12,
+          "dense_rank": 7
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-8_khoan-2",
+          "bm25_rank": 13,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-a",
+          "bm25_rank": 14,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-4",
+          "bm25_rank": 15,
+          "dense_rank": 12
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-35_khoan-5_diem-c",
+          "bm25_rank": 16,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+          "bm25_rank": 17,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+          "bm25_rank": 18,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+          "bm25_rank": 19,
+          "dense_rank": 2
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-4_khoan-2",
+          "bm25_rank": 20,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+          "bm25_rank": null,
+          "dense_rank": 4
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 8
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-35_khoan-3_diem-c",
+          "bm25_rank": null,
+          "dense_rank": 9
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+          "bm25_rank": null,
+          "dense_rank": 10
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-17_khoan-5",
+          "bm25_rank": null,
+          "dense_rank": 11
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-12_khoan-7",
+          "bm25_rank": null,
+          "dense_rank": 14
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-32_khoan-6_diem-c",
+          "bm25_rank": null,
+          "dense_rank": 15
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-39_khoan-5_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 17
+        }
+      ]
+    }
+  ],
+  "retrieval_call_count": 1,
+  "llm_calls": [
+    {
+      "call_number": 1,
+      "stage": "coverage_check"
+    },
+    {
+      "call_number": 2,
+      "stage": "answer_generation"
+    },
+    {
+      "call_number": 3,
+      "stage": "completeness_check"
+    }
+  ],
+  "llm_call_count": 3,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Những loại dữ liệu nào có thể được đưa vào cơ sở dữ liệu phục vụ trí tuệ nhân tạo?",
+    "initial_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "134-2025-QH15_dieu-17_khoan-5",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-17",
+        "article": "17",
+        "article_label": "Điều 17",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": null,
+        "point_label": null,
+        "text": "Thủ tướng Chính phủ ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu, trong đó ưu tiên dữ liệu văn hóa, ngôn ngữ tiếng Việt và tiếng dân tộc thiểu số, dữ liệu thủ tục hành chính, y tế, giáo dục, nông nghiệp, môi trường, giao thông, kinh tế - xã hội và các lĩnh vực quan trọng khác.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÁT TRIỂN HẠ TẦNG VÀ BẢO ĐẢM CHỦ QUYỀN\nĐiều 17. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 5\nThủ tướng Chính phủ ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu, trong đó ưu tiên dữ liệu văn hóa, ngôn ngữ tiếng Việt và tiếng dân tộc thiểu số, dữ liệu thủ tục hành chính, y tế, giáo dục, nông nghiệp, môi trường, giao thông, kinh tế - xã hội và các lĩnh vực quan trọng khác.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 5.4169464111328125,
+        "bm25_rank": null,
+        "dense_rank": 11,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-17_khoan-5",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-32",
+        "article": "32",
+        "article_label": "Điều 32",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "c",
+        "point_label": "Điểm c",
+        "text": "Dữ liệu thương mại của tổ chức, doanh nghiệp theo quy định của pháp luật.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 32. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 1\nĐiểm c)\nDữ liệu thương mại của tổ chức, doanh nghiệp theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 4.3481550216674805,
+        "bm25_rank": null,
+        "dense_rank": 4,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-32_khoan-1",
+        "point_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-c"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-17",
+        "article": "17",
+        "article_label": "Điều 17",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo do Nhà nước đầu tư, xây dựng và vận hành tại Trung tâm dữ liệu quốc gia; được tổ chức theo nguyên tắc mở, an toàn, có kiểm soát, đáp ứng yêu cầu về chất lượng, khả năng kết nối và khai thác; bao gồm dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại theo quy định của pháp luật.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÁT TRIỂN HẠ TẦNG VÀ BẢO ĐẢM CHỦ QUYỀN\nĐiều 17. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 2\nCơ sở dữ liệu quốc gia về trí tuệ nhân tạo do Nhà nước đầu tư, xây dựng và vận hành tại Trung tâm dữ liệu quốc gia; được tổ chức theo nguyên tắc mở, an toàn, có kiểm soát, đáp ứng yêu cầu về chất lượng, khả năng kết nối và khai thác; bao gồm dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 3.8681766986846924,
+        "bm25_rank": 5,
+        "dense_rank": 3,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-17_khoan-2",
+        "point_id": null
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-35",
+        "article": "35",
+        "article_label": "Điều 35",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Tổ chức, cá nhân được khai thác, sử dụng dữ liệu trong các cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo khi đáp ứng điều kiện truy cập, phạm vi khai thác và mục đích sử dụng theo quy định của pháp luật về dữ liệu, bảo vệ dữ liệu cá nhân, sở hữu trí tuệ và điều kiện truy cập đã được cơ quan chủ quản dữ liệu hoặc chủ sở hữu dữ liệu công bố theo khoản 2 Điều này. Việc khai thác, sử dụng dữ liệu theo Điều này được thực hiện độc lập với cơ chế hỗ trợ quy định tại Điều 33 và Điều 34 của Nghị định này. Việc xác định điều kiện truy cập và tổ chức khai thác dữ liệu phải bảo đảm công khai, minh bạch, không phân biệt đối xử giữa các tổ chức, cá nhân đáp ứng cùng điều kiện truy cập theo quy định của pháp luật.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 35. Khai thác và sử dụng dữ liệu phục vụ phát triển trí tuệ nhân tạo\nKhoản 1\nTổ chức, cá nhân được khai thác, sử dụng dữ liệu trong các cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo khi đáp ứng điều kiện truy cập, phạm vi khai thác và mục đích sử dụng theo quy định của pháp luật về dữ liệu, bảo vệ dữ liệu cá nhân, sở hữu trí tuệ và điều kiện truy cập đã được cơ quan chủ quản dữ liệu hoặc chủ sở hữu dữ liệu công bố theo khoản 2 Điều này. Việc khai thác, sử dụng dữ liệu theo Điều này được thực hiện độc lập với cơ chế hỗ trợ quy định tại Điều 33 và Điều 34 của Nghị định này. Việc xác định điều kiện truy cập và tổ chức khai thác dữ liệu phải bảo đảm công khai, minh bạch, không phân biệt đối xử giữa các tổ chức, cá nhân đáp ứng cùng điều kiện truy cập theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.0765490531921387,
+        "bm25_rank": 19,
+        "dense_rank": 2,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-35_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-32",
+        "article": "32",
+        "article_label": "Điều 32",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Xây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 32. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 5\nĐiểm a)\nXây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.0613465309143066,
+        "bm25_rank": 12,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-32_khoan-5",
+        "point_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+      }
+    ],
+    "current_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "134-2025-QH15_dieu-17_khoan-5",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-17",
+        "article": "17",
+        "article_label": "Điều 17",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": null,
+        "point_label": null,
+        "text": "Thủ tướng Chính phủ ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu, trong đó ưu tiên dữ liệu văn hóa, ngôn ngữ tiếng Việt và tiếng dân tộc thiểu số, dữ liệu thủ tục hành chính, y tế, giáo dục, nông nghiệp, môi trường, giao thông, kinh tế - xã hội và các lĩnh vực quan trọng khác.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÁT TRIỂN HẠ TẦNG VÀ BẢO ĐẢM CHỦ QUYỀN\nĐiều 17. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 5\nThủ tướng Chính phủ ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu, trong đó ưu tiên dữ liệu văn hóa, ngôn ngữ tiếng Việt và tiếng dân tộc thiểu số, dữ liệu thủ tục hành chính, y tế, giáo dục, nông nghiệp, môi trường, giao thông, kinh tế - xã hội và các lĩnh vực quan trọng khác.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 5.4169464111328125,
+        "bm25_rank": null,
+        "dense_rank": 11,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-17_khoan-5",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-32",
+        "article": "32",
+        "article_label": "Điều 32",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "c",
+        "point_label": "Điểm c",
+        "text": "Dữ liệu thương mại của tổ chức, doanh nghiệp theo quy định của pháp luật.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 32. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 1\nĐiểm c)\nDữ liệu thương mại của tổ chức, doanh nghiệp theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 4.3481550216674805,
+        "bm25_rank": null,
+        "dense_rank": 4,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-32_khoan-1",
+        "point_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-c"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-17",
+        "article": "17",
+        "article_label": "Điều 17",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": null,
+        "point_label": null,
+        "text": "Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo do Nhà nước đầu tư, xây dựng và vận hành tại Trung tâm dữ liệu quốc gia; được tổ chức theo nguyên tắc mở, an toàn, có kiểm soát, đáp ứng yêu cầu về chất lượng, khả năng kết nối và khai thác; bao gồm dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại theo quy định của pháp luật.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÁT TRIỂN HẠ TẦNG VÀ BẢO ĐẢM CHỦ QUYỀN\nĐiều 17. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 2\nCơ sở dữ liệu quốc gia về trí tuệ nhân tạo do Nhà nước đầu tư, xây dựng và vận hành tại Trung tâm dữ liệu quốc gia; được tổ chức theo nguyên tắc mở, an toàn, có kiểm soát, đáp ứng yêu cầu về chất lượng, khả năng kết nối và khai thác; bao gồm dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 3.8681766986846924,
+        "bm25_rank": 5,
+        "dense_rank": 3,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-17_khoan-2",
+        "point_id": null
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-35",
+        "article": "35",
+        "article_label": "Điều 35",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Tổ chức, cá nhân được khai thác, sử dụng dữ liệu trong các cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo khi đáp ứng điều kiện truy cập, phạm vi khai thác và mục đích sử dụng theo quy định của pháp luật về dữ liệu, bảo vệ dữ liệu cá nhân, sở hữu trí tuệ và điều kiện truy cập đã được cơ quan chủ quản dữ liệu hoặc chủ sở hữu dữ liệu công bố theo khoản 2 Điều này. Việc khai thác, sử dụng dữ liệu theo Điều này được thực hiện độc lập với cơ chế hỗ trợ quy định tại Điều 33 và Điều 34 của Nghị định này. Việc xác định điều kiện truy cập và tổ chức khai thác dữ liệu phải bảo đảm công khai, minh bạch, không phân biệt đối xử giữa các tổ chức, cá nhân đáp ứng cùng điều kiện truy cập theo quy định của pháp luật.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 35. Khai thác và sử dụng dữ liệu phục vụ phát triển trí tuệ nhân tạo\nKhoản 1\nTổ chức, cá nhân được khai thác, sử dụng dữ liệu trong các cơ sở dữ liệu phục vụ phát triển trí tuệ nhân tạo khi đáp ứng điều kiện truy cập, phạm vi khai thác và mục đích sử dụng theo quy định của pháp luật về dữ liệu, bảo vệ dữ liệu cá nhân, sở hữu trí tuệ và điều kiện truy cập đã được cơ quan chủ quản dữ liệu hoặc chủ sở hữu dữ liệu công bố theo khoản 2 Điều này. Việc khai thác, sử dụng dữ liệu theo Điều này được thực hiện độc lập với cơ chế hỗ trợ quy định tại Điều 33 và Điều 34 của Nghị định này. Việc xác định điều kiện truy cập và tổ chức khai thác dữ liệu phải bảo đảm công khai, minh bạch, không phân biệt đối xử giữa các tổ chức, cá nhân đáp ứng cùng điều kiện truy cập theo quy định của pháp luật.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.0765490531921387,
+        "bm25_rank": 19,
+        "dense_rank": 2,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-35_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-32",
+        "article": "32",
+        "article_label": "Điều 32",
+        "clause": "5",
+        "clause_label": "Khoản 5",
+        "point": "a",
+        "point_label": "Điểm a",
+        "text": "Xây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nHẠ TẦNG, DỮ LIỆU VÀ BẢO ĐẢM NĂNG LỰC TỰ CHỦ\nĐiều 32. Cơ sở dữ liệu phục vụ trí tuệ nhân tạo\nKhoản 5\nĐiểm a)\nXây dựng, cập nhật dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại thuộc phạm vi quản lý;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": 3.0613465309143066,
+        "bm25_rank": 12,
+        "dense_rank": 7,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-32_khoan-5",
+        "point_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+      }
+    ],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": true,
+      "missing_aspects": [],
+      "reason": "Các văn bản cung cấp đầy đủ thông tin về các loại dữ liệu bao gồm dữ liệu mở, dữ liệu mở có điều kiện, dữ liệu thương mại và các danh mục dữ liệu ưu tiên phục vụ phát triển trí tuệ nhân tạo."
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": "Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo bao gồm dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại theo quy định của pháp luật [E3]. Bên cạnh đó, Thủ tướng Chính phủ ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu, ưu tiên dữ liệu văn hóa, ngôn ngữ tiếng Việt và tiếng dân tộc thiểu số, thủ tục hành chính, y tế, giáo dục, nông nghiệp, môi trường, giao thông, kinh tế - xã hội và các lĩnh vực quan trọng khác [E1]. Ngoài ra, dữ liệu còn bao gồm dữ liệu thương mại của tổ chức, doanh nghiệp theo quy định của pháp luật [E2].",
+    "completeness_check": {
+      "complete": true,
+      "missing_points": [],
+      "reason": "Câu trả lời đã bao quát đầy đủ các loại dữ liệu được đề cập trong các đoạn bằng chứng (E1, E2, E3) liên quan đến cơ sở dữ liệu và bộ dữ liệu phục vụ trí tuệ nhân tạo."
+    },
+    "citation_check": {
+      "valid": true,
+      "cited_evidence_ids": [
+        "E3",
+        "E1",
+        "E2"
+      ],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required_by_deterministic_gate",
+      "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+      "reviewed_claims": []
+    },
+    "revision_count": 0,
+    "citation_revision_count": 0,
+    "final_answer": "Cơ sở dữ liệu quốc gia về trí tuệ nhân tạo bao gồm dữ liệu mở, dữ liệu mở có điều kiện và dữ liệu thương mại theo quy định của pháp luật [E3]. Bên cạnh đó, Thủ tướng Chính phủ ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu, ưu tiên dữ liệu văn hóa, ngôn ngữ tiếng Việt và tiếng dân tộc thiểu số, thủ tục hành chính, y tế, giáo dục, nông nghiệp, môi trường, giao thông, kinh tế - xã hội và các lĩnh vực quan trọng khác [E1]. Ngoài ra, dữ liệu còn bao gồm dữ liệu thương mại của tổ chức, doanh nghiệp theo quy định của pháp luật [E2].",
+    "final_status": "success",
+    "run_id": "agentic-v1-eval021",
+    "initial_top5": [
+      "134-2025-QH15_dieu-17_khoan-5",
+      "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+      "134-2025-QH15_dieu-17_khoan-2",
+      "142-2026-ND-CP_dieu-35_khoan-1",
+      "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+    ],
+    "expanded_candidates": [],
+    "final_top5": [
+      "134-2025-QH15_dieu-17_khoan-5",
+      "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+      "134-2025-QH15_dieu-17_khoan-2",
+      "142-2026-ND-CP_dieu-35_khoan-1",
+      "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+    ],
+    "retrieval_calls": [
+      {
+        "call_number": 1,
+        "round": 0,
+        "query": "Những loại dữ liệu nào có thể được đưa vào cơ sở dữ liệu phục vụ trí tuệ nhân tạo?",
+        "sub_query": false,
+        "bm25_depth": 20,
+        "dense_depth": 20,
+        "candidate_chunk_ids": [
+          "134-2025-QH15_dieu-17_khoan-1",
+          "134-2025-QH15_dieu-17_khoan-3",
+          "134-2025-QH15_dieu-17_khoan-4",
+          "134-2025-QH15_dieu-17_khoan-6",
+          "134-2025-QH15_dieu-17_khoan-2",
+          "142-2026-ND-CP_dieu-32_khoan-1_diem-b",
+          "142-2026-ND-CP_dieu-35_khoan-6",
+          "134-2025-QH15_dieu-20_khoan-4",
+          "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+          "142-2026-ND-CP_dieu-32_khoan-5_diem-c",
+          "142-2026-ND-CP_dieu-3_khoan-8",
+          "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+          "134-2025-QH15_dieu-8_khoan-2",
+          "142-2026-ND-CP_dieu-32_khoan-1_diem-a",
+          "142-2026-ND-CP_dieu-32_khoan-4",
+          "142-2026-ND-CP_dieu-35_khoan-5_diem-c",
+          "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+          "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+          "142-2026-ND-CP_dieu-35_khoan-1",
+          "142-2026-ND-CP_dieu-4_khoan-2",
+          "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+          "142-2026-ND-CP_dieu-32_khoan-3",
+          "142-2026-ND-CP_dieu-35_khoan-3_diem-c",
+          "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+          "134-2025-QH15_dieu-17_khoan-5",
+          "142-2026-ND-CP_dieu-12_khoan-7",
+          "142-2026-ND-CP_dieu-32_khoan-6_diem-c",
+          "142-2026-ND-CP_dieu-39_khoan-5_diem-b"
+        ],
+        "candidate_count": 28,
+        "reranker_ranks": [
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-5",
+            "rank": 1,
+            "reranker_score": 5.4169464111328125
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+            "rank": 2,
+            "reranker_score": 4.3481550216674805
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+            "rank": 3,
+            "reranker_score": 3.8681766986846924
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+            "rank": 4,
+            "reranker_score": 3.0765490531921387
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+            "rank": 5,
+            "reranker_score": 3.0613465309143066
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-20_khoan-4",
+            "rank": 6,
+            "reranker_score": 2.77677583694458
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-a",
+            "rank": 7,
+            "reranker_score": 2.7416625022888184
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-1",
+            "rank": 8,
+            "reranker_score": 2.579789876937866
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-4",
+            "rank": 9,
+            "reranker_score": 2.321336269378662
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-3_khoan-8",
+            "rank": 10,
+            "reranker_score": 2.053851842880249
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-b",
+            "rank": 11,
+            "reranker_score": 1.7378976345062256
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-3",
+            "rank": 12,
+            "reranker_score": 1.6620523929595947
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+            "rank": 13,
+            "reranker_score": 1.4907536506652832
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-35_khoan-6",
+            "rank": 14,
+            "reranker_score": 1.3244357109069824
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-6",
+            "rank": 15,
+            "reranker_score": 1.3047821521759033
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-4_khoan-2",
+            "rank": 16,
+            "reranker_score": 1.2123736143112183
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+            "rank": 17,
+            "reranker_score": 1.176459550857544
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-39_khoan-5_diem-b",
+            "rank": 18,
+            "reranker_score": 0.8506711721420288
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-c",
+            "rank": 19,
+            "reranker_score": 0.7926546931266785
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-8_khoan-2",
+            "rank": 20,
+            "reranker_score": 0.7571300268173218
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-4",
+            "rank": 21,
+            "reranker_score": 0.4984416663646698
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-35_khoan-3_diem-c",
+            "rank": 22,
+            "reranker_score": 0.49048057198524475
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+            "rank": 23,
+            "reranker_score": 0.33393415808677673
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+            "rank": 24,
+            "reranker_score": -0.0794849619269371
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-35_khoan-5_diem-c",
+            "rank": 25,
+            "reranker_score": -0.25761717557907104
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-6_diem-c",
+            "rank": 26,
+            "reranker_score": -0.4758927524089813
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+            "rank": 27,
+            "reranker_score": -0.5315790176391602
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-7",
+            "rank": 28,
+            "reranker_score": -0.6747939586639404
+          }
+        ],
+        "top5_chunk_ids": [
+          "134-2025-QH15_dieu-17_khoan-5",
+          "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+          "134-2025-QH15_dieu-17_khoan-2",
+          "142-2026-ND-CP_dieu-35_khoan-1",
+          "142-2026-ND-CP_dieu-32_khoan-5_diem-a"
+        ],
+        "candidate_ranks": [
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-1",
+            "bm25_rank": 1,
+            "dense_rank": 1
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-3",
+            "bm25_rank": 2,
+            "dense_rank": 13
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-4",
+            "bm25_rank": 3,
+            "dense_rank": 6
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-6",
+            "bm25_rank": 4,
+            "dense_rank": 16
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-2",
+            "bm25_rank": 5,
+            "dense_rank": 3
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-b",
+            "bm25_rank": 6,
+            "dense_rank": 19
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-35_khoan-6",
+            "bm25_rank": 7,
+            "dense_rank": 18
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-20_khoan-4",
+            "bm25_rank": 8,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-a",
+            "bm25_rank": 9,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-c",
+            "bm25_rank": 10,
+            "dense_rank": 20
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-3_khoan-8",
+            "bm25_rank": 11,
+            "dense_rank": 5
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-5_diem-a",
+            "bm25_rank": 12,
+            "dense_rank": 7
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-8_khoan-2",
+            "bm25_rank": 13,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-a",
+            "bm25_rank": 14,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-4",
+            "bm25_rank": 15,
+            "dense_rank": 12
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-35_khoan-5_diem-c",
+            "bm25_rank": 16,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-b",
+            "bm25_rank": 17,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-2_diem-c",
+            "bm25_rank": 18,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-35_khoan-1",
+            "bm25_rank": 19,
+            "dense_rank": 2
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-4_khoan-2",
+            "bm25_rank": 20,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-1_diem-c",
+            "bm25_rank": null,
+            "dense_rank": 4
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 8
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-35_khoan-3_diem-c",
+            "bm25_rank": null,
+            "dense_rank": 9
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-2_diem-c",
+            "bm25_rank": null,
+            "dense_rank": 10
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-17_khoan-5",
+            "bm25_rank": null,
+            "dense_rank": 11
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-12_khoan-7",
+            "bm25_rank": null,
+            "dense_rank": 14
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-32_khoan-6_diem-c",
+            "bm25_rank": null,
+            "dense_rank": 15
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-39_khoan-5_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 17
+          }
+        ]
+      }
+    ],
+    "llm_calls": [
+      {
+        "call_number": 1,
+        "stage": "coverage_check"
+      },
+      {
+        "call_number": 2,
+        "stage": "answer_generation"
+      },
+      {
+        "call_number": 3,
+        "stage": "completeness_check"
+      }
+    ],
+    "expansion_used": false,
+    "revision_used": false,
+    "citation_revision_used": false,
+    "execution_error": null,
+    "transitions": [
+      "initialized",
+      "initial_retrieval",
+      "coverage_check",
+      "answer_generation",
+      "completeness_check",
+      "citation_check",
+      "final:success"
+    ]
+  },
+  "timestamp": "2026-09-05T14:18:24.286194+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "role": "TRUSTED_DATASET_CUSTODIAN / COMPARISON_COORDINATOR",
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "authorized_roles": [
+    "TRUSTED_DATASET_CUSTODIAN",
+    "COMPARISON_COORDINATOR",
+    "LATER_AUTHORIZED_LEGAL_REVIEWER"
+  ],
+  "implementation_access": "FORBIDDEN",
+  "independent_reviewer_B_annotation_access": "FORBIDDEN",
+  "public_safe_artifacts": [
+    "phase5c4c1_comparison_report_v0.md",
+    "phase5c4c1_agreement_metrics_v0.json",
+    "phase5c4c1_disagreement_summary_v0.json",
+    "phase5c4c1_validation_v0.json",
+    "integrity_before_after_v0.json",
+    "phase5c4c1_console_v0.txt"
+  ],
+  "private_artifacts": [
+    "ab_applicability_sufficiency_comparison_v0.jsonl",
+    "ab_aspect_mapping_v0.jsonl",
+    "ab_candidate_alignment_v0.json",
+    "ab_contamination_comparison_v0.jsonl",
+    "ab_corpus_audit_comparison_v0.jsonl",
+    "ab_disagreement_registry_v0.jsonl",
+    "ab_scope_comparison_v0.jsonl",
+    "ab_support_comparison_v0.jsonl",
+    "build_comparison_v0.py",
+    "integrity_baseline_v0.json",
+    "semantic_mapping_decisions_v0.py",
+    "source_integrity_validation_v0.json"
+  ],
+  "private_content": "Canonical/B ID mappings, legal-aspect links, support spans and predicate formulations; exact queries not duplicated.",
+  "storage_isolation": "NOT_YET_ENFORCED",
+  "permission_limit": "0700 directory and 0600 files are owner-only, not tested role separation.",
+  "historical_facts_preserved": {
+    "A": "PASS",
+    "B0": "PASS",
+    "B_final": "PASS",
+    "human_legal_review": false,
+    "D6": "EMPIRICAL_UNVERIFIED"
+  },
+  "no_subagents": true,
+  "no_external_messages": true,
+  "no_web_or_network": true
+}

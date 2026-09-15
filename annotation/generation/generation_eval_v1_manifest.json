@@ -1,0 +1,23 @@
+{
+  "evaluation_version": "generation-eval-v1",
+  "dataset_status": "draft",
+  "dataset_sha256": "672d0e3dea074247ef25aa2ab8da31cb2581f3f40ab247c1db8b459bf9057ebe",
+  "source_dataset": "data/evaluation/generation/generation_eval_v0.json",
+  "source_dataset_sha256": "df533a099d153112fc84f7c0287aae7a71c98f17cd64d4757ae39bcdb76b6fde",
+  "source_retrieval_eval": "data/evaluation/retrieval_eval.jsonl",
+  "source_retrieval_eval_sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+  "corpus_chunks": "data/versions/corpus-v0.1/chunks.jsonl",
+  "corpus_chunks_sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+  "query_count": 31,
+  "required_point_count": 102,
+  "v0_required_point_count": 42,
+  "point_count_delta": 60,
+  "answerability_counts": {
+    "answerable": 31,
+    "insufficient_evidence": 0
+  },
+  "annotation_status_counts": {
+    "draft": 31
+  },
+  "note": "Generation Annotation Audit v1 applied to v0; no annotation is verified."
+}

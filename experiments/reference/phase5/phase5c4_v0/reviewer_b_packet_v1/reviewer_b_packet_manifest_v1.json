@@ -1,0 +1,22 @@
+{
+  "schema": "reviewer-b-packet-v1",
+  "candidate_count": 60,
+  "record_fields": [
+    "review_id_b",
+    "query"
+  ],
+  "files": {
+    "reviewer_b_queries_v1.jsonl": "dace0b18b2bc5975e2c63e223536e9d4316735241f3d4b3a5461e7347e132342",
+    "reviewer_b_annotation_instructions_v1.md": "a4e8f87b453b5c93adb56c9d955ae252a21f73a9cef5093917906b70ddaed338"
+  },
+  "corpus_location": "data/versions/corpus-v0.1/",
+  "corpus_inventory_sha256": "b7440094c722232a85daa6df0fd4bd02fdca327cf43329e745fdb0628ee9118a",
+  "corpus_access": "ENTIRE_ORIGINAL_CORPUS",
+  "contains_holdout_plaintext": true,
+  "authorized_roles": [
+    "INDEPENDENT_ANNOTATOR_B"
+  ],
+  "implementation_access": "FORBIDDEN",
+  "storage_isolation": "NOT_YET_ENFORCED",
+  "new_session_required": true
+}

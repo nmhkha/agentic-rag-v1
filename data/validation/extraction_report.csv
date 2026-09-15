@@ -1,0 +1,4 @@
+﻿document_id,input_path,output_path,status,paragraph_count,table_count,character_count,error
+134-2025-QH15,data/raw/docx/134-2025-QH15.docx,data/extracted/134-2025-QH15.raw.txt,success,281,2,48871,
+142-2026-ND-CP,data/raw/docx/142-2026-ND-CP.docx,data/extracted/142-2026-ND-CP.raw.txt,success,1584,42,206488,
+05-2026-TT-BKHCN,data/raw/docx/05-2026-TT-BKHCN.docx,data/extracted/05-2026-TT-BKHCN.raw.txt,success,69,3,13527,

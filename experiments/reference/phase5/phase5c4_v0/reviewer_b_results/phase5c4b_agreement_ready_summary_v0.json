@@ -1,0 +1,17 @@
+{
+  "schema": "phase5c4b-agreement-ready-summary-v0",
+  "phase_status": "FAIL",
+  "stop_reason": "REVIEWER_B_PACKET_CONTAMINATED",
+  "B_annotations_complete": false,
+  "candidates_independently_reviewed": 0,
+  "expected_candidates": 60,
+  "ready_for_trusted_comparison_in_5c4c": false,
+  "comparison_performed": false,
+  "adjudication_performed": false,
+  "final_gold_created": false,
+  "final_retained_set_created": false,
+  "final_split_created": false,
+  "dataset_frozen": false,
+  "independent_human_legal_review_complete": false,
+  "ready_for_dataset_freeze": false
+}

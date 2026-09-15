@@ -1,0 +1,22 @@
+# Phase 5C.3 — Acceptance-margin governance
+
+**PROVISIONAL DESIGN MARGINS — NOT YET FROZEN.** This governance procedure is binding at design freeze. Numeric acceptance margins are not frozen or approved here.
+
+| Symbol | Metric / direction | Provisional candidate | Approved value in 5C.3 |
+| --- | --- | ---: | --- |
+| delta_AC_min | Minimum absolute primary macro Answer Completeness gain | 0.05 | null — pending external approval |
+| epsilon_G | Maximum absolute Groundedness deterioration, macro and pooled | 0.02 | null — pending external approval |
+| epsilon_CC | Maximum absolute Citation Correctness deterioration, macro and pooled | 0.02 | null — pending external approval |
+| epsilon_UCR | Maximum absolute Unsupported Claim Rate increase, macro and pooled | 0.02 | null — pending external approval |
+
+Finalization sequence: Phase 5C.4 independent legal annotation and rubric design supplies annotation-structure inputs; Phase 5C.5 external legal/methodological reviewers approve the final margins and rationale. This must follow knowledge of denominator structure and aspect composition and precede any HOLDOUT TEST system quality evaluation. It must also be complete before the Phase 5D.2 pre-release TEST seal. Implementers must not receive exact TEST queries/gold through the margin review; the custodian supplies aggregate structure information and reviewers retain any necessary restricted access separately.
+
+The approval record must bind dataset/annotation/rubric versions, aggregate eligible-query and aspect/claim denominator conventions, P+/Q/U composition, answerability composition, metric aggregation definitions, final numeric values, severity rubric, uncertainty method, review identities/roles, approval timestamp, exposure declarations and a rationale independent of system outcomes. Anticipated claim denominators depend on generated answers; before outputs, freeze their segmentation rules and plausible structural considerations, not invented observed claim counts.
+
+Review rationale MUST address: number of aspects per query; challenge answerability composition; legal severity of unsupported claims; macro versus pooled metric behavior; practical effect size; human/legal-review tolerance; resource/cost tradeoff; and expected interpretability of one-point changes. A one-aspect change has query-specific weight 1/|P+| and primary macro weight 1/(eligible queries × |P+|), before averaging production repeats; a pooled point has a different denominator. These identities explain why a universal decimal tolerance cannot be accepted without the future annotation structure. No actual aspect or gold record is defined here.
+
+Margins MUST NOT be calibrated to make a system pass/fail after observing outcomes. Neither v1 nor v2 TEST scores, repeat disagreement, favored arm identity, or historical 31-query tuning may determine them. DEV-only baseline confirmation in 5C.5 is a separate mechanism-authorization activity; it does not replace an independent legal/practical margin rationale. All margin proposals, versions and rejected alternatives remain in the approval history. A post-TEST margin change cannot rescue the original confirmatory claim; any exploratory sensitivity must retain the original result and label the new analysis accordingly.
+
+The inherited adoption rule uses the final-authorized-v2 contrast: mean AC gain ≥ approved delta_AC_min; cluster query-sampling CI lower bound > 0; repeated-block direction and fixed-output judge sensitivity as predeclared; Groundedness and Citation Correctness delta lower bounds ≥ −epsilon_G/−epsilon_CC, and UCR delta upper bound ≤ epsilon_UCR, for both macro and pooled reporting. Undefined or insufficiently observable safety denominators cannot be imputed to pass a bound. Preserve the high-severity unsupported legal-claim veto, with the severity rubric approved before TEST, and the inherited trace/isolation/cost and complete-schedule requirements. These are future adoption criteria, not implementation authorization or changed historical conclusions.
+
+**STOP gate:** if approved margins, rationale, severity rubric or their version/hash bindings remain missing at TEST sealing, do not release TEST to production and do not run confirmatory TEST. Resource pressure, a small sample or wide intervals does not authorize relaxed margins, selective extra runs or outcome-dependent stopping. A versioned decision before TEST may instead authorize a clearly labeled non-confirmatory pilot; it cannot be reported as the frozen confirmatory protocol.

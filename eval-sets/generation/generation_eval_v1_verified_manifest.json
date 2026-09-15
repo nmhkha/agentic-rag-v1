@@ -1,0 +1,21 @@
+{
+  "evaluation_version": "generation-eval-v1",
+  "dataset_status": "verified",
+  "query_count": 31,
+  "required_point_count": 102,
+  "answerable_count": 31,
+  "insufficient_evidence_count": 0,
+  "source_retrieval_eval_sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+  "source_corpus_sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+  "generation_eval_v1_draft_sha256": "672d0e3dea074247ef25aa2ab8da31cb2581f3f40ab247c1db8b459bf9057ebe",
+  "generation_eval_v1_verified_sha256": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+  "human_reviewed_queries": [
+    "eval008",
+    "eval019",
+    "eval022",
+    "eval025",
+    "eval028"
+  ],
+  "annotation_method": "Codex-assisted draft + human review",
+  "verified_at": "2026-09-02T14:56:36+07:00"
+}

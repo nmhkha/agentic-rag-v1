@@ -1,0 +1,1446 @@
+{
+  "run_id": "agentic-v1-eval009",
+  "query": "Hệ thống AI tương tác trực tiếp với con người phải được thiết kế theo yêu cầu gì?",
+  "retrieval_config": {
+    "bm25": "BM25-simple-v0",
+    "bm25_depth": 20,
+    "dense": "dense-jina-v3-v0",
+    "dense_depth": 20,
+    "candidate_merge": "union_deduplicate_by_chunk_id",
+    "fusion": null,
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "top_k": 5
+  },
+  "prompt_version": "legal-rag-prompt-v0",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "openai-compatible",
+  "initial_candidate_count": 38,
+  "initial_top5": [
+    "134-2025-QH15_dieu-11_khoan-1",
+    "134-2025-QH15_dieu-14_khoan-1_diem-d",
+    "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+    "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+    "142-2026-ND-CP_dieu-15_khoan-2_diem-c"
+  ],
+  "coverage_check": {
+    "sufficient": true,
+    "missing_aspects": [],
+    "reason": "Bằng chứng đã cung cấp đầy đủ quy định về yêu cầu thiết kế đối với hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người (phải được thiết kế để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác)."
+  },
+  "missing_aspects": [],
+  "sub_queries": [],
+  "expansion_used": false,
+  "expansion_candidates": [],
+  "final_evidence": [
+    {
+      "rank": 1,
+      "evidence_id": "E1",
+      "chunk_id": "134-2025-QH15_dieu-11_khoan-1",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-11",
+      "article": "11",
+      "article_label": "Điều 11",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": null,
+      "point_label": null,
+      "text": "Nhà cung cấp bảo đảm hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác.",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 11. Trách nhiệm minh bạch\nKhoản 1\nNhà cung cấp bảo đảm hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 4.38203239440918,
+      "bm25_rank": 1,
+      "dense_rank": 1,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 1,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-11_khoan-1",
+      "point_id": null
+    },
+    {
+      "rank": 2,
+      "evidence_id": "E2",
+      "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-d",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "document_title": "Luật Trí tuệ nhân tạo",
+      "article_id": "134-2025-QH15_dieu-14",
+      "article": "14",
+      "article_label": "Điều 14",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": "d",
+      "point_label": "Điểm d",
+      "text": "Thiết kế hệ thống bảo đảm khả năng giám sát và can thiệp của con người đối với hệ thống;",
+      "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 1\nĐiểm d)\nThiết kế hệ thống bảo đảm khả năng giám sát và can thiệp của con người đối với hệ thống;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "reranker_score": 0.924569308757782,
+      "bm25_rank": 5,
+      "dense_rank": null,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 2,
+      "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+      "clause_id": "134-2025-QH15_dieu-14_khoan-1",
+      "point_id": "134-2025-QH15_dieu-14_khoan-1_diem-d"
+    },
+    {
+      "rank": 3,
+      "evidence_id": "E3",
+      "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-9",
+      "article": "9",
+      "article_label": "Điều 9",
+      "clause": "3",
+      "clause_label": "Khoản 3",
+      "point": "đ",
+      "point_label": "Điểm đ",
+      "text": "Hệ thống trí tuệ nhân tạo chỉ thực hiện xử lý, phân tích dữ liệu hoặc tối ưu vận hành trong hệ thống kỹ thuật; không tương tác trực tiếp với người sử dụng, không tạo nội dung cung cấp ra công chúng và không trực tiếp tương tác với môi trường vật lý như chức năng điều khiển chính của hệ thống.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 9. Phân loại hệ thống trí tuệ nhân tạo có rủi ro trung bình\nKhoản 3\nĐiểm đ)\nHệ thống trí tuệ nhân tạo chỉ thực hiện xử lý, phân tích dữ liệu hoặc tối ưu vận hành trong hệ thống kỹ thuật; không tương tác trực tiếp với người sử dụng, không tạo nội dung cung cấp ra công chúng và không trực tiếp tương tác với môi trường vật lý như chức năng điều khiển chính của hệ thống.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": -0.9777389168739319,
+      "bm25_rank": 2,
+      "dense_rank": null,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 3,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-9_khoan-3",
+      "point_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-đ"
+    },
+    {
+      "rank": 4,
+      "evidence_id": "E4",
+      "chunk_id": "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-24",
+      "article": "24",
+      "article_label": "Điều 24",
+      "clause": "1",
+      "clause_label": "Khoản 1",
+      "point": "d",
+      "point_label": "Điểm d",
+      "text": "Trường hợp hệ thống trí tuệ nhân tạo có khả năng trực tiếp gây thiệt hại đến tính mạng, sức khỏe con người hoặc gây thiệt hại tài sản quy mô lớn, tổ chức, cá nhân tham gia thử nghiệm phải áp dụng bảo hiểm trách nhiệm dân sự hoặc biện pháp bảo đảm tài chính tương đương phù hợp với phạm vi thử nghiệm.",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 24. Điều kiện và hồ sơ tham gia thử nghiệm\nKhoản 1\nĐiểm d)\nTrường hợp hệ thống trí tuệ nhân tạo có khả năng trực tiếp gây thiệt hại đến tính mạng, sức khỏe con người hoặc gây thiệt hại tài sản quy mô lớn, tổ chức, cá nhân tham gia thử nghiệm phải áp dụng bảo hiểm trách nhiệm dân sự hoặc biện pháp bảo đảm tài chính tương đương phù hợp với phạm vi thử nghiệm.",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": -1.1694902181625366,
+      "bm25_rank": 6,
+      "dense_rank": null,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 4,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-24_khoan-1",
+      "point_id": "142-2026-ND-CP_dieu-24_khoan-1_diem-d"
+    },
+    {
+      "rank": 5,
+      "evidence_id": "E5",
+      "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+      "article_id": "142-2026-ND-CP_dieu-15",
+      "article": "15",
+      "article_label": "Điều 15",
+      "clause": "2",
+      "clause_label": "Khoản 2",
+      "point": "c",
+      "point_label": "Điểm c",
+      "text": "Thiết kế và duy trì cơ chế giám sát và can thiệp của con người phù hợp với mức độ rủi ro của hệ thống;",
+      "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm c)\nThiết kế và duy trì cơ chế giám sát và can thiệp của con người phù hợp với mức độ rủi ro của hệ thống;",
+      "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "reranker_score": -1.2798045873641968,
+      "bm25_rank": 7,
+      "dense_rank": 18,
+      "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+      "retrieval_rank": 5,
+      "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+      "clause_id": "142-2026-ND-CP_dieu-15_khoan-2",
+      "point_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c"
+    }
+  ],
+  "final_top5": [
+    "134-2025-QH15_dieu-11_khoan-1",
+    "134-2025-QH15_dieu-14_khoan-1_diem-d",
+    "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+    "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+    "142-2026-ND-CP_dieu-15_khoan-2_diem-c"
+  ],
+  "draft_answer": "Hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người phải được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác [E1].",
+  "completeness_check": {
+    "complete": true,
+    "missing_points": [],
+    "reason": "The answer fully captures the design requirement for AI systems interacting directly with humans as stated in the evidence E1."
+  },
+  "revision_used": false,
+  "citation_check": {
+    "valid": true,
+    "cited_evidence_ids": [
+      "E1"
+    ],
+    "unknown_citations": [],
+    "malformed_citations": [],
+    "errors": [],
+    "alignment_checked": false,
+    "alignment_method": "not_required_by_deterministic_gate",
+    "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+    "reviewed_claims": []
+  },
+  "citation_revision_used": false,
+  "final_answer": "Hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người phải được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác [E1].",
+  "final_status": "success",
+  "retrieval_calls": [
+    {
+      "call_number": 1,
+      "round": 0,
+      "query": "Hệ thống AI tương tác trực tiếp với con người phải được thiết kế theo yêu cầu gì?",
+      "sub_query": false,
+      "bm25_depth": 20,
+      "dense_depth": 20,
+      "candidate_chunk_ids": [
+        "134-2025-QH15_dieu-11_khoan-1",
+        "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+        "134-2025-QH15_dieu-3_khoan-6",
+        "134-2025-QH15_dieu-9_khoan-2",
+        "134-2025-QH15_dieu-14_khoan-1_diem-d",
+        "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+        "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+        "142-2026-ND-CP_dieu-18_khoan-6",
+        "142-2026-ND-CP_dieu-11_khoan-5",
+        "142-2026-ND-CP_dieu-24_khoan-5",
+        "134-2025-QH15_dieu-31_khoan-2",
+        "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+        "134-2025-QH15_dieu-3_khoan-3",
+        "134-2025-QH15_dieu-27_khoan-3",
+        "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+        "142-2026-ND-CP_dieu-27_khoan-1",
+        "134-2025-QH15_dieu-3_khoan-7",
+        "142-2026-ND-CP_dieu-9_khoan-3_diem-c",
+        "142-2026-ND-CP_dieu-22_khoan-4_diem-a",
+        "142-2026-ND-CP_dieu-13_khoan-3",
+        "134-2025-QH15_dieu-13_khoan-1",
+        "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+        "134-2025-QH15_dieu-13_khoan-3",
+        "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+        "134-2025-QH15_dieu-14_khoan-3",
+        "134-2025-QH15_dieu-11_khoan-4",
+        "142-2026-ND-CP_dieu-15_khoan-3",
+        "142-2026-ND-CP_dieu-5_khoan-2",
+        "142-2026-ND-CP_dieu-5_khoan-5",
+        "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+        "142-2026-ND-CP_dieu-5_khoan-6",
+        "142-2026-ND-CP_dieu-31_khoan-2",
+        "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+        "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+        "142-2026-ND-CP_dieu-5_khoan-8",
+        "142-2026-ND-CP_dieu-16_khoan-6",
+        "142-2026-ND-CP_dieu-16_khoan-1"
+      ],
+      "candidate_count": 38,
+      "reranker_ranks": [
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-1",
+          "rank": 1,
+          "reranker_score": 4.38203239440918
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-d",
+          "rank": 2,
+          "reranker_score": 0.924569308757782
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+          "rank": 3,
+          "reranker_score": -0.9777389168739319
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+          "rank": 4,
+          "reranker_score": -1.1694902181625366
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+          "rank": 5,
+          "reranker_score": -1.2798045873641968
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+          "rank": 6,
+          "reranker_score": -1.9573464393615723
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-3_khoan-6",
+          "rank": 7,
+          "reranker_score": -2.328685760498047
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-9_khoan-2",
+          "rank": 8,
+          "reranker_score": -2.3459930419921875
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+          "rank": 9,
+          "reranker_score": -2.594642162322998
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+          "rank": 10,
+          "reranker_score": -2.7523813247680664
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+          "rank": 11,
+          "reranker_score": -2.8148350715637207
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-3_khoan-3",
+          "rank": 12,
+          "reranker_score": -2.9385087490081787
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-c",
+          "rank": 13,
+          "reranker_score": -3.1475024223327637
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+          "rank": 14,
+          "reranker_score": -3.224743127822876
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+          "rank": 15,
+          "reranker_score": -3.618443012237549
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-3_khoan-7",
+          "rank": 16,
+          "reranker_score": -3.700838565826416
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-a",
+          "rank": 17,
+          "reranker_score": -3.7514758110046387
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-5_khoan-5",
+          "rank": 18,
+          "reranker_score": -3.8679566383361816
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-3",
+          "rank": 19,
+          "reranker_score": -4.109315395355225
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+          "rank": 20,
+          "reranker_score": -4.171040058135986
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+          "rank": 21,
+          "reranker_score": -4.326868057250977
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-5_khoan-6",
+          "rank": 22,
+          "reranker_score": -4.352296829223633
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-4",
+          "rank": 23,
+          "reranker_score": -4.355478763580322
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-13_khoan-1",
+          "rank": 24,
+          "reranker_score": -4.394692420959473
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+          "rank": 25,
+          "reranker_score": -4.717537879943848
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-5_khoan-2",
+          "rank": 26,
+          "reranker_score": -4.759922027587891
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-13_khoan-3",
+          "rank": 27,
+          "reranker_score": -4.815824508666992
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+          "rank": 28,
+          "reranker_score": -4.9740214347839355
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+          "rank": 29,
+          "reranker_score": -5.294672012329102
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-6",
+          "rank": 30,
+          "reranker_score": -5.450594425201416
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-31_khoan-2",
+          "rank": 31,
+          "reranker_score": -5.4814043045043945
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-5_khoan-8",
+          "rank": 32,
+          "reranker_score": -5.685937404632568
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "rank": 33,
+          "reranker_score": -5.885958194732666
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-18_khoan-6",
+          "rank": 34,
+          "reranker_score": -5.987270832061768
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+          "rank": 35,
+          "reranker_score": -6.240621566772461
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-31_khoan-2",
+          "rank": 36,
+          "reranker_score": -6.573563575744629
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-24_khoan-5",
+          "rank": 37,
+          "reranker_score": -7.1992106437683105
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+          "rank": 38,
+          "reranker_score": -8.310574531555176
+        }
+      ],
+      "top5_chunk_ids": [
+        "134-2025-QH15_dieu-11_khoan-1",
+        "134-2025-QH15_dieu-14_khoan-1_diem-d",
+        "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+        "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+        "142-2026-ND-CP_dieu-15_khoan-2_diem-c"
+      ],
+      "candidate_ranks": [
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-1",
+          "bm25_rank": 1,
+          "dense_rank": 1
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+          "bm25_rank": 2,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-3_khoan-6",
+          "bm25_rank": 3,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-9_khoan-2",
+          "bm25_rank": 4,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-d",
+          "bm25_rank": 5,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+          "bm25_rank": 6,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+          "bm25_rank": 7,
+          "dense_rank": 18
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-18_khoan-6",
+          "bm25_rank": 8,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+          "bm25_rank": 9,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-24_khoan-5",
+          "bm25_rank": 10,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-31_khoan-2",
+          "bm25_rank": 11,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+          "bm25_rank": 12,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-3_khoan-3",
+          "bm25_rank": 13,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+          "bm25_rank": 14,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+          "bm25_rank": 15,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+          "bm25_rank": 16,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-3_khoan-7",
+          "bm25_rank": 17,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-c",
+          "bm25_rank": 18,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-a",
+          "bm25_rank": 19,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-3",
+          "bm25_rank": 20,
+          "dense_rank": null
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-13_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 2
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+          "bm25_rank": null,
+          "dense_rank": 3
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-13_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 4
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 5
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 6
+        },
+        {
+          "chunk_id": "134-2025-QH15_dieu-11_khoan-4",
+          "bm25_rank": null,
+          "dense_rank": 7
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+          "bm25_rank": null,
+          "dense_rank": 8
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-5_khoan-2",
+          "bm25_rank": null,
+          "dense_rank": 9
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-5_khoan-5",
+          "bm25_rank": null,
+          "dense_rank": 10
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "bm25_rank": null,
+          "dense_rank": 11
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+          "bm25_rank": null,
+          "dense_rank": 12
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-5_khoan-6",
+          "bm25_rank": null,
+          "dense_rank": 13
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-31_khoan-2",
+          "bm25_rank": null,
+          "dense_rank": 14
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+          "bm25_rank": null,
+          "dense_rank": 15
+        },
+        {
+          "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+          "bm25_rank": null,
+          "dense_rank": 16
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-5_khoan-8",
+          "bm25_rank": null,
+          "dense_rank": 17
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-6",
+          "bm25_rank": null,
+          "dense_rank": 19
+        },
+        {
+          "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+          "bm25_rank": null,
+          "dense_rank": 20
+        }
+      ]
+    }
+  ],
+  "retrieval_call_count": 1,
+  "llm_calls": [
+    {
+      "call_number": 1,
+      "stage": "coverage_check"
+    },
+    {
+      "call_number": 2,
+      "stage": "answer_generation"
+    },
+    {
+      "call_number": 3,
+      "stage": "completeness_check"
+    }
+  ],
+  "llm_call_count": 3,
+  "budgets": {
+    "max_retrieval_expansions": 1,
+    "max_sub_queries": 3,
+    "max_answer_revisions": 1,
+    "max_citation_revisions": 1,
+    "max_llm_calls": 6
+  },
+  "state": {
+    "query": "Hệ thống AI tương tác trực tiếp với con người phải được thiết kế theo yêu cầu gì?",
+    "initial_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "134-2025-QH15_dieu-11_khoan-1",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-11",
+        "article": "11",
+        "article_label": "Điều 11",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp bảo đảm hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 11. Trách nhiệm minh bạch\nKhoản 1\nNhà cung cấp bảo đảm hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.38203239440918,
+        "bm25_rank": 1,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-11_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-d",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-14",
+        "article": "14",
+        "article_label": "Điều 14",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "d",
+        "point_label": "Điểm d",
+        "text": "Thiết kế hệ thống bảo đảm khả năng giám sát và can thiệp của con người đối với hệ thống;",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 1\nĐiểm d)\nThiết kế hệ thống bảo đảm khả năng giám sát và can thiệp của con người đối với hệ thống;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 0.924569308757782,
+        "bm25_rank": 5,
+        "dense_rank": null,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-14_khoan-1",
+        "point_id": "134-2025-QH15_dieu-14_khoan-1_diem-d"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-9",
+        "article": "9",
+        "article_label": "Điều 9",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": "đ",
+        "point_label": "Điểm đ",
+        "text": "Hệ thống trí tuệ nhân tạo chỉ thực hiện xử lý, phân tích dữ liệu hoặc tối ưu vận hành trong hệ thống kỹ thuật; không tương tác trực tiếp với người sử dụng, không tạo nội dung cung cấp ra công chúng và không trực tiếp tương tác với môi trường vật lý như chức năng điều khiển chính của hệ thống.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 9. Phân loại hệ thống trí tuệ nhân tạo có rủi ro trung bình\nKhoản 3\nĐiểm đ)\nHệ thống trí tuệ nhân tạo chỉ thực hiện xử lý, phân tích dữ liệu hoặc tối ưu vận hành trong hệ thống kỹ thuật; không tương tác trực tiếp với người sử dụng, không tạo nội dung cung cấp ra công chúng và không trực tiếp tương tác với môi trường vật lý như chức năng điều khiển chính của hệ thống.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": -0.9777389168739319,
+        "bm25_rank": 2,
+        "dense_rank": null,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-9_khoan-3",
+        "point_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-đ"
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-24",
+        "article": "24",
+        "article_label": "Điều 24",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "d",
+        "point_label": "Điểm d",
+        "text": "Trường hợp hệ thống trí tuệ nhân tạo có khả năng trực tiếp gây thiệt hại đến tính mạng, sức khỏe con người hoặc gây thiệt hại tài sản quy mô lớn, tổ chức, cá nhân tham gia thử nghiệm phải áp dụng bảo hiểm trách nhiệm dân sự hoặc biện pháp bảo đảm tài chính tương đương phù hợp với phạm vi thử nghiệm.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 24. Điều kiện và hồ sơ tham gia thử nghiệm\nKhoản 1\nĐiểm d)\nTrường hợp hệ thống trí tuệ nhân tạo có khả năng trực tiếp gây thiệt hại đến tính mạng, sức khỏe con người hoặc gây thiệt hại tài sản quy mô lớn, tổ chức, cá nhân tham gia thử nghiệm phải áp dụng bảo hiểm trách nhiệm dân sự hoặc biện pháp bảo đảm tài chính tương đương phù hợp với phạm vi thử nghiệm.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": -1.1694902181625366,
+        "bm25_rank": 6,
+        "dense_rank": null,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-24_khoan-1",
+        "point_id": "142-2026-ND-CP_dieu-24_khoan-1_diem-d"
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-15",
+        "article": "15",
+        "article_label": "Điều 15",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "c",
+        "point_label": "Điểm c",
+        "text": "Thiết kế và duy trì cơ chế giám sát và can thiệp của con người phù hợp với mức độ rủi ro của hệ thống;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm c)\nThiết kế và duy trì cơ chế giám sát và can thiệp của con người phù hợp với mức độ rủi ro của hệ thống;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": -1.2798045873641968,
+        "bm25_rank": 7,
+        "dense_rank": 18,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-15_khoan-2",
+        "point_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c"
+      }
+    ],
+    "current_evidence": [
+      {
+        "rank": 1,
+        "evidence_id": "E1",
+        "chunk_id": "134-2025-QH15_dieu-11_khoan-1",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-11",
+        "article": "11",
+        "article_label": "Điều 11",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": null,
+        "point_label": null,
+        "text": "Nhà cung cấp bảo đảm hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác.",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 11. Trách nhiệm minh bạch\nKhoản 1\nNhà cung cấp bảo đảm hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 4.38203239440918,
+        "bm25_rank": 1,
+        "dense_rank": 1,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 1,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-11_khoan-1",
+        "point_id": null
+      },
+      {
+        "rank": 2,
+        "evidence_id": "E2",
+        "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-d",
+        "document_id": "134-2025-QH15",
+        "document_number": "134/2025/QH15",
+        "document_title": "Luật Trí tuệ nhân tạo",
+        "article_id": "134-2025-QH15_dieu-14",
+        "article": "14",
+        "article_label": "Điều 14",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "d",
+        "point_label": "Điểm d",
+        "text": "Thiết kế hệ thống bảo đảm khả năng giám sát và can thiệp của con người đối với hệ thống;",
+        "retrieval_text": "Luật Trí tuệ nhân tạo\n134/2025/QH15\nPHÂN LOẠI VÀ QUẢN LÝ\nĐiều 14. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 1\nĐiểm d)\nThiết kế hệ thống bảo đảm khả năng giám sát và can thiệp của con người đối với hệ thống;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "reranker_score": 0.924569308757782,
+        "bm25_rank": 5,
+        "dense_rank": null,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 2,
+        "source_url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+        "clause_id": "134-2025-QH15_dieu-14_khoan-1",
+        "point_id": "134-2025-QH15_dieu-14_khoan-1_diem-d"
+      },
+      {
+        "rank": 3,
+        "evidence_id": "E3",
+        "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-9",
+        "article": "9",
+        "article_label": "Điều 9",
+        "clause": "3",
+        "clause_label": "Khoản 3",
+        "point": "đ",
+        "point_label": "Điểm đ",
+        "text": "Hệ thống trí tuệ nhân tạo chỉ thực hiện xử lý, phân tích dữ liệu hoặc tối ưu vận hành trong hệ thống kỹ thuật; không tương tác trực tiếp với người sử dụng, không tạo nội dung cung cấp ra công chúng và không trực tiếp tương tác với môi trường vật lý như chức năng điều khiển chính của hệ thống.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 9. Phân loại hệ thống trí tuệ nhân tạo có rủi ro trung bình\nKhoản 3\nĐiểm đ)\nHệ thống trí tuệ nhân tạo chỉ thực hiện xử lý, phân tích dữ liệu hoặc tối ưu vận hành trong hệ thống kỹ thuật; không tương tác trực tiếp với người sử dụng, không tạo nội dung cung cấp ra công chúng và không trực tiếp tương tác với môi trường vật lý như chức năng điều khiển chính của hệ thống.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": -0.9777389168739319,
+        "bm25_rank": 2,
+        "dense_rank": null,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 3,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-9_khoan-3",
+        "point_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-đ"
+      },
+      {
+        "rank": 4,
+        "evidence_id": "E4",
+        "chunk_id": "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-24",
+        "article": "24",
+        "article_label": "Điều 24",
+        "clause": "1",
+        "clause_label": "Khoản 1",
+        "point": "d",
+        "point_label": "Điểm d",
+        "text": "Trường hợp hệ thống trí tuệ nhân tạo có khả năng trực tiếp gây thiệt hại đến tính mạng, sức khỏe con người hoặc gây thiệt hại tài sản quy mô lớn, tổ chức, cá nhân tham gia thử nghiệm phải áp dụng bảo hiểm trách nhiệm dân sự hoặc biện pháp bảo đảm tài chính tương đương phù hợp với phạm vi thử nghiệm.",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nCƠ CHẾ THỬ NGHIỆM CÓ KIỂM SOÁT\nĐiều 24. Điều kiện và hồ sơ tham gia thử nghiệm\nKhoản 1\nĐiểm d)\nTrường hợp hệ thống trí tuệ nhân tạo có khả năng trực tiếp gây thiệt hại đến tính mạng, sức khỏe con người hoặc gây thiệt hại tài sản quy mô lớn, tổ chức, cá nhân tham gia thử nghiệm phải áp dụng bảo hiểm trách nhiệm dân sự hoặc biện pháp bảo đảm tài chính tương đương phù hợp với phạm vi thử nghiệm.",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": -1.1694902181625366,
+        "bm25_rank": 6,
+        "dense_rank": null,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 4,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-24_khoan-1",
+        "point_id": "142-2026-ND-CP_dieu-24_khoan-1_diem-d"
+      },
+      {
+        "rank": 5,
+        "evidence_id": "E5",
+        "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+        "document_id": "142-2026-ND-CP",
+        "document_number": "142/2026/NĐ-CP",
+        "document_title": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo",
+        "article_id": "142-2026-ND-CP_dieu-15",
+        "article": "15",
+        "article_label": "Điều 15",
+        "clause": "2",
+        "clause_label": "Khoản 2",
+        "point": "c",
+        "point_label": "Điểm c",
+        "text": "Thiết kế và duy trì cơ chế giám sát và can thiệp của con người phù hợp với mức độ rủi ro của hệ thống;",
+        "retrieval_text": "Nghị định hướng dẫn thi hành Luật Trí tuệ nhân tạo\n142/2026/NĐ-CP\nPHÂN LOẠI VÀ ĐÁNH GIÁ SỰ PHÙ HỢP HỆ THỐNG TRÍ TUỆ NHÂN TẠO\nĐiều 15. Quản lý hệ thống trí tuệ nhân tạo có rủi ro cao\nKhoản 2\nĐiểm c)\nThiết kế và duy trì cơ chế giám sát và can thiệp của con người phù hợp với mức độ rủi ro của hệ thống;",
+        "official_source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "reranker_score": -1.2798045873641968,
+        "bm25_rank": 7,
+        "dense_rank": 18,
+        "retrieval_source": "BM25-simple-v0@20 + dense-jina-v3-v0@20 union -> BAAI/bge-reranker-v2-m3",
+        "retrieval_rank": 5,
+        "source_url": "https://vanban.chinhphu.vn/?docid=218029&orggroupid=2&pageid=27160",
+        "clause_id": "142-2026-ND-CP_dieu-15_khoan-2",
+        "point_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c"
+      }
+    ],
+    "retrieval_round": 0,
+    "coverage_check": {
+      "sufficient": true,
+      "missing_aspects": [],
+      "reason": "Bằng chứng đã cung cấp đầy đủ quy định về yêu cầu thiết kế đối với hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người (phải được thiết kế để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác)."
+    },
+    "missing_aspects": [],
+    "sub_queries": [],
+    "expansion_evidence": [],
+    "draft_answer": "Hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người phải được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác [E1].",
+    "completeness_check": {
+      "complete": true,
+      "missing_points": [],
+      "reason": "The answer fully captures the design requirement for AI systems interacting directly with humans as stated in the evidence E1."
+    },
+    "citation_check": {
+      "valid": true,
+      "cited_evidence_ids": [
+        "E1"
+      ],
+      "unknown_citations": [],
+      "malformed_citations": [],
+      "errors": [],
+      "alignment_checked": false,
+      "alignment_method": "not_required_by_deterministic_gate",
+      "alignment_reason": "No low-overlap cited claim was found by the deterministic gate.",
+      "reviewed_claims": []
+    },
+    "revision_count": 0,
+    "citation_revision_count": 0,
+    "final_answer": "Hệ thống trí tuệ nhân tạo tương tác trực tiếp với con người phải được thiết kế và vận hành để người sử dụng nhận biết khi đang tương tác với hệ thống, trừ trường hợp pháp luật có quy định khác [E1].",
+    "final_status": "success",
+    "run_id": "agentic-v1-eval009",
+    "initial_top5": [
+      "134-2025-QH15_dieu-11_khoan-1",
+      "134-2025-QH15_dieu-14_khoan-1_diem-d",
+      "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+      "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+      "142-2026-ND-CP_dieu-15_khoan-2_diem-c"
+    ],
+    "expanded_candidates": [],
+    "final_top5": [
+      "134-2025-QH15_dieu-11_khoan-1",
+      "134-2025-QH15_dieu-14_khoan-1_diem-d",
+      "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+      "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+      "142-2026-ND-CP_dieu-15_khoan-2_diem-c"
+    ],
+    "retrieval_calls": [
+      {
+        "call_number": 1,
+        "round": 0,
+        "query": "Hệ thống AI tương tác trực tiếp với con người phải được thiết kế theo yêu cầu gì?",
+        "sub_query": false,
+        "bm25_depth": 20,
+        "dense_depth": 20,
+        "candidate_chunk_ids": [
+          "134-2025-QH15_dieu-11_khoan-1",
+          "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+          "134-2025-QH15_dieu-3_khoan-6",
+          "134-2025-QH15_dieu-9_khoan-2",
+          "134-2025-QH15_dieu-14_khoan-1_diem-d",
+          "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+          "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+          "142-2026-ND-CP_dieu-18_khoan-6",
+          "142-2026-ND-CP_dieu-11_khoan-5",
+          "142-2026-ND-CP_dieu-24_khoan-5",
+          "134-2025-QH15_dieu-31_khoan-2",
+          "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+          "134-2025-QH15_dieu-3_khoan-3",
+          "134-2025-QH15_dieu-27_khoan-3",
+          "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+          "142-2026-ND-CP_dieu-27_khoan-1",
+          "134-2025-QH15_dieu-3_khoan-7",
+          "142-2026-ND-CP_dieu-9_khoan-3_diem-c",
+          "142-2026-ND-CP_dieu-22_khoan-4_diem-a",
+          "142-2026-ND-CP_dieu-13_khoan-3",
+          "134-2025-QH15_dieu-13_khoan-1",
+          "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+          "134-2025-QH15_dieu-13_khoan-3",
+          "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+          "134-2025-QH15_dieu-14_khoan-3",
+          "134-2025-QH15_dieu-11_khoan-4",
+          "142-2026-ND-CP_dieu-15_khoan-3",
+          "142-2026-ND-CP_dieu-5_khoan-2",
+          "142-2026-ND-CP_dieu-5_khoan-5",
+          "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+          "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+          "142-2026-ND-CP_dieu-5_khoan-6",
+          "142-2026-ND-CP_dieu-31_khoan-2",
+          "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+          "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+          "142-2026-ND-CP_dieu-5_khoan-8",
+          "142-2026-ND-CP_dieu-16_khoan-6",
+          "142-2026-ND-CP_dieu-16_khoan-1"
+        ],
+        "candidate_count": 38,
+        "reranker_ranks": [
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-1",
+            "rank": 1,
+            "reranker_score": 4.38203239440918
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-d",
+            "rank": 2,
+            "reranker_score": 0.924569308757782
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+            "rank": 3,
+            "reranker_score": -0.9777389168739319
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+            "rank": 4,
+            "reranker_score": -1.1694902181625366
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+            "rank": 5,
+            "reranker_score": -1.2798045873641968
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+            "rank": 6,
+            "reranker_score": -1.9573464393615723
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-3_khoan-6",
+            "rank": 7,
+            "reranker_score": -2.328685760498047
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-9_khoan-2",
+            "rank": 8,
+            "reranker_score": -2.3459930419921875
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+            "rank": 9,
+            "reranker_score": -2.594642162322998
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+            "rank": 10,
+            "reranker_score": -2.7523813247680664
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+            "rank": 11,
+            "reranker_score": -2.8148350715637207
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-3_khoan-3",
+            "rank": 12,
+            "reranker_score": -2.9385087490081787
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-c",
+            "rank": 13,
+            "reranker_score": -3.1475024223327637
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+            "rank": 14,
+            "reranker_score": -3.224743127822876
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+            "rank": 15,
+            "reranker_score": -3.618443012237549
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-3_khoan-7",
+            "rank": 16,
+            "reranker_score": -3.700838565826416
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-a",
+            "rank": 17,
+            "reranker_score": -3.7514758110046387
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-5_khoan-5",
+            "rank": 18,
+            "reranker_score": -3.8679566383361816
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-3",
+            "rank": 19,
+            "reranker_score": -4.109315395355225
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+            "rank": 20,
+            "reranker_score": -4.171040058135986
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+            "rank": 21,
+            "reranker_score": -4.326868057250977
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-5_khoan-6",
+            "rank": 22,
+            "reranker_score": -4.352296829223633
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-4",
+            "rank": 23,
+            "reranker_score": -4.355478763580322
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-13_khoan-1",
+            "rank": 24,
+            "reranker_score": -4.394692420959473
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+            "rank": 25,
+            "reranker_score": -4.717537879943848
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-5_khoan-2",
+            "rank": 26,
+            "reranker_score": -4.759922027587891
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-13_khoan-3",
+            "rank": 27,
+            "reranker_score": -4.815824508666992
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+            "rank": 28,
+            "reranker_score": -4.9740214347839355
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+            "rank": 29,
+            "reranker_score": -5.294672012329102
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-6",
+            "rank": 30,
+            "reranker_score": -5.450594425201416
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-31_khoan-2",
+            "rank": 31,
+            "reranker_score": -5.4814043045043945
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-5_khoan-8",
+            "rank": 32,
+            "reranker_score": -5.685937404632568
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+            "rank": 33,
+            "reranker_score": -5.885958194732666
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-18_khoan-6",
+            "rank": 34,
+            "reranker_score": -5.987270832061768
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+            "rank": 35,
+            "reranker_score": -6.240621566772461
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-31_khoan-2",
+            "rank": 36,
+            "reranker_score": -6.573563575744629
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-24_khoan-5",
+            "rank": 37,
+            "reranker_score": -7.1992106437683105
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+            "rank": 38,
+            "reranker_score": -8.310574531555176
+          }
+        ],
+        "top5_chunk_ids": [
+          "134-2025-QH15_dieu-11_khoan-1",
+          "134-2025-QH15_dieu-14_khoan-1_diem-d",
+          "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+          "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+          "142-2026-ND-CP_dieu-15_khoan-2_diem-c"
+        ],
+        "candidate_ranks": [
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-1",
+            "bm25_rank": 1,
+            "dense_rank": 1
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-đ",
+            "bm25_rank": 2,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-3_khoan-6",
+            "bm25_rank": 3,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-9_khoan-2",
+            "bm25_rank": 4,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-1_diem-d",
+            "bm25_rank": 5,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-24_khoan-1_diem-d",
+            "bm25_rank": 6,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+            "bm25_rank": 7,
+            "dense_rank": 18
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-18_khoan-6",
+            "bm25_rank": 8,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-11_khoan-5",
+            "bm25_rank": 9,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-24_khoan-5",
+            "bm25_rank": 10,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-31_khoan-2",
+            "bm25_rank": 11,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-2_diem-a",
+            "bm25_rank": 12,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-3_khoan-3",
+            "bm25_rank": 13,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-27_khoan-3",
+            "bm25_rank": 14,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-25_khoan-3_diem-b",
+            "bm25_rank": 15,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-27_khoan-1",
+            "bm25_rank": 16,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-3_khoan-7",
+            "bm25_rank": 17,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-9_khoan-3_diem-c",
+            "bm25_rank": 18,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-22_khoan-4_diem-a",
+            "bm25_rank": 19,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-3",
+            "bm25_rank": 20,
+            "dense_rank": null
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-13_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 2
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-c",
+            "bm25_rank": null,
+            "dense_rank": 3
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-13_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 4
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-8_khoan-2_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 5
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-14_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 6
+          },
+          {
+            "chunk_id": "134-2025-QH15_dieu-11_khoan-4",
+            "bm25_rank": null,
+            "dense_rank": 7
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-3",
+            "bm25_rank": null,
+            "dense_rank": 8
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-5_khoan-2",
+            "bm25_rank": null,
+            "dense_rank": 9
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-5_khoan-5",
+            "bm25_rank": null,
+            "dense_rank": 10
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-13_khoan-2_diem-b",
+            "bm25_rank": null,
+            "dense_rank": 11
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-15_khoan-5_diem-c",
+            "bm25_rank": null,
+            "dense_rank": 12
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-5_khoan-6",
+            "bm25_rank": null,
+            "dense_rank": 13
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-31_khoan-2",
+            "bm25_rank": null,
+            "dense_rank": 14
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-1_diem-a",
+            "bm25_rank": null,
+            "dense_rank": 15
+          },
+          {
+            "chunk_id": "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d",
+            "bm25_rank": null,
+            "dense_rank": 16
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-5_khoan-8",
+            "bm25_rank": null,
+            "dense_rank": 17
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-6",
+            "bm25_rank": null,
+            "dense_rank": 19
+          },
+          {
+            "chunk_id": "142-2026-ND-CP_dieu-16_khoan-1",
+            "bm25_rank": null,
+            "dense_rank": 20
+          }
+        ]
+      }
+    ],
+    "llm_calls": [
+      {
+        "call_number": 1,
+        "stage": "coverage_check"
+      },
+      {
+        "call_number": 2,
+        "stage": "answer_generation"
+      },
+      {
+        "call_number": 3,
+        "stage": "completeness_check"
+      }
+    ],
+    "expansion_used": false,
+    "revision_used": false,
+    "citation_revision_used": false,
+    "execution_error": null,
+    "transitions": [
+      "initialized",
+      "initial_retrieval",
+      "coverage_check",
+      "answer_generation",
+      "completeness_check",
+      "citation_check",
+      "final:success"
+    ]
+  },
+  "timestamp": "2026-09-05T14:10:36.008738+00:00"
+}

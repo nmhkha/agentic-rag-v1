@@ -1,0 +1,714 @@
+{
+  "benchmark_version": "standard-rag-eval-v0",
+  "query_count": 31,
+  "completed_query_count": 31,
+  "generation_error_count": 0,
+  "evaluation_error_count": 0,
+  "required_point_count": 102,
+  "supported_point_count": 60,
+  "answer_completeness": {
+    "macro": 0.6752688172043011,
+    "micro": 0.5882352941176471,
+    "per_query": [
+      {
+        "query_id": "eval001",
+        "answer_completeness": 0.0,
+        "supported_point_count": 0,
+        "required_point_count": 3,
+        "citation_completeness": 0.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.6666666666666666,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval002",
+        "answer_completeness": 0.5,
+        "supported_point_count": 1,
+        "required_point_count": 2,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval003",
+        "answer_completeness": 1.0,
+        "supported_point_count": 1,
+        "required_point_count": 1,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": []
+      },
+      {
+        "query_id": "eval004",
+        "answer_completeness": 0.5,
+        "supported_point_count": 3,
+        "required_point_count": 6,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.16666666666666666,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval005a",
+        "answer_completeness": 0.0,
+        "supported_point_count": 0,
+        "required_point_count": 7,
+        "citation_completeness": 0.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "retrieval_miss",
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval005b",
+        "answer_completeness": 0.0,
+        "supported_point_count": 0,
+        "required_point_count": 6,
+        "citation_completeness": 0.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.16666666666666666,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval006",
+        "answer_completeness": 1.0,
+        "supported_point_count": 3,
+        "required_point_count": 3,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": []
+      },
+      {
+        "query_id": "eval007",
+        "answer_completeness": 0.5,
+        "supported_point_count": 3,
+        "required_point_count": 6,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.2222222222222222,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval008",
+        "answer_completeness": 0.6666666666666666,
+        "supported_point_count": 2,
+        "required_point_count": 3,
+        "citation_completeness": 0.6666666666666666,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.5,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval009",
+        "answer_completeness": 1.0,
+        "supported_point_count": 1,
+        "required_point_count": 1,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": []
+      },
+      {
+        "query_id": "eval010",
+        "answer_completeness": 1.0,
+        "supported_point_count": 2,
+        "required_point_count": 2,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": []
+      },
+      {
+        "query_id": "eval011",
+        "answer_completeness": 0.5,
+        "supported_point_count": 1,
+        "required_point_count": 2,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "retrieval_miss",
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval012",
+        "answer_completeness": 1.0,
+        "supported_point_count": 4,
+        "required_point_count": 4,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "citation_issue"
+        ]
+      },
+      {
+        "query_id": "eval013",
+        "answer_completeness": 0.6,
+        "supported_point_count": 3,
+        "required_point_count": 5,
+        "citation_completeness": 0.6,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.6,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval014",
+        "answer_completeness": 0.0,
+        "supported_point_count": 0,
+        "required_point_count": 4,
+        "citation_completeness": 0.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.5,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval015",
+        "answer_completeness": 1.0,
+        "supported_point_count": 2,
+        "required_point_count": 2,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": []
+      },
+      {
+        "query_id": "eval016",
+        "answer_completeness": 0.5,
+        "supported_point_count": 2,
+        "required_point_count": 4,
+        "citation_completeness": 0.5,
+        "citation_correctness": 0.8,
+        "groundedness": 0.8,
+        "unsupported_claim_rate": 0.2,
+        "retrieval_gold_coverage": 0.4,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue",
+          "citation_issue"
+        ]
+      },
+      {
+        "query_id": "eval017",
+        "answer_completeness": 1.0,
+        "supported_point_count": 3,
+        "required_point_count": 3,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": []
+      },
+      {
+        "query_id": "eval018",
+        "answer_completeness": 0.75,
+        "supported_point_count": 3,
+        "required_point_count": 4,
+        "citation_completeness": 0.75,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.6666666666666666,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval019",
+        "answer_completeness": 1.0,
+        "supported_point_count": 3,
+        "required_point_count": 3,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": []
+      },
+      {
+        "query_id": "eval020",
+        "answer_completeness": 1.0,
+        "supported_point_count": 1,
+        "required_point_count": 1,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": []
+      },
+      {
+        "query_id": "eval021",
+        "answer_completeness": 1.0,
+        "supported_point_count": 3,
+        "required_point_count": 3,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.3333333333333333,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue"
+        ]
+      },
+      {
+        "query_id": "eval022",
+        "answer_completeness": 0.0,
+        "supported_point_count": 0,
+        "required_point_count": 3,
+        "citation_completeness": 0.0,
+        "citation_correctness": 0.0,
+        "groundedness": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "retrieval_gold_coverage": 0.3333333333333333,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue",
+          "citation_issue"
+        ]
+      },
+      {
+        "query_id": "eval023",
+        "answer_completeness": 0.5,
+        "supported_point_count": 1,
+        "required_point_count": 2,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.5,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval024",
+        "answer_completeness": 1.0,
+        "supported_point_count": 1,
+        "required_point_count": 1,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": []
+      },
+      {
+        "query_id": "eval025",
+        "answer_completeness": 0.6666666666666666,
+        "supported_point_count": 2,
+        "required_point_count": 3,
+        "citation_completeness": 0.6666666666666666,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.2857142857142857,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval026",
+        "answer_completeness": 1.0,
+        "supported_point_count": 4,
+        "required_point_count": 4,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.25,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue"
+        ]
+      },
+      {
+        "query_id": "eval027",
+        "answer_completeness": 1.0,
+        "supported_point_count": 4,
+        "required_point_count": 4,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.25,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue"
+        ]
+      },
+      {
+        "query_id": "eval028",
+        "answer_completeness": 0.75,
+        "supported_point_count": 3,
+        "required_point_count": 4,
+        "citation_completeness": 0.75,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 0.5,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "evidence_coverage_issue",
+          "answer_generation_issue"
+        ]
+      },
+      {
+        "query_id": "eval029",
+        "answer_completeness": 1.0,
+        "supported_point_count": 2,
+        "required_point_count": 2,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": []
+      },
+      {
+        "query_id": "eval030",
+        "answer_completeness": 0.5,
+        "supported_point_count": 2,
+        "required_point_count": 4,
+        "citation_completeness": 0.5,
+        "citation_correctness": 1.0,
+        "groundedness": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "retrieval_gold_coverage": 1.0,
+        "generation_error": null,
+        "evaluation_error": null,
+        "failure_categories": [
+          "answer_generation_issue"
+        ]
+      }
+    ]
+  },
+  "weighted_completeness": {
+    "status": "not_applicable",
+    "value": null,
+    "reason": "The ground truth has categorical importance labels but no numeric weights; no weights were invented."
+  },
+  "citation_completeness": {
+    "macro": 0.6752688172043011,
+    "definition": "Required points supported by the answer and linked to evidence that the answer cites, divided by all required points."
+  },
+  "citation_syntax_validity": {
+    "valid_count": 30,
+    "query_count": 31,
+    "rate": 0.967741935483871
+  },
+  "citation_correctness": {
+    "macro": 0.9612903225806452,
+    "judged_query_count": 31,
+    "definition": "Correctly supported cited claims divided by cited claims, according to the structured semantic audit."
+  },
+  "groundedness": {
+    "macro": 0.9612903225806452,
+    "judged_query_count": 31,
+    "definition": "Claims entailed by Top-5 evidence divided by atomic claims in the answer."
+  },
+  "unsupported_claim_rate": {
+    "macro": 0.03870967741935484,
+    "judged_query_count": 31,
+    "definition": "Claims unsupported by Top-5 evidence divided by atomic claims in the answer."
+  },
+  "abstention_accuracy": {
+    "status": "not_applicable",
+    "value": null,
+    "insufficient_evidence_query_count": 0,
+    "reason": "All 31 frozen queries are answerable."
+  },
+  "failure_taxonomy": {
+    "answer_generation_issue": 17,
+    "citation_issue": 3,
+    "evidence_coverage_issue": 18,
+    "retrieval_miss": 2
+  },
+  "best_queries": [
+    {
+      "query_id": "eval003",
+      "answer_completeness": 1.0,
+      "supported_point_count": 1,
+      "required_point_count": 1,
+      "citation_completeness": 1.0,
+      "citation_correctness": 1.0,
+      "groundedness": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "retrieval_gold_coverage": 1.0,
+      "generation_error": null,
+      "evaluation_error": null,
+      "failure_categories": []
+    },
+    {
+      "query_id": "eval006",
+      "answer_completeness": 1.0,
+      "supported_point_count": 3,
+      "required_point_count": 3,
+      "citation_completeness": 1.0,
+      "citation_correctness": 1.0,
+      "groundedness": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "retrieval_gold_coverage": 1.0,
+      "generation_error": null,
+      "evaluation_error": null,
+      "failure_categories": []
+    },
+    {
+      "query_id": "eval009",
+      "answer_completeness": 1.0,
+      "supported_point_count": 1,
+      "required_point_count": 1,
+      "citation_completeness": 1.0,
+      "citation_correctness": 1.0,
+      "groundedness": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "retrieval_gold_coverage": 1.0,
+      "generation_error": null,
+      "evaluation_error": null,
+      "failure_categories": []
+    },
+    {
+      "query_id": "eval010",
+      "answer_completeness": 1.0,
+      "supported_point_count": 2,
+      "required_point_count": 2,
+      "citation_completeness": 1.0,
+      "citation_correctness": 1.0,
+      "groundedness": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "retrieval_gold_coverage": 1.0,
+      "generation_error": null,
+      "evaluation_error": null,
+      "failure_categories": []
+    },
+    {
+      "query_id": "eval012",
+      "answer_completeness": 1.0,
+      "supported_point_count": 4,
+      "required_point_count": 4,
+      "citation_completeness": 1.0,
+      "citation_correctness": 1.0,
+      "groundedness": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "retrieval_gold_coverage": 1.0,
+      "generation_error": null,
+      "evaluation_error": null,
+      "failure_categories": [
+        "citation_issue"
+      ]
+    }
+  ],
+  "worst_queries": [
+    {
+      "query_id": "eval001",
+      "answer_completeness": 0.0,
+      "supported_point_count": 0,
+      "required_point_count": 3,
+      "citation_completeness": 0.0,
+      "citation_correctness": 1.0,
+      "groundedness": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "retrieval_gold_coverage": 0.6666666666666666,
+      "generation_error": null,
+      "evaluation_error": null,
+      "failure_categories": [
+        "evidence_coverage_issue",
+        "answer_generation_issue"
+      ]
+    },
+    {
+      "query_id": "eval005a",
+      "answer_completeness": 0.0,
+      "supported_point_count": 0,
+      "required_point_count": 7,
+      "citation_completeness": 0.0,
+      "citation_correctness": 1.0,
+      "groundedness": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "retrieval_gold_coverage": 0.0,
+      "generation_error": null,
+      "evaluation_error": null,
+      "failure_categories": [
+        "retrieval_miss",
+        "evidence_coverage_issue",
+        "answer_generation_issue"
+      ]
+    },
+    {
+      "query_id": "eval005b",
+      "answer_completeness": 0.0,
+      "supported_point_count": 0,
+      "required_point_count": 6,
+      "citation_completeness": 0.0,
+      "citation_correctness": 1.0,
+      "groundedness": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "retrieval_gold_coverage": 0.16666666666666666,
+      "generation_error": null,
+      "evaluation_error": null,
+      "failure_categories": [
+        "evidence_coverage_issue",
+        "answer_generation_issue"
+      ]
+    },
+    {
+      "query_id": "eval014",
+      "answer_completeness": 0.0,
+      "supported_point_count": 0,
+      "required_point_count": 4,
+      "citation_completeness": 0.0,
+      "citation_correctness": 1.0,
+      "groundedness": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "retrieval_gold_coverage": 0.5,
+      "generation_error": null,
+      "evaluation_error": null,
+      "failure_categories": [
+        "evidence_coverage_issue",
+        "answer_generation_issue"
+      ]
+    },
+    {
+      "query_id": "eval022",
+      "answer_completeness": 0.0,
+      "supported_point_count": 0,
+      "required_point_count": 3,
+      "citation_completeness": 0.0,
+      "citation_correctness": 0.0,
+      "groundedness": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "retrieval_gold_coverage": 0.3333333333333333,
+      "generation_error": null,
+      "evaluation_error": null,
+      "failure_categories": [
+        "evidence_coverage_issue",
+        "answer_generation_issue",
+        "citation_issue"
+      ]
+    }
+  ]
+}

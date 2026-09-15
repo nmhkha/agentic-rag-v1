@@ -1,0 +1,1268 @@
+{
+  "status": "PASS",
+  "count": 60,
+  "duplicate_mappings": 0,
+  "unmapped_candidates": 0,
+  "alignment": [
+    {
+      "canonical_candidate_id": "q_1642611dc39f3f0e302f",
+      "review_id_b": "rb_4ec644e951dbddc5962073206c860443",
+      "A_record": 0,
+      "B_record": 25,
+      "canonical_record": 0,
+      "query_sha256": "b93d6722dc3a583d617cf5480fd184c5bb2c227581f1f1b833972d28d779c8f1",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 0,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 25,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_c435ea84a01bd76f8166",
+      "review_id_b": "rb_e0385abacbab8ba62565b3e7db5962ef",
+      "A_record": 1,
+      "B_record": 11,
+      "canonical_record": 1,
+      "query_sha256": "f0092d2499af48dceaf122ce975a91e59e8733b977223d8c3fa2e8882f1b56e8",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 1,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 11,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_c13f165c8ac1296c1449",
+      "review_id_b": "rb_e23a2e20c7bcf86fe6257545462b439a",
+      "A_record": 2,
+      "B_record": 47,
+      "canonical_record": 2,
+      "query_sha256": "2bf38713bdaa19fcd4976f3de6c525a5941c6d3c910471deb8b61df4bd398cb8",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 2,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 47,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_c8a99d5afd80afefa090",
+      "review_id_b": "rb_b6c948199d74ae9f5335c72ad482a658",
+      "A_record": 3,
+      "B_record": 1,
+      "canonical_record": 3,
+      "query_sha256": "1bd3fb487f9e20dbe929a5e70f913a2486156d65af33a1745d2c699d25281999",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 3,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 1,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_0562c6d6516359c63413",
+      "review_id_b": "rb_1828c496a5ac13c10a580688b983b6dc",
+      "A_record": 4,
+      "B_record": 45,
+      "canonical_record": 4,
+      "query_sha256": "ddd5a86eabaa49bdfe1eae645b027693e520a4342ea738176a49e0db907c2c37",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 4,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 45,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_dcc92aaa0791fa98004c",
+      "review_id_b": "rb_435dcb2302f82935ae1f7e25c598ccbf",
+      "A_record": 5,
+      "B_record": 16,
+      "canonical_record": 5,
+      "query_sha256": "a81a83c04a99e711583e1ac0b8ae71bdddb5adbeab10e7d63e4586ce6a45ea7a",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 5,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 16,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_9f10deed791a1ec07d04",
+      "review_id_b": "rb_9d86b10c5b0777c800b804d24c0ac411",
+      "A_record": 6,
+      "B_record": 22,
+      "canonical_record": 6,
+      "query_sha256": "9519d9f1bc74e722b3274cc25e5e7dd409e799488af84713cd8571550e5fed3d",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 6,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 22,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_a195fa72dea87b439d7a",
+      "review_id_b": "rb_f864850e6a80362e03915df06d2dbfb6",
+      "A_record": 7,
+      "B_record": 10,
+      "canonical_record": 7,
+      "query_sha256": "3bb43780a1a9612f92152baa116ba7569de73cdfd9f82c2b07c9bc7109266394",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 7,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 10,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_b67987d68e10d7d0986d",
+      "review_id_b": "rb_d4a408c4b3e2dd8222c856bacb70cd08",
+      "A_record": 8,
+      "B_record": 35,
+      "canonical_record": 8,
+      "query_sha256": "0f9dcd4d232687e12007c1c6c1ae3464b15f89c53b3a8a19041fcae22aaf9c91",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 8,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 35,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_81bb95ba1f19f186ab25",
+      "review_id_b": "rb_a76e73f9ac6c56dff97e2573922698de",
+      "A_record": 9,
+      "B_record": 27,
+      "canonical_record": 9,
+      "query_sha256": "1ec81a8a452f7cbfa64f88549e814b78c4c809c1f2df95e20654ace28cfb623f",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 9,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 27,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_1f06ae333c1e3c774329",
+      "review_id_b": "rb_427bc46b8eaac9dc80c9adf14229a7a5",
+      "A_record": 10,
+      "B_record": 29,
+      "canonical_record": 10,
+      "query_sha256": "29eb49700aa6c287005c63d57b22d15a25e8c705958c0bdbeb83de97dbeddf97",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 10,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 29,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_fcae400ebdbdbe36cce8",
+      "review_id_b": "rb_0ba0563e6150c1de7082257cc6d21b18",
+      "A_record": 11,
+      "B_record": 37,
+      "canonical_record": 11,
+      "query_sha256": "57fdf302f4f4ad7acfafe7bcece474b5c349edb021bdb213a2918ea6d74d24b5",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 11,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 37,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_2f80182d7e1efdf966c7",
+      "review_id_b": "rb_fe98bea2f90fff8b55059c1d35e59602",
+      "A_record": 12,
+      "B_record": 6,
+      "canonical_record": 12,
+      "query_sha256": "ba72f51e6d20e9ffb25426536bb07ad4c1d6add799c6b57e4005dbe1f172bd4d",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 12,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 6,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_b603d3ddf288b72f3954",
+      "review_id_b": "rb_6caa62a56210ff8c6f7e5f7fe247d084",
+      "A_record": 13,
+      "B_record": 59,
+      "canonical_record": 13,
+      "query_sha256": "62f8a3e129c350461bd85995e41eda156f721074d077861f17ec27cbfbeab19b",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 13,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 59,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_1ade66d9d5bb022b867f",
+      "review_id_b": "rb_3f54b2a9fa2c4036bb21bde1fee7821f",
+      "A_record": 14,
+      "B_record": 12,
+      "canonical_record": 14,
+      "query_sha256": "25b735b2918882108a60966e603d0f3be08edf7b4d339a140339090d144f19dc",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 14,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 12,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_efb22fad6d7dad9fa17a",
+      "review_id_b": "rb_fecea176be1612b8898415549fcc94a6",
+      "A_record": 15,
+      "B_record": 7,
+      "canonical_record": 15,
+      "query_sha256": "40d58fdd501d02a8dd58cb6685cf02a43e861f1a7062140aec312bb43dcbf635",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 15,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 7,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_555fa4b2dfa1d3f428df",
+      "review_id_b": "rb_ea9a36f44be85ebceab8b51a8b688e98",
+      "A_record": 16,
+      "B_record": 15,
+      "canonical_record": 16,
+      "query_sha256": "12eef776cd66a549dffda9104b9e28107cb3719740b43dbd4f3e8a23e1f6d37f",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 16,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 15,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_4f81b0869e9d14221596",
+      "review_id_b": "rb_b358167997ae76c7959f8814cfe68999",
+      "A_record": 17,
+      "B_record": 32,
+      "canonical_record": 17,
+      "query_sha256": "b04d012957c55d98fef0091b38ce71739e7d58200f48b7c87fba17f862252527",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 17,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 32,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_97f3e68f1e2cce1b2bf4",
+      "review_id_b": "rb_718bc1a75e04ab2cbc553f0c9c18a415",
+      "A_record": 18,
+      "B_record": 58,
+      "canonical_record": 18,
+      "query_sha256": "01dbf9eaccdb6c407895806609fcd29430e5ad73f68bf12b08725264d0a7c423",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 18,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 58,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_8357958f95ff2e0baa41",
+      "review_id_b": "rb_3db68e32b8d854f07f714959b7435d0e",
+      "A_record": 19,
+      "B_record": 44,
+      "canonical_record": 19,
+      "query_sha256": "ce8b863d6a4c80dbf73f9c3b5b587069601656b2bfdd7c1769fdb4ca93e7c8b5",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 19,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 44,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_4d28afa77e15a3afd8f1",
+      "review_id_b": "rb_6e7259216d2fef66642d554bcea8983c",
+      "A_record": 20,
+      "B_record": 9,
+      "canonical_record": 20,
+      "query_sha256": "004aa7664eea24d308e589ed6b3c8e9cdcc0fcf136c9db8805d4ab45df0bbd28",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 20,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 9,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_6f97ffb51be5fdaf892f",
+      "review_id_b": "rb_2b8b3a9754c6b53f59c4fb7b63ec1686",
+      "A_record": 21,
+      "B_record": 18,
+      "canonical_record": 21,
+      "query_sha256": "eeefe867e6b4c219fcfe53f5d6c185361bc53251c66d3ceacb9b66ab83957666",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 21,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 18,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_8324e664cda8a81236ed",
+      "review_id_b": "rb_cd53581f96f7718070f613da865f3766",
+      "A_record": 22,
+      "B_record": 49,
+      "canonical_record": 22,
+      "query_sha256": "ec2cae6f47ada57944ff3b615779efcd057b15bb6e03bf2f572a79d708e9bbf7",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 22,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 49,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_328ee3ab8c3e08738fd1",
+      "review_id_b": "rb_11797a0178c0eda9b1918c422958e5ca",
+      "A_record": 23,
+      "B_record": 57,
+      "canonical_record": 23,
+      "query_sha256": "4e2e77bb664f1503a6ac203dd1830171f0ef17f57271114989a77de4cc3f928b",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 23,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 57,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_4a979d778bce4f6552ab",
+      "review_id_b": "rb_49920685143748e515e448dd1ca84083",
+      "A_record": 24,
+      "B_record": 40,
+      "canonical_record": 24,
+      "query_sha256": "74c2faee7d37c9713ff951607d38abd68dfc0f99d7c10c7635abe8aa86dc4465",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 24,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 40,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_10309a829e08c3a4fecf",
+      "review_id_b": "rb_d282fd3bbc8852b89608868ee813f973",
+      "A_record": 25,
+      "B_record": 42,
+      "canonical_record": 25,
+      "query_sha256": "75439b8d7d2952ee301a75488c0c2a35b06396373415894a2a5ad2331b2e6ebe",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 25,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 42,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_d5df8d6efaee273f39d3",
+      "review_id_b": "rb_5e3e41e0d6474a4176df1ec6da5e6aff",
+      "A_record": 26,
+      "B_record": 30,
+      "canonical_record": 26,
+      "query_sha256": "5cd1e8d5c1756ac84222a9858b9aabbd989c0d1ee479c43c762c7c477d69c059",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 26,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 30,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_14e8b10bc8926bd979f0",
+      "review_id_b": "rb_5b46be76bc8e2ad48ba4af1d2eb81310",
+      "A_record": 27,
+      "B_record": 39,
+      "canonical_record": 27,
+      "query_sha256": "bb4eb9147e5da7c615b24272ec0d5f4b2b15088254f5b391bca359442b777f24",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 27,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 39,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_0e4980e0bb419c668b44",
+      "review_id_b": "rb_854d93c5fcd00b57d9b29a8bd52fea8c",
+      "A_record": 28,
+      "B_record": 17,
+      "canonical_record": 28,
+      "query_sha256": "b03974b80e484df2e5ec081354abfa005abfe49a0ce2cc871ca76e49d7641f67",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 28,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 17,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_90f3303b7d7b22395d96",
+      "review_id_b": "rb_54be514748785ff57ec9a1ed80bb2ef2",
+      "A_record": 29,
+      "B_record": 48,
+      "canonical_record": 29,
+      "query_sha256": "a91b7f9554d21127ebf46f9ee451debfb7a73b2285ce672dc3ee3f6ba939712b",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 29,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 48,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_8207ae5a788317993abd",
+      "review_id_b": "rb_28c37d5b7f02678ee25f3f4a4d2f6816",
+      "A_record": 30,
+      "B_record": 8,
+      "canonical_record": 30,
+      "query_sha256": "0c8d25c88fd3d57fbac457767087bbe594ec5873bf2e456d0002b3122a3298ed",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 30,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 8,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_7a2a93af56c529c8ef41",
+      "review_id_b": "rb_788fd25453108e986b4a39344b45918a",
+      "A_record": 31,
+      "B_record": 2,
+      "canonical_record": 31,
+      "query_sha256": "7a7e93abd0aabf0f7304daa4b4bd01072984fe401fee6fbeca09acfc244c10ec",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 31,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 2,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_d26cb3f576e88854d6d8",
+      "review_id_b": "rb_10b31169714d0877a541c71da43b92cd",
+      "A_record": 32,
+      "B_record": 56,
+      "canonical_record": 32,
+      "query_sha256": "b445abb60a2c9e9b2db3b6545a79d1bea31f59f10502425ecc5ed1efd895f193",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 32,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 56,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_afa050568a2a155f495b",
+      "review_id_b": "rb_3c34d5f327b1789fdacc3399c630efff",
+      "A_record": 33,
+      "B_record": 50,
+      "canonical_record": 33,
+      "query_sha256": "8a2eb22a22083911e55d990d88dfb3f08c72053f7fae9d3e5568a6b17160e358",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 33,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 50,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_a4eada08ab842902e775",
+      "review_id_b": "rb_c4b15e784fb8382e3e2d20de5eb010a6",
+      "A_record": 34,
+      "B_record": 14,
+      "canonical_record": 34,
+      "query_sha256": "4fc3e3b49cc99613f449505e9108e45e94af21f8d0584fcd35c28db59b053570",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 34,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 14,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_b7d036582f1f01ec746f",
+      "review_id_b": "rb_a07403bfb6b2a3b6f19a888a96b829d6",
+      "A_record": 35,
+      "B_record": 0,
+      "canonical_record": 35,
+      "query_sha256": "00c4a061f44b4fa35954b4a5753c433cd9520e7ccb2661f146380a4b1a4fbe60",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 35,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 0,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_bc2e1864c7f8705e3966",
+      "review_id_b": "rb_a58b998c648e5cb74987a34b2d95e7d0",
+      "A_record": 36,
+      "B_record": 4,
+      "canonical_record": 36,
+      "query_sha256": "6bf03f010b003c66006d68b8565a5c585c432cd28b95c26b79c7fa430e8f9c82",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 36,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 4,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_50069fac66d1e12205cf",
+      "review_id_b": "rb_23685b935396fd566f2e3781307dd06a",
+      "A_record": 37,
+      "B_record": 21,
+      "canonical_record": 37,
+      "query_sha256": "51a5a87ac89885c920436e6f5879582ed93f48b7d935cb26ebb080c929decff7",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 37,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 21,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_9a930d0151f1f2cbb452",
+      "review_id_b": "rb_16fc7d18fde6a2adf26344942f48b771",
+      "A_record": 38,
+      "B_record": 19,
+      "canonical_record": 38,
+      "query_sha256": "24ba6eeb9492498678b0affabc4dbd40015df88bdd6798f881af23b188050735",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 38,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 19,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_641743d24f2f6ba314bd",
+      "review_id_b": "rb_0cfbb2260d2565f46c226b002ebf241b",
+      "A_record": 39,
+      "B_record": 43,
+      "canonical_record": 39,
+      "query_sha256": "1b250ea32ed54786faeb091f9ee66e8fc77eb52a014eeafc4bda236fac6e429d",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 39,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 43,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_025b90f0aa489f1f483f",
+      "review_id_b": "rb_3d773145aa0eb4252d6e687fa8c9df0b",
+      "A_record": 40,
+      "B_record": 24,
+      "canonical_record": 40,
+      "query_sha256": "17aad7cd37393964fd9e5b7274e27cf1dd0d4ef3ad0f9853bfdd121af3bb2d97",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 40,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 24,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_5a8c3a6939072e9d256a",
+      "review_id_b": "rb_6869726605e93f358e65ec7291903928",
+      "A_record": 41,
+      "B_record": 31,
+      "canonical_record": 41,
+      "query_sha256": "e29bcf1f0f6c1f9cc87a6405f620d327ac2be0fc60e4acea46ab0d37733e3228",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 41,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 31,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_af1b2d179667a0c14929",
+      "review_id_b": "rb_9849a3f78d2341fd1c05deb92208e61f",
+      "A_record": 42,
+      "B_record": 36,
+      "canonical_record": 42,
+      "query_sha256": "9c2cfd915f3e5231bff6d7e1e652afde33565e7ca0acb86d49cbee7fff384779",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 42,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 36,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_11a30508142a0893b998",
+      "review_id_b": "rb_cced57fed26aa8337a75ea4d998f7f65",
+      "A_record": 43,
+      "B_record": 33,
+      "canonical_record": 43,
+      "query_sha256": "e5d3566ed0932ddf6708f1aa12040b0e7ab809567b117a8a2036c5df9f9f2eb2",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 43,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 33,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_c281e8c976e7207bf144",
+      "review_id_b": "rb_9d7a33f842214c0efa7253101891db1c",
+      "A_record": 44,
+      "B_record": 34,
+      "canonical_record": 44,
+      "query_sha256": "0fd26daf90f53ae298380f235118fadedd973eeca7f8b07c27cc2117915e1978",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 44,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 34,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_dbb862f75f4b23442a3d",
+      "review_id_b": "rb_af72e188491bad043c723146c1c86ef4",
+      "A_record": 45,
+      "B_record": 53,
+      "canonical_record": 45,
+      "query_sha256": "0a1390a61debde81d4b907fc28c55eeb87620aaa1dbdd5c6e51a0f0531e39a1e",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 45,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 53,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_fc35aef795821c34b6f1",
+      "review_id_b": "rb_ff227a126c0c2c83b1fa76eecfb7f5ac",
+      "A_record": 46,
+      "B_record": 46,
+      "canonical_record": 46,
+      "query_sha256": "7de91e0137680de9d7fc833275d9599d7378c16e21077e0a6887084aac9a8c51",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 46,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 46,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_29b66d9a5f0ae2ef98a4",
+      "review_id_b": "rb_a43a29951c681ccf73d76556c7a5c51c",
+      "A_record": 47,
+      "B_record": 55,
+      "canonical_record": 47,
+      "query_sha256": "0a25ac3a6ed06241cc54431f896d3ead3433a55eea20b83b73496aa0421453f3",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 47,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 55,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_4fe83fa6e245d03c20fc",
+      "review_id_b": "rb_8a0445d7402ba59222d57c5289dbfdc2",
+      "A_record": 48,
+      "B_record": 23,
+      "canonical_record": 48,
+      "query_sha256": "848ec23a3c6b18eec8c0365c413105fda49d4880555d0282155d8a6531b2abe1",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 48,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 23,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_1e3dead5b493f0725223",
+      "review_id_b": "rb_9836aa0345820824a8d1b5a367b66b4f",
+      "A_record": 49,
+      "B_record": 26,
+      "canonical_record": 49,
+      "query_sha256": "2513e07e2e8d7f934f517ca93239dc6836a9bba2a4503aadf739427257516608",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 49,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 26,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_8ccdc3c4ee85dadcd60d",
+      "review_id_b": "rb_29999dc1da1bda2b3900f06ea4700560",
+      "A_record": 50,
+      "B_record": 41,
+      "canonical_record": 50,
+      "query_sha256": "786d89922b0ff016eddedfcb9c5c469d4082b1e2c5b31d3bd5b527269ffb6b27",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 50,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 41,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_89ad16a113cd52847d7c",
+      "review_id_b": "rb_8f64019592d357a72cd3661ae7de42d4",
+      "A_record": 51,
+      "B_record": 13,
+      "canonical_record": 51,
+      "query_sha256": "e1fb6d7afa596721b6dba966e11c4b1fb95138cecc8c09bb5a85816e5f377bc0",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 51,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 13,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_74a9553aea20f985c661",
+      "review_id_b": "rb_f8a76fced706cfe9e1b731f9d2476677",
+      "A_record": 52,
+      "B_record": 20,
+      "canonical_record": 52,
+      "query_sha256": "2c290642c6399c40432eec9e0432dc5e66ee847ddd3c49d10fdc923f29151a02",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 52,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 20,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_2082d6e4ad79123c6d14",
+      "review_id_b": "rb_b16cdd5e906f2964337668c8e4d8084e",
+      "A_record": 53,
+      "B_record": 54,
+      "canonical_record": 53,
+      "query_sha256": "643619bb296304e4ccfb7ae4208767bff7939892dfef451d75cf1e9b6b149d9f",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 53,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 54,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_88f96f6661303a520be5",
+      "review_id_b": "rb_53c5efa7002614df6df6414f6e97f16f",
+      "A_record": 54,
+      "B_record": 3,
+      "canonical_record": 54,
+      "query_sha256": "78db668b7502b6f9821cab0144ba73b10fa8dd2e915a94e11683602c43fb9465",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 54,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 3,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_39d7771240b14f062898",
+      "review_id_b": "rb_acaf16127a0c684e50b610c2f7d5ab52",
+      "A_record": 55,
+      "B_record": 52,
+      "canonical_record": 55,
+      "query_sha256": "3519741607f4758d18bc83ea00053aa93566e83cce781bd6b5fc337384341f49",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 55,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 52,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_df59222dfdcfceaa0aac",
+      "review_id_b": "rb_9daaced27b0492b740db3df576749f0c",
+      "A_record": 56,
+      "B_record": 5,
+      "canonical_record": 56,
+      "query_sha256": "91adcc1e40b6e618919d950e57b37768ca2f518208c62a87fe252812fe05524b",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 56,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 5,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_182d7b08c6e0fdc0ae46",
+      "review_id_b": "rb_e09cee1b9614dcdca7254aa998d405dc",
+      "A_record": 57,
+      "B_record": 38,
+      "canonical_record": 57,
+      "query_sha256": "4b24d70c6460eba57314213123048383709acab8cf584f993eebc8e8c618328f",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 57,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 38,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_6570dddcf3bb1e16516f",
+      "review_id_b": "rb_c24b51c5ac609ca0481bfa7eb69c0cbf",
+      "A_record": 58,
+      "B_record": 51,
+      "canonical_record": 58,
+      "query_sha256": "4ce40dbc6bbdec90bb6bdcebc34224179c350097f290cd9e89a857b2b869554d",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 58,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 51,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    },
+    {
+      "canonical_candidate_id": "q_90695ba7553824abd1e6",
+      "review_id_b": "rb_512909143417a2efae37c7f89259be60",
+      "A_record": 59,
+      "B_record": 28,
+      "canonical_record": 59,
+      "query_sha256": "91cc06836ecf07d75c0b3677ca6e7c8fa76e574446103f54875a7091b03c6536",
+      "A_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/custodian/annotation_A_v0.jsonl",
+        "record_index_zero_based": 59,
+        "json_pointer": ""
+      },
+      "B_value_ref": {
+        "path": "data/evaluation/generation/phase5/phase5c4_v0/reviewer_b_results_v1/annotation_B_v1.jsonl",
+        "record_index_zero_based": 28,
+        "json_pointer": ""
+      },
+      "mapping_source": "data/evaluation/generation/phase5/phase5c4_v0/custodian/reviewer_b_id_mapping_v1.json",
+      "match_method": "EXACT_TRUSTED_ID_BIJECTION",
+      "query_byte_identity": true
+    }
+  ]
+}

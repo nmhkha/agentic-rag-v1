@@ -1,0 +1,1594 @@
+{
+  "schema_version": "phase5a-ablation-manifest-v0",
+  "phase": "5A",
+  "status": "FROZEN",
+  "created_at": "2026-09-06T13:59:27.698045+00:00",
+  "design_only": true,
+  "execution_started": false,
+  "primary_variants": [
+    "full-agentic-replication",
+    "no-answer-revision",
+    "no-evidence-expansion"
+  ],
+  "optional_variants": [
+    "no-citation-revision",
+    "no-substantive-interventions"
+  ],
+  "variant_alias_mapping": {
+    "full-agentic-replication": "R2",
+    "no-answer-revision": "A1",
+    "no-evidence-expansion": "A2",
+    "no-citation-revision": "A3",
+    "no-substantive-interventions": "A4"
+  },
+  "primary_ids": [
+    "R2",
+    "A1",
+    "A2"
+  ],
+  "optional_ids": [
+    "A3",
+    "A4"
+  ],
+  "primary_metric": "answer_completeness",
+  "query_count": 31,
+  "required_point_count": 102,
+  "historical_references": {
+    "R0": {
+      "variant_id": "standard-rag-eval-v0",
+      "rerun": false,
+      "overwrite": false,
+      "macro_ac": 0.6752688172043011,
+      "supported_points": 60,
+      "micro_ac": 0.5882352941176471,
+      "artifact_roles": [
+        "R0_results",
+        "R0_metrics",
+        "R0_manifest",
+        "R0_report"
+      ]
+    },
+    "R1": {
+      "variant_id": "agentic-v1",
+      "rerun_as_historical": false,
+      "overwrite": false,
+      "replaced_by_R2": false,
+      "macro_ac": 0.7236559139784946,
+      "supported_points": 65,
+      "micro_ac": 0.6372549019607843,
+      "manifest_pointer": "/manifest",
+      "artifact_roles": [
+        "R1_results",
+        "R1_metrics_and_embedded_manifest",
+        "R1_report",
+        "R1_individual_trace"
+      ]
+    }
+  },
+  "frozen_artifacts": [
+    {
+      "path": "data/evaluation/generation/agentic_rag_eval_v1_agentic-v1.jsonl",
+      "sha256": "a8d6a4bb5f18ddd79d6fcf98d8330b009e44764759e5f135e894528ad715b06e",
+      "role": "R1_results"
+    },
+    {
+      "path": "data/evaluation/generation/agentic_rag_metrics_v1_agentic-v1.json",
+      "sha256": "ca0459b683bcec40833b69f288497b5d6e6bd2640daa1910ab0f18b7ff4bf1d5",
+      "role": "R1_metrics_and_embedded_manifest",
+      "json_pointer": "/manifest"
+    },
+    {
+      "path": "data/evaluation/generation/agentic_trace_analysis_metrics_v0.json",
+      "sha256": "ab10b4cd185cc41acc553cc991df74040cc980fd284c8217fdbdccc8c0bacab7",
+      "role": "phase4e_context_and_provenance_analysis_only"
+    },
+    {
+      "path": "data/evaluation/generation/agentic_trace_analysis_v0.jsonl",
+      "sha256": "750d33655f9038f7e3a4dc52160933f9cd742ca2d7a0b2142796c23f407e664a",
+      "role": "phase4e_context_analysis_only"
+    },
+    {
+      "path": "data/evaluation/generation/failure_analysis_metrics_v0.json",
+      "sha256": "d2ea8278285d78fcbe9c4adf613bc90b5762b8fa62ea45deb03393194a4b7fb7",
+      "role": "phase4a_labels_analysis_only"
+    },
+    {
+      "path": "data/evaluation/generation/failure_analysis_points_v0.jsonl",
+      "sha256": "bbc6993d0ff7108e5f39f6b34bd8549bff15493c3c435adefc3514b0cf1f1f53",
+      "role": "phase4a_labels_analysis_only"
+    },
+    {
+      "path": "data/evaluation/generation/failure_analysis_queries_v0.json",
+      "sha256": "842871677c4345562d92384e2abeb9f3f69da1d8f0158891dd02aea9200bd10e",
+      "role": "phase4a_labels_analysis_only"
+    },
+    {
+      "path": "data/evaluation/generation/generation_eval_v1_verified.json",
+      "sha256": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+      "role": "verified_final_gold_evaluator_only"
+    },
+    {
+      "path": "data/evaluation/generation/generation_eval_v1_verified_manifest.json",
+      "sha256": "693b2b3f0839bdefc380254de2640e47d9b5a81ff4c14f9acccbd5ee4c242fbe",
+      "role": "verified_dataset_manifest"
+    },
+    {
+      "path": "data/evaluation/generation/reports/agentic_rag_eval_v1_agentic-v1.md",
+      "sha256": "f87b5999a8a1b6d43a46f98caea912f4acbfa9ebfd4f3cfaf6419cf1b9e82ea2",
+      "role": "R1_report"
+    },
+    {
+      "path": "data/evaluation/generation/reports/agentic_trace_analysis_v0.md",
+      "sha256": "6aa6dffb0a33bd79ae6e6c2e874ec888a358cd2a8bc42c19369f5a1f7f654768",
+      "role": "phase4e_context_analysis_only"
+    },
+    {
+      "path": "data/evaluation/generation/reports/standard_rag_eval_v0.md",
+      "sha256": "8dc7a635fa4c9663a9fdbe1d36956bd1e327403d2b18d4c430dd48567235add2",
+      "role": "R0_report"
+    },
+    {
+      "path": "data/evaluation/generation/standard_rag_eval_v0.jsonl",
+      "sha256": "691f98cdffe29d6f4f2bfff8ad93c540447ee9cb4c78c3e48c003e2c2c4f487e",
+      "role": "R0_results"
+    },
+    {
+      "path": "data/evaluation/generation/standard_rag_manifest_v0.json",
+      "sha256": "bb0a4c56873f118b47f29b0aead8d2c30fa2b0a14702707762fe4c63f6c3a3ae",
+      "role": "R0_manifest"
+    },
+    {
+      "path": "data/evaluation/generation/standard_rag_metrics_v0.json",
+      "sha256": "720cc8acd5c05d819c3b5f74bd46db8a4217eb93eee8abf2ea50ba229748ffe9",
+      "role": "R0_metrics"
+    },
+    {
+      "path": "data/evaluation/retrieval_eval.jsonl",
+      "sha256": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+      "role": "frozen_retrieval_gold_evaluator_only"
+    },
+    {
+      "path": "data/indexes/bge-reranker-v2-m3-v0/reranker_manifest.json",
+      "sha256": "5a8f0845284bd2687addfe57de736606cfd01027118c2e7aa2c67dd0013d48e2",
+      "role": "frozen_retrieval_asset"
+    },
+    {
+      "path": "data/indexes/dense-jina-v3-v0/chunk_ids.json",
+      "sha256": "b74ecd99fb6a79140cc3ac3e65c447b808a1294516788d7652c8e17b82b8a489",
+      "role": "frozen_retrieval_asset"
+    },
+    {
+      "path": "data/indexes/dense-jina-v3-v0/embeddings.npy",
+      "sha256": "9e0db949191bc830f8f16858a2e7de6c04b7a23e957362153d1798b4d855be04",
+      "role": "frozen_retrieval_asset"
+    },
+    {
+      "path": "data/indexes/dense-jina-v3-v0/index_manifest.json",
+      "sha256": "54685dd8a5543a6c0eba678eef93bfa595e67c0bed10e15f2632b4e384558a5f",
+      "role": "frozen_retrieval_asset"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval001.json",
+      "sha256": "25141dceea56ca96a7377588a7c64d4e2585ca867c4416da22ca174f90bf564d",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval002.json",
+      "sha256": "8c54c15847d99f63c225de41e4f770ff74efc0b1d29b5fb0350c68d52ee768ff",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval003.json",
+      "sha256": "b53cc17ec50ffd631c1ceda0047e87a2049804bb86e59cab2eee20f7b6cedd59",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval004.json",
+      "sha256": "479db80a3c421d17c52034c6abc66c5a865332a7071ad2a95cbd65d1b64e3135",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval005a.json",
+      "sha256": "b709ab073fa60ca9bc20421018149e3e1b5f12997ada77cea4edab2a2f11d2ba",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval005b.json",
+      "sha256": "bf159d710d5873700d13369b101b430480d5602c595ce1e6dafcdf3a9bab726d",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval006.json",
+      "sha256": "954756d2b452499323051b507cea38d541fe03c24cfc92db1117e228ce739641",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval007.json",
+      "sha256": "997faabee29b9a26f80ecf7fb01931b7de9ac269c5f007b512fb7cbfe94b4a0b",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval008.json",
+      "sha256": "87c78f08d17ae969d605a30323459719a5763bc112e9386eae741db643826315",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval009.json",
+      "sha256": "4dcfd8b5fc2c7aa32c886ea68e83edded394a471a991bb30bb4cf248526bbbc4",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval010.json",
+      "sha256": "7b653d8ba8bfd6248ea06d696a0cac58ce464b0860caf34b3175d2d0a42b30a0",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval011.json",
+      "sha256": "b734c28db4268e7056fb83ae2de4ab699c86494198c965b58adc575cb4386c56",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval012.json",
+      "sha256": "c8dbeff63de34d6d71f4a99a9bb621c49804d02abc739481328d8f4da2320c3e",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval013.json",
+      "sha256": "f9405c6865ca4fc5823bc8904e4f295cc9611d06f25062eb4035385d375eed97",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval014.json",
+      "sha256": "c46fe23270427a64557a903f4083f0642c06f9a9013b120b7a9e33d593db2cdf",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval015.json",
+      "sha256": "2798812d76030967c09dc0aaf2254cefb64e0d3296b244f7362e0015fa405228",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval016.json",
+      "sha256": "7a683265ef29edea00c5fdc1e3e99471cb227e711b9020aadd80188125200478",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval017.json",
+      "sha256": "82ce503a45908cdc4f2f18a32474763fef791d03909e3e2efab9ded1b85fe098",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval018.json",
+      "sha256": "aca28a01ca545c70d552f819329b499d16d8eba8fee730b316c057345ab2a936",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval019.json",
+      "sha256": "e8fdba42ac5e999e5c5951ffa771e193f4424824e4d0cd2ffeb40e860578dba5",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval020.json",
+      "sha256": "c4f9c93f8d7928a2f6a03c6d4bf0e0ae53f9e6eb18de775df006fba6f253ca16",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval021.json",
+      "sha256": "0deb2e716908d3ad68aeea1cf8660224c9515669550a2358811b235b81c71f27",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval022.json",
+      "sha256": "e1988000bb9fe1ad5d13d7904e28af149f07c94e96b41de2c26d651b34ff26f3",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval023.json",
+      "sha256": "61c963adbdc89a4d0618bffa8facef3cbdc4118d91f30861b62485733fc153fc",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval024.json",
+      "sha256": "97148165e4286826e003ad0be172663491430a8466cd96417bd4e300b3f2a029",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval025.json",
+      "sha256": "c9c08a8e76cb74d05b1bab1019a16c3387a2bea3fcef0f7ad38d49caf65a6938",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval026.json",
+      "sha256": "faf9191e612b4049d84fa6738d155c1a2172495ee06c5a5e57f31e5d230a338c",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval027.json",
+      "sha256": "c342f074ddd4cdfb27f712f4e9bbc8ea273f206fb897407e7edd092c968dfc24",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval028.json",
+      "sha256": "b8a71c5999f7a12c63a8eb2996177f9ae6cf412320ba999413ccd1ed4f902343",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval029.json",
+      "sha256": "adf9f47115dbba09df89e4bba2cb8b4051b5bfa2b346e21a4d0ab9fd225cc8d0",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/rag/traces/agentic-rag-v1/agentic-v1/eval030.json",
+      "sha256": "e4f4a77a477ad41fa01105ad0907bf5e6a6bb5348cae986bc313249e84434b55",
+      "role": "R1_individual_trace"
+    },
+    {
+      "path": "data/versions/corpus-v0.1/chunks.jsonl",
+      "sha256": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "role": "authoritative_runtime_corpus"
+    },
+    {
+      "path": "prompts/legal_rag_v0.txt",
+      "sha256": "0141aad79a262960eeeb88d9b138bc092ea15caeb0407a5ebadad27b8268d39e",
+      "role": "baseline_generation_prompt"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "81fb0e06a2b80a7ee839a231ea1141e77e146d7589c6ab4986a72a52b9c94621",
+      "role": "declared_dependencies"
+    },
+    {
+      "path": "scripts/agentic_rag.py",
+      "sha256": "e415429b39786e9cb7dc46488718fcda0fc164ca4a84e49d95630835188745b6",
+      "role": "frozen_production_source"
+    },
+    {
+      "path": "scripts/bm25_baseline.py",
+      "sha256": "704f6ba51889411f4891ddad615e54eb68672583e37aea6b5a9afca90c378ac8",
+      "role": "frozen_production_source"
+    },
+    {
+      "path": "scripts/citation_validator.py",
+      "sha256": "7e5eeb43e2c9316909e7c297f05dbaa9171eb51c3a5db76bd26944c6a36232fc",
+      "role": "frozen_production_source"
+    },
+    {
+      "path": "scripts/dense_baseline.py",
+      "sha256": "030602670a13bc17aac4ab97dd65209a5825c4ef790fd25c0c3b6c2224fe99a8",
+      "role": "frozen_production_source"
+    },
+    {
+      "path": "scripts/evaluate_agentic_rag.py",
+      "sha256": "b78ad3224be4bd996d494f870dab3caaf0cc2680ad54d832936624db9dcc04c9",
+      "role": "frozen_evaluator_source"
+    },
+    {
+      "path": "scripts/evaluate_standard_rag.py",
+      "sha256": "0c8a8def9966b94c946d80ddbfbf31a4ddd446e3e6eb49f02c89254a2f032bf7",
+      "role": "frozen_evaluator_source"
+    },
+    {
+      "path": "scripts/evidence_formatter.py",
+      "sha256": "f9ad9f39944f6ec72bea920822f17c53e7ac95bf9ac416a1d53382ab8e04d259",
+      "role": "frozen_production_source"
+    },
+    {
+      "path": "scripts/llm_client.py",
+      "sha256": "b60c064aad63ef92d320af697791ec65c5c30c35caee8a7e174c3ef37724bf84",
+      "role": "frozen_production_source"
+    },
+    {
+      "path": "scripts/rag_baseline.py",
+      "sha256": "ae5a2dd7b0f89d7969c16c5d711e229bd1673df43e188f9a7296086e57d9b95a",
+      "role": "frozen_production_source"
+    },
+    {
+      "path": "scripts/reranker_baseline.py",
+      "sha256": "609c2eb42f52265fa0a630697cedd2e000b9b5a52a4b0a848259d597e2bb6f85",
+      "role": "frozen_production_source"
+    },
+    {
+      "path": "scripts/response_formatter.py",
+      "sha256": "ccc506802981ca3e200b043c4c279e94b2dc3dbdaa8f60317a6d69369154f7e0",
+      "role": "frozen_production_source"
+    },
+    {
+      "path": "scripts/retrieval_pipeline.py",
+      "sha256": "5080df6e2bbfb33cf945f3fa797107ac7d510cab1f6e2bc4f3bf25741766fd42",
+      "role": "frozen_production_source"
+    },
+    {
+      "path": "scripts/validate_generation_eval.py",
+      "sha256": "b8b5cc4eff89bc41eae0ff3f4bf3379c7ba6c11d508b8ec4d1082d5e7a18c824",
+      "role": "frozen_evaluator_source"
+    }
+  ],
+  "variant_manifests": {
+    "R2": {
+      "variant_id": "full-agentic-replication",
+      "base_agent_version": "agentic-rag-v1",
+      "corpus_version": "corpus-v0.1",
+      "corpus_path": "data/versions/corpus-v0.1/chunks.jsonl",
+      "corpus_hash": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "dataset_version": "generation-eval-v1",
+      "dataset_hash": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+      "dataset_status": "verified",
+      "query_count": 31,
+      "required_point_count": 102,
+      "query_input_canonical_sha256": "1d29c4304f61d7c2235d7cab37e2bbf63a35e0c0caf6873d7e458e23904ebc78",
+      "bm25_version": "BM25-simple-v0",
+      "bm25_depth": 20,
+      "dense_version": "dense-jina-v3-v0",
+      "dense_model": "jinaai/jina-embeddings-v3",
+      "dense_revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6",
+      "dense_depth": 20,
+      "dense_query_task": "retrieval.query",
+      "dense_passage_task": "retrieval.passage",
+      "dense_normalized": true,
+      "dense_embedding_dimension": 1024,
+      "candidate_merge": "union_deduplicate_by_chunk_id",
+      "fusion": null,
+      "reranker_model": "BAAI/bge-reranker-v2-m3",
+      "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "reranker_max_length": 8192,
+      "reranker_tie_breaking": [
+        "reranker_score descending",
+        "chunk_id lexical ascending"
+      ],
+      "top_k": 5,
+      "prompt_version": "legal-rag-prompt-v0",
+      "prompt_hash": "0141aad79a262960eeeb88d9b138bc092ea15caeb0407a5ebadad27b8268d39e",
+      "llm_model": "gemini-3.5-flash-lite",
+      "llm_provider": "openai-compatible",
+      "llm_temperature": 0,
+      "llm_response_format": {
+        "type": "json_object"
+      },
+      "llm_timeout_seconds": 120.0,
+      "llm_message_roles": [
+        "user"
+      ],
+      "llm_seed": null,
+      "llm_max_tokens_override": null,
+      "max_retrieval_expansions": 1,
+      "max_subqueries": 3,
+      "max_answer_revisions": 1,
+      "max_citation_revisions": 1,
+      "max_llm_calls": 6,
+      "budget_semantics": "Unchanged nominal code ceilings; existing enable flags disable capability. No budget reallocation.",
+      "ablation_flags": {
+        "enable_expansion": true,
+        "enable_answer_revision": true,
+        "enable_citation_revision": true
+      },
+      "production_max_transport_attempts": 1,
+      "evaluation_max_attempts": 3,
+      "evaluator_model": "gemini-3.5-flash-lite",
+      "evaluator_temperature": 0,
+      "evaluator_methodology": "Unchanged judge_prompt/parse_judge/point_audit plus evaluate_record and deterministic citation validation",
+      "device": "cpu",
+      "dense_dtype": "float32",
+      "reranker_dtype": "float32",
+      "dense_batch_size": 4,
+      "reranker_batch_size": 1,
+      "batch_size_override": null,
+      "runtime_source_sha256": {
+        "scripts/agentic_rag.py": "e415429b39786e9cb7dc46488718fcda0fc164ca4a84e49d95630835188745b6",
+        "scripts/bm25_baseline.py": "704f6ba51889411f4891ddad615e54eb68672583e37aea6b5a9afca90c378ac8",
+        "scripts/citation_validator.py": "7e5eeb43e2c9316909e7c297f05dbaa9171eb51c3a5db76bd26944c6a36232fc",
+        "scripts/dense_baseline.py": "030602670a13bc17aac4ab97dd65209a5825c4ef790fd25c0c3b6c2224fe99a8",
+        "scripts/evidence_formatter.py": "f9ad9f39944f6ec72bea920822f17c53e7ac95bf9ac416a1d53382ab8e04d259",
+        "scripts/llm_client.py": "b60c064aad63ef92d320af697791ec65c5c30c35caee8a7e174c3ef37724bf84",
+        "scripts/rag_baseline.py": "ae5a2dd7b0f89d7969c16c5d711e229bd1673df43e188f9a7296086e57d9b95a",
+        "scripts/reranker_baseline.py": "609c2eb42f52265fa0a630697cedd2e000b9b5a52a4b0a848259d597e2bb6f85",
+        "scripts/response_formatter.py": "ccc506802981ca3e200b043c4c279e94b2dc3dbdaa8f60317a6d69369154f7e0",
+        "scripts/retrieval_pipeline.py": "5080df6e2bbfb33cf945f3fa797107ac7d510cab1f6e2bc4f3bf25741766fd42"
+      },
+      "evaluator_source_sha256": {
+        "scripts/evaluate_standard_rag.py": "0c8a8def9966b94c946d80ddbfbf31a4ddd446e3e6eb49f02c89254a2f032bf7",
+        "scripts/evaluate_agentic_rag.py": "b78ad3224be4bd996d494f870dab3caaf0cc2680ad54d832936624db9dcc04c9",
+        "scripts/validate_generation_eval.py": "b8b5cc4eff89bc41eae0ff3f4bf3379c7ba6c11d508b8ec4d1082d5e7a18c824"
+      },
+      "retrieval_assets_sha256": {
+        "data/indexes/bge-reranker-v2-m3-v0/reranker_manifest.json": "5a8f0845284bd2687addfe57de736606cfd01027118c2e7aa2c67dd0013d48e2",
+        "data/indexes/dense-jina-v3-v0/chunk_ids.json": "b74ecd99fb6a79140cc3ac3e65c447b808a1294516788d7652c8e17b82b8a489",
+        "data/indexes/dense-jina-v3-v0/embeddings.npy": "9e0db949191bc830f8f16858a2e7de6c04b7a23e957362153d1798b4d855be04",
+        "data/indexes/dense-jina-v3-v0/index_manifest.json": "54685dd8a5543a6c0eba678eef93bfa595e67c0bed10e15f2632b4e384558a5f"
+      },
+      "requirements_sha256": "81fb0e06a2b80a7ee839a231ea1141e77e146d7589c6ab4986a72a52b9c94621",
+      "environment_lock_policy": "One shared preflight environment lock before R2; record Python/packages/endpoint identity/snapshots, reject drift across variants; no credentials.",
+      "created_at": "2026-09-06T13:59:27.698045+00:00"
+    },
+    "A1": {
+      "variant_id": "agentic-v1-no-answer-revision",
+      "base_agent_version": "agentic-rag-v1",
+      "corpus_version": "corpus-v0.1",
+      "corpus_path": "data/versions/corpus-v0.1/chunks.jsonl",
+      "corpus_hash": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "dataset_version": "generation-eval-v1",
+      "dataset_hash": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+      "dataset_status": "verified",
+      "query_count": 31,
+      "required_point_count": 102,
+      "query_input_canonical_sha256": "1d29c4304f61d7c2235d7cab37e2bbf63a35e0c0caf6873d7e458e23904ebc78",
+      "bm25_version": "BM25-simple-v0",
+      "bm25_depth": 20,
+      "dense_version": "dense-jina-v3-v0",
+      "dense_model": "jinaai/jina-embeddings-v3",
+      "dense_revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6",
+      "dense_depth": 20,
+      "dense_query_task": "retrieval.query",
+      "dense_passage_task": "retrieval.passage",
+      "dense_normalized": true,
+      "dense_embedding_dimension": 1024,
+      "candidate_merge": "union_deduplicate_by_chunk_id",
+      "fusion": null,
+      "reranker_model": "BAAI/bge-reranker-v2-m3",
+      "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "reranker_max_length": 8192,
+      "reranker_tie_breaking": [
+        "reranker_score descending",
+        "chunk_id lexical ascending"
+      ],
+      "top_k": 5,
+      "prompt_version": "legal-rag-prompt-v0",
+      "prompt_hash": "0141aad79a262960eeeb88d9b138bc092ea15caeb0407a5ebadad27b8268d39e",
+      "llm_model": "gemini-3.5-flash-lite",
+      "llm_provider": "openai-compatible",
+      "llm_temperature": 0,
+      "llm_response_format": {
+        "type": "json_object"
+      },
+      "llm_timeout_seconds": 120.0,
+      "llm_message_roles": [
+        "user"
+      ],
+      "llm_seed": null,
+      "llm_max_tokens_override": null,
+      "max_retrieval_expansions": 1,
+      "max_subqueries": 3,
+      "max_answer_revisions": 1,
+      "max_citation_revisions": 1,
+      "max_llm_calls": 6,
+      "budget_semantics": "Unchanged nominal code ceilings; existing enable flags disable capability. No budget reallocation.",
+      "ablation_flags": {
+        "enable_expansion": true,
+        "enable_answer_revision": false,
+        "enable_citation_revision": true
+      },
+      "production_max_transport_attempts": 1,
+      "evaluation_max_attempts": 3,
+      "evaluator_model": "gemini-3.5-flash-lite",
+      "evaluator_temperature": 0,
+      "evaluator_methodology": "Unchanged judge_prompt/parse_judge/point_audit plus evaluate_record and deterministic citation validation",
+      "device": "cpu",
+      "dense_dtype": "float32",
+      "reranker_dtype": "float32",
+      "dense_batch_size": 4,
+      "reranker_batch_size": 1,
+      "batch_size_override": null,
+      "runtime_source_sha256": {
+        "scripts/agentic_rag.py": "e415429b39786e9cb7dc46488718fcda0fc164ca4a84e49d95630835188745b6",
+        "scripts/bm25_baseline.py": "704f6ba51889411f4891ddad615e54eb68672583e37aea6b5a9afca90c378ac8",
+        "scripts/citation_validator.py": "7e5eeb43e2c9316909e7c297f05dbaa9171eb51c3a5db76bd26944c6a36232fc",
+        "scripts/dense_baseline.py": "030602670a13bc17aac4ab97dd65209a5825c4ef790fd25c0c3b6c2224fe99a8",
+        "scripts/evidence_formatter.py": "f9ad9f39944f6ec72bea920822f17c53e7ac95bf9ac416a1d53382ab8e04d259",
+        "scripts/llm_client.py": "b60c064aad63ef92d320af697791ec65c5c30c35caee8a7e174c3ef37724bf84",
+        "scripts/rag_baseline.py": "ae5a2dd7b0f89d7969c16c5d711e229bd1673df43e188f9a7296086e57d9b95a",
+        "scripts/reranker_baseline.py": "609c2eb42f52265fa0a630697cedd2e000b9b5a52a4b0a848259d597e2bb6f85",
+        "scripts/response_formatter.py": "ccc506802981ca3e200b043c4c279e94b2dc3dbdaa8f60317a6d69369154f7e0",
+        "scripts/retrieval_pipeline.py": "5080df6e2bbfb33cf945f3fa797107ac7d510cab1f6e2bc4f3bf25741766fd42"
+      },
+      "evaluator_source_sha256": {
+        "scripts/evaluate_standard_rag.py": "0c8a8def9966b94c946d80ddbfbf31a4ddd446e3e6eb49f02c89254a2f032bf7",
+        "scripts/evaluate_agentic_rag.py": "b78ad3224be4bd996d494f870dab3caaf0cc2680ad54d832936624db9dcc04c9",
+        "scripts/validate_generation_eval.py": "b8b5cc4eff89bc41eae0ff3f4bf3379c7ba6c11d508b8ec4d1082d5e7a18c824"
+      },
+      "retrieval_assets_sha256": {
+        "data/indexes/bge-reranker-v2-m3-v0/reranker_manifest.json": "5a8f0845284bd2687addfe57de736606cfd01027118c2e7aa2c67dd0013d48e2",
+        "data/indexes/dense-jina-v3-v0/chunk_ids.json": "b74ecd99fb6a79140cc3ac3e65c447b808a1294516788d7652c8e17b82b8a489",
+        "data/indexes/dense-jina-v3-v0/embeddings.npy": "9e0db949191bc830f8f16858a2e7de6c04b7a23e957362153d1798b4d855be04",
+        "data/indexes/dense-jina-v3-v0/index_manifest.json": "54685dd8a5543a6c0eba678eef93bfa595e67c0bed10e15f2632b4e384558a5f"
+      },
+      "requirements_sha256": "81fb0e06a2b80a7ee839a231ea1141e77e146d7589c6ab4986a72a52b9c94621",
+      "environment_lock_policy": "One shared preflight environment lock before R2; record Python/packages/endpoint identity/snapshots, reject drift across variants; no credentials.",
+      "created_at": "2026-09-06T13:59:27.698045+00:00"
+    },
+    "A2": {
+      "variant_id": "agentic-v1-no-evidence-expansion",
+      "base_agent_version": "agentic-rag-v1",
+      "corpus_version": "corpus-v0.1",
+      "corpus_path": "data/versions/corpus-v0.1/chunks.jsonl",
+      "corpus_hash": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "dataset_version": "generation-eval-v1",
+      "dataset_hash": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+      "dataset_status": "verified",
+      "query_count": 31,
+      "required_point_count": 102,
+      "query_input_canonical_sha256": "1d29c4304f61d7c2235d7cab37e2bbf63a35e0c0caf6873d7e458e23904ebc78",
+      "bm25_version": "BM25-simple-v0",
+      "bm25_depth": 20,
+      "dense_version": "dense-jina-v3-v0",
+      "dense_model": "jinaai/jina-embeddings-v3",
+      "dense_revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6",
+      "dense_depth": 20,
+      "dense_query_task": "retrieval.query",
+      "dense_passage_task": "retrieval.passage",
+      "dense_normalized": true,
+      "dense_embedding_dimension": 1024,
+      "candidate_merge": "union_deduplicate_by_chunk_id",
+      "fusion": null,
+      "reranker_model": "BAAI/bge-reranker-v2-m3",
+      "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "reranker_max_length": 8192,
+      "reranker_tie_breaking": [
+        "reranker_score descending",
+        "chunk_id lexical ascending"
+      ],
+      "top_k": 5,
+      "prompt_version": "legal-rag-prompt-v0",
+      "prompt_hash": "0141aad79a262960eeeb88d9b138bc092ea15caeb0407a5ebadad27b8268d39e",
+      "llm_model": "gemini-3.5-flash-lite",
+      "llm_provider": "openai-compatible",
+      "llm_temperature": 0,
+      "llm_response_format": {
+        "type": "json_object"
+      },
+      "llm_timeout_seconds": 120.0,
+      "llm_message_roles": [
+        "user"
+      ],
+      "llm_seed": null,
+      "llm_max_tokens_override": null,
+      "max_retrieval_expansions": 1,
+      "max_subqueries": 3,
+      "max_answer_revisions": 1,
+      "max_citation_revisions": 1,
+      "max_llm_calls": 6,
+      "budget_semantics": "Unchanged nominal code ceilings; existing enable flags disable capability. No budget reallocation.",
+      "ablation_flags": {
+        "enable_expansion": false,
+        "enable_answer_revision": true,
+        "enable_citation_revision": true
+      },
+      "production_max_transport_attempts": 1,
+      "evaluation_max_attempts": 3,
+      "evaluator_model": "gemini-3.5-flash-lite",
+      "evaluator_temperature": 0,
+      "evaluator_methodology": "Unchanged judge_prompt/parse_judge/point_audit plus evaluate_record and deterministic citation validation",
+      "device": "cpu",
+      "dense_dtype": "float32",
+      "reranker_dtype": "float32",
+      "dense_batch_size": 4,
+      "reranker_batch_size": 1,
+      "batch_size_override": null,
+      "runtime_source_sha256": {
+        "scripts/agentic_rag.py": "e415429b39786e9cb7dc46488718fcda0fc164ca4a84e49d95630835188745b6",
+        "scripts/bm25_baseline.py": "704f6ba51889411f4891ddad615e54eb68672583e37aea6b5a9afca90c378ac8",
+        "scripts/citation_validator.py": "7e5eeb43e2c9316909e7c297f05dbaa9171eb51c3a5db76bd26944c6a36232fc",
+        "scripts/dense_baseline.py": "030602670a13bc17aac4ab97dd65209a5825c4ef790fd25c0c3b6c2224fe99a8",
+        "scripts/evidence_formatter.py": "f9ad9f39944f6ec72bea920822f17c53e7ac95bf9ac416a1d53382ab8e04d259",
+        "scripts/llm_client.py": "b60c064aad63ef92d320af697791ec65c5c30c35caee8a7e174c3ef37724bf84",
+        "scripts/rag_baseline.py": "ae5a2dd7b0f89d7969c16c5d711e229bd1673df43e188f9a7296086e57d9b95a",
+        "scripts/reranker_baseline.py": "609c2eb42f52265fa0a630697cedd2e000b9b5a52a4b0a848259d597e2bb6f85",
+        "scripts/response_formatter.py": "ccc506802981ca3e200b043c4c279e94b2dc3dbdaa8f60317a6d69369154f7e0",
+        "scripts/retrieval_pipeline.py": "5080df6e2bbfb33cf945f3fa797107ac7d510cab1f6e2bc4f3bf25741766fd42"
+      },
+      "evaluator_source_sha256": {
+        "scripts/evaluate_standard_rag.py": "0c8a8def9966b94c946d80ddbfbf31a4ddd446e3e6eb49f02c89254a2f032bf7",
+        "scripts/evaluate_agentic_rag.py": "b78ad3224be4bd996d494f870dab3caaf0cc2680ad54d832936624db9dcc04c9",
+        "scripts/validate_generation_eval.py": "b8b5cc4eff89bc41eae0ff3f4bf3379c7ba6c11d508b8ec4d1082d5e7a18c824"
+      },
+      "retrieval_assets_sha256": {
+        "data/indexes/bge-reranker-v2-m3-v0/reranker_manifest.json": "5a8f0845284bd2687addfe57de736606cfd01027118c2e7aa2c67dd0013d48e2",
+        "data/indexes/dense-jina-v3-v0/chunk_ids.json": "b74ecd99fb6a79140cc3ac3e65c447b808a1294516788d7652c8e17b82b8a489",
+        "data/indexes/dense-jina-v3-v0/embeddings.npy": "9e0db949191bc830f8f16858a2e7de6c04b7a23e957362153d1798b4d855be04",
+        "data/indexes/dense-jina-v3-v0/index_manifest.json": "54685dd8a5543a6c0eba678eef93bfa595e67c0bed10e15f2632b4e384558a5f"
+      },
+      "requirements_sha256": "81fb0e06a2b80a7ee839a231ea1141e77e146d7589c6ab4986a72a52b9c94621",
+      "environment_lock_policy": "One shared preflight environment lock before R2; record Python/packages/endpoint identity/snapshots, reject drift across variants; no credentials.",
+      "created_at": "2026-09-06T13:59:27.698045+00:00"
+    },
+    "A3": {
+      "variant_id": "agentic-v1-no-citation-revision",
+      "base_agent_version": "agentic-rag-v1",
+      "corpus_version": "corpus-v0.1",
+      "corpus_path": "data/versions/corpus-v0.1/chunks.jsonl",
+      "corpus_hash": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "dataset_version": "generation-eval-v1",
+      "dataset_hash": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+      "dataset_status": "verified",
+      "query_count": 31,
+      "required_point_count": 102,
+      "query_input_canonical_sha256": "1d29c4304f61d7c2235d7cab37e2bbf63a35e0c0caf6873d7e458e23904ebc78",
+      "bm25_version": "BM25-simple-v0",
+      "bm25_depth": 20,
+      "dense_version": "dense-jina-v3-v0",
+      "dense_model": "jinaai/jina-embeddings-v3",
+      "dense_revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6",
+      "dense_depth": 20,
+      "dense_query_task": "retrieval.query",
+      "dense_passage_task": "retrieval.passage",
+      "dense_normalized": true,
+      "dense_embedding_dimension": 1024,
+      "candidate_merge": "union_deduplicate_by_chunk_id",
+      "fusion": null,
+      "reranker_model": "BAAI/bge-reranker-v2-m3",
+      "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "reranker_max_length": 8192,
+      "reranker_tie_breaking": [
+        "reranker_score descending",
+        "chunk_id lexical ascending"
+      ],
+      "top_k": 5,
+      "prompt_version": "legal-rag-prompt-v0",
+      "prompt_hash": "0141aad79a262960eeeb88d9b138bc092ea15caeb0407a5ebadad27b8268d39e",
+      "llm_model": "gemini-3.5-flash-lite",
+      "llm_provider": "openai-compatible",
+      "llm_temperature": 0,
+      "llm_response_format": {
+        "type": "json_object"
+      },
+      "llm_timeout_seconds": 120.0,
+      "llm_message_roles": [
+        "user"
+      ],
+      "llm_seed": null,
+      "llm_max_tokens_override": null,
+      "max_retrieval_expansions": 1,
+      "max_subqueries": 3,
+      "max_answer_revisions": 1,
+      "max_citation_revisions": 1,
+      "max_llm_calls": 6,
+      "budget_semantics": "Unchanged nominal code ceilings; existing enable flags disable capability. No budget reallocation.",
+      "ablation_flags": {
+        "enable_expansion": true,
+        "enable_answer_revision": true,
+        "enable_citation_revision": false
+      },
+      "production_max_transport_attempts": 1,
+      "evaluation_max_attempts": 3,
+      "evaluator_model": "gemini-3.5-flash-lite",
+      "evaluator_temperature": 0,
+      "evaluator_methodology": "Unchanged judge_prompt/parse_judge/point_audit plus evaluate_record and deterministic citation validation",
+      "device": "cpu",
+      "dense_dtype": "float32",
+      "reranker_dtype": "float32",
+      "dense_batch_size": 4,
+      "reranker_batch_size": 1,
+      "batch_size_override": null,
+      "runtime_source_sha256": {
+        "scripts/agentic_rag.py": "e415429b39786e9cb7dc46488718fcda0fc164ca4a84e49d95630835188745b6",
+        "scripts/bm25_baseline.py": "704f6ba51889411f4891ddad615e54eb68672583e37aea6b5a9afca90c378ac8",
+        "scripts/citation_validator.py": "7e5eeb43e2c9316909e7c297f05dbaa9171eb51c3a5db76bd26944c6a36232fc",
+        "scripts/dense_baseline.py": "030602670a13bc17aac4ab97dd65209a5825c4ef790fd25c0c3b6c2224fe99a8",
+        "scripts/evidence_formatter.py": "f9ad9f39944f6ec72bea920822f17c53e7ac95bf9ac416a1d53382ab8e04d259",
+        "scripts/llm_client.py": "b60c064aad63ef92d320af697791ec65c5c30c35caee8a7e174c3ef37724bf84",
+        "scripts/rag_baseline.py": "ae5a2dd7b0f89d7969c16c5d711e229bd1673df43e188f9a7296086e57d9b95a",
+        "scripts/reranker_baseline.py": "609c2eb42f52265fa0a630697cedd2e000b9b5a52a4b0a848259d597e2bb6f85",
+        "scripts/response_formatter.py": "ccc506802981ca3e200b043c4c279e94b2dc3dbdaa8f60317a6d69369154f7e0",
+        "scripts/retrieval_pipeline.py": "5080df6e2bbfb33cf945f3fa797107ac7d510cab1f6e2bc4f3bf25741766fd42"
+      },
+      "evaluator_source_sha256": {
+        "scripts/evaluate_standard_rag.py": "0c8a8def9966b94c946d80ddbfbf31a4ddd446e3e6eb49f02c89254a2f032bf7",
+        "scripts/evaluate_agentic_rag.py": "b78ad3224be4bd996d494f870dab3caaf0cc2680ad54d832936624db9dcc04c9",
+        "scripts/validate_generation_eval.py": "b8b5cc4eff89bc41eae0ff3f4bf3379c7ba6c11d508b8ec4d1082d5e7a18c824"
+      },
+      "retrieval_assets_sha256": {
+        "data/indexes/bge-reranker-v2-m3-v0/reranker_manifest.json": "5a8f0845284bd2687addfe57de736606cfd01027118c2e7aa2c67dd0013d48e2",
+        "data/indexes/dense-jina-v3-v0/chunk_ids.json": "b74ecd99fb6a79140cc3ac3e65c447b808a1294516788d7652c8e17b82b8a489",
+        "data/indexes/dense-jina-v3-v0/embeddings.npy": "9e0db949191bc830f8f16858a2e7de6c04b7a23e957362153d1798b4d855be04",
+        "data/indexes/dense-jina-v3-v0/index_manifest.json": "54685dd8a5543a6c0eba678eef93bfa595e67c0bed10e15f2632b4e384558a5f"
+      },
+      "requirements_sha256": "81fb0e06a2b80a7ee839a231ea1141e77e146d7589c6ab4986a72a52b9c94621",
+      "environment_lock_policy": "One shared preflight environment lock before R2; record Python/packages/endpoint identity/snapshots, reject drift across variants; no credentials.",
+      "created_at": "2026-09-06T13:59:27.698045+00:00"
+    },
+    "A4": {
+      "variant_id": "agentic-v1-no-substantive-interventions",
+      "base_agent_version": "agentic-rag-v1",
+      "corpus_version": "corpus-v0.1",
+      "corpus_path": "data/versions/corpus-v0.1/chunks.jsonl",
+      "corpus_hash": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "dataset_version": "generation-eval-v1",
+      "dataset_hash": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+      "dataset_status": "verified",
+      "query_count": 31,
+      "required_point_count": 102,
+      "query_input_canonical_sha256": "1d29c4304f61d7c2235d7cab37e2bbf63a35e0c0caf6873d7e458e23904ebc78",
+      "bm25_version": "BM25-simple-v0",
+      "bm25_depth": 20,
+      "dense_version": "dense-jina-v3-v0",
+      "dense_model": "jinaai/jina-embeddings-v3",
+      "dense_revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6",
+      "dense_depth": 20,
+      "dense_query_task": "retrieval.query",
+      "dense_passage_task": "retrieval.passage",
+      "dense_normalized": true,
+      "dense_embedding_dimension": 1024,
+      "candidate_merge": "union_deduplicate_by_chunk_id",
+      "fusion": null,
+      "reranker_model": "BAAI/bge-reranker-v2-m3",
+      "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "reranker_max_length": 8192,
+      "reranker_tie_breaking": [
+        "reranker_score descending",
+        "chunk_id lexical ascending"
+      ],
+      "top_k": 5,
+      "prompt_version": "legal-rag-prompt-v0",
+      "prompt_hash": "0141aad79a262960eeeb88d9b138bc092ea15caeb0407a5ebadad27b8268d39e",
+      "llm_model": "gemini-3.5-flash-lite",
+      "llm_provider": "openai-compatible",
+      "llm_temperature": 0,
+      "llm_response_format": {
+        "type": "json_object"
+      },
+      "llm_timeout_seconds": 120.0,
+      "llm_message_roles": [
+        "user"
+      ],
+      "llm_seed": null,
+      "llm_max_tokens_override": null,
+      "max_retrieval_expansions": 1,
+      "max_subqueries": 3,
+      "max_answer_revisions": 1,
+      "max_citation_revisions": 1,
+      "max_llm_calls": 6,
+      "budget_semantics": "Unchanged nominal code ceilings; existing enable flags disable capability. No budget reallocation.",
+      "ablation_flags": {
+        "enable_expansion": false,
+        "enable_answer_revision": false,
+        "enable_citation_revision": false
+      },
+      "production_max_transport_attempts": 1,
+      "evaluation_max_attempts": 3,
+      "evaluator_model": "gemini-3.5-flash-lite",
+      "evaluator_temperature": 0,
+      "evaluator_methodology": "Unchanged judge_prompt/parse_judge/point_audit plus evaluate_record and deterministic citation validation",
+      "device": "cpu",
+      "dense_dtype": "float32",
+      "reranker_dtype": "float32",
+      "dense_batch_size": 4,
+      "reranker_batch_size": 1,
+      "batch_size_override": null,
+      "runtime_source_sha256": {
+        "scripts/agentic_rag.py": "e415429b39786e9cb7dc46488718fcda0fc164ca4a84e49d95630835188745b6",
+        "scripts/bm25_baseline.py": "704f6ba51889411f4891ddad615e54eb68672583e37aea6b5a9afca90c378ac8",
+        "scripts/citation_validator.py": "7e5eeb43e2c9316909e7c297f05dbaa9171eb51c3a5db76bd26944c6a36232fc",
+        "scripts/dense_baseline.py": "030602670a13bc17aac4ab97dd65209a5825c4ef790fd25c0c3b6c2224fe99a8",
+        "scripts/evidence_formatter.py": "f9ad9f39944f6ec72bea920822f17c53e7ac95bf9ac416a1d53382ab8e04d259",
+        "scripts/llm_client.py": "b60c064aad63ef92d320af697791ec65c5c30c35caee8a7e174c3ef37724bf84",
+        "scripts/rag_baseline.py": "ae5a2dd7b0f89d7969c16c5d711e229bd1673df43e188f9a7296086e57d9b95a",
+        "scripts/reranker_baseline.py": "609c2eb42f52265fa0a630697cedd2e000b9b5a52a4b0a848259d597e2bb6f85",
+        "scripts/response_formatter.py": "ccc506802981ca3e200b043c4c279e94b2dc3dbdaa8f60317a6d69369154f7e0",
+        "scripts/retrieval_pipeline.py": "5080df6e2bbfb33cf945f3fa797107ac7d510cab1f6e2bc4f3bf25741766fd42"
+      },
+      "evaluator_source_sha256": {
+        "scripts/evaluate_standard_rag.py": "0c8a8def9966b94c946d80ddbfbf31a4ddd446e3e6eb49f02c89254a2f032bf7",
+        "scripts/evaluate_agentic_rag.py": "b78ad3224be4bd996d494f870dab3caaf0cc2680ad54d832936624db9dcc04c9",
+        "scripts/validate_generation_eval.py": "b8b5cc4eff89bc41eae0ff3f4bf3379c7ba6c11d508b8ec4d1082d5e7a18c824"
+      },
+      "retrieval_assets_sha256": {
+        "data/indexes/bge-reranker-v2-m3-v0/reranker_manifest.json": "5a8f0845284bd2687addfe57de736606cfd01027118c2e7aa2c67dd0013d48e2",
+        "data/indexes/dense-jina-v3-v0/chunk_ids.json": "b74ecd99fb6a79140cc3ac3e65c447b808a1294516788d7652c8e17b82b8a489",
+        "data/indexes/dense-jina-v3-v0/embeddings.npy": "9e0db949191bc830f8f16858a2e7de6c04b7a23e957362153d1798b4d855be04",
+        "data/indexes/dense-jina-v3-v0/index_manifest.json": "54685dd8a5543a6c0eba678eef93bfa595e67c0bed10e15f2632b4e384558a5f"
+      },
+      "requirements_sha256": "81fb0e06a2b80a7ee839a231ea1141e77e146d7589c6ab4986a72a52b9c94621",
+      "environment_lock_policy": "One shared preflight environment lock before R2; record Python/packages/endpoint identity/snapshots, reject drift across variants; no credentials.",
+      "created_at": "2026-09-06T13:59:27.698045+00:00"
+    }
+  },
+  "variant_manifest_canonical_sha256": {
+    "R2": "cc4f30732d3f5ecf46b69f804aab905b5e82fc8fe82f9f89098e4bd17dc2a956",
+    "A1": "9f7beb58b43658af823410d99aad247cc9022b6bdfd0c6ff9e1ee6f4b201076e",
+    "A2": "7d151d91a522f8ba0236664deade43aa19c35d07d926856e11fb93f6f87d66f5",
+    "A3": "33e9caebfabe587a849e15ee5d72d73d54d3c0937110b787b01414f3310412ca",
+    "A4": "462d6e39c4ec6c74a5c8f136ca282ee334c339e76ffc8d182472275f8ef29add"
+  },
+  "config_diff_validation": {
+    "reference": "R2",
+    "ignore_exact_fields": [
+      "variant_id"
+    ],
+    "strict_types": true,
+    "expected_difference_paths": {
+      "A1": [
+        "ablation_flags.enable_answer_revision"
+      ],
+      "A2": [
+        "ablation_flags.enable_expansion"
+      ],
+      "A3": [
+        "ablation_flags.enable_citation_revision"
+      ],
+      "A4": [
+        "ablation_flags.enable_answer_revision",
+        "ablation_flags.enable_citation_revision",
+        "ablation_flags.enable_expansion"
+      ]
+    },
+    "expected_flag_transition": {
+      "from": true,
+      "to": false
+    },
+    "unexpected_key_or_difference": "FAIL",
+    "canonicalization": "UTF-8 json.dumps(obj, sort_keys=True, ensure_ascii=False, separators=(',', ':')), no newline"
+  },
+  "query_order": [
+    "eval001",
+    "eval002",
+    "eval003",
+    "eval004",
+    "eval005a",
+    "eval005b",
+    "eval006",
+    "eval007",
+    "eval008",
+    "eval009",
+    "eval010",
+    "eval011",
+    "eval012",
+    "eval013",
+    "eval014",
+    "eval015",
+    "eval016",
+    "eval017",
+    "eval018",
+    "eval019",
+    "eval020",
+    "eval021",
+    "eval022",
+    "eval023",
+    "eval024",
+    "eval025",
+    "eval026",
+    "eval027",
+    "eval028",
+    "eval029",
+    "eval030"
+  ],
+  "query_text_sha256_by_id": {
+    "eval001": "4af41f95977361a6eb6236f5f6ee3eab65241d657af177d3983163fb1b061c7f",
+    "eval002": "7b939d25719cf5d1f9cc4f7c0818fa9b0dcc7b7e5faa1026ce412938e94620bd",
+    "eval003": "f40141d27622f4d76ad2f471d01ad5688ede6596044f39f66480ba435d29bab2",
+    "eval004": "2f91b365909b54f0850a571cc2b4b310be1b7264f872157897c285c9480828b4",
+    "eval005a": "9c7db145329ae6948e9c7eca46b15f5cd2551e40c582e1cec41862ab4c84b523",
+    "eval005b": "37ba85d8eeba7b01ae76e6cd9f6a1cc40cb06b3dc565dd63075dbc648db77431",
+    "eval006": "e553549e58eebb3bfbfd6830c14d0f7592e7b96c61a5c1fbceb244a47021061b",
+    "eval007": "529c57697f5c4be50771f7c74e4b0335180de26678dc40b8037cc5c7f5ec93b6",
+    "eval008": "691af46125b4fa87162c72226abb9f28f89db8dcee3c80068eec569e04c5d88c",
+    "eval009": "959e5459822c0c38fafe3d265ef61ce90e37939da00bc338fb55996e36e8f999",
+    "eval010": "fc80a861e56880d0e7f471c534e259ec80847cea6a667527aaf66b82589743de",
+    "eval011": "831322d9fe5954ecaed82bf80d3a8866a16669ddd653ec457e497a7154727f48",
+    "eval012": "ed64059cf7b540a854ff9d925da27b2d0e94a6e771356a32012ecc74fcff3cfe",
+    "eval013": "1cc3d7f822d1e574d2c6cc3798e43f58506928929f6b2b241c5e8f854e718d4b",
+    "eval014": "c44416a3c57c3c3823371e26b3b39607c5891639de32da92419f166409b1866f",
+    "eval015": "65681e306d8be9b204a9915d00ea912970ed7818cbc9097e04c6bdf2507444c7",
+    "eval016": "664eec9c8fbda5d9b7a84f991ed9c981ad83b67e3d8fcabbcfece2fb7530a65f",
+    "eval017": "23b66a8f4b6eb1d609371b67e3d9163279fe533129ea310c90a644aea024c5d7",
+    "eval018": "6e14f7f8a0f2ecb7c13ffecb1ab0072389e26eaeda3110792033f004734760a2",
+    "eval019": "49dc976656c8b260038fc7d7eec1cae2f8a91f0af642dd3b1e0f3df084ccc08c",
+    "eval020": "85224e02cfdc03ae1dc056733299a83b423c3fe28588c1a1cd0f0a4ce6da2a24",
+    "eval021": "acf0614c312c8a0fd4d6e70a60116286cebd47a6e706d3486ed3c1c9f630c04f",
+    "eval022": "61958380bd5ccd931dff8ce2723023430fbaf271533712bc1d1d71c76a7726ee",
+    "eval023": "389e0bba15f107530055f776fb11e9bbfecef551ee41eaa6384d6c060f181548",
+    "eval024": "40625f2aba21e89155a20231dc425265dbbeeb96fbaf1b54a5517149148e641f",
+    "eval025": "81b50656402738c8f4e24c8a27c39d8f8c1fbb005782d6edea2bd59201126f7b",
+    "eval026": "e5470cb0ca38a9b5274a10a0f25c60d50cb759eb788ee7d0c2594a8a9a709c56",
+    "eval027": "65f2a7a38bfcfe495624f82f99b417e70cfb44ad1a7a0f52dec2522ba77377eb",
+    "eval028": "ece4cceb2ee05e27250e59ffb330eadca45e3b99f6d9444a4f2c1419df139501",
+    "eval029": "70749db2d5c746183d8c5bbdd10a55f8c4f06afc93a3bc71cd7d8c8fff3bb1ea",
+    "eval030": "1f46c782f09d3ff7f9d790e1d176ad97cb87bd47ea8a72a23605c98cd10bb2b0"
+  },
+  "query_input_schema": {
+    "type": "array",
+    "item_keys_exactly": [
+      "query_id",
+      "query"
+    ],
+    "count": 31,
+    "canonical_sha256": "1d29c4304f61d7c2235d7cab37e2bbf63a35e0c0caf6873d7e458e23904ebc78",
+    "created_in_phase5a": false
+  },
+  "execution_protocol": {
+    "production_order": [
+      "R2",
+      "A1",
+      "A2"
+    ],
+    "query_order_source": "query_order",
+    "production_runs_per_variant": 1,
+    "query_attempts_per_variant": 31,
+    "parallel_variants": false,
+    "quality_inspection_before_all_primary_production_sealed": false,
+    "evaluation_order": [
+      "R2",
+      "A1",
+      "A2"
+    ],
+    "report_order": [
+      "R1_vs_R2",
+      "R2_vs_A1",
+      "R2_vs_A2"
+    ],
+    "optional_order_after_primary_completed_and_budget_available": [
+      "A3",
+      "A4"
+    ],
+    "optional_mandatory": false,
+    "production_transport_attempts": 1,
+    "production_automatic_retries": 0,
+    "production_timeout_seconds": 120,
+    "evaluation_max_attempts_total_per_query": 3,
+    "evaluation_retry_on": "Existing evaluator exceptions including parse failures; identical prompt; accept first valid response",
+    "resume": "Only never-started production queries; never rerun completed/error/ambiguous-started queries; preserve evaluator attempt ceiling across restart",
+    "environment_preflight": [
+      "all pinned input/source hashes match",
+      "offline cached models and tokenizer match declared revisions",
+      "CPU and float32, frozen batches",
+      "production and evaluator model match",
+      "shared Python/packages and endpoint identity recorded before R2",
+      "query-only input matches projection hash",
+      "leakage and parity gates pass",
+      "exclusive-create paths and durable attempt ledger"
+    ]
+  },
+  "runtime_mechanism": {
+    "status": "DESIGNED_NOT_IMPLEMENTED",
+    "controller_unchanged": true,
+    "constructor": "scripts/agentic_rag.py:AgenticRAGController",
+    "flags": [
+      "enable_expansion",
+      "enable_answer_revision",
+      "enable_citation_revision"
+    ],
+    "nominal_budgets_unchanged": true,
+    "observer": "Pass-through client/pipeline observer shared across variants; preserve original trace payload; store first completeness response and raw events in sidecar; derive eligibility offline without gold",
+    "would_have_triggered_fields": [
+      "answer_revision_would_have_triggered",
+      "answer_revision_blocked_by_ablation",
+      "expansion_would_have_triggered",
+      "expansion_blocked_by_ablation"
+    ],
+    "unreached_decision_value": null,
+    "empty_missing_aspects_expansion_eligible": false,
+    "answer_revision_branch_includes_post_revision_check": true,
+    "existing_evaluation_cli_suitable_unmodified": false,
+    "reranker_default_revision_unpinned": true
+  },
+  "leakage_protection": {
+    "controller_input": [
+      "query string",
+      "opaque run_id",
+      "fresh AgentState"
+    ],
+    "preparation": "Trusted evaluator-side projection of verified dataset to query_id/query only",
+    "production_isolation": "Separate process with allowlisted file access; gold/historical results/evaluation tree denied; no inherited gold state or evaluator imports",
+    "prohibited": [
+      "generation_eval_v1_verified.json",
+      "required_point_ids",
+      "reference answers",
+      "gold_chunk_ids",
+      "retrieval_eval gold labels",
+      "Phase 4A failure labels",
+      "Phase 4E outcome labels",
+      "historical R0/R1 answers and result records"
+    ],
+    "static_checked_modules": [
+      "scripts/agentic_rag.py",
+      "scripts/bm25_baseline.py",
+      "scripts/citation_validator.py",
+      "scripts/dense_baseline.py",
+      "scripts/evidence_formatter.py",
+      "scripts/llm_client.py",
+      "scripts/rag_baseline.py",
+      "scripts/reranker_baseline.py",
+      "scripts/response_formatter.py",
+      "scripts/retrieval_pipeline.py"
+    ],
+    "future_test_ids": [
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5"
+    ],
+    "dynamic_tests_executed_in_phase5a": false,
+    "runtime_isolation_already_implemented": false
+  },
+  "analysis_plan": {
+    "primary_contrasts": [
+      [
+        "R2",
+        "A1"
+      ],
+      [
+        "R2",
+        "A2"
+      ]
+    ],
+    "replication_contrast": [
+      "R1",
+      "R2"
+    ],
+    "primary_delta": "R2 minus ablation",
+    "replication_delta": "R2 minus R1",
+    "ucr_lower_is_better": true,
+    "metrics": [
+      "answer_completeness",
+      "citation_completeness",
+      "citation_correctness",
+      "groundedness",
+      "unsupported_claim_rate",
+      "citation_syntax_validity"
+    ],
+    "answer_completeness": {
+      "macro": "sum(per_query_supported / per_query_required) / 31",
+      "micro": "total_supported / 102",
+      "display": "supported required points / 102"
+    },
+    "claim_metrics": "Macro defined ratios and pooled raw numerator/denominator sums, both with explicit denominators; zero denominator -> null",
+    "point_identity": [
+      "query_id",
+      "point_id"
+    ],
+    "transition_partition": [
+      "both_supported",
+      "only_R2_lost_by_ablation",
+      "only_ablation_gained_by_ablation",
+      "neither_supported"
+    ],
+    "net_ablation_point_change": "gained_by_ablation minus lost_by_ablation",
+    "per_query_fields": [
+      "query_id",
+      "R2 and ablation AC/CC/citation_correctness/groundedness/UCR/syntax",
+      "raw metric deltas",
+      "R2 intervention_used",
+      "ablation would_have_triggered and blocked",
+      "both final_status",
+      "both generation/evaluation errors",
+      "both retrieval/production LLM counts",
+      "trace links"
+    ],
+    "trigger_strata": {
+      "A1": "R2.revision_used true/false; unreached/error separate",
+      "A2": "R2.expansion_used true/false; unreached/error separate"
+    },
+    "full_set_always_reported": true,
+    "trigger_membership_selected_from_ablation_outcomes": false,
+    "statistics": [
+      "paired mean AC delta",
+      "median AC delta",
+      "R2 better/tied/ablation better",
+      "ablation improved/equal/worsened",
+      "required-point net difference",
+      "95% paired percentile bootstrap CI"
+    ],
+    "bootstrap": {
+      "unit": "paired query",
+      "resamples": 10000,
+      "seed": 20260906,
+      "sample_size": 31,
+      "confidence_level": 0.95,
+      "rng": "Python random.Random; rng.randrange(31)",
+      "seed_reset_per_primary_contrast": true,
+      "percentile_method": "linear interpolation at (N-1)*p for p=.025,.975",
+      "query_order": "manifest query_order",
+      "executed_in_phase5a": false
+    },
+    "missing_data": "Preserve frozen per-record evaluator semantics. Incomplete production/judging prevents complete primary 31-pair/102-point claim and CI; available-case diagnostics explicitly labeled; no judge imputation or rerun.",
+    "replication_variability": "Observed same-configuration variation only; no formal variance estimate or noise subtraction",
+    "attribution_limited_rule": "If nonzero R1-R2 variation and both abs(primary macro delta) <= abs(replication macro delta) and abs(primary net points) <= abs(replication net points), weaken attribution; separately disclose gross churn >= nonzero contrast churn",
+    "interpretation_categories": [
+      "Supported contribution on this benchmark",
+      "Mixed evidence",
+      "No observed contribution",
+      "Ablation performs better",
+      "Insufficient evidence"
+    ],
+    "interpretation_precedence": "Spec section 10; insufficient -> conflicting metrics mixed -> supported -> ablation better -> no contribution/ambiguous",
+    "small_trigger_subset_rule": "At most one R2-triggered query -> insufficient evidence for general mechanism contribution"
+  },
+  "efficiency_plan": {
+    "statistics": [
+      "total",
+      "mean/query",
+      "median/query",
+      "max/query"
+    ],
+    "call_types": [
+      "logical retrieval calls",
+      "production LLM calls"
+    ],
+    "exclude_evaluator_calls": true,
+    "include_errors_and_attempts": true,
+    "separately_report": [
+      "expansion merge-rerank operations",
+      "attempted vs completed retrieval",
+      "production stage counts",
+      "observable transport attempts/retries"
+    ],
+    "overhead_references": [
+      "R0",
+      "R2"
+    ],
+    "R0_basis": "Configured logical one retrieval and one generation call/query; 31 each; not measured HTTP totals",
+    "ratios": "variant/reference; percent overhead=100*(ratio-1); savings=R2-variant; percent saved=100*(1-variant/R2); zero reference -> null",
+    "monetary_estimation_without_token_cost_data": false
+  },
+  "hypotheses": {
+    "H1": "Removing Answer Revision is expected to reduce Answer Completeness on at least some revision-triggered queries, particularly generation-omission cases. Hypothesis, not guaranteed result.",
+    "H2": "Removing Evidence Expansion may have limited impact because most observed expansions did not change final Top-5 evidence; however a controlled run is required before concluding the mechanism is unnecessary.",
+    "H3": "Current benchmark evidence is insufficient for a strong hypothesis because Citation Revision triggered only once.",
+    "frozen_before_new_results": true,
+    "rewrite_after_results": false
+  },
+  "phase5b_artifact_contract": {
+    "production_root_template": "data/rag/traces/phase5/<variant_id>/",
+    "evaluation_root_template": "data/evaluation/generation/phase5/<variant_id>/",
+    "production_files": [
+      "production_outputs.jsonl",
+      "<query_id>.json",
+      "observations/<query_id>.json",
+      "production_attempts.jsonl"
+    ],
+    "evaluation_files": [
+      "variant_manifest.json",
+      "run_manifest.json",
+      "evaluation.jsonl",
+      "evaluation_attempts.jsonl",
+      "metrics.json"
+    ],
+    "counts_per_variant": {
+      "production_output_or_error_envelopes": 31,
+      "trace_envelopes": 31,
+      "evaluation_records": 31
+    },
+    "partial_trace_policy": "Errors explicitly partial; never label all traces successful on failure",
+    "run_manifest_required": [
+      "variant/run IDs",
+      "design/config/environment/source/input hashes",
+      "query order",
+      "start/end UTC",
+      "call and attempt counts",
+      "production/evaluator errors",
+      "artifact paths/hashes",
+      "completion/seal status",
+      "transport observability"
+    ],
+    "overwrite_existing": false,
+    "created_in_phase5a": false
+  },
+  "source_integrity": {
+    "method": "Before/after SHA-256 and path inventory; standard-library-only filesystem inspection",
+    "scope": "All preexisting regular project files except .venv, .git and .env; no credentials read. Includes data, scripts, tests, prompts, README, requirements and preexisting pyc.",
+    "before_file_count": 246,
+    "before_sha256": {
+      ".env.example": "cecbb7cd848bce9a2fe863be0225124e62e21e274b6be9c565a08b79ec75beea",
+      ".vscode/settings.json": "fb68765dabb197cac60376c803ac61894961b835ca8760705eb89a09e2177551",
+      "README.md": "6bd2fd77139aa7095f69b08cb4b6c0b1ccfaf26b1af8775c63cbb52bd402e1db",
+      "data/evaluation/backups/retrieval_eval.20260814-145701.jsonl": "27617dd7c5c1b52cd2f3d50997967d2250ce9488b84693a14b1777f1e0232a11",
+      "data/evaluation/backups/retrieval_eval.20260814-151851.jsonl": "93ec148670747337faf46d28936e350e2450bf8ad34222ca4cfd4afa800e238b",
+      "data/evaluation/backups/retrieval_eval.20260814-153333.jsonl": "fc8bb1dc428067a484230db5f2bce5d2e2e9a2fc09a54693d077cfad326048bb",
+      "data/evaluation/dev_queries.jsonl": "8ec68966ea6b6d0932a8fc03ae4e9a56495f89fe7ea568baebd5cd680eb270a2",
+      "data/evaluation/generation/ANNOTATION_WORKFLOW.md": "37854d15ccb9e2c525c16a46cda7eddad80b0dbb88135791ba06958070e5f204",
+      "data/evaluation/generation/agentic_rag_eval_v1_agentic-v1.jsonl": "a8d6a4bb5f18ddd79d6fcf98d8330b009e44764759e5f135e894528ad715b06e",
+      "data/evaluation/generation/agentic_rag_metrics_v1_agentic-v1.json": "ca0459b683bcec40833b69f288497b5d6e6bd2640daa1910ab0f18b7ff4bf1d5",
+      "data/evaluation/generation/agentic_trace_analysis_metrics_v0.json": "ab10b4cd185cc41acc553cc991df74040cc980fd284c8217fdbdccc8c0bacab7",
+      "data/evaluation/generation/agentic_trace_analysis_v0.jsonl": "750d33655f9038f7e3a4dc52160933f9cd742ca2d7a0b2142796c23f407e664a",
+      "data/evaluation/generation/backups/generation_eval_v1.20260902-145534.json": "672d0e3dea074247ef25aa2ab8da31cb2581f3f40ab247c1db8b459bf9057ebe",
+      "data/evaluation/generation/failure_analysis_metrics_v0.json": "d2ea8278285d78fcbe9c4adf613bc90b5762b8fa62ea45deb03393194a4b7fb7",
+      "data/evaluation/generation/failure_analysis_points_v0.jsonl": "bbc6993d0ff7108e5f39f6b34bd8549bff15493c3c435adefc3514b0cf1f1f53",
+      "data/evaluation/generation/failure_analysis_queries_v0.json": "842871677c4345562d92384e2abeb9f3f69da1d8f0158891dd02aea9200bd10e",
+      "data/evaluation/generation/generation_annotation_audit_v1.md": "a5d5c427d56b522def7a6d5b57e57ab4a1357dc97dc4264bfcd322c4b50ac77c",
+      "data/evaluation/generation/generation_annotation_v1_report.md": "deea80456981e5a1606ce3441f568fb18074f58d887ab0fa78ce7ecc45127394",
+      "data/evaluation/generation/generation_annotation_v1_review.md": "bef478931bbfe4e94aa62b0c9be49f1ab3f36b07097b0b78e687622401b9f4a3",
+      "data/evaluation/generation/generation_eval_v0.json": "df533a099d153112fc84f7c0287aae7a71c98f17cd64d4757ae39bcdb76b6fde",
+      "data/evaluation/generation/generation_eval_v0.schema.json": "388d2b2d69408f0c681aa58a3127b581525c43618bb57d26528a482f7af44b07",
+      "data/evaluation/generation/generation_eval_v0_manifest.json": "1c176886ba3cec0f9eff132905d7255047d8d3d58d7a26850cafc94ab715370e",
+      "data/evaluation/generation/generation_eval_v1.json": "672d0e3dea074247ef25aa2ab8da31cb2581f3f40ab247c1db8b459bf9057ebe",
+      "data/evaluation/generation/generation_eval_v1.schema.json": "ce26168fe96f1a8622d238318f4376a2baf5e9b3fd2cf1430b5490312dc0cc6a",
+      "data/evaluation/generation/generation_eval_v1_manifest.json": "54d4cbc081ddc37ce1f40d4c78e52dd26c98c541c54fd4379276194ec0e54e44",
+      "data/evaluation/generation/generation_eval_v1_verified.json": "1795dbef913e63492c5cd6b8963c2f1a85642ddee0b1a42087f97203bc1895a4",
+      "data/evaluation/generation/generation_eval_v1_verified_manifest.json": "693b2b3f0839bdefc380254de2640e47d9b5a81ff4c14f9acccbd5ee4c242fbe",
+      "data/evaluation/generation/partials/standard_rag_eval_v0_partial.20260902-151753.jsonl": "2f159f7b496ddf273b1da56796e62f57dc182fda6ce64ae6c86deb54e52f43b3",
+      "data/evaluation/generation/partials/standard_rag_eval_v0_partial.20260902-155801.jsonl": "15a09bc6c88ebee8bcfdc9652c93e281bb6906e52c9b3dae9315ea47fc3ca80c",
+      "data/evaluation/generation/reports/agentic_rag_eval_v1_agentic-v1.md": "f87b5999a8a1b6d43a46f98caea912f4acbfa9ebfd4f3cfaf6419cf1b9e82ea2",
+      "data/evaluation/generation/reports/agentic_trace_analysis_v0.md": "6aa6dffb0a33bd79ae6e6c2e874ec888a358cd2a8bc42c19369f5a1f7f654768",
+      "data/evaluation/generation/reports/standard_rag_eval_v0.md": "8dc7a635fa4c9663a9fdbe1d36956bd1e327403d2b18d4c430dd48567235add2",
+      "data/evaluation/generation/reports/standard_rag_failure_analysis_v0.md": "0d42160f2bc6427a31c2cc661c12edf2806bf85f3cdcdef4de26a5e47b4ee3ab",
+      "data/evaluation/generation/standard_rag_eval_v0.jsonl": "691f98cdffe29d6f4f2bfff8ad93c540447ee9cb4c78c3e48c003e2c2c4f487e",
+      "data/evaluation/generation/standard_rag_manifest_v0.json": "bb0a4c56873f118b47f29b0aead8d2c30fa2b0a14702707762fe4c63f6c3a3ae",
+      "data/evaluation/generation/standard_rag_metrics_v0.json": "720cc8acd5c05d819c3b5f74bd46db8a4217eb93eee8abf2ea50ba229748ffe9",
+      "data/evaluation/human_review_report.md": "6a7bdd7c6105846a4460e9a407400c39a3ce8be63cfe83bf03ce77499e65c027",
+      "data/evaluation/human_review_summary.csv": "8a466f8a431f18e68396bcb240a3e57b92c85b0519a7c5660f5d9a7fa3e3ec42",
+      "data/evaluation/results/bge-reranker-v2-m3-v0_by_difficulty.csv": "e709deedf97adbb68bb83b5afbffced6e60550053a99444b54b38ef427e302e6",
+      "data/evaluation/results/bge-reranker-v2-m3-v0_by_query_type.csv": "d58c01ac563d721ef8c01dace529dacf55335246aed7d7fa3678f42e017afaa7",
+      "data/evaluation/results/bge-reranker-v2-m3-v0_failures.md": "8f567b79909e26967d10ac64171271c17e75d68112fe505ec11a4ca2ec37581f",
+      "data/evaluation/results/bge-reranker-v2-m3-v0_metrics.json": "4442492f9233353af7eff798d94bef41740032cd2b1923b3e8913abf3bfb6ff3",
+      "data/evaluation/results/bge-reranker-v2-m3-v0_per_query.csv": "a27aaff1a59d0fa2996eb7cfe5067a76e9b882e99d4553c1a0275676396449c6",
+      "data/evaluation/results/bm25-simple-v0_by_difficulty.csv": "af5a79ed62ee0e2c194fe1f70b35115b8c1ca6c47baea47cbcb1c08596dd1cd6",
+      "data/evaluation/results/bm25-simple-v0_by_query_type.csv": "c0d81a4216d1bb53de6ffe8ad4736ab4c3fcd9a3fdbb12f27372cc8fd031d59a",
+      "data/evaluation/results/bm25-simple-v0_failures.md": "4cdd44dbd183cd86462ced16172742dbac197bd51f722c09c4f826a85cc1035d",
+      "data/evaluation/results/bm25-simple-v0_metrics.json": "ce546074e152a6215a04d95704a8b037e28f1e8d09573ee1ba3e9b66faf0e2db",
+      "data/evaluation/results/bm25-simple-v0_per_query.csv": "d5f9638f87d6ed9222c43a8015bc750851e9f2f5e94db31c84a092d26e3ba54c",
+      "data/evaluation/results/bm25-vs-dense-comparison.md": "1a41c90e58e98a19d951fdae58b36c97ee19d038128e95053bd6d839158aa3b2",
+      "data/evaluation/results/candidate-union-v0_metrics.json": "d329f16436d992107576cc25ee6d66261b93cfefaa4b3bc03556a8f88242d3ed",
+      "data/evaluation/results/candidate-union-v0_missing_gold.csv": "cee79786efb3a0846d17b0234d28920ac24732325f7de73fe947ce91258c4d76",
+      "data/evaluation/results/candidate-union-v0_per_query.csv": "cd083da295506525ee0c7d299a1255cf60f4fb5a4aaab1df49fc3b0d40599f20",
+      "data/evaluation/results/candidate-union-v0_report.md": "bd61ab672c43f7f350d5d98be6e0da6bdf1859abfa577228eee29191b6f69930",
+      "data/evaluation/results/dense-jina-v3-v0_by_difficulty.csv": "397f41b71a5ae8e4d1f772f09237b8f629ccd2cff1f8d1eee80cf66678bc1d7d",
+      "data/evaluation/results/dense-jina-v3-v0_by_query_type.csv": "c720648f9f0988992631c6caf88998a85e7bd6ab0e14807061c45566f910bc66",
+      "data/evaluation/results/dense-jina-v3-v0_failures.md": "8f4eb4e7ff02ee798dce91b7cd64edfef39f44f435374e58ccf805dcf28cf8f3",
+      "data/evaluation/results/dense-jina-v3-v0_metrics.json": "09866cd74f65554c35cc40b24d88b4c93ef1d296748465fa37e7e80e53cdde87",
+      "data/evaluation/results/dense-jina-v3-v0_per_query.csv": "9b49756d4eabead01e7dea89cfdf420c682643e61e2280d93fb5a883e254a020",
+      "data/evaluation/results/hybrid-rrf-v0_by_difficulty.csv": "8dfe9e642ab6e7cab9a2727e5bd3bcb74328c30988bd0371e4da6d076e03e290",
+      "data/evaluation/results/hybrid-rrf-v0_by_query_type.csv": "f22694508e8c6f65f4549d6ef2bb197c04e60a43bd16d664f1eb22b64b54468e",
+      "data/evaluation/results/hybrid-rrf-v0_failures.md": "70802fc76c610bd447a699ef9af074b916647c928b57dcd0bda7ed6345574fd6",
+      "data/evaluation/results/hybrid-rrf-v0_metrics.json": "adf8b1986738298eb0789c6655089a1e6f9e4bb217a6b29dad041948838855dc",
+      "data/evaluation/results/hybrid-rrf-v0_per_query.csv": "91e5f12490420ca91908123550316e85060a2bcb7fed9e834e4a559052ecb213",
+      "data/evaluation/results/retriever-comparison-v0.md": "4f74d2874476b2891fea6070899d1f18458c9f7cd8b860040a9e605bcf742273",
+      "data/evaluation/retrieval_eval.jsonl": "659c5cd0ff378747b9b135df00be57e5c1f5681b7eede761d3ce5808afbf3c62",
+      "data/evaluation/retrieval_eval_annotation_report.md": "d98c9421edfc7fef69b50e4634a51cf5c998e13226f10a2da90d1d917103c9fd",
+      "data/evaluation/retrieval_eval_annotation_summary.csv": "ea35892d7ff28872f0ca4b675f7c81b631fb9ddd37bf23e69f80a53e6144fc2a",
+      "data/extracted/05-2026-TT-BKHCN.cleaned.txt": "8e252dba268018b2010d979f008a51cca4212f49a52001c8cdc930243e92f90f",
+      "data/extracted/05-2026-TT-BKHCN.raw.txt": "6c6f0cf70ed2aa1ebc163cefa08d2f2bf35fcb3b2ead3a0974c1792f2c0c92a5",
+      "data/extracted/134-2025-QH15.cleaned.txt": "c161cdc419dbee7ef12be9d69abbb1d36389e8d81c86e8eeb08e8b85bde9b300",
+      "data/extracted/134-2025-QH15.raw.txt": "a2d25aec9ca704ab5db436a7ef6405b9f51751e362dcdb67955b34599f7671d7",
+      "data/extracted/142-2026-ND-CP.cleaned.txt": "ba09d0fec6fb345880d99a7693e7b0b506abc2a32e834c98bbff14fcb3859d23",
+      "data/extracted/142-2026-ND-CP.raw.txt": "4c74678026e809bbd4eb4ddad1ea90c7227092f58f2a2c52b9b42b28bdceb945",
+      "data/indexes/bge-reranker-v2-m3-v0/reranker_manifest.json": "5a8f0845284bd2687addfe57de736606cfd01027118c2e7aa2c67dd0013d48e2",
+      "data/indexes/dense-jina-v3-v0/chunk_ids.json": "b74ecd99fb6a79140cc3ac3e65c447b808a1294516788d7652c8e17b82b8a489",
+      "data/indexes/dense-jina-v3-v0/embeddings.npy": "9e0db949191bc830f8f16858a2e7de6c04b7a23e957362153d1798b4d855be04",
+      "data/indexes/dense-jina-v3-v0/index_manifest.json": "54685dd8a5543a6c0eba678eef93bfa595e67c0bed10e15f2632b4e384558a5f",
+      "data/indexes/hybrid-rrf-v0/hybrid_manifest.json": "21a5861663c50050b63640c07f16cd209139f9ebd38bdb35ae9570eef2e262a5",
+      "data/processed/articles.jsonl": "fa8584bb2deda06fc216334f4030722a7ae7f5bbc329fec7cf3dd527cb864cf9",
+      "data/processed/chunks.jsonl": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "data/rag/legal-rag-v0_manifest.json": "980a436fb44c727d26d4cab6059457b54dd915015c42fd8a4e2dc90bdb759058",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval001.json": "25141dceea56ca96a7377588a7c64d4e2585ca867c4416da22ca174f90bf564d",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval002.json": "8c54c15847d99f63c225de41e4f770ff74efc0b1d29b5fb0350c68d52ee768ff",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval003.json": "b53cc17ec50ffd631c1ceda0047e87a2049804bb86e59cab2eee20f7b6cedd59",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval004.json": "479db80a3c421d17c52034c6abc66c5a865332a7071ad2a95cbd65d1b64e3135",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval005a.json": "b709ab073fa60ca9bc20421018149e3e1b5f12997ada77cea4edab2a2f11d2ba",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval005b.json": "bf159d710d5873700d13369b101b430480d5602c595ce1e6dafcdf3a9bab726d",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval006.json": "954756d2b452499323051b507cea38d541fe03c24cfc92db1117e228ce739641",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval007.json": "997faabee29b9a26f80ecf7fb01931b7de9ac269c5f007b512fb7cbfe94b4a0b",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval008.json": "87c78f08d17ae969d605a30323459719a5763bc112e9386eae741db643826315",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval009.json": "4dcfd8b5fc2c7aa32c886ea68e83edded394a471a991bb30bb4cf248526bbbc4",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval010.json": "7b653d8ba8bfd6248ea06d696a0cac58ce464b0860caf34b3175d2d0a42b30a0",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval011.json": "b734c28db4268e7056fb83ae2de4ab699c86494198c965b58adc575cb4386c56",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval012.json": "c8dbeff63de34d6d71f4a99a9bb621c49804d02abc739481328d8f4da2320c3e",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval013.json": "f9405c6865ca4fc5823bc8904e4f295cc9611d06f25062eb4035385d375eed97",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval014.json": "c46fe23270427a64557a903f4083f0642c06f9a9013b120b7a9e33d593db2cdf",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval015.json": "2798812d76030967c09dc0aaf2254cefb64e0d3296b244f7362e0015fa405228",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval016.json": "7a683265ef29edea00c5fdc1e3e99471cb227e711b9020aadd80188125200478",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval017.json": "82ce503a45908cdc4f2f18a32474763fef791d03909e3e2efab9ded1b85fe098",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval018.json": "aca28a01ca545c70d552f819329b499d16d8eba8fee730b316c057345ab2a936",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval019.json": "e8fdba42ac5e999e5c5951ffa771e193f4424824e4d0cd2ffeb40e860578dba5",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval020.json": "c4f9c93f8d7928a2f6a03c6d4bf0e0ae53f9e6eb18de775df006fba6f253ca16",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval021.json": "0deb2e716908d3ad68aeea1cf8660224c9515669550a2358811b235b81c71f27",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval022.json": "e1988000bb9fe1ad5d13d7904e28af149f07c94e96b41de2c26d651b34ff26f3",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval023.json": "61c963adbdc89a4d0618bffa8facef3cbdc4118d91f30861b62485733fc153fc",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval024.json": "97148165e4286826e003ad0be172663491430a8466cd96417bd4e300b3f2a029",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval025.json": "c9c08a8e76cb74d05b1bab1019a16c3387a2bea3fcef0f7ad38d49caf65a6938",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval026.json": "faf9191e612b4049d84fa6738d155c1a2172495ee06c5a5e57f31e5d230a338c",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval027.json": "c342f074ddd4cdfb27f712f4e9bbc8ea273f206fb897407e7edd092c968dfc24",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval028.json": "b8a71c5999f7a12c63a8eb2996177f9ae6cf412320ba999413ccd1ed4f902343",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval029.json": "adf9f47115dbba09df89e4bba2cb8b4051b5bfa2b346e21a4d0ab9fd225cc8d0",
+      "data/rag/traces/agentic-rag-v1/agentic-v1/eval030.json": "e4f4a77a477ad41fa01105ad0907bf5e6a6bb5348cae986bc313249e84434b55",
+      "data/rag/traces/agentic-rag-v1_smoke.json": "326e6a560652e93093af40791dbfdcabffd6e890d522d9f6424e008f2519c5d2",
+      "data/rag/traces/legal-rag-v0_20260824T082500.431067Z.json": "0a9ee647a2f6468157827dc2112010fce80f3b4e2dc117540b37e5ac843ab4e1",
+      "data/rag/traces/legal-rag-v0_20260824T083023.964302Z.json": "805abef3464fba3e1be725de17f0b06545371c16c816dd278fff6886149a5807",
+      "data/rag/traces/legal-rag-v0_20260824T083324.619096Z.json": "b06560190732660351cbd3294cad400e9ee2d664946d15758204b00e01ff1214",
+      "data/rag/traces/legal-rag-v0_20260824T083822.282992Z.json": "bfc0adce8e7cd250abf9007738084b4c5549ace60dafe602aabf1ccfe443c899",
+      "data/rag/traces/legal-rag-v0_20260824T084241.384282Z.json": "fdb5d897e7f0d2307c73766dd8570e87a6e83005f456c21ae72e3a469dcd0e1b",
+      "data/rag/traces/legal-rag-v0_20260824T084747.340310Z.json": "1d88e7b697902ff7139c6c6089b7cf142411923fa8928f4379163e14b9f8b351",
+      "data/raw/docx/05-2026-TT-BKHCN.docx": "e17a3067d886007f781ab026aeced743a81cb5188fea6b95a96c0e446a81bef1",
+      "data/raw/docx/134-2025-QH15.docx": "fc6e87ba1b7eea3bd1cb37099e9f6d5f1e37fcd8970cca894e6e67865cdd20b7",
+      "data/raw/docx/142-2026-ND-CP.docx": "3e63b0ea3860b9d16247f52d887dea50cd2f7d0aa4d27be66b1ff3222da276e4",
+      "data/raw/pdf/05-2026-TT-BKHCN.pdf": "45616232b7023fef199cce2d52d5896d1db59b990a74fd40648b262d11490220",
+      "data/raw/pdf/134-2025-QH15.pdf": "53be2f9993e5060cc0ce723fc506d6535c9358978dbbeff11324c8d6236cae69",
+      "data/raw/pdf/142-2026-ND-CP.pdf": "988fa7091b9f70615b8ae984e7e43b15293eb31398a113c86cc34f26666d5e40",
+      "data/source_registry/backups/documents.20260728-170238-881364.csv": "379907f1144826621b2d1fc03accfced1e1ad2e678157e8f9d80da238a8ba88a",
+      "data/source_registry/backups/documents.20260809-194217-484925.csv": "7b91a80dd9cd66e78e8d36d4d58439ba21910d1b8763fbc57d4bdec0bbed8a4e",
+      "data/source_registry/backups/documents.20260809-194330-642068.csv": "fa40d188ac49ac8d03bb3f3947bca9ebdd57b9aabbe9f04f778923f856041437",
+      "data/source_registry/backups/documents.20260809-194424-558417.csv": "50ac0f9858568cbdaa0b3d207e45ee5ffd5f41e5ec97d656a634c54ee73ba157",
+      "data/source_registry/backups/documents.20260809-194439-245595.csv": "a32394bdc315d1cab597f9434c41af948056af947cb044c1c695a53d96db72ad",
+      "data/source_registry/backups/documents.20260809-194529-982940.csv": "1188919c8cb81b40be89f5d97d37325586a595c663b0baf8232ac4054d78f8d3",
+      "data/source_registry/backups/documents.20260809-194557-704060.csv": "8d76edf1f50aaa84a65cf9436dc6137d8459d19ac1494895bdfdae92875fec2f",
+      "data/source_registry/boilerplate_lines.txt": "260dca0ea92c5bedeaae10a131ec0ac6d1fb664c6fd5a4163bc6798b72eed829",
+      "data/source_registry/documents.csv": "8d0208708676317b28a681d4c5a5a74014ef2b7d9e1c29dab0594cca5eefadce",
+      "data/validation/05-2026-TT-BKHCN.outline.txt": "22907c87d93523fb799a2f7fa3589df13f292d467673f7c60a18b57a398ac5ad",
+      "data/validation/134-2025-QH15.outline.txt": "9b6a6136bd62574898bfec4354b5936d6024e18bfa70ac07b2ec3f35656c0bc6",
+      "data/validation/142-2026-ND-CP.outline.txt": "394619ba43cef8313ccdd3ed86f1832b08dacc1a374e4ccf4d66d5fd73d8e283",
+      "data/validation/chunking_report.csv": "e7173c51c4cf2d0c492a1e6083c36c0895b11414d4ce1ad663b7e91f020c8f7d",
+      "data/validation/cleaning_report.csv": "d98f187e9db9b28a17f51828d62bf023f182bdc3d937505d7b92aad1b7761169",
+      "data/validation/corpus_validation_details.txt": "2810d835d2601cc2f26564a0d0ddd75c58c504012e9a9479bcf1d9d346b23275",
+      "data/validation/corpus_validation_summary.csv": "61c49798aa35d16428a87105533055c7d68a773cdceaae1c7dbfc2825cdd2586",
+      "data/validation/duplicate_chunks_report.txt": "e7972764eb0b81a32b442dcd85e5bcf33fcf5786434d7b14b0063b2871013a35",
+      "data/validation/extraction_report.csv": "214004d5313fc810f55676b6563f1a87d3c7b093f69c965342ee45dc81b0b02c",
+      "data/validation/manual_verification/05-2026-TT-BKHCN.verification.md": "b920a0d080872dcbdd7e77491b173e5add3c50d26e017e412c6e827db5b42aa6",
+      "data/validation/manual_verification/134-2025-QH15.verification.md": "cff24c557264c4d3327adad8af99d801be4078a0ef5386a86099ce82dbbb91da",
+      "data/validation/manual_verification/142-2026-ND-CP.verification.md": "d16b09605bfd8c6a81431b53a6b83152cedb0acde8e5cf84240b19a795244000",
+      "data/validation/parser_report.csv": "9731a847b6a74b141a98b724b6bf0410dd52709aab38b9131647540e9bd2a880",
+      "data/validation/short_chunks_report.txt": "5b131295eeace5382bf472a7173a1286f17b2befd2ea99d46acb75b1c4399161",
+      "data/versions/corpus-v0.1/articles.jsonl": "fa8584bb2deda06fc216334f4030722a7ae7f5bbc329fec7cf3dd527cb864cf9",
+      "data/versions/corpus-v0.1/chunks.jsonl": "0a6eff1601d14d6409552d566411cc8aebb5f51938402e3f998c312d72d63c67",
+      "data/versions/corpus-v0.1/corpus_validation_details.txt": "2810d835d2601cc2f26564a0d0ddd75c58c504012e9a9479bcf1d9d346b23275",
+      "data/versions/corpus-v0.1/corpus_validation_manifest.json": "931776bf70f5f25c95c9ead061f75fa51443fc168dbda8db7bb9f63611d5bde9",
+      "data/versions/corpus-v0.1/corpus_validation_summary.csv": "61c49798aa35d16428a87105533055c7d68a773cdceaae1c7dbfc2825cdd2586",
+      "data/versions/corpus-v0.1/documents.csv": "8d0208708676317b28a681d4c5a5a74014ef2b7d9e1c29dab0594cca5eefadce",
+      "data/versions/corpus_validation_manifest.json": "931776bf70f5f25c95c9ead061f75fa51443fc168dbda8db7bb9f63611d5bde9",
+      "prompts/legal_rag_v0.txt": "0141aad79a262960eeeb88d9b138bc092ea15caeb0407a5ebadad27b8268d39e",
+      "requirements.txt": "81fb0e06a2b80a7ee839a231ea1141e77e146d7589c6ab4986a72a52b9c94621",
+      "retriever-reranker-comparison-v0.md": "4587567ffc78c189e81bb488c3c9be6d87a94bccc7cd5b25d777c3090f9d38f8",
+      "scripts/__pycache__/agentic_rag.cpython-312.pyc": "ccab60feebb53ef70e726a317ef04c195a6ab9d0966235ce1698eb41248cf08c",
+      "scripts/__pycache__/analyze_candidate_coverage.cpython-312.pyc": "2de7f58f596df97c7b7b54e13a2d3df1a5bc50aa56b7482a23f712fe061c382e",
+      "scripts/__pycache__/analyze_standard_rag_failures.cpython-312.pyc": "73c7ef88e8db43f3911a6ae022f5408b1180b00f3c00052d9ecf8e524030aa5d",
+      "scripts/__pycache__/annotate_retrieval_eval.cpython-312.pyc": "03a0cc99345b1e1c25d09b8d5c03d2de2e4eac5e649f32aa066106c7f02723a6",
+      "scripts/__pycache__/bm25_baseline.cpython-310.pyc": "f2b133dfeae0da6cb2eef041bfd4b5b032976f51a22452ea82e0ec54d3363413",
+      "scripts/__pycache__/bm25_baseline.cpython-312.pyc": "d2432365ab66b39fc9b9dce650f55c3a4c95997d91b94d26db99aa9655f8b4c6",
+      "scripts/__pycache__/build_chunks.cpython-312.pyc": "3305e672e1d17393f797082cb9a5eaca40b2cfdc584df4f271d8c29768df8049",
+      "scripts/__pycache__/build_dense_index.cpython-312.pyc": "2cf68bacf84285819b44c4892bb03a87699c474a1d1da48e387fb262bb1cb0aa",
+      "scripts/__pycache__/build_generation_eval_v1.cpython-312.pyc": "0b2396462050d0eb440cc5ec6bff71820df672c5ade8d84db05e886e175af1a0",
+      "scripts/__pycache__/check_register.cpython-312.pyc": "93d74d60e4a036b6bf1359dfca8eae0b4c0ec8887cff1a5e993371f458bbe49f",
+      "scripts/__pycache__/citation_validator.cpython-310.pyc": "9d584af817aabdd363aacf54fa59c738d2de688af56e95d3cfe9ea783504f702",
+      "scripts/__pycache__/citation_validator.cpython-312.pyc": "60c279954826e5b320253a998abf792323de1a544c793b4cbe9eb8b9b0dfe5f9",
+      "scripts/__pycache__/clean_docx_text.cpython-312.pyc": "a2b3b36eb528a9ce8da3bef10d135151ed09150f6c15d8e3221cd546d0228301",
+      "scripts/__pycache__/create_verification_samples.cpython-312.pyc": "5e81d9dcb96d5c35c89494af41db06db4d57af681f5e4d6047f7d941f3995adc",
+      "scripts/__pycache__/dense_baseline.cpython-310.pyc": "531075dbd90ff79d930b4ca7495f2d6f11493577c812ed8e4a82e5f709e84bf6",
+      "scripts/__pycache__/dense_baseline.cpython-312.pyc": "6430c1af126a439481308a564c9d6c8cbaa482358116a5b7532867dec74b1ad2",
+      "scripts/__pycache__/evaluate_agentic_rag.cpython-312.pyc": "5adf8ed3fa82fcb7c75d0eab96697dd8a88c6635d4f2032fe2df019585926342",
+      "scripts/__pycache__/evaluate_bm25.cpython-312.pyc": "faa6de5db254dbb486a7eb9b9366088d80239ab62f0171d844a188c22046711e",
+      "scripts/__pycache__/evaluate_dense.cpython-312.pyc": "e1fd43555d684a60d3ee1ddb6271cd2bc46418752b412396ddcd879d72cff5f5",
+      "scripts/__pycache__/evaluate_hybrid.cpython-312.pyc": "534f01566d92b79855fbd614ed9166ce3b5c8a8716c5b397264828ecf121a0a1",
+      "scripts/__pycache__/evaluate_reranker.cpython-312.pyc": "55f8c649416c637f5f836f0aedb2557bb3c00333162fe63c4fd7b1e689184b1d",
+      "scripts/__pycache__/evaluate_standard_rag.cpython-312.pyc": "e9f30f94ffff593d921fa9d012b0442bc481adeed23e556455c9063250d413f4",
+      "scripts/__pycache__/evidence_formatter.cpython-310.pyc": "45dd4c8722673f7e2995f2943123e87f5fc69129d4aac7dced79cae537183ecc",
+      "scripts/__pycache__/evidence_formatter.cpython-312.pyc": "29232cff8257d0fb314eccc442e22ec939b1a46395199f4c4536cd5f78e3fe1b",
+      "scripts/__pycache__/extract_docx.cpython-312.pyc": "528c6aa416c9d15059e4c1660e9bd1aeeda4868fd3e6c13938871d240ddec3ea",
+      "scripts/__pycache__/generate_human_review_report.cpython-312.pyc": "7d8a25c1a72af39d3565ca182fce1aec763595e8c6b664a10d390e851da67572",
+      "scripts/__pycache__/hash_raw_files.cpython-312.pyc": "1748f4188fe0dc58c065dfdaad698ba088b615eda06531f551a4e03152da8abf",
+      "scripts/__pycache__/hybrid_rrf.cpython-312.pyc": "c567c196e9c62f0b680e74a8258bb3d6e8f2347b6dca09efa279090fae8c447e",
+      "scripts/__pycache__/inspect_chunk_issues.cpython-312.pyc": "6a8cf09f695af38fef8aa70e6e29aeeefcabfbfd94fe850569aa30ab948a5a90",
+      "scripts/__pycache__/llm_client.cpython-310.pyc": "9bbca8e8d2ce57658f19abe8776f7379ab39807d7e7a3324bc08c4278d7108e5",
+      "scripts/__pycache__/llm_client.cpython-312.pyc": "21e8033ebd85f89a19c0f458e6f1e724e0e4c3120fb1d390dddd36e2fdbf8999",
+      "scripts/__pycache__/parse_legal_structure.cpython-312.pyc": "f6df5e37d7920c454bdb656e521d77002e00f2ea3ca02d123f7bd61e2a03f50f",
+      "scripts/__pycache__/rag_baseline.cpython-312.pyc": "3064052320cd5e1a6a13285b56a53906e05ed5ec13874baf1f8db76a0f47d66f",
+      "scripts/__pycache__/reranker_baseline.cpython-310.pyc": "403f1afde46eabb93a91b6f843fa3aab3415e34d65c7fa18454bc07a9182a82a",
+      "scripts/__pycache__/reranker_baseline.cpython-312.pyc": "c42afdd46b462382dbf38c2e5308d11f1591180f515e54e5df9fe774920b7767",
+      "scripts/__pycache__/response_formatter.cpython-310.pyc": "d37ea5e3e4b2c9083b42be58d2538f278326fbc25bf4a52340c62468d6b980c2",
+      "scripts/__pycache__/response_formatter.cpython-312.pyc": "e06e65b2b4b01b4c9c9ceda0a2628889b4084e6ca510e0a0c1c0b4ff33d2d5a7",
+      "scripts/__pycache__/retrieval_pipeline.cpython-310.pyc": "a1095b92d6397f3ddd707832cc4dc082227ecc5982bcc8be0864c6798c40bfd1",
+      "scripts/__pycache__/retrieval_pipeline.cpython-312.pyc": "208ff746c1e8605ae64d489deb45173c1fb928bbc5ae131264c067860fed548b",
+      "scripts/__pycache__/update_source_hashes.cpython-312.pyc": "4b9030f8ec6a0cd3d75a895297e5147c328d8388f5f2b497c46fa5750e1fe0a3",
+      "scripts/__pycache__/update_verification_status.cpython-312.pyc": "2f43c41f301cd6e2bcdb191e630eb15e9b3460bcc4b1723eda2a79a04127077b",
+      "scripts/__pycache__/validate_corpus.cpython-312.pyc": "c328f83dd9876e8039502169f3faaf4114dc6ed70a266a829bc7642f052353c5",
+      "scripts/__pycache__/validate_generation_eval.cpython-312.pyc": "ec20c634197254be590ab23894aaa765e4a6dd947bdf1d1cb502494cf643220c",
+      "scripts/__pycache__/validate_retrieval_eval.cpython-312.pyc": "a26d0f0959b661ce7745bf8ccbc110212870eb07f7c90b6a1deb01c8dcfd289b",
+      "scripts/agentic_rag.py": "e415429b39786e9cb7dc46488718fcda0fc164ca4a84e49d95630835188745b6",
+      "scripts/analyze_candidate_coverage.py": "ccd9e558ff1f478f2c226e6c5ef03727878b2e7f0c9e2ff14893b680b23695ad",
+      "scripts/analyze_standard_rag_failures.py": "2aa8f64f995bdccf1363e9b8c60a1115c903407329715fef056c0c1324fd23dd",
+      "scripts/annotate_retrieval_eval.py": "2acd0625801520816871ff6f14ae4a1b56095b12b7d92c75134526ce575e0a07",
+      "scripts/bm25_baseline.py": "704f6ba51889411f4891ddad615e54eb68672583e37aea6b5a9afca90c378ac8",
+      "scripts/build_chunks.py": "da4045b0256d060582074b802b79d2d9f34052b2edcaf347d91de804b536ed78",
+      "scripts/build_dense_index.py": "b4f78e0c5f80771f629a1e770dd4ccabee9121d83666564bed68f69d281ab1fd",
+      "scripts/build_generation_eval_v1.py": "93321abcd3574727424308cbe4adc1e6e06b3a30b7ddbb7dbbc0e00b41495332",
+      "scripts/check_register.py": "9557c0791e3919c8797b6b80c36ae15348224e10b68f8c189f53bf36ba0feb10",
+      "scripts/citation_validator.py": "7e5eeb43e2c9316909e7c297f05dbaa9171eb51c3a5db76bd26944c6a36232fc",
+      "scripts/clean_docx_text.py": "c123316e243b7b55464edc28b151bebbffd64b967f0a1deb574a0bb0e6e73275",
+      "scripts/create_verification_samples.py": "c5499cc84c33a2942da7969ee232f5e29747135a449d8557c5c2fd0df0518505",
+      "scripts/dense_baseline.py": "030602670a13bc17aac4ab97dd65209a5825c4ef790fd25c0c3b6c2224fe99a8",
+      "scripts/evaluate_agentic_rag.py": "b78ad3224be4bd996d494f870dab3caaf0cc2680ad54d832936624db9dcc04c9",
+      "scripts/evaluate_bm25.py": "060fedbc186598149de1d545058bb6ba67549968fc78542fc2850aa75362cce2",
+      "scripts/evaluate_dense.py": "d4e262b0dc8bf644285f9453c061306e18d3e80c1e46f1b6fcb6926384c7538c",
+      "scripts/evaluate_hybrid.py": "aba1d2f9d84052668640ef8df73d95018fbb806c6d7f823a14f37324f42d7ef9",
+      "scripts/evaluate_reranker.py": "1b8b078e520087431373daf34d32e599bc4b83fcf51d266a4d08e08749440c81",
+      "scripts/evaluate_standard_rag.py": "0c8a8def9966b94c946d80ddbfbf31a4ddd446e3e6eb49f02c89254a2f032bf7",
+      "scripts/evidence_formatter.py": "f9ad9f39944f6ec72bea920822f17c53e7ac95bf9ac416a1d53382ab8e04d259",
+      "scripts/extract_docx.py": "256c7b10e709c66f2424714575ed435f6b5d8f6a18eff08b72450ec93b034379",
+      "scripts/generate_human_review_report.py": "aa9bb4525c2897d65f8c3d30ef1c50088ae0647035571940052a2cbdf5a14284",
+      "scripts/hash_raw_files.py": "2891a9fc5997b82781e65471fd6e690cdb936d3676be87b4a27fcaa344c6877a",
+      "scripts/hybrid_rrf.py": "864e02129fa8fa4e21fe596a82b7c6592693abae90312605c30abe5110975470",
+      "scripts/inspect_chunk_issues.py": "2701eda4f36d9e23493b5e38cce47934cc2941af00ccf58bbcc3d2a1a55733f3",
+      "scripts/llm_client.py": "b60c064aad63ef92d320af697791ec65c5c30c35caee8a7e174c3ef37724bf84",
+      "scripts/parse_legal_structure.py": "cb4c0fbcc95034b98fe7cb492fdab501a9cedac3b3d5ac889ee28a34d7f97215",
+      "scripts/rag_baseline.py": "ae5a2dd7b0f89d7969c16c5d711e229bd1673df43e188f9a7296086e57d9b95a",
+      "scripts/reranker_baseline.py": "609c2eb42f52265fa0a630697cedd2e000b9b5a52a4b0a848259d597e2bb6f85",
+      "scripts/response_formatter.py": "ccc506802981ca3e200b043c4c279e94b2dc3dbdaa8f60317a6d69369154f7e0",
+      "scripts/retrieval_pipeline.py": "5080df6e2bbfb33cf945f3fa797107ac7d510cab1f6e2bc4f3bf25741766fd42",
+      "scripts/update_source_hashes.py": "a9d2a7ea91c627b6c1fa2628ae60894bd6d4c78795092e551b4ed8a0d492f5c8",
+      "scripts/update_verification_status.py": "7b6ecc51704d8ccc047b42b3ed29044063714b259c7aff4e0ec7a66b28a3bf88",
+      "scripts/validate_corpus.py": "27c2c3cbeb68426658c1fe20fe6baa3376232a81b329e837f73e0bf54b2c9f95",
+      "scripts/validate_generation_eval.py": "b8b5cc4eff89bc41eae0ff3f4bf3379c7ba6c11d508b8ec4d1082d5e7a18c824",
+      "scripts/validate_retrieval_eval.py": "22f4f8f1df97f6d060ce87c856bac130b33fce30a88c8c4a5892d130cfff9ab5",
+      "tests/__pycache__/test_agentic_evaluation.cpython-312.pyc": "d3b52000e43bf048eef572cedbce23d2c09fb39883a44f938046568aacdad981",
+      "tests/__pycache__/test_agentic_rag.cpython-312.pyc": "d5b0bd8f87af901920c04ba37f8f9e47cb5bed316781e908c0a7d440f5776757",
+      "tests/__pycache__/test_generation_eval.cpython-312.pyc": "53334246d3a81fa2e50f5e71fdf2320ca9b7833eb634c8d325754e0e13895658",
+      "tests/__pycache__/test_rag_runtime.cpython-312.pyc": "47ac26aba90b3e1b4e421d8e2aa4a82fee1ae634fe3fdf29e0b1f2332ce1d98d",
+      "tests/test_agentic_evaluation.py": "1c6151b848dec324e855b5ac45521bc4937e0a4759af58ac40746a79fe7a62d2",
+      "tests/test_agentic_rag.py": "b3dcc8c5a630f2a459ba3298034479659b28e85cadbef9109ee9b3159cce8d71",
+      "tests/test_generation_eval.py": "a4d6f67223545de9705a9f4da2b8ca4fa5752b91229103947cae3f45a2c16d17",
+      "tests/test_rag_runtime.py": "1a213900811d07deaf709fa48126e94e58a0a0a65476b92151e55a26db038c07"
+    },
+    "before_inventory_canonical_sha256": "f71c26ad86f19328faf3dd2a846f46f47a1ef3e14534406d3bad027ed40930d7",
+    "after_equal_before": true,
+    "modified_original_paths": [],
+    "deleted_original_paths": [],
+    "new_repository_paths": [
+      "data/evaluation/generation/phase5/phase5a_ablation_spec_v0.md",
+      "data/evaluation/generation/phase5/phase5a_ablation_manifest_v0.json"
+    ],
+    "phase4e_historical_provenance_files_matched": 113,
+    "git_commit": null,
+    "git_note": "Git metadata unavailable; current byte hashes are authoritative. Historical full runtime commit unavailable."
+  },
+  "validation": {
+    "phase5a_status": "PASS",
+    "mode": "Static local design/integrity validation only; no runtime/evaluator imports or execution",
+    "checks": [
+      "JSON parses and specification hash matches",
+      "31 unique query identities and 102 unique query/point tuples",
+      "historical R0/R1 hash declarations match",
+      "all 31 embedded R1 traces equal disk traces",
+      "Phase4E 113 source hashes match",
+      "nominal constants and existing constructor flags match AST",
+      "exact recursive primary and optional capability-only config differences",
+      "negative diff controls reject Top-K, hash, budget, type, extra/missing key and no-op changes",
+      "local production import closure excludes evaluator/gold paths and fields",
+      "all 246 preexisting source artifact bytes unchanged",
+      "only the two requested design files added"
+    ],
+    "future_runtime_acceptance_tests": "NOT RUN — required in Phase 5B before production",
+    "network_calls": 0,
+    "gemini_api_calls": 0,
+    "new_retrieval_calls": 0,
+    "new_generation": 0,
+    "new_evaluation": 0,
+    "bootstrap_executed": false,
+    "design_frozen": true,
+    "ready_for_phase5b": true,
+    "readiness_meaning": "Ready to implement the declared Phase 5B wrapper and preflight; no runner implementation or provider/model availability certification in 5A",
+    "static_test_results": {
+      "config_diff_positive_cases": 4,
+      "config_diff_negative_controls_rejected": 9,
+      "original_files_preserved": 246,
+      "named_frozen_artifact_hashes_matched": 67,
+      "phase4e_provenance_hashes_matched": 113,
+      "verified_queries": 31,
+      "unique_query_point_tuples": 102,
+      "R1_embedded_disk_traces_matched": 31,
+      "production_local_modules_checked": 10,
+      "source_changes": [],
+      "unexpected_new_paths": []
+    }
+  },
+  "limitations": [
+    "Single-run post-hoc final-benchmark evidence; 31 queries only",
+    "Historical full runtime source/environment provenance unavailable",
+    "Current default reranker revision not enforced without Phase5B preflight guard",
+    "No measured R0 HTTP/retry/token costs",
+    "Runtime filesystem isolation and observer not yet implemented",
+    "Gemini backend identity may vary despite same model alias and temperature zero"
+  ],
+  "specification": {
+    "path": "data/evaluation/generation/phase5/phase5a_ablation_spec_v0.md",
+    "sha256": "51f1bf9e4db72ac3c3edeaf36ef5385dc9aff295c63068d4ffb07926ecb15b64"
+  },
+  "immutability": "Do not rewrite frozen design. Materialize canonical per-variant objects with exclusive create; seal both design file byte hashes in Phase5B run lock; new amendments require new version before execution.",
+  "stop_condition": "STOP after Phase5A design validation. Do not implement or execute Phase5B.",
+  "reproducibility": {
+    "purpose": "Reproduce static design validation only; does not implement or execute Phase5B.",
+    "instructions": "From the repository root, extract validator_source below to /tmp/validate_phase5a_design.py and run python3 -B /tmp/validate_phase5a_design.py. Standard library only. It reads and hashes design/source artifacts and performs AST/config checks without importing application modules.",
+    "validator_source_sha256": "d8b803562095b87df1f81822892341caf72b6a44858fdd476b064e2481e4ceb5",
+    "validator_source": "\"\"\"Static Phase 5A design checks only. No application imports or execution.\"\"\"\nimport ast\nimport copy\nimport hashlib\nimport json\nfrom pathlib import Path\n\nROOT = Path.cwd()\nM = ROOT / 'data/evaluation/generation/phase5/phase5a_ablation_manifest_v0.json'\nm = json.loads(M.read_text())\ndef require(condition, message):\n    if not condition:\n        raise AssertionError(message)\ndef sha(path):\n    return hashlib.sha256(path.read_bytes()).hexdigest()\ndef canonical(obj):\n    return json.dumps(obj, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()\ndef chash(obj):\n    return hashlib.sha256(canonical(obj)).hexdigest()\ndef read(rel):\n    return json.loads((ROOT / rel).read_text())\ndef rows(rel):\n    return [json.loads(line) for line in (ROOT / rel).read_text().splitlines() if line.strip()]\ndef diff(a, b, prefix=''):\n    if type(a) is not type(b):\n        return [prefix]\n    if isinstance(a, dict):\n        out = []\n        for k in sorted(set(a) | set(b)):\n            p = prefix + '.' + k if prefix else k\n            if k not in a or k not in b:\n                out.append(p)\n            else:\n                out.extend(diff(a[k], b[k], p))\n        return out\n    return [] if a == b else [prefix]\n\ndef check_config(key, candidate):\n    ref = m['variant_manifests']['R2']\n    expected = m['config_diff_validation']['expected_difference_paths'][key]\n    require(candidate['variant_id'] == m['variant_manifests'][key]['variant_id'], 'variant ID drift')\n    require([p for p in diff(ref, candidate) if p != 'variant_id'] == expected, 'unexpected config diff')\n    for p in expected:\n        flag = p.split('.')[1]\n        require(ref['ablation_flags'][flag] is True and candidate['ablation_flags'][flag] is False, 'unexpected flag values/types')\n\nrequire(m['phase'] == '5A' and m['status'] == 'FROZEN' and m['execution_started'] is False, 'scope')\nrequire(m['primary_ids'] == ['R2', 'A1', 'A2'], 'primary IDs')\nrequire(m['execution_protocol']['production_order'] == ['R2', 'A1', 'A2'], 'order')\nrequire(sha(ROOT / m['specification']['path']) == m['specification']['sha256'], 'spec hash')\nfor key, v in m['variant_manifests'].items():\n    require(chash(v) == m['variant_manifest_canonical_sha256'][key], 'variant hash ' + key)\n    if key != 'R2':\n        check_config(key, v)\nnegative_controls = []\nmutations = {\n    'top_k': lambda x: x.update(top_k=6),\n    'prompt_hash': lambda x: x.update(prompt_hash='0'*64),\n    'budget': lambda x: x.update(max_llm_calls=7),\n    'bool_vs_integer': lambda x: x['ablation_flags'].update(enable_expansion=1),\n    'extra_key': lambda x: x.update(extra_behavior=True),\n    'missing_key': lambda x: x.pop('dense_revision'),\n    'noop_ablation': lambda x: x['ablation_flags'].update(enable_answer_revision=True),\n    'wrong_second_capability': lambda x: x['ablation_flags'].update(enable_citation_revision=False),\n    'timestamp': lambda x: x.update(created_at='changed'),\n}\nfor name, mutate in mutations.items():\n    candidate = copy.deepcopy(m['variant_manifests']['A1'])\n    mutate(candidate)\n    try:\n        check_config('A1', candidate)\n    except AssertionError:\n        negative_controls.append(name)\n    else:\n        raise AssertionError('negative control accepted: '+name)\nprint('PASS exact config diffs R2/A1, R2/A2, optional A3/A4;',len(negative_controls),'negative controls rejected')\n\nbefore = m['source_integrity']['before_sha256']\nrequire(chash(before) == m['source_integrity']['before_inventory_canonical_sha256'], 'inventory hash')\ncurrent = {str(p.relative_to(ROOT)): sha(p) for p in sorted(ROOT.rglob('*')) if p.is_file() and not any(x in p.relative_to(ROOT).parts for x in ('.venv', '.git', '.env'))}\nrequire(len(before) == 246, 'source count')\nrequire(all(current.get(p) == h for p,h in before.items()), 'original file modified/deleted')\nrequire(set(current)-set(before) == set(m['source_integrity']['new_repository_paths']), 'unexpected new path')\nfor a in m['frozen_artifacts']:\n    require(sha(ROOT/a['path']) == a['sha256'], 'frozen artifact hash '+a['path'])\nprint('PASS original 246 files unchanged; exactly two design files added; 67 named frozen artifact hashes match')\n\nbase = 'data/evaluation/generation/'\nr0manifest = read(base+'standard_rag_manifest_v0.json')\nr1manifest = read(base+'agentic_rag_metrics_v1_agentic-v1.json')['manifest']\nfield_paths = {\n    'generation_verified_sha256': base+'generation_eval_v1_verified.json',\n    'retrieval_eval_sha256': 'data/evaluation/retrieval_eval.jsonl',\n    'corpus_chunks_sha256': 'data/versions/corpus-v0.1/chunks.jsonl',\n}\nfor field,path in field_paths.items():\n    require(before[path] == r0manifest['dataset_hashes'][field] == r1manifest['dataset_hashes'][field], 'historical hash '+field)\nrequire(before[base+'generation_eval_v1_verified_manifest.json'] == r0manifest['dataset_hashes']['generation_verified_manifest_sha256'], 'verified manifest historical hash')\nrequire(before['prompts/legal_rag_v0.txt'] == r0manifest['prompt_sha256'] == r1manifest['dataset_hashes']['prompt_sha256'], 'prompt historical hash')\nrequire(before[base+'standard_rag_eval_v0.jsonl'] == r0manifest['dataset_hashes']['result_dataset_sha256'], 'R0 results historical hash')\nrequire(before[base+'agentic_rag_eval_v1_agentic-v1.jsonl'] == r1manifest['dataset_hashes']['results_sha256'], 'R1 results historical hash')\nrequire(before[base+'standard_rag_metrics_v0.json'] == r1manifest['dataset_hashes']['standard_rag_metrics_sha256'], 'R0 metrics historical hash')\nphase4 = read(base+'agentic_trace_analysis_metrics_v0.json')['source_integrity']['hashes']\nrequire(len(phase4) == 113 and all(before.get(p) == v['after_sha256'] for p,v in phase4.items()), 'Phase4E provenance')\nprint('PASS R0/R1 embedded historical hashes and all 113 Phase4E provenance hashes')\n\ndataset = read(base+'generation_eval_v1_verified.json')\nitems = dataset['items']\nrequire(dataset['dataset_status']=='verified' and dataset['evaluation_version']=='generation-eval-v1', 'dataset status/version')\nrequire(len(items) == len({i['query_id'] for i in items}) == 31, 'query count/uniqueness')\nrequire([i['query_id'] for i in items] == m['query_order'], 'query order')\nrequire(sum(len(i['required_points']) for i in items) == 102, 'point count')\nrequire(len({(i['query_id'], p['point_id']) for i in items for p in i['required_points']}) == 102, 'point uniqueness')\nprojection = [{'query_id': i['query_id'], 'query': i['query']} for i in items]\nrequire(chash(projection) == m['query_input_schema']['canonical_sha256'], 'projection hash')\nrequire(all(hashlib.sha256(i['query'].encode()).hexdigest() == m['query_text_sha256_by_id'][i['query_id']] for i in items), 'query hash')\nrequire(all(i['query']==i['query'].strip() and i['annotation_status']=='verified' for i in items), 'query whitespace/verification')\nexpected_queries = {i['query_id']: i['query'] for i in items}\nfor name in ['standard_rag_eval_v0.jsonl', 'agentic_rag_eval_v1_agentic-v1.jsonl']:\n    rs = rows(base+name)\n    require(len(rs)==31 and {r['query_id']:r['query'] for r in rs} == expected_queries, 'historical query mapping')\n    if name.startswith('agentic'):\n        for r in rs:\n            require(r['trace'] == read('data/rag/traces/agentic-rag-v1/agentic-v1/'+r['query_id']+'.json'), 'disk/embedded trace mismatch')\nrequire({r['query_id']:r['query'] for r in rows('data/evaluation/retrieval_eval.jsonl')} == expected_queries, 'retrieval query mapping')\nprint('PASS 31 verified query identities, 102 query/point tuples, projection hashes, 31 R1 disk/embedded traces')\n\nruntime_ast = ast.parse((ROOT/'scripts/agentic_rag.py').read_text())\nconstants = {n.targets[0].id: ast.literal_eval(n.value) for n in runtime_ast.body if isinstance(n,ast.Assign) and isinstance(n.targets[0],ast.Name) and n.targets[0].id.startswith('MAX_')}\nexpected_constants = {'MAX_SUB_QUERIES':3,'MAX_RETRIEVAL_EXPANSIONS':1,'MAX_ANSWER_REVISIONS':1,'MAX_CITATION_REVISIONS':1,'MAX_LLM_CALLS':6}\nrequire(constants == expected_constants, 'controller constants')\ncls = next(n for n in runtime_ast.body if isinstance(n, ast.ClassDef) and n.name=='AgenticRAGController')\ninit = next(n for n in cls.body if isinstance(n,ast.FunctionDef) and n.name=='__init__')\nrequire([a.arg for a in init.args.kwonlyargs] == ['enable_expansion','enable_answer_revision','enable_citation_revision'], 'constructor flags')\nrequire(all(ast.literal_eval(v) is True for v in init.args.kw_defaults), 'flag defaults')\nrun = next(n for n in cls.body if isinstance(n,ast.FunctionDef) and n.name=='run')\nbranch_conditions = [ast.unparse(n.test) for n in ast.walk(run) if isinstance(n,ast.If)]\nrequire(any('self.enable_expansion' in s and 'state.missing_aspects' in s for s in branch_conditions), 'expansion guard')\nrequire(any('self.enable_answer_revision' in s and 'MAX_ANSWER_REVISIONS' in s for s in branch_conditions), 'answer guard')\nrequire(any('self.enable_citation_revision' in s and 'MAX_CITATION_REVISIONS' in s for s in branch_conditions), 'citation guard')\nmodules = set()\nqueue = ['agentic_rag']\nforbidden = ['generation_eval_v1_verified', 'retrieval_eval.jsonl', 'required_point_ids', 'gold_chunk_ids', 'failure_analysis_', 'agentic_trace_analysis_']\nwhile queue:\n    name = queue.pop()\n    if name in modules:\n        continue\n    modules.add(name)\n    path = ROOT/'scripts'/(name+'.py')\n    source = path.read_text()\n    require(not name.startswith(('evaluate_', 'validate_generation_eval')), 'evaluator import in production')\n    require(all(s not in source for s in forbidden), 'leakage source marker in '+name)\n    for n in ast.walk(ast.parse(source)):\n        imports = [n.module] if isinstance(n,ast.ImportFrom) else [a.name for a in n.names] if isinstance(n,ast.Import) else []\n        for module in imports:\n            if module and (ROOT/'scripts'/(module.split('.')[0]+'.py')).exists():\n                queue.append(module.split('.')[0])\nrequire(sorted('scripts/'+n+'.py' for n in modules)==m['leakage_protection']['static_checked_modules'], 'import closure inventory')\nprint('PASS frozen AST budgets/flags/branch guards; 10-module production import closure has no evaluator/gold markers')\n\nb = m['analysis_plan']['bootstrap']\nrequire((b['seed'], b['resamples'], b['sample_size']) == (20260906,10000,31), 'bootstrap plan')\nrequire(not b['executed_in_phase5a'], 'bootstrap must not execute')\nrequire(all(m['validation'][k] == 0 for k in ['network_calls','gemini_api_calls','new_retrieval_calls','new_generation','new_evaluation']), 'execution scope counters')\nrequire(not m['leakage_protection']['dynamic_tests_executed_in_phase5a'], 'dynamic tests misreported')\nrequire(m['runtime_mechanism']['status']=='DESIGNED_NOT_IMPLEMENTED', 'implementation scope')\nprint('Phase 5A static validation: PASS. No application modules imported or runtime/evaluator calls executed.')\n",
+    "scope_note": "The immutable original-file inventory covers the initial workspace snapshot. Extra project files created by later work will intentionally fail the Phase5A-only path check; validate before starting Phase5B."
+  }
+}

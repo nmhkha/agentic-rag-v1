@@ -1,0 +1,63 @@
+{
+  "answer_completeness": {
+    "denominator": 102,
+    "macro": 0.6967741935483871,
+    "macro_defined_queries": 31,
+    "micro": 0.6176470588235294,
+    "numerator": 63,
+    "raw": "63/102"
+  },
+  "citation_completeness": {
+    "denominator": 102,
+    "macro": 0.6967741935483871,
+    "macro_defined_queries": 31,
+    "micro": 0.6176470588235294,
+    "numerator": 63,
+    "raw": "63/102"
+  },
+  "citation_correctness": {
+    "denominator": 85,
+    "macro": 0.9354838709677419,
+    "macro_defined_queries": 31,
+    "micro": 0.9647058823529412,
+    "numerator": 82,
+    "raw": "82/85"
+  },
+  "citation_syntax_validity": {
+    "basis": "deterministic citation_valid; separate from semantic correctness",
+    "denominator": 31,
+    "macro": 1.0,
+    "macro_defined_queries": 31,
+    "micro": 1.0,
+    "numerator": 31,
+    "raw": "31/31"
+  },
+  "evaluation_errors": 0,
+  "generation_errors": 0,
+  "groundedness": {
+    "denominator": 87,
+    "macro": 0.9354838709677419,
+    "macro_defined_queries": 31,
+    "micro": 0.9655172413793104,
+    "numerator": 84,
+    "raw": "84/87"
+  },
+  "query_count": 31,
+  "raw_claim_counts": {
+    "cited_claim_count": 85,
+    "claim_count": 87,
+    "correctly_cited_claim_count": 82,
+    "grounded_claim_count": 84,
+    "unsupported_claim_count": 3
+  },
+  "raw_count_anomalies": [],
+  "required_point_count": 102,
+  "unsupported_claim_rate": {
+    "denominator": 87,
+    "macro": 0.06451612903225806,
+    "macro_defined_queries": 31,
+    "micro": 0.034482758620689655,
+    "numerator": 3,
+    "raw": "3/87"
+  }
+}

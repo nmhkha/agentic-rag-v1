@@ -1,0 +1,30 @@
+{
+  "phase": "5C.4-D",
+  "role": "MODEL_BASED_ADJUDICATOR_C",
+  "reviewer_type": "MODEL_BASED_ADJUDICATOR",
+  "independent_human_legal_validation": false,
+  "benchmark_type": "RESOURCE_CONSTRAINED_MODEL_ADJUDICATED",
+  "D6": "EMPIRICAL_UNVERIFIED",
+  "dataset_frozen": false,
+  "holdout_storage_isolation": "HOLDOUT_STORAGE_ISOLATION_NOT_YET_ENFORCED",
+  "future_v2_implementation_in_this_context": "FORBIDDEN",
+  "created_at_utc": "2026-09-13T06:35:04.666304+00:00",
+  "status": "FAIL",
+  "stop_gate": "NO_FORBIDDEN_PERFORMANCE_EXPOSURE",
+  "checks": {
+    "all_60_adjudicated": "FAIL_NOT_EXECUTED",
+    "all_503_issues_resolved_or_marked": "FAIL_NOT_EXECUTED",
+    "coherent_final_annotations": "FAIL_NOT_EXECUTED",
+    "retained_36": "FAIL_NOT_EXECUTED",
+    "DEV_12_TEST_24": "FAIL_NOT_EXECUTED",
+    "cluster_separation": "FAIL_NOT_CERTIFIED",
+    "no_performance_information_encountered": "FAIL",
+    "no_system_performance_used_for_selection": "PASS_NO_SELECTION",
+    "D6_untouched": "PASS",
+    "human_validation_limitation_explicit": "PASS",
+    "preexisting_artifact_integrity": "PASS",
+    "public_safe_artifacts_no_query_or_gold": "PASS"
+  },
+  "incident_ref": "input_contamination_incident_v0.json",
+  "empty_artifact_semantics": "Empty final JSONL files are failure placeholders only; no candidate was adjudicated, reserved, excluded or selected."
+}

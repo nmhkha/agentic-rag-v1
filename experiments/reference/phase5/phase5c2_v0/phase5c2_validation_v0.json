@@ -1,0 +1,287 @@
+{
+  "schema": "phase5c2-design-validation-v0",
+  "artifact_status": "DRAFT FOR EXTERNAL REVIEW",
+  "validation_scope": "Static local design structure, source mapping, source hashes and arithmetic only; no production/evaluator/inference tests",
+  "structure_status": "PASS",
+  "checked_at_utc": "2026-09-10T07:54:25.076000+00:00",
+  "checks": [
+    {
+      "check_id": "source_phase5c1_pass",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Read Phase 5C.1 manifest and whole-project integrity result; source artifacts remain historical authority"
+    },
+    {
+      "check_id": "source_phase5c1_manifest_bindings",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": {
+        "checked_artifacts": 8,
+        "mismatches": []
+      }
+    },
+    {
+      "check_id": "six_unique_requirements",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Exactly V2-R1 through V2-R6"
+    },
+    {
+      "check_id": "requirement_fields_complete",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": [
+        "requirement_id",
+        "source_findings",
+        "evidence_tier",
+        "problem",
+        "proposed_behavior",
+        "must_not_do",
+        "runtime_inputs",
+        "runtime_forbidden_inputs",
+        "trace_requirements",
+        "future_metrics",
+        "confirmation_needed_before_implementation",
+        "failure_modes",
+        "decision_status",
+        "implementation_status"
+      ]
+    },
+    {
+      "check_id": "requirement_source_mapping_preserved",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Compared every finding list to authoritative 5C.1 requirement map"
+    },
+    {
+      "check_id": "evidence_tiers_preserved",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Compared requirement tiers to both source map and individual findings"
+    },
+    {
+      "check_id": "all_nine_findings_traceable",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9"
+      ]
+    },
+    {
+      "check_id": "decisions_preserved",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": {
+        "V2-R1": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+        "V2-R2": "REFINE",
+        "V2-R3": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+        "V2-R4": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+        "V2-R5": "INVESTIGATE_BEFORE_IMPLEMENTATION",
+        "V2-R6": "KEEP_AS_IS"
+      }
+    },
+    {
+      "check_id": "implementation_not_started",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "No requirement authorized or implemented"
+    },
+    {
+      "check_id": "tier_c_unconfirmed",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "R3 confirmation gate explicitly independent, multi-case and excludes medical diagnostic"
+    },
+    {
+      "check_id": "frozen_labels_unchanged",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": {
+        "Answer Revision": "Insufficient evidence",
+        "Evidence Expansion": "Insufficient evidence"
+      }
+    },
+    {
+      "check_id": "historical_benchmark_status_explicit",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "All three primary reports retain benchmark and revised methodological status for v2"
+    },
+    {
+      "check_id": "all_artifacts_draft",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "No design FROZEN designation"
+    },
+    {
+      "check_id": "runtime_gold_forbidden",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Matrix and trace explicitly deny gold, labels, reference answers, difficulty and TEST outcomes"
+    },
+    {
+      "check_id": "trace_first_second_checks_preserved",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Distinct events and immutable answer/evidence references, not one overwritten payload"
+    },
+    {
+      "check_id": "trace_all_required_stage_data",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Original/evidence/aspects/expansion/answers/checks/unresolved/call ledgers reconstructable by design"
+    },
+    {
+      "check_id": "trace_evaluator_separate",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "No evaluator result object embedded in production trace"
+    },
+    {
+      "check_id": "challenge_dimensions_complete",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "D1–D10 operational taxonomy with DEV/TEST targets and overlap rules"
+    },
+    {
+      "check_id": "d6_not_outcome_selected",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "D6 post-lock frozen-base characterization; shortfalls reported, no substitutions"
+    },
+    {
+      "check_id": "dev_test_isolation_specified",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Access roles, whole-cluster split, separate contexts, query-only projection and explicit all-system/all-repeat production seal before gold join"
+    },
+    {
+      "check_id": "partial_support_denominators",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "P+ substantive credit, Q supported partial response, U disclosure and all-item adequacy separated"
+    },
+    {
+      "check_id": "uncertainty_sources_separate",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Preferred/minimum/stronger protocol and non-joint CI caveat present"
+    },
+    {
+      "check_id": "sampling_arithmetic",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Four task families; per-dimension memberships overlap, not independent item counts"
+    },
+    {
+      "check_id": "resource_arithmetic",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Trajectory, reference logical call ceilings and judgment-object arithmetic rechecked; no simulation/evaluator run"
+    },
+    {
+      "check_id": "historical_budget_source_readonly",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": {
+        "MAX_SUB_QUERIES": 3,
+        "MAX_RETRIEVAL_EXPANSIONS": 1,
+        "MAX_ANSWER_REVISIONS": 1,
+        "MAX_CITATION_REVISIONS": 1,
+        "MAX_LLM_CALLS": 6,
+        "BM25_DEPTH": 20,
+        "DENSE_DEPTH": 20,
+        "DEFAULT_TOP_K": 5
+      }
+    },
+    {
+      "check_id": "optional_budget_increases_labelled",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "No automatic increase; independent validation required"
+    },
+    {
+      "check_id": "preimplementation_vs_adoption_gates",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "Problem confirmation does not require nonexistent intervention efficacy; adoption is later"
+    },
+    {
+      "check_id": "local_document_links_resolve",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": {
+        "broken": [],
+        "planned_completion_targets": [
+          "final_artifact_hashes_v0.json",
+          "integrity_before_after_v0.json",
+          "phase5c2_console_v0.txt",
+          "phase5c2_manifest_v0.json",
+          "phase5c2_validation_v0.json"
+        ]
+      }
+    },
+    {
+      "check_id": "design_only_file_formats",
+      "status": "PASS",
+      "method": "local static artifact validation",
+      "evidence": "No production code, scripts, prompts or JSONL dataset records in new namespace"
+    }
+  ],
+  "manual_design_review": {
+    "method": "Author review of all deliverables against user sections 1–31; no external reviewer or legal annotation performed",
+    "reviewed_constraints": [
+      "All requirements grounded in F1–F9 without Tier C promotion",
+      "Historical labels and benchmark retained; not untouched holdout for v2",
+      "Explicit/inferred aspect promotion, applicability and partial evidence safeguards",
+      "D1–D10 corpus-first taxonomy, sampling tradeoffs, empirical D6 caveat",
+      "DEV/TEST confidentiality and no outcome-selected items",
+      "Future metrics denominators, scoped answerability and Q/U distinction",
+      "Implementation confirmation separate from adoption and causal inference",
+      "All stages retained including checks after citation editing",
+      "Future comparisons, minimal ablations, repetitions and three uncertainty sources",
+      "Research YES; implementation NOT YET; next external review then later dataset construction"
+    ],
+    "limitations": [
+      "Semantic completeness of prose is author review, not an executable proof",
+      "No empirical power, legal gold, model behavior or future isolation validation",
+      "No actual challenge query/gold instance produced"
+    ]
+  },
+  "execution_audit": {
+    "basis": "Observed tools in this design session: local shell and standard-library filesystem/JSON/AST/hash operations only; no project module imports or external/network tool calls",
+    "network_api_calls": 0,
+    "production_calls": 0,
+    "evaluator_calls": 0,
+    "retrieval_inference_calls": 0,
+    "reranking_inference_calls": 0,
+    "answer_generation_calls": 0,
+    "benchmark_runs": 0,
+    "bootstrap_runs": 0,
+    "A3_A4_runs": 0,
+    "challenge_queries_created": 0,
+    "challenge_gold_records_created": 0,
+    "v2_implementation": "NOT_STARTED"
+  },
+  "integrity_result_reference": "integrity_before_after_v0.json",
+  "validation_history": [
+    {
+      "attempt": 1,
+      "structure_status": "FAIL",
+      "issue": "Isolation text check expected an explicit canonical after-all seal statement; equivalent requirements were distributed across prose. No execution isolation test was run."
+    },
+    {
+      "attempt": 2,
+      "structure_status": "PASS",
+      "resolution": "Added explicit all-planned-production seal statement and rechecked access/split/projection/seal terms; other 28 checks unchanged and passing."
+    }
+  ]
+}
