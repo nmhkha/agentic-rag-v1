@@ -1,4 +1,4 @@
-# Web API handoff
+# Web API guide
 
 ## Scope and prerequisites
 
@@ -10,7 +10,7 @@ complete deployment of the research assets.
 
 Tested on Windows, Python 3.12.14, torch 2.5.1+cpu, AMD Ryzen 7 6800HS Creator
 Edition (8 physical cores / 16 logical processors), CPU inference. CUDA has not
-been validated in this handoff. Start from the repository root:
+been validated in this setup. Start from the repository root:
 
 ```powershell
 py -3.12 -m venv .venv
@@ -83,7 +83,7 @@ $env:TRANSFORMERS_OFFLINE = '1'
 ```
 
 The production pipeline was successfully loaded offline into a newly empty
-module cache during handoff, resolving the revisions above on CPU. A completely
+module cache during final verification, resolving the revisions above on CPU. A completely
 fresh-machine download/install has not been exercised. Jina uses
 `trust_remote_code`; treat cached code as executable dependencies.
 
@@ -114,7 +114,7 @@ try {
 
 Do not log environment contents. Do not commit credentials, local `.env`, traces
 or review dumps. Rotate any credential previously shared in conversation before
-handoff. Stop the server cleanly with Ctrl+C. Do not use `--reload` for measurements.
+sharing or deployment. Stop the server cleanly with Ctrl+C. Do not use `--reload` for measurements.
 
 - Frontend: `http://127.0.0.1:8000/`
 - Readiness: `GET http://127.0.0.1:8000/api/v1/health`
@@ -157,7 +157,7 @@ separately.
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest tests/api tests/retrieval tests/agentic -q -p no:cacheprovider
-.\.venv\Scripts\python.exe -m pytest -q -p no:cacheprovider --basetemp tmp/pytest-handoff-local
+.\.venv\Scripts\python.exe -m pytest -q -p no:cacheprovider --basetemp tmp/pytest-web-api-local
 .\.venv\Scripts\python.exe -m pip check
 git diff --check
 ```
@@ -182,7 +182,7 @@ discarded. A request exception aborts the script before its final output write;
 it is not a fault-tolerant benchmark collector. With five samples its nearest-rank
 p95 is the maximum, not a reliable population estimate.
 
-## Handoff verification and limitations
+## Verification and limitations
 
 - Earlier real HTTP and browser-originated smoke tests passed, including answer,
   status, citations, trace correlation and both latency displays.
@@ -198,7 +198,7 @@ p95 is the maximum, not a reliable population estimate.
   encountered sandbox permissions in the system temp folder; a repo-local
   disposable pytest base directory removes those five setup errors.
 - `pip check` passed; final diff/secret audit results are recorded in the
-  handoff response. No new real LLM request or benchmark was needed for these
+  final verification report. No new real LLM request or benchmark was needed for these
   documentation/cache-only changes.
 - No authentication, public-deployment hardening, concurrency control or new
   performance optimization was added. Demonstrate locally with one worker.

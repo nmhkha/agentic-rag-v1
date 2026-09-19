@@ -120,7 +120,7 @@ python tools/research/api/benchmark_e2e.py \
 The benchmark stores individual samples, RAG and HTTP end-to-end summaries, and
 the test machine CPU metadata under `experiments/runs/api-benchmark/`.
 
-See [Web API handoff](docs/WEB_API_HANDOFF.md) for the tested Windows setup,
+See [Web API guide](docs/WEB_API_GUIDE.md) for the tested Windows setup,
 exact Hugging Face cache revisions, temporary credential configuration, API
 contract, verification results, and known limitations. `.env.example` is a
 template only: the application does not automatically load `.env` files.
