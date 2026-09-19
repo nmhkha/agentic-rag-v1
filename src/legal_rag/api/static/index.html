@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hỏi đáp pháp luật Việt Nam · Agentic RAG</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="page-header">
+      <h1>Tra cứu pháp lý</h1>
+      <p class="subtitle">Hỏi đáp pháp luật với Agentic RAG, kèm nguồn để kiểm tra và đối chiếu.</p>
+    </header>
+
+    <form id="query-form" class="query-card">
+      <div class="section-heading"><label for="query">Câu hỏi của bạn</label></div>
+      <textarea id="query" name="query" rows="5" required aria-describedby="query-hint"
+        placeholder="Ví dụ: Hệ thống trí tuệ nhân tạo có rủi ro cao cần đáp ứng điều kiện gì trước khi đưa vào sử dụng?"></textarea>
+      <div class="form-actions"><p id="query-hint">Nêu rõ tình huống, đối tượng hoặc quy định bạn cần tìm hiểu.</p><button id="submit" type="submit"><span>Gửi câu hỏi</span><span aria-hidden="true">↗</span></button></div>
+      <div class="progress-slot"><p id="loading" class="notice hidden" role="status"><span class="spinner" aria-hidden="true"></span><span><strong>Đang xử lý…</strong><span class="loading-hint">Hệ thống đang tra cứu và đối chiếu nguồn. Quá trình có thể mất vài chục giây.</span></span></p></div>
+    </form>
+
+    <p id="error" class="notice error hidden" role="alert"></p>
+
+    <p id="empty-state" class="empty-state">Câu trả lời và nguồn tham chiếu sẽ xuất hiện tại đây.</p>
+    <section id="result" class="result-card hidden" aria-live="polite" aria-labelledby="answer-title">
+      <div class="result-heading">
+        <h2 id="answer-title">Câu trả lời</h2>
+        <span id="status" class="status"></span>
+      </div>
+      <div id="answer" class="answer"></div>
+      <div class="sources-heading"><h2>Nguồn pháp lý</h2><p>Đối chiếu các ký hiệu [E…] trong câu trả lời với văn bản dưới đây.</p></div>
+      <ol id="citations" class="citations"></ol>
+      <div id="latency" class="latency" aria-label="Thời gian xử lý"></div>
+    </section>
+    <footer class="page-footer"><p>Nội dung mang tính tham khảo. Hãy kiểm tra văn bản gốc và hiệu lực áp dụng; không thay thế tư vấn pháp lý chuyên môn.</p></footer>
+  </main>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

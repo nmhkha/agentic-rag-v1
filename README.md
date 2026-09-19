@@ -52,13 +52,13 @@ See [docs/REPOSITORY_MAP.md](docs/REPOSITORY_MAP.md) for placement rules.
 
 ## Installation
 
-Python 3.10 or newer is required. `pyproject.toml` is authoritative;
-`requirements.txt` is a convenience runtime dependency list.
+Python 3.12 or newer is required (tested: 3.12.14). `pyproject.toml` is
+authoritative; `requirements.txt` is a convenience runtime dependency list.
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -e ".[dev]"
+python -m pip install -e ".[dev]"
 ```
 
 Model weights are not downloaded during installation by this project. Runtime
@@ -92,6 +92,43 @@ python scripts/run_agentic_rag.py --query "Nội dung câu hỏi pháp lý" --tr
 
 Agentic v1 uses frozen bounds and prompts. It is a historical research baseline,
 not a substitute for professional legal advice.
+
+## Run the API
+
+Set the `RAG_LLM_MODEL`, `RAG_LLM_BASE_URL`, and `RAG_LLM_API_KEY`
+environment variables, then run one Uvicorn worker:
+
+```bash
+python -m uvicorn legal_rag.api.app:app --host 127.0.0.1 --port 8000 --workers 1
+```
+
+Open `http://127.0.0.1:8000/` for the minimal web client. The API endpoints are
+`GET /api/v1/health` and `POST /api/v1/answers` with a JSON body such as
+`{"query":"Nội dung câu hỏi pháp lý"}`. `rag_latency_ms` measures only the
+Agentic RAG controller execution. Browser and benchmark end-to-end latency also
+includes request queuing, trace persistence, HTTP transfer, and JSON parsing.
+
+After the API is ready, run an end-to-end benchmark with:
+
+```bash
+python tools/research/api/benchmark_e2e.py \
+  --query "Nội dung câu hỏi pháp lý" \
+  --warmup 1 \
+  --runs 5
+```
+
+The benchmark stores individual samples, RAG and HTTP end-to-end summaries, and
+the test machine CPU metadata under `experiments/runs/api-benchmark/`.
+
+See [Web API guide](docs/WEB_API_GUIDE.md) for the tested Windows setup,
+exact Hugging Face cache revisions, temporary credential configuration, API
+contract, verification results, and known limitations. `.env.example` is a
+template only: the application does not automatically load `.env` files.
+
+The web layer is isolated in `src/legal_rag/api/` (including vanilla HTML/CSS/JS
+in `static/`), with offline tests in `tests/api/` and the HTTP benchmark in
+`tools/research/api/`. The application reuses one loaded retrieval pipeline and
+LLM client per worker; it does not replace the frozen RAG implementation.
 
 ## Evaluation
 

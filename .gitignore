@@ -19,3 +19,10 @@ experiments/runs/**
 
 # Local evaluation scratch outputs.
 /tmp/
+
+# Local review files and runtime model caches (not deliverables).
+/review_diff.txt
+/review_summary.md
+/.cache/
+.env.*
+!.env.example
