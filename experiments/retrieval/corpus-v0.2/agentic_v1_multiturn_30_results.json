@@ -1,0 +1,1091 @@
+{
+  "summary": {
+    "turn1": {
+      "mean_recall": 0.22777777777777777,
+      "hit_rate": 0.3,
+      "art_hit_rate": 0.43333333333333335,
+      "mean_chunks": 5
+    },
+    "turn2": {
+      "mean_recall": 0.3388888888888889,
+      "hit_rate": 0.4,
+      "art_hit_rate": 0.4666666666666667,
+      "mean_chunks": 6.833333333333333
+    },
+    "turn3": {
+      "mean_recall": 0.35555555555555557,
+      "hit_rate": 0.4,
+      "art_hit_rate": 0.4666666666666667,
+      "mean_chunks": 8
+    },
+    "combined": {
+      "mean_recall": 0.37222222222222223,
+      "hit_rate": 0.4,
+      "art_hit_rate": 0.4666666666666667,
+      "mean_chunks": 16.066666666666666
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "new001",
+      "query": "Chủ thể dữ liệu cá nhân phải được cung cấp những thông tin gì trước khi đồng ý cho xử lý dữ liệu?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 7,
+        "subqueries": [
+          "Quy định chi tiết về các thông tin chung cần cung cấp cho chủ thể dữ liệu trước khi đồng ý xử lý dữ liệu cá nhân thông thường Chủ thể dữ liệu cá nhân phải được cung cấp những thông tin gì trước khi đồng ý cho xử lý dữ liệu?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 8,
+        "subqueries": [
+          "quy định chi tiết về toàn bộ các thông tin cụ thể phải cung cấp cho chủ thể dữ liệu chung trước khi đồng ý xử lý dữ liệu cá nhân Chủ thể dữ liệu cá nhân phải được cung cấp những thông tin gì trước khi đồng ý cho xử lý dữ liệu?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 16
+      },
+      "elapsed": 123.90990447998047
+    },
+    {
+      "query_id": "new002",
+      "query": "Trong trường hợp nào dữ liệu cá nhân được xử lý mà không cần sự đồng ý của chủ thể?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "turn3": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "combined": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "elapsed": 29.876680850982666
+    },
+    {
+      "query_id": "new003",
+      "query": "Khi nào bên kiểm soát dữ liệu phải xóa hoặc hủy dữ liệu cá nhân?",
+      "gold_count": 4,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.5,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 8,
+        "subqueries": [
+          "Nội dung chi tiết của khoản 1 Điều 14 Luật Bảo vệ dữ liệu cá nhân quy định các trường hợp cụ thể phải xóa hoặc hủy dữ liệu cá nhân Khi nào bên kiểm soát dữ liệu phải xóa hoặc hủy dữ liệu cá nhân?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.75,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 9,
+        "subqueries": [
+          "Nội dung chi tiết của Khoản 1 Điều 14 Luật Bảo vệ dữ liệu cá nhân (vì văn bản hiện tại chưa cung cấp đầy đủ toàn bộ các điểm quy định cụ thể về các trường hợp phải xóa, hủy dữ liệu cá nhân) Khi nào bên kiểm soát dữ liệu phải xóa hoặc hủy dữ liệu cá nhân?"
+        ]
+      },
+      "combined": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 15
+      },
+      "elapsed": 108.29051113128662
+    },
+    {
+      "query_id": "new004",
+      "query": "Hệ thống trí tuệ nhân tạo phải tuân thủ những yêu cầu bảo vệ dữ liệu cá nhân nào?",
+      "gold_count": 4,
+      "turn1": {
+        "recall": 0.5,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.5,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "turn3": {
+        "recall": 0.5,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "combined": {
+        "recall": 0.5,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 8
+      },
+      "elapsed": 25.080888509750366
+    },
+    {
+      "query_id": "new005",
+      "query": "Bên kiểm soát dữ liệu phải đáp ứng điều kiện gì khi chuyển giao dữ liệu cá nhân ra nước ngoài?",
+      "gold_count": 4,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 1,
+        "chunks": 8,
+        "subqueries": [
+          "Quy định về điều kiện cụ thể đối với bên kiểm soát dữ liệu khi chuyển giao dữ liệu cá nhân ra nước ngoài Bên kiểm soát dữ liệu phải đáp ứng điều kiện gì khi chuyển giao dữ liệu cá nhân ra nước ngoài?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 1,
+        "chunks": 9,
+        "subqueries": [
+          "Các điều kiện cụ thể mà bên kiểm soát dữ liệu phải đáp ứng khi chuyển giao dữ liệu cá nhân ra nước ngoài Bên kiểm soát dữ liệu phải đáp ứng điều kiện gì khi chuyển giao dữ liệu cá nhân ra nước ngoài?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 1,
+        "chunks": 36
+      },
+      "elapsed": 133.2088851928711
+    },
+    {
+      "query_id": "new006",
+      "query": "Những hành vi nào bị nghiêm cấm trên không gian mạng theo Luật An ninh mạng?",
+      "gold_count": 4,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.5,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 12,
+        "subqueries": [
+          "Các điểm a, b, d, e, g, h, i, l của Khoản 2 Điều 7 Luật An ninh mạng quy định về các hành vi bị nghiêm cấm khác Những hành vi nào bị nghiêm cấm trên không gian mạng theo Luật An ninh mạng?",
+          "Khoản 1 Điều 7 Luật An ninh mạng quy định về các hành vi sử dụng không gian mạng xâm phạm an ninh quốc gia, trật tự, an toàn xã hội Những hành vi nào bị nghiêm cấm trên không gian mạng theo Luật An ninh mạng?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.75,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 16,
+        "subqueries": [
+          "Danh sách các hành vi bị nghiêm cấm quy định tại Khoản 1 Điều 7 Luật An ninh mạng (ngoài điểm c đã có) Những hành vi nào bị nghiêm cấm trên không gian mạng theo Luật An ninh mạng?",
+          "Danh sách các hành vi bị nghiêm cấm quy định tại các điểm a, e, i của Khoản 2 Điều 7 Luật An ninh mạng Những hành vi nào bị nghiêm cấm trên không gian mạng theo Luật An ninh mạng?"
+        ]
+      },
+      "combined": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 17
+      },
+      "elapsed": 116.31160306930542
+    },
+    {
+      "query_id": "new007",
+      "query": "Chủ quản hệ thống thông tin phải thực hiện biện pháp bảo vệ an ninh mạng nào?",
+      "gold_count": 4,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 8,
+        "subqueries": [
+          "Nội dung chi tiết của khoản 1 và khoản 2 Điều 10 Luật An ninh mạng quy định các nhiệm vụ và biện pháp bảo vệ an ninh mạng cụ thể. Chủ quản hệ thống thông tin phải thực hiện biện pháp bảo vệ an ninh mạng nào?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 10,
+        "subqueries": [
+          "Nội dung chi tiết của khoản 1 và khoản 2 Điều 10 Luật An ninh mạng Chủ quản hệ thống thông tin phải thực hiện biện pháp bảo vệ an ninh mạng nào?",
+          "Các biện pháp cụ thể quy định tại các điểm của khoản 1 và khoản 2 Điều 10 Chủ quản hệ thống thông tin phải thực hiện biện pháp bảo vệ an ninh mạng nào?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 21
+      },
+      "elapsed": 85.94150304794312
+    },
+    {
+      "query_id": "new008",
+      "query": "Sàn giao dịch thương mại điện tử phải đáp ứng những nghĩa vụ gì đối với người tiêu dùng?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 7,
+        "subqueries": [
+          "Các quy định chi tiết về nghĩa vụ cụ thể của sàn giao dịch thương mại điện tử đối với người tiêu dùng ngoài các nghĩa vụ chung đã nêu Sàn giao dịch thương mại điện tử phải đáp ứng những nghĩa vụ gì đối với người tiêu dùng?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 11,
+        "subqueries": [
+          "Quy định cụ thể về nghĩa vụ của sàn giao dịch thương mại điện tử đối với người tiêu dùng trong Luật Thương mại điện tử hoặc các văn bản hướng dẫn chi tiết Sàn giao dịch thương mại điện tử phải đáp ứng những nghĩa vụ gì đối với người tiêu dùng?",
+          "Các quy định về cơ chế giải quyết tranh chấp và hỗ trợ người tiêu dùng của sàn giao dịch thương mại điện tử Sàn giao dịch thương mại điện tử phải đáp ứng những nghĩa vụ gì đối với người tiêu dùng?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 40
+      },
+      "elapsed": 127.21980166435242
+    },
+    {
+      "query_id": "new009",
+      "query": "Hoạt động quảng cáo trong thương mại điện tử phải tuân thủ những quy định nào?",
+      "gold_count": 2,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 7,
+        "subqueries": [
+          "Các quy định cụ thể về nội dung, hình thức và điều kiện đối với hoạt động quảng cáo trong thương mại điện tử Hoạt động quảng cáo trong thương mại điện tử phải tuân thủ những quy định nào?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 13,
+        "subqueries": [
+          "quy định chi tiết về các hành vi bị cấm trong hoạt động quảng cáo thương mại điện tử Hoạt động quảng cáo trong thương mại điện tử phải tuân thủ những quy định nào?",
+          "các quy định cụ thể của pháp luật chuyên ngành về quảng cáo áp dụng trong thương mại điện tử Hoạt động quảng cáo trong thương mại điện tử phải tuân thủ những quy định nào?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 26
+      },
+      "elapsed": 94.61455631256104
+    },
+    {
+      "query_id": "new010",
+      "query": "Thương nhân nước ngoài cung cấp dịch vụ thương mại điện tử tại Việt Nam phải đáp ứng điều kiện gì?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 7,
+        "subqueries": [
+          "Quy định chi tiết về các điều kiện chung đối với thương nhân nước ngoài cung cấp dịch vụ thương mại điện tử tại Việt Nam Thương nhân nước ngoài cung cấp dịch vụ thương mại điện tử tại Việt Nam phải đáp ứng điều kiện gì?",
+          "Quy định về thủ tục đăng ký hoặc cấp phép hoạt động đối với thương nhân nước ngoài cung cấp dịch vụ thương mại điện tử Thương nhân nước ngoài cung cấp dịch vụ thương mại điện tử tại Việt Nam phải đáp ứng điều kiện gì?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 10,
+        "subqueries": [
+          "Quy định chi tiết về các điều kiện chung đối với thương nhân nước ngoài cung cấp dịch vụ thương mại điện tử tại Việt Nam theo Điều 27 Luật Thương mại điện tử Thương nhân nước ngoài cung cấp dịch vụ thương mại điện tử tại Việt Nam phải đáp ứng điều kiện gì?",
+          "Điều kiện cụ thể về quản lý và vận hành nền tảng thương mại điện tử quy định tại khoản 1 và khoản 2 Điều 34 Nghị định 248/2026/NĐ-CP Thương nhân nước ngoài cung cấp dịch vụ thương mại điện tử tại Việt Nam phải đáp ứng điều kiện gì?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 16
+      },
+      "elapsed": 138.96212792396545
+    },
+    {
+      "query_id": "new011",
+      "query": "Nền tảng số trung gian phải lưu trữ thông tin giao dịch trong thời hạn bao lâu?",
+      "gold_count": 2,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 27
+      },
+      "elapsed": 30.03474450111389
+    },
+    {
+      "query_id": "new012",
+      "query": "Cơ quan nhà nước phải đảm bảo những yêu cầu gì khi cung cấp dịch vụ công trực tuyến?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 6,
+        "subqueries": [
+          "Các quy định chi tiết về các yêu cầu chung khác đối với cơ quan nhà nước khi cung cấp dịch vụ công trực tuyến ngoài các điểm đã nêu ở Điều 15 và Điều 18. Cơ quan nhà nước phải đảm bảo những yêu cầu gì khi cung cấp dịch vụ công trực tuyến?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 6,
+        "subqueries": []
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 13
+      },
+      "elapsed": 57.24265718460083
+    },
+    {
+      "query_id": "new013",
+      "query": "Chính sách phát triển kinh tế số bao gồm những nội dung chính nào?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 7,
+        "subqueries": [
+          "Các quy định cụ thể về nội dung chính của chính sách phát triển kinh tế số trong Luật Chuyển đổi số hoặc các văn bản pháp luật liên quan Chính sách phát triển kinh tế số bao gồm những nội dung chính nào?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 9,
+        "subqueries": [
+          "Các quy định chi tiết về nội dung, nhiệm vụ và các thành phần cụ thể của chính sách phát triển kinh tế số Chính sách phát triển kinh tế số bao gồm những nội dung chính nào?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 20
+      },
+      "elapsed": 87.39763450622559
+    },
+    {
+      "query_id": "new014",
+      "query": "Nền tảng số quy mô lớn phải đáp ứng những nghĩa vụ quản trị nào?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 8,
+        "subqueries": [
+          "Các quy định cụ thể về danh mục nghĩa vụ quản trị mà nền tảng số quy mô lớn phải đáp ứng Nền tảng số quy mô lớn phải đáp ứng những nghĩa vụ quản trị nào?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 9,
+        "subqueries": [
+          "Danh sách cụ thể các nghĩa vụ quản trị áp dụng riêng cho nền tảng số quy mô lớn Nền tảng số quy mô lớn phải đáp ứng những nghĩa vụ quản trị nào?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 16
+      },
+      "elapsed": 97.25576567649841
+    },
+    {
+      "query_id": "new015",
+      "query": "Hoạt động quảng cáo trên nền tảng số phải tuân thủ những quy định gì?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 11,
+        "subqueries": [
+          "Quy định chi tiết về nội dung, hình thức và các điều kiện cụ thể đối với hoạt động quảng cáo trên nền tảng số Hoạt động quảng cáo trên nền tảng số phải tuân thủ những quy định gì?",
+          "Các hành vi bị nghiêm cấm hoặc hạn chế khi thực hiện quảng cáo trên không gian mạng và nền tảng số Hoạt động quảng cáo trên nền tảng số phải tuân thủ những quy định gì?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 14,
+        "subqueries": [
+          "các quy định chi tiết về nội dung, hình thức và điều kiện đối với hoạt động quảng cáo trên nền tảng số Hoạt động quảng cáo trên nền tảng số phải tuân thủ những quy định gì?",
+          "các nghĩa vụ cụ thể của tổ chức, cá nhân tham gia hoạt động quảng cáo trên nền tảng số Hoạt động quảng cáo trên nền tảng số phải tuân thủ những quy định gì?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 40
+      },
+      "elapsed": 130.79293727874756
+    },
+    {
+      "query_id": "new016",
+      "query": "Chữ ký điện tử có giá trị pháp lý khi đáp ứng những điều kiện gì?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 1,
+        "chunks": 6,
+        "subqueries": [
+          "Quy định về các điều kiện chung để chữ ký điện tử nói chung có giá trị pháp lý Chữ ký điện tử có giá trị pháp lý khi đáp ứng những điều kiện gì?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 1,
+        "chunks": 6,
+        "subqueries": [
+          "Quy định về các điều kiện cụ thể để chữ ký điện tử nói chung có giá trị pháp lý Chữ ký điện tử có giá trị pháp lý khi đáp ứng những điều kiện gì?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 1,
+        "chunks": 11
+      },
+      "elapsed": 57.359071016311646
+    },
+    {
+      "query_id": "new017",
+      "query": "Hợp đồng điện tử được giao kết theo trình tự nào?",
+      "gold_count": 2,
+      "turn1": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 6,
+        "subqueries": [
+          "Quy định chi tiết về các bước hoặc trình tự cụ thể để giao kết hợp đồng điện tử Hợp đồng điện tử được giao kết theo trình tự nào?"
+        ]
+      },
+      "turn3": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 6,
+        "subqueries": [
+          "Quy định cụ thể về các bước, trình tự giao kết hợp đồng điện tử Hợp đồng điện tử được giao kết theo trình tự nào?"
+        ]
+      },
+      "combined": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 6
+      },
+      "elapsed": 70.8476173877716
+    },
+    {
+      "query_id": "new018",
+      "query": "Nhà nước hỗ trợ hoạt động nghiên cứu và phát triển sản phẩm công nghệ số bằng những biện pháp gì?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.6666666666666666,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.6666666666666666,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "turn3": {
+        "recall": 0.6666666666666666,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "combined": {
+        "recall": 0.6666666666666666,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 9
+      },
+      "elapsed": 26.363450288772583
+    },
+    {
+      "query_id": "new019",
+      "query": "Cơ sở dữ liệu công nghiệp công nghệ số được thu thập và quản lý theo trách nhiệm của ai?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "turn3": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "combined": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "elapsed": 29.787956953048706
+    },
+    {
+      "query_id": "new020",
+      "query": "Tổ chức kinh doanh phải thực hiện những trách nhiệm gì khi bán hàng trực tuyến cho người tiêu dùng?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 10,
+        "subqueries": [
+          "Quy định cụ thể về trách nhiệm của tổ chức kinh doanh khi bán hàng trực tuyến hoặc qua thương mại điện tử Tổ chức kinh doanh phải thực hiện những trách nhiệm gì khi bán hàng trực tuyến cho người tiêu dùng?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 13,
+        "subqueries": [
+          "Cần thông tin chi tiết về các trách nhiệm cụ thể của tổ chức kinh doanh khi thực hiện giao dịch, bán hàng trên không gian mạng hoặc thương mại điện tử theo quy định tại Luật Bảo vệ quyền lợi người tiêu dùng và pháp luật về thương mại điện tử. Tổ chức kinh doanh phải thực hiện những trách nhiệm gì khi bán hàng trực tuyến cho người tiêu dùng?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 34
+      },
+      "elapsed": 94.59983205795288
+    },
+    {
+      "query_id": "new021",
+      "query": "Trách nhiệm thu hồi sản phẩm khuyết tật của tổ chức kinh doanh được quy định như thế nào?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 7,
+        "subqueries": [
+          "Quy định cụ thể về các nghĩa vụ và trình tự, thủ tục mà tổ chức kinh doanh phải thực hiện khi thu hồi sản phẩm khuyết tật Trách nhiệm thu hồi sản phẩm khuyết tật của tổ chức kinh doanh được quy định như thế nào?",
+          "Trách nhiệm cụ thể của tổ chức kinh doanh đối với sản phẩm khuyết tật nhóm A và nhóm B Trách nhiệm thu hồi sản phẩm khuyết tật của tổ chức kinh doanh được quy định như thế nào?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 9,
+        "subqueries": [
+          "Quy định chi tiết về các nội dung trách nhiệm cụ thể của tổ chức kinh doanh khi thực hiện thu hồi sản phẩm khuyết tật nhóm A và nhóm B theo Điều 33 Luật Bảo vệ quyền lợi người tiêu dùng. Trách nhiệm thu hồi sản phẩm khuyết tật của tổ chức kinh doanh được quy định như thế nào?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 21
+      },
+      "elapsed": 142.25531148910522
+    },
+    {
+      "query_id": "new022",
+      "query": "Tổ chức quản lý chợ và trung tâm thương mại có trách nhiệm gì với người tiêu dùng?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.6666666666666666,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 6,
+        "subqueries": [
+          "Các khoản còn lại của Điều 5 Văn bản hợp nhất số 29/VBHN-BCT quy định về trách nhiệm của tổ chức quản lý chợ và trung tâm thương mại (như Khoản 2) Tổ chức quản lý chợ và trung tâm thương mại có trách nhiệm gì với người tiêu dùng?"
+        ]
+      },
+      "turn3": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 6,
+        "subqueries": []
+      },
+      "combined": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 6
+      },
+      "elapsed": 53.93302321434021
+    },
+    {
+      "query_id": "new023",
+      "query": "Những hành vi nào bị nghiêm cấm trong quản lý và sử dụng dữ liệu?",
+      "gold_count": 4,
+      "turn1": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "turn3": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5,
+        "subqueries": []
+      },
+      "combined": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "elapsed": 19.541158199310303
+    },
+    {
+      "query_id": "new024",
+      "query": "Dữ liệu quan trọng và dữ liệu cốt lõi phải được bảo vệ theo yêu cầu nào?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 6,
+        "subqueries": [
+          "Quy định chi tiết các yêu cầu cụ thể để bảo vệ dữ liệu quan trọng và dữ liệu cốt lõi Dữ liệu quan trọng và dữ liệu cốt lõi phải được bảo vệ theo yêu cầu nào?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 6,
+        "subqueries": [
+          "các yêu cầu kỹ thuật hoặc biện pháp cụ thể để bảo vệ dữ liệu cốt lõi và dữ liệu quan trọng Dữ liệu quan trọng và dữ liệu cốt lõi phải được bảo vệ theo yêu cầu nào?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 8
+      },
+      "elapsed": 110.85007882118225
+    },
+    {
+      "query_id": "new025",
+      "query": "Tác phẩm nào không thuộc đối tượng bảo hộ quyền tác giả?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.3333333333333333,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 7,
+        "subqueries": [
+          "Các đối tượng khác không thuộc đối tượng bảo hộ quyền tác giả theo Điều 15 Luật Sở hữu trí tuệ (như quy trình, hệ thống, phương pháp, số liệu, v.v.) ngoài văn bản hành chính và ý tưởng, khẩu hiệu. Tác phẩm nào không thuộc đối tượng bảo hộ quyền tác giả?"
+        ]
+      },
+      "turn3": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 7,
+        "subqueries": []
+      },
+      "combined": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 20
+      },
+      "elapsed": 61.91792607307434
+    },
+    {
+      "query_id": "new026",
+      "query": "Hành vi nào bị coi là xâm phạm quyền sở hữu công nghiệp đối với nhãn hiệu?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5,
+        "subqueries": [
+          "Quy định về hành vi sử dụng dấu hiệu trùng hoặc tương tự với nhãn hiệu tại các điểm đ và e Khoản 1 Điều 129 Luật Sở hữu trí tuệ Hành vi nào bị coi là xâm phạm quyền sở hữu công nghiệp đối với nhãn hiệu?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5,
+        "subqueries": [
+          "Các quy định chi tiết tại điểm đ khoản 1 Điều 129 Luật Sở hữu trí tuệ về hành vi xâm phạm quyền đối với nhãn hiệu Hành vi nào bị coi là xâm phạm quyền sở hữu công nghiệp đối với nhãn hiệu?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "elapsed": 78.44814682006836
+    },
+    {
+      "query_id": "new027",
+      "query": "Kế hoạch triển khai thi hành Luật Trí tuệ nhân tạo giao cho các bộ ngành những nhiệm vụ gì?",
+      "gold_count": 1,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 7,
+        "subqueries": [
+          "Chi tiết cụ thể các nhiệm vụ được giao cho các bộ ngành trong Kế hoạch triển khai thi hành Luật Trí tuệ nhân tạo (Quyết định số 367/QĐ-TTg) Kế hoạch triển khai thi hành Luật Trí tuệ nhân tạo giao cho các bộ ngành những nhiệm vụ gì?"
+        ]
+      },
+      "turn3": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 7,
+        "subqueries": [
+          "Nội dung chi tiết của Kế hoạch triển khai thi hành Luật Trí tuệ nhân tạo (Quyết định số 367/QĐ-TTg) quy định cụ thể các nhiệm vụ giao cho các bộ, ngành Kế hoạch triển khai thi hành Luật Trí tuệ nhân tạo giao cho các bộ ngành những nhiệm vụ gì?"
+        ]
+      },
+      "combined": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 7
+      },
+      "elapsed": 114.83533120155334
+    },
+    {
+      "query_id": "new028",
+      "query": "Nguyên tắc bảo vệ dữ liệu cá nhân theo Luật Bảo vệ dữ liệu cá nhân gồm những nội dung gì?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.6666666666666666,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 6,
+        "subqueries": [
+          "Các khoản còn lại của Điều 3 Luật Bảo vệ dữ liệu cá nhân quy định về nguyên tắc bảo vệ dữ liệu cá nhân (khoản 1 và các khoản khác nếu có) Nguyên tắc bảo vệ dữ liệu cá nhân theo Luật Bảo vệ dữ liệu cá nhân gồm những nội dung gì?"
+        ]
+      },
+      "turn3": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 6,
+        "subqueries": [
+          "Các khoản còn lại của Điều 3 hoặc các nguyên tắc khác của Luật Bảo vệ dữ liệu cá nhân chưa được liệt kê trong các khoản từ 1 đến 6 Nguyên tắc bảo vệ dữ liệu cá nhân theo Luật Bảo vệ dữ liệu cá nhân gồm những nội dung gì?"
+        ]
+      },
+      "combined": {
+        "recall": 1.0,
+        "hit": 1,
+        "art_hit": 1,
+        "chunks": 6
+      },
+      "elapsed": 86.10200548171997
+    },
+    {
+      "query_id": "new029",
+      "query": "Cơ quan nhà nước phải lưu trữ hồ sơ đánh giá tác động bảo vệ dữ liệu cá nhân trong bao lâu?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 6,
+        "subqueries": [
+          "thời hạn lưu trữ hồ sơ đánh giá tác động bảo vệ dữ liệu cá nhân của cơ quan nhà nước Cơ quan nhà nước phải lưu trữ hồ sơ đánh giá tác động bảo vệ dữ liệu cá nhân trong bao lâu?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 6,
+        "subqueries": [
+          "thời gian cụ thể cơ quan nhà nước phải lưu trữ hồ sơ đánh giá tác động bảo vệ dữ liệu cá nhân Cơ quan nhà nước phải lưu trữ hồ sơ đánh giá tác động bảo vệ dữ liệu cá nhân trong bao lâu?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 14
+      },
+      "elapsed": 107.33947443962097
+    },
+    {
+      "query_id": "new030",
+      "query": "Doanh nghiệp phải giải quyết khiếu nại trực tuyến của người tiêu dùng trong thời hạn bao lâu?",
+      "gold_count": 3,
+      "turn1": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 5
+      },
+      "turn2": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 7,
+        "subqueries": [
+          "thời hạn giải quyết khiếu nại trực tuyến của người tiêu dùng đối với doanh nghiệp Doanh nghiệp phải giải quyết khiếu nại trực tuyến của người tiêu dùng trong thời hạn bao lâu?"
+        ]
+      },
+      "turn3": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 9,
+        "subqueries": [
+          "Thời hạn doanh nghiệp phải hoàn thành việc giải quyết khiếu nại của người tiêu dùng Doanh nghiệp phải giải quyết khiếu nại trực tuyến của người tiêu dùng trong thời hạn bao lâu?",
+          "Quy định cụ thể về thời hạn giải quyết khiếu nại thực hiện theo hình thức trực tuyến Doanh nghiệp phải giải quyết khiếu nại trực tuyến của người tiêu dùng trong thời hạn bao lâu?"
+        ]
+      },
+      "combined": {
+        "recall": 0.0,
+        "hit": 0,
+        "art_hit": 0,
+        "chunks": 9
+      },
+      "elapsed": 168.30591130256653
+    }
+  ]
+}

@@ -1,0 +1,8278 @@
+{
+  "all_40": {
+    "bm25_top5_base": {
+      "mean_recall": 0.24680555555555556,
+      "hit_rate": 0.375,
+      "mean_chunk_count": 5
+    },
+    "bm25_top5_clause": {
+      "mean_recall": 0.33958333333333335,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 10.825
+    },
+    "bm25_top5_crossref": {
+      "mean_recall": 0.29680555555555554,
+      "hit_rate": 0.425,
+      "mean_chunk_count": 7.2
+    },
+    "bm25_top5_combined": {
+      "mean_recall": 0.3645833333333333,
+      "hit_rate": 0.425,
+      "mean_chunk_count": 12.575
+    },
+    "bm25_top10_base": {
+      "mean_recall": 0.3514484126984127,
+      "hit_rate": 0.45,
+      "mean_chunk_count": 10
+    },
+    "bm25_top10_clause": {
+      "mean_recall": 0.4303571428571429,
+      "hit_rate": 0.45,
+      "mean_chunk_count": 20.15
+    },
+    "bm25_top10_crossref": {
+      "mean_recall": 0.3931150793650794,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 11.85
+    },
+    "bm25_top10_combined": {
+      "mean_recall": 0.45535714285714285,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 21.425
+    },
+    "bm25_top20_base": {
+      "mean_recall": 0.4101190476190476,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 20
+    },
+    "bm25_top20_clause": {
+      "mean_recall": 0.44285714285714284,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 34.575
+    },
+    "bm25_top20_crossref": {
+      "mean_recall": 0.4351190476190476,
+      "hit_rate": 0.5,
+      "mean_chunk_count": 21.4
+    },
+    "bm25_top20_combined": {
+      "mean_recall": 0.44910714285714287,
+      "hit_rate": 0.5,
+      "mean_chunk_count": 35.175
+    },
+    "dense_top5_base": {
+      "mean_recall": 0.2617857142857143,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 5
+    },
+    "dense_top5_clause": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 8.225
+    },
+    "dense_top5_crossref": {
+      "mean_recall": 0.3225,
+      "hit_rate": 0.45,
+      "mean_chunk_count": 10.1
+    },
+    "dense_top5_combined": {
+      "mean_recall": 0.36666666666666664,
+      "hit_rate": 0.45,
+      "mean_chunk_count": 13.525
+    },
+    "dense_top10_base": {
+      "mean_recall": 0.3698015873015873,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 10
+    },
+    "dense_top10_clause": {
+      "mean_recall": 0.3993055555555556,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 17.35
+    },
+    "dense_top10_crossref": {
+      "mean_recall": 0.42694444444444446,
+      "hit_rate": 0.525,
+      "mean_chunk_count": 14.9
+    },
+    "dense_top10_combined": {
+      "mean_recall": 0.44930555555555557,
+      "hit_rate": 0.525,
+      "mean_chunk_count": 21.525
+    },
+    "dense_top20_base": {
+      "mean_recall": 0.42430555555555555,
+      "hit_rate": 0.5,
+      "mean_chunk_count": 20
+    },
+    "dense_top20_clause": {
+      "mean_recall": 0.46041666666666664,
+      "hit_rate": 0.525,
+      "mean_chunk_count": 32.475
+    },
+    "dense_top20_crossref": {
+      "mean_recall": 0.47430555555555554,
+      "hit_rate": 0.55,
+      "mean_chunk_count": 24.5
+    },
+    "dense_top20_combined": {
+      "mean_recall": 0.48541666666666666,
+      "hit_rate": 0.55,
+      "mean_chunk_count": 34.225
+    },
+    "rerank_top5_base": {
+      "mean_recall": 0.30686507936507934,
+      "hit_rate": 0.45,
+      "mean_chunk_count": 5
+    },
+    "rerank_top5_clause": {
+      "mean_recall": 0.341468253968254,
+      "hit_rate": 0.45,
+      "mean_chunk_count": 10.15
+    },
+    "rerank_top5_crossref": {
+      "mean_recall": 0.3640079365079365,
+      "hit_rate": 0.5,
+      "mean_chunk_count": 7.425
+    },
+    "rerank_top5_combined": {
+      "mean_recall": 0.3986111111111111,
+      "hit_rate": 0.5,
+      "mean_chunk_count": 12.7
+    },
+    "rerank_top10_base": {
+      "mean_recall": 0.40813492063492063,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 10
+    },
+    "rerank_top10_clause": {
+      "mean_recall": 0.42916666666666664,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 18.7
+    },
+    "rerank_top10_crossref": {
+      "mean_recall": 0.46170634920634923,
+      "hit_rate": 0.525,
+      "mean_chunk_count": 12.35
+    },
+    "rerank_top10_combined": {
+      "mean_recall": 0.4791666666666667,
+      "hit_rate": 0.525,
+      "mean_chunk_count": 21.125
+    },
+    "rerank_top20_base": {
+      "mean_recall": 0.47291666666666665,
+      "hit_rate": 0.525,
+      "mean_chunk_count": 20
+    },
+    "rerank_top20_clause": {
+      "mean_recall": 0.5145833333333333,
+      "hit_rate": 0.55,
+      "mean_chunk_count": 32.65
+    },
+    "rerank_top20_crossref": {
+      "mean_recall": 0.5229166666666667,
+      "hit_rate": 0.575,
+      "mean_chunk_count": 21.875
+    },
+    "rerank_top20_combined": {
+      "mean_recall": 0.5645833333333333,
+      "hit_rate": 0.6,
+      "mean_chunk_count": 33.6
+    }
+  },
+  "legacy_10": {
+    "bm25_top5_base": {
+      "mean_recall": 0.4288888888888889,
+      "hit_rate": 0.7,
+      "mean_chunk_count": 5
+    },
+    "bm25_top5_clause": {
+      "mean_recall": 0.7,
+      "hit_rate": 0.7,
+      "mean_chunk_count": 11.2
+    },
+    "bm25_top5_crossref": {
+      "mean_recall": 0.4288888888888889,
+      "hit_rate": 0.7,
+      "mean_chunk_count": 6.5
+    },
+    "bm25_top5_combined": {
+      "mean_recall": 0.7,
+      "hit_rate": 0.7,
+      "mean_chunk_count": 12.1
+    },
+    "bm25_top10_base": {
+      "mean_recall": 0.5974603174603175,
+      "hit_rate": 0.8,
+      "mean_chunk_count": 10
+    },
+    "bm25_top10_clause": {
+      "mean_recall": 0.7714285714285715,
+      "hit_rate": 0.8,
+      "mean_chunk_count": 19.1
+    },
+    "bm25_top10_crossref": {
+      "mean_recall": 0.5974603174603175,
+      "hit_rate": 0.8,
+      "mean_chunk_count": 11
+    },
+    "bm25_top10_combined": {
+      "mean_recall": 0.7714285714285715,
+      "hit_rate": 0.8,
+      "mean_chunk_count": 19.7
+    },
+    "bm25_top20_base": {
+      "mean_recall": 0.7404761904761905,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 20
+    },
+    "bm25_top20_clause": {
+      "mean_recall": 0.8214285714285714,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 32.7
+    },
+    "bm25_top20_crossref": {
+      "mean_recall": 0.7404761904761905,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 20.6
+    },
+    "bm25_top20_combined": {
+      "mean_recall": 0.8214285714285714,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 32.8
+    },
+    "dense_top5_base": {
+      "mean_recall": 0.48047619047619045,
+      "hit_rate": 0.7,
+      "mean_chunk_count": 5
+    },
+    "dense_top5_clause": {
+      "mean_recall": 0.6166666666666667,
+      "hit_rate": 0.7,
+      "mean_chunk_count": 7.9
+    },
+    "dense_top5_crossref": {
+      "mean_recall": 0.6233333333333333,
+      "hit_rate": 0.8,
+      "mean_chunk_count": 8.4
+    },
+    "dense_top5_combined": {
+      "mean_recall": 0.7166666666666667,
+      "hit_rate": 0.8,
+      "mean_chunk_count": 11.3
+    },
+    "dense_top10_base": {
+      "mean_recall": 0.6292063492063492,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 10
+    },
+    "dense_top10_clause": {
+      "mean_recall": 0.7222222222222222,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 17.4
+    },
+    "dense_top10_crossref": {
+      "mean_recall": 0.7577777777777778,
+      "hit_rate": 1,
+      "mean_chunk_count": 13.2
+    },
+    "dense_top10_combined": {
+      "mean_recall": 0.8222222222222222,
+      "hit_rate": 1,
+      "mean_chunk_count": 20.7
+    },
+    "dense_top20_base": {
+      "mean_recall": 0.7222222222222222,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 20
+    },
+    "dense_top20_clause": {
+      "mean_recall": 0.7666666666666667,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 32.2
+    },
+    "dense_top20_crossref": {
+      "mean_recall": 0.8222222222222222,
+      "hit_rate": 1,
+      "mean_chunk_count": 22.9
+    },
+    "dense_top20_combined": {
+      "mean_recall": 0.7666666666666667,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 34
+    },
+    "rerank_top5_base": {
+      "mean_recall": 0.5441269841269841,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 5
+    },
+    "rerank_top5_clause": {
+      "mean_recall": 0.6825396825396826,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 10.6
+    },
+    "rerank_top5_crossref": {
+      "mean_recall": 0.6726984126984127,
+      "hit_rate": 1,
+      "mean_chunk_count": 7.6
+    },
+    "rerank_top5_combined": {
+      "mean_recall": 0.8111111111111111,
+      "hit_rate": 1,
+      "mean_chunk_count": 13.6
+    },
+    "rerank_top10_base": {
+      "mean_recall": 0.6825396825396826,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 10
+    },
+    "rerank_top10_clause": {
+      "mean_recall": 0.7666666666666667,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 19.4
+    },
+    "rerank_top10_crossref": {
+      "mean_recall": 0.7968253968253968,
+      "hit_rate": 1,
+      "mean_chunk_count": 12.5
+    },
+    "rerank_top10_combined": {
+      "mean_recall": 0.8666666666666667,
+      "hit_rate": 1,
+      "mean_chunk_count": 22.2
+    },
+    "rerank_top20_base": {
+      "mean_recall": 0.7833333333333333,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 20
+    },
+    "rerank_top20_clause": {
+      "mean_recall": 0.85,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 33.3
+    },
+    "rerank_top20_crossref": {
+      "mean_recall": 0.8833333333333333,
+      "hit_rate": 1,
+      "mean_chunk_count": 22.1
+    },
+    "rerank_top20_combined": {
+      "mean_recall": 0.95,
+      "hit_rate": 1,
+      "mean_chunk_count": 33.8
+    }
+  },
+  "new_30": {
+    "bm25_top5_base": {
+      "mean_recall": 0.18611111111111112,
+      "hit_rate": 0.26666666666666666,
+      "mean_chunk_count": 5
+    },
+    "bm25_top5_clause": {
+      "mean_recall": 0.21944444444444444,
+      "hit_rate": 0.3,
+      "mean_chunk_count": 10.7
+    },
+    "bm25_top5_crossref": {
+      "mean_recall": 0.25277777777777777,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 7.433333333333334
+    },
+    "bm25_top5_combined": {
+      "mean_recall": 0.25277777777777777,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 12.733333333333333
+    },
+    "bm25_top10_base": {
+      "mean_recall": 0.26944444444444443,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 10
+    },
+    "bm25_top10_clause": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 20.5
+    },
+    "bm25_top10_crossref": {
+      "mean_recall": 0.325,
+      "hit_rate": 0.36666666666666664,
+      "mean_chunk_count": 12.133333333333333
+    },
+    "bm25_top10_combined": {
+      "mean_recall": 0.35,
+      "hit_rate": 0.36666666666666664,
+      "mean_chunk_count": 22
+    },
+    "bm25_top20_base": {
+      "mean_recall": 0.3,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 20
+    },
+    "bm25_top20_clause": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 35.2
+    },
+    "bm25_top20_crossref": {
+      "mean_recall": 0.3333333333333333,
+      "hit_rate": 0.36666666666666664,
+      "mean_chunk_count": 21.666666666666668
+    },
+    "bm25_top20_combined": {
+      "mean_recall": 0.325,
+      "hit_rate": 0.36666666666666664,
+      "mean_chunk_count": 35.96666666666667
+    },
+    "dense_top5_base": {
+      "mean_recall": 0.18888888888888888,
+      "hit_rate": 0.3,
+      "mean_chunk_count": 5
+    },
+    "dense_top5_clause": {
+      "mean_recall": 0.21666666666666667,
+      "hit_rate": 0.3,
+      "mean_chunk_count": 8.333333333333334
+    },
+    "dense_top5_crossref": {
+      "mean_recall": 0.2222222222222222,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 10.666666666666666
+    },
+    "dense_top5_combined": {
+      "mean_recall": 0.25,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 14.266666666666667
+    },
+    "dense_top10_base": {
+      "mean_recall": 0.2833333333333333,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 10
+    },
+    "dense_top10_clause": {
+      "mean_recall": 0.2916666666666667,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 17.333333333333332
+    },
+    "dense_top10_crossref": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.36666666666666664,
+      "mean_chunk_count": 15.466666666666667
+    },
+    "dense_top10_combined": {
+      "mean_recall": 0.325,
+      "hit_rate": 0.36666666666666664,
+      "mean_chunk_count": 21.8
+    },
+    "dense_top20_base": {
+      "mean_recall": 0.325,
+      "hit_rate": 0.36666666666666664,
+      "mean_chunk_count": 20
+    },
+    "dense_top20_clause": {
+      "mean_recall": 0.35833333333333334,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 32.56666666666667
+    },
+    "dense_top20_crossref": {
+      "mean_recall": 0.35833333333333334,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 25.033333333333335
+    },
+    "dense_top20_combined": {
+      "mean_recall": 0.39166666666666666,
+      "hit_rate": 0.43333333333333335,
+      "mean_chunk_count": 34.3
+    },
+    "rerank_top5_base": {
+      "mean_recall": 0.22777777777777777,
+      "hit_rate": 0.3,
+      "mean_chunk_count": 5
+    },
+    "rerank_top5_clause": {
+      "mean_recall": 0.22777777777777777,
+      "hit_rate": 0.3,
+      "mean_chunk_count": 10
+    },
+    "rerank_top5_crossref": {
+      "mean_recall": 0.2611111111111111,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 7.366666666666666
+    },
+    "rerank_top5_combined": {
+      "mean_recall": 0.2611111111111111,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 12.4
+    },
+    "rerank_top10_base": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 10
+    },
+    "rerank_top10_clause": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 18.466666666666665
+    },
+    "rerank_top10_crossref": {
+      "mean_recall": 0.35,
+      "hit_rate": 0.36666666666666664,
+      "mean_chunk_count": 12.3
+    },
+    "rerank_top10_combined": {
+      "mean_recall": 0.35,
+      "hit_rate": 0.36666666666666664,
+      "mean_chunk_count": 20.766666666666666
+    },
+    "rerank_top20_base": {
+      "mean_recall": 0.36944444444444446,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 20
+    },
+    "rerank_top20_clause": {
+      "mean_recall": 0.4027777777777778,
+      "hit_rate": 0.43333333333333335,
+      "mean_chunk_count": 32.43333333333333
+    },
+    "rerank_top20_crossref": {
+      "mean_recall": 0.4027777777777778,
+      "hit_rate": 0.43333333333333335,
+      "mean_chunk_count": 21.8
+    },
+    "rerank_top20_combined": {
+      "mean_recall": 0.4361111111111111,
+      "hit_rate": 0.4666666666666667,
+      "mean_chunk_count": 33.53333333333333
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "eval001",
+      "query": "Các mức phân loại rủi ro của hệ thống trí tuệ nhân tạo gồm những mức nào?",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "134-2025-QH15_dieu-9_khoan-1_diem-a",
+        "134-2025-QH15_dieu-9_khoan-1_diem-c",
+        "134-2025-QH15_dieu-9_khoan-1_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 7,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 6,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 11,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 11,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 21,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 29,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 29,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 29,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval004",
+      "query": "Nhà cung cấp hệ thống AI rủi ro cao phải duy trì những biện pháp quản lý nào?",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 6,
+      "gold_chunk_ids": [
+        "142-2026-ND-CP_dieu-15_khoan-2_diem-b",
+        "142-2026-ND-CP_dieu-15_khoan-1",
+        "142-2026-ND-CP_dieu-15_khoan-2_diem-đ",
+        "142-2026-ND-CP_dieu-15_khoan-2_diem-c",
+        "142-2026-ND-CP_dieu-15_khoan-2_diem-d",
+        "142-2026-ND-CP_dieu-15_khoan-2_diem-a"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 39,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 39,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 9,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 9,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 23,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 14,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 27,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 36,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 24,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 11,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 9,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 15,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 21,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 14,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 25,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 39,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 24,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval007",
+      "query": "Nội dung do AI tạo ra phải được thông báo hoặc gắn nhãn như thế nào?",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 9,
+      "gold_chunk_ids": [
+        "142-2026-ND-CP_dieu-18_khoan-3_diem-a",
+        "142-2026-ND-CP_dieu-18_khoan-3_diem-đ",
+        "142-2026-ND-CP_dieu-18_khoan-5_diem-c",
+        "142-2026-ND-CP_dieu-18_khoan-3_diem-d",
+        "142-2026-ND-CP_dieu-18_khoan-5_diem-a",
+        "142-2026-ND-CP_dieu-18_khoan-3_diem-c",
+        "142-2026-ND-CP_dieu-18_khoan-3_diem-b",
+        "142-2026-ND-CP_dieu-18_khoan-5_diem-d",
+        "142-2026-ND-CP_dieu-18_khoan-5_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.2222222222222222,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 6,
+          "recall": 0.2222222222222222,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.5555555555555556,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 11,
+          "recall": 0.5555555555555556,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 21,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 23,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.1111111111111111,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 18,
+          "recall": 0.5555555555555556,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.1111111111111111,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 18,
+          "recall": 0.5555555555555556,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.5555555555555556,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 0.5555555555555556,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.2222222222222222,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 10,
+          "recall": 0.4444444444444444,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 6,
+          "recall": 0.2222222222222222,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 11,
+          "recall": 0.4444444444444444,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.4444444444444444,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 11,
+          "recall": 0.4444444444444444,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 21,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 23,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval009",
+      "query": "Hệ thống AI tương tác trực tiếp với con người phải được thiết kế theo yêu cầu gì?",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 1,
+      "gold_chunk_ids": [
+        "134-2025-QH15_dieu-11_khoan-1"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 14,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 21,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 38,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 35,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 35,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval011",
+      "query": "Cơ chế thử nghiệm có kiểm soát cho phép tổ chức, cá nhân được hưởng những cơ chế gì trong phạm vi thử nghiệm?",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 2,
+      "gold_chunk_ids": [
+        "134-2025-QH15_dieu-21_khoan-2_diem-a",
+        "134-2025-QH15_dieu-21_khoan-2_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 14,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 35,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 29,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 29,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 25,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 34,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval013",
+      "query": "Việc phân loại cấp độ thử nghiệm có kiểm soát dựa trên những tiêu chí nào?",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 5,
+      "gold_chunk_ids": [
+        "142-2026-ND-CP_dieu-22_khoan-1_diem-b",
+        "142-2026-ND-CP_dieu-22_khoan-1_diem-a",
+        "142-2026-ND-CP_dieu-22_khoan-1_diem-c",
+        "142-2026-ND-CP_dieu-22_khoan-2",
+        "142-2026-ND-CP_dieu-22_khoan-1_diem-d"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.4,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 8,
+          "recall": 0.4,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.8,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 12,
+          "recall": 0.8,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 25,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 25,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.4,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.4,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.8,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.8,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 23,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 23,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.6,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.6,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval019",
+      "query": "Cơ sở dữ liệu quốc gia phục vụ trí tuệ nhân tạo được tổ chức theo những nguyên tắc nào?",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 1,
+      "gold_chunk_ids": [
+        "134-2025-QH15_dieu-17_khoan-2"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 31,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 6,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 13,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 14,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 11,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 18,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 36,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval024",
+      "query": "Những hành vi nào liên quan đến AI bị nghiêm cấm khi lợi dụng nhóm người dễ bị tổn thương?",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 1,
+      "gold_chunk_ids": [
+        "134-2025-QH15_dieu-7_khoan-2_diem-c"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 11,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 18,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 18,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 21,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 6,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 6,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 23,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 23,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval025",
+      "query": "Khi ứng dụng AI trong quản lý nhà nước, cơ quan vận hành phải đánh giá tác động trong trường hợp nào?",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 7,
+      "gold_chunk_ids": [
+        "142-2026-ND-CP_dieu-20_khoan-1_diem-b",
+        "142-2026-ND-CP_dieu-20_khoan-2",
+        "142-2026-ND-CP_dieu-20_khoan-1_diem-a",
+        "142-2026-ND-CP_dieu-20_khoan-7_diem-b",
+        "142-2026-ND-CP_dieu-20_khoan-7_diem-c",
+        "142-2026-ND-CP_dieu-20_khoan-7_diem-d",
+        "142-2026-ND-CP_dieu-20_khoan-7_diem-a"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.2857142857142857,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 15,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.2857142857142857,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 15,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.5714285714285714,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 24,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.5714285714285714,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 24,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.5714285714285714,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 27,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 27,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.2857142857142857,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 8,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 7,
+          "recall": 0.5714285714285714,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 11,
+          "recall": 0.8571428571428571,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval028",
+      "query": "Tổ chức phát triển hoặc triển khai AI cần bảo đảm trách nhiệm giải trình ra sao?",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 2,
+      "gold_chunk_ids": [
+        "05-2026-TT-BKHCN_dieu-3_khoan-4_diem-b",
+        "05-2026-TT-BKHCN_dieu-3_khoan-2_diem-d"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 35,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 35,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 18,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 14,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 22,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 36,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 23,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 39,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 12,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 9,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 16,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 25,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 14,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 29,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 22,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 0.5,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new001",
+      "query": "Chủ thể dữ liệu cá nhân phải được cung cấp những thông tin gì trước khi đồng ý cho xử lý dữ liệu?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "91-2025-QH15_dieu-9_khoan-2_diem-b",
+        "91-2025-QH15_dieu-9_khoan-2_diem-a",
+        "91-2025-QH15_dieu-9_khoan-2_diem-c"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 38,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 38,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 19,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new002",
+      "query": "Trong trường hợp nào dữ liệu cá nhân được xử lý mà không cần sự đồng ý của chủ thể?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "91-2025-QH15_dieu-19_khoan-1_diem-a",
+        "91-2025-QH15_dieu-19_khoan-1_diem-b",
+        "91-2025-QH15_dieu-19_khoan-1_diem-c"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 27,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 27,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 21,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 21,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new003",
+      "query": "Khi nào bên kiểm soát dữ liệu phải xóa hoặc hủy dữ liệu cá nhân?",
+      "source": "new_design",
+      "gold_count": 4,
+      "gold_chunk_ids": [
+        "91-2025-QH15_dieu-14_khoan-1_diem-c",
+        "91-2025-QH15_dieu-14_khoan-1_diem-a",
+        "91-2025-QH15_dieu-14_khoan-1_diem-b",
+        "91-2025-QH15_dieu-14_khoan-1_diem-d"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 11,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 19,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 25,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 39,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 0.25,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 30,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 38,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 11,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 35,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new004",
+      "query": "Hệ thống trí tuệ nhân tạo phải tuân thủ những yêu cầu bảo vệ dữ liệu cá nhân nào?",
+      "source": "new_design",
+      "gold_count": 4,
+      "gold_chunk_ids": [
+        "356-2025-ND-CP_dieu-10_khoan-4",
+        "356-2025-ND-CP_dieu-10_khoan-2",
+        "356-2025-ND-CP_dieu-10_khoan-1",
+        "356-2025-ND-CP_dieu-10_khoan-3"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.25,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 14,
+          "recall": 0.25,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 8,
+          "recall": 0.25,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 17,
+          "recall": 0.25,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 27,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 13,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 30,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 23,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 8,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 8,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 13,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 13,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 36,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 36,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 8,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 8,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 18,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 18,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 37,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 37,
+          "recall": 0.75,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new005",
+      "query": "Bên kiểm soát dữ liệu phải đáp ứng điều kiện gì khi chuyển giao dữ liệu cá nhân ra nước ngoài?",
+      "source": "new_design",
+      "gold_count": 4,
+      "gold_chunk_ids": [
+        "356-2025-ND-CP_dieu-7_khoan-1_diem-d",
+        "356-2025-ND-CP_dieu-7_khoan-1_diem-c",
+        "356-2025-ND-CP_dieu-7_khoan-1_diem-a",
+        "356-2025-ND-CP_dieu-7_khoan-1_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 15,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 15,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 33,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 34,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new006",
+      "query": "Những hành vi nào bị nghiêm cấm trên không gian mạng theo Luật An ninh mạng?",
+      "source": "new_design",
+      "gold_count": 4,
+      "gold_chunk_ids": [
+        "116-2025-QH15_dieu-7_khoan-1_diem-a",
+        "116-2025-QH15_dieu-7_khoan-1_diem-c",
+        "116-2025-QH15_dieu-7_khoan-1_diem-d",
+        "116-2025-QH15_dieu-7_khoan-1_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.25,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.25,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 33,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 33,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 25,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 25,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new007",
+      "query": "Chủ quản hệ thống thông tin phải thực hiện biện pháp bảo vệ an ninh mạng nào?",
+      "source": "new_design",
+      "gold_count": 4,
+      "gold_chunk_ids": [
+        "116-2025-QH15_dieu-26_khoan-1",
+        "116-2025-QH15_dieu-26_khoan-2_diem-a",
+        "116-2025-QH15_dieu-26_khoan-2_diem-c",
+        "116-2025-QH15_dieu-26_khoan-2_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 30,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 19,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new008",
+      "query": "Sàn giao dịch thương mại điện tử phải đáp ứng những nghĩa vụ gì đối với người tiêu dùng?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "122-2025-QH15_dieu-14_khoan-3",
+        "122-2025-QH15_dieu-14_khoan-1",
+        "122-2025-QH15_dieu-14_khoan-2"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 34,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 34,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 30,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 38,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new009",
+      "query": "Hoạt động quảng cáo trong thương mại điện tử phải tuân thủ những quy định nào?",
+      "source": "new_design",
+      "gold_count": 2,
+      "gold_chunk_ids": [
+        "122-2025-QH15_dieu-18_khoan-1_diem-a",
+        "122-2025-QH15_dieu-18_khoan-1_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 15,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 33,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new010",
+      "query": "Thương nhân nước ngoài cung cấp dịch vụ thương mại điện tử tại Việt Nam phải đáp ứng điều kiện gì?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "248-2026-ND-CP_dieu-5_khoan-1_diem-b",
+        "248-2026-ND-CP_dieu-5_khoan-1_diem-c",
+        "248-2026-ND-CP_dieu-5_khoan-1_diem-a"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 26,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 15,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 31,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 31,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new011",
+      "query": "Nền tảng số trung gian phải lưu trữ thông tin giao dịch trong thời hạn bao lâu?",
+      "source": "new_design",
+      "gold_count": 2,
+      "gold_chunk_ids": [
+        "248-2026-ND-CP_dieu-10_khoan-1",
+        "248-2026-ND-CP_dieu-10_khoan-2"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new012",
+      "query": "Cơ quan nhà nước phải đảm bảo những yêu cầu gì khi cung cấp dịch vụ công trực tuyến?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "148-2025-QH15_dieu-22_khoan-2_diem-a",
+        "148-2025-QH15_dieu-22_khoan-1",
+        "148-2025-QH15_dieu-22_khoan-2_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new013",
+      "query": "Chính sách phát triển kinh tế số bao gồm những nội dung chính nào?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "148-2025-QH15_dieu-6_khoan-1",
+        "148-2025-QH15_dieu-6_khoan-2",
+        "148-2025-QH15_dieu-6_khoan-3"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 31,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 26,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 39,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new014",
+      "query": "Nền tảng số quy mô lớn phải đáp ứng những nghĩa vụ quản trị nào?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "224-2026-ND-CP_dieu-10_khoan-2_diem-a",
+        "224-2026-ND-CP_dieu-10_khoan-1",
+        "224-2026-ND-CP_dieu-10_khoan-2_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 31,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 26,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 26,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 30,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 30,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 39,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 38,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new015",
+      "query": "Hoạt động quảng cáo trên nền tảng số phải tuân thủ những quy định gì?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "224-2026-ND-CP_dieu-20_khoan-1_diem-a",
+        "224-2026-ND-CP_dieu-20_khoan-2",
+        "224-2026-ND-CP_dieu-20_khoan-1_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 31,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 36,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new016",
+      "query": "Chữ ký điện tử có giá trị pháp lý khi đáp ứng những điều kiện gì?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "20-2023-QH15_dieu-22_khoan-1_diem-c",
+        "20-2023-QH15_dieu-22_khoan-1_diem-a",
+        "20-2023-QH15_dieu-22_khoan-1_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 31,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 31,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 15,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new017",
+      "query": "Hợp đồng điện tử được giao kết theo trình tự nào?",
+      "source": "new_design",
+      "gold_count": 2,
+      "gold_chunk_ids": [
+        "20-2023-QH15_dieu-34_khoan-1",
+        "20-2023-QH15_dieu-34_khoan-2"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 25,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 27,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 27,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new018",
+      "query": "Nhà nước hỗ trợ hoạt động nghiên cứu và phát triển sản phẩm công nghệ số bằng những biện pháp gì?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "20-2026-VBHN-VPQH_dieu-16_khoan-3",
+        "20-2026-VBHN-VPQH_dieu-16_khoan-1",
+        "20-2026-VBHN-VPQH_dieu-16_khoan-2"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 9,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 9,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 14,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 14,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 18,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 9,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 9,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 17,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 14,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 21,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 32,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 9,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 9,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 14,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 14,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new019",
+      "query": "Cơ sở dữ liệu công nghiệp công nghệ số được thu thập và quản lý theo trách nhiệm của ai?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "20-2026-VBHN-VPQH_dieu-35_khoan-1_diem-a",
+        "20-2026-VBHN-VPQH_dieu-35_khoan-1_diem-b",
+        "20-2026-VBHN-VPQH_dieu-35_khoan-2_diem-a"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 30,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 30,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 6,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 11,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 14,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 30,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 30,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new020",
+      "query": "Tổ chức kinh doanh phải thực hiện những trách nhiệm gì khi bán hàng trực tuyến cho người tiêu dùng?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "47-2026-VBHN-VPQH_dieu-22_khoan-1_diem-a",
+        "47-2026-VBHN-VPQH_dieu-22_khoan-1_diem-b",
+        "47-2026-VBHN-VPQH_dieu-22_khoan-1_diem-c"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 15,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 35,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 35,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 26,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 38,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 31,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 35,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 35,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new021",
+      "query": "Trách nhiệm thu hồi sản phẩm khuyết tật của tổ chức kinh doanh được quy định như thế nào?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "47-2026-VBHN-VPQH_dieu-36_khoan-1_diem-a",
+        "47-2026-VBHN-VPQH_dieu-36_khoan-1_diem-b",
+        "47-2026-VBHN-VPQH_dieu-36_khoan-1_diem-c"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 36,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 26,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 19,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new022",
+      "query": "Tổ chức quản lý chợ và trung tâm thương mại có trách nhiệm gì với người tiêu dùng?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "29-2026-VBHN-BCT_dieu-5_khoan-2",
+        "29-2026-VBHN-BCT_dieu-5_khoan-3",
+        "29-2026-VBHN-BCT_dieu-5_khoan-1"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 11,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 11,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 21,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 27,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 33,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 33,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new023",
+      "query": "Những hành vi nào bị nghiêm cấm trong quản lý và sử dụng dữ liệu?",
+      "source": "new_design",
+      "gold_count": 4,
+      "gold_chunk_ids": [
+        "60-2024-QH15_dieu-10_khoan-1",
+        "60-2024-QH15_dieu-10_khoan-2",
+        "60-2024-QH15_dieu-10_khoan-3",
+        "60-2024-QH15_dieu-10_khoan-4"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 16,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 16,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 30,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 30,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new024",
+      "query": "Dữ liệu quan trọng và dữ liệu cốt lõi phải được bảo vệ theo yêu cầu nào?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "60-2024-QH15_dieu-20_khoan-1",
+        "60-2024-QH15_dieu-20_khoan-2",
+        "60-2024-QH15_dieu-20_khoan-3"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 15,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 35,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 36,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 35,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new025",
+      "query": "Tác phẩm nào không thuộc đối tượng bảo hộ quyền tác giả?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "67-2026-VBHN-VPQH_dieu-15_khoan-2",
+        "67-2026-VBHN-VPQH_dieu-15_khoan-3",
+        "67-2026-VBHN-VPQH_dieu-15_khoan-1"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 7,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 7,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 16,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 16,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 16,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 31,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 31,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 35,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 25,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 35,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 18,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 18,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 36,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 36,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new026",
+      "query": "Hành vi nào bị coi là xâm phạm quyền sở hữu công nghiệp đối với nhãn hiệu?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "67-2026-VBHN-VPQH_dieu-130_khoan-1_diem-a",
+        "67-2026-VBHN-VPQH_dieu-130_khoan-1_diem-b",
+        "67-2026-VBHN-VPQH_dieu-130_khoan-1_diem-c"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new027",
+      "query": "Kế hoạch triển khai thi hành Luật Trí tuệ nhân tạo giao cho các bộ ngành những nhiệm vụ gì?",
+      "source": "new_design",
+      "gold_count": 1,
+      "gold_chunk_ids": [
+        "367-2026-QD-TTG_dieu-1"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 38,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 38,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new028",
+      "query": "Nguyên tắc bảo vệ dữ liệu cá nhân theo Luật Bảo vệ dữ liệu cá nhân gồm những nội dung gì?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "91-2025-QH15_dieu-3_khoan-3",
+        "91-2025-QH15_dieu-3_khoan-1",
+        "91-2025-QH15_dieu-3_khoan-2"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_clause": {
+          "count": 14,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_crossref": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_combined": {
+          "count": 14,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_clause": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_combined": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top5_crossref": {
+          "count": 16,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top5_combined": {
+          "count": 26,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top10_clause": {
+          "count": 19,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top10_crossref": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top10_combined": {
+          "count": 34,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 34,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 30,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 40,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_combined": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_clause": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_combined": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new029",
+      "query": "Cơ quan nhà nước phải lưu trữ hồ sơ đánh giá tác động bảo vệ dữ liệu cá nhân trong bao lâu?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "356-2025-ND-CP_dieu-14_khoan-1_diem-c",
+        "356-2025-ND-CP_dieu-14_khoan-1_diem-a",
+        "356-2025-ND-CP_dieu-14_khoan-1_diem-b"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 38,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_clause": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_crossref": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_combined": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_clause": {
+          "count": 26,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_crossref": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_combined": {
+          "count": 34,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new030",
+      "query": "Doanh nghiệp phải giải quyết khiếu nại trực tuyến của người tiêu dùng trong thời hạn bao lâu?",
+      "source": "new_design",
+      "gold_count": 3,
+      "gold_chunk_ids": [
+        "29-2026-VBHN-BCT_dieu-15_khoan-2",
+        "29-2026-VBHN-BCT_dieu-15_khoan-1",
+        "29-2026-VBHN-BCT_dieu-15_khoan-3"
+      ],
+      "metrics": {
+        "bm25_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_crossref": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_combined": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_clause": {
+          "count": 33,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_combined": {
+          "count": 33,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_base": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_clause": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_crossref": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_combined": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_clause": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_combined": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_base": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top20_clause": {
+          "count": 22,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top20_crossref": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top20_combined": {
+          "count": 22,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top5_base": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_clause": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_crossref": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_combined": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_base": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_clause": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_crossref": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_combined": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_base": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top20_clause": {
+          "count": 26,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top20_crossref": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top20_combined": {
+          "count": 26,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        }
+      }
+    }
+  ]
+}

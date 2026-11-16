@@ -1,0 +1,4160 @@
+{
+  "all_40": {
+    "bm25_top5": {
+      "mean_recall": 0.24680555555555556,
+      "hit_rate": 0.375,
+      "mean_chunk_count": 5
+    },
+    "bm25_top5_expanded": {
+      "mean_recall": 0.33958333333333335,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 10.825
+    },
+    "bm25_top10": {
+      "mean_recall": 0.3514484126984127,
+      "hit_rate": 0.45,
+      "mean_chunk_count": 10
+    },
+    "bm25_top10_expanded": {
+      "mean_recall": 0.4303571428571429,
+      "hit_rate": 0.45,
+      "mean_chunk_count": 20.425
+    },
+    "bm25_top20": {
+      "mean_recall": 0.4101190476190476,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 20
+    },
+    "bm25_top20_expanded": {
+      "mean_recall": 0.44285714285714284,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 39.475
+    },
+    "dense_top5": {
+      "mean_recall": 0.2617857142857143,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 5
+    },
+    "dense_top5_expanded": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 8.225
+    },
+    "dense_top10": {
+      "mean_recall": 0.3698015873015873,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 10
+    },
+    "dense_top10_expanded": {
+      "mean_recall": 0.3993055555555556,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 17.55
+    },
+    "dense_top20": {
+      "mean_recall": 0.42430555555555555,
+      "hit_rate": 0.5,
+      "mean_chunk_count": 20
+    },
+    "dense_top20_expanded": {
+      "mean_recall": 0.46041666666666664,
+      "hit_rate": 0.525,
+      "mean_chunk_count": 35.175
+    },
+    "rerank_top5": {
+      "mean_recall": 0.30686507936507934,
+      "hit_rate": 0.45,
+      "mean_chunk_count": 5
+    },
+    "rerank_top5_expanded": {
+      "mean_recall": 0.341468253968254,
+      "hit_rate": 0.45,
+      "mean_chunk_count": 10.15
+    },
+    "rerank_top10": {
+      "mean_recall": 0.40813492063492063,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 10
+    },
+    "rerank_top10_expanded": {
+      "mean_recall": 0.42916666666666664,
+      "hit_rate": 0.475,
+      "mean_chunk_count": 18.9
+    },
+    "rerank_top20": {
+      "mean_recall": 0.47291666666666665,
+      "hit_rate": 0.525,
+      "mean_chunk_count": 20
+    },
+    "rerank_top20_expanded": {
+      "mean_recall": 0.5145833333333333,
+      "hit_rate": 0.55,
+      "mean_chunk_count": 35.9
+    }
+  },
+  "legacy_10": {
+    "bm25_top5": {
+      "mean_recall": 0.4288888888888889,
+      "hit_rate": 0.7,
+      "mean_chunk_count": 5
+    },
+    "bm25_top5_expanded": {
+      "mean_recall": 0.7,
+      "hit_rate": 0.7,
+      "mean_chunk_count": 11.2
+    },
+    "bm25_top10": {
+      "mean_recall": 0.5974603174603175,
+      "hit_rate": 0.8,
+      "mean_chunk_count": 10
+    },
+    "bm25_top10_expanded": {
+      "mean_recall": 0.7714285714285715,
+      "hit_rate": 0.8,
+      "mean_chunk_count": 19.1
+    },
+    "bm25_top20": {
+      "mean_recall": 0.7404761904761905,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 20
+    },
+    "bm25_top20_expanded": {
+      "mean_recall": 0.8214285714285714,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 33.8
+    },
+    "dense_top5": {
+      "mean_recall": 0.48047619047619045,
+      "hit_rate": 0.7,
+      "mean_chunk_count": 5
+    },
+    "dense_top5_expanded": {
+      "mean_recall": 0.6166666666666667,
+      "hit_rate": 0.7,
+      "mean_chunk_count": 7.9
+    },
+    "dense_top10": {
+      "mean_recall": 0.6292063492063492,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 10
+    },
+    "dense_top10_expanded": {
+      "mean_recall": 0.7222222222222222,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 17.4
+    },
+    "dense_top20": {
+      "mean_recall": 0.7222222222222222,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 20
+    },
+    "dense_top20_expanded": {
+      "mean_recall": 0.7666666666666667,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 32.9
+    },
+    "rerank_top5": {
+      "mean_recall": 0.5441269841269841,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 5
+    },
+    "rerank_top5_expanded": {
+      "mean_recall": 0.6825396825396826,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 10.6
+    },
+    "rerank_top10": {
+      "mean_recall": 0.6825396825396826,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 10
+    },
+    "rerank_top10_expanded": {
+      "mean_recall": 0.7666666666666667,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 19.4
+    },
+    "rerank_top20": {
+      "mean_recall": 0.7833333333333333,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 20
+    },
+    "rerank_top20_expanded": {
+      "mean_recall": 0.85,
+      "hit_rate": 0.9,
+      "mean_chunk_count": 35.8
+    }
+  },
+  "new_30": {
+    "bm25_top5": {
+      "mean_recall": 0.18611111111111112,
+      "hit_rate": 0.26666666666666666,
+      "mean_chunk_count": 5
+    },
+    "bm25_top5_expanded": {
+      "mean_recall": 0.21944444444444444,
+      "hit_rate": 0.3,
+      "mean_chunk_count": 10.7
+    },
+    "bm25_top10": {
+      "mean_recall": 0.26944444444444443,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 10
+    },
+    "bm25_top10_expanded": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 20.866666666666667
+    },
+    "bm25_top20": {
+      "mean_recall": 0.3,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 20
+    },
+    "bm25_top20_expanded": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 41.36666666666667
+    },
+    "dense_top5": {
+      "mean_recall": 0.18888888888888888,
+      "hit_rate": 0.3,
+      "mean_chunk_count": 5
+    },
+    "dense_top5_expanded": {
+      "mean_recall": 0.21666666666666667,
+      "hit_rate": 0.3,
+      "mean_chunk_count": 8.333333333333334
+    },
+    "dense_top10": {
+      "mean_recall": 0.2833333333333333,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 10
+    },
+    "dense_top10_expanded": {
+      "mean_recall": 0.2916666666666667,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 17.6
+    },
+    "dense_top20": {
+      "mean_recall": 0.325,
+      "hit_rate": 0.36666666666666664,
+      "mean_chunk_count": 20
+    },
+    "dense_top20_expanded": {
+      "mean_recall": 0.35833333333333334,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 35.93333333333333
+    },
+    "rerank_top5": {
+      "mean_recall": 0.22777777777777777,
+      "hit_rate": 0.3,
+      "mean_chunk_count": 5
+    },
+    "rerank_top5_expanded": {
+      "mean_recall": 0.22777777777777777,
+      "hit_rate": 0.3,
+      "mean_chunk_count": 10
+    },
+    "rerank_top10": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 10
+    },
+    "rerank_top10_expanded": {
+      "mean_recall": 0.31666666666666665,
+      "hit_rate": 0.3333333333333333,
+      "mean_chunk_count": 18.733333333333334
+    },
+    "rerank_top20": {
+      "mean_recall": 0.36944444444444446,
+      "hit_rate": 0.4,
+      "mean_chunk_count": 20
+    },
+    "rerank_top20_expanded": {
+      "mean_recall": 0.4027777777777778,
+      "hit_rate": 0.43333333333333335,
+      "mean_chunk_count": 35.93333333333333
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "eval001",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 44,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 7,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 11,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 29,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval004",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 6,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 39,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 23,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 36,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 11,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 21,
+          "recall": 0.16666666666666666,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 39,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval007",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 9,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.2222222222222222,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.5555555555555556,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.1111111111111111,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 18,
+          "recall": 0.5555555555555556,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.5555555555555556,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.2222222222222222,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 10,
+          "recall": 0.4444444444444444,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.4444444444444444,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval009",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 1,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 38,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 35,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 50,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval011",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 2,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 46,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "eval013",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 5,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.4,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.8,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 25,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.4,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.8,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 23,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.6,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval019",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 1,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 47,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 6,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 11,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 43,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval024",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 1,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 17,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 18,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 6,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 26,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 41,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 23,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 52,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval025",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 7,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.2857142857142857,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 15,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.5714285714285714,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 24,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.5714285714285714,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 27,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.2857142857142857,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 8,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.7142857142857143,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "eval028",
+      "source": "legacy_retrieval_eval",
+      "gold_count": 2,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 35,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 18,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 36,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 12,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 25,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 40,
+          "recall": 0.5,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new001",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 38,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new002",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 27,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 9,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 21,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new003",
+      "source": "new_design",
+      "gold_count": 4,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 19,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 39,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new004",
+      "source": "new_design",
+      "gold_count": 4,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.25,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 14,
+          "recall": 0.25,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 27,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 46,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 8,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 13,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 36,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 8,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 18,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 37,
+          "recall": 0.75,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new005",
+      "source": "new_design",
+      "gold_count": 4,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 50,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 33,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 34,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 42,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new006",
+      "source": "new_design",
+      "gold_count": 4,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.25,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 33,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.5,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 15,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 41,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 25,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new007",
+      "source": "new_design",
+      "gold_count": 4,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 17,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 40,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new008",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 34,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 66,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 30,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 70,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 43,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 73,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new009",
+      "source": "new_design",
+      "gold_count": 2,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 43,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new010",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 8,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 15,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 31,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new011",
+      "source": "new_design",
+      "gold_count": 2,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 51,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 101,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 48,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 60,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 45,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 77,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new012",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new013",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 25,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new014",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 47,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 6,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 38,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new015",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 59,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 28,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 60,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 32,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 46,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new016",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 31,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 18,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new017",
+      "source": "new_design",
+      "gold_count": 2,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 27,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new018",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 14,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 17,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 37,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new019",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 30,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 6,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 11,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 30,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new020",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 35,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 50,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 27,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 35,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 45,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new021",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 11,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 36,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 21,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new022",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 21,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 50,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 16,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 33,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new023",
+      "source": "new_design",
+      "gold_count": 4,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 16,
+          "recall": 0.75,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 30,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 40,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 19,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 28,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new024",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 35,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 13,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 29,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 14,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 35,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new025",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 7,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 12,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 54,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 16,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 31,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 35,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 18,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 36,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new026",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 24,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 53,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 16,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 50,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 23,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 50,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new027",
+      "source": "new_design",
+      "gold_count": 1,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 8,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 38,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new028",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top5_expanded": {
+          "count": 14,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top10_expanded": {
+          "count": 22,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "bm25_top20_expanded": {
+          "count": 43,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top10_expanded": {
+          "count": 19,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 34,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 0.6666666666666666,
+          "hit": 1
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top10_expanded": {
+          "count": 24,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 1.0,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 52,
+          "recall": 1.0,
+          "hit": 1
+        }
+      }
+    },
+    {
+      "query_id": "new029",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 9,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 37,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 7,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20_expanded": {
+          "count": 22,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20_expanded": {
+          "count": 26,
+          "recall": 0.0,
+          "hit": 0
+        }
+      }
+    },
+    {
+      "query_id": "new030",
+      "source": "new_design",
+      "gold_count": 3,
+      "metrics": {
+        "bm25_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top10_expanded": {
+          "count": 33,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20": {
+          "count": 20,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "bm25_top20_expanded": {
+          "count": 63,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top10_expanded": {
+          "count": 12,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "dense_top20": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "dense_top20_expanded": {
+          "count": 22,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top5": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top5_expanded": {
+          "count": 5,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top10_expanded": {
+          "count": 10,
+          "recall": 0.0,
+          "hit": 0
+        },
+        "rerank_top20": {
+          "count": 20,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        },
+        "rerank_top20_expanded": {
+          "count": 26,
+          "recall": 0.3333333333333333,
+          "hit": 1
+        }
+      }
+    }
+  ]
+}
