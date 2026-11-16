@@ -93,6 +93,24 @@ APPENDIX_START_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
+CONSOLIDATED_CERTIFICATION_PATTERN = re.compile(
+    r"\bXÁC\s+THỰC\s+VĂN\s+BẢN\s+HỢP\s+NHẤT\b",
+    re.IGNORECASE,
+)
+
+# Material following the operative Articles is retained in cleaned text but
+# must not be absorbed into the final Article.  These markers describe common
+# publication/certification blocks, not document-specific wording.
+TERMINAL_NON_ARTICLE_PATTERN = re.compile(
+    r"^\s*(?:"
+    r"(?i:Nơi\s+nhận\s*:)"
+    r"|_+"
+    r"|(?i:Luật\s+này\s+(?:đã\s+)?được\s+Quốc\s+hội\b.*)"
+    r"|VĂN\s+PHÒNG\s+QUỐC\s+HỘI"
+    r"|BỘ\s+[A-ZÀ-ỸĐ\s]+"
+    r")\s*$",
+)
+
 
 def normalize_line(line: str) -> str:
     line = unicodedata.normalize("NFC", line)
@@ -290,6 +308,8 @@ class LegalStructureParser:
         self.preamble_nonempty_lines = 0
         self.appendix_start_line: int | None = None
         self.appendix_excluded_line_count = 0
+        self.suffix_start_line: int | None = None
+        self.suffix_excluded_line_count = 0
 
     def _set_pending_title(
         self,
@@ -452,6 +472,36 @@ class LegalStructureParser:
             start=1,
         ):
             line = normalize_line(raw_line)
+
+            # Văn bản hợp nhất đặt khối xác thực và chú thích sửa đổi sau
+            # phần điều khoản. Các chú thích này có thể trích nguyên văn
+            # "Điều ..." của văn bản sửa đổi, nhưng đó không phải Điều cấp
+            # cao nhất của văn bản hợp nhất. Giữ nguyên toàn bộ khối trong
+            # cleaned text và chỉ loại khỏi mô hình Article.
+            if self.suffix_start_line is not None:
+                if self.appendix_start_line is None and APPENDIX_START_PATTERN.match(line):
+                    self.appendix_start_line = line_number
+                if self.appendix_start_line is not None and line:
+                    self.appendix_excluded_line_count += 1
+                if line:
+                    self.suffix_excluded_line_count += 1
+                continue
+
+            if (
+                self.current_article is not None or self.articles
+            ) and CONSOLIDATED_CERTIFICATION_PATTERN.search(line):
+                self._close_article(line_number - 1)
+                self.suffix_start_line = line_number
+                self.suffix_excluded_line_count = int(bool(line))
+                continue
+
+            if (
+                self.current_article is not None or self.articles
+            ) and TERMINAL_NON_ARTICLE_PATTERN.match(line):
+                self._close_article(line_number - 1)
+                self.suffix_start_line = line_number
+                self.suffix_excluded_line_count = int(bool(line))
+                continue
 
             # articles.jsonl chỉ mô hình hóa Điều/Khoản/Điểm của phần quy
             # phạm chính. Phụ lục và mẫu biểu có hệ thống đánh số riêng;

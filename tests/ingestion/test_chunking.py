@@ -42,6 +42,29 @@ class ChunkingTests(unittest.TestCase):
         self.assertEqual(len(ids), len(set(ids)))
         self.assertEqual(first, second)
 
+    def test_heading_only_article_produces_a_chunk(self) -> None:
+        article = {
+            "document_id": "test-document",
+            "document_number": "1/TEST",
+            "document_title": "Test document",
+            "article": "5",
+            "article_title": "(được bãi bỏ)",
+            "intro_text": "",
+            "clauses": [],
+            "direct_points": [],
+            "start_line": 10,
+            "end_line": 10,
+        }
+        metadata = {
+            "document_type": "law",
+            "official_source_url": "https://example.test",
+            "verification_status": "verified",
+        }
+        chunks = build_chunks([article], {"test-document": metadata})
+        self.assertEqual(len(chunks), 1)
+        self.assertEqual(chunks[0]["text"], "(được bãi bỏ)")
+        self.assertEqual(chunks[0]["article"], "5")
+
 
 if __name__ == "__main__":
     unittest.main()

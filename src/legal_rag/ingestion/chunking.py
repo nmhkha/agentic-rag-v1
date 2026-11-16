@@ -260,10 +260,14 @@ def build_article_chunks(
     direct_points = article.get("direct_points") or []
 
     if not clauses and not direct_points:
+        # Some valid provisions carry their entire payload in the heading
+        # (for example a repealed Article or a one-sentence decision Article).
+        # They must still produce one traceable chunk.
+        body = intro or normalize_text(article.get("article_title"))
         return create_records(
             article,
             metadata,
-            intro,
+            body,
             "article",
             start_line=article.get("start_line"),
         )
