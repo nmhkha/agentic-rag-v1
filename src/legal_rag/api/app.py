@@ -11,8 +11,10 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from ..agentic.v1.controller import AgenticRAGController
+from ..agentic.v1.evidence_selection import GAP_PRESERVING_V1_PRACTICAL_V1
 from ..agentic.v1.trace import require_expected_model
 from ..llm_client import client_from_env
+from ..navigation import frozen_document_navigator
 from ..retrieval.pipeline import RetrievalPipeline
 from .router import router
 from .service import RAGService
@@ -24,8 +26,13 @@ def build_service() -> RAGService:
     client = client_from_env()
     require_expected_model(client)
     pipeline = RetrievalPipeline()
-    controller = AgenticRAGController(pipeline, client)
-    return RAGService(controller, client)
+    controller = AgenticRAGController(
+        pipeline,
+        client,
+        final_evidence_policy=GAP_PRESERVING_V1_PRACTICAL_V1,
+    )
+    navigator = frozen_document_navigator()
+    return RAGService(controller, client, navigator=navigator)
 
 
 def create_app(service: RAGService | None = None) -> FastAPI:
