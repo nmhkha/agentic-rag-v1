@@ -26,3 +26,13 @@ experiments/runs/**
 /.cache/
 .env.*
 !.env.example
+
+# Large corpus artifacts, binary documents and precomputed vector indexes
+data/raw/docx/
+data/versions/corpus-v0.2/
+experiments/indexes/corpus-v0.2/
+
+# Tooling and scratch files
+.ua/
+repomix-output.xml
+
