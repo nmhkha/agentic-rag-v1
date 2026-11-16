@@ -88,17 +88,17 @@ _CLAUSE_ID = r"[0-9]+[a-zA-Z]?"
 _END = r"\s*[?.!。]*\s*$"
 
 _POINT_LIST = re.compile(
-    rf"^liệt\s+kê\s+các\s+điểm\s+của\s+khoản\s+(?P<clause>{_CLAUSE_ID})"
-    rf"\s+(?:của\s+)?điều\s+(?P<article>{_ARTICLE_ID})\s+(?:của\s+)?(?P<document>.+?){_END}",
+    rf"^liệt\s+kê\s+các\s+điểm\s+(?:của|trong|thuộc)\s+khoản\s+(?P<clause>{_CLAUSE_ID})"
+    rf"\s+(?:(?:của|trong|thuộc)\s+)?điều\s+(?P<article>{_ARTICLE_ID})\s+(?:(?:của|trong|thuộc)\s+)?(?P<document>.+?){_END}",
     re.IGNORECASE,
 )
 _CLAUSE_LIST = re.compile(
-    rf"^liệt\s+kê\s+các\s+khoản\s+của\s+điều\s+(?P<article>{_ARTICLE_ID})"
-    rf"\s+(?:của\s+)?(?P<document>.+?){_END}",
+    rf"^liệt\s+kê\s+các\s+khoản\s+(?:của|trong|thuộc)\s+điều\s+(?P<article>{_ARTICLE_ID})"
+    rf"\s+(?:(?:của|trong|thuộc)\s+)?(?P<document>.+?){_END}",
     re.IGNORECASE,
 )
 _CLAUSE_QUESTION = re.compile(
-    rf"^điều\s+(?P<article>{_ARTICLE_ID})\s+của\s+(?P<document>.+?)"
+    rf"^điều\s+(?P<article>{_ARTICLE_ID})\s+(?:của|trong|thuộc)\s+(?P<document>.+?)"
     rf"\s+có\s+(?:những\s+)?khoản\s+nào{_END}",
     re.IGNORECASE,
 )
@@ -106,7 +106,7 @@ _ARTICLE_COUNT = re.compile(
     rf"^(?P<document>.+?)\s+có\s+bao\s+nhiêu\s+điều{_END}", re.IGNORECASE
 )
 _ARTICLE_LIST = re.compile(
-    rf"^liệt\s+kê\s+các\s+điều(?:\s+khoản)?\s+của\s+(?P<document>.+?){_END}",
+    rf"^liệt\s+kê\s+các\s+(?:điều(?:\s+khoản)?|khoản)\s+(?:của|trong|thuộc)\s+(?P<document>.+?){_END}",
     re.IGNORECASE,
 )
 

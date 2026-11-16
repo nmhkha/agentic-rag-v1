@@ -101,9 +101,9 @@ def detect_exact_lookup(query: str) -> ExactLookupRequest:
     normalized = _normalize_query(query)
     for intent, base in _BASES:
         patterns = (
-            rf"^{_DIRECT_PREFIX}{base}\s+(?:của\s+)?(?P<document>.+?){_END}",
-            rf"^{base}\s+(?:của\s+)?(?P<document>.+?)\s+{_DIRECT_SUFFIX}{_END}",
-            rf"^{base}\s+của\s+(?P<document>(?:{_LEGAL_DOCUMENT}|{_DOCUMENT_NUMBER})){_END}",
+            rf"^{_DIRECT_PREFIX}{base}\s+(?:(?:của|trong|thuộc)\s+)?(?P<document>.+?){_END}",
+            rf"^{base}\s+(?:(?:của|trong|thuộc)\s+)?(?P<document>.+?)\s+{_DIRECT_SUFFIX}{_END}",
+            rf"^{base}\s+(?:của|trong|thuộc)\s+(?P<document>(?:{_LEGAL_DOCUMENT}|{_DOCUMENT_NUMBER})){_END}",
         )
         for raw_pattern in patterns:
             match = re.fullmatch(raw_pattern, normalized, flags=re.IGNORECASE)

@@ -36,9 +36,18 @@ def run_practical_rag(
     exact = try_exact_lookup(query, navigator, lookup=lookup)
     if exact.handled:
         return exact
-    scoped = try_document_scoped_search(query, pipeline, navigator)
-    if scoped.handled:
-        return scoped
+    if pipeline is not None:
+        scoped = try_document_scoped_search(query, pipeline, navigator)
+        if scoped.handled:
+            return scoped
+
+    if pipeline is None and controller is None:
+        return NavigationResult(
+            handled=False,
+            intent="UNHANDLED",
+            status="NOT_NAVIGATION",
+            message="Query not handled by deterministic routes and no pipeline provided.",
+        )
 
     v1_kwargs.setdefault(
         "final_evidence_policy", GAP_PRESERVING_V1_PRACTICAL_V1
