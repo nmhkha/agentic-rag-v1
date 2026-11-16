@@ -1,0 +1,232 @@
+{
+  "corpus_version": "corpus-v0.2",
+  "status": "FROZEN",
+  "snapshot_date": "2026-09-18",
+  "frozen_at": "2026-09-19T22:41:20+07:00",
+  "source_count": 17,
+  "article_count": 945,
+  "chunk_count": 6122,
+  "legal_domains": [
+    "ai",
+    "consumer_protection",
+    "cybersecurity",
+    "data",
+    "digital_industry",
+    "digital_transformation",
+    "ecommerce",
+    "electronic_transactions",
+    "intellectual_property",
+    "personal_data"
+  ],
+  "evidence_role_counts": {
+    "normative": 12,
+    "normative_consolidated": 4,
+    "policy_context": 1
+  },
+  "source_hashes": [
+    {
+      "source_uid": "BCT:29-VBHN-BCT:2026-04-13",
+      "document_id": "29-2026-VBHN-BCT",
+      "document_number": "29/VBHN-BCT",
+      "local_raw_path": "data/raw/docx/29-2026-VBHN-BCT.docx",
+      "source_sha256": "9e4f7e94996402c4ff8ff3c03f5697bad94eeee10d4e31a15c6489e77b9b8efc"
+    },
+    {
+      "source_uid": "BKHCN:05-2026-TT-BKHCN:2026-03-10",
+      "document_id": "05-2026-TT-BKHCN",
+      "document_number": "05/2026/TT-BKHCN",
+      "local_raw_path": "data/raw/docx/05-2026-TT-BKHCN.docx",
+      "source_sha256": "e17a3067d886007f781ab026aeced743a81cb5188fea6b95a96c0e446a81bef1"
+    },
+    {
+      "source_uid": "CP:142-2026-ND-CP:2026-04-30",
+      "document_id": "142-2026-ND-CP",
+      "document_number": "142/2026/NĐ-CP",
+      "local_raw_path": "data/raw/docx/142-2026-ND-CP.docx",
+      "source_sha256": "3e63b0ea3860b9d16247f52d887dea50cd2f7d0aa4d27be66b1ff3222da276e4"
+    },
+    {
+      "source_uid": "CP:224-2026-ND-CP:2026-06-24",
+      "document_id": "224-2026-ND-CP",
+      "document_number": "224/2026/NĐ-CP",
+      "local_raw_path": "data/raw/docx/224-2026-ND-CP.docx",
+      "source_sha256": "5ede6c9a8f4d315139673386ccb87dce282b9985ed96a059a8a4ee9d8dc4fb78"
+    },
+    {
+      "source_uid": "CP:248-2026-ND-CP:2026-06-30",
+      "document_id": "248-2026-ND-CP",
+      "document_number": "248/2026/NĐ-CP",
+      "local_raw_path": "data/raw/docx/248-2026-ND-CP.docx",
+      "source_sha256": "0d6b4229c11e55780fdcaf04efede5724794c514358d01a79e23ee263b22e67f"
+    },
+    {
+      "source_uid": "CP:356-2025-ND-CP:2025-12-31",
+      "document_id": "356-2025-ND-CP",
+      "document_number": "356/2025/NĐ-CP",
+      "local_raw_path": "data/raw/docx/356-2025-ND-CP.docx",
+      "source_sha256": "ee82d094f299e90c8f4a0abc23ce0d3499b0ae9b16e424658b396c9fd5f8e00a"
+    },
+    {
+      "source_uid": "QH:116-2025-QH15:2025-12-10",
+      "document_id": "116-2025-QH15",
+      "document_number": "116/2025/QH15",
+      "local_raw_path": "data/raw/docx/116-2025-QH15.docx",
+      "source_sha256": "19c797cb50eb621a2a5f2cf205db5494fa9e465a1d76a9422e96f45d2f70b8d5"
+    },
+    {
+      "source_uid": "QH:122-2025-QH15:2025-12-10",
+      "document_id": "122-2025-QH15",
+      "document_number": "122/2025/QH15",
+      "local_raw_path": "data/raw/docx/122-2025-QH15.docx",
+      "source_sha256": "8882b7e0f5457afa3f9d56c52a2c23ec0343cb927ca2e9ed73e035a18f3abe96"
+    },
+    {
+      "source_uid": "QH:134-2025-QH15:2025-12-10",
+      "document_id": "134-2025-QH15",
+      "document_number": "134/2025/QH15",
+      "local_raw_path": "data/raw/docx/134-2025-QH15.docx",
+      "source_sha256": "fc6e87ba1b7eea3bd1cb37099e9f6d5f1e37fcd8970cca894e6e67865cdd20b7"
+    },
+    {
+      "source_uid": "QH:148-2025-QH15:2025-12-11",
+      "document_id": "148-2025-QH15",
+      "document_number": "148/2025/QH15",
+      "local_raw_path": "data/raw/docx/148-2025-QH15.docx",
+      "source_sha256": "1397234a1fcb1da390cc07e7292cacc791de9f304520df2f5c94d4497e12a397"
+    },
+    {
+      "source_uid": "QH:20-2023-QH15:2023-06-22",
+      "document_id": "20-2023-QH15",
+      "document_number": "20/2023/QH15",
+      "local_raw_path": "data/raw/docx/20-2023-QH15.docx",
+      "source_sha256": "d97fd8139fcdd0cc18771e0b3acb9e293d32f813e5a5ff7ba1c9117d76bb3a20"
+    },
+    {
+      "source_uid": "QH:60-2024-QH15:2024-11-30",
+      "document_id": "60-2024-QH15",
+      "document_number": "60/2024/QH15",
+      "local_raw_path": "data/raw/docx/60-2024-QH15.docx",
+      "source_sha256": "95cec898690cb02e2b02b7eb1dd3c5a406be3c9a784965409d011f9e28e2d197"
+    },
+    {
+      "source_uid": "QH:91-2025-QH15:2025-06-26",
+      "document_id": "91-2025-QH15",
+      "document_number": "91/2025/QH15",
+      "local_raw_path": "data/raw/docx/91-2025-QH15.docx",
+      "source_sha256": "1044ad5a6880b076ae5a9a7fab872aa69401c19ba0552f3833f7cf736c566f90"
+    },
+    {
+      "source_uid": "TTG:367-QD-TTG:2026-02-28",
+      "document_id": "367-2026-QD-TTG",
+      "document_number": "367/QĐ-TTg",
+      "local_raw_path": "data/raw/docx/367-2026-QD-TTG.docx",
+      "source_sha256": "442a956a81d86dd7a9cff7fe8d382cb8b92f1306355b76fa7801e57f0cad86b0"
+    },
+    {
+      "source_uid": "VPQH:20-VBHN-VPQH:2026-02-12",
+      "document_id": "20-2026-VBHN-VPQH",
+      "document_number": "20/VBHN-VPQH",
+      "local_raw_path": "data/raw/docx/20-2026-VBHN-VPQH.docx",
+      "source_sha256": "f44f812953a75d6b8b419bb5f3d89ba02078d8069eba650d579930f463222f5c"
+    },
+    {
+      "source_uid": "VPQH:47-VBHN-VPQH:2026-03-17",
+      "document_id": "47-2026-VBHN-VPQH",
+      "document_number": "47/VBHN-VPQH",
+      "local_raw_path": "data/raw/docx/47-2026-VBHN-VPQH.docx",
+      "source_sha256": "28a7412da3d08810cccfbc85363a9fb72c743e8d6ebd95c094b6cf2594ebe870"
+    },
+    {
+      "source_uid": "VPQH:67-VBHN-VPQH:2026-03-23",
+      "document_id": "67-2026-VBHN-VPQH",
+      "document_number": "67/VBHN-VPQH",
+      "local_raw_path": "data/raw/docx/67-2026-VBHN-VPQH.docx",
+      "source_sha256": "d2906b726846b4ebfbfdab24e8b077f59422fc75dd2f00f9072a16a7f9cf0c25"
+    }
+  ],
+  "resolved_registry_sha256": "81a922d7aed44a607f9081cada73d6f8c6a46adbda174fbe544b1700292cbf3b",
+  "relationships_sha256": "e43b86c6a24c5feceab5a86199c69ed9b44a36b61abc63eed9b7b8fb5fdb2f96",
+  "articles_sha256": "a63ebea1b3d295dd6083730127f96a1e5d317c45c9e6bc90442824631b9443f0",
+  "chunks_sha256": "d95a608533aad358ccdedfe259ebaacb0ba5086a4414ae6c8d18de3c42d19ab3",
+  "per_document_article_sha256": {
+    "05-2026-TT-BKHCN": "0b2f3cfec1c27562f14848bf061a26b7e78ce258337190749114e41e730e84da",
+    "116-2025-QH15": "ae01cdcf8639477a1bbbfdf9edda1fbfff87fb11988acabcde24f5a93647996f",
+    "122-2025-QH15": "1826f2714e187c6f32d75b8f9dc758018470e2480957f7c9aad5d4d73cd46e01",
+    "134-2025-QH15": "7d08f038bc159ac7d6cf17dd4fd427ccb9dfab735c24c1589506e56eac7625cc",
+    "142-2026-ND-CP": "f65c706ca64a35e829366e2fa085009d4883c2452caf6ec9d1938bbc5b4629e4",
+    "148-2025-QH15": "4cd80307da684f875f10dfd3838e7a15dd3d94c30797ab6b3b6c7f6658b480d2",
+    "20-2023-QH15": "f4c09857ae764e5124447d246123fb96e38d74570c92539faf2dc77140498bca",
+    "20-2026-VBHN-VPQH": "8816a0b747122737eedc1b0fb82830405a1d42c1d1c270bd4bf069efd2579aaf",
+    "224-2026-ND-CP": "13744dec5dc27c3b98196387599886d72ca92a996845078bf79cffdf915fdf7c",
+    "248-2026-ND-CP": "d59dfcd5ce59da022641633fe9f324e4c3292b17dc236bdf300d479377e69392",
+    "29-2026-VBHN-BCT": "affd046cd897e18cc087ab2d8c6796cb79708d3402616cedb934378ded9e2612",
+    "356-2025-ND-CP": "be051291223f4ceaa51ce87def7dff7d78194d971c0157f9580b01877d800eee",
+    "367-2026-QD-TTG": "256d623c2b680595bb6d6cfa212401185763d7de3e344b4caeedae9dd82a8ab4",
+    "47-2026-VBHN-VPQH": "11ea34aab98cbc064c8687e801102f92e47f593795679c378cd854db24194334",
+    "60-2024-QH15": "6fe3ed427f4683f5731c28c1e5b32b1c41b5c497cd8d70e2cfcb4f400943f9b7",
+    "67-2026-VBHN-VPQH": "6210403c201f43ae8e61e9036e16cf92e9b81017ed6f5ba6ba34bfc4a1d98280",
+    "91-2025-QH15": "15ad7de1524b2fe4aefd78021d19eb19ade375d7587cd9304c903b105ec446df"
+  },
+  "per_document_chunk_sha256": {
+    "05-2026-TT-BKHCN": "6c95e4bed8963eeb92f6b90e602fddd78a2edae00b61afb79daa097eeb736f3d",
+    "116-2025-QH15": "b0d1fbe0fa96b3c2cad9a6256d29d029e6a79065bdbf20c487bc39e09d1110cc",
+    "122-2025-QH15": "99dafb8e542136269366ee6becfdb9a2505a24605ee8c73c5d767551670f37b7",
+    "134-2025-QH15": "b4685f972ab5325017c4c5eba43975a54865fc8e73e1b615b6c11991fbd0ff87",
+    "142-2026-ND-CP": "25adcc562446f6cd6796e56feaecc46ef58aae97e502600a30aaafc1fc35ccb4",
+    "148-2025-QH15": "492d499300c0c3a57a6ab83f83dde811b2a9714f07d6ee71f5a184126ec63f57",
+    "20-2023-QH15": "9f38edea6ae120f0308676d4d2134fdf74c0c545b3436ed68051a088b16ae3b9",
+    "20-2026-VBHN-VPQH": "f4c2581f1e7399baf9ebe16d76795f6f413a3d071569ee97e1226ab880618667",
+    "224-2026-ND-CP": "5027cfa6e8a2ec68fdca9f5db5354ab004479c4440d1b768a6ed6e59cdb0cfeb",
+    "248-2026-ND-CP": "bb4218b807a2f92556e1727b6321e436c2df8545dc3f2f45000a81d09d5bb35b",
+    "29-2026-VBHN-BCT": "85c9d4b37737359b747aa6cc871ea352905251b3e545e9439253dedd658fdf23",
+    "356-2025-ND-CP": "629b3fe459c71b54903a1b91107ce8a55375761d4459d2c2421677b108f12774",
+    "367-2026-QD-TTG": "751f151ff6afbe79d7a99a7be237a4f0d13ef89ead86ff8cf59bbf5ccd4e45d9",
+    "47-2026-VBHN-VPQH": "3781710d85b3b1e53568bd1ba29ff6ac4d0169e47f622c0cc24c35a2ee220527",
+    "60-2024-QH15": "057025439b1fd904460118ae69edf263fba574a947a6a64f02deb3ed3ef7428e",
+    "67-2026-VBHN-VPQH": "d075f44940233b6e2232da033ade784845fe78994a2ce35d8caa3e3e9d857520",
+    "91-2025-QH15": "579df0371e003daceb942e10821bfa0d309d12ecafd858b1b67d34175b0382fe"
+  },
+  "c0_manifest_sha256": "d8db9453e6f26e28e48de7213aebcacae251a1ae53daedad4454b85f5c4df8c2",
+  "c1_manifest_sha256": "4e84a7f9ca7b745d153d6195e2a222e325eeda44588409b5dcb882a19b9b21c6",
+  "c2_manifest_sha256": "6db1ee5ad63ca13b3ba717c29598d8d9399360f62ddf054de24cec20c025ce7f",
+  "c3_manifest_sha256": "353a8e686a4f262b6fb2d4facf5ce0ac78ba5fa5b6555ed996d2a719e5ea440a",
+  "c4_manifest_sha256": "3189f5c4b548b46894d69418e0ae612e1bab04c5a92c1a16fe439ebc2c5acd00",
+  "c5_manifest_sha256": "77042ddef100655fb5669d105cfa263fc1cf61ca8024fd81b9c16edd3e09109c",
+  "c6_manifest_sha256": "556657af312a816bc2eeed9136ceed647f891a3c125926001f811705d34589cb",
+  "c6_r1_manifest_sha256": "ab25f610e55bfd23cad95199302ed30f063d906c4ce0e2b31dadc7da2705d250",
+  "historical_regression": {
+    "status": "PASS",
+    "article_counts": {
+      "134-2025-QH15": 35,
+      "142-2026-ND-CP": 46,
+      "05-2026-TT-BKHCN": 5,
+      "total": 86
+    },
+    "chunk_count": 737,
+    "chunk_boundary_matches": 737,
+    "semantic_text_matches": 737
+  },
+  "validation_status": "PASS_WITH_BENIGN_FLAGS",
+  "known_benign_flags": {
+    "duplicate_text_groups": 115,
+    "duplicate_text_occurrences": 268,
+    "legitimate_legal_repetition_occurrences": 242,
+    "structural_context_duplication_occurrences": 26,
+    "suspicious_duplicate_corruption": 0
+  },
+  "policy_context_guard": {
+    "document_number": "367/QĐ-TTg",
+    "evidence_role": "policy_context",
+    "normative_priority": "context",
+    "obligation_source_allowed": false,
+    "status": "PASS"
+  },
+  "vbhn_semantics": {
+    "document_count": 4,
+    "canonical_consolidated_retrieval_texts": true,
+    "publication_or_consolidation_date_is_independent_substantive_effective_date": false,
+    "legal_effect_source": "underlying instruments represented in the resolved registry and relationship graph",
+    "status": "PASS"
+  },
+  "corpus_fingerprint_sha256": "7525978bfbf645d2ace8955d52a06906985799350c82c7b9fd797d246f80b827"
+}
