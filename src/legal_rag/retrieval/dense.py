@@ -12,7 +12,7 @@ from typing import Any
 
 import numpy as np
 
-from ..paths import CORPUS_VERSION_DIR, INDEX_DIR
+from ..paths import CORPUS_VERSION_DIR, INDEX_DIR, REPOSITORY_ROOT
 
 RETRIEVER_NAME = "dense-jina-v3-v0"
 MODEL_ID = "jinaai/jina-embeddings-v3"
@@ -53,6 +53,7 @@ def load_model(model_id: str, revision: str | None, device: str):
         model_id,
         revision=revision,
         trust_remote_code=True,
+        local_files_only=True,
     )
     model.to(device)
     model.eval()
@@ -80,7 +81,9 @@ def encode(model: Any, texts: list[str], task: str, batch_size: int) -> np.ndarr
 
 class DenseRetriever:
     def __init__(self, corpus_path: Path = DEFAULT_CORPUS_PATH,
-                 index_dir: Path = DEFAULT_INDEX_DIR, batch_size: int | None = None) -> None:
+                 index_dir: Path = DEFAULT_INDEX_DIR, batch_size: int | None = None,
+                 *, corpus_fingerprint: str | None = None,
+                 load_encoder: bool = True) -> None:
         self.chunks = read_chunks(corpus_path)
         self.embeddings = np.load(index_dir / "embeddings.npy", allow_pickle=False)
         self.chunk_ids = json.loads((index_dir / "chunk_ids.json").read_text(encoding="utf-8"))
@@ -97,18 +100,45 @@ class DenseRetriever:
             raise ValueError("Index vectors are not L2-normalized")
         if self.manifest.get("query_task") != QUERY_TASK or not self.manifest.get("normalized"):
             raise ValueError("Index manifest retrieval configuration is incompatible")
+        if self.manifest.get("model_id") != MODEL_ID:
+            raise ValueError("Dense model identity is incompatible")
+        if self.manifest.get("resolved_model_revision") != DENSE_MODEL_REVISION:
+            raise ValueError("Dense model revision is incompatible")
+        if corpus_fingerprint is not None and self.manifest.get(
+            "corpus_fingerprint_sha256"
+        ) != corpus_fingerprint:
+            raise ValueError("Dense index corpus fingerprint mismatch")
         self.device = select_device()
         self.batch_size = batch_size or (32 if self.device == "cuda" else 4)
-        self.model = load_model(
-            self.manifest["model_id"], self.manifest.get("resolved_model_revision"), self.device
-        )
+        self.model = None
+        if load_encoder:
+            self.model = load_model(
+                self.manifest["model_id"],
+                self.manifest.get("resolved_model_revision"),
+                self.device,
+            )
 
-    def search(self, query: str, top_k: int = 5) -> list[dict[str, Any]]:
+    def search(
+        self,
+        query: str,
+        top_k: int = 5,
+        *,
+        document_id: str | None = None,
+    ) -> list[dict[str, Any]]:
         if not query.strip():
             return []
+        if self.model is None:
+            raise RuntimeError("Dense encoder was not loaded")
         query_vector = encode(self.model, [query], QUERY_TASK, self.batch_size)[0]
         scores = self.embeddings @ query_vector
-        indices = np.argsort(-scores, kind="stable")[:min(top_k, len(scores))]
+        eligible_indices = np.asarray([
+            index for index, chunk in enumerate(self.chunks)
+            if document_id is None or str(chunk.get("document_id", "")) == document_id
+        ], dtype=np.int64)
+        if not len(eligible_indices):
+            return []
+        local_order = np.argsort(-scores[eligible_indices], kind="stable")
+        indices = eligible_indices[local_order[:min(top_k, len(eligible_indices))]]
         return [{"rank": rank, "score": float(scores[index]), "chunk": self.chunks[index]}
                 for rank, index in enumerate(indices, 1)]
 
@@ -128,11 +158,14 @@ def build_dense_index(
     model_id: str = MODEL_ID,
     revision: str = DENSE_MODEL_REVISION,
     batch_size: int | None = None,
+    expected_count: int = EXPECTED_COUNT,
+    corpus_version: str = "corpus-v0.1",
+    corpus_fingerprint: str | None = None,
 ) -> dict[str, Any]:
     """Build the legacy dense index at an explicit location."""
     chunks = read_chunks(corpus_path)
-    if len(chunks) != EXPECTED_COUNT:
-        raise ValueError(f"Expected {EXPECTED_COUNT} chunks, found {len(chunks)}")
+    if len(chunks) != expected_count:
+        raise ValueError(f"Expected {expected_count} chunks, found {len(chunks)}")
     chunk_ids = [str(chunk["chunk_id"]) for chunk in chunks]
     if len(set(chunk_ids)) != len(chunk_ids):
         raise ValueError("Duplicate chunk_id in corpus")
@@ -146,7 +179,7 @@ def build_dense_index(
         PASSAGE_TASK,
         resolved_batch_size,
     )
-    if embeddings.shape != (EXPECTED_COUNT, EXPECTED_DIMENSION):
+    if embeddings.shape != (expected_count, EXPECTED_DIMENSION):
         raise ValueError(f"Unexpected embedding shape: {embeddings.shape}")
 
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -156,7 +189,7 @@ def build_dense_index(
         encoding="utf-8",
     )
     try:
-        corpus_label = str(corpus_path.relative_to(PROJECT_ROOT))
+        corpus_label = str(corpus_path.relative_to(REPOSITORY_ROOT))
     except ValueError:
         corpus_label = str(corpus_path)
     manifest = {
@@ -165,7 +198,7 @@ def build_dense_index(
         "resolved_model_revision": revision,
         "trust_remote_code": True,
         "embedding_dimension": EXPECTED_DIMENSION,
-        "corpus_version": "corpus-v0.1",
+        "corpus_version": corpus_version,
         "corpus_path": corpus_label,
         "corpus_chunk_count": len(chunks),
         "input_field": "retrieval_text",
@@ -178,7 +211,10 @@ def build_dense_index(
         "chunks_file_sha256": sha256(corpus_path),
         "device_used": device,
         "batch_size": resolved_batch_size,
+        "local_files_only": True,
     }
+    if corpus_fingerprint is not None:
+        manifest["corpus_fingerprint_sha256"] = corpus_fingerprint
     (output_dir / "index_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",

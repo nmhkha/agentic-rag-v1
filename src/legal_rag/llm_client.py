@@ -15,6 +15,14 @@ class LLMClient(Protocol):
     def generate(self, prompt: str) -> str: ...
 
 
+class LLMProviderError(RuntimeError):
+    """Provider/network/envelope failure without a usable response body."""
+
+
+class LLMProviderRefusal(LLMProviderError):
+    """Explicit provider refusal, kept distinct from transport errors."""
+
+
 @dataclass
 class OpenAICompatibleClient:
     model: str
@@ -41,8 +49,22 @@ class OpenAICompatibleClient:
                 payload = json.loads(response.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
             detail = exc.read().decode("utf-8", errors="replace")[:500]
-            raise RuntimeError(f"LLM HTTP {exc.code}: {detail}") from exc
-        return str(payload["choices"][0]["message"]["content"])
+            raise LLMProviderError(f"LLM HTTP {exc.code}: {detail}") from exc
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+            raise LLMProviderError(f"LLM provider transport failure: {type(exc).__name__}: {exc}") from exc
+        try:
+            message = payload["choices"][0]["message"]
+            refusal = message.get("refusal")
+            if refusal:
+                raise LLMProviderRefusal("LLM provider refused the structured-output request")
+            content = message["content"]
+        except LLMProviderRefusal:
+            raise
+        except (KeyError, IndexError, TypeError, AttributeError) as exc:
+            raise LLMProviderError("LLM provider returned a malformed response envelope") from exc
+        if not isinstance(content, str):
+            raise LLMProviderError("LLM provider response content must be text")
+        return content
 
 
 def client_from_env() -> OpenAICompatibleClient:

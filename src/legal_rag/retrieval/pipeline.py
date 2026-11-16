@@ -118,10 +118,15 @@ class RetrievalPipeline:
             retriever = RerankerRetriever(batch_size=batch_size)
         self.retriever = retriever
 
-    def retrieve(self, query: str, top_k: int = DEFAULT_TOP_K) -> list[Evidence]:
+    def retrieve(
+        self, query: str, top_k: int = DEFAULT_TOP_K, *, document_id: str | None = None
+    ) -> list[Evidence]:
         if top_k < 1:
             raise ValueError("top_k must be >= 1")
-        results = self.retriever.search(query, top_k)
+        if document_id is None:
+            results = self.retriever.search(query, top_k)
+        else:
+            results = self.retriever.search(query, top_k, document_id=document_id)
         seen: set[str] = set()
         evidences: list[Evidence] = []
         for result in results:
@@ -133,7 +138,8 @@ class RetrievalPipeline:
         return evidences
 
     def retrieve_with_audit(
-        self, query: str, top_k: int = DEFAULT_TOP_K, *, all_candidates: bool = False
+        self, query: str, top_k: int = DEFAULT_TOP_K, *, all_candidates: bool = False,
+        document_id: str | None = None,
     ) -> tuple[list[Evidence], dict[str, Any]]:
         """Run the frozen pipeline and return evidence plus retrieval metadata.
 
@@ -147,10 +153,20 @@ class RetrievalPipeline:
         search_with_candidates = getattr(self.retriever, "search_with_candidates", None)
         search_k = BM25_DEPTH + DENSE_DEPTH if all_candidates else top_k
         if search_with_candidates is None:
-            results = self.retriever.search(query, top_k)
+            if document_id is None:
+                results = self.retriever.search(query, top_k)
+            else:
+                results = self.retriever.search(
+                    query, top_k, document_id=document_id
+                )
             candidates = []
         else:
-            results, candidates = search_with_candidates(query, search_k)
+            if document_id is None:
+                results, candidates = search_with_candidates(query, search_k)
+            else:
+                results, candidates = search_with_candidates(
+                    query, search_k, document_id=document_id
+                )
         seen: set[str] = set()
         evidences: list[Evidence] = []
         for result in results:
@@ -165,6 +181,7 @@ class RetrievalPipeline:
             candidate_ids = [item.chunk_id for item in evidences]
         audit = {
             "query": query,
+            "document_id": document_id,
             "bm25_depth": BM25_DEPTH,
             "dense_depth": DENSE_DEPTH,
             "candidate_chunk_ids": candidate_ids,

@@ -124,11 +124,19 @@ class RerankerRetriever:
         self.dense = DenseRetriever(corpus_path, index_dir)
         self.reranker = BGEReranker(batch_size=batch_size)
 
-    def search_with_candidates(self, query: str, top_k: int = FINAL_DEPTH):
-        bm25 = self.bm25.search(query, BM25_DEPTH)
-        dense = self.dense.search(query, DENSE_DEPTH)
+    def search_with_candidates(
+        self, query: str, top_k: int = FINAL_DEPTH, *, document_id: str | None = None
+    ):
+        if document_id is None:
+            bm25 = self.bm25.search(query, BM25_DEPTH)
+            dense = self.dense.search(query, DENSE_DEPTH)
+        else:
+            bm25 = self.bm25.search(query, BM25_DEPTH, document_id=document_id)
+            dense = self.dense.search(query, DENSE_DEPTH, document_id=document_id)
         candidates = union_candidates(bm25, dense)
         return self.reranker.rerank(query, candidates, top_k), candidates
 
-    def search(self, query: str, top_k: int = FINAL_DEPTH) -> list[dict[str, Any]]:
-        return self.search_with_candidates(query, top_k)[0]
+    def search(
+        self, query: str, top_k: int = FINAL_DEPTH, *, document_id: str | None = None
+    ) -> list[dict[str, Any]]:
+        return self.search_with_candidates(query, top_k, document_id=document_id)[0]
