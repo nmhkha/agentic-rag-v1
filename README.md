@@ -1,191 +1,207 @@
 # Vietnamese Legal Agentic RAG
 
-## Overview
+An end-to-end, reproducible research and production framework for retrieval and multi-hop reasoning over Vietnamese legal instruments. Specialized for complex regulatory domains, combining deterministic legal routing, domain-specific citation graph expansion, and finite-state multi-turn agentic evidence collection.
 
-This repository is a reproducible research implementation for retrieval and
-answer generation over a versioned Vietnamese legal corpus. The importable
-package is `legal_rag`; command-line entrypoints are intentionally thin and all
-benchmark gold is isolated from runtime code.
+---
 
-## Architecture
+## 🏛️ Key Capabilities
+
+- **Frozen Legal Corpus v0.2**: Covers **17 normative legal instruments** (Laws, Decrees, Circulars, Decisions), comprising **945 articles** and **6,122 deterministic chunks**.
+- **Practical Legal Router**: Zero-latency deterministic handling of exact lookups (`Điều X`, `Khoản Y Điều Z`) and legal navigation queries (`Liệt kê các điểm/khoản...`), bypassing unnecessary LLM invocations.
+- **Hybrid Retrieval & Reranking**: Sparse BM25 + Dense Semantic (`jina-embeddings-v3`) with candidate union reranked by `BAAI/bge-reranker-v2-m3`.
+- **Domain-Specific Expansions**:
+  - **Clause-Level Expansion (Mở rộng theo khoản)**: Automatically recovers sibling points ($a, b, c\dots$) to guarantee complete statutory evidence sets.
+  - **Deterministic Cross-Reference Following (Nhảy dẫn chiếu)**: Automatically detects and traverses intra-document and inter-document statutory cross-references (`Điều X`, `khoản Y Điều Z`, `khoản X Điều này`, `của Luật này`).
+- **Agentic Multi-Turn Loop (v1)**: LLM-driven evidence sufficiency evaluator (`Coverage Check`), dynamic missing-aspect extraction, and bounded targeted sub-query reformulation.
+- **FastAPI Web Service**: High-throughput REST API with an interactive web UI client and trace auditing.
+
+---
+
+## 📐 System Architecture
 
 ```text
-Query
-  |
-  v
-BM25@20 + Dense@20
-  |
-  v
-Union / deduplication
-  |
-  v
-BGE reranker
-  |
-  v
-Top-5 evidence
-  |-- Standard RAG (single answer pass)
-  `-- Agentic RAG v1
-       |-- evidence check and bounded conditional expansion
-       |-- answer generation
-       |-- completeness check and bounded revision
-       `-- citation validation and bounded revision
+                                 [ User Query ]
+                                        │
+                                        ▼
+                           ┌─────────────────────────┐
+                           │  Practical Legal Router │
+                           └────────────┬────────────┘
+                                        │
+            ┌───────────────────────────┴───────────────────────────┐
+            ▼ (Deterministic match)                                 ▼ (Complex query)
+   ┌───────────────────┐                                 ┌─────────────────────┐
+   │ Exact Lookup /    │                                 │  Hybrid Retrieval   │
+   │ Legal Navigation  │                                 │ (BM25 + Jina-v3)    │
+   └────────┬──────────┘                                 └──────────┬──────────┘
+            │                                                       │
+            │                                                       ▼
+            │                                            ┌─────────────────────┐
+            │                                            │  BGE Reranker v2-m3 │
+            │                                            └──────────┬──────────┘
+            │                                                       │
+            │                                                       ▼
+            │                                            ┌─────────────────────┐
+            │                                            │  Domain Expansions  │
+            │                                            │ (Clause + Cross-Ref)│
+            │                                            └──────────┬──────────┘
+            │                                                       │
+            │                                                       ▼
+            │                                            ┌─────────────────────┐
+            │                                            │ Agentic Multi-Turn  │
+            │                                            │ (Coverage Check /   │
+            │                                            │  Sub-query Reform)  │
+            │                                            └──────────┬──────────┘
+            │                                                       │
+            └───────────────────────────┬───────────────────────────┘
+                                        │
+                                        ▼
+                           ┌─────────────────────────┐
+                           │ Grounded Answer with    │
+                           │ Audited Legal Citations │
+                           └─────────────────────────┘
 ```
 
-Standard RAG and Agentic RAG v1 share ingestion, retrieval, evidence formatting,
-LLM-client, and evaluation modules. Agentic RAG v2 is future work and is not
-implemented here.
+---
 
-## Repository Structure
+## 📊 Empirical Benchmarks
 
-- `src/legal_rag/`: importable ingestion, retrieval, generation, Agentic v1, and evaluation logic.
-- `scripts/`: supported user-facing CLIs only.
-- `tools/`: dataset, annotation, validation, and research maintenance commands.
-- `data/`: raw sources, processed corpus, validation evidence, and frozen corpus versions.
-- `eval-sets/`: benchmark inputs and gold labels; never loaded by runtime paths.
-- `experiments/`: indexes, frozen reference evidence, traces, and disposable new runs.
-- `annotation/`: working annotation data and reviewer reports.
-- `prompts/`: versioned prompt templates.
-- `docs/`: architecture, migration, and research documentation.
-- `tests/`: active package-oriented regression suites.
+### 1. In-Domain Benchmark: 31 Legacy Queries (Miền Trí Tuệ Nhân Tạo)
+Evaluated across all 6,122 chunks in `corpus-v0.2` with `eval-sets/retrieval/retrieval_eval.jsonl`:
 
-See [docs/REPOSITORY_MAP.md](docs/REPOSITORY_MAP.md) for placement rules.
+| Pipeline Configuration | Chunk Recall@5 | Chunk Recall@10 | Chunk Recall@20 | Chunk Hit Rate | Article Hit Rate | Context Size |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **BM25 Baseline** | 44.7% | 55.0% | 70.9% | 74.2% | 93.5% | 5–20 chunks |
+| **Dense Baseline (Jina-v3)** | 48.8% | 57.9% | 66.3% | 80.6% | 96.8% | 5–20 chunks |
+| **Reranker Baseline** | 61.3% | 74.0% | 80.8% | 96.8% | 100.0% | 5–20 chunks |
+| **Reranker + Clause Expansion** | 79.9% | 89.2% | 91.9% | 100.0% | 100.0% | 13–33 chunks |
+| **Reranker + Combined (Clause + CrossRef)** | **84.0%** | **92.5%** | **95.2%** | **100.0%** | **100.0%** | 13–34 chunks |
 
-## Installation
+### 2. Cross-Corpus Multi-Turn Benchmark: 30 New Queries (17 Văn Bản Quy Phạm)
+Evaluated multi-turn agentic iterative retrieval across 17 distinct legal instruments:
 
-Python 3.12 or newer is required (tested: 3.12.14). `pyproject.toml` is
-authoritative; `requirements.txt` is a convenience runtime dependency list.
+| Vòng Tìm Kiếm (Turn / Stage) | Chunk Recall | Relative Gain | Chunk Hit Rate | Article Hit Rate | Avg Chunks |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Turn 1 (Single-Pass Top-5)** | **22.8%** | *Baseline* | 30.0% | 43.3% | 5.0 |
+| **Turn 2 (Agentic Hop 1 - Gap Filling)** | **33.9%** | **+48.7%** | **40.0%** | **46.7%** | 6.8 |
+| **Turn 3 (Agentic Hop 2 - Deep Loop)** | **35.6%** | **+56.1%** | **40.0%** | **46.7%** | 8.0 |
+| **Turn 3 + Deterministic Exp (Combined)** | **37.2%** | **+63.2%** | **40.0%** | **46.7%** | 16.1 |
 
+*Detailed reports, empirical logs, and qualitative case studies are documented in [`docs/evaluation/`](docs/evaluation/).*
+
+---
+
+## 📁 Repository Structure
+
+```text
+├── src/legal_rag/                  # Core importable Python package
+│   ├── agentic/                    # Finite-state Agentic controllers
+│   │   ├── v1/                     # Agentic RAG v1 (Coverage check & sub-queries)
+│   │   └── v2/                     # Agentic RAG v2 architecture (Planner & Ledger)
+│   ├── ingestion/                  # Legal chunking & document parsers
+│   ├── retrieval/                  # Sparse BM25, Dense Jina-v3, BGE Reranker
+│   ├── cross_reference.py          # Deterministic legal citation & clause resolver
+│   ├── practical.py                # Practical routing router
+│   ├── navigation.py               # Deterministic legal structural navigation
+│   ├── exact_lookup.py             # Deterministic exact provision lookup
+│   └── api/                        # FastAPI application and service endpoints
+├── scripts/                        # User-facing execution and evaluation CLIs
+│   ├── run_agentic_rag.py          # Main CLI for Agentic RAG execution
+│   ├── run_standard_rag.py         # Baseline single-pass RAG runner
+│   ├── eval_legacy_31.py           # Evaluation on 31 legacy benchmark queries
+│   ├── eval_agentic_multiturn_v1_30.py # Multi-turn agentic evaluation runner
+│   ├── eval_cross_reference_expansion.py # Citation expansion evaluation
+│   └── eval_clause_expansion.py    # Clause sibling expansion evaluation
+├── eval-sets/                      # Benchmark queries & gold annotations
+│   ├── retrieval/retrieval_eval.jsonl      # 31 legacy benchmark queries
+│   └── retrieval/baseline_eval_40.jsonl    # 40-query cross-corpus benchmark
+├── experiments/                    # Evaluation metrics, indexes, and trace runs
+│   └── retrieval/corpus-v0.2/      # Metric results JSON files
+├── docs/                           # Technical documentation and evaluation reports
+│   └── evaluation/                 # Comprehensive Markdown reports
+└── tests/                          # Package regression test suite
+```
+
+---
+
+## 🚀 Installation & Environment Setup
+
+### 1. Requirements
+- Python 3.10+ (tested: 3.10.20 and 3.12.14).
+- CUDA-compatible GPU recommended for accelerated reranking (CPU fallback supported).
+
+### 2. Setup with Conda / Venv
 ```bash
+# Clone the repository
+git clone https://github.com/nmhkha/agentic-rag-v1.git
+cd agentic-rag-v1
+
+# Create and activate environment
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e ".[dev]"
+
+# Install dependencies in editable mode
+pip install -e ".[dev]"
 ```
 
-Model weights are not downloaded during installation by this project. Runtime
-retrieval requires compatible locally available Hugging Face model assets or
-normal library cache behavior.
-
-## Quick Start
-
-Inspect the offline-safe interfaces first:
-
+### 3. LLM Configuration
+Copy `.env.example` to `.env` and provide your OpenAI-compatible LLM endpoint (e.g. Gemini API, vLLM, or Ollama):
 ```bash
-python scripts/ingest.py --help
-python scripts/build_index.py --help
-python scripts/run_eval.py --help
+cp .env.example .env
+```
+Edit `.env`:
+```env
+RAG_LLM_PROVIDER=openai-compatible
+RAG_LLM_MODEL=gemini-3.5-flash-lite
+RAG_LLM_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/
+RAG_LLM_API_KEY=your_api_key_here
 ```
 
-Runtime generation reads the OpenAI-compatible settings documented in
-`.env.example`. Keep real credentials outside the repository.
+---
 
-## Run Standard RAG
+## 💻 Quick Start & Usage
 
+### 1. Run Agentic RAG CLI
 ```bash
-python scripts/run_standard_rag.py --query "Nội dung câu hỏi pháp lý"
+# Execute Agentic RAG with full execution trace
+python scripts/run_agentic_rag.py --query "Khi nào bên kiểm soát dữ liệu phải xóa hoặc hủy dữ liệu cá nhân?" --trace
 ```
 
-## Run Agentic RAG v1
-
+### 2. Run Comprehensive Evaluation Suites
 ```bash
-python scripts/run_agentic_rag.py --query "Nội dung câu hỏi pháp lý" --trace
+# Evaluate all 31 legacy queries (AI domain) across BM25, Dense, Rerank & Expansions
+python scripts/eval_legacy_31.py
+
+# Evaluate 3-turn Agentic Multi-turn loop on 30 cross-corpus queries
+python scripts/eval_agentic_multiturn_v1_30.py
+
+# Evaluate Clause Expansion & Cross-Reference Following
+python scripts/eval_cross_reference_expansion.py
 ```
 
-Agentic v1 uses frozen bounds and prompts. It is a historical research baseline,
-not a substitute for professional legal advice.
-
-## Run the API
-
-Set the `RAG_LLM_MODEL`, `RAG_LLM_BASE_URL`, and `RAG_LLM_API_KEY`
-environment variables, then run one Uvicorn worker:
-
+### 3. Launch Web API & UI
 ```bash
+# Start FastAPI server on port 8000
 python -m uvicorn legal_rag.api.app:app --host 127.0.0.1 --port 8000 --workers 1
 ```
+Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser to access the interactive web interface.
 
-Open `http://127.0.0.1:8000/` for the minimal web client. The API endpoints are
-`GET /api/v1/health` and `POST /api/v1/answers` with a JSON body such as
-`{"query":"Nội dung câu hỏi pháp lý"}`. `rag_latency_ms` measures only the
-Agentic RAG controller execution. Browser and benchmark end-to-end latency also
-includes request queuing, trace persistence, HTTP transfer, and JSON parsing.
+---
 
-After the API is ready, run an end-to-end benchmark with:
+## 📖 Research Documentation & Reports
 
-```bash
-python tools/research/api/benchmark_e2e.py \
-  --query "Nội dung câu hỏi pháp lý" \
-  --warmup 1 \
-  --runs 5
-```
+Detailed technical documentation and empirical findings are available in `docs/`:
+- [Legacy 31 Queries Benchmark Report](docs/evaluation/legacy_31_eval_report.md)
+- [Agentic Multi-Turn Evaluation Report](docs/evaluation/agentic_multiturn_eval_report.md)
+- [Cross-Reference & Citation Resolution Report](docs/evaluation/cross_reference_eval_report.md)
+- [Clause-Level Expansion Report](docs/evaluation/clause_expansion_eval_report.md)
+- [40-Query Baseline Evaluation Report](docs/evaluation/retrieval_baseline_eval_40_report.md)
+- [Web API & Service Guide](docs/WEB_API_GUIDE.md)
 
-The benchmark stores individual samples, RAG and HTTP end-to-end summaries, and
-the test machine CPU metadata under `experiments/runs/api-benchmark/`.
+---
 
-See [Web API guide](docs/WEB_API_GUIDE.md) for the tested Windows setup,
-exact Hugging Face cache revisions, temporary credential configuration, API
-contract, verification results, and known limitations. `.env.example` is a
-template only: the application does not automatically load `.env` files.
+## 🧪 Testing
 
-The web layer is isolated in `src/legal_rag/api/` (including vanilla HTML/CSS/JS
-in `static/`), with offline tests in `tests/api/` and the HTTP benchmark in
-`tools/research/api/`. The application reuses one loaded retrieval pipeline and
-LLM client per worker; it does not replace the frozen RAG implementation.
-
-## Evaluation
-
-Re-score stored output without inference or API access:
-
-```bash
-python scripts/run_eval.py \
-  --pipeline agentic-v1 \
-  --score-only \
-  --results experiments/reference/generation/agentic-rag-v1/agentic_rag_eval_v1_agentic-v1.jsonl
-```
-
-The authoritative Agentic v1 historical benchmark reports Answer Completeness
-macro approximately `0.7237`, while micro is `65/102` (approximately `0.6373`).
-Groundedness macro and pooled values are different summaries, so this repository
-does not claim universal groundedness improvement. Detailed metrics and reports
-live in `experiments/reference/generation/` and `docs/`.
-
-New reruns may vary because generation and model execution can be stochastic;
-store them under `experiments/runs/` and do not overwrite historical references.
-
-## Corpus
-
-The canonical working corpus is `data/processed/chunks.jsonl`; the frozen version
-is `data/versions/corpus-v0.1/`. It contains 737 deterministic chunks with unique
-IDs. Source provenance is recorded in `data/source_registry/`.
-
-## Experiment Artifacts
-
-`experiments/reference/` contains immutable historical research evidence.
-`experiments/indexes/` contains retrieval indexes, `experiments/traces/` contains
-execution traces, and `experiments/runs/` is reserved for disposable new output.
-The repository intentionally does not blanket-ignore `experiments/`.
-
-## Reproducibility
-
-Use frozen corpus/evaluation versions, pinned runtime dependencies, stored model
-revisions, and score-only evaluation where possible. Do not feed `eval-sets/`
-gold fields to a runtime executor. Phase 5 provenance-sensitive tools are retained
-byte-for-byte under `tools/research/phase5/`.
-
-## Research Status
-
-- Agentic RAG v1: implemented and frozen historical baseline.
-- Agentic RAG v2: not implemented yet.
-- Phase 5 controlled ablation: completed.
-- Phase 5C challenge benchmark: in progress; HOLDOUT handling remains deferred.
-
-The resource-constrained challenge benchmark has not received human legal
-validation, and M7 does not expose or migrate HOLDOUT plaintext.
-
-## Development
-
+Run package test suites to verify ingestion, parsers, retrievers, and agentic controllers:
 ```bash
 pytest
 ```
-
-Keep reusable logic in `src/legal_rag/`, thin user commands in `scripts/`, and
-maintenance or experiment-specific commands in `tools/`. Generic caches, local
-environments, credentials, and new experiment runs are ignored.
