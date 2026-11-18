@@ -1,0 +1,22 @@
+{
+  "chunk_count": 6122,
+  "chunk_mapping_sha256": "ff079d551e4b5f7208bc8f8a872000a830c87a464a54bb7cc9d94856e305cd0b",
+  "chunks_sha256": "ab5103cf4469b5c5ae0b1462c6998308bd4fc1e46bc54ac66071c99a2ee08f98",
+  "corpus_fingerprint_sha256": "93eb407ca67d567e6d3d92cb1a36e7b164fa4f96b11d8634ed94a66a88a5fb0f",
+  "corpus_version": "corpus-v2.1",
+  "effective_parameters": {
+    "b": 0.75,
+    "epsilon": 0.25,
+    "k1": 1.5
+  },
+  "index_artifact_sha256": "e27d4ecdb72a6fb56756753d1d97e49ae300eaf20b42cde910d3b4f23dc53749",
+  "index_fingerprint_sha256": "4e65c9b8377b235b1cb5dcb87c32f8a74ffbca0009a959dbfde6f8a428924a7e",
+  "index_id": "BM25-simple-v0-corpus-v2.1",
+  "index_type": "sparse",
+  "index_version": "1",
+  "indexed_documents": 6122,
+  "input_field": "retrieval_text",
+  "retrieval_method": "BM25-simple-v0",
+  "unique_indexed_chunk_ids": 6122,
+  "vocabulary_size": 1632
+}

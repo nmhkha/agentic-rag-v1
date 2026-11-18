@@ -1,4 +1,4 @@
-"""Deterministic navigation over the frozen corpus-v0.2 legal structure."""
+"""Deterministic navigation over the frozen corpus-v2.1 legal structure."""
 
 from __future__ import annotations
 
@@ -11,20 +11,21 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any, Iterable
 
-from .paths import REPOSITORY_ROOT
+from .paths import CORPUS_VERSION_DIR
 
 
-CORPUS_ROOT = REPOSITORY_ROOT / "data" / "versions" / "corpus-v0.2"
+CORPUS_ROOT = CORPUS_VERSION_DIR
 CORPUS_MANIFEST_PATH = CORPUS_ROOT / "corpus_manifest.json"
 SOURCES_PATH = CORPUS_ROOT / "registry" / "sources.json"
 ARTICLES_PATH = CORPUS_ROOT / "articles" / "articles.jsonl"
 CHUNKS_PATH = CORPUS_ROOT / "chunks" / "chunks.jsonl"
 
+EXPECTED_CORPUS_VERSION = "corpus-v2.1"
 EXPECTED_CORPUS_FINGERPRINT = (
-    "7525978bfbf645d2ace8955d52a06906985799350c82c7b9fd797d246f80b827"
+    "93eb407ca67d567e6d3d92cb1a36e7b164fa4f96b11d8634ed94a66a88a5fb0f"
 )
 EXPECTED_CHUNKS_SHA256 = (
-    "d95a608533aad358ccdedfe259ebaacb0ba5086a4414ae6c8d18de3c42d19ab3"
+    "ab5103cf4469b5c5ae0b1462c6998308bd4fc1e46bc54ac66071c99a2ee08f98"
 )
 EXPECTED_SOURCE_COUNT = 17
 EXPECTED_ARTICLE_COUNT = 945
@@ -210,7 +211,7 @@ def _load_jsonl(path: Path) -> list[dict[str, Any]]:
 def _load_frozen_records() -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     manifest = json.loads(CORPUS_MANIFEST_PATH.read_text(encoding="utf-8"))
     expected = {
-        "corpus_version": "corpus-v0.2",
+        "corpus_version": EXPECTED_CORPUS_VERSION,
         "status": "FROZEN",
         "source_count": EXPECTED_SOURCE_COUNT,
         "article_count": EXPECTED_ARTICLE_COUNT,
@@ -223,19 +224,19 @@ def _load_frozen_records() -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
         if manifest.get(key) != value
     ]
     if mismatches:
-        raise RuntimeError("Frozen corpus-v0.2 identity mismatch: " + ", ".join(mismatches))
+        raise RuntimeError(f"Frozen {EXPECTED_CORPUS_VERSION} identity mismatch: " + ", ".join(mismatches))
     if _sha256(ARTICLES_PATH) != manifest.get("articles_sha256"):
-        raise RuntimeError("Frozen corpus-v0.2 articles SHA-256 mismatch")
+        raise RuntimeError(f"Frozen {EXPECTED_CORPUS_VERSION} articles SHA-256 mismatch")
     if _sha256(SOURCES_PATH) != manifest.get("resolved_registry_sha256"):
-        raise RuntimeError("Frozen corpus-v0.2 source registry SHA-256 mismatch")
+        raise RuntimeError(f"Frozen {EXPECTED_CORPUS_VERSION} source registry SHA-256 mismatch")
 
     source_payload = json.loads(SOURCES_PATH.read_text(encoding="utf-8"))
     documents = source_payload.get("documents")
     if not isinstance(documents, list) or len(documents) != EXPECTED_SOURCE_COUNT:
-        raise RuntimeError("Frozen corpus-v0.2 source registry count mismatch")
+        raise RuntimeError(f"Frozen {EXPECTED_CORPUS_VERSION} source registry count mismatch")
     articles = _load_jsonl(ARTICLES_PATH)
     if len(articles) != EXPECTED_ARTICLE_COUNT:
-        raise RuntimeError("Frozen corpus-v0.2 article count mismatch")
+        raise RuntimeError(f"Frozen {EXPECTED_CORPUS_VERSION} article count mismatch")
     return documents, articles
 
 

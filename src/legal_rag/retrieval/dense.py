@@ -10,18 +10,21 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-import numpy as np
+try:
+    import numpy as np
+except ImportError:
+    np = None  # type: ignore[assignment]
 
 from ..paths import CORPUS_VERSION_DIR, INDEX_DIR, REPOSITORY_ROOT
 
 RETRIEVER_NAME = "dense-jina-v3-v0"
 MODEL_ID = "jinaai/jina-embeddings-v3"
 DEFAULT_CORPUS_PATH = CORPUS_VERSION_DIR / "chunks.jsonl"
-DEFAULT_INDEX_DIR = INDEX_DIR / RETRIEVER_NAME
+DEFAULT_INDEX_DIR = INDEX_DIR / CORPUS_VERSION_DIR.name / "dense"
 QUERY_TASK = "retrieval.query"
 EXPECTED_DIMENSION = 1024
 PASSAGE_TASK = "retrieval.passage"
-EXPECTED_COUNT = 737
+EXPECTED_COUNT = 6122
 DENSE_MODEL_REVISION = "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6"
 
 
@@ -159,7 +162,7 @@ def build_dense_index(
     revision: str = DENSE_MODEL_REVISION,
     batch_size: int | None = None,
     expected_count: int = EXPECTED_COUNT,
-    corpus_version: str = "corpus-v0.1",
+    corpus_version: str = CORPUS_VERSION_DIR.name,
     corpus_fingerprint: str | None = None,
 ) -> dict[str, Any]:
     """Build the legacy dense index at an explicit location."""

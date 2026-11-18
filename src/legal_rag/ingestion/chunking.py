@@ -124,6 +124,9 @@ def retrieval_text(
     body: str,
     clause: str | None = None,
     point: str | None = None,
+    *,
+    clause_text: str | None = None,
+    vertical_overlap: bool = False,
 ) -> str:
     lines = [
         article["document_title"],
@@ -138,8 +141,17 @@ def retrieval_text(
         article_heading += f". {article['article_title']}"
     lines.append(article_heading)
 
+    if vertical_overlap:
+        intro = normalize_text(article.get("intro_text"))
+        if intro and intro != normalize_text(body):
+            lines.append(intro)
+
     if clause:
         lines.append(f"Khoản {clause}")
+        if vertical_overlap and clause_text:
+            norm_clause = normalize_text(clause_text)
+            if norm_clause and norm_clause != normalize_text(body):
+                lines.append(norm_clause)
     if point:
         lines.append(f"Điểm {point})")
 
@@ -177,6 +189,8 @@ def create_records(
     point: str | None = None,
     clause_text: str | None = None,
     start_line: int | None = None,
+    *,
+    vertical_overlap: bool = False,
 ) -> list[dict[str, Any]]:
     body = normalize_text(body)
     if not body:
@@ -226,7 +240,12 @@ def create_records(
                 "segment_count": len(segments),
                 "text": segment,
                 "retrieval_text": retrieval_text(
-                    article, segment, clause, point
+                    article,
+                    segment,
+                    clause,
+                    point,
+                    clause_text=clause_text,
+                    vertical_overlap=vertical_overlap,
                 ),
                 "parent_context": parent_context(
                     article, clause, clause_text
@@ -253,6 +272,8 @@ def create_records(
 def build_article_chunks(
     article: dict[str, Any],
     metadata: dict[str, str],
+    *,
+    vertical_overlap: bool = False,
 ) -> list[dict[str, Any]]:
     chunks: list[dict[str, Any]] = []
     intro = normalize_text(article.get("intro_text"))
@@ -270,6 +291,7 @@ def build_article_chunks(
             body,
             "article",
             start_line=article.get("start_line"),
+            vertical_overlap=vertical_overlap,
         )
 
     if intro:
@@ -280,6 +302,7 @@ def build_article_chunks(
                 intro,
                 "article_intro",
                 start_line=article.get("start_line"),
+                vertical_overlap=vertical_overlap,
             )
         )
 
@@ -292,6 +315,7 @@ def build_article_chunks(
                 "point",
                 point=str(point_data.get("point") or "") or None,
                 start_line=point_data.get("start_line"),
+                vertical_overlap=vertical_overlap,
             )
         )
 
@@ -309,6 +333,7 @@ def build_article_chunks(
                     "clause",
                     clause=clause,
                     start_line=clause_data.get("start_line"),
+                    vertical_overlap=vertical_overlap,
                 )
             )
             continue
@@ -324,6 +349,7 @@ def build_article_chunks(
                     point=str(point_data.get("point") or "") or None,
                     clause_text=clause_text,
                     start_line=point_data.get("start_line"),
+                    vertical_overlap=vertical_overlap,
                 )
             )
 
@@ -371,6 +397,8 @@ def review_chunk(chunk: dict[str, Any]) -> list[str]:
 def build_chunks(
     articles: Iterable[Mapping[str, Any]],
     registry: Mapping[str, Mapping[str, str]],
+    *,
+    vertical_overlap: bool = False,
 ) -> list[dict[str, Any]]:
     """Build chunks in input article order using authoritative registry metadata."""
     chunks: list[dict[str, Any]] = []
@@ -378,7 +406,13 @@ def build_chunks(
         document_id = str(article.get("document_id") or "").strip()
         if document_id not in registry:
             raise ValueError(f"Không tìm thấy {document_id} trong documents.csv")
-        chunks.extend(build_article_chunks(dict(article), dict(registry[document_id])))
+        chunks.extend(
+            build_article_chunks(
+                dict(article),
+                dict(registry[document_id]),
+                vertical_overlap=vertical_overlap,
+            )
+        )
     return chunks
 
 

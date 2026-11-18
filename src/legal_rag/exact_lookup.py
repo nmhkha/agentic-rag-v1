@@ -1,4 +1,4 @@
-"""Deterministic exact legal-provision lookup over frozen corpus-v0.2."""
+"""Deterministic exact legal-provision lookup over frozen corpus-v2.1."""
 
 from __future__ import annotations
 
@@ -392,10 +392,10 @@ def frozen_exact_lookup() -> ExactProvisionLookup:
     navigator = frozen_document_navigator()
     chunks = _load_jsonl(CHUNKS_PATH)
     if len(chunks) != EXPECTED_CHUNK_COUNT:
-        raise RuntimeError("Frozen corpus-v0.2 chunk count mismatch")
+        raise RuntimeError("Frozen corpus-v2.1 chunk count mismatch")
     manifest = json.loads((CHUNKS_PATH.parent.parent / "corpus_manifest.json").read_text(encoding="utf-8"))
     if _sha256(CHUNKS_PATH) != manifest.get("chunks_sha256"):
-        raise RuntimeError("Frozen corpus-v0.2 chunks SHA-256 mismatch")
+        raise RuntimeError("Frozen corpus-v2.1 chunks SHA-256 mismatch")
     return ExactProvisionLookup(navigator, navigator.articles, chunks)
 
 

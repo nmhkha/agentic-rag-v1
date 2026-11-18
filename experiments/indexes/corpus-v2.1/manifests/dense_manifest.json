@@ -1,0 +1,20 @@
+{
+  "retriever_name": "dense-jina-v3-v0",
+  "model_id": "jinaai/jina-embeddings-v3",
+  "requested_model_revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6",
+  "resolved_model_revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6",
+  "corpus_path": "data/versions/corpus-v2.1/chunks/chunks.jsonl",
+  "corpus_version": "corpus-v2.1",
+  "corpus_sha256": "ab5103cf4469b5c5ae0b1462c6998308bd4fc1e46bc54ac66071c99a2ee08f98",
+  "corpus_fingerprint_sha256": "93eb407ca67d567e6d3d92cb1a36e7b164fa4f96b11d8634ed94a66a88a5fb0f",
+  "input_field": "retrieval_text",
+  "passage_task": "retrieval.passage",
+  "query_task": "retrieval.query",
+  "dimension": 1024,
+  "dtype": "float32",
+  "normalized": true,
+  "count": 6122,
+  "embeddings_sha256": "fe55a0a48d233658d317e70267c278a06cd9595ce959d432f87b7ebd9c4b2e43",
+  "chunk_ids_sha256": "fece402e9b27eeceffd0f9f3c63bc3715cfffe04b105745cb10a2e928fb2f99d",
+  "created_at": "2026-11-18T08:28:15.340008+00:00"
+}

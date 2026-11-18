@@ -1,4 +1,4 @@
-"""Deterministic legal cross-reference extraction and expansion over frozen corpus-v0.2."""
+"""Deterministic legal cross-reference extraction and expansion over frozen corpus-v2.1."""
 
 from __future__ import annotations
 
@@ -10,12 +10,12 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable, Sequence
 
-from .paths import REPOSITORY_ROOT
+from .paths import CORPUS_VERSION_DIR
 
-DEFAULT_CORPUS_PATH = REPOSITORY_ROOT / "data" / "versions" / "corpus-v0.2" / "chunks" / "chunks.jsonl"
-DEFAULT_SOURCES_PATH = REPOSITORY_ROOT / "data" / "versions" / "corpus-v0.2" / "registry" / "sources.json"
+DEFAULT_CORPUS_PATH = CORPUS_VERSION_DIR / "chunks" / "chunks.jsonl"
+DEFAULT_SOURCES_PATH = CORPUS_VERSION_DIR / "registry" / "sources.json"
 
-# Known document titles & numbers mapped to document_id in corpus-v0.2
+# Known document titles & numbers mapped to document_id in corpus-v2.1
 DOCUMENT_NAME_MAP = {
     "luật trí tuệ nhân tạo": "134-2025-QH15",
     "134/2025/qh15": "134-2025-QH15",
@@ -304,12 +304,19 @@ class CrossReferenceResolver:
                     continue
 
                 doc = c["document_id"]
-                art = str(c.get("article_number") or "").lower()
+                art = str(c.get("article_number") or c.get("article") or "").lower()
                 clause = str(c.get("clause") or "")
                 text = c.get("text", "")
+                parent_ctx = c.get("parent_context") or ""
+                lead_lines = [
+                    line.strip()
+                    for line in parent_ctx.splitlines()
+                    if line.strip().startswith(("Mở đầu điều:", "Nội dung dẫn của khoản:"))
+                ]
+                combined_text = f"{text}\n" + "\n".join(lead_lines) if lead_lines else text
 
                 refs = self.extract_references_from_text(
-                    text, document_id=doc, current_article=art, current_clause=clause
+                    combined_text, document_id=doc, current_article=art, current_clause=clause
                 )
                 for ref in refs[:max_refs_per_chunk]:
                     ref_chunks = self.resolve_target(ref)

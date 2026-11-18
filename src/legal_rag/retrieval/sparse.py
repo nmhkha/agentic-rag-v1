@@ -8,7 +8,65 @@ import unicodedata
 from pathlib import Path
 from typing import Any
 
-from rank_bm25 import BM25Okapi
+try:
+    from rank_bm25 import BM25Okapi
+except ImportError:
+    import math
+
+    class BM25Okapi:  # type: ignore[no-redef]
+        def __init__(
+            self,
+            corpus: list[list[str]],
+            k1: float = 1.5,
+            b: float = 0.75,
+            epsilon: float = 0.25,
+        ) -> None:
+            self.k1 = k1
+            self.b = b
+            self.epsilon = epsilon
+            self.corpus_size = len(corpus)
+            self.doc_freqs: list[dict[str, int]] = []
+            self.idf: dict[str, float] = {}
+            self.doc_len: list[int] = []
+            nd: dict[str, int] = {}
+            num_doc = 0
+            for document in corpus:
+                self.doc_len.append(len(document))
+                num_doc += len(document)
+                frequencies: dict[str, int] = {}
+                for word in document:
+                    frequencies[word] = frequencies.get(word, 0) + 1
+                self.doc_freqs.append(frequencies)
+                for word in frequencies:
+                    nd[word] = nd.get(word, 0) + 1
+            self.avgdl = num_doc / self.corpus_size if self.corpus_size else 0.0
+            idf_sum = 0.0
+            negative_idfs: list[str] = []
+            for word, freq in nd.items():
+                idf = math.log(self.corpus_size - freq + 0.5) - math.log(freq + 0.5)
+                self.idf[word] = idf
+                idf_sum += idf
+                if idf < 0:
+                    negative_idfs.append(word)
+            self.average_idf = idf_sum / len(self.idf) if self.idf else 0.0
+            eps = self.epsilon * self.average_idf
+            for word in negative_idfs:
+                self.idf[word] = eps
+
+        def get_scores(self, query: list[str]) -> list[float]:
+            scores = [0.0] * self.corpus_size
+            for q in query:
+                q_idf = self.idf.get(q)
+                if q_idf is None:
+                    continue
+                for i, doc_freq in enumerate(self.doc_freqs):
+                    f = doc_freq.get(q, 0)
+                    if f:
+                        dl = self.doc_len[i]
+                        scores[i] += q_idf * (f * (self.k1 + 1)) / (
+                            f + self.k1 * (1 - self.b + self.b * dl / self.avgdl)
+                        )
+            return scores
 
 from ..paths import CORPUS_VERSION_DIR
 
@@ -78,11 +136,34 @@ def read_chunks(path: Path) -> list[dict[str, Any]]:
     return chunks
 
 
+def bm25_input_text(chunk: dict[str, Any]) -> str:
+    """Return retrieval_text enriched with vertical parent leads when present."""
+    base = str(chunk.get("retrieval_text", ""))
+    parent_ctx = chunk.get("parent_context")
+    if not isinstance(parent_ctx, str) or not parent_ctx.strip():
+        return base
+    norm_body = str(chunk.get("text", "")).strip()
+    leads: list[str] = []
+    for raw_line in parent_ctx.splitlines():
+        line = raw_line.strip()
+        if line.startswith("Mở đầu điều:"):
+            val = line[len("Mở đầu điều:") :].strip()
+            if val and val != norm_body and val not in base:
+                leads.append(val)
+        elif line.startswith("Nội dung dẫn của khoản:"):
+            val = line[len("Nội dung dẫn của khoản:") :].strip()
+            if val and val != norm_body and val not in base:
+                leads.append(val)
+    if not leads:
+        return base
+    return base + "\n" + "\n".join(leads)
+
+
 class BM25Retriever:
     def __init__(self, chunks: list[dict[str, Any]]) -> None:
         self.chunks = chunks
         tokenized_corpus = [
-            tokenize(str(chunk["retrieval_text"]))
+            tokenize(bm25_input_text(chunk))
             for chunk in chunks
         ]
         self.bm25 = BM25Okapi(

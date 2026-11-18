@@ -4,16 +4,22 @@
 from __future__ import annotations
 
 import argparse
+import json
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-import torch
-from transformers import AutoModelForSequenceClassification, AutoTokenizer
+try:
+    import torch
+    from transformers import AutoModelForSequenceClassification, AutoTokenizer
+except ImportError:
+    torch = None  # type: ignore[assignment]
+    AutoModelForSequenceClassification = None  # type: ignore[assignment]
+    AutoTokenizer = None  # type: ignore[assignment]
 
 from ..paths import CORPUS_VERSION_DIR
 from .dense import DEFAULT_INDEX_DIR, DenseRetriever
-from .sparse import BM25Retriever, read_chunks
+from .sparse import BM25Retriever, PersistentBM25Retriever, read_chunks
 
 EXPERIMENT = "bge-reranker-v2-m3-v0"
 MODEL_ID = "BAAI/bge-reranker-v2-m3"
@@ -106,8 +112,57 @@ class BGEReranker:
 
     def rerank(self, query: str, candidates: list[Candidate], top_k: int) -> list[dict[str, Any]]:
         """Rank only by reranker score descending, then lexical chunk_id."""
-        passages = [str(candidate.chunk["retrieval_text"]) for candidate in candidates]
+        passages = [contextual_passage(candidate.chunk) for candidate in candidates]
         return rank_candidates(self.score(query, passages), candidates, top_k)
+
+
+def extract_vertical_leads(
+    parent_context: str | None, body_text: str = ""
+) -> tuple[str | None, str | None]:
+    """Extract (article_intro, clause_lead) from parent_context when not redundant."""
+    if not parent_context:
+        return None, None
+    article_intro: str | None = None
+    clause_lead: str | None = None
+    norm_body = body_text.strip()
+    for raw_line in parent_context.splitlines():
+        line = raw_line.strip()
+        if line.startswith("Mở đầu điều:"):
+            val = line[len("Mở đầu điều:") :].strip()
+            if val and val != norm_body:
+                article_intro = val
+        elif line.startswith("Nội dung dẫn của khoản:"):
+            val = line[len("Nội dung dẫn của khoản:") :].strip()
+            if val and val != norm_body:
+                clause_lead = val
+    return article_intro, clause_lead
+
+
+def contextual_passage(chunk: dict[str, Any]) -> str:
+    """Build reranker passage with vertical parent lead overlap when available."""
+    base = str(chunk.get("retrieval_text", ""))
+    article_intro, clause_lead = extract_vertical_leads(
+        chunk.get("parent_context"), str(chunk.get("text", ""))
+    )
+    if not article_intro and not clause_lead:
+        return base
+
+    lines = base.splitlines()
+    enriched: list[str] = []
+    inserted_intro = not bool(article_intro and article_intro not in base)
+    inserted_clause = not bool(clause_lead and clause_lead not in base)
+
+    for line in lines:
+        enriched.append(line)
+        stripped = line.strip()
+        if not inserted_intro and stripped.startswith("Điều "):
+            enriched.append(article_intro)  # type: ignore[arg-type]
+            inserted_intro = True
+        elif not inserted_clause and stripped.startswith("Khoản "):
+            enriched.append(clause_lead)  # type: ignore[arg-type]
+            inserted_clause = True
+
+    return "\n".join(enriched)
 
 
 def rerank(query: str, candidates: list[Candidate], top_k: int,
@@ -119,10 +174,31 @@ def rerank(query: str, candidates: list[Candidate], top_k: int,
 class RerankerRetriever:
     def __init__(self, corpus_path: Path = CORPUS_PATH, index_dir: Path = DEFAULT_INDEX_DIR,
                  batch_size: int | None = None) -> None:
-        chunks = read_chunks(corpus_path)
-        self.bm25 = BM25Retriever(chunks)
-        self.dense = DenseRetriever(corpus_path, index_dir)
-        self.reranker = BGEReranker(batch_size=batch_size)
+        sparse_index = index_dir.parent / "sparse" / "sparse_index.json"
+        sparse_manifest = index_dir.parent / "manifests" / "sparse_manifest.json"
+        corpus_fingerprint: str | None = None
+        if sparse_index.is_file() and sparse_manifest.is_file():
+            manifest = json.loads(sparse_manifest.read_text(encoding="utf-8"))
+            corpus_fingerprint = manifest.get("corpus_fingerprint_sha256")
+            self.bm25: BM25Retriever = PersistentBM25Retriever(
+                corpus_path,
+                sparse_index,
+                sparse_manifest,
+                corpus_fingerprint=corpus_fingerprint or "",
+            )
+        else:
+            chunks = read_chunks(corpus_path)
+            self.bm25 = BM25Retriever(chunks)
+        self.dense = DenseRetriever(
+            corpus_path,
+            index_dir,
+            batch_size=batch_size,
+            corpus_fingerprint=corpus_fingerprint,
+        )
+        self.reranker = BGEReranker(
+            revision=RERANKER_MODEL_REVISION,
+            batch_size=batch_size,
+        )
 
     def search_with_candidates(
         self, query: str, top_k: int = FINAL_DEPTH, *, document_id: str | None = None
