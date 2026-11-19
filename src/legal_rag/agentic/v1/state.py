@@ -70,6 +70,10 @@ class AgentState:
     retrieval_calls: list[dict[str, Any]] = field(default_factory=list)
     llm_calls: list[dict[str, Any]] = field(default_factory=list)
     expansion_used: bool = False
+    final_evidence_policy: str = "HISTORICAL_V1"
+    expansion_reservations: list[dict[str, Any]] = field(default_factory=list)
+    expansion_gap_results: list[dict[str, Any]] = field(default_factory=list)
+    final_evidence_selection: list[dict[str, Any]] = field(default_factory=list)
     revision_used: bool = False
     citation_revision_used: bool = False
     execution_error: dict[str, str] | None = None

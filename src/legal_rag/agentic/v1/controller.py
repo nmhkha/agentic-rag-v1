@@ -12,6 +12,13 @@ from ...generation.prompts import build_prompt
 from ...generation.verifier import validate_citations
 from ...llm_client import LLMClient
 from ...retrieval.pipeline import DEFAULT_TOP_K, Evidence, RetrievalPipeline
+from .evidence_selection import (
+    GAP_PRESERVING_V1_PRACTICAL_V1,
+    HISTORICAL_V1,
+    ExpansionResult,
+    select_gap_preserving_evidence,
+    valid_expansion_evidence,
+)
 from .nodes import (
     _json_object, _string_list, answer_revision_prompt, citation_revision_prompt,
     check_answer_completeness, check_evidence_sufficiency,
@@ -39,12 +46,18 @@ class AgenticRAGController:
         enable_expansion: bool = True,
         enable_answer_revision: bool = True,
         enable_citation_revision: bool = True,
+        final_evidence_policy: str = HISTORICAL_V1,
     ) -> None:
+        if final_evidence_policy not in {
+            HISTORICAL_V1, GAP_PRESERVING_V1_PRACTICAL_V1,
+        }:
+            raise ValueError(f"unknown final evidence policy: {final_evidence_policy}")
         self.pipeline = pipeline
         self.client = client
         self.enable_expansion = enable_expansion
         self.enable_answer_revision = enable_answer_revision
         self.enable_citation_revision = enable_citation_revision
+        self.final_evidence_policy = final_evidence_policy
 
     @staticmethod
     def _transition(state: AgentState, stage: str) -> None:
@@ -86,6 +99,8 @@ class AgenticRAGController:
               or state.final_status != "not_started"):
             raise ValueError("provided state must be fresh")
 
+        state.final_evidence_policy = self.final_evidence_policy
+
         state.retrieval_round = 0
         # Ask the frozen reranker for the complete BM25@20 ∪ Dense@20 pool so
         # the trace contains all candidate and reranker ranks; only the final
@@ -109,13 +124,44 @@ class AgenticRAGController:
             # the frozen retrievers useful legal context without another LLM call.
             state.sub_queries = [f"{aspect} {state.query}" for aspect in state.missing_aspects]
             raw_expanded: list[Evidence] = []
+            raw_by_sub_query: list[list[Evidence]] = []
             for sub_query in state.sub_queries[:MAX_SUB_QUERIES]:
-                raw_expanded.extend(self._retrieve(
-                    state, sub_query, 1, sub_query=True, all_candidates=True
-                ))
-            unique_expanded: dict[str, Evidence] = {}
-            for item in raw_expanded:
-                unique_expanded.setdefault(item.chunk_id, item)
+                if self.final_evidence_policy == GAP_PRESERVING_V1_PRACTICAL_V1:
+                    try:
+                        result = self._retrieve(
+                            state, sub_query, 1, sub_query=True, all_candidates=True
+                        )
+                    except Exception as exc:
+                        # Targeted retrieval is best-effort for the practical
+                        # policy. Keep the failed attempt visible in the trace.
+                        state.retrieval_calls.append({
+                            "call_number": len(state.retrieval_calls) + 1,
+                            "round": 1,
+                            "query": sub_query,
+                            "sub_query": True,
+                            "candidate_count": 0,
+                            "error": {"type": type(exc).__name__, "message": str(exc)},
+                        })
+                        result = []
+                    if not isinstance(result, (list, tuple)):
+                        result = []
+                else:
+                    result = self._retrieve(
+                        state, sub_query, 1, sub_query=True, all_candidates=True
+                    )
+                raw_by_sub_query.append(list(result))
+                raw_expanded.extend(result)
+
+            if self.final_evidence_policy == GAP_PRESERVING_V1_PRACTICAL_V1:
+                unique_expanded: dict[str, Evidence] = {}
+                for item in raw_expanded:
+                    if valid_expansion_evidence(item):
+                        unique_expanded.setdefault(item.chunk_id.strip(), item)
+            else:
+                # Preserve the exact historical cross-query deduplication.
+                unique_expanded = {}
+                for item in raw_expanded:
+                    unique_expanded.setdefault(item.chunk_id, item)
             # Retrieval calls use local ranks, but state-level IDs are assigned
             # once after cross-query deduplication and remain deterministic.
             expanded = [
@@ -126,13 +172,68 @@ class AgenticRAGController:
             state.expanded_candidates = list(dict.fromkeys(item.chunk_id for item in expanded))
             pool = state.initial_evidence + expanded
             self._transition(state, "evidence_merge_rerank")
-            state.current_evidence = self.pipeline.rerank_evidence_pool(
-                state.query, pool, DEFAULT_TOP_K
-            )
+            if self.final_evidence_policy == GAP_PRESERVING_V1_PRACTICAL_V1:
+                # Obtain the complete order from the same original-query
+                # reranker. The answer context still receives exactly Top-5.
+                global_ranked = self.pipeline.rerank_evidence_pool(
+                    state.query, pool, max(1, len(pool))
+                )
+                expanded_by_id = {item.chunk_id: item for item in expanded}
+                expansion_results = []
+                for index, candidates in enumerate(raw_by_sub_query):
+                    targeted: list[Evidence] = []
+                    seen_targeted: set[str] = set()
+                    for item in candidates:
+                        if not valid_expansion_evidence(item):
+                            continue
+                        chunk_id = item.chunk_id.strip()
+                        if chunk_id in seen_targeted or chunk_id not in expanded_by_id:
+                            continue
+                        seen_targeted.add(chunk_id)
+                        targeted.append(replace(
+                            expanded_by_id[chunk_id], rank=item.rank
+                        ))
+                    expansion_results.append(ExpansionResult(
+                        target_gap=state.missing_aspects[index],
+                        sub_query=state.sub_queries[index],
+                        evidences=targeted,
+                    ))
+                (state.current_evidence,
+                 state.expansion_reservations,
+                 state.expansion_gap_results,
+                 state.final_evidence_selection) = select_gap_preserving_evidence(
+                    global_ranked,
+                    state.initial_evidence,
+                    expansion_results,
+                    top_k=DEFAULT_TOP_K,
+                )
+            else:
+                state.current_evidence = self.pipeline.rerank_evidence_pool(
+                    state.query, pool, DEFAULT_TOP_K
+                )
+                state.expansion_reservations = []
+                state.expansion_gap_results = []
+                state.final_evidence_selection = []
         else:
             state.sub_queries = []
             state.expanded_candidates = []
             state.current_evidence = list(state.initial_evidence)
+            state.expansion_reservations = []
+            state.expansion_gap_results = []
+            if self.final_evidence_policy == GAP_PRESERVING_V1_PRACTICAL_V1:
+                state.final_evidence_selection = [{
+                    "rank": item.rank,
+                    "evidence_id": item.evidence_id,
+                    "chunk_id": item.chunk_id,
+                    "global_rank": item.rank,
+                    "targeted_rank": None,
+                    "selection_origin": "INITIAL_GLOBAL",
+                    "target_gap": None,
+                    "sub_query": None,
+                    "target_gaps": [],
+                } for item in state.current_evidence]
+            else:
+                state.final_evidence_selection = []
         state.final_top5 = [item.chunk_id for item in state.current_evidence]
 
         draft, citation_map = generate_answer_node(state, self._llm)
@@ -271,6 +372,7 @@ def run_agentic_rag(
     query: str, pipeline: RetrievalPipeline, client: LLMClient, *,
     run_id: str | None = None, state: AgentState | None = None,
     config: AgenticConfig | None = None,
+    final_evidence_policy: str = HISTORICAL_V1,
 ) -> AgentState:
     """Run v1 with explicit dependencies and the frozen feature switches."""
     config = config or AgenticConfig()
@@ -279,4 +381,5 @@ def run_agentic_rag(
         enable_expansion=config.enable_expansion,
         enable_answer_revision=config.enable_answer_revision,
         enable_citation_revision=config.enable_citation_revision,
+        final_evidence_policy=final_evidence_policy,
     ).run(query, run_id=run_id, state=state)

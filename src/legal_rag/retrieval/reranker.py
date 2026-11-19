@@ -88,11 +88,21 @@ class BGEReranker:
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.dtype = "float16" if self.device == "cuda" else "float32"
         self.batch_size = batch_size or (8 if self.device == "cuda" else 1)
-        self.tokenizer = AutoTokenizer.from_pretrained(model_id, revision=revision)
+        try:
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                model_id, revision=revision, local_files_only=True
+            )
+        except Exception:
+            self.tokenizer = AutoTokenizer.from_pretrained(model_id, revision=revision)
         kwargs: dict[str, Any] = {"revision": revision}
         if self.device == "cuda":
             kwargs["torch_dtype"] = torch.float16
-        self.model = AutoModelForSequenceClassification.from_pretrained(model_id, **kwargs)
+        try:
+            self.model = AutoModelForSequenceClassification.from_pretrained(
+                model_id, local_files_only=True, **kwargs
+            )
+        except Exception:
+            self.model = AutoModelForSequenceClassification.from_pretrained(model_id, **kwargs)
         self.model.to(self.device)
         self.model.eval()
         self.resolved_revision = str(self.model.config._commit_hash)

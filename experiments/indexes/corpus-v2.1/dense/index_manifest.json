@@ -14,7 +14,7 @@
   "dtype": "float32",
   "normalized": true,
   "count": 6122,
-  "embeddings_sha256": "fe55a0a48d233658d317e70267c278a06cd9595ce959d432f87b7ebd9c4b2e43",
+  "embeddings_sha256": "8a7cfc6e1afd6db60bd1cd5d1cc73d45b3fd58bf872fef065f494a9ba367c126",
   "chunk_ids_sha256": "fece402e9b27eeceffd0f9f3c63bc3715cfffe04b105745cb10a2e928fb2f99d",
-  "created_at": "2026-11-18T08:28:15.340008+00:00"
+  "created_at": "2026-11-19T06:43:01.729929+00:00"
 }

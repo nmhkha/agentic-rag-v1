@@ -3,7 +3,12 @@ from __future__ import annotations
 import unittest
 
 from legal_rag.retrieval.pipeline import RetrievalPipeline, retrieval_config
-from legal_rag.retrieval.reranker import RerankerRetriever, rank_candidates, union_candidates
+from legal_rag.retrieval.reranker import (
+    RerankerRetriever,
+    contextual_passage,
+    rank_candidates,
+    union_candidates,
+)
 
 
 def chunk(chunk_id: str) -> dict:
@@ -64,6 +69,30 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(config["dense_depth"], 20)
         self.assertIsNone(config["fusion"])
         self.assertEqual(config["top_k"], 5)
+
+    def test_contextual_passage_inserts_vertical_parent_leads(self) -> None:
+        sample = {
+            "text": "Lĩnh vực y tế: bảo đảm an toàn cho người bệnh;",
+            "retrieval_text": (
+                "Luật Trí tuệ nhân tạo\n"
+                "134/2025/QH15\n"
+                "Điều 6. Ứng dụng trí tuệ nhân tạo\n"
+                "Khoản 2\n"
+                "Điểm a)\n"
+                "Lĩnh vực y tế: bảo đảm an toàn cho người bệnh;"
+            ),
+            "parent_context": (
+                "Văn bản: Luật Trí tuệ nhân tạo (134/2025/QH15)\n"
+                "Điều 6: Ứng dụng trí tuệ nhân tạo\n"
+                "Khoản 2\n"
+                "Nội dung dẫn của khoản: Đối với các lĩnh vực thiết yếu phải quản lý rủi ro chặt chẽ hơn:"
+            ),
+        }
+        enriched = contextual_passage(sample)
+        self.assertIn(
+            "Khoản 2\nĐối với các lĩnh vực thiết yếu phải quản lý rủi ro chặt chẽ hơn:\nĐiểm a)",
+            enriched,
+        )
 
 
 if __name__ == "__main__":

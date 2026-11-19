@@ -16,6 +16,7 @@ from .policies import (
     EXPECTED_LLM_MODEL, MAX_ANSWER_REVISIONS, MAX_CITATION_REVISIONS,
     MAX_LLM_CALLS, MAX_RETRIEVAL_EXPANSIONS, MAX_SUB_QUERIES,
 )
+from .evidence_selection import MAX_RESERVED_EXPANSION_SLOTS
 from .state import AgentState
 
 ROOT = REPOSITORY_ROOT
@@ -42,6 +43,11 @@ def trace_for_state(state: AgentState, client: LLMClient | None) -> dict[str, An
         "sub_queries": state.sub_queries,
         "expansion_used": state.expansion_used,
         "expansion_candidates": state.expanded_candidates,
+        "final_evidence_policy": state.final_evidence_policy,
+        "reserved_expansion_count": len(state.expansion_reservations),
+        "expansion_reservations": state.expansion_reservations,
+        "expansion_gap_results": state.expansion_gap_results,
+        "final_evidence_selection": state.final_evidence_selection,
         "final_evidence": value["current_evidence"],
         "final_top5": state.final_top5,
         "draft_answer": state.draft_answer,
@@ -58,6 +64,7 @@ def trace_for_state(state: AgentState, client: LLMClient | None) -> dict[str, An
         "budgets": {
             "max_retrieval_expansions": MAX_RETRIEVAL_EXPANSIONS,
             "max_sub_queries": MAX_SUB_QUERIES,
+            "max_reserved_expansion_slots": MAX_RESERVED_EXPANSION_SLOTS,
             "max_answer_revisions": MAX_ANSWER_REVISIONS,
             "max_citation_revisions": MAX_CITATION_REVISIONS,
             "max_llm_calls": MAX_LLM_CALLS,

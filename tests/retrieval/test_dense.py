@@ -52,6 +52,20 @@ class DenseTests(unittest.TestCase):
         self.assertEqual([row["chunk"]["chunk_id"] for row in rows], ["b", "c", "a"])
         self.assertEqual([row["rank"] for row in rows], [1, 2, 3])
 
+    def test_document_filter_is_applied_before_top_k(self) -> None:
+        retriever = DenseRetriever.__new__(DenseRetriever)
+        retriever.chunks = [
+            {"chunk_id": "foreign", "document_id": "B"},
+            {"chunk_id": "local", "document_id": "A"},
+        ]
+        retriever.embeddings = np.asarray(
+            [[1.0, 0.0], [0.0, 1.0]], dtype=np.float32
+        )
+        retriever.model = FakeModel()
+        retriever.batch_size = 2
+        rows = retriever.search("query", top_k=1, document_id="A")
+        self.assertEqual([row["chunk"]["chunk_id"] for row in rows], ["local"])
+
 
 if __name__ == "__main__":
     unittest.main()

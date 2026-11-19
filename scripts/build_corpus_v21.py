@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 """Build corpus-v2.1 (with Vertical Overlap in retrieval_text) and its Sparse & Dense indexes.
-
-Does not modify any frozen corpus-v0.1 or corpus-v0.2 artifacts.
 """
 
 from __future__ import annotations
@@ -245,18 +243,24 @@ def build_dense_v21(
         )
         t0 = time.time()
         device = select_device()
-        batch_size = 8 if device == "cuda" else 4
+        batch_size = 16 if device == "cuda" else 8
+        print(f"   Loading {MODEL_ID} on {device}...", flush=True)
         model = load_model(MODEL_ID, DENSE_MODEL_REVISION, device)
-        new_vecs = encode(
-            model,
-            changed_texts,
-            PASSAGE_TASK,
-            batch_size,
-        )
-        for i, row_idx in enumerate(changed_indices):
-            embeddings[row_idx] = new_vecs[i]
+        print(f"   Model ready. Encoding {len(changed_indices)} chunks in batches...", flush=True)
+
+        step = 200
+        for start_idx in range(0, len(changed_texts), step):
+            end_idx = min(start_idx + step, len(changed_texts))
+            sub_texts = changed_texts[start_idx:end_idx]
+            sub_vecs = encode(model, sub_texts, PASSAGE_TASK, batch_size)
+            for j, v in enumerate(sub_vecs):
+                embeddings[changed_indices[start_idx + j]] = v
+            elapsed = time.time() - t0
+            pct = (end_idx / len(changed_texts)) * 100
+            print(f"   [{end_idx:4d}/{len(changed_texts)}] ({pct:5.1f}%) encoded in {elapsed:.1f}s", flush=True)
+
         np.save(embeddings_path, embeddings, allow_pickle=False)
-        print(f"   Encoded {len(changed_indices)} chunks on {device} in {time.time() - t0:.2f}s", flush=True)
+        print(f"   Finished encoding {len(changed_indices)} chunks on {device} in {time.time() - t0:.2f}s", flush=True)
 
     resolved_rev = DENSE_MODEL_REVISION
     chunk_ids = [str(c["chunk_id"]) for c in chunks]

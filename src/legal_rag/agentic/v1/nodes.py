@@ -275,8 +275,9 @@ def claims_needing_semantic_alignment(
         for evidence_id in cited_ids:
             item = evidence_by_id.get(evidence_id)
             if item is not None:
+                source_text = f"{item.text} {getattr(item, 'parent_context', None) or ''}"
                 evidence_tokens.update(
-                    token.lower() for token in WORD_TOKEN.findall(item.text)
+                    token.lower() for token in WORD_TOKEN.findall(source_text)
                     if token.lower() not in ALIGNMENT_STOP_WORDS
                 )
         overlap = len(claim_tokens.intersection(evidence_tokens))

@@ -26,6 +26,7 @@ class ControllerTests(unittest.TestCase):
         self.assertEqual(len(state.sub_queries), 3)
         self.assertEqual(state.retrieval_round, 1)
         self.assertEqual(len(state.retrieval_calls), 4)
+        self.assertEqual(state.final_evidence_policy, "HISTORICAL_V1")
 
     def test_c_answer_revision_once(self) -> None:
         responses = [STRAIGHT[0], model_answer(), '{"complete":false,"missing_points":["x"],"reason":"thiếu"}', model_answer("Nội dung 1 bổ sung [E1]"), STRAIGHT[2]]

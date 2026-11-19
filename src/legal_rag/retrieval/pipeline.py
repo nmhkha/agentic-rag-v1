@@ -45,6 +45,7 @@ class Evidence:
     # retaining the constructor used by the v0 runtime and its tests.
     retrieval_source: str = RETRIEVAL_PIPELINE
     retrieval_rank: int | None = None
+    parent_context: str | None = None
 
     @property
     def source_url(self) -> str | None:
@@ -106,6 +107,7 @@ def evidence_from_result(result: dict[str, Any], rank: int) -> Evidence:
         bm25_rank=result.get("bm25_rank"),
         dense_rank=result.get("dense_rank"),
         retrieval_rank=result.get("rank", rank),
+        parent_context=chunk.get("parent_context"),
     )
 
 
@@ -254,6 +256,7 @@ class RetrievalPipeline:
                 bm25_rank=original.bm25_rank, dense_rank=original.dense_rank,
                 retrieval_source=original.retrieval_source,
                 retrieval_rank=original.retrieval_rank,
+                parent_context=rescored.parent_context or original.parent_context,
             ))
         return final
 
@@ -271,6 +274,7 @@ class RetrievalPipeline:
             "text": item.text,
             "retrieval_text": item.retrieval_text or item.text,
             "official_source_url": item.official_source_url,
+            "parent_context": item.parent_context,
         }
 
 _default_pipeline: RetrievalPipeline | None = None

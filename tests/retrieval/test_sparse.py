@@ -23,6 +23,17 @@ class SparseTests(unittest.TestCase):
         self.assertEqual([row["rank"] for row in rows], [1, 2])
         self.assertEqual(retriever.search("", 2), [])
 
+    def test_document_filter_is_applied_before_ranking(self) -> None:
+        chunks = [
+            {"chunk_id": "foreign", "document_id": "B", "retrieval_text": "alpha alpha"},
+            {"chunk_id": "local-1", "document_id": "A", "retrieval_text": "alpha"},
+            {"chunk_id": "local-2", "document_id": "A", "retrieval_text": "beta"},
+        ]
+        rows = BM25Retriever(chunks).search("alpha", 20, document_id="A")
+        self.assertEqual({row["chunk"]["document_id"] for row in rows}, {"A"})
+        self.assertEqual(len(rows), 2)
+        self.assertEqual([row["rank"] for row in rows], [1, 2])
+
 
 if __name__ == "__main__":
     unittest.main()

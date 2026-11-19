@@ -31,6 +31,30 @@ class EvidenceTests(unittest.TestCase):
     def test_empty_input(self) -> None:
         self.assertEqual(format_evidence([]), ("", {}))
 
+    def test_format_includes_vertical_overlap_parent_leads(self) -> None:
+        item = Evidence(
+            rank=1, evidence_id="E1", chunk_id="134-2025-QH15_dieu-6_khoan-2_diem-a",
+            document_id="134-2025-QH15", document_number="134/2025/QH15",
+            document_title="Luật Trí tuệ nhân tạo", article_id="134-2025-QH15_dieu-6",
+            article="6", article_label="Điều 6", clause="2", clause_label="Khoản 2",
+            point="a", point_label="Điểm a",
+            text="Lĩnh vực y tế: bảo đảm an toàn cho người bệnh;",
+            retrieval_text="Luật Trí tuệ nhân tạo\nĐiều 6\nKhoản 2\nĐiểm a)\nLĩnh vực y tế: bảo đảm an toàn cho người bệnh;",
+            official_source_url="https://example.test/law",
+            reranker_score=1.0, bm25_rank=1, dense_rank=1,
+            parent_context=(
+                "Văn bản: Luật Trí tuệ nhân tạo (134/2025/QH15)\n"
+                "Điều 6: Ứng dụng trí tuệ nhân tạo\n"
+                "Khoản 2\n"
+                "Nội dung dẫn của khoản: Đối với các lĩnh vực thiết yếu phải quản lý rủi ro chặt chẽ hơn:"
+            ),
+        )
+        context, _ = format_evidence([item])
+        self.assertIn(
+            "Nội dung dẫn của khoản: Đối với các lĩnh vực thiết yếu phải quản lý rủi ro chặt chẽ hơn:",
+            context,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
