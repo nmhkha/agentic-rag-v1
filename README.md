@@ -6,9 +6,9 @@ An end-to-end, reproducible research and production framework for retrieval and 
 
 ## 🏛️ Key Capabilities
 
-- **Frozen Legal Corpus v0.2**: Covers **17 normative legal instruments** (Laws, Decrees, Circulars, Decisions), comprising **945 articles** and **6,122 deterministic chunks**.
+- **Frozen Legal Corpus v2.1 (Default)**: Covers **17 normative legal instruments** (Laws, Decrees, Circulars, Decisions), comprising **945 articles** and **6,122 deterministic chunks**. Features **Vertical Overlap** (3,626 chunks enriched with leading article titles and clause context in `retrieval_text` to eliminate truncated legal references).
 - **Practical Legal Router**: Zero-latency deterministic handling of exact lookups (`Điều X`, `Khoản Y Điều Z`) and legal navigation queries (`Liệt kê các điểm/khoản...`), bypassing unnecessary LLM invocations.
-- **Hybrid Retrieval & Reranking**: Sparse BM25 + Dense Semantic (`jina-embeddings-v3`) with candidate union reranked by `BAAI/bge-reranker-v2-m3`.
+- **Hybrid Retrieval & Reranking**: Sparse BM25 + Dense Semantic (`jina-embeddings-v3`, L2-normalized 1024-d vectors) with candidate union reranked by `BAAI/bge-reranker-v2-m3`.
 - **Domain-Specific Expansions**:
   - **Clause-Level Expansion (Mở rộng theo khoản)**: Automatically recovers sibling points ($a, b, c\dots$) to guarantee complete statutory evidence sets.
   - **Deterministic Cross-Reference Following (Nhảy dẫn chiếu)**: Automatically detects and traverses intra-document and inter-document statutory cross-references (`Điều X`, `khoản Y Điều Z`, `khoản X Điều này`, `của Luật này`).
@@ -66,17 +66,28 @@ An end-to-end, reproducible research and production framework for retrieval and 
 ## 📊 Empirical Benchmarks
 
 ### 1. In-Domain Benchmark: 31 Legacy Queries (Miền Trí Tuệ Nhân Tạo)
-Evaluated across all 6,122 chunks in `corpus-v0.2` with `eval-sets/retrieval/retrieval_eval.jsonl`:
+Evaluated across all 6,122 chunks in `corpus-v2.1` (with Vertical Overlap & re-encoded dense vectors) via `eval-sets/retrieval/retrieval_eval.jsonl`:
 
 | Pipeline Configuration | Chunk Recall@5 | Chunk Recall@10 | Chunk Recall@20 | Chunk Hit Rate | Article Hit Rate | Context Size |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **BM25 Baseline** | 44.7% | 55.0% | 70.9% | 74.2% | 93.5% | 5–20 chunks |
-| **Dense Baseline (Jina-v3)** | 48.8% | 57.9% | 66.3% | 80.6% | 96.8% | 5–20 chunks |
-| **Reranker Baseline** | 61.3% | 74.0% | 80.8% | 96.8% | 100.0% | 5–20 chunks |
-| **Reranker + Clause Expansion** | 79.9% | 89.2% | 91.9% | 100.0% | 100.0% | 13–33 chunks |
-| **Reranker + Combined (Clause + CrossRef)** | **84.0%** | **92.5%** | **95.2%** | **100.0%** | **100.0%** | 13–34 chunks |
+| **BM25 Baseline** | 65.8% *(+21.1%)* | 75.8% | 81.4% | 87.1% | 96.8% | 5–20 chunks |
+| **Dense Baseline (Jina-v3)** | 65.8% *(+17.0%)* | 75.9% | 83.4% | 80.6% | 90.3% | 5–20 chunks |
+| **Reranker Baseline (BGE)** | 80.9% *(+19.6%)* | 88.7% | 89.8% | 96.8% | 96.8% | 5–20 chunks |
+| **Reranker + Clause Expansion** | 89.4% *(+9.6%)* | 90.9% | 90.9% | 96.8% | 100.0% | ~8.35 chunks |
+| **Reranker + Combined (Clause + CrossRef)** | **92.7%** *(+8.6%)* | **94.1%** | **94.1%** | **100.0%** | **100.0%** | **~11.35 chunks** |
 
-### 2. Cross-Corpus Multi-Turn Benchmark: 30 New Queries (17 Văn Bản Quy Phạm)
+*So với `corpus-v0.2`, Vertical Overlap giúp nâng Recall@5 của Reranker từ 61.3% lên 80.9% và cấu hình Combined đạt độ phủ 100% tuyệt đối (31/31 câu).*
+
+### 2. Cross-Corpus Benchmark: 40 Queries (17 Văn Bản Quy Phạm)
+Đối chiếu trực tiếp trên toàn bộ 40 câu hỏi chuẩn (`corpus-v0.2` vs `corpus-v2.1`):
+
+| Pipeline Configuration | Chunk Recall@5 | Chunk Hit Rate@5 | MRR@10 | Article Hit Rate@5 |
+| :--- | :---: | :---: | :---: | :---: |
+| **BM25 Sparse** | 24.7% → **30.5%** *(+5.8%)* | 37.5% → **45.0%** *(+7.5%)* | 0.2986 → **0.3275** | 52.5% → **55.0%** |
+| **Dense Semantic (Jina-v3)** | 26.2% → **28.9%** *(+2.8%)* | 40.0% → **40.0%** | 0.3806 → 0.3158 | 52.5% → **52.5%** |
+| **Rerank Baseline Top-5 (BGE)** | 30.7% → **36.6%** *(+5.9%)* | 45.0% → **50.0%** *(+5.0%)* | 0.3550 → **0.3975** | 55.0% → **55.0%** |
+
+### 3. Agentic Multi-Turn Progression: 30 New Queries (17 Văn Bản Quy Phạm)
 Evaluated multi-turn agentic iterative retrieval across 17 distinct legal instruments:
 
 | Vòng Tìm Kiếm (Turn / Stage) | Chunk Recall | Relative Gain | Chunk Hit Rate | Article Hit Rate | Avg Chunks |
@@ -93,6 +104,8 @@ Evaluated multi-turn agentic iterative retrieval across 17 distinct legal instru
 ## 📁 Repository Structure
 
 ```text
+├── data/
+│   └── versions/corpus-v2.1/       # Default frozen legal corpus v2.1 (Vertical Overlap chunks)
 ├── src/legal_rag/                  # Core importable Python package
 │   ├── agentic/                    # Finite-state Agentic controllers
 │   │   ├── v1/                     # Agentic RAG v1 (Coverage check & sub-queries)
@@ -108,14 +121,17 @@ Evaluated multi-turn agentic iterative retrieval across 17 distinct legal instru
 │   ├── run_agentic_rag.py          # Main CLI for Agentic RAG execution
 │   ├── run_standard_rag.py         # Baseline single-pass RAG runner
 │   ├── eval_legacy_31.py           # Evaluation on 31 legacy benchmark queries
+│   ├── run_eval_baseline_40.py     # Evaluation on 40 cross-corpus baseline queries
 │   ├── eval_agentic_multiturn_v1_30.py # Multi-turn agentic evaluation runner
 │   ├── eval_cross_reference_expansion.py # Citation expansion evaluation
-│   └── eval_clause_expansion.py    # Clause sibling expansion evaluation
+│   ├── eval_clause_expansion.py    # Clause sibling expansion evaluation
+│   └── build_corpus_v21.py         # Vertical Overlap corpus generator & indexer
 ├── eval-sets/                      # Benchmark queries & gold annotations
 │   ├── retrieval/retrieval_eval.jsonl      # 31 legacy benchmark queries
 │   └── retrieval/baseline_eval_40.jsonl    # 40-query cross-corpus benchmark
 ├── experiments/                    # Evaluation metrics, indexes, and trace runs
-│   └── retrieval/corpus-v0.2/      # Metric results JSON files
+│   ├── indexes/corpus-v2.1/        # Precomputed Sparse (BM25) & Dense (Jina-v3) indices
+│   └── retrieval/corpus-v2.1/      # Metric results JSON files (legacy_31, baseline_40)
 ├── docs/                           # Technical documentation and evaluation reports
 │   └── evaluation/                 # Comprehensive Markdown reports
 └── tests/                          # Package regression test suite
@@ -170,6 +186,9 @@ python scripts/run_agentic_rag.py --query "Khi nào bên kiểm soát dữ liệ
 ```bash
 # Evaluate all 31 legacy queries (AI domain) across BM25, Dense, Rerank & Expansions
 python scripts/eval_legacy_31.py
+
+# Evaluate 40 cross-corpus baseline queries across BM25, Dense & Reranker
+python scripts/run_eval_baseline_40.py
 
 # Evaluate 3-turn Agentic Multi-turn loop on 30 cross-corpus queries
 python scripts/eval_agentic_multiturn_v1_30.py
