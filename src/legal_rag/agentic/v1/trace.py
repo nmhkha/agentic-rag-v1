@@ -50,6 +50,8 @@ def trace_for_state(state: AgentState, client: LLMClient | None) -> dict[str, An
         "final_evidence_selection": state.final_evidence_selection,
         "final_evidence": value["current_evidence"],
         "final_top5": state.final_top5,
+        "structural_expansion_used": state.structural_expansion_used,
+        "structural_expansion": state.structural_expansion,
         "draft_answer": state.draft_answer,
         "completeness_check": value["completeness_check"],
         "revision_used": state.revision_used,
