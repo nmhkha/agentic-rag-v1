@@ -11,7 +11,10 @@ from ...generation.formatter import parse_model_output
 from ...generation.prompts import build_prompt
 from ...generation.verifier import validate_citations
 from ...llm_client import LLMClient
-from ...retrieval.pipeline import DEFAULT_TOP_K, Evidence, RetrievalPipeline
+from ...cross_reference import CrossReferenceResolver
+from ...retrieval.pipeline import (
+    DEFAULT_TOP_K, Evidence, RetrievalPipeline, evidence_from_result,
+)
 from .evidence_selection import (
     GAP_PRESERVING_V1_PRACTICAL_V1,
     HISTORICAL_V1,
@@ -34,6 +37,9 @@ from .policies import (
 )
 from .state import AgentState, CitationCheck, CompletenessCheck
 
+STRUCTURAL_EXPANSION_SOURCE = "structural_expansion(clause+cross_reference)"
+MAX_STRUCTURAL_EVIDENCE = 40
+
 
 class AgenticRAGController:
     """Finite-state controller for Agentic RAG v1."""
@@ -47,6 +53,8 @@ class AgenticRAGController:
         enable_answer_revision: bool = True,
         enable_citation_revision: bool = True,
         final_evidence_policy: str = HISTORICAL_V1,
+        enable_structural_expansion: bool = False,
+        resolver: CrossReferenceResolver | None = None,
     ) -> None:
         if final_evidence_policy not in {
             HISTORICAL_V1, GAP_PRESERVING_V1_PRACTICAL_V1,
@@ -58,6 +66,8 @@ class AgenticRAGController:
         self.enable_answer_revision = enable_answer_revision
         self.enable_citation_revision = enable_citation_revision
         self.final_evidence_policy = final_evidence_policy
+        self.enable_structural_expansion = enable_structural_expansion
+        self.resolver = resolver
 
     @staticmethod
     def _transition(state: AgentState, stage: str) -> None:
@@ -235,6 +245,8 @@ class AgenticRAGController:
             else:
                 state.final_evidence_selection = []
         state.final_top5 = [item.chunk_id for item in state.current_evidence]
+        if self.enable_structural_expansion:
+            self._expand_structurally(state)
 
         draft, citation_map = generate_answer_node(state, self._llm)
         state.draft_answer = draft["answer"]
@@ -363,6 +375,47 @@ class AgenticRAGController:
         )
         self._transition(state, f"final:{state.final_status}")
         return state
+
+    def _get_resolver(self) -> CrossReferenceResolver:
+        if self.resolver is None:
+            self.resolver = CrossReferenceResolver()
+        return self.resolver
+
+    def _expand_structurally(self, state: AgentState) -> None:
+        """Add clause siblings and cross-referenced provisions (rule-based, no LLM)."""
+        resolver = self._get_resolver()
+        self._transition(state, "structural_expansion")
+        selected = list(state.current_evidence)
+        by_chunk = {item.chunk_id: item for item in selected}
+        expanded_ids = resolver.expand(
+            [item.chunk_id for item in selected],
+            max_total_chunks=MAX_STRUCTURAL_EVIDENCE,
+        )
+        used_numbers = [
+            int(item.evidence_id[1:])
+            for item in state.initial_evidence + state.expansion_evidence + selected
+            if item.evidence_id[1:].isdigit()
+        ]
+        next_number = max(used_numbers, default=0) + 1
+        evidence: list[Evidence] = []
+        added: list[dict[str, str]] = []
+        for chunk_id in expanded_ids:
+            if chunk_id in by_chunk:
+                evidence.append(by_chunk[chunk_id])
+                continue
+            chunk = resolver.chunks_by_id[chunk_id]
+            item = replace(
+                evidence_from_result({"chunk": chunk, "reranker_score": 0.0}, len(evidence) + 1),
+                evidence_id=f"E{next_number}",
+                retrieval_source=STRUCTURAL_EXPANSION_SOURCE,
+                retrieval_rank=None,
+            )
+            next_number += 1
+            evidence.append(item)
+            added.append({"evidence_id": item.evidence_id, "chunk_id": chunk_id})
+        state.current_evidence = evidence
+        state.structural_expansion = added
+        state.structural_expansion_used = bool(added)
 
     def _check_completeness(self, state: AgentState, answer: str | None) -> CompletenessCheck:
         return check_answer_completeness(state, answer, self._llm)

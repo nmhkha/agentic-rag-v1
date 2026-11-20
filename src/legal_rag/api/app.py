@@ -30,6 +30,7 @@ def build_service() -> RAGService:
         pipeline,
         client,
         final_evidence_policy=GAP_PRESERVING_V1_PRACTICAL_V1,
+        enable_structural_expansion=True,
     )
     navigator = frozen_document_navigator()
     return RAGService(controller, client, navigator=navigator)
